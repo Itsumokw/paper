@@ -1,0 +1,46 @@
+"""
+Minimal local config for running SimpleMem.
+
+Local Transformers mode:
+1. OPENAI_BASE_URL = "local://transformers"
+2. LLM_MODEL = local Hugging Face model id
+3. OPENAI_API_KEY is ignored but kept for interface compatibility
+"""
+
+OPENAI_API_KEY = "***REDACTED***"
+OPENAI_BASE_URL = "local://transformers"
+LLM_MODEL = "Qwen/Qwen2.5-1.5B-Instruct"
+
+EMBEDDING_MODEL = "Qwen/Qwen3-Embedding-0.6B"
+EMBEDDING_DIMENSION = 1024
+EMBEDDING_CONTEXT_LENGTH = 32768
+
+ENABLE_THINKING = False
+USE_STREAMING = False
+USE_JSON_FORMAT = False
+
+WINDOW_SIZE = 40
+OVERLAP_SIZE = 2
+
+SEMANTIC_TOP_K = 25
+KEYWORD_TOP_K = 5
+STRUCTURED_TOP_K = 5
+
+LANCEDB_PATH = "./lancedb_data"
+MEMORY_TABLE_NAME = "memory_entries"
+
+ENABLE_PARALLEL_PROCESSING = True
+MAX_PARALLEL_WORKERS = 2
+ENABLE_PARALLEL_RETRIEVAL = True
+MAX_RETRIEVAL_WORKERS = 2
+
+ENABLE_PLANNING = True
+ENABLE_REFLECTION = True
+MAX_REFLECTION_ROUNDS = 2
+
+JUDGE_API_KEY = "***REDACTED***"
+JUDGE_BASE_URL = OPENAI_BASE_URL
+JUDGE_MODEL = LLM_MODEL
+JUDGE_ENABLE_THINKING = False
+JUDGE_USE_STREAMING = False
+JUDGE_TEMPERATURE = 0.3

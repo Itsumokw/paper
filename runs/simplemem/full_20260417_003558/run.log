@@ -1,0 +1,87 @@
+Initializing SimpleMem system...
+============================================================
+Initializing SimpleMem System
+============================================================
+Using local Transformers backend: Qwen/Qwen2.5-1.5B-Instruct
+Loading local causal LM: Qwen/Qwen2.5-1.5B-Instruct
+Local generation device: cuda
+`torch_dtype` is deprecated! Use `dtype` instead!
+Local causal LM loaded successfully
+Loading embedding model: Qwen/Qwen3-Embedding-0.6B
+SentenceTransformer model loaded with dimension: 1024
+Opened existing table: memory_entries
+
+Clearing existing database...
+Created new table: memory_entries
+Database cleared
+
+System initialization complete!
+============================================================
+Using 16 test workers for parallel question processing
+
+================================================================================
+                         SimpleMem LoComo10 Dataset Test                        
+================================================================================
+
+Loading dataset from C:\Users\itsumoko\Desktop\毕业论文\datasets\locomo\data\locomo10.json...
+
+Sample 0:
+  Total QAs: 199
+  QAs with image evidence: 196
+
+Sample 1:
+  Total QAs: 105
+  QAs with image evidence: 101
+
+Sample 2:
+  Total QAs: 193
+  QAs with image evidence: 193
+
+Sample 3:
+  Total QAs: 260
+  QAs with image evidence: 257
+
+Sample 4:
+  Total QAs: 242
+  QAs with image evidence: 241
+
+Sample 5:
+  Total QAs: 158
+  QAs with image evidence: 156
+
+Sample 6:
+  Total QAs: 190
+  QAs with image evidence: 186
+
+Sample 7:
+  Total QAs: 239
+  QAs with image evidence: 236
+
+Sample 8:
+  Total QAs: 196
+  QAs with image evidence: 191
+
+Sample 9:
+  Total QAs: 204
+  QAs with image evidence: 197
+
+Overall Statistics:
+Total QAs: 1986
+Total QAs with image evidence: 1954
+Average QAs per sample: 198.60
+Min QAs in a sample: 105
+Max QAs in a sample: 260
+Created new table: memory_entries
+Database cleared
+
+================================================================================
+Testing Sample 0
+================================================================================
+Adding 419 dialogues to memory...
+
+[Parallel Processing] Processing 11 batches in parallel with 2 workers
+Batch sizes: [40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 39]
+[Worker 1] Processing full window with 40 dialogues
+[Worker 2] Processing full window with 40 dialogues
+[Worker 1] Attempt 1/3 failed: Expected JSON array but got: <class 'dict'>. Retrying...
+[Worker 2] Attempt 1/3 failed: Expected JSON array but got: <class 'dict'>. Retrying...
