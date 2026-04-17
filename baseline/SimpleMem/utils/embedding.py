@@ -2,10 +2,9 @@
 Embedding utilities - Generate vector embeddings using SentenceTransformers
 Supports Qwen3 Embedding models through SentenceTransformers interface
 """
-from typing import List, Optional, Dict, Any
+from typing import List
 import numpy as np
 import config
-import os
 
 
 class EmbeddingModel:
@@ -15,14 +14,50 @@ class EmbeddingModel:
     def __init__(self, model_name: str = None, use_optimization: bool = True):
         self.model_name = model_name or config.EMBEDDING_MODEL
         self.use_optimization = use_optimization
-        
+        self.use_api = bool(getattr(config, "EMBEDDING_USE_API", False))
+
         print(f"Loading embedding model: {self.model_name}")
-        
+
+        if self.use_api:
+            self._init_openai_api_embedding()
+            return
+
         # Check if it's a Qwen3 model (through SentenceTransformers)
         if self.model_name.startswith("qwen3"):
             self._init_qwen3_sentence_transformer()
         else:
             self._init_standard_sentence_transformer()
+
+    def _init_openai_api_embedding(self):
+        """Initialize OpenAI-compatible embedding API client."""
+        from openai import OpenAI
+
+        api_model_aliases = {
+            "Qwen/Qwen3-Embedding-0.6B": "qwen3-embedding-0.6b",
+            "Qwen/Qwen3-Embedding-4B": "qwen3-embedding-4b",
+            "Qwen/Qwen3-Embedding-8B": "qwen3-embedding-8b",
+        }
+        normalized_model_name = api_model_aliases.get(self.model_name, self.model_name)
+        if normalized_model_name != self.model_name:
+            print(f"Normalized embedding API model name: {self.model_name} -> {normalized_model_name}")
+            self.model_name = normalized_model_name
+
+        api_key = getattr(config, "OPENAI_API_KEY", None)
+        if not api_key:
+            raise ValueError("OPENAI_API_KEY is required when EMBEDDING_USE_API=True")
+
+        base_url = getattr(config, "OPENAI_BASE_URL", None)
+        client_kwargs = {"api_key": api_key}
+        if base_url:
+            client_kwargs["base_url"] = base_url
+            print(f"Using embedding API base URL: {base_url}")
+            print(f"Embedding requests will use: {base_url.rstrip('/')}/embeddings")
+
+        self.client = OpenAI(**client_kwargs)
+        self.dimension = int(getattr(config, "EMBEDDING_DIMENSION", 1536))
+        self.model_type = "openai_api_embedding"
+        self.supports_query_prompt = False
+        print(f"Embedding API enabled with dimension: {self.dimension}")
 
     def _init_qwen3_sentence_transformer(self):
         """Initialize Qwen3 model using SentenceTransformers"""
@@ -104,6 +139,13 @@ class EmbeddingModel:
         """
         if isinstance(texts, str):
             texts = [texts]
+
+        if not texts:
+            return np.empty((0, self.dimension), dtype=np.float32)
+
+        # API-based embedding path
+        if self.model_type == "openai_api_embedding":
+            return self._encode_via_api(texts)
         
         # Use query prompt for Qwen3 models when encoding queries
         if self.model_type == "qwen3_sentence_transformer" and self.supports_query_prompt and is_query:
@@ -154,4 +196,32 @@ class EmbeddingModel:
             show_progress_bar=False,
             normalize_embeddings=True
         )
+        return np.asarray(embeddings, dtype=np.float32)
+
+    def _encode_via_api(self, texts: List[str]) -> np.ndarray:
+        """Encode texts using OpenAI-compatible embedding API."""
+        response = self.client.embeddings.create(
+            model=self.model_name,
+            input=texts
+        )
+
+        sorted_data = sorted(response.data, key=lambda item: item.index)
+        vectors = [item.embedding for item in sorted_data]
+        embeddings = np.asarray(vectors, dtype=np.float32)
+
+        # Normalize for cosine-friendly retrieval, matching local path behavior.
+        norms = np.linalg.norm(embeddings, axis=1, keepdims=True)
+        embeddings = np.divide(
+            embeddings,
+            norms,
+            out=np.zeros_like(embeddings),
+            where=norms > 0
+        )
+
+        if embeddings.shape[1] != self.dimension:
+            raise ValueError(
+                f"Embedding dimension mismatch: expected {self.dimension}, got {embeddings.shape[1]}. "
+                "Please update EMBEDDING_DIMENSION in config.py to match EMBEDDING_MODEL."
+            )
+
         return embeddings

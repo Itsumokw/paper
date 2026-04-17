@@ -809,12 +809,14 @@ Return ONLY the JSON, no other text.
             max_workers = self.test_workers
         else:
             max_workers = getattr(config, 'MAX_RETRIEVAL_WORKERS', 16)
+
+        question_worker_cap = getattr(config, 'MAX_TEST_QUESTION_WORKERS', 40)
         
         # Apply reasonable limits
         max_workers = min(
             max_workers,
             len(qa_list),  # Don't create more workers than questions
-            20  # Higher limit for better parallelism, but watch API rate limits
+            question_worker_cap  # Allow more aggressive QA parallelism when the backend can handle it
         )
         max_workers = max(max_workers, 1)  # At least 1 worker
         
