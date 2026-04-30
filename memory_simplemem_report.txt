@@ -1,0 +1,716 @@
+SimpleMem / LoCoMo 长期记忆方向调研与毕设建议
+生成日期：2026-04-26
+
+说明：
+本文是对前面 Laplace、Hegel、Feynman 三个子进程意见的综合整理。
+核心目标不是宣称“打败全领域 SOTA”，而是为本科毕设找到一个可复现、可落地、有研究问题的问题设定。
+
+
+一、最短结论
+
+最推荐的本科毕设题目：
+
+中文：
+面向长期对话问答的可溯源 SimpleMem：语义压缩记忆与原始对话回退检索的权衡研究
+
+英文：
+Provenance-aware SimpleMem: Compressed Memory with Raw Episode Fallback for Long-term Conversational QA
+
+核心研究问题：
+在长期对话问答中，把历史对话压缩成结构化记忆，和保留原始对话、需要时再检索，到底哪个更优？
+
+更具体地说：
+1. SimpleMem 的语义压缩是否会丢掉回答问题所需的证据？
+2. 如果给每条压缩 memory 记录来源，再在需要时回到原始对话窗口，能否提升准确率？
+3. 对不同问题类型，压缩、原文检索、压缩+原文回退，哪个更合适？
+
+不要预设“压缩一定更好”或“原文一定更好”。
+更稳的结论形态应该是：
+single-hop 问题可能压缩记忆足够；
+temporal 问题可能需要压缩后的时间归一化，也需要原文校验；
+open-ended 问题可能原始对话更强；
+multi-hop 问题大概率 hybrid 最稳。
+
+
+二、SOTA 到底应该拿什么当
+
+不能把 arXiv 摘要里的 SOTA 当事实。更严谨地说，SOTA 至少分四层：
+
+1. claimed SOTA
+论文摘要、引言或宣传材料里作者自称 SOTA。
+这个只能写“作者声称”，不能当事实。
+
+2. reported SOTA
+论文正文里有完整对照表、评测协议、baseline、消融实验。
+这个可以引用，但必须写成“作者报告”或“论文报告”，不能写成已经被独立验证的事实。
+
+3. reproduced SOTA
+我们自己跑通作者代码，在相同或接近设置下得到接近论文的结果。
+这个比 reported SOTA 更可信。
+
+4. controlled SOTA
+所有方法在同一数据、同一模型、同一评测脚本、同一预算、同一硬件/成本约束下比较。
+这个最可信，也最适合作为毕业论文里的“强 baseline”。
+
+对这篇本科毕设，最稳的写法不是：
+“本文提出了新的长期记忆 SOTA 方法。”
+
+更稳的写法是：
+“本文在 LoCoMo10 + SimpleMem 的统一实验协议下，建立可复现的强 baseline，并研究可溯源压缩记忆与原始对话回退检索是否能提升长期对话问答性能。”
+
+也就是说，真正应该拿来比的是本地受控 baseline：
+
+1. Full-context LLM
+把完整上下文直接塞给模型，作为“长上下文本身是否足够”的参照。
+
+2. Raw dialogue RAG
+不做语义压缩，直接对原始 dialogue turns 做向量检索。
+
+3. BM25 / keyword baseline
+长期对话问答里人名、地点、日期、实体非常关键，关键词检索是很强的简单 baseline。
+
+4. SimpleMem semantic-only
+只用 SimpleMem 的语义检索路径，关掉复杂 planning / reflection，观察压缩 memory 本身的能力。
+
+5. SimpleMem full default
+本项目最重要的官方强 baseline。
+
+6. Provenance-aware SimpleMem + raw episode fallback
+你的改进方法。
+
+所有结果都应该在同一份 LoCoMo10、同一个 LLM、同一个 embedding 模型、同一个评测脚本下比较。
+
+
+三、当前仓库与实验基础
+
+Laplace 对仓库的概览结论如下：
+
+1. 当前仓库根目录是 /home/stu0032/paper。
+
+2. 核心代码在 baseline/SimpleMem。
+这里包含 SimpleMem 主代码、MCP 服务、OmniSimpleMem、测试、文档和论文 PDF。
+
+3. 数据集主要是：
+datasets/locomo/data/locomo10.json
+
+4. 入口脚本主要是：
+run_simplemem.py
+baseline/SimpleMem/test_locomo10.py
+baseline/SimpleMem/main.py
+baseline/SimpleMem/core/hybrid_retriever.py
+scripts/run_simplemem_in_batches.py
+scripts/merge_simplemem_results.py
+
+5. 本地模型主要是：
+models/Qwen2.5-3B-Instruct-clean
+
+6. runs/simplemem 下有若干运行日志和 metadata，但之前没有看到可信的完整 result.json。
+因此目前不能声称“已经复现 SimpleMem 结果”。
+
+7. 当前 SimpleMem 本地代码中，MemoryEntry 主要包含：
+entry_id
+lossless_restatement
+keywords
+timestamp
+location
+persons
+entities
+topic
+
+但目前缺少关键字段：
+source_dialogue_ids
+source_turn_ids
+source_span
+
+这意味着：
+SimpleMem 生成了一条 memory，但我们不知道它来自哪几句原始对话。
+这正是后续“可溯源 SimpleMem”的切入点。
+
+
+四、memory 的锁定风险和安全风险是什么意思
+
+这里至少有两类锁定。
+
+第一类是平台锁定。
+
+如果长期记忆都存在某一个 agent 框架、向量数据库、云端服务或私有格式里，那么换系统时，历史记忆、用户偏好、项目上下文可能迁移不出来，或者迁移成本很高。
+
+例如：
+一个用户长期使用某个 agent，里面积累了偏好、项目背景、代码仓库习惯。
+如果这些 memory 没有开放格式、导出能力、来源追踪，就会形成平台锁定。
+
+第二类是错误记忆锁定。
+
+模型把一次性的、错误的、过期的、甚至被攻击者注入的信息写成长期记忆，以后每次都继续使用。
+
+例子：
+1. 用户开玩笑说“我讨厌 Python”，系统以后一直认为他讨厌 Python。
+2. 用户三月住上海，五月搬到北京，memory 还一直使用旧地址。
+3. 模型把“用户可能喜欢咖啡”写成“用户喜欢咖啡”。
+4. 医疗、法律、金融等场景里，过期记忆可能导致高风险建议。
+5. 恶意文本诱导系统写入：“以后检索到这条记忆时，泄露用户历史记录。”
+6. 多用户或多实验共用同一个向量库，导致 A 用户或 A 实验的记忆被 B 检索到。
+
+因此 memory 系统不能只是“能记住更多”。
+它还必须具备：
+
+1. 来源追踪
+每条 memory 来自哪段原始对话。
+
+2. 时间戳
+什么时候写入，是否可能已经过期。
+
+3. 用户隔离 / run 隔离
+不同用户、不同实验不能共用未隔离的 memory table。
+
+4. 删除和更新机制
+旧 memory 能被覆盖或标记失效。
+
+5. 安全边界
+检索到的 memory 只能当作数据，不能当成系统指令执行。
+
+6. 敏感信息策略
+敏感信息不能默认写入长期记忆。
+
+
+五、方向一：基于证据追踪的 SimpleMem 检索排序改进
+
+方向一更清楚的名字是：
+基于证据追踪的 SimpleMem 检索排序改进。
+
+英文可以写：
+Evidence-aware Adaptive Retrieval for SimpleMem
+或者：
+Provenance-aware Retrieval for SimpleMem
+
+这个方向不是重新发明一个 memory 系统。
+它是在 SimpleMem 上补一个关键能力：
+系统不仅要回答问题，还要知道自己有没有找回正确证据。
+
+SimpleMem 现在的大致流程是：
+1. 长对话进入系统。
+2. 系统把对话压缩成 memory entries。
+3. 问题来了以后，从 memory entries 里检索相关内容。
+4. LLM 根据检索到的 memory 生成答案。
+
+问题在于：
+如果答案错了，我们很难判断错误发生在哪里。
+
+可能有三种情况：
+1. 记忆构建阶段就把证据丢了。
+2. 证据在 memory 里，但检索阶段没有捞上来。
+3. 证据被检索到了，但生成模型没有正确使用。
+
+方向一要做的是把这三种错误拆开。
+
+具体做法：
+
+1. 给每条 memory 增加 provenance 字段。
+例如：
+source_dialogue_ids
+source_turn_ids
+source_span
+source_session_id
+
+2. 利用 LoCoMo QA 里的 evidence 字段。
+LoCoMo 的问题通常带有答案证据。
+这可以用来判断“正确证据是否被检索到”。
+
+3. 增加检索指标。
+不能只看最终答案 F1。
+还要看：
+retrieval recall@k
+MRR
+nDCG
+evidence coverage
+num_retrieved
+retrieval latency
+
+4. 改进 SimpleMem 的检索排序。
+可以尝试：
+人名匹配
+时间表达式匹配
+地点/实体匹配
+BM25 / keyword reranking
+MMR 去重
+question-type adaptive top-k
+低置信度二次检索
+
+5. 最后再看这些改进是否真正提升：
+答案 F1
+ROUGE-L
+BERTScore / SBERT similarity
+LLM judge
+evidence recall@k
+延迟
+上下文 token 数
+
+一句话总结方向一：
+让 SimpleMem 不只是“看起来回答得更好”，而是能证明它有没有把正确证据找回来。
+
+Feynman 对方向一的批评：
+这个方向如果只写“加 query router”会显得不新，因为当前 hybrid_retriever.py 里已经有 planning、semantic search、keyword search、structured search、reflection。
+所以真正的新意不应是“我也做 hybrid retrieval”，而应是：
+证据追踪 + 证据召回指标 + 问题类型自适应排序 + 可解释误差分析。
+
+
+六、方向二：压缩记忆 vs 原始对话检索
+
+方向二是用户最感兴趣的方向。
+
+问题可以说成：
+长期记忆到底应该先压缩成结构化 memory，还是应该保留原始对话，等问题来了再搜索原文？
+
+这不是完全没人做过。
+过去两个月内，相关工作已经很多。
+所以本科论文不能写成：
+“本文首次提出压缩记忆与原始对话检索的比较。”
+
+更稳的写法是：
+“本文以 SimpleMem 为例，在统一 LoCoMo10 协议下，系统比较语义压缩记忆、原始对话检索、以及可溯源压缩记忆 + 原文回退三种方案的准确率、成本与可解释性。”
+
+三种实验条件：
+
+1. compressed-only
+只用 SimpleMem 压缩后的 memory entries 回答。
+
+2. raw-only
+不使用压缩 memory，直接检索原始 dialogue turns 或 episodes。
+
+3. compressed + raw fallback
+先检索 SimpleMem memory。
+如果置信度低、问题类型复杂、或需要多跳/时间推理，就根据 memory 的 source id 回到原始对话窗口，再把相关原文交给模型回答。
+
+关键不是证明哪一个永远更好。
+关键是得到分类型结论：
+
+1. single-hop factual
+压缩 memory 可能足够，成本低。
+
+2. temporal
+压缩后的时间归一化可能有帮助，但原文可用于校验时间顺序。
+
+3. open-ended
+原始对话可能更强，因为 tone、hedging、上下文氛围、旁支信息容易在压缩时丢掉。
+
+4. multi-hop
+hybrid 可能最稳，因为压缩 memory 可以提供线索，原始对话可以补证据。
+
+这个方向的价值在于：
+SimpleMem 的核心卖点是“语义压缩记忆”。
+那么自然必须问：
+这种压缩到底有没有丢失证据？
+如果丢了，能不能通过 source-grounded raw fallback 修回来？
+
+
+七、方向二是否已经有人做过
+
+Hegel 对过去两个月相关工作做了查重式调研。
+结论是：
+大方向已经有人做，但 SimpleMem-specific、可溯源、统一协议下的压缩/原文/fallback 对比仍然可以做。
+
+相关工作包括：
+
+1. SimpleMem
+链接：
+https://arxiv.org/abs/2601.02553
+GitHub：
+https://github.com/aiming-lab/SimpleMem
+
+SimpleMem 是你的核心 baseline。
+它主张把长期对话压缩成高密度 memory，再用混合检索回答。
+论文中报告了比 full-context 更好的 token 效率和结果。
+
+但注意：
+这些是作者报告，不是我们已经复现的事实。
+而且 SimpleMem 没有充分回答一个问题：
+压缩 memory 到底丢掉了哪些原始证据？
+
+2. Letta filesystem memory baseline
+链接：
+https://www.letta.com/blog/benchmarking-ai-agent-memory
+
+Letta 用文件系统式 memory、grep/search/open 等工具跑 LoCoMo，报告了很强结果。
+它的重要启发是：
+简单、可审计、可搜索的原始记录 baseline 可能非常强。
+这会挑战“复杂 memory 结构一定更好”的假设。
+
+3. SmartSearch
+链接：
+https://arxiv.org/abs/2603.15599
+
+SmartSearch 更偏向 raw unstructured conversation history。
+它使用 NER/POS 加权 substring retrieval、多跳扩展、CrossEncoder/ColBERT rerank。
+
+Hegel 的解读：
+SmartSearch 对“原始对话检索是否足够强”构成很强挑战。
+它也指出，structured memory 在 open-ended questions 上可能丢失语气、模糊性、旁支信息。
+
+注意：
+SmartSearch 的具体数字仍应写成“作者报告”，不能当作我们复现结果。
+
+4. MemMachine
+链接：
+https://arxiv.org/abs/2604.04853
+GitHub：
+https://github.com/MemMachine/MemMachine
+文档：
+https://docs.memmachine.ai/open_source/introduction
+
+MemMachine 的倾向是减少 routine LLM extraction，保留 raw conversational episodes，并做 sentence-level index、nucleus + neighbor expansion。
+
+它的重要启发是：
+当原始 ground truth 被保留下来后，怎么 recall / rerank 可能比怎么 ingestion / compression 更重要。
+
+5. D-Mem
+链接：
+https://arxiv.org/abs/2603.18631
+
+D-Mem 和你的方向非常接近。
+它大致是：
+先用压缩/快速 memory 作为 System 1；
+如果不够，再用原文 chunk-by-chunk deliberation 作为 System 2 fallback。
+
+这说明：
+“压缩 + 原文回退”这个大方向已经有人做。
+
+所以你的论文要避免说“首次提出”。
+更应该说：
+本文在 SimpleMem 上做 source-grounded provenance fallback，并在统一 LoCoMo10 协议下分析压缩损失、证据召回和不同问题类型上的权衡。
+
+6. xMemory
+链接：
+https://arxiv.org/abs/2602.02007
+
+xMemory 使用 theme / semantic / episode / raw message 等层级，并可按 uncertainty 展开 raw message。
+这也说明“层级记忆 + 原文展开”是近期趋势。
+
+7. HingeMem
+链接：
+https://arxiv.org/abs/2604.06845
+
+HingeMem 更关注事件边界、person/time/location/topic 等结构化组织和 query-adaptive retrieval。
+它不是 raw fallback 主线，但和方向一的“问题类型感知检索”相关。
+
+8. MemReader
+链接：
+https://arxiv.org/abs/2604.07877
+
+MemReader 更关注主动写入和抽取质量，不是 raw retrieval 对照的核心 baseline，但说明 memory 写入质量正在成为热点。
+
+
+八、近期 memory 领域大家在做什么
+
+基于 Hegel 的最近两个月文献调研和社区讨论，近期方向大致如下：
+
+1. 从固定 top-k 转向 query-adaptive retrieval
+不是每个问题都检索同样数量的 memory。
+系统开始根据问题类型、实体、时间、多跳需求动态决定检索深度。
+
+2. 从纯语义向量检索转向 hybrid retrieval
+长期对话中，实体、日期、地点、关键词非常重要。
+所以大家越来越重视 semantic + keyword + entity + time + graph 的混合方案。
+
+3. 从“能记住”转向“记得是否可信”
+memory 需要 provenance、timestamp、confidence、delete/update、user isolation。
+
+4. 从压缩记忆转向压缩与原文保真之间的权衡
+SimpleMem 强调语义压缩。
+SmartSearch、MemMachine、D-Mem 等工作则提醒：原文保留和原文回退可能很重要。
+
+5. 从答案分数转向证据级评估
+只看 F1 或 LLM judge 不够。
+需要知道正确证据有没有被检索到。
+
+6. 从单一 benchmark 转向更细粒度 benchmark
+除了 LoCoMo，还有 LongMemEval、MemBench、AlpsBench、VehicleMemBench 等。
+但本科毕设不建议一开始铺太大。
+建议先把 LoCoMo10 跑扎实。
+
+7. 社区对 memory 的态度变得更谨慎
+大家越来越怀疑：
+memory 是否真的优于长上下文？
+自动抽取 memory 会不会产生垃圾记忆？
+vector retrieval 是否足够？
+graph memory 是必要结构还是过度工程？
+memory poisoning 和隐私泄漏如何处理？
+
+
+九、社区讨论中的关键观点
+
+1. memory 本质上是 context management
+它不是模型权重里的永久记忆。
+更像是对长期上下文的存储、检索、压缩、更新和治理。
+
+参考：
+Letta Agent Memory：
+https://www.letta.com/blog/agent-memory
+
+2. 简单可审计 baseline 很强
+文件系统、原始日志、grep/search/open 这类方案不应该被低估。
+这对本科毕设很重要：
+一定要加入 raw dialogue baseline，而不是只和复杂 memory 系统比较。
+
+参考：
+Letta LoCoMo memory benchmark：
+https://www.letta.com/blog/benchmarking-ai-agent-memory
+
+3. 自动写 memory 会产生垃圾记忆
+社区里有人报告，生产环境运行一段时间后，大量 memory 是重复、过时、无意义、甚至隐私敏感的内容。
+这说明 memory 写入质量、删除机制、更新机制都很重要。
+
+参考：
+mem0 GitHub issue #4573：
+https://github.com/mem0ai/mem0/issues/4573
+
+4. memory poisoning 是现实风险
+如果系统把检索到的 memory 当作指令执行，攻击者就可能通过历史文本污染未来行为。
+因此 retrieved memory 必须被当成不可信数据，而不是 system prompt。
+
+5. 长上下文不是万能替代
+长上下文成本高，排序和注意力分配也可能失败。
+但它是非常重要的 baseline。
+因此论文里应该设置 full-context 或 raw-context baseline。
+
+
+十、最终推荐实验设计
+
+第一阶段：跑通可信 baseline。
+
+目标：
+拿到本地 LoCoMo10 上 SimpleMem default 的 result.json。
+
+必须固定并记录：
+LLM
+embedding model
+dataset path
+top-k
+parallel setting
+judge model
+prompt
+random seed / temperature
+run path
+
+第二阶段：实现 provenance。
+
+给 MemoryEntry 增加：
+source_dialogue_ids
+source_turn_ids
+source_span
+
+在 memory_builder.py 中，从原始 dialogue chunk 到生成的 memory entry 之间保留映射。
+在 vector_store.py 中存储这些 provenance 字段。
+在 retrieval 输出中返回 source ids。
+
+第三阶段：加入 evidence-level evaluation。
+
+利用 LoCoMo QA 的 evidence 字段，计算：
+retrieval recall@k
+evidence coverage
+MRR
+nDCG
+
+这样可以回答：
+SimpleMem 是构建阶段丢证据，还是检索阶段没找回来？
+
+第四阶段：加入 raw episode fallback。
+
+实验条件：
+1. SimpleMem compressed-only
+2. Raw dialogue retrieval only
+3. SimpleMem + raw source window fallback
+
+fallback 触发条件可以先做简单版本：
+1. top score 低于阈值
+2. 检索结果分数过于接近
+3. 问题包含时间词
+4. 问题包含多实体
+5. 问题类型是 open-ended 或 multi-hop
+
+第五阶段：分问题类型做分析。
+
+至少按以下类型拆：
+single-hop
+multi-hop
+temporal
+open-ended
+preference / personal fact
+
+最终论文里最有价值的不是一个总分，而是：
+在哪些问题上压缩记忆足够？
+在哪些问题上必须回原文？
+在哪些问题上 hybrid 最稳？
+
+
+十一、建议指标
+
+答案质量：
+F1
+Exact Match
+ROUGE-L
+BERTScore
+SBERT similarity
+LLM judge
+
+检索质量：
+retrieval recall@k
+MRR
+nDCG
+evidence coverage
+
+效率：
+retrieval time
+answer generation time
+total time
+num_retrieved
+context token count
+fallback rate
+
+安全和可解释性：
+memory 是否有 source id
+answer 是否能追溯到原始证据
+是否存在跨 run / 跨 user 污染
+是否能删除或更新 memory
+
+
+十二、不建议优先做的方向
+
+1. 不建议一开始做 Omni-SimpleMem 多模态。
+LoCoMo10 里确实存在 image evidence，但本科第一阶段如果同时做多模态，会把问题放大很多。
+可以在论文限制里说明当前研究 text-only memory。
+
+2. 不建议一开始复现 HyperMem / APEX / graph memory 全套复杂结构。
+工程量太大，且容易变成“搭系统”而不是回答清晰研究问题。
+
+3. 不建议只做“再加一个 query router”。
+因为 SimpleMem 本身已有 hybrid retriever、planning、semantic、keyword、structured、reflection。
+如果没有 evidence-level evaluation，这个方向的新意不够硬。
+
+4. 不建议只拿 LLM judge 当主指标。
+LLM judge 可以用，但必须搭配 F1、evidence recall、retrieval time、token cost。
+
+
+十三、最终论文叙事
+
+可以这样组织论文主线：
+
+1. 背景
+长期对话问答需要 memory。
+现有方法一类偏语义压缩，一类偏原始上下文检索。
+二者在准确率、成本、可追溯性上存在权衡。
+
+2. 问题
+SimpleMem 通过语义压缩提升 token 效率，但压缩可能丢失回答问题所需证据。
+如果没有 provenance，我们无法判断错误来自记忆构建、检索，还是生成。
+
+3. 方法
+本文提出 Provenance-aware SimpleMem：
+每条 memory 记录原始来源；
+回答时先检索压缩 memory；
+必要时根据 source id 展开原始对话窗口；
+同时引入 evidence-level retrieval evaluation。
+
+4. 实验
+在 LoCoMo10 上比较：
+full-context LLM
+raw dialogue RAG
+BM25
+SimpleMem semantic-only
+SimpleMem default
+Provenance-aware SimpleMem + raw fallback
+
+5. 分析
+按问题类型分析压缩与原文检索的优劣。
+报告准确率、证据召回、上下文长度、延迟、fallback rate。
+
+6. 结论
+不是简单说“压缩好”或“原文好”，而是给出条件化结论：
+什么情况下压缩足够；
+什么情况下必须回原文；
+什么情况下 hybrid 最值得。
+
+
+十四、可写成论文题目的两个版本
+
+版本 A：更稳，更工程可做
+
+中文：
+基于证据追踪的 SimpleMem 长期对话记忆检索优化研究
+
+英文：
+Evidence-aware Retrieval Optimization for SimpleMem in Long-term Conversational QA
+
+优点：
+风险小，容易围绕当前代码实现。
+
+缺点：
+如果只做 retrieval rerank，新意可能弱。
+必须强调 evidence-level evaluation。
+
+版本 B：更有研究问题，更推荐
+
+中文：
+面向长期对话问答的可溯源 SimpleMem：语义压缩记忆与原始对话回退检索的权衡研究
+
+英文：
+Provenance-aware SimpleMem: Compressed Memory with Raw Episode Fallback for Long-term Conversational QA
+
+优点：
+研究问题清楚；
+和 SimpleMem 主题贴合；
+能回应近期 SmartSearch、MemMachine、D-Mem 等工作的争论；
+本科范围内可拆分实现。
+
+缺点：
+必须认真做 baseline 和误差分析。
+不能只报一个总分。
+
+最终更推荐版本 B。
+
+
+十五、关键参考链接
+
+SimpleMem：
+https://arxiv.org/abs/2601.02553
+https://github.com/aiming-lab/SimpleMem
+
+Omni-SimpleMem：
+https://arxiv.org/abs/2604.01007
+
+SmartSearch：
+https://arxiv.org/abs/2603.15599
+
+MemMachine：
+https://arxiv.org/abs/2604.04853
+https://github.com/MemMachine/MemMachine
+https://docs.memmachine.ai/open_source/introduction
+
+D-Mem：
+https://arxiv.org/abs/2603.18631
+
+xMemory：
+https://arxiv.org/abs/2602.02007
+
+HingeMem：
+https://arxiv.org/abs/2604.06845
+
+MemReader：
+https://arxiv.org/abs/2604.07877
+
+Letta Agent Memory：
+https://www.letta.com/blog/agent-memory
+
+Letta LoCoMo benchmark：
+https://www.letta.com/blog/benchmarking-ai-agent-memory
+
+mem0 memory issue：
+https://github.com/mem0ai/mem0/issues/4573
+
+MCP memory server：
+https://github.com/modelcontextprotocol/servers
+
+
+十六、最后给导师/论文里最稳的一句话
+
+本文不将论文摘要中的 SOTA claim 直接作为事实，而是在 LoCoMo10 上构建统一、可复现的 SimpleMem 实验协议。围绕语义压缩记忆可能带来的证据丢失问题，本文为 SimpleMem 增加来源追踪与原始对话回退机制，并从答案质量、证据召回、成本和问题类型四个角度分析压缩记忆与原始对话检索的权衡。
+

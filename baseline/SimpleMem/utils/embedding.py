@@ -15,9 +15,9 @@ class EmbeddingModel:
     def __init__(self, model_name: str = None, use_optimization: bool = True):
         self.model_name = model_name or config.EMBEDDING_MODEL
         self.use_optimization = use_optimization
-
+        
         print(f"Loading embedding model: {self.model_name}")
-
+        
         # Check if it's a Qwen3 model (through SentenceTransformers)
         if self.model_name.startswith("qwen3"):
             self._init_qwen3_sentence_transformer()

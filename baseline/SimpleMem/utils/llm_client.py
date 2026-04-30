@@ -2,23 +2,19 @@
 LLM Client - Handles all LLM interactions
 """
 import json
-import threading
 from typing import List, Dict, Any, Optional
 from openai import OpenAI
 import config
+
+
+class LLMTruncatedOutputError(ValueError):
+    """Raised when generation hits the token/context limit before completion."""
 
 
 class LLMClient:
     """
     Unified LLM client interface
     """
-    _local_backend_lock = threading.Lock()
-    _local_model_lock = threading.Lock()
-    _local_model = None
-    _local_tokenizer = None
-    _local_model_name = None
-    _local_device = "cpu"
-
     def __init__(
         self,
         api_key: Optional[str] = None,
@@ -32,26 +28,22 @@ class LLMClient:
         self.base_url = base_url or config.OPENAI_BASE_URL
         self.enable_thinking = enable_thinking if enable_thinking is not None else config.ENABLE_THINKING
         self.use_streaming = use_streaming if use_streaming is not None else config.USE_STREAMING
-        self.is_local_transformers = bool(self.base_url and self.base_url.startswith("local://"))
 
-        if self.is_local_transformers:
-            print(f"Using local Transformers backend: {self.model}")
-            self.client = None
-            self._ensure_local_backend_loaded()
-        else:
-            # Initialize OpenAI client with optional base_url
-            client_kwargs = {"api_key": self.api_key}
-            if self.base_url:
-                client_kwargs["base_url"] = self.base_url
-                print(f"Using custom OpenAI base URL: {self.base_url}")
+        # Initialize OpenAI client with optional base_url
+        client_kwargs = {"api_key": self.api_key}
+        if self.base_url:
+            client_kwargs["base_url"] = self.base_url
+            print(f"Using custom OpenAI base URL: {self.base_url}")
 
-            if self.enable_thinking:
-                print(f"Deep thinking mode enabled")
+        if self.enable_thinking:
+            print(f"Deep thinking mode enabled")
 
-            self.client = OpenAI(
-                base_url=self.base_url,
-                api_key=self.api_key,
-            )
+        # self.client = OpenAI(**client_kwargs)
+        self.client = OpenAI(
+            base_url=self.base_url,
+            api_key=self.api_key,
+            max_retries=0,
+        )
 
     def chat_completion(
         self,
@@ -63,18 +55,15 @@ class LLMClient:
         """
         Standard chat completion with optional thinking mode and retry mechanism
         """
-        if self.is_local_transformers:
-            return self._local_chat_completion(
-                messages=messages,
-                temperature=temperature,
-                max_retries=max_retries
-            )
-
         kwargs = {
             "model": self.model,
             "messages": messages,
             "temperature": temperature,
         }
+
+        max_output_tokens = getattr(config, "MAX_OUTPUT_TOKENS", None)
+        if max_output_tokens:
+            kwargs["max_tokens"] = max_output_tokens
 
         if response_format:
             kwargs["response_format"] = response_format
@@ -105,18 +94,21 @@ class LLMClient:
                     return self._handle_streaming_response(**kwargs)
                 else:
                     response = self.client.chat.completions.create(**kwargs)
-                    if not hasattr(response, "choices"):
-                        response_type = type(response).__name__
-                        raise TypeError(
-                            f"Non-OpenAI-compatible response type returned: {response_type}. "
-                            f"Current base_url={self.base_url}. "
-                            f"If you are using a relay endpoint, check whether the base_url should end with '/v1'."
+                    choice = response.choices[0]
+                    content = choice.message.content or ""
+                    if getattr(choice, "finish_reason", None) == "length":
+                        max_tokens = kwargs.get("max_tokens")
+                        raise LLMTruncatedOutputError(
+                            f"LLM response reached max_tokens={max_tokens}; "
+                            "output was truncated before valid JSON could be completed"
                         )
-                    return response.choices[0].message.content
+                    return content
                 
                 # kwargs["stream"] = True
                 # return self._handle_streaming_response(**kwargs)
                     
+            except LLMTruncatedOutputError:
+                raise
             except Exception as e:
                 # print(e)
                 last_exception = e
@@ -132,144 +124,129 @@ class LLMClient:
         # If all retries failed, raise the last exception
         raise last_exception
 
-    def _ensure_local_backend_loaded(self) -> None:
-        if (
-            LLMClient._local_model is not None
-            and LLMClient._local_tokenizer is not None
-            and LLMClient._local_model_name == self.model
-        ):
-            return
-
-        with LLMClient._local_model_lock:
-            if (
-                LLMClient._local_model is not None
-                and LLMClient._local_tokenizer is not None
-                and LLMClient._local_model_name == self.model
-            ):
-                return
-
-            import torch
-            from transformers import AutoModelForCausalLM, AutoTokenizer
-
-            device = "cuda" if torch.cuda.is_available() else "cpu"
-            dtype = torch.float16 if device == "cuda" else torch.float32
-            device_map = "auto" if device == "cuda" else None
-
-            print(f"Loading local causal LM: {self.model}")
-            print(f"Local generation device: {device}")
-
-            tokenizer = AutoTokenizer.from_pretrained(
-                self.model,
-                trust_remote_code=True
-            )
-
-            model_kwargs = {
-                "trust_remote_code": True,
-                "torch_dtype": dtype,
-            }
-            if device_map is not None:
-                model_kwargs["device_map"] = device_map
-
-            model = AutoModelForCausalLM.from_pretrained(
-                self.model,
-                **model_kwargs
-            )
-            model.eval()
-
-            LLMClient._local_model = model
-            LLMClient._local_tokenizer = tokenizer
-            LLMClient._local_model_name = self.model
-            LLMClient._local_device = device
-
-            print("Local causal LM loaded successfully")
-
-    def _local_chat_completion(
-        self,
-        messages: List[Dict[str, str]],
-        temperature: float,
-        max_retries: int
-    ) -> str:
-        import torch
-
-        self._ensure_local_backend_loaded()
-
-        tokenizer = LLMClient._local_tokenizer
-        model = LLMClient._local_model
-        local_device = LLMClient._local_device
-
-        last_exception = None
-        for attempt in range(max_retries):
-            try:
-                prompt = tokenizer.apply_chat_template(
-                    messages,
-                    tokenize=False,
-                    add_generation_prompt=True
-                )
-
-                model_device = next(model.parameters()).device
-                inputs = tokenizer(prompt, return_tensors="pt")
-                inputs = {key: value.to(model_device) for key, value in inputs.items()}
-
-                generation_kwargs = {
-                    **inputs,
-                    "max_new_tokens": 512,
-                    "pad_token_id": tokenizer.eos_token_id,
-                }
-
-                if temperature > 0:
-                    generation_kwargs["do_sample"] = True
-                    generation_kwargs["temperature"] = max(temperature, 0.1)
-                    generation_kwargs["top_p"] = 0.9
-                else:
-                    generation_kwargs["do_sample"] = False
-
-                with LLMClient._local_backend_lock:
-                    with torch.inference_mode():
-                        outputs = model.generate(**generation_kwargs)
-
-                generated_tokens = outputs[0][inputs["input_ids"].shape[-1]:]
-                text = tokenizer.decode(generated_tokens, skip_special_tokens=True).strip()
-                if not text:
-                    raise ValueError("Local model returned empty text")
-                return text
-            except Exception as e:
-                last_exception = e
-                if attempt < max_retries - 1:
-                    import time
-                    wait_time = (2 ** attempt)
-                    print(f"Local LLM call failed (attempt {attempt + 1}/{max_retries}) on {local_device}: {e}")
-                    print(f"Retrying in {wait_time} seconds...")
-                    time.sleep(wait_time)
-                else:
-                    print(f"Local LLM call failed after {max_retries} attempts: {e}")
-
-        raise last_exception
-
     def _handle_streaming_response(self, **kwargs) -> str:
         """
-        Handle streaming response and collect full content
+        Handle streaming response and collect content until the first complete
+        top-level JSON value closes. This avoids waiting for extra text after
+        the usable JSON has already been generated.
         """
         full_content = []
         stream = self.client.chat.completions.create(**kwargs)
-
-        # for chunk in stream:
-        #     if chunk.choices is not None:
-        #         print(chunk.choices[0].delta.content)
-        
-        # print('---------')
+        stopped_on_json = False
+        finish_reason = None
 
         for chunk in stream:
-            # print(chunk)
             # fix list index out of range
-            if len(chunk.choices) > 0 and chunk.choices[0].delta.content is not None:
-                content = chunk.choices[0].delta.content
+            if len(chunk.choices) > 0:
+                choice = chunk.choices[0]
+                finish_reason = getattr(choice, "finish_reason", None) or finish_reason
+                content = choice.delta.content
+                if content is None:
+                    continue
                 full_content.append(content)
-                # print(full_content)
-                # Optional: print streaming content in real-time
-                # print(content, end='', flush=True)
-        # print(full_content)
-        print()
-        return ''.join(full_content)
+                current_text = ''.join(full_content)
+                json_end = self._find_first_complete_json_end(current_text)
+                if json_end is not None:
+                    stopped_on_json = True
+                    try:
+                        stream.close()
+                    except Exception:
+                        pass
+                    return current_text[:json_end + 1]
+
+        text = ''.join(full_content)
+        if finish_reason == "length":
+            raise LLMTruncatedOutputError(
+                "Streaming LLM response reached the model/context length limit "
+                "before a complete JSON value was detected"
+            )
+        if not stopped_on_json:
+            return text
+        return text
+
+    def _find_first_complete_json_end(self, text: str) -> Optional[int]:
+        """
+        Return the end index of the first balanced top-level JSON object/array
+        in text, or None if it has not closed yet.
+        """
+        starts = []
+        for i, char in enumerate(text):
+            if char in ['[', '{']:
+                starts.append((i, char))
+
+        for start_idx, start_char in starts:
+            end_idx = self._find_balanced_json_end(text, start_idx, start_char)
+            if end_idx is None:
+                if self._looks_like_json_start(text, start_idx, start_char):
+                    return None
+                continue
+
+            candidate = text[start_idx:end_idx + 1]
+            try:
+                json.loads(candidate)
+                return end_idx
+            except json.JSONDecodeError:
+                cleaned = self._clean_json_string(candidate)
+                try:
+                    json.loads(cleaned)
+                    return end_idx
+                except json.JSONDecodeError:
+                    continue
+
+        return None
+
+    def _looks_like_json_start(self, text: str, start_idx: int, start_char: str) -> bool:
+        """
+        Heuristic to avoid treating a complete child object inside an incomplete
+        top-level array/object as the final streamed response.
+        """
+        next_idx = start_idx + 1
+        while next_idx < len(text) and text[next_idx].isspace():
+            next_idx += 1
+
+        if next_idx >= len(text):
+            return True
+
+        next_char = text[next_idx]
+        if start_char == '[':
+            return next_char in '{["-0123456789tfn]'
+        return next_char in '"}'
+
+    def _find_balanced_json_end(self, text: str, start_idx: int, start_char: str) -> Optional[int]:
+        """
+        Return the closing index for a JSON value that starts at start_idx.
+        """
+        end_char = '}' if start_char == '{' else ']'
+        depth = 0
+        in_string = False
+        escape_next = False
+
+        for i in range(start_idx, len(text)):
+            char = text[i]
+
+            if escape_next:
+                escape_next = False
+                continue
+
+            if char == '\\':
+                escape_next = True
+                continue
+
+            if char == '"':
+                in_string = not in_string
+                continue
+
+            if in_string:
+                continue
+
+            if char == start_char:
+                depth += 1
+            elif char == end_char:
+                depth -= 1
+                if depth == 0:
+                    return i
+
+        return None
 
     def extract_json(self, text: str) -> Any:
         """
@@ -347,14 +324,23 @@ class LLMClient:
                     except json.JSONDecodeError:
                         pass
 
-        # Try finding balanced JSON object/array by scanning for { or [
-        for start_char in ['{', '[']:
-            result = self._extract_balanced_json(text, start_char)
+        # Try finding balanced JSON from the first JSON-looking structure.
+        # If an array starts first but never closes, do not accidentally parse
+        # the first object inside the incomplete array as a complete response.
+        starts = []
+        for start_char in ['[', '{']:
+            start_idx = text.find(start_char)
+            if start_idx != -1:
+                starts.append((start_idx, start_char))
+        for start_idx, start_char in sorted(starts):
+            result = self._extract_balanced_json(text, start_char, start_idx=start_idx)
             if result is not None:
                 return result
+            if start_char == '[':
+                raise ValueError("Found JSON array start but no balanced closing ']'")
 
         # Last resort: try to find any JSON-like structure and clean it
-        for start_char in ['{', '[']:
+        for start_char in ['[', '{']:
             start_idx = text.find(start_char)
             if start_idx != -1:
                 # Extract a large chunk and try to parse
@@ -381,12 +367,13 @@ class LLMClient:
 
         return json_str.strip()
 
-    def _extract_balanced_json(self, text: str, start_char: str) -> Any:
+    def _extract_balanced_json(self, text: str, start_char: str, start_idx: Optional[int] = None) -> Any:
         """
         Extract a balanced JSON object or array starting with start_char
         """
         end_char = '}' if start_char == '{' else ']'
-        start_idx = text.find(start_char)
+        if start_idx is None:
+            start_idx = text.find(start_char)
 
         if start_idx == -1:
             return None

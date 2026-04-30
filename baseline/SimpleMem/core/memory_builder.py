@@ -198,14 +198,11 @@ class MemoryBuilder:
             }
         ]
 
-        # Retry up to 3 times if parsing fails
-        max_retries = 3
+        # Retry up to 15 times if parsing fails
+        max_retries = 15
         for attempt in range(max_retries):
             try:
-                # Use JSON format if configured
-                response_format = None
-                if hasattr(config, 'USE_JSON_FORMAT') and config.USE_JSON_FORMAT:
-                    response_format = {"type": "json_object"}
+                response_format = self._memory_response_format()
 
                 response = self.llm_client.chat_completion(
                     messages,
@@ -244,7 +241,7 @@ Your task is to extract all valuable information from the following dialogues an
 {dialogue_text}
 
 [Requirements]
-1. **Complete Coverage**: Generate enough memory entries to ensure ALL information in the dialogues is captured
+1. **Complete Coverage with Bounded Compression**: Generate enough memory entries to ensure all important information in the dialogues is captured, but return at most 80 memory entries for this window. If there are more than 80 candidate facts, merge repeated or low-value details into broader self-contained entries.
 2. **Force Disambiguation**: Absolutely PROHIBIT using pronouns (he, she, it, they, this, that) and relative time (yesterday, today, last week, tomorrow)
 3. **Lossless Information**: Each entry's lossless_restatement must be a complete, independent, understandable sentence
 4. **Precise Extraction**:
@@ -255,22 +252,32 @@ Your task is to extract all valuable information from the following dialogues an
    - entities: Companies, products, organizations, etc.
    - topic: The topic of this information
 
+[Critical Output Contract]
+- The top-level JSON value MUST be an object with exactly one key: "entries".
+- The value of "entries" MUST be an array of memory entry objects.
+- The first non-whitespace character MUST be `{{` and the final non-whitespace character MUST be `}}`.
+- Do NOT output markdown code fences, explanations, comments, headings, or any text outside the JSON object.
+- Every item in "entries" MUST contain the key "lossless_restatement".
+- Do not repeat the same fact. Do not pad the output with empty strings, whitespace, or filler entries.
+- The API hard limit is 15000 output tokens. If the response may approach this limit, merge repeated or low-value facts into fewer self-contained entries, but always complete and close the JSON object.
+
 [Output Format]
-Return a JSON array, each element is a memory entry:
+Return one JSON object whose "entries" value is an array of memory entries:
 
 ```json
-[
-  {{
-    "lossless_restatement": "Complete unambiguous restatement (must include all subjects, objects, time, location, etc.)",
-    "keywords": ["keyword1", "keyword2", ...],
-    "timestamp": "YYYY-MM-DDTHH:MM:SS or null",
-    "location": "location name or null",
-    "persons": ["name1", "name2", ...],
-    "entities": ["entity1", "entity2", ...],
-    "topic": "topic phrase"
-  }},
-  ...
-]
+{{
+  "entries": [
+    {{
+      "lossless_restatement": "Complete unambiguous restatement (must include all subjects, objects, time, location, etc.)",
+      "keywords": ["keyword1", "keyword2"],
+      "timestamp": "YYYY-MM-DDTHH:MM:SS or null",
+      "location": "location name or null",
+      "persons": ["name1", "name2"],
+      "entities": ["entity1", "entity2"],
+      "topic": "topic phrase"
+    }}
+  ]
+}}
 ```
 
 [Example]
@@ -280,30 +287,103 @@ Dialogues:
 
 Output:
 ```json
-[
-  {{
-    "lossless_restatement": "Alice suggested at 2025-11-15T14:30:00 to meet with Bob at Starbucks on 2025-11-16T14:00:00 to discuss the new product.",
-    "keywords": ["Alice", "Bob", "Starbucks", "new product", "meeting"],
-    "timestamp": "2025-11-16T14:00:00",
-    "location": "Starbucks",
-    "persons": ["Alice", "Bob"],
-    "entities": ["new product"],
-    "topic": "Product discussion meeting arrangement"
-  }},
-  {{
-    "lossless_restatement": "Bob agreed to attend the meeting and committed to prepare relevant materials.",
-    "keywords": ["Bob", "prepare materials", "agree"],
-    "timestamp": null,
-    "location": null,
-    "persons": ["Bob"],
-    "entities": [],
-    "topic": "Meeting preparation confirmation"
-  }}
-]
+{{
+  "entries": [
+    {{
+      "lossless_restatement": "Alice suggested at 2025-11-15T14:30:00 to meet with Bob at Starbucks on 2025-11-16T14:00:00 to discuss the new product.",
+      "keywords": ["Alice", "Bob", "Starbucks", "new product", "meeting"],
+      "timestamp": "2025-11-16T14:00:00",
+      "location": "Starbucks",
+      "persons": ["Alice", "Bob"],
+      "entities": ["new product"],
+      "topic": "Product discussion meeting arrangement"
+    }},
+    {{
+      "lossless_restatement": "Bob agreed to attend the meeting and committed to prepare relevant materials.",
+      "keywords": ["Bob", "prepare materials", "agree"],
+      "timestamp": null,
+      "location": null,
+      "persons": ["Bob"],
+      "entities": [],
+      "topic": "Meeting preparation confirmation"
+    }}
+  ]
+}}
 ```
 
-Now process the above dialogues. Return ONLY the JSON array, no other explanations.
+Now process the above dialogues. Return ONLY the JSON object, no other explanations.
 """
+
+    def _memory_response_format(self):
+        """
+        vLLM structured output constraint for memory extraction.
+        The schema keeps SimpleMem's memory entry shape but bounds output size
+        so malformed generations cannot run to the full model context.
+        """
+        memory_entry_schema = {
+            "type": "object",
+            "additionalProperties": False,
+            "required": ["lossless_restatement"],
+            "properties": {
+                "lossless_restatement": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1500
+                },
+                "keywords": {
+                    "type": "array",
+                    "maxItems": 30,
+                    "items": {"type": "string", "maxLength": 160}
+                },
+                "timestamp": {
+                    "anyOf": [
+                        {"type": "string", "maxLength": 80},
+                        {"type": "null"}
+                    ]
+                },
+                "location": {
+                    "anyOf": [
+                        {"type": "string", "maxLength": 240},
+                        {"type": "null"}
+                    ]
+                },
+                "persons": {
+                    "type": "array",
+                    "maxItems": 30,
+                    "items": {"type": "string", "maxLength": 160}
+                },
+                "entities": {
+                    "type": "array",
+                    "maxItems": 30,
+                    "items": {"type": "string", "maxLength": 160}
+                },
+                "topic": {
+                    "anyOf": [
+                        {"type": "string", "maxLength": 240},
+                        {"type": "null"}
+                    ]
+                }
+            }
+        }
+        return {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "simplemem_memory_entries",
+                "strict": True,
+                "schema": {
+                    "type": "object",
+                    "additionalProperties": False,
+                    "required": ["entries"],
+                    "properties": {
+                        "entries": {
+                            "type": "array",
+                            "maxItems": 80,
+                            "items": memory_entry_schema
+                        }
+                    }
+                }
+            }
+        }
 
     def _parse_llm_response(
         self,
@@ -316,24 +396,66 @@ Now process the above dialogues. Return ONLY the JSON array, no other explanatio
         # Extract JSON
         data = self.llm_client.extract_json(response)
 
-        if not isinstance(data, list):
-            raise ValueError(f"Expected JSON array but got: {type(data)}")
+        data = self._normalize_memory_json(data)
 
         entries = []
         for item in data:
+            if not isinstance(item, dict):
+                raise ValueError(f"Expected memory entry object but got: {type(item)}")
+
+            lossless_restatement = (
+                item.get("lossless_restatement")
+                or item.get("restatement")
+                or item.get("statement")
+            )
+            if not lossless_restatement:
+                raise ValueError("Memory entry missing lossless_restatement/restatement")
+
             # Create MemoryEntry
             entry = MemoryEntry(
-                lossless_restatement=item["lossless_restatement"],
-                keywords=item.get("keywords", []),
+                lossless_restatement=str(lossless_restatement),
+                keywords=self._as_string_list(item.get("keywords", [])),
                 timestamp=item.get("timestamp"),
                 location=item.get("location"),
-                persons=item.get("persons", []),
-                entities=item.get("entities", []),
+                persons=self._as_string_list(item.get("persons", [])),
+                entities=self._as_string_list(item.get("entities", [])),
                 topic=item.get("topic")
             )
             entries.append(entry)
 
         return entries
+
+    def _normalize_memory_json(self, data):
+        """
+        Accept the response shapes that Qwen commonly emits while preserving the
+        SimpleMem contract that the final value is a list of memory objects.
+        """
+        if isinstance(data, list):
+            return data
+
+        if isinstance(data, dict):
+            wrapper_keys = ("memory_entries", "entries", "memories", "result", "data")
+            for key in wrapper_keys:
+                value = data.get(key)
+                if isinstance(value, list):
+                    if not all(isinstance(item, dict) for item in value):
+                        raise ValueError(f"Wrapper key '{key}' is not a list of objects")
+                    print(f"Unwrapped memory JSON object key '{key}' with {len(value)} entries")
+                    return value
+
+        raise ValueError(f"Expected JSON array but got: {type(data)}")
+
+    def _as_string_list(self, value):
+        """
+        Normalize optional list fields emitted by the model.
+        """
+        if value is None:
+            return []
+        if isinstance(value, list):
+            return [str(item) for item in value if item is not None]
+        if isinstance(value, str):
+            return [value]
+        return [str(value)]
     
     def _process_windows_parallel(self, windows: List[List[Dialogue]]):
         """
@@ -405,14 +527,11 @@ Now process the above dialogues. Return ONLY the JSON array, no other explanatio
             }
         ]
 
-        # Retry up to 3 times if parsing fails
-        max_retries = 3
+        # Retry up to 15 times if parsing fails
+        max_retries = 15
         for attempt in range(max_retries):
             try:
-                # Use JSON format if configured
-                response_format = None
-                if hasattr(config, 'USE_JSON_FORMAT') and config.USE_JSON_FORMAT:
-                    response_format = {"type": "json_object"}
+                response_format = self._memory_response_format()
 
                 response = self.llm_client.chat_completion(
                     messages,

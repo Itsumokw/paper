@@ -1,4 +1,4 @@
-﻿"""
+"""
 LoComo10 Dataset Test for SimpleMem System
 Tests retrieval time, token usage, and answer quality
 """
@@ -22,12 +22,21 @@ from sentence_transformers.util import pytorch_cos_sim
 from main import SimpleMemSystem
 from models.memory_entry import Dialogue
 
-# Download required NLTK data
-try:
-    nltk.download('punkt', quiet=True)
-    nltk.download('wordnet', quiet=True)
-except Exception as e:
-    print(f"Error downloading NLTK data: {e}")
+# Required NLTK data should be prepared outside this evaluation script.  The
+# original download calls can silently reach GitHub during a run, which is not
+# acceptable for offline/local reproduction.
+for resource_path, package_name in (
+    ('tokenizers/punkt', 'punkt'),
+    ('tokenizers/punkt_tab/english', 'punkt_tab'),
+    ('corpora/wordnet', 'wordnet'),
+):
+    try:
+        nltk.data.find(resource_path)
+    except LookupError:
+        print(
+            f"Warning: NLTK resource {package_name!r} not found locally; "
+            "related metrics may be zero. No download attempted."
+        )
 
 # Initialize SentenceTransformer model for semantic similarity
 try:
@@ -809,14 +818,12 @@ Return ONLY the JSON, no other text.
             max_workers = self.test_workers
         else:
             max_workers = getattr(config, 'MAX_RETRIEVAL_WORKERS', 16)
-
-        question_worker_cap = getattr(config, 'MAX_TEST_QUESTION_WORKERS', 40)
         
         # Apply reasonable limits
         max_workers = min(
             max_workers,
             len(qa_list),  # Don't create more workers than questions
-            question_worker_cap  # Allow more aggressive QA parallelism when the backend can handle it
+            20  # Higher limit for better parallelism, but watch API rate limits
         )
         max_workers = max(max_workers, 1)  # At least 1 worker
         

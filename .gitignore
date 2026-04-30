@@ -4,11 +4,29 @@ __pycache__/
 **/__pycache__/
 *.py[cod]
 
-# Python cache
-__pycache__/
-**/__pycache__/
-*.py[cod]
+# Local environments, models, and experiment outputs
+.venv/
+models/
+runs/
+*.log
 
-__pycache__/
-**/__pycache__/
-*.py[cod]
+# External baseline checkouts are cloned locally by setup/reproduction scripts.
+baseline/HiGMem/
+baseline/LightMem/
+baseline/MAGMA/
+baseline/MemGAS/
+baseline/MemMachine/
+baseline/ReMe/
+baseline/xMemory/
+
+# SimpleMem local runtime data
+baseline/SimpleMem/config.py
+baseline/SimpleMem/lancedb_data/
+baseline/SimpleMem/.cache/
+
+# Downloaded local services and packaged research archives
+tools/downloads/
+tools/java/
+research/*.tar.gz
+research/**/papers/
+research/**/web/
