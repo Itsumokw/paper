@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="customization/tei_corpus_chat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xmlns:im="http://www.example.org/ns/nonTEI">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>: deL1L2IM Collection of German Native Speaker to Non-Native Speaker Instant
+                    Messanger-based Dialogues</title>
+                <funder>University of Luxembourg</funder>
+                <respStmt>
+                    <resp>Collected, annotated and converted to TEI-conformant markup by</resp>
+                    <name>Sviatlana Hoehn (Danilava)</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Error and correction annotation</resp>
+                    <name>Nicole Recklies</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Error and correction annotation</resp>
+                    <name>Sviatlana Hoehn (Danilava)</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>First edition, <date>February 2014</date>
+                </edition>
+            </editionStmt>
+            <extent>
+                <measure unit="dialogues" quantity="72">72 dialogues</measure>
+                <measure unit="messages" quantity="5000">4548 messages</measure>
+            </extent>
+            <publicationStmt>
+                <!-- PUBLISHER???? -->
+                <publisher>ELRA</publisher>
+                <availability>
+                    <p>Distributed under ELRA License</p>
+                </availability>
+                <date>2015</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Chat dialogues collected for the purpose of a PhD project: design and
+                    implementation of an Artificial Conversational Companion for conversation
+                    training. the corpus is a side product of the project. See corpus documentation for more details.</p>
+            </projectDesc>
+            <samplingDecl>
+                <p>Dialogues of about 30 minutes duration between NS and NNS of German who have
+                    never met before, with 8 dialogues per pair. Communication via instant
+                    messaging, text only (no file transfer, no speech), a forwarding chatbot is in
+                    the middle. Participants know, that they are being recorded. The chatlogs are
+                    available immediately from the chatbot data base. Protocol and client used:
+                    XMPP, Google Talk. Devices used: PC, mobile phones.</p>
+            </samplingDecl>
+        </encodingDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <!-- LEARNERS -->
+                    <person xml:id="L01" sex="2">
+                        <persName>
+                            <surname>LEARNER01_LN</surname>
+                            <forename>LEARNER01_FN</forename>
+                        </persName>
+                        <age value="22">22</age>
+                        <langKnowledge tags="ru de en be">
+                            <langKnown level="first" tag="ru">Russian</langKnown>
+                            <langKnown level="advanced" tag="de">German</langKnown>
+                            <langKnown tag="en">English</langKnown>
+                            <langKnown tag="be">Belarussian</langKnown>
+                        </langKnowledge>
+                        <occupation>Student</occupation>
+                        <note>No previous experiences with IM</note>
+                    </person>
+                    <person xml:id="L02" sex="2">
+                        <persName>
+                            <surname>LEARNER02_LN</surname>
+                            <forename>LEARNER02_FN</forename>
+                        </persName>
+                        <age value="22">22</age>
+                        <langKnowledge tags="ru de en be">
+                            <langKnown level="first" tag="ru">Russian</langKnown>
+                            <langKnown level="advanced" tag="de">German</langKnown>
+                            <langKnown tag="en">English</langKnown>
+                            <langKnown tag="be">Belarussian</langKnown>
+                        </langKnowledge>
+                        <occupation>Student</occupation>
+                        <note>No previous experiences with IM</note>
+                    </person>
+                    <person xml:id="L03" sex="2">
+                        <persName>
+                            <surname>LEARNER03_LN</surname>
+                            <forename>LEARNER03_FN</forename>
+                        </persName>
+                        <age value="22">22</age>
+                        <langKnowledge tags="ru de en be">
+                            <langKnown level="first" tag="ru">Russian</langKnown>
+                            <langKnown level="advanced" tag="de">German</langKnown>
+                            <langKnown tag="en">English</langKnown>
+                            <langKnown tag="be">Belarussian</langKnown>
+                        </langKnowledge>
+                        <occupation>Student</occupation>
+                        <note>Experienced IM user</note>
+                    </person>
+                    <person xml:id="L04" sex="2">
+                        <persName>
+                            <surname>LEARNER04_LN</surname>
+                            <forename>LEARNER04_FN</forename>
+                        </persName>
+                        <age value="23">23</age>
+                        <langKnowledge tags="ru de en be it">
+                            <langKnown level="first" tag="ru">Russian</langKnown>
+                            <langKnown level="advanced" tag="de">German</langKnown>
+                            <langKnown tag="en">English</langKnown>
+                            <langKnown tag="be">Belarussian</langKnown>
+                            <langKnown tag="it">Italian</langKnown>
+                        </langKnowledge>
+                        <occupation>Student</occupation>
+                        <note>Experienced IM user</note>
+                    </person>
+                    <person xml:id="L05" sex="2">
+                        <persName>
+                            <surname>LEARNER05_LN</surname>
+                            <forename>LEARNER05_FN</forename>
+                        </persName>
+                        <age value="20">20</age>
+                        <langKnowledge tags="ru de en be">
+                            <langKnown level="first" tag="ru">Russian</langKnown>
+                            <langKnown level="intermediate" tag="de">German</langKnown>
+                            <langKnown tag="en">English</langKnown>
+                            <langKnown tag="be">Belarussian</langKnown>
+                        </langKnowledge>
+                        <occupation>Student</occupation>
+                        <note>Experienced IM user</note>
+                    </person>
+                    <person xml:id="L06" sex="2">
+                        <persName>
+                            <surname>LEARNER06_LN</surname>
+                            <forename>LEARNER06_FN</forename>
+                        </persName>
+                        <age value="22">22</age>
+                        <langKnowledge tags="ru de en be">
+                            <langKnown level="first" tag="ru">Russian</langKnown>
+                            <langKnown level="advanced" tag="de">German</langKnown>
+                            <langKnown tag="en">English</langKnown>
+                            <langKnown tag="be">Belarussian</langKnown>
+                        </langKnowledge>
+                        <occupation>Student</occupation>
+                        <note>Experienced IM user</note>
+                    </person>
+                    <person xml:id="L07" sex="2">
+                        <persName>
+                            <surname>LEARNER07_LN</surname>
+                            <forename>LEARNER07_FN</forename>
+                        </persName>
+                        <age value="22">22</age>
+                        <langKnowledge tags="ru de en be">
+                            <langKnown level="first" tag="ru">Russian</langKnown>
+                            <langKnown level="advanced" tag="de">German</langKnown>
+                            <langKnown tag="en">English</langKnown>
+                            <langKnown tag="be">Belarussian</langKnown>
+                        </langKnowledge>
+                        <occupation>Student</occupation>
+                        <note>Experienced IM user</note>
+                    </person>
+                    <person xml:id="L08" sex="2">
+                        <persName>
+                            <surname>LEARNER08_LN</surname>
+                            <forename>LEARNER08_FN</forename>
+                        </persName>
+                        <age value="22">22</age>
+                        <langKnowledge tags="ru de en be">
+                            <langKnown level="first" tag="ru">Russian</langKnown>
+                            <langKnown level="advanced" tag="de">German</langKnown>
+                            <langKnown tag="en">English</langKnown>
+                            <langKnown tag="be">Belarussian</langKnown>
+                        </langKnowledge>
+                        <occupation>Student</occupation>
+                        <note>Experienced IM user</note>
+                    </person>
+                    <person xml:id="L09" sex="2">
+                        <persName>
+                            <surname>LEARNER09_LN</surname>
+                            <forename>LEARNER09_FN</forename>
+                        </persName>
+                        <age value="22">22</age>
+                        <langKnowledge tags="ru de en be">
+                            <langKnown level="first" tag="ru">Russian</langKnown>
+                            <langKnown level="advanced" tag="de">German</langKnown>
+                            <langKnown tag="en">English</langKnown>
+                            <langKnown tag="be">Belarussian</langKnown>
+                        </langKnowledge>
+                        <occupation>Student</occupation>
+                        <note>Experienced IM user</note>
+                    </person>
+                    <!-- NATIVE SPEAKERS -->
+                    <person xml:id="N01" sex="1">
+                        <persName>
+                            <surname>NATIVE01_LN</surname>
+                            <forename>NATIVE01_FN</forename>
+                        </persName>
+                        <age value="27">27</age>
+                        <langKnowledge tags="de en la">
+                            <langKnown level="first" tag="de">German</langKnown>
+                            <langKnown tag="en">English</langKnown>
+                            <langKnown tag="la">Latin</langKnown>
+                        </langKnowledge>
+                        <occupation>student</occupation>
+                        <note>Experienced IM user</note>
+                    </person>
+                    <person xml:id="N02" sex="2">
+                        <persName>
+                            <surname>NATIVE02_LN</surname>
+                            <forename>NATIVE02_FN</forename>
+                        </persName>
+                        <age value="27">27</age>
+                        <langKnowledge tags="de en es">
+                            <langKnown level="first" tag="de">German</langKnown>
+                            <langKnown tag="en">English</langKnown>
+                            <langKnown tag="es">Spanish</langKnown>
+                        </langKnowledge>
+                        <occupation>Teacher of English and Spanish</occupation>
+                        <note>Experienced IM user</note>
+                    </person>
+                    <person xml:id="N03" sex="1">
+                        <persName>
+                            <surname>NATIVE03_LN</surname>
+                            <forename>NATIVE03_FN</forename>
+                        </persName>
+                        <age value="27">27</age>
+                        <langKnowledge tags="de en fr lb">
+                            <langKnown level="first" tag="de">German</langKnown>
+                            <langKnown tag="en">English</langKnown>
+                            <langKnown tag="fr">French</langKnown>
+                            <langKnown tag="lb">Letzebuergish</langKnown>
+                        </langKnowledge>
+                        <occupation>Doctoral student</occupation>
+                        <note>No previous experiences with IM</note>
+                    </person>
+                    <person xml:id="N04" sex="1">
+                        <persName>
+                            <surname>NATIVE04_LN</surname>
+                            <forename>NATIVE04_FN</forename>
+                        </persName>
+                        <age value="30">30</age>
+                        <langKnowledge tags="de en fr es">
+                            <langKnown level="first" tag="de">German</langKnown>
+                            <langKnown tag="en">English</langKnown>
+                            <langKnown tag="fr">French</langKnown>
+                            <langKnown tag="es">Spanish</langKnown>
+                        </langKnowledge>
+                        <occupation>Physicist</occupation>
+                        <note>Experienced IM user</note>
+                    </person>
+                </listPerson>
+            </particDesc>
+        </profileDesc>
+    </teiHeader>
+    <TEI>
+        <!-- TEXT SEQUENCE 1 -->
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title/>
+                    <author/>
+                </titleStmt>
+                <publicationStmt>
+                    <p/>
+                </publicationStmt>
+                <sourceDesc>
+                    <p/>
+                </sourceDesc>
+            </fileDesc>
+            
+        </teiHeader>
+        <text>
+            <body>
+                    <p>Logfiles for chat between <ref target="Chat-L01-N01.xml#chatL01N01">Learner01 and Native01</ref>.</p>
+            </body>
+        </text>
+    </TEI>
+    <TEI>
+        <!-- TEXT SEQUENCE 2 -->
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title/>
+                    <author/>
+                </titleStmt>
+                <publicationStmt>
+                    <p/>
+                </publicationStmt>
+                <sourceDesc>
+                    <p/>
+                </sourceDesc>
+            </fileDesc>
+        </teiHeader>
+        <text>
+            <body>
+                
+                <p>Logfiles for chat between <ref target="Chat-L02-N01.xml#chatL02N01">Learner02 and Native01</ref></p>
+                
+            </body>
+        </text>
+    </TEI>
+    <TEI>
+        <!-- TEXT SEQUENCE 3 -->
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title/>
+                    <author/>
+                </titleStmt>
+                <publicationStmt>
+                    <p/>
+                </publicationStmt>
+                <sourceDesc>
+                    <p/>
+                </sourceDesc>
+            </fileDesc>
+        </teiHeader>
+        <text>
+            <body>
+               
+                <p>Logfiles for chat between <ref target="Chat-L03-N02.xml#chatL03N02">Learner03 and Native02</ref></p>
+                
+            </body>
+        </text>
+    </TEI>
+    <TEI>
+        <!-- TEXT SEQUENCE 4 -->
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title/>
+                    <author/>
+                </titleStmt>
+                <publicationStmt>
+                    <p/>
+                </publicationStmt>
+                <sourceDesc>
+                    <p/>
+                </sourceDesc>
+            </fileDesc>
+        </teiHeader>
+        <text>
+            <body>
+               
+                <p>Logfiles for chat between <ref target="Chat-L04-N02.xml#chatL04N02">Learner04 and Native02</ref></p>
+                
+            </body>
+        </text>
+    </TEI>
+    <TEI>
+        <!-- TEXT SEQUENCE 5 -->
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title/>
+                    <author/>
+                </titleStmt>
+                <publicationStmt>
+                    <p/>
+                </publicationStmt>
+                <sourceDesc>
+                    <p/>
+                </sourceDesc>
+            </fileDesc>
+        </teiHeader>
+        <text>
+            <body>
+              
+                <p>Logfiles for chat between <ref target="Chat-L05-N02.xml#chatL05N02">Learner05 and Native02</ref></p>
+                
+            </body>
+        </text>
+    </TEI>
+    <TEI>
+        <!-- TEXT SEQUENCE 6 -->
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title/>
+                    <author/>
+                </titleStmt>
+                <publicationStmt>
+                    <p/>
+                </publicationStmt>
+                <sourceDesc>
+                    <p/>
+                </sourceDesc>
+            </fileDesc>
+        </teiHeader>
+        <text>
+            <body>
+               
+                <p>Logfiles for chat between <ref target="Chat-L06-N03.xml#chatL06N03">Learner06 and Native03</ref></p>
+                
+            </body>
+        </text>
+    </TEI>
+    <TEI>
+        <!-- TEXT SEQUENCE 7 -->
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title/>
+                    <author/>
+                </titleStmt>
+                <publicationStmt>
+                    <p/>
+                </publicationStmt>
+                <sourceDesc>
+                    <p/>
+                </sourceDesc>
+            </fileDesc>
+        </teiHeader>
+        <text>
+            <body>
+               
+                <p>Logfiles for chat between <ref target="Chat-L07-N03.xml#chatL07N03">Learner07 and Native03</ref></p>
+                
+            </body>
+        </text>
+    </TEI>
+    <TEI>
+        <!-- TEXT SEQUENCE 8 -->
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title/>
+                    <author/>
+                </titleStmt>
+                <publicationStmt>
+                    <p/>
+                </publicationStmt>
+                <sourceDesc>
+                    <p/>
+                </sourceDesc>
+            </fileDesc>
+        </teiHeader>
+        <text>
+            <body>
+               
+                <p>Logfiles for chat between <ref target="Chat-L08-N04.xml#chatL08N04">Learner08 and Native04</ref></p>
+                
+            </body>
+        </text>
+    </TEI>
+    <TEI>
+        <!-- TEXT SEQUENCE 9 -->
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title/>
+                    <author/>
+                </titleStmt>
+                <publicationStmt>
+                    <p/>
+                </publicationStmt>
+                <sourceDesc>
+                    <p/>
+                </sourceDesc>
+            </fileDesc>
+        </teiHeader>
+        <text>
+            <body>
+                
+                <p>Logfiles for chat between <ref target="Chat-L09-N04.xml#chatL09N04">Learner09 and Native04</ref></p>
+                
+            </body>
+        </text>
+    </TEI>
+
+</teiCorpus>
