@@ -1,0 +1,79 @@
+{
+  "llm_model": "Qwen/Qwen2.5-3B-Instruct",
+  "judge_model": "Qwen/Qwen2.5-3B-Instruct",
+  "dataset": "/home/stu0032/paper/baseline/MAGMA/data/locomo10.json",
+  "total_questions": 1540,
+  "total_samples": 10,
+  "category_distribution": {
+    "1": 282,
+    "2": 321,
+    "3": 96,
+    "4": 841
+  },
+  "config": {
+    "retrieval_mode": "combined",
+    "limit_per_speaker": 60,
+    "total_limit": 60,
+    "embedder": "huggingface",
+    "method": "structmem",
+    "allow_categories": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "enable_summary": true,
+    "summary_limit": 5
+  },
+  "aggregate_metrics": {
+    "overall": {
+      "judge_correct": {
+        "mean": 0.20584415584415586,
+        "std": 0.40431712720210444,
+        "count": 1540
+      }
+    },
+    "category_1": {
+      "judge_correct": {
+        "mean": 0.21631205673758866,
+        "std": 0.41172946317641984,
+        "count": 282
+      }
+    },
+    "category_2": {
+      "judge_correct": {
+        "mean": 0.2398753894080997,
+        "std": 0.4270072446275499,
+        "count": 321
+      }
+    },
+    "category_3": {
+      "judge_correct": {
+        "mean": 0.2708333333333333,
+        "std": 0.4443901876604488,
+        "count": 96
+      }
+    },
+    "category_4": {
+      "judge_correct": {
+        "mean": 0.18192627824019025,
+        "std": 0.3857837574676559,
+        "count": 841
+      }
+    }
+  },
+  "token_statistics": {
+    "total_prompt_tokens": 5808055,
+    "total_completion_tokens": 10047,
+    "total_tokens": 5818102,
+    "total_api_calls": 1540,
+    "avg_prompt_tokens_per_call": 3771.464285714286,
+    "avg_completion_tokens_per_call": 6.524025974025974,
+    "avg_total_tokens_per_call": 3777.9883116883116
+  },
+  "timestamp": "20260429_120513",
+  "retrieval_statistics": {
+    "total_summaries_used": 7700,
+    "avg_summaries_per_question": 5.0
+  }
+}

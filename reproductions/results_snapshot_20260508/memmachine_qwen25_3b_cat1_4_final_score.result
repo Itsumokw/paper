@@ -1,0 +1,34 @@
+Mean Scores Per Category:
+          llm_score  count
+category
+1            0.6879    282
+2            0.6542    321
+3            0.5521     96
+4            0.7907    841
+
+Overall Mean Scores:
+llm_score    0.7286
+dtype: float64
+
+--------------------------------
+Tools Overall Accuracy:
+Tool: Unknown
+  Accuracy: 1122/1540 = 72.86%
+
+--------------------------------
+
+Locomo Info Matrix:
+locomo Recall: 1187/2356 = 50.38%
+locomo Precision: 1187/30800 = 3.85%
+locomo Average Episodes Retrieved per Question: 20.00
+locomo Average Memory Retrieval Time per Question: 14.24 seconds
+locomo Average LLM Time per Question (only for questions that used LLM): 0.00 seconds
+Tool: Unknown
+    Recall: 1187/2356 = 50.38%
+    Precision: 1187/30800 = 3.85%
+    Avg Episodes Retrieved per Question: 20.00
+    Avg Input Tokens per Question: 0.00
+    Avg Output Tokens per Question: 0.00
+
+ToolSelectAgent Avg Input Tokens per Question: 0.00
+ToolSelectAgent Avg Output Tokens per Question: 0.00

@@ -3,6 +3,7 @@ Base processor class for multimodal data processing.
 """
 
 import logging
+import threading
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from typing import Optional, Any, Dict, List
@@ -59,6 +60,8 @@ class BaseProcessor(ABC):
 
         # LLM client for summarization
         self._llm_client = None
+        self._embedding_service = None
+        self._embedding_service_lock = threading.Lock()
 
     @property
     @abstractmethod
@@ -164,9 +167,11 @@ class BaseProcessor(ABC):
 
     def _get_embedding_service(self):
         """Get or create a shared EmbeddingService instance."""
-        if not hasattr(self, "_embedding_service") or self._embedding_service is None:
-            from omni_memory.utils.embedding import EmbeddingService
-            self._embedding_service = EmbeddingService(self.config)
+        if self._embedding_service is None:
+            with self._embedding_service_lock:
+                if self._embedding_service is None:
+                    from omni_memory.utils.embedding import EmbeddingService
+                    self._embedding_service = EmbeddingService(self.config)
         return self._embedding_service
 
     def _get_text_embedding(self, text: str) -> List[float]:

@@ -1,0 +1,52 @@
+{
+  "llm_model": "Qwen/Qwen2.5-3B-Instruct",
+  "judge_model": "Qwen/Qwen2.5-3B-Instruct",
+  "dataset": "/home/stu0032/paper/baseline/MAGMA/data/locomo10.json",
+  "total_questions": 446,
+  "total_samples": 10,
+  "category_distribution": {
+    "5": 446
+  },
+  "config": {
+    "retrieval_mode": "combined",
+    "limit_per_speaker": 60,
+    "total_limit": 60,
+    "embedder": "huggingface",
+    "method": "structmem",
+    "allow_categories": [
+      5
+    ],
+    "enable_summary": true,
+    "summary_limit": 5
+  },
+  "aggregate_metrics": {
+    "overall": {
+      "judge_correct": {
+        "mean": 0.12556053811659193,
+        "std": 0.3313534206620837,
+        "count": 446
+      }
+    },
+    "category_5": {
+      "judge_correct": {
+        "mean": 0.12556053811659193,
+        "std": 0.3313534206620837,
+        "count": 446
+      }
+    }
+  },
+  "token_statistics": {
+    "total_prompt_tokens": 1680327,
+    "total_completion_tokens": 3595,
+    "total_tokens": 1683922,
+    "total_api_calls": 446,
+    "avg_prompt_tokens_per_call": 3767.54932735426,
+    "avg_completion_tokens_per_call": 8.060538116591928,
+    "avg_total_tokens_per_call": 3775.609865470852
+  },
+  "timestamp": "20260429_132943",
+  "retrieval_statistics": {
+    "total_summaries_used": 2230,
+    "avg_summaries_per_question": 5.0
+  }
+}

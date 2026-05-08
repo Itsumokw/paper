@@ -7,6 +7,7 @@ Supports text, image captions, and video descriptions.
 
 import logging
 import json
+import os
 from typing import Optional, List, Dict, Any, Tuple
 from dataclasses import dataclass, field
 
@@ -269,6 +270,7 @@ class EntityExtractor:
                     }
                 ],
                 temperature=0,
+                max_tokens=int(os.environ.get("OMNI_ENTITY_MAX_TOKENS", "4096")),
                 response_format={"type": "json_object"},
             )
             

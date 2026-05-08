@@ -215,14 +215,12 @@ Summary:"""
         return summary if summary else text[:200]
 
     def generate_embedding(self, data: Any) -> List[float]:
-        """Generate embedding for text (uses EmbeddingService so CLIP/Tongyi/Doubao backends work)."""
-        from omni_memory.utils.embedding import EmbeddingService
+        """Generate embedding for text using the processor's shared EmbeddingService."""
         text = str(data)
         if not text or not text.strip():
             return []
         try:
-            emb_svc = EmbeddingService(self.config)
-            return emb_svc.embed_text(text[:8000])  # Limit for embedding models
+            return self._get_text_embedding(text[:8000])  # Limit for embedding models
         except Exception as e:
             logger.error("Text embedding failed: %s", e)
             return []

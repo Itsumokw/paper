@@ -10,6 +10,8 @@ The orchestrator manages:
 
 import logging
 import time
+import threading
+import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Optional, List, Dict, Any, Union, Tuple
 from pathlib import Path
@@ -116,6 +118,7 @@ class OmniMemoryOrchestrator:
         self.image_processor = ImageProcessor(self.config, self.cold_storage)
         self.audio_processor = AudioProcessor(self.config, self.cold_storage)
         self.video_processor = VideoProcessor(self.config, self.cold_storage)
+        self._store_lock = threading.RLock()
 
         # Initialize retrieval components
         self.retriever = PyramidRetriever(
@@ -528,50 +531,51 @@ class OmniMemoryOrchestrator:
         tags: Optional[List[str]] = None,
     ):
         """Store MAU in all relevant stores."""
-        # Add tags
-        if tags:
-            for tag in tags:
-                mau.add_tag(tag)
+        with self._store_lock:
+            # Add tags
+            if tags:
+                for tag in tags:
+                    mau.add_tag(tag)
 
-        # Store in MAU store
-        self.mau_store.add(mau)
+            # Store in MAU store
+            self.mau_store.add(mau)
 
-        # Store embedding in vector store
-        if mau.embedding:
-            text_dim = getattr(self.config.embedding, "embedding_dim", 3072)
-            visual_dim = getattr(self.config.embedding, "visual_embedding_dim", 512)
-            # When using unified multimodal encoder (e.g. Tongyi), text and image same dim -> store in text store so query finds them
-            if mau.modality_type == ModalityType.TEXT:
-                self.vector_store.add_text(mau.id, mau.embedding)
-            elif mau.modality_type in [ModalityType.VISUAL, ModalityType.VIDEO]:
-                if len(mau.embedding) == text_dim and text_dim == visual_dim:
+            # Store embedding in vector store
+            if mau.embedding:
+                text_dim = getattr(self.config.embedding, "embedding_dim", 3072)
+                visual_dim = getattr(self.config.embedding, "visual_embedding_dim", 512)
+                # When using unified multimodal encoder (e.g. Tongyi), text and image same dim -> store in text store so query finds them
+                if mau.modality_type == ModalityType.TEXT:
                     self.vector_store.add_text(mau.id, mau.embedding)
+                elif mau.modality_type in [ModalityType.VISUAL, ModalityType.VIDEO]:
+                    if len(mau.embedding) == text_dim and text_dim == visual_dim:
+                        self.vector_store.add_text(mau.id, mau.embedding)
+                    else:
+                        self.vector_store.add_visual(mau.id, mau.embedding)
                 else:
-                    self.vector_store.add_visual(mau.id, mau.embedding)
-            else:
-                self.vector_store.add(mau.id, mau.embedding)
+                    self.vector_store.add(mau.id, mau.embedding)
 
-        # Add to event
-        self.event_manager.add_mau_to_event(mau)
+            # Add to event
+            self.event_manager.add_mau_to_event(mau)
 
-        # Extract entities and update knowledge graph
-        try:
-            entities, relations = self.entity_extractor.extract(mau)
-            # entities: List[ExtractedEntity]
-            # relations: List[ExtractedRelation]
-            for entity in entities:
-                self.knowledge_graph.add_extracted_entity(entity)
-            for relation in relations:
-                self.knowledge_graph.add_extracted_relation(relation)
-        except Exception as e:
-            logger.warning(f"Entity extraction failed: {e}")
-
-        # Update consolidator for importance tracking (if supported)
-        if hasattr(self.consolidator, "record_memory_access"):
+            # Extract entities and update knowledge graph
             try:
-                self.consolidator.record_memory_access(mau.id, access_type="store")
+                entities, relations = self.entity_extractor.extract(mau)
+                # entities: List[ExtractedEntity]
+                # relations: List[ExtractedRelation]
+                for entity in entities:
+                    self.knowledge_graph.add_extracted_entity(entity)
+                for relation in relations:
+                    self.knowledge_graph.add_extracted_relation(relation)
             except Exception as e:
-                logger.debug("Consolidator record_memory_access: %s", e)
+                logger.warning(f"Entity extraction failed: {e}")
+
+            # Update consolidator for importance tracking (if supported)
+            if hasattr(self.consolidator, "record_memory_access"):
+                try:
+                    self.consolidator.record_memory_access(mau.id, access_type="store")
+                except Exception as e:
+                    logger.debug("Consolidator record_memory_access: %s", e)
 
         logger.debug(f"Stored MAU: {mau.id}")
 
@@ -1023,6 +1027,7 @@ class OmniMemoryOrchestrator:
                     {"role": "user", "content": final_user_content},
                 ],
                 temperature=0.1,
+                max_tokens=int(os.environ.get("OMNI_ANSWER_MAX_TOKENS", "1024")),
             )
             # json_object mode forces valid JSON output (critical for concise answer extraction)
             if not isinstance(final_user_content, list):  # skip for multimodal (vision)

@@ -413,6 +413,7 @@ def register_reme_local_embedding() -> None:
     class LocalSentenceTransformerEmbeddingModel(BaseEmbeddingModel):
         _model = None
         _lock = threading.Lock()
+        _encode_lock = threading.Lock()
 
         def _get_model(self):
             if self.__class__._model is None:
@@ -428,12 +429,13 @@ def register_reme_local_embedding() -> None:
 
         def _get_embeddings_sync(self, input_text: list[str], **kwargs: Any) -> list[list[float]]:
             model = self._get_model()
-            vectors = model.encode(
-                input_text,
-                batch_size=self.max_batch_size,
-                normalize_embeddings=True,
-                show_progress_bar=False,
-            )
+            with self.__class__._encode_lock:
+                vectors = model.encode(
+                    input_text,
+                    batch_size=self.max_batch_size,
+                    normalize_embeddings=True,
+                    show_progress_bar=False,
+                )
             return [list(map(float, vector)) for vector in vectors]
 
     R.embedding_models.register("local_sentence_transformer")(LocalSentenceTransformerEmbeddingModel)

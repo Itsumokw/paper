@@ -291,7 +291,12 @@ def _extract_memory_entries(dialogues, llm_client, model_name, previous_entries=
     ]
     for attempt in range(3):
         try:
-            resp = llm_client.chat.completions.create(model=model_name, messages=messages, temperature=0.1)
+            resp = llm_client.chat.completions.create(
+                model=model_name,
+                messages=messages,
+                temperature=0.1,
+                max_tokens=int(os.environ.get("OMNI_EXTRACTION_MAX_TOKENS", "8192")),
+            )
             response = (resp.choices[0].message.content or "").strip()
             data = _extract_json_from_response(response)
             if not isinstance(data, list):
@@ -368,6 +373,8 @@ def main():
                         help="Delete existing memory data and re-ingest from scratch")
     parser.add_argument("--concurrency", "-j", type=int, default=10,
                         help="Number of concurrent QA workers (default: 10)")
+    parser.add_argument("--ingest-concurrency", type=int, default=int(os.environ.get("OMNI_INGEST_WORKERS", "1")),
+                        help="Number of concurrent ingestion workers (default: 1 for reproducibility/stability)")
     parser.add_argument("--output-dir", "-o", default=None,
                         help="Output directory for results (default: ./locomo_results_<model>)")
     parser.add_argument("--memory-dir", default=None,
@@ -461,12 +468,14 @@ def main():
     if need_ingest:
         logger.info("Starting ingestion of %d conversations...", len(samples))
         n_conv = len(samples)
+        ingest_workers = max(1, min(args.ingest_concurrency, n_conv))
+        logger.info("Using %d ingestion worker(s)", ingest_workers)
 
         def ingest_conv(args_tuple):
             si, sample = args_tuple
             return _ingest_one_conversation(orchestrator, sample, si, llm_client, model_name)
 
-        with ThreadPoolExecutor(max_workers=n_conv) as ex:
+        with ThreadPoolExecutor(max_workers=ingest_workers) as ex:
             results = list(ex.map(ingest_conv, enumerate(samples)))
         total_ingested = sum(results)
         logger.info("Ingested %d text memory entries total", total_ingested)

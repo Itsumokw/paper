@@ -69,6 +69,9 @@ class EmbeddingService:
     # Local model name used when OpenAI embeddings are unavailable
     LOCAL_TEXT_MODEL = "all-MiniLM-L6-v2"  # 384-dim, fast, good quality
     LOCAL_TEXT_DIM = 384
+    _GLOBAL_LOCAL_TEXT_MODELS = {}
+    _GLOBAL_LOCAL_TEXT_MODEL_LOCK = threading.Lock()
+    _GLOBAL_LOCAL_TEXT_ENCODE_LOCK = threading.Lock()
 
     def __init__(self, config: Optional[OmniMemoryConfig] = None):
         self.config = config or OmniMemoryConfig()
@@ -152,13 +155,19 @@ class EmbeddingService:
         if self._local_text_model is None:
             with self._embedding_lock:
                 if self._local_text_model is None:
-                    from sentence_transformers import SentenceTransformer
                     model_name = self.embedding_config.model_name
                     # If it was an OpenAI model name that failed, use the default local model
                     if self._is_openai_model(model_name):
                         model_name = self.LOCAL_TEXT_MODEL
-                    self._local_text_model = SentenceTransformer(model_name)
-                    logger.info(f"Loaded local text embedding model: {model_name}")
+                    with self._GLOBAL_LOCAL_TEXT_MODEL_LOCK:
+                        model = self._GLOBAL_LOCAL_TEXT_MODELS.get(model_name)
+                        if model is None:
+                            from sentence_transformers import SentenceTransformer
+
+                            model = SentenceTransformer(model_name, device="cpu")
+                            self._GLOBAL_LOCAL_TEXT_MODELS[model_name] = model
+                            logger.info(f"Loaded local text embedding model: {model_name}")
+                    self._local_text_model = model
         return self._local_text_model
 
     def _should_use_local(self) -> bool:
@@ -428,7 +437,8 @@ class EmbeddingService:
         if self._should_use_local():
             try:
                 model = self._get_local_text_model()
-                embedding = model.encode(text[:8000], normalize_embeddings=True)
+                with self._GLOBAL_LOCAL_TEXT_ENCODE_LOCK:
+                    embedding = model.encode(text[:8000], normalize_embeddings=True)
                 return embedding.tolist()
             except Exception as e:
                 logger.error(f"Local text embedding failed: {e}")
@@ -460,7 +470,8 @@ class EmbeddingService:
             try:
                 model = self._get_local_text_model()
                 truncated = [t[:8000] for t in texts]
-                embeddings = model.encode(truncated, normalize_embeddings=True, batch_size=32)
+                with self._GLOBAL_LOCAL_TEXT_ENCODE_LOCK:
+                    embeddings = model.encode(truncated, normalize_embeddings=True, batch_size=32)
                 return [e.tolist() for e in embeddings]
             except Exception as e:
                 logger.error(f"Local batch text embedding failed: {e}")
