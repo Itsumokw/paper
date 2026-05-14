@@ -1,0 +1,1188 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "dataset": "/home/stu0032/paper/runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen3_8b/jlongchat/amem_official/shards/shard_7/locomo_sample_7.json",
+  "memory_layer": "robust",
+  "ratio": 1.0,
+  "retrieve_k": 10,
+  "total_questions": 20,
+  "category_distribution": {
+    "1": 10,
+    "2": 4,
+    "3": 4,
+    "4": 2
+  },
+  "aggregate_metrics": {
+    "overall": {
+      "exact_match": {
+        "mean": 0.45,
+        "std": 0.5104177855340404,
+        "median": 0.0,
+        "min": 0,
+        "max": 1,
+        "count": 20
+      },
+      "f1": {
+        "mean": 0.5577777777777778,
+        "std": 0.43214110996453176,
+        "median": 0.4666666666666667,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 20
+      },
+      "rouge1_f": {
+        "mean": 0.2076068376068376,
+        "std": 0.30990332458797193,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 20
+      },
+      "rouge2_f": {
+        "mean": 0.08392857142857144,
+        "std": 0.16108978689370967,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.5714285714285715,
+        "count": 20
+      },
+      "rougeL_f": {
+        "mean": 0.2076068376068376,
+        "std": 0.30990332458797193,
+        "median": 0.0,
+        "min": 0,
+        "max": 1.0,
+        "count": 20
+      },
+      "bleu1": {
+        "mean": 0.6088872394692917,
+        "std": 0.3844507371465768,
+        "median": 0.5095992499107792,
+        "min": 0,
+        "max": 1.0,
+        "count": 20
+      },
+      "bleu2": {
+        "mean": 0.2445025481934396,
+        "std": 0.14268834142437983,
+        "median": 0.316227766016838,
+        "min": 0,
+        "max": 0.5180586332905649,
+        "count": 20
+      },
+      "bleu3": {
+        "mean": 0.15652826664002314,
+        "std": 0.0952818840789505,
+        "median": 0.18551179894017084,
+        "min": 0,
+        "max": 0.3628571451775018,
+        "count": 20
+      },
+      "bleu4": {
+        "mean": 0.12008066991171383,
+        "std": 0.06703765907401907,
+        "median": 0.14572493882532112,
+        "min": 0,
+        "max": 0.17820132316770917,
+        "count": 20
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 20
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 20
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 20
+      },
+      "meteor": {
+        "mean": 0.27990300659792183,
+        "std": 0.21400465148495995,
+        "median": 0.22327249022164275,
+        "min": 0.0,
+        "max": 0.5,
+        "count": 20
+      },
+      "sbert_similarity": {
+        "mean": 0.723364369571209,
+        "std": 0.3103456923360506,
+        "median": 0.8765916526317596,
+        "min": 0.25827160477638245,
+        "max": 1.0000001192092896,
+        "count": 20
+      }
+    },
+    "category_1": {
+      "exact_match": {
+        "mean": 0.9,
+        "std": 0.31622776601683794,
+        "median": 1.0,
+        "min": 0,
+        "max": 1,
+        "count": 10
+      },
+      "f1": {
+        "mean": 0.9,
+        "std": 0.31622776601683794,
+        "median": 1.0,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 10
+      },
+      "rouge1_f": {
+        "mean": 0.1,
+        "std": 0.31622776601683794,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 10
+      },
+      "rouge2_f": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 10
+      },
+      "rougeL_f": {
+        "mean": 0.1,
+        "std": 0.31622776601683794,
+        "median": 0.0,
+        "min": 0,
+        "max": 1.0,
+        "count": 10
+      },
+      "bleu1": {
+        "mean": 0.9,
+        "std": 0.31622776601683794,
+        "median": 1.0,
+        "min": 0,
+        "max": 1.0,
+        "count": 10
+      },
+      "bleu2": {
+        "mean": 0.2846049894151542,
+        "std": 0.10000000000000002,
+        "median": 0.316227766016838,
+        "min": 0,
+        "max": 0.316227766016838,
+        "count": 10
+      },
+      "bleu3": {
+        "mean": 0.19689854615545976,
+        "std": 0.06918309709189366,
+        "median": 0.2187761623949553,
+        "min": 0,
+        "max": 0.2187761623949553,
+        "count": 10
+      },
+      "bleu4": {
+        "mean": 0.16004514690350308,
+        "std": 0.05623413251903491,
+        "median": 0.1778279410038923,
+        "min": 0,
+        "max": 0.1778279410038923,
+        "count": 10
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 10
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 10
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 10
+      },
+      "meteor": {
+        "mean": 0.45,
+        "std": 0.15811388300841897,
+        "median": 0.5,
+        "min": 0.0,
+        "max": 0.5,
+        "count": 10
+      },
+      "sbert_similarity": {
+        "mean": 0.9989248931407928,
+        "std": 0.0033999120616017156,
+        "median": 1.0,
+        "min": 0.9892485737800598,
+        "max": 1.0000001192092896,
+        "count": 10
+      }
+    },
+    "category_2": {
+      "exact_match": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 4
+      },
+      "f1": {
+        "mean": 0.15,
+        "std": 0.3,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.6,
+        "count": 4
+      },
+      "rouge1_f": {
+        "mean": 0.22222222222222224,
+        "std": 0.4444444444444445,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.888888888888889,
+        "count": 4
+      },
+      "rouge2_f": {
+        "mean": 0.14285714285714288,
+        "std": 0.28571428571428575,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.5714285714285715,
+        "count": 4
+      },
+      "rougeL_f": {
+        "mean": 0.22222222222222224,
+        "std": 0.4444444444444445,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.888888888888889,
+        "count": 4
+      },
+      "bleu1": {
+        "mean": 0.2972139751242363,
+        "std": 0.22554625724029054,
+        "median": 0.23884377019126307,
+        "min": 0.09196986029286058,
+        "max": 0.6191984998215584,
+        "count": 4
+      },
+      "bleu2": {
+        "mean": 0.16716258776536572,
+        "std": 0.23422551821361298,
+        "median": 0.05850453652111616,
+        "min": 0.033582644728665616,
+        "max": 0.5180586332905649,
+        "count": 4
+      },
+      "bleu3": {
+        "mean": 0.11806029519335035,
+        "std": 0.1633024390755509,
+        "median": 0.04059244959471284,
+        "min": 0.02819913640647395,
+        "max": 0.3628571451775018,
+        "count": 4
+      },
+      "bleu4": {
+        "mean": 0.06933295350920461,
+        "std": 0.07262078402221064,
+        "median": 0.03478700554542394,
+        "min": 0.029556479778261396,
+        "max": 0.17820132316770917,
+        "count": 4
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 4
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 4
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 4
+      },
+      "meteor": {
+        "mean": 0.06355932203389829,
+        "std": 0.12711864406779658,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.25423728813559315,
+        "count": 4
+      },
+      "sbert_similarity": {
+        "mean": 0.572444275021553,
+        "std": 0.17680808378597954,
+        "median": 0.5571214854717255,
+        "min": 0.41159939765930176,
+        "max": 0.7639347314834595,
+        "count": 4
+      }
+    },
+    "category_3": {
+      "exact_match": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 4
+      },
+      "f1": {
+        "mean": 0.25,
+        "std": 0.0,
+        "median": 0.25,
+        "min": 0.25,
+        "max": 0.25,
+        "count": 4
+      },
+      "rouge1_f": {
+        "mean": 0.43333333333333335,
+        "std": 0.0222222222222222,
+        "median": 0.4444444444444444,
+        "min": 0.4,
+        "max": 0.4444444444444444,
+        "count": 4
+      },
+      "rouge2_f": {
+        "mean": 0.2767857142857143,
+        "std": 0.017857142857142877,
+        "median": 0.28571428571428575,
+        "min": 0.25,
+        "max": 0.28571428571428575,
+        "count": 4
+      },
+      "rougeL_f": {
+        "mean": 0.43333333333333335,
+        "std": 0.0222222222222222,
+        "median": 0.4444444444444444,
+        "min": 0.4,
+        "max": 0.4444444444444444,
+        "count": 4
+      },
+      "bleu1": {
+        "mean": 0.4,
+        "std": 0.0,
+        "median": 0.4,
+        "min": 0.4,
+        "max": 0.4,
+        "count": 4
+      },
+      "bleu2": {
+        "mean": 0.316227766016838,
+        "std": 0.0,
+        "median": 0.316227766016838,
+        "min": 0.316227766016838,
+        "max": 0.316227766016838,
+        "count": 4
+      },
+      "bleu3": {
+        "mean": 0.1522474354853864,
+        "std": 0.0,
+        "median": 0.1522474354853864,
+        "min": 0.1522474354853864,
+        "max": 0.1522474354853864,
+        "count": 4
+      },
+      "bleu4": {
+        "mean": 0.11362193664674995,
+        "std": 0.0,
+        "median": 0.11362193664674995,
+        "min": 0.11362193664674995,
+        "max": 0.11362193664674995,
+        "count": 4
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 4
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 4
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 4
+      },
+      "meteor": {
+        "mean": 0.125,
+        "std": 0.0,
+        "median": 0.125,
+        "min": 0.125,
+        "max": 0.125,
+        "count": 4
+      },
+      "sbert_similarity": {
+        "mean": 0.31220145523548126,
+        "std": 0.05052199475747898,
+        "median": 0.31604425609111786,
+        "min": 0.25827160477638245,
+        "max": 0.3584457039833069,
+        "count": 4
+      }
+    },
+    "category_4": {
+      "exact_match": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "f1": {
+        "mean": 0.2777777777777778,
+        "std": 0.07856742013183861,
+        "median": 0.2777777777777778,
+        "min": 0.2222222222222222,
+        "max": 0.3333333333333333,
+        "count": 2
+      },
+      "rouge1_f": {
+        "mean": 0.26495726495726496,
+        "std": 0.060436477024491266,
+        "median": 0.26495726495726496,
+        "min": 0.2222222222222222,
+        "max": 0.3076923076923077,
+        "count": 2
+      },
+      "rouge2_f": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "rougeL_f": {
+        "mean": 0.26495726495726496,
+        "std": 0.060436477024491266,
+        "median": 0.26495726495726496,
+        "min": 0.2222222222222222,
+        "max": 0.3076923076923077,
+        "count": 2
+      },
+      "bleu1": {
+        "mean": 0.19444444444444445,
+        "std": 0.03928371006591928,
+        "median": 0.19444444444444445,
+        "min": 0.16666666666666669,
+        "max": 0.2222222222222222,
+        "count": 2
+      },
+      "bleu2": {
+        "mean": 0.05521982729421779,
+        "std": 0.003557029421389811,
+        "median": 0.05521982729421779,
+        "min": 0.05270462766947299,
+        "max": 0.05773502691896258,
+        "count": 2
+      },
+      "bleu3": {
+        "mean": 0.04017447426545901,
+        "std": 0.006920769764255121,
+        "median": 0.04017447426545901,
+        "min": 0.03528075103412339,
+        "max": 0.04506819749679463,
+        "count": 2
+      },
+      "bleu4": {
+        "mean": 0.0346711842877139,
+        "std": 0.008702567875740619,
+        "median": 0.0346711842877139,
+        "min": 0.028517539529041507,
+        "max": 0.040824829046386304,
+        "count": 2
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "meteor": {
+        "mean": 0.17191142191142192,
+        "std": 0.02884468221623446,
+        "median": 0.17191142191142192,
+        "min": 0.15151515151515152,
+        "max": 0.19230769230769232,
+        "count": 2
+      },
+      "sbert_similarity": {
+        "mean": 0.4697277694940567,
+        "std": 0.27037647968990314,
+        "median": 0.4697277694940567,
+        "min": 0.27854272723197937,
+        "max": 0.660912811756134,
+        "count": 2
+      }
+    }
+  },
+  "individual_results": [
+    {
+      "sample_id": 0,
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1394-A say in the turn about \"\u3053\u3093\u306b\u3061\u306f\uff01\u9ce5\u3092\u98fc\u3044\u59cb\u3081\u305f\u306e\u3067\u3059\u304c\u540d\u524d\u3069\u3046\u3057\u3088\u30fc\u3002\"?",
+      "prediction": "\u3053\u3093\u306b\u3061\u306f\uff01\u9ce5\u3092\u98fc\u3044\u59cb\u3081\u305f\u306e\u3067\u3059\u304c\u540d\u524d\u3069\u3046\u3057\u3088\u30fc\u3002",
+      "reference": "\u3053\u3093\u306b\u3061\u306f\uff01\u9ce5\u3092\u98fc\u3044\u59cb\u3081\u305f\u306e\u3067\u3059\u304c\u540d\u524d\u3069\u3046\u3057\u3088\u30fc\u3002",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 1.0,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.2187761623949553,
+        "bleu4": 0.1778279410038923,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.5,
+        "sbert_similarity": 1.0000001192092896
+      },
+      "latency_seconds": 1.6472909450531006,
+      "token_usage": {
+        "prompt_tokens": 3340,
+        "completion_tokens": 6,
+        "total_tokens": 3346,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1394-A say in the turn about \"\u3053\u3093\u306b\u3061\u306f\uff011\u9031\u9593\u3076\u308a\u304f\u3089\u3044\u3067\u3059\u304b\u306d\uff1f\"?",
+      "prediction": "\u3053\u3093\u306b\u3061\u306f\uff011\u9031\u9593\u3076\u308a\u304f\u3089\u3044\u3067\u3059\u304b\u306d\uff1f",
+      "reference": "\u3053\u3093\u306b\u3061\u306f\uff011\u9031\u9593\u3076\u308a\u304f\u3089\u3044\u3067\u3059\u304b\u306d\uff1f",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 1.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 1.0,
+        "bleu1": 1.0,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.2187761623949553,
+        "bleu4": 0.1778279410038923,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.5,
+        "sbert_similarity": 1.0
+      },
+      "latency_seconds": 1.955397367477417,
+      "token_usage": {
+        "prompt_tokens": 3212,
+        "completion_tokens": 4,
+        "total_tokens": 3216,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1394-A say in the turn about \"\u3074\u3088\u3061\u3083\u3093\u306b\u990c\u3092\u3042\u3052\u3066\u304d\u307e\u3057\u305f\u3002\u7d50\u69cb\u98df\u6b32\u65fa\u76db\u306a\u3093\u3067\u3059\u3088\u3002\"?",
+      "prediction": "\u3074\u3088\u3061\u3083\u3093\u306b\u990c\u3092\u3042\u3052\u3066\u304d\u307e\u3057\u305f\u3002\u7d50\u69cb\u98df\u6b32\u65fa\u76db\u306a\u3093\u3067\u3059\u3088\u3002",
+      "reference": "\u3074\u3088\u3061\u3083\u3093\u306b\u990c\u3092\u3042\u3052\u3066\u304d\u307e\u3057\u305f\u3002\u7d50\u69cb\u98df\u6b32\u65fa\u76db\u306a\u3093\u3067\u3059\u3088\u3002",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 1.0,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.2187761623949553,
+        "bleu4": 0.1778279410038923,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.5,
+        "sbert_similarity": 0.9999999403953552
+      },
+      "latency_seconds": 2.15234112739563,
+      "token_usage": {
+        "prompt_tokens": 3602,
+        "completion_tokens": 7,
+        "total_tokens": 3609,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1394-A say in the turn about \"\u3042\u308c\u304b\u3089\u30cb\u30f3\u30b8\u30f3\u306f\u98df\u3079\u308c\u3066\u307e\u3059\u304b\uff1f\u3069\u3046\u3084\u3089\u30d4\u30e8\u3061\u3083\u3093\u3082\u4eba\u53c2\u306f\u82e6\u624b\u3060\u3063\u305f\u307f\u305f...\"?",
+      "prediction": "\u3042\u308c\u304b\u3089\u30cb\u30f3\u30b8\u30f3\u306f\u98df\u3079\u308c\u3066\u307e\u3059\u304b\uff1f\u3069\u3046\u3084\u3089\u30d4\u30e8\u3061\u3083\u3093\u3082\u4eba\u53c2\u306f\u82e6\u624b\u3060\u3063\u305f\u307f\u305f\u3044\u3067\u3059\u3002",
+      "reference": "\u3042\u308c\u304b\u3089\u30cb\u30f3\u30b8\u30f3\u306f\u98df\u3079\u308c\u3066\u307e\u3059\u304b\uff1f\u3069\u3046\u3084\u3089\u30d4\u30e8\u3061\u3083\u3093\u3082\u4eba\u53c2\u306f\u82e6\u624b\u3060\u3063\u305f\u307f\u305f\u3044\u3067\u3059\u3002",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 1.0,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.2187761623949553,
+        "bleu4": 0.1778279410038923,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.5,
+        "sbert_similarity": 1.0
+      },
+      "latency_seconds": 2.5444235801696777,
+      "token_usage": {
+        "prompt_tokens": 3226,
+        "completion_tokens": 10,
+        "total_tokens": 3236,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1394-A say in the turn about \"\u3053\u3093\u306b\u3061\u306f\u3002\u307e\u305f\u3061\u3087\u3063\u3068\u4e45\u3057\u3076\u308a\u3060\u306d\u3002\u4eba\u53c2\u306b\u30a2\u30bf\u30c3\u30af\u306f\u7d9a\u3051\u3066\u3044\u308b\u306e\uff1f\"?",
+      "prediction": "\u3053\u3093\u306b\u3061\u306f\u3002\u307e\u305f\u3061\u3087\u3063\u3068\u4e45\u3057\u3076\u308a\u3060\u306d\u3002\u4eba\u53c2\u306b\u30a2\u30bf\u30c3\u30af\u306f\u7d9a\u3051\u3066\u3044\u308b\u306e\uff1f",
+      "reference": "\u3053\u3093\u306b\u3061\u306f\u3002\u307e\u305f\u3061\u3087\u3063\u3068\u4e45\u3057\u3076\u308a\u3060\u306d\u3002\u4eba\u53c2\u306b\u30a2\u30bf\u30c3\u30af\u306f\u7d9a\u3051\u3066\u3044\u308b\u306e\uff1f",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 1.0,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.2187761623949553,
+        "bleu4": 0.1778279410038923,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.5,
+        "sbert_similarity": 1.0000001192092896
+      },
+      "latency_seconds": 2.755441665649414,
+      "token_usage": {
+        "prompt_tokens": 3209,
+        "completion_tokens": 8,
+        "total_tokens": 3217,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1394-B say in the turn about \"\u304a\uff01\u3067\u306f\u4eca\u5ea6\u7d50\u679c\u3092\u304a\u4f1d\u3048\u3057\u307e\uff5e\u3059\uff01\"?",
+      "prediction": "\u304a\uff01\u3067\u306f\u4eca\u5ea6\u7d50\u679c\u3092\u304a\u4f1d\u3048\u3057\u307e\uff5e\u3059\uff01",
+      "reference": "\u304a\uff01\u3067\u306f\u4eca\u5ea6\u7d50\u679c\u3092\u304a\u4f1d\u3048\u3057\u307e\uff5e\u3059\uff01",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 1.0,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.2187761623949553,
+        "bleu4": 0.1778279410038923,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.5,
+        "sbert_similarity": 1.0000001192092896
+      },
+      "latency_seconds": 2.704280376434326,
+      "token_usage": {
+        "prompt_tokens": 3082,
+        "completion_tokens": 4,
+        "total_tokens": 3086,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1394-B say in the turn about \"\u305d\u3046\u3060\u3074\u3088\u3061\u3083\u3093\u3001\u5927\u304d\u304f\u306a\u308a\u307e\u3057\u305f\uff1f\u4eca\u5ea6\u5199\u771f\u898b\u305b\u3066\u304f\u3060\u3055\u3044\u3002\"?",
+      "prediction": "\u5927\u304d\u304f\u306a\u308a\u307e\u3057\u305f\uff1f\u4eca\u5ea6\u5199\u771f\u898b\u305b\u3066\u304f\u3060\u3055\u3044\u3002",
+      "reference": "\u305d\u3046\u3060\u3074\u3088\u3061\u3083\u3093\u3001\u5927\u304d\u304f\u306a\u308a\u307e\u3057\u305f\uff1f\u4eca\u5ea6\u5199\u771f\u898b\u305b\u3066\u304f\u3060\u3055\u3044\u3002",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.9892485737800598
+      },
+      "latency_seconds": 2.704537868499756,
+      "token_usage": {
+        "prompt_tokens": 3218,
+        "completion_tokens": 5,
+        "total_tokens": 3223,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1394-B say in the turn about \"\u7f8e\u5473\u3057\u3044\u3067\u3059\u3088\u306d\u30fc\u3002\"?",
+      "prediction": "\u7f8e\u5473\u3057\u3044\u3067\u3059\u3088\u306d\u30fc\u3002",
+      "reference": "\u7f8e\u5473\u3057\u3044\u3067\u3059\u3088\u306d\u30fc\u3002",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 1.0,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.2187761623949553,
+        "bleu4": 0.1778279410038923,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.5,
+        "sbert_similarity": 1.0
+      },
+      "latency_seconds": 1.4611876010894775,
+      "token_usage": {
+        "prompt_tokens": 3124,
+        "completion_tokens": 2,
+        "total_tokens": 3126,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1394-B say in the turn about \"\u3084\u3063\u305f\uff01\u304a\u6bcd\u3055\u3093\u306b\u3082\u4eca\u304b\u3089\u3053\u306e\u8a71\u3057\u3066\u304d\u307e\u3059\uff01\"?",
+      "prediction": "\u3084\u3063\u305f\uff01\u304a\u6bcd\u3055\u3093\u306b\u3082\u4eca\u304b\u3089\u3053\u306e\u8a71\u3057\u3066\u304d\u307e\u3059\uff01",
+      "reference": "\u3084\u3063\u305f\uff01\u304a\u6bcd\u3055\u3093\u306b\u3082\u4eca\u304b\u3089\u3053\u306e\u8a71\u3057\u3066\u304d\u307e\u3059\uff01",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 1.0,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.2187761623949553,
+        "bleu4": 0.1778279410038923,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.5,
+        "sbert_similarity": 1.0000001192092896
+      },
+      "latency_seconds": 1.728956699371338,
+      "token_usage": {
+        "prompt_tokens": 3164,
+        "completion_tokens": 5,
+        "total_tokens": 3169,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1394-B say in the turn about \"\u3048\u3048\uff01\uff1f\u305d\u3057\u305f\u3089\u30d3\u30c3\u30af\u30ea\u3057\u3061\u3083\u3046\uff01\u3067\u3082\u3001\u305d\u306e\u65e5\u3092\u697d\u3057\u307f\u306b\u3057\u3066\u3044\u307e\u3059\u306d\u3002\"?",
+      "prediction": "\u3048\u3048\uff01\uff1f\u305d\u3057\u305f\u3089\u30d3\u30c3\u30af\u30ea\u3057\u3061\u3083\u3046\uff01\u3067\u3082\u3001\u305d\u306e\u65e5\u3092\u697d\u3057\u307f\u306b\u3057\u3066\u3044\u307e\u3059\u306d\u3002",
+      "reference": "\u3048\u3048\uff01\uff1f\u305d\u3057\u305f\u3089\u30d3\u30c3\u30af\u30ea\u3057\u3061\u3083\u3046\uff01\u3067\u3082\u3001\u305d\u306e\u65e5\u3092\u697d\u3057\u307f\u306b\u3057\u3066\u3044\u307e\u3059\u306d\u3002",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 1.0,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.2187761623949553,
+        "bleu4": 0.1778279410038923,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.5,
+        "sbert_similarity": 0.9999999403953552
+      },
+      "latency_seconds": 2.1593568325042725,
+      "token_usage": {
+        "prompt_tokens": 3253,
+        "completion_tokens": 8,
+        "total_tokens": 3261,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Japanese JMSC conversation, what did PP1394-A say in session 1 and what did PP1394-B say in session 2?",
+      "prediction": "Short answer: \u3053\u3093\u306b\u3061\u306f\uff01\u9ce5\u3092\u98fc\u3044\u59cb\u3081\u305f\u306e\u3067\u3059\u304c\u540d\u524d\u3069\u3046\u3057\u3088\u30fc\u3002\u3053\u3093\u306b\u3061\u306f\u3002\u30d4\u30e8\u3061\u3083\u3093\u3068\u304b\u3069\u3046\u3067\u3059\u304b\uff1f",
+      "reference": "Session 1: \u3053\u3093\u306b\u3061\u306f\uff01\u9ce5\u3092\u98fc\u3044\u59cb\u3081\u305f\u306e\u3067\u3059\u304c\u540d\u524d\u3069\u3046\u3057\u3088\u30fc\u3002 Session 2: \u305d\u3046\u3060\u3074\u3088\u3061\u3083\u3093\u3001\u5927\u304d\u304f\u306a\u308a\u307e\u3057\u305f\uff1f\u4eca\u5ea6\u5199\u771f\u898b\u305b\u3066\u304f\u3060\u3055\u3044\u3002",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0.09196986029286058,
+        "bleu2": 0.033582644728665616,
+        "bleu3": 0.02819913640647395,
+        "bleu4": 0.029556479778261396,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.6811659336090088
+      },
+      "latency_seconds": 2.073197603225708,
+      "token_usage": {
+        "prompt_tokens": 3198,
+        "completion_tokens": 14,
+        "total_tokens": 3212,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Japanese JMSC conversation, what did PP1394-A say in session 2 and what did PP1394-B say in session 3?",
+      "prediction": "Session 2: \u3053\u3093\u306b\u3061\u306f\uff01\u9ce5\u3092\u98fc\u3044\u59cb\u3081\u305f\u306e\u3067\u3059\u304c\u540d\u524d\u3069\u3046\u3057\u3088\u30fc\u3002Session 3: \u304a\u4e45\u3057\u3076\u308a\u3067\u3059\uff01\u3053\u306e\u9593\u8a71\u3057\u305f\u5360\u3044\u306e\u7d50\u679c\u304c\u51fa\u307e\u3057\u305f\u3088\u3001\u805e\u304d\u307e\u3059\u304b\uff1f",
+      "reference": "Session 2: \u3053\u3093\u306b\u3061\u306f\uff011\u9031\u9593\u3076\u308a\u304f\u3089\u3044\u3067\u3059\u304b\u306d\uff1f Session 3: \u7f8e\u5473\u3057\u3044\u3067\u3059\u3088\u306d\u30fc\u3002",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.6,
+        "rouge1_f": 0.888888888888889,
+        "rouge2_f": 0.5714285714285715,
+        "rougeL_f": 0.888888888888889,
+        "bleu1": 0.6191984998215584,
+        "bleu2": 0.5180586332905649,
+        "bleu3": 0.3628571451775018,
+        "bleu4": 0.17820132316770917,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.25423728813559315,
+        "sbert_similarity": 0.7639347314834595
+      },
+      "latency_seconds": 2.3787505626678467,
+      "token_usage": {
+        "prompt_tokens": 3261,
+        "completion_tokens": 19,
+        "total_tokens": 3280,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Japanese JMSC conversation, what did PP1394-A say in session 3 and what did PP1394-B say in session 4?",
+      "prediction": "2023-05-08: \u3053\u3093\u306b\u3061\u306f\uff01\u9ce5\u3092\u98fc\u3044\u59cb\u3081\u305f\u306e\u3067\u3059\u304c\u540d\u524d\u3069\u3046\u3057\u3088\u30fc\u3002  \n2023-05-08: \u3053\u3093\u306b\u3061\u306f\u3002\u30d4\u30e8\u3061\u3083\u3093\u3068\u304b\u3069\u3046\u3067\u3059\u304b\uff1f",
+      "reference": "Session 3: \u3074\u3088\u3061\u3083\u3093\u306b\u990c\u3092\u3042\u3052\u3066\u304d\u307e\u3057\u305f\u3002\u7d50\u69cb\u98df\u6b32\u65fa\u76db\u306a\u3093\u3067\u3059\u3088\u3002 Session 4: \u3084\u3063\u305f\uff01\u304a\u6bcd\u3055\u3093\u306b\u3082\u4eca\u304b\u3089\u3053\u306e\u8a71\u3057\u3066\u304d\u307e\u3059\uff01",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0.23884377019126307,
+        "bleu2": 0.05850453652111616,
+        "bleu3": 0.04059244959471284,
+        "bleu4": 0.03478700554542394,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.41159939765930176
+      },
+      "latency_seconds": 2.517815589904785,
+      "token_usage": {
+        "prompt_tokens": 3084,
+        "completion_tokens": 17,
+        "total_tokens": 3101,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Japanese JMSC conversation, what did PP1394-A say in session 4 and what did PP1394-B say in session 5?",
+      "prediction": "2023-08-02: \u3053\u3093\u306b\u3061\u306f\uff01\u9ce5\u3092\u98fc\u3044\u59cb\u3081\u305f\u306e\u3067\u3059\u304c\u540d\u524d\u3069\u3046\u3057\u3088\u30fc\u3002 2023-05-08: \u3053\u3093\u306b\u3061\u306f\u3002\u30d4\u30e8\u3061\u3083\u3093\u3068\u304b\u3069\u3046\u3067\u3059\u304b\uff1f\u308f\u305f\u3057\u306f\u5c0f\u5b66\u751f\u306a\u306e\u3067\u3001\u30bb\u30f3\u30b9\u304c\u7121\u304f\u3066\u3054\u3081\u3093\u306a\u3055\u3044\u3002",
+      "reference": "Session 4: \u3042\u308c\u304b\u3089\u30cb\u30f3\u30b8\u30f3\u306f\u98df\u3079\u308c\u3066\u307e\u3059\u304b\uff1f\u3069\u3046\u3084\u3089\u30d4\u30e8\u3061\u3083\u3093\u3082\u4eba\u53c2\u306f\u82e6\u624b\u3060\u3063\u305f\u307f\u305f\u3044\u3067\u3059\u3002 Session 5: \u3048\u3048\uff01\uff1f\u305d\u3057\u305f\u3089\u30d3\u30c3\u30af\u30ea\u3057\u3061\u3083\u3046\uff01\u3067\u3082\u3001\u305d\u306e\u65e5\u3092\u697d\u3057\u307f\u306b\u3057\u3066\u3044\u307e\u3059\u306d\u3002",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0.23884377019126307,
+        "bleu2": 0.05850453652111616,
+        "bleu3": 0.04059244959471284,
+        "bleu4": 0.03478700554542394,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.43307703733444214
+      },
+      "latency_seconds": 2.7946252822875977,
+      "token_usage": {
+        "prompt_tokens": 3084,
+        "completion_tokens": 23,
+        "total_tokens": 3107,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1394-A's session 1 statement or PP1394-A's session 2 statement?",
+      "prediction": "PP1394-A's session 1 statement",
+      "reference": "Earlier session 1: \u3053\u3093\u306b\u3061\u306f\uff01\u9ce5\u3092\u98fc\u3044\u59cb\u3081\u305f\u306e\u3067\u3059\u304c\u540d\u524d\u3069\u3046\u3057\u3088\u30fc\u3002",
+      "category": 3,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.25,
+        "rouge1_f": 0.4444444444444444,
+        "rouge2_f": 0.28571428571428575,
+        "rougeL_f": 0.4444444444444444,
+        "bleu1": 0.4,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.1522474354853864,
+        "bleu4": 0.11362193664674995,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.125,
+        "sbert_similarity": 0.25827160477638245
+      },
+      "latency_seconds": 1.3503775596618652,
+      "token_usage": {
+        "prompt_tokens": 3068,
+        "completion_tokens": 7,
+        "total_tokens": 3075,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1394-A's session 2 statement or PP1394-A's session 3 statement?",
+      "prediction": "PP1394-A's session 2 statement",
+      "reference": "Earlier session 2: \u3053\u3093\u306b\u3061\u306f\uff011\u9031\u9593\u3076\u308a\u304f\u3089\u3044\u3067\u3059\u304b\u306d\uff1f",
+      "category": 3,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.25,
+        "rouge1_f": 0.4,
+        "rouge2_f": 0.25,
+        "rougeL_f": 0.4,
+        "bleu1": 0.4,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.1522474354853864,
+        "bleu4": 0.11362193664674995,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.125,
+        "sbert_similarity": 0.3519672453403473
+      },
+      "latency_seconds": 1.2834243774414062,
+      "token_usage": {
+        "prompt_tokens": 3068,
+        "completion_tokens": 7,
+        "total_tokens": 3075,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1394-A's session 3 statement or PP1394-A's session 4 statement?",
+      "prediction": "PP1394-A's session 3 statement",
+      "reference": "Earlier session 3: \u3074\u3088\u3061\u3083\u3093\u306b\u990c\u3092\u3042\u3052\u3066\u304d\u307e\u3057\u305f\u3002\u7d50\u69cb\u98df\u6b32\u65fa\u76db\u306a\u3093\u3067\u3059\u3088\u3002",
+      "category": 3,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.25,
+        "rouge1_f": 0.4444444444444444,
+        "rouge2_f": 0.28571428571428575,
+        "rougeL_f": 0.4444444444444444,
+        "bleu1": 0.4,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.1522474354853864,
+        "bleu4": 0.11362193664674995,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.125,
+        "sbert_similarity": 0.3584457039833069
+      },
+      "latency_seconds": 1.4785778522491455,
+      "token_usage": {
+        "prompt_tokens": 3068,
+        "completion_tokens": 7,
+        "total_tokens": 3075,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1394-A's session 4 statement or PP1394-A's session 5 statement?",
+      "prediction": "PP1394-A's session 4 statement",
+      "reference": "Earlier session 4: \u3042\u308c\u304b\u3089\u30cb\u30f3\u30b8\u30f3\u306f\u98df\u3079\u308c\u3066\u307e\u3059\u304b\uff1f\u3069\u3046\u3084\u3089\u30d4\u30e8\u3061\u3083\u3093\u3082\u4eba\u53c2\u306f\u82e6\u624b\u3060\u3063\u305f\u307f\u305f\u3044\u3067\u3059\u3002",
+      "category": 3,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.25,
+        "rouge1_f": 0.4444444444444444,
+        "rouge2_f": 0.28571428571428575,
+        "rougeL_f": 0.4444444444444444,
+        "bleu1": 0.4,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.1522474354853864,
+        "bleu4": 0.11362193664674995,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.125,
+        "sbert_similarity": 0.2801212668418884
+      },
+      "latency_seconds": 1.2354435920715332,
+      "token_usage": {
+        "prompt_tokens": 3068,
+        "completion_tokens": 7,
+        "total_tokens": 3075,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "What general conversational act is shown by PP1394-A's cited turn in the Japanese JMSC conversation?",
+      "prediction": "Greeting and inquiry about the other's activities.",
+      "reference": "greeting or opening the conversation",
+      "category": 4,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.3333333333333333,
+        "rouge1_f": 0.3076923076923077,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.3076923076923077,
+        "bleu1": 0.2222222222222222,
+        "bleu2": 0.05270462766947299,
+        "bleu3": 0.03528075103412339,
+        "bleu4": 0.028517539529041507,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.19230769230769232,
+        "sbert_similarity": 0.660912811756134
+      },
+      "latency_seconds": 1.093578577041626,
+      "token_usage": {
+        "prompt_tokens": 3333,
+        "completion_tokens": 12,
+        "total_tokens": 3345,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "What general conversational act is shown by PP1394-A's cited turn in the Japanese JMSC conversation?",
+      "prediction": "Greeting and introducing a new topic",
+      "reference": "asking a question",
+      "category": 4,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.2222222222222222,
+        "rouge1_f": 0.2222222222222222,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.2222222222222222,
+        "bleu1": 0.16666666666666669,
+        "bleu2": 0.05773502691896258,
+        "bleu3": 0.04506819749679463,
+        "bleu4": 0.040824829046386304,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.15151515151515152,
+        "sbert_similarity": 0.27854272723197937
+      },
+      "latency_seconds": 1.4091906547546387,
+      "token_usage": {
+        "prompt_tokens": 3081,
+        "completion_tokens": 9,
+        "total_tokens": 3090,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    }
+  ]
+}

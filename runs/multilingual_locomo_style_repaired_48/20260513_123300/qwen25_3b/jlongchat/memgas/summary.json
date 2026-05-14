@@ -1,0 +1,26 @@
+{
+  "method": "MemGAS",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "data_path": "/home/stu0032/paper/runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/jlongchat/memgas/locomo10_cat1234.json",
+  "num_records": 200,
+  "runtime_seconds": 527.6195924282074,
+  "runtime_stats": {
+    "latency": {
+      "count": 200,
+      "avg_seconds": 5.874285280704498,
+      "total_seconds": 1174.8570561408997,
+      "max_seconds": 23.343849897384644
+    },
+    "tokens": {
+      "count": 200,
+      "avg_prompt_tokens": 7419.375,
+      "avg_completion_tokens": 35.45,
+      "avg_total_tokens": 7454.825,
+      "total_prompt_tokens": 1483875,
+      "total_completion_tokens": 7090,
+      "total_tokens": 1490965
+    }
+  },
+  "repo_commit": "c2d4e9fdc331074802a711baf4371197f9194399",
+  "notes": "MemGAS quickstart API with local vLLM answer generation."
+}

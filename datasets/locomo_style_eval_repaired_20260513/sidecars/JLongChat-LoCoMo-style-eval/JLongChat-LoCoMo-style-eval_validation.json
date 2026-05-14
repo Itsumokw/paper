@@ -1,0 +1,70 @@
+{
+  "input_files": {
+    "primary": {
+      "path": "datasets/locomo_style_eval_repaired_20260513/primary/JLongChat-LoCoMo-style-eval.json",
+      "sha256": "82d60b13b97c890440c667c512e816a78d5c8911424554c78b5e5deeab845ded"
+    },
+    "provenance": {
+      "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/JLongChat-LoCoMo-style-eval/JLongChat-LoCoMo-style-eval_provenance.jsonl",
+      "sha256": "21c1d0d5f49b1823a40b90c216f078eb111b165f405a5571bb64076afc6b1e13"
+    },
+    "fact_ledger": {
+      "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/JLongChat-LoCoMo-style-eval/JLongChat-LoCoMo-style-eval_fact_ledger.jsonl",
+      "sha256": "0f729af6cd37198350bbb4ba53af1bb3c88493713512f0b09f227ceb8290e5f2"
+    },
+    "qa_audit": {
+      "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/JLongChat-LoCoMo-style-eval/JLongChat-LoCoMo-style-eval_qa_audit.jsonl",
+      "sha256": "4e1b688f19a323ad06de6bac5b1a5fb613a7618c93042762835255e8f7ce2a60"
+    }
+  },
+  "primary": {
+    "path": "datasets/locomo_style_eval_repaired_20260513/primary/JLongChat-LoCoMo-style-eval.json",
+    "samples": 10,
+    "sessions": 114,
+    "turns": 1175,
+    "qa": 220,
+    "categories": {
+      "1": 100,
+      "2": 48,
+      "3": 32,
+      "4": 20,
+      "5": 20
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "provenance": {
+    "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/JLongChat-LoCoMo-style-eval/JLongChat-LoCoMo-style-eval_provenance.jsonl",
+    "rows": 1175,
+    "source_origin_counts": {
+      "original_turn": 1175
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "fact_ledger": {
+    "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/JLongChat-LoCoMo-style-eval/JLongChat-LoCoMo-style-eval_fact_ledger.jsonl",
+    "rows": 1324,
+    "source_types": {
+      "original_memory": 149,
+      "original_turn": 1175
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "qa_audit": {
+    "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/JLongChat-LoCoMo-style-eval/JLongChat-LoCoMo-style-eval_qa_audit.jsonl",
+    "rows": 220,
+    "categories": {
+      "1": 100,
+      "2": 48,
+      "3": 32,
+      "4": 20,
+      "5": 20
+    },
+    "cross_session_qa": 80,
+    "errors": [],
+    "warnings": []
+  },
+  "status": "passed"
+}

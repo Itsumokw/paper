@@ -1027,7 +1027,7 @@ class OmniMemoryOrchestrator:
                     {"role": "user", "content": final_user_content},
                 ],
                 temperature=0.1,
-                max_tokens=int(os.environ.get("OMNI_ANSWER_MAX_TOKENS", "1024")),
+                max_tokens=int(os.environ.get("OMNI_ANSWER_MAX_TOKENS", "8192")),
             )
             # json_object mode forces valid JSON output (critical for concise answer extraction)
             if not isinstance(final_user_content, list):  # skip for multimodal (vision)

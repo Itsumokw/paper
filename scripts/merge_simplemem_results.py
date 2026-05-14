@@ -62,14 +62,26 @@ def _load_result(path: Path) -> dict[str, Any]:
 def merge_results(result_files: list[Path], output_file: Path) -> None:
     merged_detailed: list[dict[str, Any]] = []
     total_samples = 0
+    llm_usage_totals: dict[str, float] = defaultdict(float)
     by_source: list[dict[str, Any]] = []
 
     for path in result_files:
         obj = _load_result(path)
         detailed = obj.get("detailed_results", [])
         summary = obj.get("summary", {})
+        llm_usage = summary.get("llm_usage") or {}
         total_samples += int(summary.get("num_samples", 0) or 0)
         merged_detailed.extend(detailed)
+        for key in ("count", "success_count", "error_count", "prompt_tokens", "completion_tokens", "total_tokens"):
+            llm_usage_totals[key] += float(llm_usage.get(key) or 0)
+        success_count = float(llm_usage.get("success_count") or 0)
+        for key in (
+            "avg_prompt_tokens_per_call",
+            "avg_completion_tokens_per_call",
+            "avg_total_tokens_per_call",
+            "avg_latency_seconds_per_call",
+        ):
+            llm_usage_totals[f"{key}__weighted_sum"] += float(llm_usage.get(key) or 0) * success_count
         by_source.append(
             {
                 "file": str(path),
@@ -90,6 +102,38 @@ def merge_results(result_files: list[Path], output_file: Path) -> None:
             metrics_list.append(metrics)
             categories.append(int(row.get("category", 0) or 0))
 
+    llm_success_count = llm_usage_totals.get("success_count", 0.0)
+    llm_usage_summary = None
+    if llm_usage_totals.get("count", 0.0):
+        llm_usage_summary = {
+            "count": int(llm_usage_totals.get("count", 0)),
+            "success_count": int(llm_success_count),
+            "error_count": int(llm_usage_totals.get("error_count", 0)),
+            "prompt_tokens": int(llm_usage_totals.get("prompt_tokens", 0)),
+            "completion_tokens": int(llm_usage_totals.get("completion_tokens", 0)),
+            "total_tokens": int(llm_usage_totals.get("total_tokens", 0)),
+            "avg_prompt_tokens_per_call": (
+                llm_usage_totals.get("avg_prompt_tokens_per_call__weighted_sum", 0.0) / llm_success_count
+                if llm_success_count
+                else 0.0
+            ),
+            "avg_completion_tokens_per_call": (
+                llm_usage_totals.get("avg_completion_tokens_per_call__weighted_sum", 0.0) / llm_success_count
+                if llm_success_count
+                else 0.0
+            ),
+            "avg_total_tokens_per_call": (
+                llm_usage_totals.get("avg_total_tokens_per_call__weighted_sum", 0.0) / llm_success_count
+                if llm_success_count
+                else 0.0
+            ),
+            "avg_latency_seconds_per_call": (
+                llm_usage_totals.get("avg_latency_seconds_per_call__weighted_sum", 0.0) / llm_success_count
+                if llm_success_count
+                else 0.0
+            ),
+        }
+
     merged_obj = {
         "summary": {
             "num_samples": total_samples,
@@ -97,6 +141,7 @@ def merge_results(result_files: list[Path], output_file: Path) -> None:
             "avg_retrieval_time": statistics.mean(retrieval_times) if retrieval_times else 0.0,
             "avg_answer_time": statistics.mean(answer_times) if answer_times else 0.0,
             "avg_total_time": statistics.mean(total_times) if total_times else 0.0,
+            "llm_usage": llm_usage_summary,
         },
         "aggregated_metrics": _aggregate_metrics(metrics_list, categories),
         "detailed_results": merged_detailed,
@@ -131,4 +176,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

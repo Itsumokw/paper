@@ -1,0 +1,461 @@
+### perltqa 2026-05-13 13:05:02 CST
+judged 25/320
+judged 50/320
+judged 75/320
+judged 100/320
+judged 125/320
+judged 150/320
+judged 175/320
+judged 200/320
+judged 225/320
+judged 250/320
+judged 275/320
+judged 300/320
+judged 320/320
+{
+  "input": "/home/stu0032/paper/runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/perltqa/full_context_fixed/full_context/full_context_predictions_flat.json",
+  "count": 320,
+  "judge": {
+    "model": "Qwen/Qwen2.5-3B-Instruct",
+    "base_url": "http://127.0.0.1:8000/v1",
+    "protocol": "locomo_binary",
+    "protocol_version": "lightmem-locomo-judge-v1",
+    "prompt_name": "locomo-judge",
+    "max_workers": 4,
+    "correct_threshold": 1.0,
+    "acceptable_threshold": 0.5
+  },
+  "overall": {
+    "judge_score": {
+      "mean": 0.2,
+      "count": 320
+    },
+    "judge_correct": {
+      "mean": 0.2,
+      "count": 320,
+      "threshold": 1.0
+    },
+    "judge_acceptable": {
+      "mean": 0.2,
+      "count": 320,
+      "threshold": 0.5
+    },
+    "judge_errors": 0
+  },
+  "categories": {
+    "1": {
+      "judge_score": {
+        "mean": 0.42,
+        "count": 100
+      },
+      "judge_correct": {
+        "mean": 0.42,
+        "count": 100,
+        "threshold": 1.0
+      },
+      "judge_acceptable": {
+        "mean": 0.42,
+        "count": 100,
+        "threshold": 0.5
+      },
+      "judge_errors": 0
+    },
+    "2": {
+      "judge_score": {
+        "mean": 0.03888888888888889,
+        "count": 180
+      },
+      "judge_correct": {
+        "mean": 0.03888888888888889,
+        "count": 180,
+        "threshold": 1.0
+      },
+      "judge_acceptable": {
+        "mean": 0.03888888888888889,
+        "count": 180,
+        "threshold": 0.5
+      },
+      "judge_errors": 0
+    },
+    "3": {
+      "judge_score": {
+        "mean": 0.6,
+        "count": 20
+      },
+      "judge_correct": {
+        "mean": 0.6,
+        "count": 20,
+        "threshold": 1.0
+      },
+      "judge_acceptable": {
+        "mean": 0.6,
+        "count": 20,
+        "threshold": 0.5
+      },
+      "judge_errors": 0
+    },
+    "4": {
+      "judge_score": {
+        "mean": 0.15,
+        "count": 20
+      },
+      "judge_correct": {
+        "mean": 0.15,
+        "count": 20,
+        "threshold": 1.0
+      },
+      "judge_acceptable": {
+        "mean": 0.15,
+        "count": 20,
+        "threshold": 0.5
+      },
+      "judge_errors": 0
+    }
+  },
+  "runtime": {
+    "seconds": 22.876258850097656,
+    "reused_cached": 0
+  }
+}
+### opela 2026-05-13 13:05:26 CST
+judged 25/200
+judged 50/200
+judged 75/200
+judged 100/200
+judged 125/200
+judged 150/200
+judged 175/200
+judged 200/200
+{
+  "input": "/home/stu0032/paper/runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/opela/full_context_fixed/full_context/full_context_predictions_flat.json",
+  "count": 200,
+  "judge": {
+    "model": "Qwen/Qwen2.5-3B-Instruct",
+    "base_url": "http://127.0.0.1:8000/v1",
+    "protocol": "locomo_binary",
+    "protocol_version": "lightmem-locomo-judge-v1",
+    "prompt_name": "locomo-judge",
+    "max_workers": 4,
+    "correct_threshold": 1.0,
+    "acceptable_threshold": 0.5
+  },
+  "overall": {
+    "judge_score": {
+      "mean": 0.35,
+      "count": 200
+    },
+    "judge_correct": {
+      "mean": 0.35,
+      "count": 200,
+      "threshold": 1.0
+    },
+    "judge_acceptable": {
+      "mean": 0.35,
+      "count": 200,
+      "threshold": 0.5
+    },
+    "judge_errors": 0
+  },
+  "categories": {
+    "1": {
+      "judge_score": {
+        "mean": 0.5377358490566038,
+        "count": 106
+      },
+      "judge_correct": {
+        "mean": 0.5377358490566038,
+        "count": 106,
+        "threshold": 1.0
+      },
+      "judge_acceptable": {
+        "mean": 0.5377358490566038,
+        "count": 106,
+        "threshold": 0.5
+      },
+      "judge_errors": 0
+    },
+    "2": {
+      "judge_score": {
+        "mean": 0.09523809523809523,
+        "count": 42
+      },
+      "judge_correct": {
+        "mean": 0.09523809523809523,
+        "count": 42,
+        "threshold": 1.0
+      },
+      "judge_acceptable": {
+        "mean": 0.09523809523809523,
+        "count": 42,
+        "threshold": 0.5
+      },
+      "judge_errors": 0
+    },
+    "3": {
+      "judge_score": {
+        "mean": 0.28125,
+        "count": 32
+      },
+      "judge_correct": {
+        "mean": 0.28125,
+        "count": 32,
+        "threshold": 1.0
+      },
+      "judge_acceptable": {
+        "mean": 0.28125,
+        "count": 32,
+        "threshold": 0.5
+      },
+      "judge_errors": 0
+    },
+    "4": {
+      "judge_score": {
+        "mean": 0.0,
+        "count": 20
+      },
+      "judge_correct": {
+        "mean": 0.0,
+        "count": 20,
+        "threshold": 1.0
+      },
+      "judge_acceptable": {
+        "mean": 0.0,
+        "count": 20,
+        "threshold": 0.5
+      },
+      "judge_errors": 0
+    }
+  },
+  "runtime": {
+    "seconds": 15.53606104850769,
+    "reused_cached": 0
+  }
+}
+### jlongchat 2026-05-13 13:05:42 CST
+judged 25/200
+judged 50/200
+judged 75/200
+judged 100/200
+judged 125/200
+judged 150/200
+judged 175/200
+judged 200/200
+{
+  "input": "/home/stu0032/paper/runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/jlongchat/full_context_fixed/full_context/full_context_predictions_flat.json",
+  "count": 200,
+  "judge": {
+    "model": "Qwen/Qwen2.5-3B-Instruct",
+    "base_url": "http://127.0.0.1:8000/v1",
+    "protocol": "locomo_binary",
+    "protocol_version": "lightmem-locomo-judge-v1",
+    "prompt_name": "locomo-judge",
+    "max_workers": 4,
+    "correct_threshold": 1.0,
+    "acceptable_threshold": 0.5
+  },
+  "overall": {
+    "judge_score": {
+      "mean": 0.295,
+      "count": 200
+    },
+    "judge_correct": {
+      "mean": 0.295,
+      "count": 200,
+      "threshold": 1.0
+    },
+    "judge_acceptable": {
+      "mean": 0.295,
+      "count": 200,
+      "threshold": 0.5
+    },
+    "judge_errors": 0
+  },
+  "categories": {
+    "1": {
+      "judge_score": {
+        "mean": 0.54,
+        "count": 100
+      },
+      "judge_correct": {
+        "mean": 0.54,
+        "count": 100,
+        "threshold": 1.0
+      },
+      "judge_acceptable": {
+        "mean": 0.54,
+        "count": 100,
+        "threshold": 0.5
+      },
+      "judge_errors": 0
+    },
+    "2": {
+      "judge_score": {
+        "mean": 0.020833333333333332,
+        "count": 48
+      },
+      "judge_correct": {
+        "mean": 0.020833333333333332,
+        "count": 48,
+        "threshold": 1.0
+      },
+      "judge_acceptable": {
+        "mean": 0.020833333333333332,
+        "count": 48,
+        "threshold": 0.5
+      },
+      "judge_errors": 0
+    },
+    "3": {
+      "judge_score": {
+        "mean": 0.0625,
+        "count": 32
+      },
+      "judge_correct": {
+        "mean": 0.0625,
+        "count": 32,
+        "threshold": 1.0
+      },
+      "judge_acceptable": {
+        "mean": 0.0625,
+        "count": 32,
+        "threshold": 0.5
+      },
+      "judge_errors": 0
+    },
+    "4": {
+      "judge_score": {
+        "mean": 0.1,
+        "count": 20
+      },
+      "judge_correct": {
+        "mean": 0.1,
+        "count": 20,
+        "threshold": 1.0
+      },
+      "judge_acceptable": {
+        "mean": 0.1,
+        "count": 20,
+        "threshold": 0.5
+      },
+      "judge_errors": 0
+    }
+  },
+  "runtime": {
+    "seconds": 15.040267705917358,
+    "reused_cached": 0
+  }
+}
+### del1l2im 2026-05-13 13:05:58 CST
+judged 25/180
+judged 50/180
+judged 75/180
+judged 100/180
+judged 125/180
+judged 150/180
+judged 175/180
+judged 180/180
+{
+  "input": "/home/stu0032/paper/runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/del1l2im/full_context_fixed/full_context/full_context_predictions_flat.json",
+  "count": 180,
+  "judge": {
+    "model": "Qwen/Qwen2.5-3B-Instruct",
+    "base_url": "http://127.0.0.1:8000/v1",
+    "protocol": "locomo_binary",
+    "protocol_version": "lightmem-locomo-judge-v1",
+    "prompt_name": "locomo-judge",
+    "max_workers": 4,
+    "correct_threshold": 1.0,
+    "acceptable_threshold": 0.5
+  },
+  "overall": {
+    "judge_score": {
+      "mean": 0.20555555555555555,
+      "count": 180
+    },
+    "judge_correct": {
+      "mean": 0.20555555555555555,
+      "count": 180,
+      "threshold": 1.0
+    },
+    "judge_acceptable": {
+      "mean": 0.20555555555555555,
+      "count": 180,
+      "threshold": 0.5
+    },
+    "judge_errors": 0
+  },
+  "categories": {
+    "1": {
+      "judge_score": {
+        "mean": 0.32222222222222224,
+        "count": 90
+      },
+      "judge_correct": {
+        "mean": 0.32222222222222224,
+        "count": 90,
+        "threshold": 1.0
+      },
+      "judge_acceptable": {
+        "mean": 0.32222222222222224,
+        "count": 90,
+        "threshold": 0.5
+      },
+      "judge_errors": 0
+    },
+    "2": {
+      "judge_score": {
+        "mean": 0.037037037037037035,
+        "count": 54
+      },
+      "judge_correct": {
+        "mean": 0.037037037037037035,
+        "count": 54,
+        "threshold": 1.0
+      },
+      "judge_acceptable": {
+        "mean": 0.037037037037037035,
+        "count": 54,
+        "threshold": 0.5
+      },
+      "judge_errors": 0
+    },
+    "3": {
+      "judge_score": {
+        "mean": 0.3333333333333333,
+        "count": 18
+      },
+      "judge_correct": {
+        "mean": 0.3333333333333333,
+        "count": 18,
+        "threshold": 1.0
+      },
+      "judge_acceptable": {
+        "mean": 0.3333333333333333,
+        "count": 18,
+        "threshold": 0.5
+      },
+      "judge_errors": 0
+    },
+    "4": {
+      "judge_score": {
+        "mean": 0.0,
+        "count": 18
+      },
+      "judge_correct": {
+        "mean": 0.0,
+        "count": 18,
+        "threshold": 1.0
+      },
+      "judge_acceptable": {
+        "mean": 0.0,
+        "count": 18,
+        "threshold": 0.5
+      },
+      "judge_errors": 0
+    }
+  },
+  "runtime": {
+    "seconds": 13.811554193496704,
+    "reused_cached": 0
+  }
+}

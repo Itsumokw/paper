@@ -1,0 +1,1560 @@
+{
+  "input": "/home/stu0032/paper/runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen3_8b/del1l2im/simplemem/normalized_predictions_cat1_4.json",
+  "count": 180,
+  "bertscore": {
+    "enabled": true,
+    "model": "/home/stu0032/.cache/huggingface/hub/models--roberta-large/snapshots/722cf37b1afa9454edce342e7895e588b6ff1d59",
+    "error": null
+  },
+  "overall": {
+    "f1": {
+      "mean": 0.3857142530246613,
+      "count": 180
+    },
+    "bleu1": {
+      "mean": 0.3275036670072495,
+      "count": 180
+    },
+    "rouge_l": {
+      "mean": 0.38809296050978165,
+      "count": 180
+    },
+    "bertscore_f1": {
+      "mean": 0.8700583871867922,
+      "count": 180
+    }
+  },
+  "runtime": {
+    "latency": {
+      "mean_seconds": 75.48330237997902,
+      "total_seconds": 13586.994428396225,
+      "max_seconds": 92.4261155128479,
+      "count": 180
+    },
+    "tokens": {
+      "avg_prompt_tokens": 27.094444444444445,
+      "avg_completion_tokens": 8.227777777777778,
+      "avg_total_tokens": 35.32222222222222,
+      "total_prompt_tokens": 4877,
+      "total_completion_tokens": 1481,
+      "total_tokens": 6358,
+      "count": 180
+    }
+  },
+  "categories": {
+    "1": {
+      "f1": {
+        "mean": 0.6336394061701416,
+        "count": 90
+      },
+      "bleu1": {
+        "mean": 0.5559212604159045,
+        "count": 90
+      },
+      "rouge_l": {
+        "mean": 0.6325867924420893,
+        "count": 90
+      },
+      "bertscore_f1": {
+        "mean": 0.9144227471616533,
+        "count": 90
+      }
+    },
+    "2": {
+      "f1": {
+        "mean": 0.10556419884814898,
+        "count": 54
+      },
+      "bleu1": {
+        "mean": 0.08950190213842107,
+        "count": 54
+      },
+      "rouge_l": {
+        "mean": 0.12031309874708007,
+        "count": 54
+      },
+      "bertscore_f1": {
+        "mean": 0.8168114357524447,
+        "count": 54
+      }
+    },
+    "3": {
+      "f1": {
+        "mean": 0.2823058129043681,
+        "count": 18
+      },
+      "bleu1": {
+        "mean": 0.1727800697702568,
+        "count": 18
+      },
+      "rouge_l": {
+        "mean": 0.26710925669903995,
+        "count": 18
+      },
+      "bertscore_f1": {
+        "mean": 0.8308892349402109,
+        "count": 18
+      }
+    },
+    "4": {
+      "f1": {
+        "mean": 0.08994708994708994,
+        "count": 18
+      },
+      "bleu1": {
+        "mean": 0.05414459180745265,
+        "count": 18
+      },
+      "rouge_l": {
+        "mean": 0.08994708994708994,
+        "count": 18
+      },
+      "bertscore_f1": {
+        "mean": 0.8471465938621097,
+        "count": 18
+      }
+    }
+  },
+  "per_item": [
+    {
+      "category": "1",
+      "question": "In session 1 of the German deL1L2IM conversation, what did N01 say in the turn about \"So, hallo, erstmal. Ich bin NATIVE01_...\"?",
+      "f1": 0.5,
+      "bleu1": 0.1353352832366127,
+      "rouge_l": 0.5,
+      "bertscore_f1": 0.8471410274505615
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the German deL1L2IM conversation, what did N01 say in the turn about \"Hey LEARNER01_FN, guten Abend!\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0000001192092896
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the German deL1L2IM conversation, what did L01 say in the turn about \"Hallo!))\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.8627941012382507
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the German deL1L2IM conversation, what did N01 say in the turn about \"Guten Abend! Geht es dir heute wieder...\"?",
+      "f1": 0.9333333333333333,
+      "bleu1": 0.8668778997501817,
+      "rouge_l": 0.9333333333333333,
+      "bertscore_f1": 0.9584915041923523
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the German deL1L2IM conversation, what did L01 say in the turn about \"Hallo!!!\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.8985415697097778
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the German deL1L2IM conversation, what did N01 say in the turn about \"Einen sch\u00f6nen guten Abend! Und: Nacht...\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7680469155311584
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the German deL1L2IM conversation, what did L01 say in the turn about \"Hallo!!!!!!!!!!!\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.8668780326843262
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the German deL1L2IM conversation, what did N01 say in the turn about \"Einen sch\u00f6nen guten Abend! Wie geht e...\"?",
+      "f1": 0.6153846153846154,
+      "bleu1": 0.43904930887522114,
+      "rouge_l": 0.6153846153846154,
+      "bertscore_f1": 0.8996773958206177
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the German deL1L2IM conversation, what did L01 say in the turn about \"Tsch\u00fcss.\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7877703905105591
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the German deL1L2IM conversation, what did L01 say in the turn about \"Danke, guteNacht\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did N01 say in session 1 and what did L01 say in session 2?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8233625292778015
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did N01 say in session 2 and what did L01 say in session 3?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8236091732978821
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L01 say in session 3 and what did N01 say in session 4?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8293745517730713
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did N01 say in session 4 and what did L01 say in session 5?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7952930927276611
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L01 say in session 5 and what did N01 say in session 6?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8217721581459045
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did N01 say in session 6 and what did N01 say in session 7?",
+      "f1": 0.19999999999999998,
+      "bleu1": 0.07307340962109385,
+      "rouge_l": 0.21621621621621623,
+      "bertscore_f1": 0.8353345990180969
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: N01's session 1 statement or N01's session 2 statement?",
+      "f1": 0.23529411764705882,
+      "bleu1": 0.0986387855766426,
+      "rouge_l": 0.23529411764705882,
+      "bertscore_f1": 0.8456610441207886
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: N01's session 2 statement or L01's session 3 statement?",
+      "f1": 0.3076923076923077,
+      "bleu1": 0.21952465443761057,
+      "rouge_l": 0.3076923076923077,
+      "bertscore_f1": 0.8477771878242493
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by N01's cited turn in the German deL1L2IM conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8457056879997253
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by N01's cited turn in the German deL1L2IM conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.856927752494812
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the German deL1L2IM conversation, what did L02 say in the turn about \"Hallo! Ich hei\u00dfe LEARNER02_FN. Wie ge...\"?",
+      "f1": 0.7999999999999999,
+      "bleu1": 0.7430381997858699,
+      "rouge_l": 0.7999999999999999,
+      "bertscore_f1": 0.9693145155906677
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the German deL1L2IM conversation, what did L02 say in the turn about \"Guten Abend, NATIVE01_FN!\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the German deL1L2IM conversation, what did L02 say in the turn about \"Guten Abend, NATIVE01_FN! Wie geht's?...\"?",
+      "f1": 0.6086956521739131,
+      "bleu1": 0.27645304662956444,
+      "rouge_l": 0.6086956521739131,
+      "bertscore_f1": 0.9170564413070679
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the German deL1L2IM conversation, what did N01 say in the turn about \"Einen sch\u00f6nen guten Abend! Alles klar...\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7834109663963318
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the German deL1L2IM conversation, what did L02 say in the turn about \"Guten Abend!\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the German deL1L2IM conversation, what did L02 say in the turn about \"Guten Abend!\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8200178742408752
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the German deL1L2IM conversation, what did N01 say in the turn about \"Hey LEARNER02_FN!\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8267766833305359
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the German deL1L2IM conversation, what did N01 say in the turn about \"Hey LEARNER02_FN!\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8226796388626099
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the German deL1L2IM conversation, what did N01 say in the turn about \"Bestens! Bis dahin! Tsch\u00fcss.\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the German deL1L2IM conversation, what did N01 say in the turn about \"Tsch\u00fcss und gute Nacht!\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7906243205070496
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L02 say in session 1 and what did N01 say in session 2?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8192922472953796
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L02 say in session 2 and what did N01 say in session 3?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8117345571517944
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L02 say in session 3 and what did N01 say in session 4?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7993449568748474
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did N01 say in session 4 and what did N01 say in session 5?",
+      "f1": 0.28571428571428575,
+      "bleu1": 0.2963272882726872,
+      "rouge_l": 0.34782608695652173,
+      "bertscore_f1": 0.8493053913116455
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L02 say in session 5 and what did L02 say in session 6?",
+      "f1": 0.42857142857142855,
+      "bleu1": 0.5,
+      "rouge_l": 0.5,
+      "bertscore_f1": 0.888209342956543
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L02 say in session 6 and what did N01 say in session 7?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8158059120178223
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L02's session 1 statement or L02's session 2 statement?",
+      "f1": 0.25000000000000006,
+      "bleu1": 0.12047768476488081,
+      "rouge_l": 0.12500000000000003,
+      "bertscore_f1": 0.8328669667243958
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L02's session 2 statement or L02's session 3 statement?",
+      "f1": 0.3333333333333333,
+      "bleu1": 0.26812801841425576,
+      "rouge_l": 0.3333333333333333,
+      "bertscore_f1": 0.8657292723655701
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by L02's cited turn in the German deL1L2IM conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8212078809738159
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by L02's cited turn in the German deL1L2IM conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8386148810386658
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the German deL1L2IM conversation, what did L03 say in the turn about \"Hallo! Entschuldigung, Ich wei\u00df nicht...\"?",
+      "f1": 0.5555555555555556,
+      "bleu1": 0.1353352832366127,
+      "rouge_l": 0.5,
+      "bertscore_f1": 0.9336824417114258
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the German deL1L2IM conversation, what did L03 say in the turn about \"Hallo, NATIVE02_FN! Wie geht`s? Wie h...\"?",
+      "f1": 0.631578947368421,
+      "bleu1": 0.4683537499541165,
+      "rouge_l": 0.6666666666666667,
+      "bertscore_f1": 0.9178879857063293
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the German deL1L2IM conversation, what did L03 say in the turn about \"Hallo, NATIVE02_FN! Wie geht\u00b4s? wie w...\"?",
+      "f1": 0.7142857142857143,
+      "bleu1": 0.6441233940645307,
+      "rouge_l": 0.75,
+      "bertscore_f1": 0.9419751763343811
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the German deL1L2IM conversation, what did L03 say in the turn about \"Hallo, NATIVE02_FN, ich sehe, dass du...\"?",
+      "f1": 0.8235294117647058,
+      "bleu1": 0.6514390575310556,
+      "rouge_l": 0.8235294117647058,
+      "bertscore_f1": 0.9592418670654297
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the German deL1L2IM conversation, what did L03 say in the turn about \"Tag, NATIVE02_FN! wie geht\u00b4s? wie war...\"?",
+      "f1": 0.8571428571428571,
+      "bleu1": 0.7514772930752859,
+      "rouge_l": 0.8750000000000001,
+      "bertscore_f1": 0.9444093704223633
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the German deL1L2IM conversation, what did L03 say in the turn about \"Hi, NATIVE02_FN! wie geht`s?\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9793511033058167
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the German deL1L2IM conversation, what did L03 say in the turn about \"Hi, NATIVE02_FN!!!! bist du online? a...\"?",
+      "f1": 0.7499999999999999,
+      "bleu1": 0.513417119032592,
+      "rouge_l": 0.7499999999999999,
+      "bertscore_f1": 0.9272584915161133
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the German deL1L2IM conversation, what did L03 say in the turn about \"Hi, wie geht\u00b4s?\"?",
+      "f1": 0.4444444444444444,
+      "bleu1": 0.3333333333333333,
+      "rouge_l": 0.4444444444444444,
+      "bertscore_f1": 0.9297597408294678
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the German deL1L2IM conversation, what did L03 say in the turn about \"bis Mittwoch!\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.834648072719574
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the German deL1L2IM conversation, what did N02 say in the turn about \"Danke, dir auch!!\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.807117223739624
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L03 say in session 1 and what did N02 say in session 2?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8168821930885315
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L03 say in session 2 and what did L03 say in session 3?",
+      "f1": 0.25,
+      "bleu1": 0.16262786389623968,
+      "rouge_l": 0.27586206896551724,
+      "bertscore_f1": 0.8340216279029846
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L03 say in session 3 and what did N02 say in session 4?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8015666007995605
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L03 say in session 4 and what did L03 say in session 5?",
+      "f1": 0.25,
+      "bleu1": 0.252779610326865,
+      "rouge_l": 0.30769230769230765,
+      "bertscore_f1": 0.838259220123291
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L03 say in session 5 and what did N02 say in session 6?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7999220490455627
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L03 say in session 6 and what did N02 say in session 7?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7760449051856995
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L03's session 1 statement or L03's session 2 statement?",
+      "f1": 0.21052631578947364,
+      "bleu1": 0.054134113294645084,
+      "rouge_l": 0.2,
+      "bertscore_f1": 0.809249222278595
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L03's session 2 statement or L03's session 3 statement?",
+      "f1": 0.3157894736842105,
+      "bleu1": 0.08120116994196762,
+      "rouge_l": 0.2,
+      "bertscore_f1": 0.8056889772415161
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by L03's cited turn in the German deL1L2IM conversation?",
+      "f1": 0.3333333333333333,
+      "bleu1": 0.18393972058572117,
+      "rouge_l": 0.3333333333333333,
+      "bertscore_f1": 0.8507706522941589
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by L03's cited turn in the German deL1L2IM conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8202453851699829
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the German deL1L2IM conversation, what did N02 say in the turn about \"Hallo LEARNER04_FN :)\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7920967936515808
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the German deL1L2IM conversation, what did L04 say in the turn about \"Hallo, NATIVE02_FN)\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9715064167976379
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the German deL1L2IM conversation, what did L04 say in the turn about \"hi, NATIVE02_FN. wie gehts dir?\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7998997569084167
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the German deL1L2IM conversation, what did L04 say in the turn about \"Hallo, NATIVE02_FN)\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9715064167976379
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the German deL1L2IM conversation, what did L04 say in the turn about \"hallo, NATIVE02_FN\"?",
+      "f1": 0.6666666666666666,
+      "bleu1": 0.6666666666666666,
+      "rouge_l": 0.6666666666666666,
+      "bertscore_f1": 0.9244785904884338
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the German deL1L2IM conversation, what did L04 say in the turn about \"hallo, NATIVE02_FN))\"?",
+      "f1": 0.6666666666666666,
+      "bleu1": 0.6666666666666666,
+      "rouge_l": 0.6666666666666666,
+      "bertscore_f1": 0.8975306749343872
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the German deL1L2IM conversation, what did L04 say in the turn about \"Hallo, NATIVE02_FN!! Wie gehts dir?\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the German deL1L2IM conversation, what did L04 say in the turn about \"hallo, NATIVE02_FN! wie gehts dir?\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.99229896068573
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the German deL1L2IM conversation, what did N02 say in the turn about \"Danke auch, sch\u00f6nen Abend noch\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999998807907104
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the German deL1L2IM conversation, what did N02 say in the turn about \"gerne, nichts zu danken :)\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did N02 say in session 1 and what did N02 say in session 2?",
+      "f1": 0.2608695652173913,
+      "bleu1": 0.26666666666666666,
+      "rouge_l": 0.30769230769230765,
+      "bertscore_f1": 0.834096372127533
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L04 say in session 2 and what did L04 say in session 3?",
+      "f1": 0.42857142857142855,
+      "bleu1": 0.4444444444444444,
+      "rouge_l": 0.47058823529411764,
+      "bertscore_f1": 0.8563980460166931
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L04 say in session 3 and what did N02 say in session 4?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8152440786361694
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L04 say in session 4 and what did L04 say in session 5?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7990513443946838
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L04 say in session 5 and what did L04 say in session 6?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7979549765586853
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L04 say in session 6 and what did N02 say in session 7?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8209474682807922
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: N02's session 1 statement or L04's session 2 statement?",
+      "f1": 0.3636363636363636,
+      "bleu1": 0.3274923012311928,
+      "rouge_l": 0.3636363636363636,
+      "bertscore_f1": 0.855554461479187
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L04's session 2 statement or L04's session 3 statement?",
+      "f1": 0.3636363636363636,
+      "bleu1": 0.3274923012311928,
+      "rouge_l": 0.3636363636363636,
+      "bertscore_f1": 0.8485091328620911
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by N02's cited turn in the German deL1L2IM conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.849308967590332
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by L04's cited turn in the German deL1L2IM conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.849308967590332
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the German deL1L2IM conversation, what did L05 say in the turn about \"Guten Abend, ich hei\u00dfe LEARNER05_FN,...\"?",
+      "f1": 0.5714285714285715,
+      "bleu1": 0.1353352832366127,
+      "rouge_l": 0.5,
+      "bertscore_f1": 0.9118908047676086
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the German deL1L2IM conversation, what did L05 say in the turn about \"Hallo, NATIVE02_FN! Wie geht es?\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the German deL1L2IM conversation, what did L05 say in the turn about \"Hallo!!!! Wie war dein Tag? Ich hoffe...\"?",
+      "f1": 0.26666666666666666,
+      "bleu1": 0.17113903967753066,
+      "rouge_l": 0.25,
+      "bertscore_f1": 0.8439677357673645
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the German deL1L2IM conversation, what did L05 say in the turn about \"Hallo! Wie geht es? Wie waren deine A...\"?",
+      "f1": 0.923076923076923,
+      "bleu1": 0.8668778997501817,
+      "rouge_l": 0.9333333333333333,
+      "bertscore_f1": 0.9521543979644775
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the German deL1L2IM conversation, what did L05 say in the turn about \"Hallo! Entschuldig mich f\u00fcr meine Ver...\"?",
+      "f1": 0.4444444444444444,
+      "bleu1": 0.1615172143957243,
+      "rouge_l": 0.4444444444444444,
+      "bertscore_f1": 0.8615726232528687
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the German deL1L2IM conversation, what did L05 say in the turn about \"Hallo, meine liebe NATIVE02_FN! Bitte...\"?",
+      "f1": 0.5454545454545454,
+      "bleu1": 0.18887560283756186,
+      "rouge_l": 0.5454545454545454,
+      "bertscore_f1": 0.9183236360549927
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the German deL1L2IM conversation, what did L05 say in the turn about \"Hallo, wie geht es dir?\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the German deL1L2IM conversation, what did L05 say in the turn about \"Hallo, NATIVE02_FN! Wie geht es? Wie...\"?",
+      "f1": 0.8,
+      "bleu1": 0.513417119032592,
+      "rouge_l": 0.7499999999999999,
+      "bertscore_f1": 0.9501144289970398
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the German deL1L2IM conversation, what did N02 say in the turn about \"hat mich auch gefreut\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the German deL1L2IM conversation, what did N02 say in the turn about \"super :)\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8177645206451416
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L05 say in session 1 and what did N02 say in session 2?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8219735622406006
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L05 say in session 2 and what did L05 say in session 3?",
+      "f1": 0.3157894736842105,
+      "bleu1": 0.31845836025501745,
+      "rouge_l": 0.380952380952381,
+      "bertscore_f1": 0.831677258014679
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L05 say in session 3 and what did L05 say in session 4?",
+      "f1": 0.20689655172413796,
+      "bleu1": 0.233379551744786,
+      "rouge_l": 0.25,
+      "bertscore_f1": 0.8309060335159302
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L05 say in session 4 and what did N02 say in session 5?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8075419664382935
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L05 say in session 5 and what did N02 say in session 6?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7910251617431641
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L05 say in session 6 and what did L05 say in session 7?",
+      "f1": 0.22222222222222224,
+      "bleu1": 0.19244121509092738,
+      "rouge_l": 0.27586206896551724,
+      "bertscore_f1": 0.8202376961708069
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L05's session 1 statement or L05's session 2 statement?",
+      "f1": 0.2222222222222222,
+      "bleu1": 0.054134113294645084,
+      "rouge_l": 0.2,
+      "bertscore_f1": 0.8244932889938354
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L05's session 2 statement or L05's session 3 statement?",
+      "f1": 0.2857142857142857,
+      "bleu1": 0.17973158564688863,
+      "rouge_l": 0.2857142857142857,
+      "bertscore_f1": 0.829523503780365
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by L05's cited turn in the German deL1L2IM conversation?",
+      "f1": 0.3333333333333333,
+      "bleu1": 0.18393972058572117,
+      "rouge_l": 0.3333333333333333,
+      "bertscore_f1": 0.8507707118988037
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by L05's cited turn in the German deL1L2IM conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8397300243377686
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the German deL1L2IM conversation, what did N03 say in the turn about \"hallo, ich bin NATIVE03_FN\"?",
+      "f1": 0.5714285714285715,
+      "bleu1": 0.22313016014842982,
+      "rouge_l": 0.5714285714285715,
+      "bertscore_f1": 0.8713669776916504
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the German deL1L2IM conversation, what did N03 say in the turn about \"hi LEARNER06_FN\"?",
+      "f1": 0.5714285714285715,
+      "bleu1": 0.5,
+      "rouge_l": 0.5714285714285715,
+      "bertscore_f1": 0.9073998332023621
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the German deL1L2IM conversation, what did N03 say in the turn about \"Hi LEARNER06_FN\"?",
+      "f1": 0.5,
+      "bleu1": 0.4,
+      "rouge_l": 0.5,
+      "bertscore_f1": 0.8974090814590454
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the German deL1L2IM conversation, what did L06 say in the turn about \"hallo! ich bin schon frei und kann ei...\"?",
+      "f1": 0.6363636363636364,
+      "bleu1": 0.41332073364838784,
+      "rouge_l": 0.6363636363636364,
+      "bertscore_f1": 0.9122867584228516
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the German deL1L2IM conversation, what did L06 say in the turn about \"Hallo, NATIVE03_FN. Bist du da?\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8124147057533264
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the German deL1L2IM conversation, what did L06 say in the turn about \"Hallo, NATIVE03_FN! Bist du da?\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.805254340171814
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the German deL1L2IM conversation, what did L06 say in the turn about \"Hallo,NATIVE03_FN! Bist du da? Wie ge...\"?",
+      "f1": 0.7777777777777777,
+      "bleu1": 0.6814506851874793,
+      "rouge_l": 0.7777777777777777,
+      "bertscore_f1": 0.9647541046142578
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the German deL1L2IM conversation, what did N03 say in the turn about \"danke, dir auch.bis montag\"?",
+      "f1": 0.5714285714285715,
+      "bleu1": 0.22313016014842982,
+      "rouge_l": 0.5714285714285715,
+      "bertscore_f1": 0.8803845047950745
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the German deL1L2IM conversation, what did N03 say in the turn about \"mache ich\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8020378351211548
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the German deL1L2IM conversation, what did N03 say in the turn about \"Bis morgen\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8059087991714478
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did N03 say in session 1 and what did N03 say in session 2?",
+      "f1": 0.2105263157894737,
+      "bleu1": 0.18096748360719192,
+      "rouge_l": 0.1904761904761905,
+      "bertscore_f1": 0.8170285820960999
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did N03 say in session 2 and what did N03 say in session 3?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8046897053718567
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did N03 say in session 3 and what did L06 say in session 4?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8124029636383057
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L06 say in session 4 and what did N03 say in session 5?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7868326902389526
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L06 say in session 5 and what did L06 say in session 6?",
+      "f1": 0.21428571428571427,
+      "bleu1": 0.14650557146513926,
+      "rouge_l": 0.25,
+      "bertscore_f1": 0.8301567435264587
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L06 say in session 6 and what did N03 say in session 7?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7889583706855774
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: N03's session 1 statement or N03's session 2 statement?",
+      "f1": 0.3076923076923077,
+      "bleu1": 0.21952465443761057,
+      "rouge_l": 0.3076923076923077,
+      "bertscore_f1": 0.8531211018562317
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: N03's session 2 statement or N03's session 3 statement?",
+      "f1": 0.3636363636363636,
+      "bleu1": 0.3274923012311928,
+      "rouge_l": 0.3636363636363636,
+      "bertscore_f1": 0.8609382510185242
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by N03's cited turn in the German deL1L2IM conversation?",
+      "f1": 0.28571428571428575,
+      "bleu1": 0.23884377019126307,
+      "rouge_l": 0.28571428571428575,
+      "bertscore_f1": 0.8649555444717407
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by N03's cited turn in the German deL1L2IM conversation?",
+      "f1": 0.3333333333333333,
+      "bleu1": 0.18393972058572117,
+      "rouge_l": 0.3333333333333333,
+      "bertscore_f1": 0.8507707118988037
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the German deL1L2IM conversation, what did N03 say in the turn about \"hallo, ich bin NATIVE03_FN\"?",
+      "f1": 0.5714285714285715,
+      "bleu1": 0.22313016014842982,
+      "rouge_l": 0.5714285714285715,
+      "bertscore_f1": 0.8713669776916504
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the German deL1L2IM conversation, what did N03 say in the turn about \"hallo LEARNER07_FN\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8107650876045227
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the German deL1L2IM conversation, what did L07 say in the turn about \"Hallo!!!!\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.000000238418579
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the German deL1L2IM conversation, what did L07 say in the turn about \"ich bin da..!!! und du ?\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0000001192092896
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the German deL1L2IM conversation, what did L07 say in the turn about \"Hallo, NATIVE03_FN!! \u00b4\u00b4)\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0000001192092896
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the German deL1L2IM conversation, what did L07 say in the turn about \"Guten morgen, NATIVE03_FN. bist du da...\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9599054455757141
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the German deL1L2IM conversation, what did N03 say in the turn about \"hi LEARNER07_FN\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8249468207359314
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the German deL1L2IM conversation, what did L07 say in the turn about \"Guten abend..**)\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 9 of the German deL1L2IM conversation, what did L07 say in the turn about \"Guten morgen!\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the German deL1L2IM conversation, what did N03 say in the turn about \"dir auch,ciao\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0000001192092896
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did N03 say in session 1 and what did N03 say in session 2?",
+      "f1": 0.3,
+      "bleu1": 0.23618327637050734,
+      "rouge_l": 0.36363636363636365,
+      "bertscore_f1": 0.8334127068519592
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did N03 say in session 2 and what did L07 say in session 3?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.799865186214447
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L07 say in session 3 and what did N03 say in session 4?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7991811633110046
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L07 say in session 4 and what did L07 say in session 5?",
+      "f1": 0.2727272727272727,
+      "bleu1": 0.22818538623670756,
+      "rouge_l": 0.33333333333333337,
+      "bertscore_f1": 0.8485015034675598
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L07 say in session 5 and what did N03 say in session 6?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8003402948379517
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L07 say in session 6 and what did N03 say in session 7?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8136013150215149
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: N03's session 1 statement or N03's session 2 statement?",
+      "f1": 0.3076923076923077,
+      "bleu1": 0.21952465443761057,
+      "rouge_l": 0.3076923076923077,
+      "bertscore_f1": 0.8531211018562317
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: N03's session 2 statement or L07's session 3 statement?",
+      "f1": 0.3636363636363636,
+      "bleu1": 0.3274923012311928,
+      "rouge_l": 0.3636363636363636,
+      "bertscore_f1": 0.8614509701728821
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by N03's cited turn in the German deL1L2IM conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8376572132110596
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by N03's cited turn in the German deL1L2IM conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.856430172920227
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the German deL1L2IM conversation, what did L08 say in the turn about \"\u043b\u0430\u043d, \u0431\u0443\u0434\u0443 \u0436\u0434\u0430\u0442\u044c))\u0430 \u0442\u043e \u043f\u043e\u0434\u0443\u043c\u0430\u0435\u0442:\u043d\u0435\u043d\u0430\u0441\u044b...\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999998807907104
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the German deL1L2IM conversation, what did N04 say in the turn about \"Hallo LEARNER08_FN, soweit ich mich e...\"?",
+      "f1": 0.2105263157894737,
+      "bleu1": 0.031963930603353785,
+      "rouge_l": 0.2105263157894737,
+      "bertscore_f1": 0.8034116625785828
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the German deL1L2IM conversation, what did L08 say in the turn about \"NATIVE04_FN, wo bist du verschwunden?))\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7829017043113708
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the German deL1L2IM conversation, what did N04 say in the turn about \"Hallo, sorry, bin erst heute wieder d...\"?",
+      "f1": 0.8750000000000001,
+      "bleu1": 0.7514772930752859,
+      "rouge_l": 0.8750000000000001,
+      "bertscore_f1": 0.9694083333015442
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the German deL1L2IM conversation, what did L08 say in the turn about \"hi!)NATIVE04_FN, bist du hier?\"?",
+      "f1": 0.6666666666666666,
+      "bleu1": 0.36787944117144233,
+      "rouge_l": 0.6666666666666666,
+      "bertscore_f1": 0.8783188462257385
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the German deL1L2IM conversation, what did L08 say in the turn about \"hi, NATIVE04_FN)\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9616410136222839
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the German deL1L2IM conversation, what did L08 say in the turn about \"hi, NATIVE04_FN)\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9616410136222839
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the German deL1L2IM conversation, what did L08 say in the turn about \"hallo, NATIVE04_FN)\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the German deL1L2IM conversation, what did L08 say in the turn about \"ok)see you))\"?",
+      "f1": 0.5,
+      "bleu1": 0.1353352832366127,
+      "rouge_l": 0.5,
+      "bertscore_f1": 0.8298947811126709
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the German deL1L2IM conversation, what did N04 say in the turn about \"Verzeihung, musste grad was erledigen...\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7946628332138062
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L08 say in session 1 and what did N04 say in session 2?",
+      "f1": 0.05555555555555555,
+      "bleu1": 0.03790816623203959,
+      "rouge_l": 0.05,
+      "bertscore_f1": 0.7561467289924622
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did N04 say in session 2 and what did N04 say in session 3?",
+      "f1": 0.1081081081081081,
+      "bleu1": 0.015981965301676893,
+      "rouge_l": 0.10526315789473685,
+      "bertscore_f1": 0.7879658341407776
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L08 say in session 3 and what did N04 say in session 4?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8070893883705139
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did N04 say in session 4 and what did L08 say in session 5?",
+      "f1": 0.1,
+      "bleu1": 0.018143590657882503,
+      "rouge_l": 0.0909090909090909,
+      "bertscore_f1": 0.8020969033241272
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L08 say in session 5 and what did L08 say in session 6?",
+      "f1": 0.28571428571428575,
+      "bleu1": 0.2963272882726872,
+      "rouge_l": 0.34782608695652173,
+      "bertscore_f1": 0.850104808807373
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L08 say in session 6 and what did L08 say in session 7?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7670696973800659
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L08's session 1 statement or N04's session 2 statement?",
+      "f1": 0.25000000000000006,
+      "bleu1": 0.12047768476488081,
+      "rouge_l": 0.25000000000000006,
+      "bertscore_f1": 0.7385709285736084
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: N04's session 2 statement or L08's session 3 statement?",
+      "f1": 0.19047619047619047,
+      "bleu1": 0.044321263344933554,
+      "rouge_l": 0.19047619047619047,
+      "bertscore_f1": 0.8013173341751099
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by L08's cited turn in the German deL1L2IM conversation?",
+      "f1": 0.3333333333333333,
+      "bleu1": 0.18393972058572117,
+      "rouge_l": 0.3333333333333333,
+      "bertscore_f1": 0.9065201878547668
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by N04's cited turn in the German deL1L2IM conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8370583653450012
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the German deL1L2IM conversation, what did L09 say in the turn about \"Hallo NATIVE04_FN!Gehts mit chat heut...\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the German deL1L2IM conversation, what did L09 say in the turn about \"Hallo NATIVE04_FN! Keine Sorgen. Ich...\"?",
+      "f1": 0.47619047619047616,
+      "bleu1": 0.11080315836233387,
+      "rouge_l": 0.47619047619047616,
+      "bertscore_f1": 0.9177215695381165
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the German deL1L2IM conversation, what did N04 say in the turn about \"hallo LEARNER09_FN, bist Du da?\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9977615475654602
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the German deL1L2IM conversation, what did N04 say in the turn about \"Sch\u00f6nen guten Tag LEARNER09_FN, bist...\"?",
+      "f1": 0.7142857142857143,
+      "bleu1": 0.5971094254781577,
+      "rouge_l": 0.7142857142857143,
+      "bertscore_f1": 0.8872236013412476
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the German deL1L2IM conversation, what did L09 say in the turn about \"Privet NATIVE04_FN!gehts mit chat heute?\"?",
+      "f1": 0.6666666666666665,
+      "bleu1": 0.5454545454545454,
+      "rouge_l": 0.6666666666666665,
+      "bertscore_f1": 0.9191244840621948
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the German deL1L2IM conversation, what did N04 say in the turn about \"hi, bist Du da?\"?",
+      "f1": 0.6,
+      "bleu1": 0.5,
+      "rouge_l": 0.6,
+      "bertscore_f1": 0.8684753775596619
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the German deL1L2IM conversation, what did N04 say in the turn about \"Hallo LEARNER09_FN, bist Du da?\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0000001192092896
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the German deL1L2IM conversation, what did L09 say in the turn about \"gute nacht!\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0000001192092896
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the German deL1L2IM conversation, what did L09 say in the turn about \"sch\u00f6nen sonntag f\u00fcr dich\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the German deL1L2IM conversation, what did L09 say in the turn about \"gute nacht!\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0000001192092896
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L09 say in session 1 and what did L09 say in session 2?",
+      "f1": 0.30769230769230765,
+      "bleu1": 0.18288499322661422,
+      "rouge_l": 0.2857142857142857,
+      "bertscore_f1": 0.837062656879425
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L09 say in session 2 and what did L09 say in session 3?",
+      "f1": 0.15999999999999998,
+      "bleu1": 0.07162619921504752,
+      "rouge_l": 0.15384615384615383,
+      "bertscore_f1": 0.8071601986885071
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did N04 say in session 3 and what did N04 say in session 4?",
+      "f1": 0.2222222222222222,
+      "bleu1": 0.23529411764705885,
+      "rouge_l": 0.27586206896551724,
+      "bertscore_f1": 0.8358917832374573
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did N04 say in session 4 and what did L09 say in session 5?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8102495074272156
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did L09 say in session 5 and what did L09 say in session 6?",
+      "f1": 0.375,
+      "bleu1": 0.20760214927639847,
+      "rouge_l": 0.42105263157894735,
+      "bertscore_f1": 0.8549416661262512
+    },
+    {
+      "category": "2",
+      "question": "In the German deL1L2IM conversation, what did N04 say in session 6 and what did N04 say in session 7?",
+      "f1": 0.24000000000000005,
+      "bleu1": 0.23529411764705885,
+      "rouge_l": 0.29629629629629634,
+      "bertscore_f1": 0.8508780598640442
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L09's session 1 statement or L09's session 2 statement?",
+      "f1": 0.21052631578947364,
+      "bleu1": 0.06611955528863463,
+      "rouge_l": 0.21052631578947364,
+      "bertscore_f1": 0.8105705976486206
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L09's session 2 statement or N04's session 3 statement?",
+      "f1": 0.2,
+      "bleu1": 0.054134113294645084,
+      "rouge_l": 0.2,
+      "bertscore_f1": 0.8118628859519958
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by L09's cited turn in the German deL1L2IM conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8425591588020325
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by L09's cited turn in the German deL1L2IM conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.830096423625946
+    }
+  ]
+}

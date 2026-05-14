@@ -8,6 +8,10 @@ LoCoMo categories 1-4, token F1, and BLEU-1. Category 5 is reported separately
 or in the all-category columns because several systems score adversarial
 refusal with a different rule.
 
+The fixed baseline set for the main thesis comparison is recorded in
+`docs/locomo_fixed_baselines_20260508.md`: Full Context, A-Mem, Mem0,
+SimpleMem, HiGMem, and MemGAS.
+
 ## Ranked Results: Cat1-4
 
 | Rank | Method | Run | N | F1 | BLEU-1 | All-cat F1 | All-cat BLEU-1 | Result artifact |
@@ -42,3 +46,7 @@ refusal with a different rule.
 - Omni-SimpleMem has two relevant F1 conventions: its internal evaluator gives
   category 5 credit for refusal; the normalized text metric treats category 5
   as token overlap. The table uses cat1-4 normalized token F1 for comparability.
+- A-MEM is intentionally absent from this ranked table until the corrected
+  official-runner rerun completes. The earlier LightMem-adapter A-MEM run is
+  invalid for final reporting because it lost true speaker names in old caches
+  and did not use the official A-MEM keyword-retrieval/category-prompt flow.

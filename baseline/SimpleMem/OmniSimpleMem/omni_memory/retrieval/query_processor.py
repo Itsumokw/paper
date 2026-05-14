@@ -323,7 +323,7 @@ Respond in JSON format only, no explanation.'''
                     {"role": "user", "content": prompt.format(query=query)}
                 ],
                 temperature=0,
-                max_tokens=500,
+                max_tokens=int(os.environ.get("OMNI_QUERY_MAX_TOKENS", "8192")),
             )
 
             import json

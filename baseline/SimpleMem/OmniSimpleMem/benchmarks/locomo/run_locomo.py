@@ -295,7 +295,7 @@ def _extract_memory_entries(dialogues, llm_client, model_name, previous_entries=
                 model=model_name,
                 messages=messages,
                 temperature=0.1,
-                max_tokens=int(os.environ.get("OMNI_EXTRACTION_MAX_TOKENS", "8192")),
+                max_tokens=int(os.environ.get("OMNI_EXTRACTION_MAX_TOKENS", "24576")),
             )
             response = (resp.choices[0].message.content or "").strip()
             data = _extract_json_from_response(response)

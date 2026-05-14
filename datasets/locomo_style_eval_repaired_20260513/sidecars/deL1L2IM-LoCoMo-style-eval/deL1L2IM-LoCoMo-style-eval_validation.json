@@ -1,0 +1,69 @@
+{
+  "input_files": {
+    "primary": {
+      "path": "datasets/locomo_style_eval_repaired_20260513/primary/deL1L2IM-LoCoMo-style-eval.json",
+      "sha256": "c01cc131d812c5715dca270e93c0ca24e325b32d49371239dca7d1b0861b66a1"
+    },
+    "provenance": {
+      "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/deL1L2IM-LoCoMo-style-eval/deL1L2IM-LoCoMo-style-eval_provenance.jsonl",
+      "sha256": "e377e0bcb4e842fedafe0ca3a12cbc6c7936a016385c7c20025682cd053396e2"
+    },
+    "fact_ledger": {
+      "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/deL1L2IM-LoCoMo-style-eval/deL1L2IM-LoCoMo-style-eval_fact_ledger.jsonl",
+      "sha256": "88e6cdd86bffeccf0e83b6ff63a978a7547174e4abc07f9382f64e51ce1f7a26"
+    },
+    "qa_audit": {
+      "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/deL1L2IM-LoCoMo-style-eval/deL1L2IM-LoCoMo-style-eval_qa_audit.jsonl",
+      "sha256": "1f7a9df5d817c7c85764d751f982842794041d9acc5ccb5b40ad029f2c499d65"
+    }
+  },
+  "primary": {
+    "path": "datasets/locomo_style_eval_repaired_20260513/primary/deL1L2IM-LoCoMo-style-eval.json",
+    "samples": 9,
+    "sessions": 71,
+    "turns": 4548,
+    "qa": 198,
+    "categories": {
+      "1": 90,
+      "2": 54,
+      "3": 18,
+      "4": 18,
+      "5": 18
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "provenance": {
+    "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/deL1L2IM-LoCoMo-style-eval/deL1L2IM-LoCoMo-style-eval_provenance.jsonl",
+    "rows": 4548,
+    "source_origin_counts": {
+      "original_turn": 4548
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "fact_ledger": {
+    "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/deL1L2IM-LoCoMo-style-eval/deL1L2IM-LoCoMo-style-eval_fact_ledger.jsonl",
+    "rows": 4548,
+    "source_types": {
+      "original_turn": 4548
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "qa_audit": {
+    "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/deL1L2IM-LoCoMo-style-eval/deL1L2IM-LoCoMo-style-eval_qa_audit.jsonl",
+    "rows": 198,
+    "categories": {
+      "1": 90,
+      "2": 54,
+      "3": 18,
+      "4": 18,
+      "5": 18
+    },
+    "cross_session_qa": 72,
+    "errors": [],
+    "warnings": []
+  },
+  "status": "passed"
+}

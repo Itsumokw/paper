@@ -1,0 +1,70 @@
+{
+  "input_files": {
+    "primary": {
+      "path": "datasets/locomo_style_eval_repaired_20260513/primary/OPELA-LoCoMo-style-eval.json",
+      "sha256": "f70fb95d7dd816ebde58bbd0cb5a7dce6604428dab47d7b40c9c0a0d0d7492d6"
+    },
+    "provenance": {
+      "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/OPELA-LoCoMo-style-eval/OPELA-LoCoMo-style-eval_provenance.jsonl",
+      "sha256": "cdf9fef02cee8ae814f1ab6ca3792dadd390a04b1872108488805689cfcd21d9"
+    },
+    "fact_ledger": {
+      "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/OPELA-LoCoMo-style-eval/OPELA-LoCoMo-style-eval_fact_ledger.jsonl",
+      "sha256": "5fa3875de174a999263631bfac4dc9f3ab90a6e04cbd66cacf775eae877efe8c"
+    },
+    "qa_audit": {
+      "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/OPELA-LoCoMo-style-eval/OPELA-LoCoMo-style-eval_qa_audit.jsonl",
+      "sha256": "bc7d78893cbea4c704cdb7655decb754614ccfe3a777e889f9c59b58c2f1552a"
+    }
+  },
+  "primary": {
+    "path": "datasets/locomo_style_eval_repaired_20260513/primary/OPELA-LoCoMo-style-eval.json",
+    "samples": 10,
+    "sessions": 54,
+    "turns": 1151,
+    "qa": 220,
+    "categories": {
+      "1": 106,
+      "2": 42,
+      "3": 32,
+      "4": 20,
+      "5": 20
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "provenance": {
+    "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/OPELA-LoCoMo-style-eval/OPELA-LoCoMo-style-eval_provenance.jsonl",
+    "rows": 1151,
+    "source_origin_counts": {
+      "original_turn": 1151
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "fact_ledger": {
+    "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/OPELA-LoCoMo-style-eval/OPELA-LoCoMo-style-eval_fact_ledger.jsonl",
+    "rows": 1171,
+    "source_types": {
+      "original_memory": 20,
+      "original_turn": 1151
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "qa_audit": {
+    "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/OPELA-LoCoMo-style-eval/OPELA-LoCoMo-style-eval_qa_audit.jsonl",
+    "rows": 220,
+    "categories": {
+      "1": 106,
+      "2": 42,
+      "3": 32,
+      "4": 20,
+      "5": 20
+    },
+    "cross_session_qa": 74,
+    "errors": [],
+    "warnings": []
+  },
+  "status": "passed"
+}

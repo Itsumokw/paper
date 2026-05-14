@@ -1,0 +1,1188 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "dataset": "/home/stu0032/paper/runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/jlongchat/amem_official/shards/shard_3/locomo_sample_3.json",
+  "memory_layer": "robust",
+  "ratio": 1.0,
+  "retrieve_k": 10,
+  "total_questions": 20,
+  "category_distribution": {
+    "1": 10,
+    "2": 6,
+    "3": 2,
+    "4": 2
+  },
+  "aggregate_metrics": {
+    "overall": {
+      "exact_match": {
+        "mean": 0.15,
+        "std": 0.36634754853252327,
+        "median": 0.0,
+        "min": 0,
+        "max": 1,
+        "count": 20
+      },
+      "f1": {
+        "mean": 0.24166666666666667,
+        "std": 0.36764224283051355,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 20
+      },
+      "rouge1_f": {
+        "mean": 0.21944444444444444,
+        "std": 0.36828236970245837,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 20
+      },
+      "rouge2_f": {
+        "mean": 0.11190476190476191,
+        "std": 0.261403028183633,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 20
+      },
+      "rougeL_f": {
+        "mean": 0.21944444444444444,
+        "std": 0.36828236970245837,
+        "median": 0.0,
+        "min": 0,
+        "max": 1.0,
+        "count": 20
+      },
+      "bleu1": {
+        "mean": 0.28525976322623714,
+        "std": 0.3569008602215907,
+        "median": 0.14464657352857374,
+        "min": 0,
+        "max": 1.0,
+        "count": 20
+      },
+      "bleu2": {
+        "mean": 0.1693918688785282,
+        "std": 0.255927031294948,
+        "median": 0.03448108889954234,
+        "min": 0,
+        "max": 1.0,
+        "count": 20
+      },
+      "bleu3": {
+        "mean": 0.10502061929433293,
+        "std": 0.1469263900734847,
+        "median": 0.023259113143195075,
+        "min": 0,
+        "max": 0.46773514128719823,
+        "count": 20
+      },
+      "bleu4": {
+        "mean": 0.06811475100859131,
+        "std": 0.08980135527044213,
+        "median": 0.019058115097014,
+        "min": 0,
+        "max": 0.316227766016838,
+        "count": 20
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 20
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 20
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 20
+      },
+      "meteor": {
+        "mean": 0.16403087044534415,
+        "std": 0.26671735944118746,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.9375,
+        "count": 20
+      },
+      "sbert_similarity": {
+        "mean": 0.5819926515221596,
+        "std": 0.21765996962715098,
+        "median": 0.5625245571136475,
+        "min": 0.28496435284614563,
+        "max": 1.0000001192092896,
+        "count": 20
+      }
+    },
+    "category_1": {
+      "exact_match": {
+        "mean": 0.3,
+        "std": 0.48304589153964794,
+        "median": 0.0,
+        "min": 0,
+        "max": 1,
+        "count": 10
+      },
+      "f1": {
+        "mean": 0.3333333333333333,
+        "std": 0.4714045207910317,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 10
+      },
+      "rouge1_f": {
+        "mean": 0.1,
+        "std": 0.31622776601683794,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 10
+      },
+      "rouge2_f": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 10
+      },
+      "rougeL_f": {
+        "mean": 0.1,
+        "std": 0.31622776601683794,
+        "median": 0.0,
+        "min": 0,
+        "max": 1.0,
+        "count": 10
+      },
+      "bleu1": {
+        "mean": 0.3342278079355061,
+        "std": 0.47141300689561116,
+        "median": 0.0,
+        "min": 0,
+        "max": 1.0,
+        "count": 10
+      },
+      "bleu2": {
+        "mean": 0.17261922445348313,
+        "std": 0.31812167566677035,
+        "median": 0.0,
+        "min": 0,
+        "max": 1.0,
+        "count": 10
+      },
+      "bleu3": {
+        "mean": 0.09834539057841163,
+        "std": 0.15772480065528655,
+        "median": 0.0,
+        "min": 0,
+        "max": 0.46773514128719823,
+        "count": 10
+      },
+      "bleu4": {
+        "mean": 0.07412565770963646,
+        "std": 0.11210710413731778,
+        "median": 0.0,
+        "min": 0,
+        "max": 0.316227766016838,
+        "count": 10
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 10
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 10
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 10
+      },
+      "meteor": {
+        "mean": 0.2069078947368421,
+        "std": 0.327975354823814,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.9375,
+        "count": 10
+      },
+      "sbert_similarity": {
+        "mean": 0.720290994644165,
+        "std": 0.20348052268636668,
+        "median": 0.6147326231002808,
+        "min": 0.5318437218666077,
+        "max": 1.0000001192092896,
+        "count": 10
+      }
+    },
+    "category_2": {
+      "exact_match": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 6
+      },
+      "f1": {
+        "mean": 0.16666666666666666,
+        "std": 0.25819888974716115,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.5,
+        "count": 6
+      },
+      "rouge1_f": {
+        "mean": 0.39814814814814814,
+        "std": 0.46668871200133505,
+        "median": 0.25,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 6
+      },
+      "rouge2_f": {
+        "mean": 0.2619047619047619,
+        "std": 0.4277770415519182,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 6
+      },
+      "rougeL_f": {
+        "mean": 0.39814814814814814,
+        "std": 0.46668871200133505,
+        "median": 0.25,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 6
+      },
+      "bleu1": {
+        "mean": 0.2604861975282803,
+        "std": 0.20168106931769836,
+        "median": 0.17319912615677766,
+        "min": 0.06295853427918728,
+        "max": 0.5154669590932291,
+        "count": 6
+      },
+      "bleu2": {
+        "mean": 0.1715316001670094,
+        "std": 0.2158801778945984,
+        "median": 0.04192892180989917,
+        "min": 0.015421628393753238,
+        "max": 0.4499364491987482,
+        "count": 6
+      },
+      "bleu3": {
+        "mean": 0.13541060152196158,
+        "std": 0.17536225650512793,
+        "median": 0.02883737319591087,
+        "min": 0.010700053542273198,
+        "max": 0.3616239753361407,
+        "count": 6
+      },
+      "bleu4": {
+        "mean": 0.06563242829699363,
+        "std": 0.0725121114407327,
+        "median": 0.0244827751716038,
+        "min": 0.009169755105389667,
+        "max": 0.15889951008323108,
+        "count": 6
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 6
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 6
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 6
+      },
+      "meteor": {
+        "mean": 0.16025641025641027,
+        "std": 0.24826816321842418,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.48076923076923084,
+        "count": 6
+      },
+      "sbert_similarity": {
+        "mean": 0.5208144088586172,
+        "std": 0.10011685083901366,
+        "median": 0.5354422181844711,
+        "min": 0.3709673583507538,
+        "max": 0.6220743060112,
+        "count": 6
+      }
+    },
+    "category_3": {
+      "exact_match": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "f1": {
+        "mean": 0.25,
+        "std": 0.0,
+        "median": 0.25,
+        "min": 0.25,
+        "max": 0.25,
+        "count": 2
+      },
+      "rouge1_f": {
+        "mean": 0.5,
+        "std": 0.0,
+        "median": 0.5,
+        "min": 0.5,
+        "max": 0.5,
+        "count": 2
+      },
+      "rouge2_f": {
+        "mean": 0.3333333333333333,
+        "std": 0.0,
+        "median": 0.3333333333333333,
+        "min": 0.3333333333333333,
+        "max": 0.3333333333333333,
+        "count": 2
+      },
+      "rougeL_f": {
+        "mean": 0.5,
+        "std": 0.0,
+        "median": 0.5,
+        "min": 0.5,
+        "max": 0.5,
+        "count": 2
+      },
+      "bleu1": {
+        "mean": 0.4,
+        "std": 0.0,
+        "median": 0.4,
+        "min": 0.4,
+        "max": 0.4,
+        "count": 2
+      },
+      "bleu2": {
+        "mean": 0.316227766016838,
+        "std": 0.0,
+        "median": 0.316227766016838,
+        "min": 0.316227766016838,
+        "max": 0.316227766016838,
+        "count": 2
+      },
+      "bleu3": {
+        "mean": 0.1522474354853864,
+        "std": 0.0,
+        "median": 0.1522474354853864,
+        "min": 0.1522474354853864,
+        "max": 0.1522474354853864,
+        "count": 2
+      },
+      "bleu4": {
+        "mean": 0.11362193664674995,
+        "std": 0.0,
+        "median": 0.11362193664674995,
+        "min": 0.11362193664674995,
+        "max": 0.11362193664674995,
+        "count": 2
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "meteor": {
+        "mean": 0.125,
+        "std": 0.0,
+        "median": 0.125,
+        "min": 0.125,
+        "max": 0.125,
+        "count": 2
+      },
+      "sbert_similarity": {
+        "mean": 0.36370043456554413,
+        "std": 0.02101882301320115,
+        "median": 0.36370043456554413,
+        "min": 0.34883788228034973,
+        "max": 0.3785629868507385,
+        "count": 2
+      }
+    },
+    "category_4": {
+      "exact_match": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "rouge1_f": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "rouge2_f": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "rougeL_f": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bleu1": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "bleu2": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "bleu3": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "bleu4": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "meteor": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "sbert_similarity": {
+        "mean": 0.292327880859375,
+        "std": 0.010413601183223186,
+        "median": 0.292327880859375,
+        "min": 0.28496435284614563,
+        "max": 0.29969140887260437,
+        "count": 2
+      }
+    }
+  },
+  "individual_results": [
+    {
+      "sample_id": 0,
+      "question": "In session 1 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"\u306f\u3058\u3081\u307e\u3057\u3066\u3002\u3053\u308c\u304b\u3089\u3088\u308d\u3057\u304f\u304a\u9858\u3044\u81f4\u3057\u307e\u3059\uff01\"?",
+      "prediction": "\u308f\u304b\u308a\u307e\u3059\u3002\u3002\u3002\uff01",
+      "reference": "\u306f\u3058\u3081\u307e\u3057\u3066\u3002\u3053\u308c\u304b\u3089\u3088\u308d\u3057\u304f\u304a\u9858\u3044\u81f4\u3057\u307e\u3059\uff01",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.5544507503509521
+      },
+      "latency_seconds": 0.6081864833831787,
+      "token_usage": {
+        "prompt_tokens": 1157,
+        "completion_tokens": 2,
+        "total_tokens": 1159,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 2 of the Japanese LAC conversation, what did TEXTCHAT34 say in the turn about \"\u306a\u3093\u3066\u304a\u547c\u3073\u3059\u308c\u3070\u3044\u3044\u3067\u3059\u304b\uff1f\"?",
+      "prediction": "\u306a\u3093\u3066\u304a\u547c\u3073\u3059\u308c\u3070\u3044\u3044\u3067\u3059\u304b\uff1f",
+      "reference": "\u306a\u3093\u3066\u304a\u547c\u3073\u3059\u308c\u3070\u3044\u3044\u3067\u3059\u304b\uff1f",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 1.0,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.2187761623949553,
+        "bleu4": 0.1778279410038923,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.5,
+        "sbert_similarity": 1.0
+      },
+      "latency_seconds": 0.9618945121765137,
+      "token_usage": {
+        "prompt_tokens": 1605,
+        "completion_tokens": 3,
+        "total_tokens": 1608,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 3 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"\u30df\u30e5\u30fc\u30b8\u30ab\u30eb\u3001\u30b9\u30c8\u30ec\u30fc\u30c8\u306a\u3069\u3044\u308d\u3044\u308d\u3067\u3059\u304c\u3001\u30df\u30e5\u30fc\u30b8\u30ab\u30eb\u304c\u591a\u3044\u3067\u3059\u306d! \u306a...\"?",
+      "prediction": "\u306f\u3058\u3081\u307e\u3057\u3066\u3002\u3053\u308c\u304b\u3089\u3088\u308d\u3057\u304f\u304a\u9858\u3044\u81f4\u3057\u307e\u3059\uff01",
+      "reference": "\u30df\u30e5\u30fc\u30b8\u30ab\u30eb\u3001\u30b9\u30c8\u30ec\u30fc\u30c8\u306a\u3069\u3044\u308d\u3044\u308d\u3067\u3059\u304c\u3001\u30df\u30e5\u30fc\u30b8\u30ab\u30eb\u304c\u591a\u3044\u3067\u3059\u306d! \u306a\u308b\u307b\u3069\uff01\u597d\u304d\u306a\u821e\u53f0\u4ff3\u512a\u3055\u3093\uff01\u3069\u306a\u305f\u3067\u3059\u304b\uff1f",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.5913636088371277
+      },
+      "latency_seconds": 0.7647488117218018,
+      "token_usage": {
+        "prompt_tokens": 1594,
+        "completion_tokens": 5,
+        "total_tokens": 1599,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 4 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"\u305d\u3046\u3067\u3059\u306d\u3002\u3002\u3002\u304b\u306a\u308a\u306e\u4f5c\u54c1\u306f\u5ef6\u671f\u306b\u306a\u3063\u3066\u3001\u30aa\u30f3\u30e9\u30a4\u30f3\u3067\u7a3d\u53e4\u3092\u3057\u3066\u3044\u3066\u3001\u5bfe...\"?",
+      "prediction": "\u305d\u3046\u3067\u3059\u306d\u3002\u3002\u3002\u7a3d\u53e4\u3084\u3089\u6253\u3061\u5408\u308f\u305b\u3084\u3089\u306a\u3093\u3060\u304b\u3093\u3060\u3042\u308a\u307e\u3059",
+      "reference": "\u305d\u3046\u3067\u3059\u306d\u3002\u3002\u3002\u304b\u306a\u308a\u306e\u4f5c\u54c1\u306f\u5ef6\u671f\u306b\u306a\u3063\u3066\u3001\u30aa\u30f3\u30e9\u30a4\u30f3\u3067\u7a3d\u53e4\u3092\u3057\u3066\u3044\u3066\u3001\u5bfe\u9762\u3067\u884c\u3048\u3066\u3044\u308b\u3082\u306e\u306b\u95a2\u3057\u3066\u3082\u3001\u30b3\u30ed\u30ca\u5bfe\u7b56\u3092\u3057\u3064\u3064\u306e\u7a3d\u53e4\u3068\u306a\u3063\u3066\u3044\u307e\u3059\u306d\u3002\u3002\uff01 \u79c1\u306e\u5468\u308a\u3082\u7dca\u6025\u4e8b\u614b\u5ba3\u8a00\u304c\u3067\u3066\u304b\u306a\u308a...",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.6381016373634338
+      },
+      "latency_seconds": 1.4281630516052246,
+      "token_usage": {
+        "prompt_tokens": 1867,
+        "completion_tokens": 7,
+        "total_tokens": 1874,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 5 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"\u307b\u3093\u3068\u305d\u3046\u3067\u3059\u306d\uff01\u5909\u7570\u578b\u306e\u30a6\u30a4\u30eb\u30b9\u3068\u304b\u8a00\u3063\u3066\u308b\u306e\u3082\u3042\u308b\u3057\u307b\u3093\u3068\u306b\u3069\u3046\u306a\u308b\u304b...\"?",
+      "prediction": "\u3081\u3061\u3083\u3081\u3061\u3083\u5bd2\u3044\u3067\u3059\u306d\u3002\u3002\u3002\u3002",
+      "reference": "\u307b\u3093\u3068\u305d\u3046\u3067\u3059\u306d\uff01\u5909\u7570\u578b\u306e\u30a6\u30a4\u30eb\u30b9\u3068\u304b\u8a00\u3063\u3066\u308b\u306e\u3082\u3042\u308b\u3057\u307b\u3093\u3068\u306b\u3069\u3046\u306a\u308b\u304b\u5206\u304b\u3089\u306a\u3059\u304e\u3066\u3053\u308f\u3044\uff01\uff01\uff01 \u30de\u30b9\u30af\u3092\u307f\u3093\u306a\u304c\u7740\u3051\u3066\u308b\u793e\u4f1a\u3001\u307b\u3093\u3068\u306b\u5947\u5999\u306a\u4eca\u3067\u306f\u666e\u901a\u306e\u793e\u4f1a\u3067\u3059\u3088\u306d\u3002\u305d\u3046\u601d\u3046\u3068\u5c11\u3057...",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.5607773661613464
+      },
+      "latency_seconds": 1.4498846530914307,
+      "token_usage": {
+        "prompt_tokens": 1393,
+        "completion_tokens": 3,
+        "total_tokens": 1396,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 6 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"\u307b\u3093\u3068\u305d\u308c\u3067\u3059\u3002\u3002\u3002\u51ac\u3092\u8d85\u3048\u3066\u307f\u306a\u3044\u3068\u306a\u3093\u3068\u3082\u3067\u3059\u306d\u3002\u3002 \u30de\u30b9\u30af\u304c\u4f53\u306e1\u90e8...\"?",
+      "prediction": "\u307b\u3093\u3068\u305d\u308c\u3067\u3059\u3002\u3002\u3002\u51ac\u3092\u8d85\u3048\u3066\u307f\u306a\u3044\u3068\u306a\u3093\u3068\u3082\u3067\u3059\u306d\u3002\u3002 \u30de\u30b9\u30af\u304c\u4f53\u306e1\u90e8...",
+      "reference": "\u307b\u3093\u3068\u305d\u308c\u3067\u3059\u3002\u3002\u3002\u51ac\u3092\u8d85\u3048\u3066\u307f\u306a\u3044\u3068\u306a\u3093\u3068\u3082\u3067\u3059\u306d\u3002\u3002 \u30de\u30b9\u30af\u304c\u4f53\u306e1\u90e8\u306b\u306a\u3063\u3066\u308b\u7b11 \u307b\u3093\u3068\u306b\u30de\u30b9\u30af\u3057\u306a\u3044\u4eba\u304c\u5909\u3060\u3068\u601d\u308f\u308c\u308b\u3063\u3066\u3075\u3068\u3059\u3054\u3044\u5947\u5999\u306a\u5149\u666f\u3060\u306a\u3063\u3066\u601d\u3044\u307e\u3059\u3002\u7b11 \u306a\u308b\u307b\u3069\u306a\u308b\u307b...",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.3333333333333333,
+        "rouge1_f": 1.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 1.0,
+        "bleu1": 0.3422780793550613,
+        "bleu2": 0.09373671250115519,
+        "bleu3": 0.07816643970700751,
+        "bleu4": 0.069372929071742,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.13157894736842105,
+        "sbert_similarity": 0.762100875377655
+      },
+      "latency_seconds": 1.8927593231201172,
+      "token_usage": {
+        "prompt_tokens": 1622,
+        "completion_tokens": 10,
+        "total_tokens": 1632,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 7 of the Japanese LAC conversation, what did TEXTCHAT34 say in the turn about \"\u304a\u304a\u30fc\uff01\u3059\u3054\u3044\u3067\u3059\u306d\u30fc\uff01\uff01 \u6f14\u6280\u3060\u3051\u3067\u3082\u30bb\u30ea\u30d5\u899a\u3048\u305f\u308a\u3068\u304b\u3067\u5927\u5909\u306a\u306e\u306b\u3001\u82f1...\"?",
+      "prediction": "\u304a\u304a\uff01",
+      "reference": "\u304a\u304a\u30fc\uff01\u3059\u3054\u3044\u3067\u3059\u306d\u30fc\uff01\uff01 \u6f14\u6280\u3060\u3051\u3067\u3082\u30bb\u30ea\u30d5\u899a\u3048\u305f\u308a\u3068\u304b\u3067\u5927\u5909\u306a\u306e\u306b\u3001\u82f1\u8a9e\u3067\u30df\u30e5\u30fc\u30b8\u30ab\u30eb\u3063\u3066\u3059\u3054\u3044\u3067\u3059\u306d\u2026\uff01\u82f1\u8a9e\u3067\u304d\u308b\u306e\u3046\u3089\u3084\u307e\u3057\u3044\u3067\u3059\uff01\u6ce3",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.5642717480659485
+      },
+      "latency_seconds": 1.2602801322937012,
+      "token_usage": {
+        "prompt_tokens": 1164,
+        "completion_tokens": 1,
+        "total_tokens": 1165,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 8 of the Japanese LAC conversation, what did TEXTCHAT34 say in the turn about \"\u82f1\u8a9e\u306f\u96e3\u3057\u3044\u3067\u3059\u306d\u2026\u3082\u3046\u6570\u5e74\u52c9\u5f37\u3057\u3066\u306a\u3044\u306e\u3067\u3060\u3044\u3076\u5fd8\u308c\u3066\u304d\u307e\u3057\u305f\u7b11 \u8a71\u305b\u308b...\"?",
+      "prediction": "\u304a\u306f\u3088\u3046\u3054\u3056\u3044\u307e\u3059\uff01",
+      "reference": "\u82f1\u8a9e\u306f\u96e3\u3057\u3044\u3067\u3059\u306d\u2026\u3082\u3046\u6570\u5e74\u52c9\u5f37\u3057\u3066\u306a\u3044\u306e\u3067\u3060\u3044\u3076\u5fd8\u308c\u3066\u304d\u307e\u3057\u305f\u7b11 \u8a71\u305b\u308b\u3068\u697d\u3057\u3044\u3067\u3059\u3088\u306d\uff01 \u3051\u3063\u3053\u3046\u308f\u305f\u3057\u306f\u5bdd\u4ed8\u304d\u304c\u60aa\u3044\u30bf\u30a4\u30d7\u306a\u306e\u3067\u3001\u5c11\u3057\u4e0d\u5b89\u306a\u3053\u3068\u304c\u3042\u308b\u3068\u306a\u304b\u306a\u304b\u5bdd\u308c\u306a\u304f\u306a\u3063\u3061\u3083\u3044\u307e...",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.5318437218666077
+      },
+      "latency_seconds": 0.8650438785552979,
+      "token_usage": {
+        "prompt_tokens": 1216,
+        "completion_tokens": 2,
+        "total_tokens": 1218,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 9 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"\u3044\u308d\u3093\u306a\u65b9\u6cd5\u3067\u3088\u304f\u7720\u308c\u308b\u3053\u3068\u3092\u7948\u3063\u3066\u3044\u307e\u3059\u3002\u3002\u3002\uff01\"?",
+      "prediction": "\u3044\u308d\u3093\u306a\u65b9\u6cd5\u3067\u3088\u304f\u7720\u308c\u308b\u3053\u3068\u3092\u7948\u3063\u3066\u3044\u307e\u3059\u3002\u3002\u3002\uff01",
+      "reference": "\u3044\u308d\u3093\u306a\u65b9\u6cd5\u3067\u3088\u304f\u7720\u308c\u308b\u3053\u3068\u3092\u7948\u3063\u3066\u3044\u307e\u3059\u3002\u3002\u3002\uff01",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 1.0,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.2187761623949553,
+        "bleu4": 0.1778279410038923,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.5,
+        "sbert_similarity": 1.0000001192092896
+      },
+      "latency_seconds": 1.418898582458496,
+      "token_usage": {
+        "prompt_tokens": 761,
+        "completion_tokens": 6,
+        "total_tokens": 767,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 10 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"\u305d\u3046\u305d\u3046\u7b11 \u3069\u3046\u305b\u30de\u30b9\u30af\u306b\u7740\u3044\u3061\u3083\u3046\u3057\u3001\u4ed8\u3044\u305f\u3089\u5916\u304b\u3089\u3046\u3063\u3059\u3089\u8272\u304c\u3064\u3044\u3066\u308b...\"?",
+      "prediction": "\u305d\u3046\u305d\u3046\u7b11 \u3069\u3046\u305b\u30de\u30b9\u30af\u306b\u7740\u3044\u3061\u3083\u3046\u3057\u3001\u4ed8\u3044\u305f\u3089\u5916\u304b\u3089\u3046\u3063\u3059\u3089\u8272\u304c\u3064\u3044\u3066\u308b\u306e\u898b\u3048\u308b\u306e\u3067\u306f\u3068\u304b\u601d\u3063\u3066\u4ed8\u3051\u306a\u3044\u3067\u3059\u7b11",
+      "reference": "\u305d\u3046\u305d\u3046\u7b11 \u3069\u3046\u305b\u30de\u30b9\u30af\u306b\u7740\u3044\u3061\u3083\u3046\u3057\u3001\u4ed8\u3044\u305f\u3089\u5916\u304b\u3089\u3046\u3063\u3059\u3089\u8272\u304c\u3064\u3044\u3066\u308b\u306e\u898b\u3048\u308b\u306e\u3067\u306f\u3068\u304b\u601d\u3063\u3066\u4ed8\u3051\u306a\u3044\u3067\u3059\u7b11",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 1.0,
+        "bleu2": 1.0,
+        "bleu3": 0.46773514128719823,
+        "bleu4": 0.316227766016838,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.9375,
+        "sbert_similarity": 1.0000001192092896
+      },
+      "latency_seconds": 2.1631531715393066,
+      "token_usage": {
+        "prompt_tokens": 1644,
+        "completion_tokens": 14,
+        "total_tokens": 1658,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT35 say in session 1 and what did TEXTCHAT34 say in session 2?",
+      "prediction": "TEXTCHAT35: \u306f\u3058\u3081\u307e\u3057\u3066\u3002\u3053\u308c\u304b\u3089\u3088\u308d\u3057\u304f\u304a\u9858\u3044\u81f4\u3057\u307e\u3059\uff01TEXTCHAT34: \u306a\u3093\u3066\u304a\u547c\u3073\u3059\u308c\u3070\u3044\u3044\u3067\u3059\u304b\uff1f",
+      "reference": "Session 1: \u306f\u3058\u3081\u307e\u3057\u3066\u3002\u3053\u308c\u304b\u3089\u3088\u308d\u3057\u304f\u304a\u9858\u3044\u81f4\u3057\u307e\u3059\uff01 Session 2: \u3069\u3093\u306a\u821e\u53f0\u3092\u4f5c\u3089\u308c\u3066\u308b\u3093\u3067\u3059\u304b\uff1f \u597d\u304d\u306a\u821e\u53f0\u4ff3\u512a\u306e\u65b9\u304c\u4f55\u4eba\u304b\u3044\u308b\u306e\u3067\u3001\u305d\u306e\u65b9\u306e\u3092\u89b3\u306b\u884c\u304f\u3053\u3068\u304c\u591a\u3044\u3067\u3059\uff01\u30df\u30e5\u30fc\u30b8\u30ab\u30eb\u7cfb\u3082\u597d\u304d\u3067\u3059\uff01",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0.17973158564688863,
+        "bleu2": 0.04493289641172216,
+        "bleu3": 0.03199737863082477,
+        "bleu4": 0.028709564316081952,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.6220743060112
+      },
+      "latency_seconds": 1.1542515754699707,
+      "token_usage": {
+        "prompt_tokens": 1116,
+        "completion_tokens": 15,
+        "total_tokens": 1131,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT34 say in session 2 and what did TEXTCHAT34 say in session 3?",
+      "prediction": "2, \u3046\u3063\u3059\u3089\u96ea\u964d\u3063\u3066\u307e\u3057\u305f\uff01  \n3, \u524d\u306f\u30af\u30ea\u30fc\u30e0\u5857\u3089\u306a\u304f\u3066\u3082\u5e73\u6c17\u304b\u306a\u3068\u601d\u3063\u3066\u307e\u3057\u305f\u304c\u3001\u30af\u30ea\u30fc\u30e0\u306e\u5fc5\u8981\u6027\u3092\u611f\u3058\u3066\u304d\u307e\u3057\u305f\u7b11",
+      "reference": "Session 2: \u306a\u3093\u3066\u304a\u547c\u3073\u3059\u308c\u3070\u3044\u3044\u3067\u3059\u304b\uff1f Session 3: \u305d\u3046\u3067\u3059\u306d\u30fc\u6ce3 \u5ba3\u8a00\u51fa\u3061\u3083\u3044\u307e\u3057\u305f\u3057\u306a\u304b\u306a\u304b\u884c\u3051\u306a\u3044\u3067\u3059\u2026[SPK--TEXTCHAT35]\u3055\u3093\u306f\u821e\u53f0\u306e\u4ed5\u4e8b\u3084\u308b\u4e2d\u3067\u3084\u3063\u3071\u308a\u5f71\u97ff\u5927\u304d\u3044\u3067\u3059...",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.5,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.5,
+        "bleu1": 0.06295853427918728,
+        "bleu2": 0.015421628393753238,
+        "bleu3": 0.010700053542273198,
+        "bleu4": 0.009169755105389667,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.4866199195384979
+      },
+      "latency_seconds": 1.2496275901794434,
+      "token_usage": {
+        "prompt_tokens": 1194,
+        "completion_tokens": 15,
+        "total_tokens": 1209,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT35 say in session 3 and what did TEXTCHAT34 say in session 4?",
+      "prediction": "TEXTCHAT35: \u306f\u3058\u3081\u307e\u3057\u3066\u3002\u3053\u308c\u304b\u3089\u3088\u308d\u3057\u304f\u304a\u9858\u3044\u81f4\u3057\u307e\u3059\uff01\nTEXTCHAT34: \u306a\u3093\u3066\u304a\u547c\u3073\u3059\u308c\u3070\u3044\u3044\u3067\u3059\u304b\uff1f",
+      "reference": "Session 3: \u30df\u30e5\u30fc\u30b8\u30ab\u30eb\u3001\u30b9\u30c8\u30ec\u30fc\u30c8\u306a\u3069\u3044\u308d\u3044\u308d\u3067\u3059\u304c\u3001\u30df\u30e5\u30fc\u30b8\u30ab\u30eb\u304c\u591a\u3044\u3067\u3059\u306d! \u306a\u308b\u307b\u3069\uff01\u597d\u304d\u306a\u821e\u53f0\u4ff3\u512a\u3055\u3093\uff01\u3069\u306a\u305f\u3067\u3059\u304b\uff1f Session 4: \u305d\u3046\u3067\u3059\u306d\uff01\u30ef\u30af\u30c1\u30f3\u63a5\u7a2e\u3082\u6625\u3042\u305f\u308a\u304b\u3089\u3067\u304d\u308b\u3088\u3046\u306b\u306a\u308a\u305d\u3046\u3067\u3059\u306d\u30fc\u3002\u9577\u5f15\u304f\u306e\u306f\u8f9b\u3044\u306e\u3067\u65e9\u304f\u7d42\u308f\u3063\u3066\u307b\u3057\u3044\u3067\u3059\u2026\uff01 \u305d\u3046\u3067\u3059\u306d\u30fc\u3001\u30de\u30b9\u30af\u3059\u308b...",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0.12262648039048077,
+        "bleu2": 0.03003723059100852,
+        "bleu3": 0.020840858525393174,
+        "bleu4": 0.01786024416690236,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.45293283462524414
+      },
+      "latency_seconds": 1.1937296390533447,
+      "token_usage": {
+        "prompt_tokens": 1167,
+        "completion_tokens": 15,
+        "total_tokens": 1182,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT35 say in session 4 and what did TEXTCHAT34 say in session 5?",
+      "prediction": "TEXTCHAT35: \u306f\u3058\u3081\u307e\u3057\u3066\u3002\nTEXTCHAT34: \u306a\u3093\u3066\u304a\u547c\u3073\u3059\u308c\u3070\u3044\u3044\u3067\u3059\u304b\uff1f\nTEXTCHAT35: \u304a\u306f\u3088\u3046\u3054\u3056\u3044\u307e\u3059\uff01\nTEXTCHAT34: \u304a\u75b2\u308c\u69d8\u3067\u3059\uff01\u5bd2\u304b\u3063\u305f\u3067\u3059\u306d\u3001\u96ea\u964d\u3063\u3066\u307e\u3057\u305f\u3002",
+      "reference": "Session 4: \u305d\u3046\u3067\u3059\u306d\u3002\u3002\u3002\u304b\u306a\u308a\u306e\u4f5c\u54c1\u306f\u5ef6\u671f\u306b\u306a\u3063\u3066\u3001\u30aa\u30f3\u30e9\u30a4\u30f3\u3067\u7a3d\u53e4\u3092\u3057\u3066\u3044\u3066\u3001\u5bfe\u9762\u3067\u884c\u3048\u3066\u3044\u308b\u3082\u306e\u306b\u95a2\u3057\u3066\u3082\u3001\u30b3\u30ed\u30ca\u5bfe\u7b56\u3092\u3057\u3064\u3064\u306e\u7a3d\u53e4\u3068\u306a\u3063\u3066\u3044... Session 5: \u5909\u7570\u578b\u3082\u51fa\u3066\u304d\u3061\u3083\u3044\u307e\u3057\u305f\u3082\u3093\u306d\u30fc\u6ce3 \u3053\u308c\u304b\u3089\u3069\u3046\u306a\u308b\u306e\u304b\u3001\u3001\u3001\u8907\u96d1\u3067\u3059\u6ce3 \u4eca\u3067\u306f\u30de\u30b9\u30af\u6163\u308c\u3061\u3083\u3063\u305f\u3051\u3069\u3001\u3088\u304f\u3088\u304f\u8003\u3048\u308b\u3068\u666e\u901a\u3058\u3083\u306a\u3044\u3067\u3059...",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0.16666666666666669,
+        "bleu2": 0.03892494720807617,
+        "bleu3": 0.025677367760996977,
+        "bleu4": 0.020255986027125642,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.3709673583507538
+      },
+      "latency_seconds": 1.708786964416504,
+      "token_usage": {
+        "prompt_tokens": 1167,
+        "completion_tokens": 26,
+        "total_tokens": 1193,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT35 say in session 5 and what did TEXTCHAT35 say in session 6?",
+      "prediction": "Session 5: \u304a\u306f\u3088\u3046\u3054\u3056\u3044\u307e\u3059\u3002\nSession 6: \u304a\u306f\u3088\u3046\u3054\u3056\u3044\u307e\u3059\u30fc\uff01\uff01\uff01",
+      "reference": "Session 5: \u307b\u3093\u3068\u305d\u3046\u3067\u3059\u306d\uff01\u5909\u7570\u578b\u306e\u30a6\u30a4\u30eb\u30b9\u3068\u304b\u8a00\u3063\u3066\u308b\u306e\u3082\u3042\u308b\u3057\u307b\u3093\u3068\u306b\u3069\u3046\u306a\u308b\u304b\u5206\u304b\u3089\u306a\u3059\u304e\u3066\u3053\u308f\u3044\uff01\uff01\uff01 \u30de\u30b9\u30af\u3092\u307f\u3093\u306a\u304c\u7740\u3051\u3066\u308b\u793e\u4f1a\u3001\u307b\u3093\u3068... Session 6: \u6f14\u5287\u90e8\u306b\u5165\u3063\u3066\u307e\u3057\u305f\uff01\u82f1\u8a9e\u3067\u30df\u30e5\u30fc\u30b8\u30ab\u30eb\u3092\u3059\u308b\u90e8\u6d3b\u3067\u3057\u305f\uff01 \u30d7\u30ed\u306e\u65b9\u306f\u52aa\u529b\u304c\u3059\u3054\u3044\u3067\u3059\u3088\u306d\u3002\u3002\u3002\u3002\u3002\u3002",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.5,
+        "rouge1_f": 1.0,
+        "rouge2_f": 1.0,
+        "rougeL_f": 1.0,
+        "bleu1": 0.5154669590932291,
+        "bleu2": 0.4499364491987482,
+        "bleu3": 0.3616239753361407,
+        "bleu4": 0.15889951008323108,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.48076923076923084,
+        "sbert_similarity": 0.5842645168304443
+      },
+      "latency_seconds": 0.9746904373168945,
+      "token_usage": {
+        "prompt_tokens": 1198,
+        "completion_tokens": 11,
+        "total_tokens": 1209,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT35 say in session 6 and what did TEXTCHAT35 say in session 7?",
+      "prediction": "Session 6: \u306f\u3058\u3081\u307e\u3057\u3066\u3002\u3053\u308c\u304b\u3089\u3088\u308d\u3057\u304f\u304a\u9858\u3044\u81f4\u3057\u307e\u3059\uff01\nSession 7: \u304a\u306f\u3088\u3046\u3054\u3056\u3044\u307e\u3059\uff01",
+      "reference": "Session 6: \u307b\u3093\u3068\u305d\u308c\u3067\u3059\u3002\u3002\u3002\u51ac\u3092\u8d85\u3048\u3066\u307f\u306a\u3044\u3068\u306a\u3093\u3068\u3082\u3067\u3059\u306d\u3002\u3002 \u30de\u30b9\u30af\u304c\u4f53\u306e1\u90e8\u306b\u306a\u3063\u3066\u308b\u7b11 \u307b\u3093\u3068\u306b\u30de\u30b9\u30af\u3057\u306a\u3044\u4eba\u304c\u5909\u3060\u3068\u601d\u308f\u308c\u308b\u3063\u3066\u3075\u3068\u3059\u3054... Session 7: \u3059\u307f\u307e\u305b\u3093\uff01\u4eca\u65e5\u901a\u3057\u7a3d\u53e4\u3067\u305d\u306e\u3042\u3068\u3082\u4e8b\u52d9\u4f5c\u696d\u3067\u9045\u304f\u306a\u3063\u3066\u3057\u307e\u3044\u307e\u3057\u305f\uff01\uff01",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.5,
+        "rouge1_f": 0.888888888888889,
+        "rouge2_f": 0.5714285714285715,
+        "rougeL_f": 0.888888888888889,
+        "bleu1": 0.5154669590932291,
+        "bleu2": 0.4499364491987482,
+        "bleu3": 0.3616239753361407,
+        "bleu4": 0.15889951008323108,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.48076923076923084,
+        "sbert_similarity": 0.6080275177955627
+      },
+      "latency_seconds": 1.062683343887329,
+      "token_usage": {
+        "prompt_tokens": 1152,
+        "completion_tokens": 14,
+        "total_tokens": 1166,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "Which statement came earlier in the Japanese LAC conversation: TEXTCHAT35's session 1 statement or TEXTCHAT34's session 2 statement?",
+      "prediction": "TEXTCHAT35's session 1 statement",
+      "reference": "Earlier session 1: \u306f\u3058\u3081\u307e\u3057\u3066\u3002\u3053\u308c\u304b\u3089\u3088\u308d\u3057\u304f\u304a\u9858\u3044\u81f4\u3057\u307e\u3059\uff01",
+      "category": 3,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.25,
+        "rouge1_f": 0.5,
+        "rouge2_f": 0.3333333333333333,
+        "rougeL_f": 0.5,
+        "bleu1": 0.4,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.1522474354853864,
+        "bleu4": 0.11362193664674995,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.125,
+        "sbert_similarity": 0.3785629868507385
+      },
+      "latency_seconds": 0.6956393718719482,
+      "token_usage": {
+        "prompt_tokens": 1628,
+        "completion_tokens": 8,
+        "total_tokens": 1636,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "Which statement came earlier in the Japanese LAC conversation: TEXTCHAT34's session 2 statement or TEXTCHAT35's session 3 statement?",
+      "prediction": "TEXTCHAT34's session 2 statement",
+      "reference": "Earlier session 2: \u306a\u3093\u3066\u304a\u547c\u3073\u3059\u308c\u3070\u3044\u3044\u3067\u3059\u304b\uff1f",
+      "category": 3,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.25,
+        "rouge1_f": 0.5,
+        "rouge2_f": 0.3333333333333333,
+        "rougeL_f": 0.5,
+        "bleu1": 0.4,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.1522474354853864,
+        "bleu4": 0.11362193664674995,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.125,
+        "sbert_similarity": 0.34883788228034973
+      },
+      "latency_seconds": 0.6694991588592529,
+      "token_usage": {
+        "prompt_tokens": 1183,
+        "completion_tokens": 8,
+        "total_tokens": 1191,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "What general conversational act is shown by TEXTCHAT35's cited turn in the Japanese LAC conversation?",
+      "prediction": "Introduction",
+      "reference": "asking a question",
+      "category": 4,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.29969140887260437
+      },
+      "latency_seconds": 0.4263427257537842,
+      "token_usage": {
+        "prompt_tokens": 1175,
+        "completion_tokens": 3,
+        "total_tokens": 1178,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "What general conversational act is shown by TEXTCHAT34's cited turn in the Japanese LAC conversation?",
+      "prediction": "greeting",
+      "reference": "asking a question",
+      "category": 4,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.28496435284614563
+      },
+      "latency_seconds": 0.5006716251373291,
+      "token_usage": {
+        "prompt_tokens": 1180,
+        "completion_tokens": 2,
+        "total_tokens": 1182,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    }
+  ]
+}

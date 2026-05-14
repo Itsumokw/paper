@@ -270,7 +270,7 @@ class EntityExtractor:
                     }
                 ],
                 temperature=0,
-                max_tokens=int(os.environ.get("OMNI_ENTITY_MAX_TOKENS", "4096")),
+                max_tokens=int(os.environ.get("OMNI_ENTITY_MAX_TOKENS", "24576")),
                 response_format={"type": "json_object"},
             )
             

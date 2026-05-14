@@ -1,0 +1,1720 @@
+{
+  "input": "/home/stu0032/paper/runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/opela/mem0_fixed/mem0/mem0_predictions_flat.json",
+  "count": 200,
+  "bertscore": {
+    "enabled": true,
+    "model": "/home/stu0032/.cache/huggingface/hub/models--roberta-large/snapshots/722cf37b1afa9454edce342e7895e588b6ff1d59",
+    "error": null
+  },
+  "overall": {
+    "f1": {
+      "mean": 0.11652142241214218,
+      "count": 200
+    },
+    "bleu1": {
+      "mean": 0.08207419795127491,
+      "count": 200
+    },
+    "rouge_l": {
+      "mean": 0.10805708656245568,
+      "count": 200
+    },
+    "bertscore_f1": {
+      "mean": 0.8111154076457023,
+      "count": 200
+    }
+  },
+  "runtime": {
+    "latency": {
+      "mean_seconds": 0.9965242171287536,
+      "total_seconds": 199.30484342575073,
+      "max_seconds": 2.4885823726654053,
+      "count": 200
+    },
+    "tokens": {
+      "avg_prompt_tokens": 1339.67,
+      "avg_completion_tokens": 3.985,
+      "avg_total_tokens": 1343.655,
+      "total_prompt_tokens": 267934,
+      "total_completion_tokens": 797,
+      "total_tokens": 268731,
+      "count": 200
+    }
+  },
+  "categories": {
+    "1": {
+      "f1": {
+        "mean": 0.17368059101856323,
+        "count": 106
+      },
+      "bleu1": {
+        "mean": 0.13689577977552841,
+        "count": 106
+      },
+      "rouge_l": {
+        "mean": 0.16448867942865358,
+        "count": 106
+      },
+      "bertscore_f1": {
+        "mean": 0.8268113141914584,
+        "count": 106
+      }
+    },
+    "2": {
+      "f1": {
+        "mean": 0.07715520585845087,
+        "count": 42
+      },
+      "bleu1": {
+        "mean": 0.032675573245052686,
+        "count": 42
+      },
+      "rouge_l": {
+        "mean": 0.06203160566622365,
+        "count": 42
+      },
+      "bertscore_f1": {
+        "mean": 0.8160578125999087,
+        "count": 42
+      }
+    },
+    "3": {
+      "f1": {
+        "mean": 0.05167572463768116,
+        "count": 32
+      },
+      "bleu1": {
+        "mean": 0.016609776804898644,
+        "count": 32
+      },
+      "rouge_l": {
+        "mean": 0.04907155797101449,
+        "count": 32
+      },
+      "bertscore_f1": {
+        "mean": 0.7457868009805679,
+        "count": 32
+      }
+    },
+    "4": {
+      "f1": {
+        "mean": 0.0,
+        "count": 20
+      },
+      "bleu1": {
+        "mean": 0,
+        "count": 20
+      },
+      "rouge_l": {
+        "mean": 0.0,
+        "count": 20
+      },
+      "bertscore_f1": {
+        "mean": 0.8220738232135772,
+        "count": 20
+      }
+    }
+  },
+  "per_item": [
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\uc548\ub155\u314e \uc800\ub141\uc740 \uc798 \ucc59\uaca8\uba39\uc5c8\uc5b4?\"?",
+      "f1": 0.16,
+      "bleu1": 0.13333333333333333,
+      "rouge_l": 0.15384615384615383,
+      "bertscore_f1": 0.8569574356079102
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did user_61c1904b446be3427d4d say in the turn about \"\uadf8\ub798\ub3c4 \ud55c \ubc88 \uacbd\ud5d8\uc740 \ud574\ubd10\uc57c\uaca0\uc9c0?\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7270155549049377
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\uc560\ud50c\uc6cc\uce58 \uc88b\uc9c0 \u3160\u3160\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8450020551681519
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Korean OPELA conversation, what did user_61c1904b446be3427d4d say in the turn about \"\ub2e4\ub4e4 \uc6b4\ub3d9\ud560 \ub54c\ub098 \uc7a0\uae50 \ud578\ub4dc\ud3f0 \uc5c6\uc744 \ub54c \uc0ac\uc6a9\ud558\uae30 \uc88b\ub2e4\uace0 \ud558\ub2c8\uae4c \ud639\ud558...\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7670743465423584
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\uadf8\uce58 \u3160 \ucf54\ub85c\ub098 \ub54c\ubb38\uc5d0 \ub354 \uadf8\ub7f0 \uac83 \uac19\uc544 \u3160\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8038695454597473
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\uc544\ub2c8\uba74 \uc5b4\ub2c8\uc5b8\ub9c1\uc73c\ub85c \ubc14\uafd4\uc11c \uba39\uc5b4\ubd10!\"?",
+      "f1": 0.07407407407407408,
+      "bleu1": 0.06666666666666667,
+      "rouge_l": 0.06666666666666667,
+      "bertscore_f1": 0.8783803582191467
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did user_61c1904b446be3427d4d say in the turn about \"\uadf8\uac78 \uc0ac\uc8fc\uba74 \ub0b4\uac00 \ucc38 \uc88b\uc544\ub294 \ud560 \uac83 \uac19\uc740\ub370\u314e\u314e\u314e\u314e\u314e\"?",
+      "f1": 0.9333333333333333,
+      "bleu1": 0.8731398526961766,
+      "rouge_l": 0.9032258064516129,
+      "bertscore_f1": 0.9500179886817932
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\uc4f0\ub294 \uc6a9\ub3c4\ub124 \ub530\ub77c \ub2ec\ub77c\uc9c0\ub294 \uac83 \uac19\uc544!\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7246450185775757
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Korean OPELA conversation, what did user_61c1904b446be3427d4d say in the turn about \"\ucf54\ub85c\ub098\uac00 \ubc8c\uc368 2\ub144\uc9f8\uc57c...\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7304129600524902
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\ucf54\ub85c\ub098 \ud130\uc9c0\ub354\ub77c\uad6c \u3160\u3160\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7122600078582764
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 1 and what did user_61c1904b446be3427d4d say in session 2?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.6877960562705994
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did user_61c1904b446be3427d4d say in session 2 and what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 3?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8706510066986084
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 3 and what did user_61c1904b446be3427d4d say in session 4?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7030994296073914
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did user_61c1904b446be3427d4d say in session 4 and what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 5?",
+      "f1": 0.07547169811320756,
+      "bleu1": 0.0001697244366344001,
+      "rouge_l": 0.060606060606060594,
+      "bertscore_f1": 0.8418552875518799
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \ud504\ub85c\uad00\uc2ec\ub7ec's session 1 statement or user_61c1904b446be3427d4d's session 2 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7612088918685913
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: user_61c1904b446be3427d4d's session 2 statement or \ud504\ub85c\uad00\uc2ec\ub7ec's session 3 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7565121650695801
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \ud504\ub85c\uad00\uc2ec\ub7ec's session 3 statement or user_61c1904b446be3427d4d's session 4 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.781609833240509
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: user_61c1904b446be3427d4d's session 4 statement or \ud504\ub85c\uad00\uc2ec\ub7ec's session 5 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7383353114128113
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \ud504\ub85c\uad00\uc2ec\ub7ec's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8068808317184448
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by user_61c1904b446be3427d4d's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8068808317184448
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did user_61c157646c1e2efc9867 say in the turn about \"\uc548\ub155!!! \ubbf8\uc2a4\ud130\ub9ac \uc601\ud654\uc911\uc5d0 \ucd94\ucc9c\ud574\uc904\ub9cc \ud55c \uc601\ud654 \uc788\uc5b4?!\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8073289394378662
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did user_61c157646c1e2efc9867 say in the turn about \"\uadf8\ub798\ub3c4 \uae30\ubd84 \uc88b\uaca0\ub2e4 12\uc6d4 \ub9c8\uc9c0\ub9c9\uc5d0 \ub530\uc545\"?",
+      "f1": 0.09523809523809523,
+      "bleu1": 0.022160631672466777,
+      "rouge_l": 0.09523809523809523,
+      "bertscore_f1": 0.8713535666465759
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Korean OPELA conversation, what did user_61c157646c1e2efc9867 say in the turn about \"\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7401357293128967
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Korean OPELA conversation, what did user_61c157646c1e2efc9867 say in the turn about \"\ub0b4\uce5c\uad6c\ub3c4 \uadf8\ub7f0\ub514??\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8238556385040283
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Korean OPELA conversation, what did user_61c157646c1e2efc9867 say in the turn about \"_\u314b\u314b\u314b\u314b\u314b\u314b\uc624\ud788\ub824\uc88b\uc544~~~\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7989127039909363
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did user_61c157646c1e2efc9867 say in the turn about \"\uc544..\uae4c\ube44 \uad6c\uacbd\ud558\uace0\uc2f6\uc740\ub370 \ubabb\ubcf8\ub2e4\ub294\uac8c\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7354583740234375
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did user_61c157646c1e2efc9867 say in the turn about \"\uadf8\ub974\ub2c8\uae4c..\ub9db\uc788\ub294\uc220 \uc0ac\uba39\uc950..\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8318695425987244
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Korean OPELA conversation, what did user_61c157646c1e2efc9867 say in the turn about \"\ub098 \uacf5\ucc28 \uc74c\ub8cc \ub9e8\ub0a0 \uc0ac\uc11c \uc228\uae30\uace0 \ub4e4\uc5b4\uac14\uc5b4\"?",
+      "f1": 0.1111111111111111,
+      "bleu1": 0.004374576245646989,
+      "rouge_l": 0.10526315789473684,
+      "bertscore_f1": 0.8568195104598999
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Korean OPELA conversation, what did user_61c157646c1e2efc9867 say in the turn about \"\uadf8 \uba54\ub274 \ubcf4\uba74\uc11c \uae30\ub2e4\ub9ac\uae30\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8149244785308838
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Korean OPELA conversation, what did user_61c157646c1e2efc9867 say in the turn about \"\ub098 \uc9c4\uc9dc..\ube44\uc18d\uc5b4\ub97c \uac19\uc774 \ubabb\uc4f0\ub2c8\uae4c \uc774\uac8c \uace0\ubbfc\ud558\uac8c \ub418\ub124 \ub2e4\uc2dc\uc4f0\uace0\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8208963871002197
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did user_61c157646c1e2efc9867 say in session 1 and what did user_61c157646c1e2efc9867 say in session 2?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8465288877487183
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did user_61c157646c1e2efc9867 say in session 2 and what did user_61c157646c1e2efc9867 say in session 3?",
+      "f1": 0.05,
+      "bleu1": 0.002268203224635519,
+      "rouge_l": 0.046511627906976744,
+      "bertscore_f1": 0.868109941482544
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did user_61c157646c1e2efc9867 say in session 3 and what did user_61c157646c1e2efc9867 say in session 4?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8336776494979858
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did user_61c157646c1e2efc9867 say in session 4 and what did user_61c157646c1e2efc9867 say in session 5?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8394036293029785
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: user_61c157646c1e2efc9867's session 1 statement or user_61c157646c1e2efc9867's session 2 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.805311381816864
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: user_61c157646c1e2efc9867's session 2 statement or user_61c157646c1e2efc9867's session 3 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.6622520089149475
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: user_61c157646c1e2efc9867's session 3 statement or user_61c157646c1e2efc9867's session 4 statement?",
+      "f1": 0.4,
+      "bleu1": 0.049787068367863944,
+      "rouge_l": 0.4,
+      "bertscore_f1": 0.7942845821380615
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: user_61c157646c1e2efc9867's session 4 statement or user_61c157646c1e2efc9867's session 5 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8209641575813293
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by user_61c157646c1e2efc9867's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7313516736030579
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by user_61c157646c1e2efc9867's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7564173340797424
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \uc7a0\ubcf4 say in the turn about \"\uc11c\ube0c\ub2d8 \uc548\ub155\ud558\uc138\uc694, \uc800\ub3c4 \ubc18\uac00\uc6cc\uc694 \u314e\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7264497876167297
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did user_61c8d9b335c60baaaab3 say in the turn about \"\u314b\u314b \uc880 \uadf8\ub7f0\ub4ef..\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9921201467514038
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Korean OPELA conversation, what did \uc7a0\ubcf4 say in the turn about \"\uc5b4\uc82f\ubc24\uc5d0 \uadf8\ub0e5 \ub2f5\uc7a5\uc744 \ud588\uc5b4\ub3c4 \ub420\uac78 \uadf8\ub7ac\uc5b4\uc694.\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Korean OPELA conversation, what did \uc7a0\ubcf4 say in the turn about \"\ub124. \uac00\uc871\uacfc\ub3c4 \uadf8\ub807\uace0, \uce5c\uad6c\ub791\ub3c4 \uc788\uc5b4\uc694\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7338855862617493
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Korean OPELA conversation, what did \uc7a0\ubcf4 say in the turn about \"\uadf8\ub807\uac8c \ub290\uaef4\uc9c0\uc138\uc694?\"?",
+      "f1": 0.3333333333333333,
+      "bleu1": 0.18393972058572117,
+      "rouge_l": 0.3333333333333333,
+      "bertscore_f1": 0.8945844173431396
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the Korean OPELA conversation, what did user_61c8d9b335c60baaaab3 say in the turn about \"\uac10\uc815\uc774 \uaca9\ud574\uc838\uc11c \ub9c9 \uc18c\ub9ac\ub3c4 \uc9c0\ub974\uace0 \uadf8\ub7ac\uc5b4\uc694 \u314e\u314e\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8075307011604309
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the Korean OPELA conversation, what did \uc7a0\ubcf4 say in the turn about \"\uac00\uc2b4\uc774 \uba39\uba39\ud558\ub2e4\uac70\ub098.\"?",
+      "f1": 0.8571428571428571,
+      "bleu1": 0.7514772930752859,
+      "rouge_l": 0.8750000000000001,
+      "bertscore_f1": 0.9676242470741272
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the Korean OPELA conversation, what did user_61c8d9b335c60baaaab3 say in the turn about \"\ub9c8\uce58 \ub2e4\ub978\uc0ac\ub78c\uc758 \uc774\uc57c\uae30\ub97c \uc77d\uac70\ub098 \ub9d0\ud558\ub294 \uac83 \ucc98\ub7fc\uc694?\"?",
+      "f1": 0.3404255319148936,
+      "bleu1": 0.27586206896551724,
+      "rouge_l": 0.16,
+      "bertscore_f1": 0.8965176939964294
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \uc7a0\ubcf4 say in the turn about \"\uc544\ub140, \uc62c\ube7c\ubbf8\ub294 \ub9de\ub294\ub370 \ub0ae\uc5d0\ub3c4 \uc880 \uc6c0\uc9c1\uc774\ub824\uace0 \ub178\ub825\ud558\ub294 \uc62c\ube7c\ubbf8\uc608\uc694\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7124999761581421
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did user_61c8d9b335c60baaaab3 say in the turn about \"\uc798 \ub54c \uc5f0\ub77d\ud558\uba74 \ub54c\ub824\uc8fc\uace0 \uc2f6\uc5b4\uc838\uc694\"?",
+      "f1": 0.16666666666666669,
+      "bleu1": 0.141080287481769,
+      "rouge_l": 0.15384615384615383,
+      "bertscore_f1": 0.8925626277923584
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \uc7a0\ubcf4 say in session 1 and what did user_61c8d9b335c60baaaab3 say in session 2?",
+      "f1": 0.17647058823529413,
+      "bleu1": 0.005554498269121153,
+      "rouge_l": 0.10256410256410256,
+      "bertscore_f1": 0.8602761626243591
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did user_61c8d9b335c60baaaab3 say in session 2 and what did \uc7a0\ubcf4 say in session 3?",
+      "f1": 0.14035087719298245,
+      "bleu1": 0.10000000000000002,
+      "rouge_l": 0.09090909090909093,
+      "bertscore_f1": 0.8668405413627625
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \uc7a0\ubcf4 say in session 3 and what did user_61c8d9b335c60baaaab3 say in session 4?",
+      "f1": 0.15384615384615383,
+      "bleu1": 0.1481636441363436,
+      "rouge_l": 0.17391304347826086,
+      "bertscore_f1": 0.8566856980323792
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \uc7a0\ubcf4 say in session 4 and what did \uc7a0\ubcf4 say in session 5?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7502063512802124
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \uc7a0\ubcf4 say in session 5 and what did user_61c8d9b335c60baaaab3 say in session 6?",
+      "f1": 0.27027027027027023,
+      "bleu1": 0.2853688273502142,
+      "rouge_l": 0.2926829268292683,
+      "bertscore_f1": 0.8732588887214661
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did user_61c8d9b335c60baaaab3 say in session 6 and what did \uc7a0\ubcf4 say in session 7?",
+      "f1": 0.13953488372093023,
+      "bleu1": 0.03077350563192461,
+      "rouge_l": 0.08695652173913043,
+      "bertscore_f1": 0.8392114639282227
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \uc7a0\ubcf4's session 1 statement or user_61c8d9b335c60baaaab3's session 2 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7062735557556152
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: user_61c8d9b335c60baaaab3's session 2 statement or \uc7a0\ubcf4's session 3 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7265531420707703
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \uc7a0\ubcf4's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8533212542533875
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by user_61c8d9b335c60baaaab3's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8785880208015442
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\ud604\uc815 \ud558\uc774~\ub09c \ubaa8\ub4e0 \uc608\uc220\uc744 \uc560\uc815\ud558\uc9c0\ub9cc \uc74c\uc545\uacfc \ubbf8\uc220\ucabd\uc5d0 \ub354 \uad00\uc2ec\uc774 \ub9ce\uc544\"?",
+      "f1": 0.0625,
+      "bleu1": 0.010260624827987352,
+      "rouge_l": 0.05555555555555556,
+      "bertscore_f1": 0.8660569190979004
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\uadf8\ub7fc \uc5f0\uc8fc\ud68c\ub97c \ud558\uaca0\uad6c\ub098\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7205565571784973
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Korean OPELA conversation, what did user_61ad5fc5957ac3e7bdf4 say in the turn about \"\uc624 \ub300\ub2e8\ud558\ub2e4! \ub77c\ub514\uc624\ub3c4 \ud074\ub798\uc2dd \uc5d0\ud504\uc5e0 \uc788\ub294\ub370 \uadf8\uac70 \ub4e4\uc73c\uba74 \uc88b\uc544!\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7159543037414551
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\uc548\uc815\uac10\uc778\uac83 \uac19\uc544\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8439465165138245
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\uc544 \uadf8\ub798 \uc774\ub7f0 \uc815\ubcf4 \ub108\ubb34 \uace0\ub9c8\uc6cc\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7284009456634521
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\uc544\uae4c \ub0b4 \uc9c0\uc778 \uc598\uae30 \ud588\uc796\uc544?\"?",
+      "f1": 0.1904761904761905,
+      "bleu1": 0.16666666666666669,
+      "rouge_l": 0.1818181818181818,
+      "bertscore_f1": 0.884056568145752
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\uc880 \uae4c\ud0c8\uc2a4\ub7f0 \uc0ac\ub78c\uc774\ub77c\"?",
+      "f1": 0.47058823529411764,
+      "bleu1": 0.4412484512922977,
+      "rouge_l": 0.47058823529411764,
+      "bertscore_f1": 0.9055103659629822
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the Korean OPELA conversation, what did user_61ad5fc5957ac3e7bdf4 say in the turn about \"\uadf8\uce58 \uadf8\ub7f4\ub550 \uadf8\ub0e5 \uadf8\uc0ac\ub78c\uc740 \uadf8\ub7ec\ub824\ub2c8~ \ud558\ub294\uac8c \ub0ab\ub354\ub77c\uace0\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8194748759269714
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\uc751 \uc54c\uc544 \uc815\ud655\ud558\uac8c\ub294 \uc798 \ubaa8\ub974\uc9c0\ub9cc\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.6969399452209473
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did user_61ad5fc5957ac3e7bdf4 say in the turn about \"\ub098\ub3c4 \uc804\uacf5\uc0dd\uc774\uc9c0\ub9cc \ub4e4\uc73c\uba74 \ub4e4\uc744\uc218\ub85d \uacf5\ubd80\ud558\uba74 \uacf5\ubd80\ud560\uc218\ub85d \uc54c\uac8c\ub418\ub294\uac8c \ub354...\"?",
+      "f1": 0.13333333333333333,
+      "bleu1": 0.001479145486593173,
+      "rouge_l": 0.10526315789473685,
+      "bertscore_f1": 0.8503925204277039
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in session 1 and what did user_61ad5fc5957ac3e7bdf4 say in session 2?",
+      "f1": 0.08333333333333334,
+      "bleu1": 3.686527411996926e-06,
+      "rouge_l": 0.08571428571428573,
+      "bertscore_f1": 0.8435269594192505
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in session 2 and what did user_61ad5fc5957ac3e7bdf4 say in session 3?",
+      "f1": 0.09302325581395347,
+      "bleu1": 7.364231746703168e-05,
+      "rouge_l": 0.07547169811320754,
+      "bertscore_f1": 0.8400065302848816
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did user_61ad5fc5957ac3e7bdf4 say in session 3 and what did user_61ad5fc5957ac3e7bdf4 say in session 4?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7532436847686768
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in session 4 and what did user_61ad5fc5957ac3e7bdf4 say in session 5?",
+      "f1": 0.14285714285714285,
+      "bleu1": 0.007326255555493672,
+      "rouge_l": 0.13333333333333333,
+      "bertscore_f1": 0.8571134209632874
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in session 5 and what did \uc81c\uc774\ub4dc say in session 6?",
+      "f1": 0.125,
+      "bleu1": 0.021259478129946757,
+      "rouge_l": 0.07017543859649122,
+      "bertscore_f1": 0.8709529638290405
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in session 6 and what did user_61ad5fc5957ac3e7bdf4 say in session 7?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.835064709186554
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \uc81c\uc774\ub4dc's session 1 statement or \uc81c\uc774\ub4dc's session 2 statement?",
+      "f1": 0.05555555555555555,
+      "bleu1": 0.009641592163769912,
+      "rouge_l": 0.049999999999999996,
+      "bertscore_f1": 0.8705036640167236
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \uc81c\uc774\ub4dc's session 2 statement or user_61ad5fc5957ac3e7bdf4's session 3 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8177484273910522
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \uc81c\uc774\ub4dc's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8683281540870667
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \uc81c\uc774\ub4dc's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8683281540870667
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\uc548\ub155\uc548\ub155 \ub098\ub450 \ubc18\uac00\uc6cc \u314e\u314e\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8302101492881775
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did user_61ad71d84b2501700d7d say in the turn about \"\ub0b4\ub144\uc774\uba74 \uc774\uc81c \ubbf8\uc6b44\uc0b4\ub418\uac9f\uc9d5 \uc5b4\uc6b0 \uc5bc\ub9c8\ub098 \ub354 \uc2ec\ud574\uc9c8\ub7f0_\u314b\u314b\u314b\"?",
+      "f1": 0.7567567567567568,
+      "bleu1": 0.5488116360940264,
+      "rouge_l": 0.7692307692307693,
+      "bertscore_f1": 0.9657981395721436
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\ub0b4 \uc55e\uc5d0 \uc7a1\ucc44\ub294 \uc0b4\uc544\ub0a8\uc744 \uc218 \uc5c6\uc5b4..!\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8417515754699707
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Korean OPELA conversation, what did user_61ad71d84b2501700d7d say in the turn about \"\uc774\ubc88\uae30\ud68c\uc5d0 \uc798 \uba39\uc5b4\uc11c \ub2c8\uac00 \uc7a1\ucc44 \uc5c4\uccad \uc88b\uc544\ud558\ub294\uac78 \ubcf4\uc5ec_!!\"?",
+      "f1": 0.26666666666666666,
+      "bleu1": 0.10483425910475552,
+      "rouge_l": 0.1935483870967742,
+      "bertscore_f1": 0.8989690542221069
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\ud639\uc2dc \uc7a1\ucc44\uba39\uc5c8\ub2c8?!\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8626152873039246
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\uac04\ub9cc\uc5d0 \ub9e5\uc8fc \ub9c8\uc2dc\ub2c8\uae4c \ub118\ub098 \ub9db\uc788\ub354\ub77c \u3160\u3160\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8285786509513855
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did user_61ad71d84b2501700d7d say in the turn about \"\uc774\ub7f0 \ub108\ubb34 \ud558\uc2dc\ub124 \u315c\u315c\uc74c \ub9d0\ub4e4\uc5b4\ubcf4\ub2c8 \ubaa8\ub974\uc2dc\ub098\ubcf4\ub2e4 \ub108\uac00 \uc7a1\ucc44 \ud0ac\ub7f0\uc9c0!!\"?",
+      "f1": 0.26666666666666666,
+      "bleu1": 0.06721767097355368,
+      "rouge_l": 0.2285714285714286,
+      "bertscore_f1": 0.8698713779449463
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\uc548\uadf8\ub798\ub3c4 \uc774\ud2c0\uc804\uc5d0 \u3160\u314d\u3160\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7324416637420654
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Korean OPELA conversation, what did user_61ad71d84b2501700d7d say in the turn about \"\ud558\ub098\uc815\ub3c4\ub294 \uad1c\ucc2e\uc9c0 \uc54a\uc744\uae4c?\u314b\u314b\ub531 \ud558\ub098\ub9cc\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8622232675552368
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\uc7a1\uc544\uc77c\uccb4\uac00 \ub418\uc5c8\uad6c\ub098..\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8432160019874573
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 1 and what did user_61ad71d84b2501700d7d say in session 2?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.6887997984886169
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did user_61ad71d84b2501700d7d say in session 2 and what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 3?",
+      "f1": 0.13043478260869565,
+      "bleu1": 0.036425328261888844,
+      "rouge_l": 0.08,
+      "bertscore_f1": 0.8623872995376587
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 3 and what did user_61ad71d84b2501700d7d say in session 4?",
+      "f1": 0.1702127659574468,
+      "bleu1": 0.11428571428571427,
+      "rouge_l": 0.11940298507462688,
+      "bertscore_f1": 0.8453616499900818
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did user_61ad71d84b2501700d7d say in session 4 and what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 5?",
+      "f1": 0.27906976744186046,
+      "bleu1": 0.0991276465056253,
+      "rouge_l": 0.2916666666666667,
+      "bertscore_f1": 0.8931073546409607
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \ud504\ub85c\uad00\uc2ec\ub7ec's session 1 statement or user_61ad71d84b2501700d7d's session 2 statement?",
+      "f1": 0.1111111111111111,
+      "bleu1": 0.06062469223956427,
+      "rouge_l": 0.1,
+      "bertscore_f1": 0.7302473783493042
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: user_61ad71d84b2501700d7d's session 2 statement or \ud504\ub85c\uad00\uc2ec\ub7ec's session 3 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7009494304656982
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \ud504\ub85c\uad00\uc2ec\ub7ec's session 3 statement or user_61ad71d84b2501700d7d's session 4 statement?",
+      "f1": 0.08695652173913043,
+      "bleu1": 0.03949329237565206,
+      "rouge_l": 0.08695652173913043,
+      "bertscore_f1": 0.7140696048736572
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: user_61ad71d84b2501700d7d's session 4 statement or \ud504\ub85c\uad00\uc2ec\ub7ec's session 5 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.6860754489898682
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \ud504\ub85c\uad00\uc2ec\ub7ec's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8133902549743652
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by user_61ad71d84b2501700d7d's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8251698017120361
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\ud558\uc774!! \ud574\ud53c \ub274\uc774\uc5b4~\uc778\uc0ac \uba3c\uc800 \ud558\uacf5!!\"?",
+      "f1": 0.7058823529411764,
+      "bleu1": 0.42437284567694994,
+      "rouge_l": 0.7000000000000001,
+      "bertscore_f1": 0.9544309377670288
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7542111277580261
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\uc81c\uc774\uc2a8\uc740 \uc81c\uc774\uc2a8 \uc2a4\ud0c0\ub380?\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7041987180709839
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\ud5c9\uc4f0 \uc810\uc785\uac00\uacbd! \ub108\ub3c4 \uc608\uc220\uac00\uc801 \uae30\uc9c8\uc774 \uc788\ub098\ubcf4\ub124! \uadf8\ub798\uc11c \uc9c0\uae08\uc740 \ub304~~\uc11c?\"?",
+      "f1": 0.9387755102040817,
+      "bleu1": 0.8861916925311702,
+      "rouge_l": 0.923076923076923,
+      "bertscore_f1": 0.9696824550628662
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\uc6b0\uc640\uc544 ! \uc9e7\uc740 \uc778\uc0dd\uc5d0 \ub9ce\uc740 \uacbd\ud5d8\uc744 \ud55c \uac83 \uac19\uc740 \ub290\ub08c? \uc637\uc7a5\uc0ac\ub294 \uc9c0...\"?",
+      "f1": 0.5454545454545454,
+      "bleu1": 0.1353352832366127,
+      "rouge_l": 0.5,
+      "bertscore_f1": 0.9227964282035828
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the Korean OPELA conversation, what did user_61ce4aa9538559f75f41 say in the turn about \"\ub9de\uc544 \uc54c\uc544 \uac70\uae30 \uac10\ub3c5\ub3c4 \ub098\ub791 \ucda4\ucd94\ub358 \uc560\ub4e4\uc778\ub370\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8466609120368958
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\ub204\uac00 \ub354 \ub9ce\uc544 \uc6c3\ub098 \ub0b4\uae30 \ud558\uc790\ub294 \uac70?\"?",
+      "f1": 0.13333333333333336,
+      "bleu1": 0.0020433857192320333,
+      "rouge_l": 0.13333333333333336,
+      "bertscore_f1": 0.8374013900756836
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\uadf8\ub0e5 \ub0b4 \uc601\uc5b4 \ub2c9\ub134\uc774\uc9c0 \ubb50!\"?",
+      "f1": 0.15384615384615383,
+      "bleu1": 0.03232398928813501,
+      "rouge_l": 0.15384615384615383,
+      "bertscore_f1": 0.8448113799095154
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\ud5c9\uc4f0! \uadf8\ub798\uc11c?\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7576426863670349
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Korean OPELA conversation, what did user_61ce4aa9538559f75f41 say in the turn about \"\uc800\ud76c \uc544\ubd80\uc9c0\uac00 \uadf8\ub9bc\uc744 \uc798 \uadf8\ub9ac\uc168\uace0 \ub204\ub098\ub294 \uc131\uc545\uac00\uace0 \ud560\uc544\ubc84\uc9c0\ub294 \uc6b4\ub3d9...\"?",
+      "f1": 0.2051282051282051,
+      "bleu1": 0.031237175650136836,
+      "rouge_l": 0.08163265306122448,
+      "bertscore_f1": 0.8691654205322266
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in session 1 and what did \uc81c\uc774\ub4dc say in session 2?",
+      "f1": 0.21428571428571427,
+      "bleu1": 0.046507244605331746,
+      "rouge_l": 0.22857142857142856,
+      "bertscore_f1": 0.7651391625404358
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in session 2 and what did \uc81c\uc774\ub4dc say in session 3?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.82480388879776
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in session 3 and what did user_61ce4aa9538559f75f41 say in session 4?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7314743399620056
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in session 4 and what did \uc81c\uc774\ub4dc say in session 5?",
+      "f1": 0.19999999999999998,
+      "bleu1": 0.02096297615489008,
+      "rouge_l": 0.1263157894736842,
+      "bertscore_f1": 0.8789229393005371
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in session 5 and what did \uc81c\uc774\ub4dc say in session 6?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7284607887268066
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \uc81c\uc774\ub4dc's session 1 statement or \uc81c\uc774\ub4dc's session 2 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7579124569892883
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \uc81c\uc774\ub4dc's session 2 statement or \uc81c\uc774\ub4dc's session 3 statement?",
+      "f1": 0.6666666666666666,
+      "bleu1": 0.36787944117144233,
+      "rouge_l": 0.6666666666666666,
+      "bertscore_f1": 0.8417771458625793
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \uc81c\uc774\ub4dc's session 3 statement or \uc81c\uc774\ub4dc's session 4 statement?",
+      "f1": 0.33333333333333337,
+      "bleu1": 0.004086771438464067,
+      "rouge_l": 0.2666666666666667,
+      "bertscore_f1": 0.7934607267379761
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \uc81c\uc774\ub4dc's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8098658919334412
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \uc81c\uc774\ub4dc's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8267462849617004
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\uc548\ub155 \uc218\ud558\uc57c~~ \uc798 \uc9c0\ub0b4\uc9c0 \u314e\u314e? \uc5b4\uc81c \uc7a0\ub4e4\uc5b4\ubc84\ub824\uc11c \uc774\uc81c\ubd24\ub124 \u3160\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7177320718765259
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\uc800\ub141\uc740 \uba39\uc5b4\uc37d?\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7454394102096558
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\uc751\uc751 \uadf8\ub798\ub3c4 \uc694\ub9ac\ud558\ub294\uac78 \uc88b\uc544\ud574\uc11c \ubb54\uac00 \ud574\uba39\uc73c\uba74 \uc990\uac70\uc6cc \u314b\u314b\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7217934727668762
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\ub4dc\ub9bd\uc6a9\ud488 \uc788\uac70\ub4e0\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7364660501480103
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did user_61ae0fe17eca38419ced say in the turn about \"\ub09c \uc544\uc9c1 \uc548\uba39\uc5c8\uc5b4~ \uc800\ub141 \uba39\uc5c8\uc5b4?\u314b\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7419276237487793
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did user_61ae0fe17eca38419ced say in the turn about \"\uadf8\ub7ec\uac8c \ud3b8\uc138\uad8c\uc774\uba74 \uc88b\uc740\ub370 \u3160\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7390933036804199
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Korean OPELA conversation, what did user_61ae0fe17eca38419ced say in the turn about \"\uc8fc\ub9d0\uc5d0 \ube0c\ub7f0\uce58 \ub290\ub08c\ub0b4\uae30 \uc88b\uc744\uac70 \uac19\uc544 \u314b\u314b\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7795701622962952
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Korean OPELA conversation, what did user_61ae0fe17eca38419ced say in the turn about \"\uc694\uc0c8 \ube75\uac00\uaca9\uc774 \uc9c4\uc9dc \ub108\ubb34 \uc0ac\uc545\ud558\uc790\ub108 \u3160\u3160\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did user_61ae0fe17eca38419ced say in the turn about \"\uce5c\uad6c\ub4e4\uc774\ub791 \uc800\ub141\uba39\uace0 \uc9d1\uc5d0\uc11c \uce74\uc6b4\ud2b8\ub2e4\uc6b4\ub3c4 \ud588\uc5b4~\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7222999930381775
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\ud734.. \ub2e4\ub978 \uce5c\uad6c\ub4e4 \ubabb\ubcf8\uc9c0 \uc5bc\ub9c8\ub098 \uc9c0\ub0ac\ub294\uc9c0 \ubaa8\ub974\uaca0\ub2e4 \uc57c\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7365956902503967
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 1 and what did user_61ae0fe17eca38419ced say in session 2?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7294837236404419
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 2 and what did user_61ae0fe17eca38419ced say in session 3?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7495540976524353
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 3 and what did user_61ae0fe17eca38419ced say in session 4?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.6848554015159607
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \ud504\ub85c\uad00\uc2ec\ub7ec's session 1 statement or \ud504\ub85c\uad00\uc2ec\ub7ec's session 2 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7663193941116333
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \ud504\ub85c\uad00\uc2ec\ub7ec's session 2 statement or \ud504\ub85c\uad00\uc2ec\ub7ec's session 3 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7955593466758728
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \ud504\ub85c\uad00\uc2ec\ub7ec's session 3 statement or \ud504\ub85c\uad00\uc2ec\ub7ec's session 4 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7581169009208679
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \ud504\ub85c\uad00\uc2ec\ub7ec's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8449862003326416
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \ud504\ub85c\uad00\uc2ec\ub7ec's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8449862003326416
+    },
+    {
+      "category": "1",
+      "question": "What was stated by \ud504\ub85c\uad00\uc2ec\ub7ec at evidence turn D1:1 in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8276768326759338
+    },
+    {
+      "category": "1",
+      "question": "What was stated by user_61ae0fe17eca38419ced at evidence turn D1:2 in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7390763163566589
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\ub0b4\uac00 \uc870\uae08 \ub2a6\uac8c \ubd24\ub124!\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7416496872901917
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did user_61b7f527175f6c0e7be4 say in the turn about \"\u314b\u314b\u314b\u314b\u314b\uc5b4\ub978\ub4e4\uc774 \ub9d0\ud558\ub294 \ud3c9\uc591\ub0c9\uba74 \uac19\uc740\uac74\uac00?\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\ub610 \uc5b4\ub290\uc815\ub3c4 \uc9c0\ub098\uba74 \uba39\uace0\uc2f6\uc5b4\uc9c0\uace0\"?",
+      "f1": 0.16666666666666669,
+      "bleu1": 0.14285714285714285,
+      "rouge_l": 0.14285714285714285,
+      "bertscore_f1": 0.8747968673706055
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Korean OPELA conversation, what did user_61b7f527175f6c0e7be4 say in the turn about \"\ud639\uc2dc mbti\uc5d0\uc11c s\uc57c?\u314b\u314b\u314b\u314b\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.758632242679596
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\ubb54\uac00 \ud2b8\ub80c\ub4dc\uac00 \ubcc0\ud55c \ub290\ub08c\uc774\uc57c!\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7404778599739075
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did user_61b7f527175f6c0e7be4 say in the turn about \"\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\uac78\ub808 \ube64 \ubb3c\ub9db\uc774\ub77c\ub294\uac70\ubcf4\uba74 \ud655\uc2e4\ud788 \uc2f1\uac70\uc6b4 \uc218\uc900\uc5d0 \uadf8\uce58...\"?",
+      "f1": 0.0625,
+      "bleu1": 0.005344835909605227,
+      "rouge_l": 0.05405405405405406,
+      "bertscore_f1": 0.8190383911132812
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\uadf8\uac74 \uadf8\ub798\ub3c4 \ub04c\ub9ac\ub294 \ub9db\uc774 \uc788\ub098\ubcf4\ub2e4 \u314e.\u314e\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7923271656036377
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\ub0b4\uac00 \ud6c4\uac01\uc774 \ub454\uac10\ud574\uc11c \uadf8\ub7f0\uac00?? \u314b\u314b\u314b\u314b\u314b\u314b\"?",
+      "f1": 0.10526315789473685,
+      "bleu1": 0.06062469223956427,
+      "rouge_l": 0.1,
+      "bertscore_f1": 0.8293861150741577
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\uc751\uc751 \ub098\ub450 \uba39\uc5c8\uc5b4\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7255792021751404
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did user_61b7f527175f6c0e7be4 say in the turn about \"\uc61b\ub0a0\uc5d0 \uba39\uc5c8\ub358 \ubb50\ub784\uae4c \uc800\ub834\ud55c \ub9db?\u314b\u314b\u314b\u314b\u314b\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8673520088195801
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 1 and what did user_61b7f527175f6c0e7be4 say in session 2?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8177798986434937
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did user_61b7f527175f6c0e7be4 say in session 2 and what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 3?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7978726625442505
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 3 and what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 4?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8277927041053772
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \ud504\ub85c\uad00\uc2ec\ub7ec's session 1 statement or user_61b7f527175f6c0e7be4's session 2 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7406125664710999
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: user_61b7f527175f6c0e7be4's session 2 statement or \ud504\ub85c\uad00\uc2ec\ub7ec's session 3 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7244030833244324
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \ud504\ub85c\uad00\uc2ec\ub7ec's session 3 statement or user_61b7f527175f6c0e7be4's session 4 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7316674590110779
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \ud504\ub85c\uad00\uc2ec\ub7ec's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8212040662765503
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by user_61b7f527175f6c0e7be4's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7983478307723999
+    },
+    {
+      "category": "1",
+      "question": "What was stated by \ud504\ub85c\uad00\uc2ec\ub7ec at evidence turn D1:1 in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7030407786369324
+    },
+    {
+      "category": "1",
+      "question": "What was stated by user_61b7f527175f6c0e7be4 at evidence turn D1:2 in the Korean OPELA conversation?",
+      "f1": 0.13333333333333333,
+      "bleu1": 0.12383969996431167,
+      "rouge_l": 0.13333333333333333,
+      "bertscore_f1": 0.8401181101799011
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\uccad\ud48d\uc544 \ub098 \uc774\uc81c \uc77c\uc5b4\ub0a8\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did user_61c8d9b335c60baaaab3 say in the turn about \"\uc720\ubc30 \uc640\uc11c \uc9c0\ub0b4\uc2dc\ub358 \uacf3~\"?",
+      "f1": 0.15384615384615383,
+      "bleu1": 0.10735389901075512,
+      "rouge_l": 0.125,
+      "bertscore_f1": 0.8381766676902771
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\ubd80\ubaa8\ub2d8 \uc77c\ub85c \uadf8\ub798\uc11c \uadf8\ub7f0\uac00\ubcf4\ub2e4!! \uadf8\ub798\ub3c4 \ub10c \ub0a8\ub4e4\uacfc \ub2e4\ub978 \uacbd\ud5d8\uc73c\ub85c...\"?",
+      "f1": 0.45000000000000007,
+      "bleu1": 0.0319224918348957,
+      "rouge_l": 0.36734693877551017,
+      "bertscore_f1": 0.904813289642334
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Korean OPELA conversation, what did user_61c8d9b335c60baaaab3 say in the turn about \"\u314b\u314b \ucacc \uae00\ucd78?\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8379991054534912
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\ud574\uc678\uc5ec\ud589\ud30c\ub294 \uc544\ub2c8\uace0\"?",
+      "f1": 0.2105263157894737,
+      "bleu1": 0.18181818181818182,
+      "rouge_l": 0.19999999999999998,
+      "bertscore_f1": 0.879145085811615
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did user_61c8d9b335c60baaaab3 say in the turn about \"\uc790\uc5f0\uc2a4\ub7fd\uac8c \uc9c0\ub0b4\uc628 \uc0dd\uc774 \uc5ec\ud589\uac19\uc544\uc694 \u314e\u314e\"?",
+      "f1": 0.2,
+      "bleu1": 0.07898658475130411,
+      "rouge_l": 0.17391304347826086,
+      "bertscore_f1": 0.8506733775138855
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\uc751 \uce5c\uad6c \ud55c\uba85\uc774\ub791 \uac08 \uc608\uc815\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7499178051948547
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\uc790\uc804\uac70 \ud0c0\uace0 \ud574\uc548 \ub3c4\ub85c \ub2ec\ub824\ubcf4\uace0 \uc2f6\uc5c8\ub294\ub370\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8622846603393555
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\ub0a8\uc591\uc8fc \uc601\ud654 \ucd2c\uc601\uc18c \uc788\ub294\ub370?\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7476558089256287
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\u314b\u314b\u314b\u314b\u314b\uc774\ud574 \uace0\ub9c8\uc6cc~~\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in session 1 and what did user_61c8d9b335c60baaaab3 say in session 2?",
+      "f1": 0.14634146341463417,
+      "bleu1": 0.08320262064020248,
+      "rouge_l": 0.13333333333333333,
+      "bertscore_f1": 0.8273272514343262
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did user_61c8d9b335c60baaaab3 say in session 2 and what did \uc81c\uc774\ub4dc say in session 3?",
+      "f1": 0.08,
+      "bleu1": 0.0021629238007801585,
+      "rouge_l": 0.07407407407407408,
+      "bertscore_f1": 0.8441885709762573
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in session 3 and what did \uc81c\uc774\ub4dc say in session 4?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.788558304309845
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \uc81c\uc774\ub4dc's session 1 statement or user_61c8d9b335c60baaaab3's session 2 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.6957795023918152
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: user_61c8d9b335c60baaaab3's session 2 statement or \uc81c\uc774\ub4dc's session 3 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.710381031036377
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \uc81c\uc774\ub4dc's session 3 statement or user_61c8d9b335c60baaaab3's session 4 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.6815922856330872
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \uc81c\uc774\ub4dc's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8228721022605896
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by user_61c8d9b335c60baaaab3's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7498404383659363
+    },
+    {
+      "category": "1",
+      "question": "What was stated by \uc81c\uc774\ub4dc at evidence turn D1:1 in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8423159122467041
+    },
+    {
+      "category": "1",
+      "question": "What was stated by user_61c8d9b335c60baaaab3 at evidence turn D1:2 in the Korean OPELA conversation?",
+      "f1": 0.14285714285714288,
+      "bleu1": 0.09306272250443651,
+      "rouge_l": 0.11764705882352941,
+      "bertscore_f1": 0.8426157236099243
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\ubc18\uac00\uc6cc~\uc624\ub298\uc740 \uc544\uc9c1 \uc2dc\uc791 \uc548 \ud588\uc5b4! \ubc24\uc5d0 \ubcf4\ub824\uace0~\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did user_61c1b36aced5157d24cb say in the turn about \"\ub09c \uce74\ub808\ud06c\ub9bc\ud30c\uc2a4\ud0c0!\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8739511966705322
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\ub0b4\uac00 \uc88b\uc544\ud558\ub294\uac83\ub9cc \uc798 \ud560?\uac70\ub77c\uace0 \uc790\uc704\ud574\ubcf4\uba70! \uc124\ud0d5 \uc774\uac70 \ud558\ub098\ub85c \ub9db\uc774...\"?",
+      "f1": 0.1111111111111111,
+      "bleu1": 0.019283184327539827,
+      "rouge_l": 0.09999999999999999,
+      "bertscore_f1": 0.8604331016540527
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Korean OPELA conversation, what did user_61c1b36aced5157d24cb say in the turn about \"\ub9de\uc544 \uc124\ud0d5 \uc801\ub2f9\ud788 \uc798\uc4f0\uba74 \ub2e8\ub9db\ub9d0\uace0 \uac10\uce60\ub9db\uc0dd\uaca8\uc11c \uc9c4\uc9dc \ub9db\uc788\uc5b4\uc838\"?",
+      "f1": 0.22222222222222224,
+      "bleu1": 0.19167591971444237,
+      "rouge_l": 0.16,
+      "bertscore_f1": 0.886908233165741
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\ub9ac\ubdf0\ubcf4\uba74 \uad6c\ub798\uc11c\uc5c9 \ud750\uc774\ud558 \uc544\uc544\uc544 \uc8fc \ub098\ubd84\uacf3\uc774\uc5d0\uc694 ..\uac00\uc950\ub9c8\uc694\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7938897609710693
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\uc751 \uadf8\ub807\uac8c \uba39\uc5b4\ubcf4\ub824\uace0! \uc774\uac70 \ub808\uc2a4\ud1a0\ub791\uc5d0\uc11c\ub3c4 \ud314\uc544?\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Korean OPELA conversation, what did user_61c1b36aced5157d24cb say in the turn about \"\uc751 \ub9de\uc544 \ud06c\ub9bc\ud30c\uc2a4\ud0c0\uc5d0 \uc18c\uae08\uc73c\ub85c \uac04\ud558\ub294\ub370 \uc18c\uae08 \uc870\uae08\ub123\uace0 \uce74\ub808\ub85c \uac04\ub9de\ucd94\ub294\uac70\uc57c\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7193530201911926
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Korean OPELA conversation, what did user_61c1b36aced5157d24cb say in the turn about \"\uc5d0\uc774 \ub0b4\uac00 \uc88b\uc544\ud558\ub294 \uc694\ub9ac \uc798\ud558\uba74 _\uc9c0\u314e\u314e\"?",
+      "f1": 0.23529411764705882,
+      "bleu1": 0.16666666666666669,
+      "rouge_l": 0.15789473684210525,
+      "bertscore_f1": 0.868403434753418
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Korean OPELA conversation, what did user_61c1b36aced5157d24cb say in the turn about \"\uad1c\ud788 \ub0b4\uac00 \ub2e4 \ucc21\ud558\ub124 \u3160\u3160\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7375603318214417
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in the turn about \"\uc751 \ub098\ub450 \uacbd\ud5d8\ud588\uc5b4!! \uc774\uc820 \uc544\ub2c8\uae4c \uadf8\ub807\uac8c \uc548\ud558\uc9c0! \ud558\ub8e8\ub9cc \uc219\ubc15 \uc7a1\uace0...\"?",
+      "f1": 0.3157894736842105,
+      "bleu1": 0.0034593773364647584,
+      "rouge_l": 0.2608695652173913,
+      "bertscore_f1": 0.8969021439552307
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in session 1 and what did user_61c1b36aced5157d24cb say in session 2?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8141402006149292
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did user_61c1b36aced5157d24cb say in session 2 and what did user_61c1b36aced5157d24cb say in session 3?",
+      "f1": 0.2,
+      "bleu1": 0.1724137931034483,
+      "rouge_l": 0.14545454545454548,
+      "bertscore_f1": 0.8783196210861206
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did \uc81c\uc774\ub4dc say in session 3 and what did user_61c1b36aced5157d24cb say in session 4?",
+      "f1": 0.21212121212121215,
+      "bleu1": 0.15342122703218716,
+      "rouge_l": 0.10256410256410256,
+      "bertscore_f1": 0.8767942786216736
+    },
+    {
+      "category": "2",
+      "question": "In the Korean OPELA conversation, what did user_61c1b36aced5157d24cb say in session 4 and what did \uc81c\uc774\ub4dc say in session 5?",
+      "f1": 0.15789473684210525,
+      "bleu1": 0.042903136322951584,
+      "rouge_l": 0.0851063829787234,
+      "bertscore_f1": 0.8817949295043945
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \uc81c\uc774\ub4dc's session 1 statement or user_61c1b36aced5157d24cb's session 2 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.6614347100257874
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: user_61c1b36aced5157d24cb's session 2 statement or \uc81c\uc774\ub4dc's session 3 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8269984722137451
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: \uc81c\uc774\ub4dc's session 3 statement or user_61c1b36aced5157d24cb's session 4 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.6553621888160706
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Korean OPELA conversation: user_61c1b36aced5157d24cb's session 4 statement or \uc81c\uc774\ub4dc's session 5 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.6509013772010803
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \uc81c\uc774\ub4dc's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8509836196899414
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by user_61c1b36aced5157d24cb's cited turn in the Korean OPELA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8629875183105469
+    }
+  ]
+}

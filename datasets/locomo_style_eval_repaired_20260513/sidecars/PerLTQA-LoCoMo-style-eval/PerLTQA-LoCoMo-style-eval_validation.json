@@ -1,0 +1,73 @@
+{
+  "input_files": {
+    "primary": {
+      "path": "datasets/locomo_style_eval_repaired_20260513/primary/PerLTQA-LoCoMo-style-eval.json",
+      "sha256": "25ac6af08afce984172fa422b4efd09585d2cc38f9ae2c941d104127ea8fa2c5"
+    },
+    "provenance": {
+      "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/PerLTQA-LoCoMo-style-eval/PerLTQA-LoCoMo-style-eval_provenance.jsonl",
+      "sha256": "ad24a409f6dcc44abb30e3bc58a8b966dba902b2d6105e444074ac705bca3125"
+    },
+    "fact_ledger": {
+      "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/PerLTQA-LoCoMo-style-eval/PerLTQA-LoCoMo-style-eval_fact_ledger.jsonl",
+      "sha256": "fe52d877f5a45c87bdb673d27f3bd2b21b5bfb60a6b5ff6b1a6fae019fb2f496"
+    },
+    "qa_audit": {
+      "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/PerLTQA-LoCoMo-style-eval/PerLTQA-LoCoMo-style-eval_qa_audit.jsonl",
+      "sha256": "9e2452a2e25d0a377623f21046565d0972d0394fd80dffac4df83cfe777bc6b6"
+    }
+  },
+  "primary": {
+    "path": "datasets/locomo_style_eval_repaired_20260513/primary/PerLTQA-LoCoMo-style-eval.json",
+    "samples": 10,
+    "sessions": 263,
+    "turns": 2257,
+    "qa": 340,
+    "categories": {
+      "1": 100,
+      "2": 180,
+      "3": 20,
+      "4": 20,
+      "5": 20
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "provenance": {
+    "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/PerLTQA-LoCoMo-style-eval/PerLTQA-LoCoMo-style-eval_provenance.jsonl",
+    "rows": 2257,
+    "source_origin_counts": {
+      "original_turn": 2257
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "fact_ledger": {
+    "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/PerLTQA-LoCoMo-style-eval/PerLTQA-LoCoMo-style-eval_fact_ledger.jsonl",
+    "rows": 3424,
+    "source_types": {
+      "original_event": 266,
+      "original_persona": 144,
+      "original_qa": 633,
+      "original_relationship": 124,
+      "original_turn": 2257
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "qa_audit": {
+    "path": "datasets/locomo_style_eval_repaired_20260513/sidecars/PerLTQA-LoCoMo-style-eval/PerLTQA-LoCoMo-style-eval_qa_audit.jsonl",
+    "rows": 340,
+    "categories": {
+      "1": 100,
+      "2": 180,
+      "3": 20,
+      "4": 20,
+      "5": 20
+    },
+    "cross_session_qa": 200,
+    "errors": [],
+    "warnings": []
+  },
+  "status": "passed"
+}

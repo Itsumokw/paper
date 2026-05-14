@@ -1,0 +1,3440 @@
+{
+  "records": [
+    {
+      "source": "simplemem",
+      "qa_idx": 0,
+      "category": 1,
+      "question": "In session 1 of the Japanese LAC conversation, what did TEXTCHAT01 say in the turn about \"こんばんは、よろしくお願いします！\"?",
+      "prediction": "こんばんは、よろしくお願いします！",
+      "reference": "こんばんは、よろしくお願いします！",
+      "latency_seconds": 58.530866384506226,
+      "retrieval_latency_seconds": 57.56476974487305,
+      "answer_latency_seconds": 0.9660966396331787,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 4,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 1,
+      "category": 1,
+      "question": "In session 2 of the Japanese LAC conversation, what did TEXTCHAT02 say in the turn about \"おはようございます！ 散歩とヨルシカは最高にエモいですね...\"?",
+      "prediction": "最高にエモいですね...",
+      "reference": "おはようございます！ 散歩とヨルシカは最高にエモいですね...",
+      "latency_seconds": 60.76087760925293,
+      "retrieval_latency_seconds": 60.198882818222046,
+      "answer_latency_seconds": 0.5619947910308838,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 3,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 2,
+      "category": 1,
+      "question": "In session 3 of the Japanese LAC conversation, what did TEXTCHAT01 say in the turn about \"将来は湖とか海の見える場所でゆったりと過ごしたいですね！ わかります… 私...\"?",
+      "prediction": "将来は湖とか海の見える場所でゆったりと過ごしたいですね！",
+      "reference": "将来は湖とか海の見える場所でゆったりと過ごしたいですね！ わかります… 私は音楽を勉強してますよ?",
+      "latency_seconds": 62.50658202171326,
+      "retrieval_latency_seconds": 61.63490843772888,
+      "answer_latency_seconds": 0.871673583984375,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 7,
+        "total_tokens": 40,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 3,
+      "category": 1,
+      "question": "In session 4 of the Japanese LAC conversation, what did TEXTCHAT01 say in the turn about \"カラオケと歌が上手いは比例しないので大丈夫ですよ！\"?",
+      "prediction": "1 May 2023",
+      "reference": "カラオケと歌が上手いは比例しないので大丈夫ですよ！",
+      "latency_seconds": 60.20247030258179,
+      "retrieval_latency_seconds": 59.57573342323303,
+      "answer_latency_seconds": 0.6267368793487549,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 2,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 4,
+      "category": 1,
+      "question": "In session 5 of the Japanese LAC conversation, what did TEXTCHAT02 say in the turn about \"上手くなるになにを頑張ればいいんですか？\"?",
+      "prediction": "not good",
+      "reference": "上手くなるになにを頑張ればいいんですか？",
+      "latency_seconds": 58.26825499534607,
+      "retrieval_latency_seconds": 57.4485080242157,
+      "answer_latency_seconds": 0.8197469711303711,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 5,
+      "category": 1,
+      "question": "In session 6 of the Japanese LAC conversation, what did TEXTCHAT01 say in the turn about \"カラオケは音程とリズムが正確だとある程度は取れるので\"?",
+      "prediction": "1 May 2023",
+      "reference": "カラオケは音程とリズムが正確だとある程度は取れるので",
+      "latency_seconds": 59.65006184577942,
+      "retrieval_latency_seconds": 59.03923964500427,
+      "answer_latency_seconds": 0.6108222007751465,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 2,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 6,
+      "category": 1,
+      "question": "In session 7 of the Japanese LAC conversation, what did TEXTCHAT02 say in the turn about \"録音して聴いてみます\"?",
+      "prediction": "19 June 2023",
+      "reference": "録音して聴いてみます",
+      "latency_seconds": 58.43644881248474,
+      "retrieval_latency_seconds": 57.52388525009155,
+      "answer_latency_seconds": 0.9125635623931885,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 3,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 7,
+      "category": 1,
+      "question": "In session 8 of the Japanese LAC conversation, what did TEXTCHAT01 say in the turn about \"ASMRとか自然の音もそうらしいですね\"?",
+      "prediction": "19 June 2023",
+      "reference": "ASMRとか自然の音もそうらしいですね",
+      "latency_seconds": 56.289591550827026,
+      "retrieval_latency_seconds": 55.52259397506714,
+      "answer_latency_seconds": 0.7669975757598877,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 3,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 8,
+      "category": 1,
+      "question": "In session 9 of the Japanese LAC conversation, what did TEXTCHAT02 say in the turn about \"人ができるのは天性として、機械などでゆらぎを出すのはできるんですかね\"?",
+      "prediction": "19 June 2023",
+      "reference": "人ができるのは天性として、機械などでゆらぎを出すのはできるんですかね",
+      "latency_seconds": 136.46160697937012,
+      "retrieval_latency_seconds": 135.84889364242554,
+      "answer_latency_seconds": 0.6127133369445801,
+      "token_usage": {
+        "prompt_tokens": 31,
+        "completion_tokens": 3,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 9,
+      "category": 1,
+      "question": "In session 10 of the Japanese LAC conversation, what did TEXTCHAT01 say in the turn about \"不純な動機ですよね笑笑\"?",
+      "prediction": "19 June 2023",
+      "reference": "不純な動機ですよね笑笑",
+      "latency_seconds": 56.040963649749756,
+      "retrieval_latency_seconds": 55.12629508972168,
+      "answer_latency_seconds": 0.9146685600280762,
+      "token_usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 3,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 10,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT01 say in session 1 and what did TEXTCHAT02 say in session 2?",
+      "prediction": "TEXTCHAT02 asked TEXTCHAT01 about their music preferences",
+      "reference": "Session 1: こんばんは、よろしくお願いします！ Session 2: なに勉強されてるんですか？",
+      "latency_seconds": 48.069265842437744,
+      "retrieval_latency_seconds": 47.212968826293945,
+      "answer_latency_seconds": 0.8562970161437988,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 14,
+        "total_tokens": 42,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 11,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT02 say in session 2 and what did TEXTCHAT02 say in session 3?",
+      "prediction": "1 May 2023",
+      "reference": "Session 2: おはようございます！ 散歩とヨルシカは最高にエモいですね... Session 3: カラオケ行っても80点しかだせないので、、笑",
+      "latency_seconds": 49.87391781806946,
+      "retrieval_latency_seconds": 49.1649374961853,
+      "answer_latency_seconds": 0.7089803218841553,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 12,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT01 say in session 3 and what did TEXTCHAT01 say in session 4?",
+      "prediction": "19 June 2023",
+      "reference": "Session 3: 将来は湖とか海の見える場所でゆったりと過ごしたいですね！ わかります… 私は音楽を勉強してますよ? Session 4: わたしは全然上手くなかったけど高校の頃頑張ってやってきてたので！",
+      "latency_seconds": 41.540557622909546,
+      "retrieval_latency_seconds": 40.58876872062683,
+      "answer_latency_seconds": 0.9517889022827148,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 3,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 13,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT01 say in session 4 and what did TEXTCHAT02 say in session 5?",
+      "prediction": "In session 4, TEXTCHAT01 said TEXTCHAT02 expressed interest in sound theory. In session 5, TEXTCHAT02 asked about TEXTCHAT01's music preferences.",
+      "reference": "Session 4: カラオケと歌が上手いは比例しないので大丈夫ですよ！ Session 5: 頑張って練習します",
+      "latency_seconds": 50.54532313346863,
+      "retrieval_latency_seconds": 48.90345025062561,
+      "answer_latency_seconds": 1.6418728828430176,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 36,
+        "total_tokens": 64,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 14,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT02 say in session 5 and what did TEXTCHAT01 say in session 6?",
+      "prediction": "1 May 2023",
+      "reference": "Session 5: 上手くなるになにを頑張ればいいんですか？ Session 6: 自分の声を録音して本家と聴き比べて違うところを見つけるのが1番良いかと……！",
+      "latency_seconds": 49.181490898132324,
+      "retrieval_latency_seconds": 48.3635528087616,
+      "answer_latency_seconds": 0.8179380893707275,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 15,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT01 say in session 6 and what did TEXTCHAT02 say in session 7?",
+      "prediction": "TEXTCHAT01 encouraged TEXTCHAT02 not to give up on singing.",
+      "reference": "Session 6: カラオケは音程とリズムが正確だとある程度は取れるので Session 7: ゆらぎですか だからあんなに心地よい眠りにつけるんですね?",
+      "latency_seconds": 52.2136914730072,
+      "retrieval_latency_seconds": 51.3369927406311,
+      "answer_latency_seconds": 0.8766987323760986,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 14,
+        "total_tokens": 42,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 16,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese LAC conversation: TEXTCHAT01's session 1 statement or TEXTCHAT02's session 2 statement?",
+      "prediction": "1 July 2023",
+      "reference": "Earlier session 1: こんばんは、よろしくお願いします！",
+      "latency_seconds": 41.594011068344116,
+      "retrieval_latency_seconds": 40.82774615287781,
+      "answer_latency_seconds": 0.7662649154663086,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 2,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 17,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese LAC conversation: TEXTCHAT02's session 2 statement or TEXTCHAT01's session 3 statement?",
+      "prediction": "1 July 2023",
+      "reference": "Earlier session 2: おはようございます！ 散歩とヨルシカは最高にエモいですね...",
+      "latency_seconds": 54.07486128807068,
+      "retrieval_latency_seconds": 53.3915114402771,
+      "answer_latency_seconds": 0.6833498477935791,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 2,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 18,
+      "category": 4,
+      "question": "What general conversational act is shown by TEXTCHAT01's cited turn in the Japanese LAC conversation?",
+      "prediction": "express interest in French cuisine",
+      "reference": "greeting or opening the conversation",
+      "latency_seconds": 45.84416604042053,
+      "retrieval_latency_seconds": 45.05212211608887,
+      "answer_latency_seconds": 0.792043924331665,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 8,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 19,
+      "category": 4,
+      "question": "What general conversational act is shown by TEXTCHAT02's cited turn in the Japanese LAC conversation?",
+      "prediction": "Admiration",
+      "reference": "greeting or opening the conversation",
+      "latency_seconds": 38.68988585472107,
+      "retrieval_latency_seconds": 38.173383951187134,
+      "answer_latency_seconds": 0.5165019035339355,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 2,
+        "total_tokens": 27,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 20,
+      "category": 1,
+      "question": "In session 1 of the Japanese LAC conversation, what did TEXTCHAT10 say in the turn about \"初めまして！[SPK--TEXTCHAT10]と申します。これからよろしく...\"?",
+      "prediction": "12 September 2023",
+      "reference": "初めまして！[SPK--TEXTCHAT10]と申します。これからよろしくお願いいたします。",
+      "latency_seconds": 38.9463210105896,
+      "retrieval_latency_seconds": 38.393850803375244,
+      "answer_latency_seconds": 0.5524702072143555,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 4,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 21,
+      "category": 1,
+      "question": "In session 2 of the Japanese LAC conversation, what did TEXTCHAT09 say in the turn about \"結構長かったと思います！ 一気見したんであんまり長くは感じなかったんですけどね\"?",
+      "prediction": "understandable",
+      "reference": "結構長かったと思います！ 一気見したんであんまり長くは感じなかったんですけどね",
+      "latency_seconds": 100.71458148956299,
+      "retrieval_latency_seconds": 100.30072951316833,
+      "answer_latency_seconds": 0.4138519763946533,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 3,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 22,
+      "category": 1,
+      "question": "In session 3 of the Japanese LAC conversation, what did TEXTCHAT09 say in the turn about \"ですよね。わりと見てます！ あとはすき焼き大好きTVっていうチャンネルも好...\"?",
+      "prediction": "好き焼き大好きTV",
+      "reference": "ですよね。わりと見てます！ あとはすき焼き大好きTVっていうチャンネルも好きですね",
+      "latency_seconds": 51.661393880844116,
+      "retrieval_latency_seconds": 50.8744683265686,
+      "answer_latency_seconds": 0.7869255542755127,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 2,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 23,
+      "category": 1,
+      "question": "In session 4 of the Japanese LAC conversation, what did TEXTCHAT09 say in the turn about \"なるほど！それなら見たことあるかもしれないです！[SPK--TEXTCHA...\"?",
+      "prediction": "12 September 2023",
+      "reference": "なるほど！それなら見たことあるかもしれないです！[SPK--TEXTCHAT10]さんは他にどんなゲームしてます？",
+      "latency_seconds": 101.92106699943542,
+      "retrieval_latency_seconds": 101.41626858711243,
+      "answer_latency_seconds": 0.504798412322998,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 4,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 24,
+      "category": 1,
+      "question": "In session 5 of the Japanese LAC conversation, what did TEXTCHAT09 say in the turn about \"今は夜の１時から始めてるのでそれは厳しそうですよね笑\"?",
+      "prediction": "Understandable",
+      "reference": "今は夜の１時から始めてるのでそれは厳しそうですよね笑",
+      "latency_seconds": 51.562116861343384,
+      "retrieval_latency_seconds": 50.71968078613281,
+      "answer_latency_seconds": 0.8424360752105713,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 3,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 25,
+      "category": 1,
+      "question": "In session 6 of the Japanese LAC conversation, what did TEXTCHAT10 say in the turn about \"本当そうですよね。\"?",
+      "prediction": "Understandable",
+      "reference": "本当そうですよね。",
+      "latency_seconds": 49.84120774269104,
+      "retrieval_latency_seconds": 49.26391124725342,
+      "answer_latency_seconds": 0.5772964954376221,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 3,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 26,
+      "category": 1,
+      "question": "In session 7 of the Japanese LAC conversation, what did TEXTCHAT10 say in the turn about \"どうなんでしょう。\"?",
+      "prediction": "18 July 2023",
+      "reference": "どうなんでしょう。",
+      "latency_seconds": 49.944541692733765,
+      "retrieval_latency_seconds": 49.22695302963257,
+      "answer_latency_seconds": 0.7175886631011963,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 3,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 27,
+      "category": 1,
+      "question": "In session 8 of the Japanese LAC conversation, what did TEXTCHAT10 say in the turn about \"どんなアルバイトされてたんですか？\"?",
+      "prediction": "Rarely",
+      "reference": "どんなアルバイトされてたんですか？",
+      "latency_seconds": 50.4797785282135,
+      "retrieval_latency_seconds": 49.96875214576721,
+      "answer_latency_seconds": 0.5110263824462891,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 1,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 28,
+      "category": 1,
+      "question": "In session 9 of the Japanese LAC conversation, what did TEXTCHAT10 say in the turn about \"そうですねー(笑)\"?",
+      "prediction": "18 July 2023",
+      "reference": "そうですねー(笑)",
+      "latency_seconds": 49.68265438079834,
+      "retrieval_latency_seconds": 48.95117402076721,
+      "answer_latency_seconds": 0.7314803600311279,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 3,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 29,
+      "category": 1,
+      "question": "In session 10 of the Japanese LAC conversation, what did TEXTCHAT09 say in the turn about \"あるんですね！最近眼精疲労がひどいので検討してみます\"?",
+      "prediction": "Understandable",
+      "reference": "あるんですね！最近眼精疲労がひどいので検討してみます",
+      "latency_seconds": 51.601555824279785,
+      "retrieval_latency_seconds": 50.94308686256409,
+      "answer_latency_seconds": 0.6584689617156982,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 3,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 30,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT10 say in session 1 and what did TEXTCHAT10 say in session 2?",
+      "prediction": "Rarely",
+      "reference": "Session 1: 初めまして！[SPK--TEXTCHAT10]と申します。これからよろしくお願いいたします。 Session 2: とても上手ですよね。",
+      "latency_seconds": 38.24366855621338,
+      "retrieval_latency_seconds": 37.77922034263611,
+      "answer_latency_seconds": 0.4644482135772705,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 1,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 31,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT09 say in session 2 and what did TEXTCHAT10 say in session 3?",
+      "prediction": "27 June 2023 at 10:00 AM",
+      "reference": "Session 2: 結構長かったと思います！ 一気見したんであんまり長くは感じなかったんですけどね Session 3: しょこさんとかも出ていて・・。",
+      "latency_seconds": 48.72706604003906,
+      "retrieval_latency_seconds": 47.889564514160156,
+      "answer_latency_seconds": 0.8375015258789062,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 6,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 32,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT09 say in session 3 and what did TEXTCHAT10 say in session 4?",
+      "prediction": "12 September 2023",
+      "reference": "Session 3: ですよね。わりと見てます！ あとはすき焼き大好きTVっていうチャンネルも好きですね Session 4: ならないように祈っています！時間さえ合えば大丈夫だと思いますが・・。",
+      "latency_seconds": 46.580320596694946,
+      "retrieval_latency_seconds": 45.90708136558533,
+      "answer_latency_seconds": 0.6732392311096191,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 4,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 33,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT09 say in session 4 and what did TEXTCHAT09 say in session 5?",
+      "prediction": "1 May 2023",
+      "reference": "Session 4: なるほど！それなら見たことあるかもしれないです！[SPK--TEXTCHAT10]さんは他にどんなゲームしてます？ Session 5: いまは私生活大事ですよね 自分もホワイトで働きたいです笑",
+      "latency_seconds": 46.25150775909424,
+      "retrieval_latency_seconds": 45.4914186000824,
+      "answer_latency_seconds": 0.7600891590118408,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 34,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT09 say in session 5 and what did TEXTCHAT09 say in session 6?",
+      "prediction": "12 September 2023",
+      "reference": "Session 5: 今は夜の１時から始めてるのでそれは厳しそうですよね笑 Session 6: 車通勤とか自転車通勤が一番なんですかねえ",
+      "latency_seconds": 46.474202156066895,
+      "retrieval_latency_seconds": 45.739666223526,
+      "answer_latency_seconds": 0.7345359325408936,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 4,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 35,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT10 say in session 6 and what did TEXTCHAT09 say in session 7?",
+      "prediction": "Rarely",
+      "reference": "Session 6: 本当そうですよね。 Session 7: バイトぐらいしかやったことないんで全く想像できないです笑",
+      "latency_seconds": 44.10443830490112,
+      "retrieval_latency_seconds": 43.610527992248535,
+      "answer_latency_seconds": 0.4939103126525879,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 1,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 36,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese LAC conversation: TEXTCHAT10's session 1 statement or TEXTCHAT09's session 2 statement?",
+      "prediction": "18 July 2023",
+      "reference": "Earlier session 1: 初めまして！[SPK--TEXTCHAT10]と申します。これからよろしくお願いいたします。",
+      "latency_seconds": 51.664433002471924,
+      "retrieval_latency_seconds": 50.70550608634949,
+      "answer_latency_seconds": 0.9589269161224365,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 3,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 37,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese LAC conversation: TEXTCHAT09's session 2 statement or TEXTCHAT09's session 3 statement?",
+      "prediction": "23 May 2023",
+      "reference": "Earlier session 2: 結構長かったと思います！ 一気見したんであんまり長くは感じなかったんですけどね",
+      "latency_seconds": 42.48939800262451,
+      "retrieval_latency_seconds": 41.868906021118164,
+      "answer_latency_seconds": 0.6204919815063477,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 2,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 38,
+      "category": 4,
+      "question": "What general conversational act is shown by TEXTCHAT10's cited turn in the Japanese LAC conversation?",
+      "prediction": "Understandable situation",
+      "reference": "asking a question",
+      "latency_seconds": 38.08778524398804,
+      "retrieval_latency_seconds": 37.506728410720825,
+      "answer_latency_seconds": 0.5810568332672119,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 6,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 39,
+      "category": 4,
+      "question": "What general conversational act is shown by TEXTCHAT09's cited turn in the Japanese LAC conversation?",
+      "prediction": "Understandable situation",
+      "reference": "asking a question",
+      "latency_seconds": 36.54557156562805,
+      "retrieval_latency_seconds": 36.02632164955139,
+      "answer_latency_seconds": 0.5192499160766602,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 6,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 40,
+      "category": 1,
+      "question": "In session 1 of the Japanese LAC conversation, what did TEXTCHAT27 say in the turn about \"こんにちは！[SPK--TEXTCHAT27]と申します。 これから長期間...\"?",
+      "prediction": "こんにちは！と申します。これから長期間...",
+      "reference": "こんにちは！[SPK--TEXTCHAT27]と申します。 これから長期間にわたりますが、どうぞよろしくお願いします！",
+      "latency_seconds": 56.7009654045105,
+      "retrieval_latency_seconds": 55.272737979888916,
+      "answer_latency_seconds": 1.428227424621582,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 5,
+        "total_tokens": 38,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 41,
+      "category": 1,
+      "question": "In session 2 of the Japanese LAC conversation, what did TEXTCHAT27 say in the turn about \"1万くらいだったような、、正直効果はよくわからないですが（苦笑）テレワーク...\"?",
+      "prediction": "1 May 2023",
+      "reference": "1万くらいだったような、、正直効果はよくわからないですが（苦笑）テレワークですか？",
+      "latency_seconds": 57.51290559768677,
+      "retrieval_latency_seconds": 56.840423583984375,
+      "answer_latency_seconds": 0.6724820137023926,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 2,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 42,
+      "category": 1,
+      "question": "In session 3 of the Japanese LAC conversation, what did TEXTCHAT27 say in the turn about \"<URL LINK> このメディリフトプラスです！高くてすんごい迷ったんで...\"?",
+      "prediction": "高くてすんごい迷ったんで...",
+      "reference": "<URL LINK> このメディリフトプラスです！高くてすんごい迷ったんですが、ずっと気になってたので買っちゃいました！！",
+      "latency_seconds": 57.416035652160645,
+      "retrieval_latency_seconds": 56.3076593875885,
+      "answer_latency_seconds": 1.1083762645721436,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 3,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 43,
+      "category": 1,
+      "question": "In session 4 of the Japanese LAC conversation, what did TEXTCHAT28 say in the turn about \"インドア派なので家で動画見たり、マンガ読んだり、好きなもの食べて甘やかして...\"?",
+      "prediction": "16 June 2023",
+      "reference": "インドア派なので家で動画見たり、マンガ読んだり、好きなもの食べて甘やかしてます笑 何して過ごしてますかー？",
+      "latency_seconds": 57.48004770278931,
+      "retrieval_latency_seconds": 56.62144756317139,
+      "answer_latency_seconds": 0.8586001396179199,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 3,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 44,
+      "category": 1,
+      "question": "In session 5 of the Japanese LAC conversation, what did TEXTCHAT27 say in the turn about \"お返事遅くなってしまい、すみません！\"?",
+      "prediction": "お返事遅くなってしまい、すみません！",
+      "reference": "お返事遅くなってしまい、すみません！",
+      "latency_seconds": 57.390435218811035,
+      "retrieval_latency_seconds": 56.01376485824585,
+      "answer_latency_seconds": 1.3766703605651855,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 4,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 45,
+      "category": 1,
+      "question": "In session 6 of the Japanese LAC conversation, what did TEXTCHAT27 say in the turn about \"そこも長いですよね！！（笑）わたしはロー好きなので、ドレスローザ好きでした（笑）\"?",
+      "prediction": "ロー好きなので、ドレスローザ好きでした（笑）",
+      "reference": "そこも長いですよね！！（笑）わたしはロー好きなので、ドレスローザ好きでした（笑）",
+      "latency_seconds": 57.54101300239563,
+      "retrieval_latency_seconds": 56.43012714385986,
+      "answer_latency_seconds": 1.1108858585357666,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 5,
+        "total_tokens": 38,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 46,
+      "category": 1,
+      "question": "In session 7 of the Japanese LAC conversation, what did TEXTCHAT28 say in the turn about \"こんにちは！ダンスダンスダンスールの３巻まで読みました！主人公と流鶯くんの...\"?",
+      "prediction": "こんにちは！ダンスダンスダンスールの３巻まで読みました！",
+      "reference": "こんにちは！ダンスダンスダンスールの３巻まで読みました！主人公と流鶯くんのライバル関係いいですねっ！",
+      "latency_seconds": 57.43069911003113,
+      "retrieval_latency_seconds": 55.89623188972473,
+      "answer_latency_seconds": 1.5344672203063965,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 7,
+        "total_tokens": 40,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 47,
+      "category": 1,
+      "question": "In session 8 of the Japanese LAC conversation, what did TEXTCHAT27 say in the turn about \"あとコメディ映画の続編やりますよね！なんだっけかな、タイトル……\"?",
+      "prediction": "VR-like environment",
+      "reference": "あとコメディ映画の続編やりますよね！なんだっけかな、タイトル……",
+      "latency_seconds": 46.0513653755188,
+      "retrieval_latency_seconds": 45.286810636520386,
+      "answer_latency_seconds": 0.7645547389984131,
+      "token_usage": {
+        "prompt_tokens": 31,
+        "completion_tokens": 4,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 48,
+      "category": 1,
+      "question": "In session 9 of the Japanese LAC conversation, what did TEXTCHAT28 say in the turn about \"のびのびと！映画の内容にも集中できそうです！\"?",
+      "prediction": "1 September 2023",
+      "reference": "のびのびと！映画の内容にも集中できそうです！",
+      "latency_seconds": 55.77972745895386,
+      "retrieval_latency_seconds": 54.75967979431152,
+      "answer_latency_seconds": 1.020047664642334,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 4,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 49,
+      "category": 1,
+      "question": "In session 10 of the Japanese LAC conversation, what did TEXTCHAT27 say in the turn about \"電子書籍です！東京グールのアニメって原作とちょっと違うらしく、どこから見て...\"?",
+      "prediction": "16 July 2023 at 3:00 PM",
+      "reference": "電子書籍です！東京グールのアニメって原作とちょっと違うらしく、どこから見ていいかイマイチわからないんですよね…",
+      "latency_seconds": 57.1523871421814,
+      "retrieval_latency_seconds": 55.22456407546997,
+      "answer_latency_seconds": 1.9278230667114258,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 5,
+        "total_tokens": 38,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 50,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT27 say in session 1 and what did TEXTCHAT28 say in session 2?",
+      "prediction": "19 July 2023 at 3:00 AM",
+      "reference": "Session 1: こんにちは！[SPK--TEXTCHAT27]と申します。 これから長期間にわたりますが、どうぞよろしくお願いします！ Session 2: あの話題のやつ！ですね！リフトアップのってどんな感じですか？振動系？ たしかヤーマンの頭皮のもありますよね！",
+      "latency_seconds": 53.43804955482483,
+      "retrieval_latency_seconds": 52.19486165046692,
+      "answer_latency_seconds": 1.2431879043579102,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 5,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 51,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT27 say in session 2 and what did TEXTCHAT27 say in session 3?",
+      "prediction": "19 July 2023 at 3:00 AM",
+      "reference": "Session 2: 1万くらいだったような、、正直効果はよくわからないですが（苦笑）テレワークですか？ Session 3: ほんとに外でないので全くコスメが減らないです（笑）お休みの日は何してますか？",
+      "latency_seconds": 45.90337038040161,
+      "retrieval_latency_seconds": 44.73565220832825,
+      "answer_latency_seconds": 1.1677181720733643,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 5,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 52,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT27 say in session 3 and what did TEXTCHAT28 say in session 4?",
+      "prediction": "19 July 2023 at 3:00 AM",
+      "reference": "Session 3: <URL LINK> このメディリフトプラスです！高くてすんごい迷ったんですが、ずっと気になってたので買っちゃいました！！ Session 4: まとめて見たい気持ち分かりますー。 ワンピースこそ長いですもんね！途中で止まってて、時間できたら追いつこうかなって感じです。",
+      "latency_seconds": 49.06569957733154,
+      "retrieval_latency_seconds": 48.227935791015625,
+      "answer_latency_seconds": 0.837763786315918,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 5,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 53,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT28 say in session 4 and what did TEXTCHAT28 say in session 5?",
+      "prediction": "10 June 2023",
+      "reference": "Session 4: インドア派なので家で動画見たり、マンガ読んだり、好きなもの食べて甘やかしてます笑 何して過ごしてますかー？ Session 5: いえいえ！金曜おつかれさまでした！ 空島すこし長いですよねー笑 まじすか！いまドフラミンゴのとこで止まってます。",
+      "latency_seconds": 49.680504322052,
+      "retrieval_latency_seconds": 49.01954507827759,
+      "answer_latency_seconds": 0.6609592437744141,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 3,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 54,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT27 say in session 5 and what did TEXTCHAT28 say in session 6?",
+      "prediction": "1 July 2023",
+      "reference": "Session 5: お返事遅くなってしまい、すみません！ Session 6: そうです！兄が読んでて。 呪術けっこう話題ですよね。まだ見始めたところで８話目くらいです。",
+      "latency_seconds": 53.331788778305054,
+      "retrieval_latency_seconds": 52.43077993392944,
+      "answer_latency_seconds": 0.9010088443756104,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 55,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT27 say in session 6 and what did TEXTCHAT28 say in session 7?",
+      "prediction": "19 July 2023 at 3:00 AM",
+      "reference": "Session 6: そこも長いですよね！！（笑）わたしはロー好きなので、ドレスローザ好きでした（笑） Session 7: ミッションインポッシブル全部は完全にファンですね！笑 なんかマトリックスの続編？らしいですよね！",
+      "latency_seconds": 48.193344593048096,
+      "retrieval_latency_seconds": 47.353506326675415,
+      "answer_latency_seconds": 0.8398382663726807,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 5,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 56,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese LAC conversation: TEXTCHAT27's session 1 statement or TEXTCHAT27's session 2 statement?",
+      "prediction": "19 July 2023",
+      "reference": "Earlier session 1: こんにちは！[SPK--TEXTCHAT27]と申します。 これから長期間にわたりますが、どうぞよろしくお願いします！",
+      "latency_seconds": 50.91614747047424,
+      "retrieval_latency_seconds": 49.940449953079224,
+      "answer_latency_seconds": 0.9756975173950195,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 3,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 57,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese LAC conversation: TEXTCHAT27's session 2 statement or TEXTCHAT27's session 3 statement?",
+      "prediction": "19 July 2023",
+      "reference": "Earlier session 2: 1万くらいだったような、、正直効果はよくわからないですが（苦笑）テレワークですか？",
+      "latency_seconds": 53.67725658416748,
+      "retrieval_latency_seconds": 52.592854738235474,
+      "answer_latency_seconds": 1.0844018459320068,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 3,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 58,
+      "category": 4,
+      "question": "What general conversational act is shown by TEXTCHAT27's cited turn in the Japanese LAC conversation?",
+      "prediction": "Collaboration interest",
+      "reference": "asking a question",
+      "latency_seconds": 40.71002411842346,
+      "retrieval_latency_seconds": 40.12289834022522,
+      "answer_latency_seconds": 0.5871257781982422,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 59,
+      "category": 4,
+      "question": "What general conversational act is shown by TEXTCHAT27's cited turn in the Japanese LAC conversation?",
+      "prediction": "Collaboration interest",
+      "reference": "asking a question",
+      "latency_seconds": 43.54007935523987,
+      "retrieval_latency_seconds": 42.93755030632019,
+      "answer_latency_seconds": 0.6025290489196777,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 60,
+      "category": 1,
+      "question": "In session 1 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"はじめまして。これからよろしくお願い致します！\"?",
+      "prediction": "はじめまして。これからよろしくお願い致します！",
+      "reference": "はじめまして。これからよろしくお願い致します！",
+      "latency_seconds": 56.47042202949524,
+      "retrieval_latency_seconds": 54.73683834075928,
+      "answer_latency_seconds": 1.733583688735962,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 5,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 61,
+      "category": 1,
+      "question": "In session 2 of the Japanese LAC conversation, what did TEXTCHAT34 say in the turn about \"なんてお呼びすればいいですか？\"?",
+      "prediction": "なんてお呼びすればいいですか？",
+      "reference": "なんてお呼びすればいいですか？",
+      "latency_seconds": 51.95613694190979,
+      "retrieval_latency_seconds": 51.25825572013855,
+      "answer_latency_seconds": 0.6978812217712402,
+      "token_usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 3,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 62,
+      "category": 1,
+      "question": "In session 3 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"ミュージカル、ストレートなどいろいろですが、ミュージカルが多いですね! な...\"?",
+      "prediction": "1 May 2023",
+      "reference": "ミュージカル、ストレートなどいろいろですが、ミュージカルが多いですね! なるほど！好きな舞台俳優さん！どなたですか？",
+      "latency_seconds": 56.38271141052246,
+      "retrieval_latency_seconds": 54.710947036743164,
+      "answer_latency_seconds": 1.6717643737792969,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 2,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 63,
+      "category": 1,
+      "question": "In session 4 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"そうですね。。。かなりの作品は延期になって、オンラインで稽古をしていて、対...\"?",
+      "prediction": "1 May 2023",
+      "reference": "そうですね。。。かなりの作品は延期になって、オンラインで稽古をしていて、対面で行えているものに関しても、コロナ対策をしつつの稽古となっていますね。。！ 私の周りも緊急事態宣言がでてかなり...",
+      "latency_seconds": 56.410815477371216,
+      "retrieval_latency_seconds": 54.93938589096069,
+      "answer_latency_seconds": 1.4714295864105225,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 2,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 64,
+      "category": 1,
+      "question": "In session 5 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"ほんとそうですね！変異型のウイルスとか言ってるのもあるしほんとにどうなるか...\"?",
+      "prediction": "変異型のウイルス",
+      "reference": "ほんとそうですね！変異型のウイルスとか言ってるのもあるしほんとにどうなるか分からなすぎてこわい！！！ マスクをみんなが着けてる社会、ほんとに奇妙な今では普通の社会ですよね。そう思うと少し...",
+      "latency_seconds": 59.43231749534607,
+      "retrieval_latency_seconds": 57.87025570869446,
+      "answer_latency_seconds": 1.5620617866516113,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 2,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 65,
+      "category": 1,
+      "question": "In session 6 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"ほんとそれです。。。冬を超えてみないとなんともですね。。 マスクが体の1部...\"?",
+      "prediction": "1 June 2023",
+      "reference": "ほんとそれです。。。冬を超えてみないとなんともですね。。 マスクが体の1部になってる笑 ほんとにマスクしない人が変だと思われるってふとすごい奇妙な光景だなって思います。笑 なるほどなるほ...",
+      "latency_seconds": 59.387351512908936,
+      "retrieval_latency_seconds": 57.75911068916321,
+      "answer_latency_seconds": 1.6282408237457275,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 2,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 66,
+      "category": 1,
+      "question": "In session 7 of the Japanese LAC conversation, what did TEXTCHAT34 say in the turn about \"おおー！すごいですねー！！ 演技だけでもセリフ覚えたりとかで大変なのに、英...\"?",
+      "prediction": "お疲れさまでした",
+      "reference": "おおー！すごいですねー！！ 演技だけでもセリフ覚えたりとかで大変なのに、英語でミュージカルってすごいですね…！英語できるのうらやましいです！泣",
+      "latency_seconds": 59.427995920181274,
+      "retrieval_latency_seconds": 58.02734398841858,
+      "answer_latency_seconds": 1.4006519317626953,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 2,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 67,
+      "category": 1,
+      "question": "In session 8 of the Japanese LAC conversation, what did TEXTCHAT34 say in the turn about \"英語は難しいですね…もう数年勉強してないのでだいぶ忘れてきました笑 話せる...\"?",
+      "prediction": "1 May 2023",
+      "reference": "英語は難しいですね…もう数年勉強してないのでだいぶ忘れてきました笑 話せると楽しいですよね！ けっこうわたしは寝付きが悪いタイプなので、少し不安なことがあるとなかなか寝れなくなっちゃいま...",
+      "latency_seconds": 59.451369524002075,
+      "retrieval_latency_seconds": 57.99576282501221,
+      "answer_latency_seconds": 1.4556066989898682,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 2,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 68,
+      "category": 1,
+      "question": "In session 9 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"いろんな方法でよく眠れることを祈っています。。。！\"?",
+      "prediction": "1 May 2023",
+      "reference": "いろんな方法でよく眠れることを祈っています。。。！",
+      "latency_seconds": 104.31306838989258,
+      "retrieval_latency_seconds": 103.69579124450684,
+      "answer_latency_seconds": 0.6172771453857422,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 2,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 69,
+      "category": 1,
+      "question": "In session 10 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"そうそう笑 どうせマスクに着いちゃうし、付いたら外からうっすら色がついてる...\"?",
+      "prediction": "1 June 2023",
+      "reference": "そうそう笑 どうせマスクに着いちゃうし、付いたら外からうっすら色がついてるの見えるのではとか思って付けないです笑",
+      "latency_seconds": 59.42836380004883,
+      "retrieval_latency_seconds": 57.89569640159607,
+      "answer_latency_seconds": 1.5326673984527588,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 2,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 70,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT35 say in session 1 and what did TEXTCHAT34 say in session 2?",
+      "prediction": "1 May 2023",
+      "reference": "Session 1: はじめまして。これからよろしくお願い致します！ Session 2: どんな舞台を作られてるんですか？ 好きな舞台俳優の方が何人かいるので、その方のを観に行くことが多いです！ミュージカル系も好きです！",
+      "latency_seconds": 53.52540302276611,
+      "retrieval_latency_seconds": 52.811919927597046,
+      "answer_latency_seconds": 0.7134830951690674,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 71,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT34 say in session 2 and what did TEXTCHAT34 say in session 3?",
+      "prediction": "No recommendations or greetings",
+      "reference": "Session 2: なんてお呼びすればいいですか？ Session 3: そうですねー泣 宣言出ちゃいましたしなかなか行けないです…[SPK--TEXTCHAT35]さんは舞台の仕事やる中でやっぱり影響大きいです...",
+      "latency_seconds": 45.38473105430603,
+      "retrieval_latency_seconds": 44.81315326690674,
+      "answer_latency_seconds": 0.571577787399292,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 7,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 72,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT35 say in session 3 and what did TEXTCHAT34 say in session 4?",
+      "prediction": "1 May 2023",
+      "reference": "Session 3: ミュージカル、ストレートなどいろいろですが、ミュージカルが多いですね! なるほど！好きな舞台俳優さん！どなたですか？ Session 4: そうですね！ワクチン接種も春あたりからできるようになりそうですねー。長引くのは辛いので早く終わってほしいです…！ そうですねー、マスクする...",
+      "latency_seconds": 45.24624562263489,
+      "retrieval_latency_seconds": 44.48117971420288,
+      "answer_latency_seconds": 0.7650659084320068,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 73,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT35 say in session 4 and what did TEXTCHAT34 say in session 5?",
+      "prediction": "1 May 2023",
+      "reference": "Session 4: そうですね。。。かなりの作品は延期になって、オンラインで稽古をしていて、対面で行えているものに関しても、コロナ対策をしつつの稽古となってい... Session 5: 変異型も出てきちゃいましたもんねー泣 これからどうなるのか、、、複雑です泣 今ではマスク慣れちゃったけど、よくよく考えると普通じゃないです...",
+      "latency_seconds": 48.28263282775879,
+      "retrieval_latency_seconds": 47.62773394584656,
+      "answer_latency_seconds": 0.6548988819122314,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 74,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT35 say in session 5 and what did TEXTCHAT35 say in session 6?",
+      "prediction": "1 May 2023",
+      "reference": "Session 5: ほんとそうですね！変異型のウイルスとか言ってるのもあるしほんとにどうなるか分からなすぎてこわい！！！ マスクをみんなが着けてる社会、ほんと... Session 6: 演劇部に入ってました！英語でミュージカルをする部活でした！ プロの方は努力がすごいですよね。。。。。。",
+      "latency_seconds": 44.53638482093811,
+      "retrieval_latency_seconds": 43.76921367645264,
+      "answer_latency_seconds": 0.7671711444854736,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 75,
+      "category": 2,
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT35 say in session 6 and what did TEXTCHAT35 say in session 7?",
+      "prediction": "1 May 2023",
+      "reference": "Session 6: ほんとそれです。。。冬を超えてみないとなんともですね。。 マスクが体の1部になってる笑 ほんとにマスクしない人が変だと思われるってふとすご... Session 7: すみません！今日通し稽古でそのあとも事務作業で遅くなってしまいました！！",
+      "latency_seconds": 47.65885066986084,
+      "retrieval_latency_seconds": 47.02509832382202,
+      "answer_latency_seconds": 0.6337523460388184,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 76,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese LAC conversation: TEXTCHAT35's session 1 statement or TEXTCHAT34's session 2 statement?",
+      "prediction": "4 May 2023",
+      "reference": "Earlier session 1: はじめまして。これからよろしくお願い致します！",
+      "latency_seconds": 59.4142050743103,
+      "retrieval_latency_seconds": 57.857810735702515,
+      "answer_latency_seconds": 1.556394338607788,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 2,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 77,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese LAC conversation: TEXTCHAT34's session 2 statement or TEXTCHAT35's session 3 statement?",
+      "prediction": "4 May 2023",
+      "reference": "Earlier session 2: なんてお呼びすればいいですか？",
+      "latency_seconds": 56.3259015083313,
+      "retrieval_latency_seconds": 54.66086673736572,
+      "answer_latency_seconds": 1.6650347709655762,
+      "token_usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 2,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 78,
+      "category": 4,
+      "question": "What general conversational act is shown by TEXTCHAT35's cited turn in the Japanese LAC conversation?",
+      "prediction": "Movie recommendation",
+      "reference": "asking a question",
+      "latency_seconds": 44.852805852890015,
+      "retrieval_latency_seconds": 44.222084045410156,
+      "answer_latency_seconds": 0.6307218074798584,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 79,
+      "category": 4,
+      "question": "What general conversational act is shown by TEXTCHAT34's cited turn in the Japanese LAC conversation?",
+      "prediction": "Movie recommendation",
+      "reference": "asking a question",
+      "latency_seconds": 56.26313066482544,
+      "retrieval_latency_seconds": 55.334579944610596,
+      "answer_latency_seconds": 0.9285507202148438,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 80,
+      "category": 1,
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1015-A say in the turn about \"こんばんは。出身はどちらですか？\"?",
+      "prediction": "1 May 2023",
+      "reference": "こんばんは。出身はどちらですか？",
+      "latency_seconds": 55.635629415512085,
+      "retrieval_latency_seconds": 54.79579281806946,
+      "answer_latency_seconds": 0.839836597442627,
+      "token_usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 2,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 81,
+      "category": 1,
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1015-A say in the turn about \"そう言えばなんですけど！\"?",
+      "prediction": "made small cute boxes",
+      "reference": "そう言えばなんですけど！",
+      "latency_seconds": 48.00287175178528,
+      "retrieval_latency_seconds": 47.10464906692505,
+      "answer_latency_seconds": 0.8982226848602295,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 82,
+      "category": 1,
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1015-A say in the turn about \"さっそく、百均でDIYグッズを買ってきたよ。\"?",
+      "prediction": "1 May 2023",
+      "reference": "さっそく、百均でDIYグッズを買ってきたよ。",
+      "latency_seconds": 64.20543932914734,
+      "retrieval_latency_seconds": 63.52131366729736,
+      "answer_latency_seconds": 0.6841256618499756,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 83,
+      "category": 1,
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1015-A say in the turn about \"今、貯金箱を作ろうと頑張ってますよ。\"?",
+      "prediction": "1 May 2023",
+      "reference": "今、貯金箱を作ろうと頑張ってますよ。",
+      "latency_seconds": 63.915008783340454,
+      "retrieval_latency_seconds": 62.92185735702515,
+      "answer_latency_seconds": 0.9931514263153076,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 2,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 84,
+      "category": 1,
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1015-A say in the turn about \"ちょっと。納豆マカロンの試作をつくってみたんだけど。\"?",
+      "prediction": "1 May 2023",
+      "reference": "ちょっと。納豆マカロンの試作をつくってみたんだけど。",
+      "latency_seconds": 64.07709050178528,
+      "retrieval_latency_seconds": 63.298980474472046,
+      "answer_latency_seconds": 0.7781100273132324,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 2,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 85,
+      "category": 1,
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1015-B say in the turn about \"今からでもいろいろ趣味見つけられますよ。\"?",
+      "prediction": "DIY",
+      "reference": "今からでもいろいろ趣味見つけられますよ。",
+      "latency_seconds": 62.920968532562256,
+      "retrieval_latency_seconds": 61.840473890304565,
+      "answer_latency_seconds": 1.0804946422576904,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 1,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 86,
+      "category": 1,
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1015-B say in the turn about \"そうですね！それでお得になるなら、貯金も貯まりますし、おすすめです。\"?",
+      "prediction": "1 May 2023",
+      "reference": "そうですね！それでお得になるなら、貯金も貯まりますし、おすすめです。",
+      "latency_seconds": 59.460262060165405,
+      "retrieval_latency_seconds": 58.472081422805786,
+      "answer_latency_seconds": 0.9881806373596191,
+      "token_usage": {
+        "prompt_tokens": 31,
+        "completion_tokens": 2,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 87,
+      "category": 1,
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1015-B say in the turn about \"素敵ですね！夢を叶えられるよう応援してますよ。\"?",
+      "prediction": "1 May 2023",
+      "reference": "素敵ですね！夢を叶えられるよう応援してますよ。",
+      "latency_seconds": 61.796382427215576,
+      "retrieval_latency_seconds": 61.1260712146759,
+      "answer_latency_seconds": 0.6703112125396729,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 88,
+      "category": 1,
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1015-B say in the turn about \"そういうのだったら任せて。もし人が必要になったら手伝いに行くからね。\"?",
+      "prediction": "Concise answer in a short phrase",
+      "reference": "そういうのだったら任せて。もし人が必要になったら手伝いに行くからね。",
+      "latency_seconds": 57.39870238304138,
+      "retrieval_latency_seconds": 56.51380467414856,
+      "answer_latency_seconds": 0.8848977088928223,
+      "token_usage": {
+        "prompt_tokens": 31,
+        "completion_tokens": 8,
+        "total_tokens": 39,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 89,
+      "category": 1,
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1015-B say in the turn about \"50個もくれるんですか！ありがとうございます。今の会社は入ってまだ間もない...\"?",
+      "prediction": "ありがとうございます。今の会社は入ってまだ間もない...",
+      "reference": "50個もくれるんですか！ありがとうございます。今の会社は入ってまだ間もないんで、これをきっかけに同僚と打ち解けられるといいな。",
+      "latency_seconds": 63.94700074195862,
+      "retrieval_latency_seconds": 62.87628769874573,
+      "answer_latency_seconds": 1.0707130432128906,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 7,
+        "total_tokens": 39,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 90,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1015-A say in session 1 and what did PP1015-B say in session 2?",
+      "prediction": "1 May 2023",
+      "reference": "Session 1: こんばんは。出身はどちらですか？ Session 2: そうですね！それでお得になるなら、貯金も貯まりますし、おすすめです。",
+      "latency_seconds": 51.17620038986206,
+      "retrieval_latency_seconds": 50.431108713150024,
+      "answer_latency_seconds": 0.7450916767120361,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 2,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 91,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1015-A say in session 2 and what did PP1015-B say in session 3?",
+      "prediction": "1 May 2023",
+      "reference": "Session 2: そう言えばなんですけど！ Session 3: 素敵ですね！夢を叶えられるよう応援してますよ。",
+      "latency_seconds": 63.20634579658508,
+      "retrieval_latency_seconds": 61.821824073791504,
+      "answer_latency_seconds": 1.384521722793579,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 2,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 92,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1015-A say in session 3 and what did PP1015-B say in session 4?",
+      "prediction": "Box making suggestion",
+      "reference": "Session 3: さっそく、百均でDIYグッズを買ってきたよ。 Session 4: そういうのだったら任せて。もし人が必要になったら手伝いに行くからね。",
+      "latency_seconds": 59.37840223312378,
+      "retrieval_latency_seconds": 58.49780750274658,
+      "answer_latency_seconds": 0.8805947303771973,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 5,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 93,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1015-A say in session 4 and what did PP1015-B say in session 5?",
+      "prediction": "1 May 2023",
+      "reference": "Session 4: 今、貯金箱を作ろうと頑張ってますよ。 Session 5: 50個もくれるんですか！ありがとうございます。今の会社は入ってまだ間もないんで、これをきっかけに同僚と打ち解けられるといいな。",
+      "latency_seconds": 55.57588768005371,
+      "retrieval_latency_seconds": 54.58077335357666,
+      "answer_latency_seconds": 0.9951143264770508,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 2,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 94,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1015-A's session 1 statement or PP1015-A's session 2 statement?",
+      "prediction": "1 May 2023",
+      "reference": "Earlier session 1: こんばんは。出身はどちらですか？",
+      "latency_seconds": 49.59552621841431,
+      "retrieval_latency_seconds": 48.804712533950806,
+      "answer_latency_seconds": 0.790813684463501,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 95,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1015-A's session 2 statement or PP1015-A's session 3 statement?",
+      "prediction": "1 May 2023",
+      "reference": "Earlier session 2: そう言えばなんですけど！",
+      "latency_seconds": 50.942580699920654,
+      "retrieval_latency_seconds": 49.98009634017944,
+      "answer_latency_seconds": 0.9624843597412109,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 96,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1015-A's session 3 statement or PP1015-A's session 4 statement?",
+      "prediction": "1 May 2023",
+      "reference": "Earlier session 3: さっそく、百均でDIYグッズを買ってきたよ。",
+      "latency_seconds": 49.49225068092346,
+      "retrieval_latency_seconds": 48.42114305496216,
+      "answer_latency_seconds": 1.0711076259613037,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 97,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1015-A's session 4 statement or PP1015-A's session 5 statement?",
+      "prediction": "1 May 2023",
+      "reference": "Earlier session 4: 今、貯金箱を作ろうと頑張ってますよ。",
+      "latency_seconds": 46.85878372192383,
+      "retrieval_latency_seconds": 46.016804218292236,
+      "answer_latency_seconds": 0.8419795036315918,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 98,
+      "category": 4,
+      "question": "What general conversational act is shown by PP1015-A's cited turn in the Japanese JMSC conversation?",
+      "prediction": "Inquiry about favorite stage plays",
+      "reference": "asking a question",
+      "latency_seconds": 63.25263833999634,
+      "retrieval_latency_seconds": 62.16098761558533,
+      "answer_latency_seconds": 1.0916507244110107,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 8,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 99,
+      "category": 4,
+      "question": "What general conversational act is shown by PP1015-A's cited turn in the Japanese JMSC conversation?",
+      "prediction": "Inquire about favorite stage plays",
+      "reference": "sharing information in the conversation",
+      "latency_seconds": 48.06219720840454,
+      "retrieval_latency_seconds": 47.24684739112854,
+      "answer_latency_seconds": 0.815349817276001,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 8,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 100,
+      "category": 1,
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1074-A say in the turn about \"こんにちは、空港会社に勤務しているのですが、最近は旅行客がいないので仕事が...\"?",
+      "prediction": "最近は旅行客がいないので仕事...",
+      "reference": "こんにちは、空港会社に勤務しているのですが、最近は旅行客がいないので仕事が少ないです。",
+      "latency_seconds": 47.922133684158325,
+      "retrieval_latency_seconds": 47.326679944992065,
+      "answer_latency_seconds": 0.5954537391662598,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 4,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 101,
+      "category": 1,
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1074-A say in the turn about \"さっき、焼きそばの話をしたので、ついカップ焼きそばを作って食べてしまいました。\"?",
+      "prediction": "1 May 2023",
+      "reference": "さっき、焼きそばの話をしたので、ついカップ焼きそばを作って食べてしまいました。",
+      "latency_seconds": 58.981303215026855,
+      "retrieval_latency_seconds": 58.14204740524292,
+      "answer_latency_seconds": 0.8392558097839355,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 102,
+      "category": 1,
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1074-A say in the turn about \"聞いてください。年の離れた私の姉の話なのですが、姉に恋人ができたんですよ。\"?",
+      "prediction": "1 May 2023",
+      "reference": "聞いてください。年の離れた私の姉の話なのですが、姉に恋人ができたんですよ。",
+      "latency_seconds": 60.15222883224487,
+      "retrieval_latency_seconds": 59.35136103630066,
+      "answer_latency_seconds": 0.8008677959442139,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 103,
+      "category": 1,
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1074-A say in the turn about \"教えてもらったレシピでやきそば作ってみましたよ。\"?",
+      "prediction": "1 May 2023",
+      "reference": "教えてもらったレシピでやきそば作ってみましたよ。",
+      "latency_seconds": 59.015026330947876,
+      "retrieval_latency_seconds": 58.293485164642334,
+      "answer_latency_seconds": 0.721541166305542,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 104,
+      "category": 1,
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1074-A say in the turn about \"やっぱり、豚のしょうが焼きは最高ですね。\"?",
+      "prediction": "1 May 2023",
+      "reference": "やっぱり、豚のしょうが焼きは最高ですね。",
+      "latency_seconds": 57.92975997924805,
+      "retrieval_latency_seconds": 57.38549613952637,
+      "answer_latency_seconds": 0.5442638397216797,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 2,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 105,
+      "category": 1,
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1074-B say in the turn about \"そうなんですよね。よければ今度お姉さんに作ってもらってください。\"?",
+      "prediction": "1 May 2023",
+      "reference": "そうなんですよね。よければ今度お姉さんに作ってもらってください。",
+      "latency_seconds": 60.0818305015564,
+      "retrieval_latency_seconds": 59.214736461639404,
+      "answer_latency_seconds": 0.8670940399169922,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 2,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 106,
+      "category": 1,
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1074-B say in the turn about \"私の場合は姿勢を保つこと自体が疲れてしまいそうですが、どちらでしょうかねー。\"?",
+      "prediction": "single",
+      "reference": "私の場合は姿勢を保つこと自体が疲れてしまいそうですが、どちらでしょうかねー。",
+      "latency_seconds": 60.05687952041626,
+      "retrieval_latency_seconds": 59.43895649909973,
+      "answer_latency_seconds": 0.6179230213165283,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 1,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 107,
+      "category": 1,
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1074-B say in the turn about \"もちろん！では、今度レシピとコツをお教えしますよ。\"?",
+      "prediction": "single and find it difficult to date women",
+      "reference": "もちろん！では、今度レシピとコツをお教えしますよ。",
+      "latency_seconds": 59.88221573829651,
+      "retrieval_latency_seconds": 58.780871629714966,
+      "answer_latency_seconds": 1.101344108581543,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 10,
+        "total_tokens": 39,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 108,
+      "category": 1,
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1074-B say in the turn about \"姿勢がいいと素敵に見えてうらやましいです。きっと素敵な恋人見つかりますよ。\"?",
+      "prediction": "1 May 2023",
+      "reference": "姿勢がいいと素敵に見えてうらやましいです。きっと素敵な恋人見つかりますよ。",
+      "latency_seconds": 60.18667387962341,
+      "retrieval_latency_seconds": 59.397989988327026,
+      "answer_latency_seconds": 0.7886838912963867,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 109,
+      "category": 1,
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1074-B say in the turn about \"あなたが尊敬する先輩なんですから、きっと良い方に違いないですし、うまくいき...\"?",
+      "prediction": "あなたが尊敬する先輩なんですから",
+      "reference": "あなたが尊敬する先輩なんですから、きっと良い方に違いないですし、うまくいきますよ！",
+      "latency_seconds": 59.999526500701904,
+      "retrieval_latency_seconds": 58.9882915019989,
+      "answer_latency_seconds": 1.011234998703003,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 4,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 110,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1074-A say in session 1 and what did PP1074-B say in session 2?",
+      "prediction": "1 May 2023",
+      "reference": "Session 1: こんにちは、空港会社に勤務しているのですが、最近は旅行客がいないので仕事が少ないです。 Session 2: 私の場合は姿勢を保つこと自体が疲れてしまいそうですが、どちらでしょうかねー。",
+      "latency_seconds": 54.31182503700256,
+      "retrieval_latency_seconds": 53.699684619903564,
+      "answer_latency_seconds": 0.612140417098999,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 2,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 111,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1074-A say in session 2 and what did PP1074-B say in session 3?",
+      "prediction": "PP1074-B: Sister good at cooking, often cooks",
+      "reference": "Session 2: さっき、焼きそばの話をしたので、ついカップ焼きそばを作って食べてしまいました。 Session 3: もちろん！では、今度レシピとコツをお教えしますよ。",
+      "latency_seconds": 52.74337697029114,
+      "retrieval_latency_seconds": 51.92237329483032,
+      "answer_latency_seconds": 0.8210036754608154,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 11,
+        "total_tokens": 38,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 112,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1074-A say in session 3 and what did PP1074-B say in session 4?",
+      "prediction": "1 May 2023",
+      "reference": "Session 3: 聞いてください。年の離れた私の姉の話なのですが、姉に恋人ができたんですよ。 Session 4: 姿勢がいいと素敵に見えてうらやましいです。きっと素敵な恋人見つかりますよ。",
+      "latency_seconds": 55.57000422477722,
+      "retrieval_latency_seconds": 54.73851943016052,
+      "answer_latency_seconds": 0.8314847946166992,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 2,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 113,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1074-A say in session 4 and what did PP1074-B say in session 5?",
+      "prediction": "PP1074-B: Sister good at cooking, often cooks",
+      "reference": "Session 4: 教えてもらったレシピでやきそば作ってみましたよ。 Session 5: あなたが尊敬する先輩なんですから、きっと良い方に違いないですし、うまくいきますよ！",
+      "latency_seconds": 55.802794456481934,
+      "retrieval_latency_seconds": 54.844085931777954,
+      "answer_latency_seconds": 0.9587085247039795,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 11,
+        "total_tokens": 38,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 114,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1074-A's session 1 statement or PP1074-A's session 2 statement?",
+      "prediction": "27 May 2023",
+      "reference": "Earlier session 1: こんにちは、空港会社に勤務しているのですが、最近は旅行客がいないので仕事が少ないです。",
+      "latency_seconds": 44.89510703086853,
+      "retrieval_latency_seconds": 43.927823543548584,
+      "answer_latency_seconds": 0.9672834873199463,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 115,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1074-A's session 2 statement or PP1074-A's session 3 statement?",
+      "prediction": "27 May 2023",
+      "reference": "Earlier session 2: さっき、焼きそばの話をしたので、ついカップ焼きそばを作って食べてしまいました。",
+      "latency_seconds": 46.920390605926514,
+      "retrieval_latency_seconds": 46.27701449394226,
+      "answer_latency_seconds": 0.6433761119842529,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 116,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1074-A's session 3 statement or PP1074-A's session 4 statement?",
+      "prediction": "27 May 2023",
+      "reference": "Earlier session 3: 聞いてください。年の離れた私の姉の話なのですが、姉に恋人ができたんですよ。",
+      "latency_seconds": 44.93423509597778,
+      "retrieval_latency_seconds": 44.10570049285889,
+      "answer_latency_seconds": 0.8285346031188965,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 117,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1074-A's session 4 statement or PP1074-A's session 5 statement?",
+      "prediction": "27 May 2023",
+      "reference": "Earlier session 4: 教えてもらったレシピでやきそば作ってみましたよ。",
+      "latency_seconds": 45.01432991027832,
+      "retrieval_latency_seconds": 44.30454897880554,
+      "answer_latency_seconds": 0.7097809314727783,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 118,
+      "category": 4,
+      "question": "What general conversational act is shown by PP1074-A's cited turn in the Japanese JMSC conversation?",
+      "prediction": "Share family relationship",
+      "reference": "greeting or opening the conversation",
+      "latency_seconds": 55.54549860954285,
+      "retrieval_latency_seconds": 54.830994844436646,
+      "answer_latency_seconds": 0.7145037651062012,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 6,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 119,
+      "category": 4,
+      "question": "What general conversational act is shown by PP1074-A's cited turn in the Japanese JMSC conversation?",
+      "prediction": "State family relationship",
+      "reference": "sharing information in the conversation",
+      "latency_seconds": 40.68198204040527,
+      "retrieval_latency_seconds": 40.117279052734375,
+      "answer_latency_seconds": 0.5647029876708984,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 6,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 120,
+      "category": 1,
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1154-A say in the turn about \"わたしの手作り餃子、試食してもらえませんかねえ。\"?",
+      "prediction": "14 May 2023 at 3:00 AM",
+      "reference": "わたしの手作り餃子、試食してもらえませんかねえ。",
+      "latency_seconds": 63.90956711769104,
+      "retrieval_latency_seconds": 62.23304295539856,
+      "answer_latency_seconds": 1.6765241622924805,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 5,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 121,
+      "category": 1,
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1154-A say in the turn about \"こんにちは。仕事のほうはどうですか？\"?",
+      "prediction": "こんにちは。仕事のほうはどうですか？",
+      "reference": "こんにちは。仕事のほうはどうですか？",
+      "latency_seconds": 61.916823387145996,
+      "retrieval_latency_seconds": 60.08804631233215,
+      "answer_latency_seconds": 1.8287770748138428,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 4,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 122,
+      "category": 1,
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1154-A say in the turn about \"こんにちは、お久しぶりです。あれから近所のお子さんは静かですか？\"?",
+      "prediction": "あれから近所のお子さんは静かですか？",
+      "reference": "こんにちは、お久しぶりです。あれから近所のお子さんは静かですか？",
+      "latency_seconds": 63.796844720840454,
+      "retrieval_latency_seconds": 62.143508434295654,
+      "answer_latency_seconds": 1.6533362865447998,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 4,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 123,
+      "category": 1,
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1154-A say in the turn about \"図書館に本を返しに行ってきたんですが、腰が痛くて。\"?",
+      "prediction": "14 May 2023 at 3:00 AM",
+      "reference": "図書館に本を返しに行ってきたんですが、腰が痛くて。",
+      "latency_seconds": 45.00895071029663,
+      "retrieval_latency_seconds": 44.155380964279175,
+      "answer_latency_seconds": 0.853569746017456,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 5,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 124,
+      "category": 1,
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1154-A say in the turn about \"こんにちは。今日はお仕事の日ですか？\"?",
+      "prediction": "こんにちは。今日はお仕事の日ですか？",
+      "reference": "こんにちは。今日はお仕事の日ですか？",
+      "latency_seconds": 57.82189059257507,
+      "retrieval_latency_seconds": 56.991636753082275,
+      "answer_latency_seconds": 0.8302538394927979,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 4,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 125,
+      "category": 1,
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1154-B say in the turn about \"そうですね。あなたも研究頑張ってください。\"?",
+      "prediction": "14 May 2023",
+      "reference": "そうですね。あなたも研究頑張ってください。",
+      "latency_seconds": 62.21738028526306,
+      "retrieval_latency_seconds": 61.106446266174316,
+      "answer_latency_seconds": 1.1109340190887451,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 126,
+      "category": 1,
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1154-B say in the turn about \"隣人づきあいは良い所も悪い所もありますけどね。試しに一度住んでみるのもおす...\"?",
+      "prediction": "試しに一度住んでみるのもおす...",
+      "reference": "隣人づきあいは良い所も悪い所もありますけどね。試しに一度住んでみるのもおすすめですよ。",
+      "latency_seconds": 63.81019830703735,
+      "retrieval_latency_seconds": 62.41217064857483,
+      "answer_latency_seconds": 1.3980276584625244,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 4,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 127,
+      "category": 1,
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1154-B say in the turn about \"素晴らしい、私もそうすれば貯金できそうです。\"?",
+      "prediction": "28 May 2023",
+      "reference": "素晴らしい、私もそうすれば貯金できそうです。",
+      "latency_seconds": 62.14422559738159,
+      "retrieval_latency_seconds": 60.80952715873718,
+      "answer_latency_seconds": 1.3346984386444092,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 128,
+      "category": 1,
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1154-B say in the turn about \"鉄道マンに誇りを持ってますからね。\"?",
+      "prediction": "5 May 2023",
+      "reference": "鉄道マンに誇りを持ってますからね。",
+      "latency_seconds": 63.74486565589905,
+      "retrieval_latency_seconds": 62.35791277885437,
+      "answer_latency_seconds": 1.3869528770446777,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 2,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 129,
+      "category": 1,
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1154-B say in the turn about \"寒い時は怪我もしやすいですからね。お互い身体を大事にしましょうね。\"?",
+      "prediction": "14 May 2023 at 3:00 AM",
+      "reference": "寒い時は怪我もしやすいですからね。お互い身体を大事にしましょうね。",
+      "latency_seconds": 63.85247874259949,
+      "retrieval_latency_seconds": 62.11153292655945,
+      "answer_latency_seconds": 1.740945816040039,
+      "token_usage": {
+        "prompt_tokens": 31,
+        "completion_tokens": 5,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 130,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1154-A say in session 1 and what did PP1154-B say in session 2?",
+      "prediction": "14 May 2023 at 3:00 AM",
+      "reference": "Session 1: わたしの手作り餃子、試食してもらえませんかねえ。 Session 2: 隣人づきあいは良い所も悪い所もありますけどね。試しに一度住んでみるのもおすすめですよ。",
+      "latency_seconds": 60.86049795150757,
+      "retrieval_latency_seconds": 59.242021799087524,
+      "answer_latency_seconds": 1.618476152420044,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 5,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 131,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1154-A say in session 2 and what did PP1154-B say in session 3?",
+      "prediction": "14 May 2023",
+      "reference": "Session 2: こんにちは。仕事のほうはどうですか？ Session 3: 素晴らしい、私もそうすれば貯金できそうです。",
+      "latency_seconds": 59.138882875442505,
+      "retrieval_latency_seconds": 58.22631096839905,
+      "answer_latency_seconds": 0.912571907043457,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 2,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 132,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1154-A say in session 3 and what did PP1154-B say in session 4?",
+      "prediction": "28 May 2023",
+      "reference": "Session 3: こんにちは、お久しぶりです。あれから近所のお子さんは静かですか？ Session 4: 鉄道マンに誇りを持ってますからね。",
+      "latency_seconds": 55.32004475593567,
+      "retrieval_latency_seconds": 54.53580188751221,
+      "answer_latency_seconds": 0.7842428684234619,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 2,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 133,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1154-A say in session 4 and what did PP1154-B say in session 5?",
+      "prediction": "28 May 2023",
+      "reference": "Session 4: 図書館に本を返しに行ってきたんですが、腰が痛くて。 Session 5: 寒い時は怪我もしやすいですからね。お互い身体を大事にしましょうね。",
+      "latency_seconds": 60.717759132385254,
+      "retrieval_latency_seconds": 59.41927623748779,
+      "answer_latency_seconds": 1.298482894897461,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 2,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 134,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1154-A's session 1 statement or PP1154-A's session 2 statement?",
+      "prediction": "4 June 2023 at 6:00 AM",
+      "reference": "Earlier session 1: わたしの手作り餃子、試食してもらえませんかねえ。",
+      "latency_seconds": 63.455389738082886,
+      "retrieval_latency_seconds": 61.36938285827637,
+      "answer_latency_seconds": 2.0860068798065186,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 5,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 135,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1154-A's session 2 statement or PP1154-A's session 3 statement?",
+      "prediction": "14 May 2023 at 3:00 AM",
+      "reference": "Earlier session 2: こんにちは。仕事のほうはどうですか？",
+      "latency_seconds": 62.07652807235718,
+      "retrieval_latency_seconds": 60.07573103904724,
+      "answer_latency_seconds": 2.0007970333099365,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 5,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 136,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1154-A's session 3 statement or PP1154-A's session 4 statement?",
+      "prediction": "4 June 2023",
+      "reference": "Earlier session 3: こんにちは、お久しぶりです。あれから近所のお子さんは静かですか？",
+      "latency_seconds": 46.871092319488525,
+      "retrieval_latency_seconds": 46.11594581604004,
+      "answer_latency_seconds": 0.7551465034484863,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 137,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1154-A's session 4 statement or PP1154-A's session 5 statement?",
+      "prediction": "4 June 2023",
+      "reference": "Earlier session 4: 図書館に本を返しに行ってきたんですが、腰が痛くて。",
+      "latency_seconds": 52.66442894935608,
+      "retrieval_latency_seconds": 51.819812059402466,
+      "answer_latency_seconds": 0.8446168899536133,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 138,
+      "category": 4,
+      "question": "What general conversational act is shown by PP1154-A's cited turn in the Japanese JMSC conversation?",
+      "prediction": "Expressed sympathy",
+      "reference": "asking a question",
+      "latency_seconds": 58.94269418716431,
+      "retrieval_latency_seconds": 58.12943887710571,
+      "answer_latency_seconds": 0.8132553100585938,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 4,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 139,
+      "category": 4,
+      "question": "What general conversational act is shown by PP1154-A's cited turn in the Japanese JMSC conversation?",
+      "prediction": "Expressed sympathy",
+      "reference": "asking a question",
+      "latency_seconds": 61.95444631576538,
+      "retrieval_latency_seconds": 60.7472882270813,
+      "answer_latency_seconds": 1.207158088684082,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 4,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 140,
+      "category": 1,
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1394-A say in the turn about \"こんにちは！鳥を飼い始めたのですが名前どうしよー。\"?",
+      "prediction": "こんにちは！鳥を飼い始めたのですが名前どうしよー。",
+      "reference": "こんにちは！鳥を飼い始めたのですが名前どうしよー。",
+      "latency_seconds": 58.05888342857361,
+      "retrieval_latency_seconds": 56.97637605667114,
+      "answer_latency_seconds": 1.0825073719024658,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 6,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 141,
+      "category": 1,
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1394-A say in the turn about \"こんにちは！1週間ぶりくらいですかね？\"?",
+      "prediction": "こんにちは！1週間ぶりくらいですかね？",
+      "reference": "こんにちは！1週間ぶりくらいですかね？",
+      "latency_seconds": 56.368714570999146,
+      "retrieval_latency_seconds": 55.44257164001465,
+      "answer_latency_seconds": 0.9261429309844971,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 4,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 142,
+      "category": 1,
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1394-A say in the turn about \"ぴよちゃんに餌をあげてきました。結構食欲旺盛なんですよ。\"?",
+      "prediction": "12 May 2023 at 4:00 AM",
+      "reference": "ぴよちゃんに餌をあげてきました。結構食欲旺盛なんですよ。",
+      "latency_seconds": 58.10521149635315,
+      "retrieval_latency_seconds": 57.15274930000305,
+      "answer_latency_seconds": 0.9524621963500977,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 5,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 143,
+      "category": 1,
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1394-A say in the turn about \"あれからニンジンは食べれてますか？どうやらピヨちゃんも人参は苦手だったみた...\"?",
+      "prediction": "1 June 2023",
+      "reference": "あれからニンジンは食べれてますか？どうやらピヨちゃんも人参は苦手だったみたいです。",
+      "latency_seconds": 58.87518548965454,
+      "retrieval_latency_seconds": 58.135751485824585,
+      "answer_latency_seconds": 0.739434003829956,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 144,
+      "category": 1,
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1394-A say in the turn about \"こんにちは。またちょっと久しぶりだね。人参にアタックは続けているの？\"?",
+      "prediction": "続けているの？",
+      "reference": "こんにちは。またちょっと久しぶりだね。人参にアタックは続けているの？",
+      "latency_seconds": 60.03821420669556,
+      "retrieval_latency_seconds": 58.97129034996033,
+      "answer_latency_seconds": 1.0669238567352295,
+      "token_usage": {
+        "prompt_tokens": 31,
+        "completion_tokens": 1,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 145,
+      "category": 1,
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1394-B say in the turn about \"お！では今度結果をお伝えしま～す！\"?",
+      "prediction": "will tell you results",
+      "reference": "お！では今度結果をお伝えしま～す！",
+      "latency_seconds": 53.85846185684204,
+      "retrieval_latency_seconds": 53.25463104248047,
+      "answer_latency_seconds": 0.6038308143615723,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 5,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 146,
+      "category": 1,
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1394-B say in the turn about \"そうだぴよちゃん、大きくなりました？今度写真見せてください。\"?",
+      "prediction": "Concise answer in a short phrase",
+      "reference": "そうだぴよちゃん、大きくなりました？今度写真見せてください。",
+      "latency_seconds": 60.16392374038696,
+      "retrieval_latency_seconds": 59.13311719894409,
+      "answer_latency_seconds": 1.030806541442871,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 8,
+        "total_tokens": 38,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 147,
+      "category": 1,
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1394-B say in the turn about \"美味しいですよねー。\"?",
+      "prediction": "美味しいですよねー。",
+      "reference": "美味しいですよねー。",
+      "latency_seconds": 58.75406360626221,
+      "retrieval_latency_seconds": 58.04384756088257,
+      "answer_latency_seconds": 0.7102160453796387,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 2,
+        "total_tokens": 27,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 148,
+      "category": 1,
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1394-B say in the turn about \"やった！お母さんにも今からこの話してきます！\"?",
+      "prediction": "1 May 2023",
+      "reference": "やった！お母さんにも今からこの話してきます！",
+      "latency_seconds": 60.138527154922485,
+      "retrieval_latency_seconds": 59.04681158065796,
+      "answer_latency_seconds": 1.0917155742645264,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 149,
+      "category": 1,
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1394-B say in the turn about \"ええ！？そしたらビックリしちゃう！でも、その日を楽しみにしていますね。\"?",
+      "prediction": "1 June 2023 at 5:00 AM",
+      "reference": "ええ！？そしたらビックリしちゃう！でも、その日を楽しみにしていますね。",
+      "latency_seconds": 60.289146184921265,
+      "retrieval_latency_seconds": 59.151732206344604,
+      "answer_latency_seconds": 1.1374139785766602,
+      "token_usage": {
+        "prompt_tokens": 31,
+        "completion_tokens": 5,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 150,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1394-A say in session 1 and what did PP1394-B say in session 2?",
+      "prediction": "2:00 AM on 8 May 2023",
+      "reference": "Session 1: こんにちは！鳥を飼い始めたのですが名前どうしよー。 Session 2: そうだぴよちゃん、大きくなりました？今度写真見せてください。",
+      "latency_seconds": 56.27272272109985,
+      "retrieval_latency_seconds": 55.14221715927124,
+      "answer_latency_seconds": 1.1305055618286133,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 5,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 151,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1394-A say in session 2 and what did PP1394-B say in session 3?",
+      "prediction": "22 May 2023 at 4:00 AM",
+      "reference": "Session 2: こんにちは！1週間ぶりくらいですかね？ Session 3: 美味しいですよねー。",
+      "latency_seconds": 53.554636001586914,
+      "retrieval_latency_seconds": 52.53100347518921,
+      "answer_latency_seconds": 1.023632526397705,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 5,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 152,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1394-A say in session 3 and what did PP1394-B say in session 4?",
+      "prediction": "5 May 2023 at 5:00 AM",
+      "reference": "Session 3: ぴよちゃんに餌をあげてきました。結構食欲旺盛なんですよ。 Session 4: やった！お母さんにも今からこの話してきます！",
+      "latency_seconds": 47.93860626220703,
+      "retrieval_latency_seconds": 47.1262309551239,
+      "answer_latency_seconds": 0.8123753070831299,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 5,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 153,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1394-A say in session 4 and what did PP1394-B say in session 5?",
+      "prediction": "None",
+      "reference": "Session 4: あれからニンジンは食べれてますか？どうやらピヨちゃんも人参は苦手だったみたいです。 Session 5: ええ！？そしたらビックリしちゃう！でも、その日を楽しみにしていますね。",
+      "latency_seconds": 56.108091831207275,
+      "retrieval_latency_seconds": 55.38564991950989,
+      "answer_latency_seconds": 0.7224419116973877,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 1,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 154,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1394-A's session 1 statement or PP1394-A's session 2 statement?",
+      "prediction": "8 May 2023 at 2:00 AM",
+      "reference": "Earlier session 1: こんにちは！鳥を飼い始めたのですが名前どうしよー。",
+      "latency_seconds": 48.69297122955322,
+      "retrieval_latency_seconds": 47.94643998146057,
+      "answer_latency_seconds": 0.7465312480926514,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 5,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 155,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1394-A's session 2 statement or PP1394-A's session 3 statement?",
+      "prediction": "29 May 2023 at 5:00 AM",
+      "reference": "Earlier session 2: こんにちは！1週間ぶりくらいですかね？",
+      "latency_seconds": 43.70373463630676,
+      "retrieval_latency_seconds": 42.68991446495056,
+      "answer_latency_seconds": 1.0138201713562012,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 5,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 156,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1394-A's session 3 statement or PP1394-A's session 4 statement?",
+      "prediction": "8 May 2023 at 2:00 AM",
+      "reference": "Earlier session 3: ぴよちゃんに餌をあげてきました。結構食欲旺盛なんですよ。",
+      "latency_seconds": 45.18867206573486,
+      "retrieval_latency_seconds": 44.364723205566406,
+      "answer_latency_seconds": 0.823948860168457,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 5,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 157,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1394-A's session 4 statement or PP1394-A's session 5 statement?",
+      "prediction": "29 May 2023",
+      "reference": "Earlier session 4: あれからニンジンは食べれてますか？どうやらピヨちゃんも人参は苦手だったみたいです。",
+      "latency_seconds": 46.00897574424744,
+      "retrieval_latency_seconds": 45.37584900856018,
+      "answer_latency_seconds": 0.6331267356872559,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 158,
+      "category": 4,
+      "question": "What general conversational act is shown by PP1394-A's cited turn in the Japanese JMSC conversation?",
+      "prediction": "Fortune-telling request",
+      "reference": "greeting or opening the conversation",
+      "latency_seconds": 43.69976258277893,
+      "retrieval_latency_seconds": 43.05518054962158,
+      "answer_latency_seconds": 0.6445820331573486,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 159,
+      "category": 4,
+      "question": "What general conversational act is shown by PP1394-A's cited turn in the Japanese JMSC conversation?",
+      "prediction": "Fortune-telling request",
+      "reference": "asking a question",
+      "latency_seconds": 45.75829482078552,
+      "retrieval_latency_seconds": 45.11537790298462,
+      "answer_latency_seconds": 0.6429169178009033,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 160,
+      "category": 1,
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1417-A say in the turn about \"こんにちは、お久しぶりです。最近どうですか？\"?",
+      "prediction": "お久しぶりです。最近どうですか？",
+      "reference": "こんにちは、お久しぶりです。最近どうですか？",
+      "latency_seconds": 59.311638832092285,
+      "retrieval_latency_seconds": 58.47849631309509,
+      "answer_latency_seconds": 0.8331425189971924,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 4,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 161,
+      "category": 1,
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1417-A say in the turn about \"1週間のご無沙汰でした！お元気ですかー？\"?",
+      "prediction": "1 June 2023",
+      "reference": "1週間のご無沙汰でした！お元気ですかー？",
+      "latency_seconds": 44.925220012664795,
+      "retrieval_latency_seconds": 44.26856327056885,
+      "answer_latency_seconds": 0.6566567420959473,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 2,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 162,
+      "category": 1,
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1417-A say in the turn about \"聞いて、聞いて！\"?",
+      "prediction": "16 May 2023",
+      "reference": "聞いて、聞いて！",
+      "latency_seconds": 62.33080768585205,
+      "retrieval_latency_seconds": 59.893115282058716,
+      "answer_latency_seconds": 2.437692403793335,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 2,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 163,
+      "category": 1,
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1417-A say in the turn about \"大阪のこと考えたらワクワクしてきちゃった！\"?",
+      "prediction": "大阪のこと考えたらワクワクしてきちゃった！",
+      "reference": "大阪のこと考えたらワクワクしてきちゃった！",
+      "latency_seconds": 62.50668954849243,
+      "retrieval_latency_seconds": 60.13331961631775,
+      "answer_latency_seconds": 2.3733699321746826,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 5,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 164,
+      "category": 1,
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1417-A say in the turn about \"いよいよ明日、大阪入り！楽しみすぎて、寝れない！\"?",
+      "prediction": "16 May 2023",
+      "reference": "いよいよ明日、大阪入り！楽しみすぎて、寝れない！",
+      "latency_seconds": 62.39877891540527,
+      "retrieval_latency_seconds": 60.66470789909363,
+      "answer_latency_seconds": 1.7340710163116455,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 165,
+      "category": 1,
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1417-B say in the turn about \"食い倒れる覚悟して来て！\"?",
+      "prediction": "食い倒れる覚悟して来て！",
+      "reference": "食い倒れる覚悟して来て！",
+      "latency_seconds": 62.32542371749878,
+      "retrieval_latency_seconds": 59.75777316093445,
+      "answer_latency_seconds": 2.567650556564331,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 3,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 166,
+      "category": 1,
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1417-B say in the turn about \"あはは！楽しみにしてる！たこ焼きもたくさん準備しておくね！\"?",
+      "prediction": "16 May 2023",
+      "reference": "あはは！楽しみにしてる！たこ焼きもたくさん準備しておくね！",
+      "latency_seconds": 53.1903076171875,
+      "retrieval_latency_seconds": 52.25073838233948,
+      "answer_latency_seconds": 0.9395692348480225,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 2,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 167,
+      "category": 1,
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1417-B say in the turn about \"フリーランスだからさ、予定は自分で調整できるの。問題ないよ！\"?",
+      "prediction": "16 May 2023",
+      "reference": "フリーランスだからさ、予定は自分で調整できるの。問題ないよ！",
+      "latency_seconds": 62.39695954322815,
+      "retrieval_latency_seconds": 60.72138738632202,
+      "answer_latency_seconds": 1.675572156906128,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 2,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 168,
+      "category": 1,
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1417-B say in the turn about \"それでは、あなたが来る日を楽しみにしていますね。\"?",
+      "prediction": "16 May 2023 at 3:00 AM",
+      "reference": "それでは、あなたが来る日を楽しみにしていますね。",
+      "latency_seconds": 62.559844732284546,
+      "retrieval_latency_seconds": 60.522969007492065,
+      "answer_latency_seconds": 2.0368757247924805,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 5,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 169,
+      "category": 1,
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1417-B say in the turn about \"あ、じゃあそこはお任せしようかなー。いつも行かない場所だから緊張しちゃう！\"?",
+      "prediction": "お任せしようかなー",
+      "reference": "あ、じゃあそこはお任せしようかなー。いつも行かない場所だから緊張しちゃう！",
+      "latency_seconds": 62.31653928756714,
+      "retrieval_latency_seconds": 60.54851222038269,
+      "answer_latency_seconds": 1.7680270671844482,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 170,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1417-A say in session 1 and what did PP1417-B say in session 2?",
+      "prediction": "PP1417-B was excited about it",
+      "reference": "Session 1: こんにちは、お久しぶりです。最近どうですか？ Session 2: あはは！楽しみにしてる！たこ焼きもたくさん準備しておくね！",
+      "latency_seconds": 62.29565501213074,
+      "retrieval_latency_seconds": 59.38334679603577,
+      "answer_latency_seconds": 2.9123082160949707,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 7,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 171,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1417-A say in session 2 and what did PP1417-B say in session 3?",
+      "prediction": "16 May 2023",
+      "reference": "Session 2: 1週間のご無沙汰でした！お元気ですかー？ Session 3: フリーランスだからさ、予定は自分で調整できるの。問題ないよ！",
+      "latency_seconds": 62.34068250656128,
+      "retrieval_latency_seconds": 60.05356526374817,
+      "answer_latency_seconds": 2.2871172428131104,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 2,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 172,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1417-A say in session 3 and what did PP1417-B say in session 4?",
+      "prediction": "Excited about trip to Osaka",
+      "reference": "Session 3: 聞いて、聞いて！ Session 4: それでは、あなたが来る日を楽しみにしていますね。",
+      "latency_seconds": 60.3210391998291,
+      "retrieval_latency_seconds": 58.85879683494568,
+      "answer_latency_seconds": 1.4622423648834229,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 6,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 173,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1417-A say in session 4 and what did PP1417-B say in session 5?",
+      "prediction": "16 May 2023 at 3:00 AM",
+      "reference": "Session 4: 大阪のこと考えたらワクワクしてきちゃった！ Session 5: あ、じゃあそこはお任せしようかなー。いつも行かない場所だから緊張しちゃう！",
+      "latency_seconds": 62.38216185569763,
+      "retrieval_latency_seconds": 59.33437943458557,
+      "answer_latency_seconds": 3.0477824211120605,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 5,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 174,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1417-A's session 1 statement or PP1417-A's session 2 statement?",
+      "prediction": "16 May 2023",
+      "reference": "Earlier session 1: こんにちは、お久しぶりです。最近どうですか？",
+      "latency_seconds": 51.055450201034546,
+      "retrieval_latency_seconds": 50.19962406158447,
+      "answer_latency_seconds": 0.8558261394500732,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 175,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1417-A's session 2 statement or PP1417-A's session 3 statement?",
+      "prediction": "16 May 2023",
+      "reference": "Earlier session 2: 1週間のご無沙汰でした！お元気ですかー？",
+      "latency_seconds": 62.26701760292053,
+      "retrieval_latency_seconds": 59.39012289047241,
+      "answer_latency_seconds": 2.87689471244812,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 176,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1417-A's session 3 statement or PP1417-A's session 4 statement?",
+      "prediction": "16 May 2023",
+      "reference": "Earlier session 3: 聞いて、聞いて！",
+      "latency_seconds": 53.23615837097168,
+      "retrieval_latency_seconds": 52.50948619842529,
+      "answer_latency_seconds": 0.7266721725463867,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 177,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1417-A's session 4 statement or PP1417-A's session 5 statement?",
+      "prediction": "16 May 2023",
+      "reference": "Earlier session 4: 大阪のこと考えたらワクワクしてきちゃった！",
+      "latency_seconds": 62.34293341636658,
+      "retrieval_latency_seconds": 59.98239850997925,
+      "answer_latency_seconds": 2.360534906387329,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 178,
+      "category": 4,
+      "question": "What general conversational act is shown by PP1417-A's cited turn in the Japanese JMSC conversation?",
+      "prediction": "Discussing business trip",
+      "reference": "asking a question",
+      "latency_seconds": 58.298598289489746,
+      "retrieval_latency_seconds": 57.72623062133789,
+      "answer_latency_seconds": 0.5723676681518555,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 6,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 179,
+      "category": 4,
+      "question": "What general conversational act is shown by PP1417-A's cited turn in the Japanese JMSC conversation?",
+      "prediction": "Expressing interest",
+      "reference": "asking a question",
+      "latency_seconds": 43.642961740493774,
+      "retrieval_latency_seconds": 43.056307554244995,
+      "answer_latency_seconds": 0.5866541862487793,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 4,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 180,
+      "category": 1,
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1439-A say in the turn about \"はじめまして。私はセラピストをしています。\"?",
+      "prediction": "1 June 2023 at 6:00 AM",
+      "reference": "はじめまして。私はセラピストをしています。",
+      "latency_seconds": 58.72456622123718,
+      "retrieval_latency_seconds": 57.74596095085144,
+      "answer_latency_seconds": 0.9786052703857422,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 5,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 181,
+      "category": 1,
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1439-A say in the turn about \"こんにちは。昨日、美味しい中華のお店を見つけましたよ。\"?",
+      "prediction": "1 June 2023 at 6:00 AM",
+      "reference": "こんにちは。昨日、美味しい中華のお店を見つけましたよ。",
+      "latency_seconds": 59.61749863624573,
+      "retrieval_latency_seconds": 58.6838960647583,
+      "answer_latency_seconds": 0.9336025714874268,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 5,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 182,
+      "category": 1,
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1439-A say in the turn about \"最近、食べ歩きをしていたら、舌をやけどしてしまいました。\"?",
+      "prediction": "1 June 2023 at 6:00 AM",
+      "reference": "最近、食べ歩きをしていたら、舌をやけどしてしまいました。",
+      "latency_seconds": 58.340559244155884,
+      "retrieval_latency_seconds": 57.42426347732544,
+      "answer_latency_seconds": 0.9162957668304443,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 5,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 183,
+      "category": 1,
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1439-A say in the turn about \"何か食べてきましたか？\"?",
+      "prediction": "何か食べてきましたか？",
+      "reference": "何か食べてきましたか？",
+      "latency_seconds": 46.975791215896606,
+      "retrieval_latency_seconds": 46.434924602508545,
+      "answer_latency_seconds": 0.5408666133880615,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 2,
+        "total_tokens": 27,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 184,
+      "category": 1,
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1439-A say in the turn about \"どうも！冷えても美味しい餃子のレシピ、開発はすすんでますか？猫舌でも食べれ...\"?",
+      "prediction": "7 June 2023",
+      "reference": "どうも！冷えても美味しい餃子のレシピ、開発はすすんでますか？猫舌でも食べれそうだから、どうなったか気になっちゃって。",
+      "latency_seconds": 59.70393633842468,
+      "retrieval_latency_seconds": 59.03202176094055,
+      "answer_latency_seconds": 0.6719145774841309,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 185,
+      "category": 1,
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1439-B say in the turn about \"熱いものは暑いうちに！です。一度わたしの餃子を食べてみて下さいよ。\"?",
+      "prediction": "1 June 2023 at 6:00 AM",
+      "reference": "熱いものは暑いうちに！です。一度わたしの餃子を食べてみて下さいよ。",
+      "latency_seconds": 59.84579110145569,
+      "retrieval_latency_seconds": 59.007816314697266,
+      "answer_latency_seconds": 0.8379747867584229,
+      "token_usage": {
+        "prompt_tokens": 31,
+        "completion_tokens": 5,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 186,
+      "category": 1,
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1439-B say in the turn about \"私も見習わないといけないな。\"?",
+      "prediction": "1 June 2023 at 6:00 AM",
+      "reference": "私も見習わないといけないな。",
+      "latency_seconds": 59.04530620574951,
+      "retrieval_latency_seconds": 58.063345193862915,
+      "answer_latency_seconds": 0.9819610118865967,
+      "token_usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 5,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 187,
+      "category": 1,
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1439-B say in the turn about \"嬉しい！太っちゃうけど、まあいっか！\"?",
+      "prediction": "1 June 2023 at 6:00 AM",
+      "reference": "嬉しい！太っちゃうけど、まあいっか！",
+      "latency_seconds": 59.37917470932007,
+      "retrieval_latency_seconds": 58.306267738342285,
+      "answer_latency_seconds": 1.0729069709777832,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 5,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 188,
+      "category": 1,
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1439-B say in the turn about \"デザート系とかも考えてみますので、何か苦手な食べ物とかあれば教えてください。\"?",
+      "prediction": "1 June 2023 at 6:00 AM",
+      "reference": "デザート系とかも考えてみますので、何か苦手な食べ物とかあれば教えてください。",
+      "latency_seconds": 59.426289558410645,
+      "retrieval_latency_seconds": 58.33363389968872,
+      "answer_latency_seconds": 1.0926556587219238,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 5,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 189,
+      "category": 1,
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1439-B say in the turn about \"５日でも十分ですよ！じゃぁ、本気で餃子屋さんのこと考えてみますね。\"?",
+      "prediction": "5 June 2023 at 6:00 AM",
+      "reference": "５日でも十分ですよ！じゃぁ、本気で餃子屋さんのこと考えてみますね。",
+      "latency_seconds": 57.66634559631348,
+      "retrieval_latency_seconds": 56.75343680381775,
+      "answer_latency_seconds": 0.9129087924957275,
+      "token_usage": {
+        "prompt_tokens": 31,
+        "completion_tokens": 5,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 190,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1439-A say in session 1 and what did PP1439-B say in session 2?",
+      "prediction": "1 June 2023 at 6:00 AM",
+      "reference": "Session 1: はじめまして。私はセラピストをしています。 Session 2: 私も見習わないといけないな。",
+      "latency_seconds": 56.27653408050537,
+      "retrieval_latency_seconds": 55.4704749584198,
+      "answer_latency_seconds": 0.8060591220855713,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 5,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 191,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1439-A say in session 2 and what did PP1439-B say in session 3?",
+      "prediction": "1 June 2023",
+      "reference": "Session 2: こんにちは。昨日、美味しい中華のお店を見つけましたよ。 Session 3: 嬉しい！太っちゃうけど、まあいっか！",
+      "latency_seconds": 54.90879034996033,
+      "retrieval_latency_seconds": 54.30803084373474,
+      "answer_latency_seconds": 0.6007595062255859,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 2,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 192,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1439-A say in session 3 and what did PP1439-B say in session 4?",
+      "prediction": "6 June 2023 at 6:00 AM",
+      "reference": "Session 3: 最近、食べ歩きをしていたら、舌をやけどしてしまいました。 Session 4: デザート系とかも考えてみますので、何か苦手な食べ物とかあれば教えてください。",
+      "latency_seconds": 56.02500653266907,
+      "retrieval_latency_seconds": 55.067726612091064,
+      "answer_latency_seconds": 0.9572799205780029,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 5,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 193,
+      "category": 2,
+      "question": "In the Japanese JMSC conversation, what did PP1439-A say in session 4 and what did PP1439-B say in session 5?",
+      "prediction": "1 June 2023 at 6:00 AM",
+      "reference": "Session 4: 何か食べてきましたか？ Session 5: ５日でも十分ですよ！じゃぁ、本気で餃子屋さんのこと考えてみますね。",
+      "latency_seconds": 57.885884523391724,
+      "retrieval_latency_seconds": 56.955312967300415,
+      "answer_latency_seconds": 0.9305715560913086,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 5,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 194,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1439-A's session 1 statement or PP1439-A's session 2 statement?",
+      "prediction": "7 June 2023",
+      "reference": "Earlier session 1: はじめまして。私はセラピストをしています。",
+      "latency_seconds": 49.467368602752686,
+      "retrieval_latency_seconds": 48.81699466705322,
+      "answer_latency_seconds": 0.6503739356994629,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 195,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1439-A's session 2 statement or PP1439-A's session 3 statement?",
+      "prediction": "7 June 2023",
+      "reference": "Earlier session 2: こんにちは。昨日、美味しい中華のお店を見つけましたよ。",
+      "latency_seconds": 46.96236753463745,
+      "retrieval_latency_seconds": 46.296993255615234,
+      "answer_latency_seconds": 0.6653742790222168,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 196,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1439-A's session 3 statement or PP1439-A's session 4 statement?",
+      "prediction": "7 June 2023",
+      "reference": "Earlier session 3: 最近、食べ歩きをしていたら、舌をやけどしてしまいました。",
+      "latency_seconds": 53.17346477508545,
+      "retrieval_latency_seconds": 52.49989438056946,
+      "answer_latency_seconds": 0.6735703945159912,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 197,
+      "category": 3,
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1439-A's session 4 statement or PP1439-A's session 5 statement?",
+      "prediction": "31 May 2023 at 5:00 AM",
+      "reference": "Earlier session 4: 何か食べてきましたか？",
+      "latency_seconds": 56.09146475791931,
+      "retrieval_latency_seconds": 55.133235692977905,
+      "answer_latency_seconds": 0.9582290649414062,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 5,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 198,
+      "category": 4,
+      "question": "What general conversational act is shown by PP1439-A's cited turn in the Japanese JMSC conversation?",
+      "prediction": "Discussing food ideas",
+      "reference": "sharing information in the conversation",
+      "latency_seconds": 39.61753845214844,
+      "retrieval_latency_seconds": 38.9946928024292,
+      "answer_latency_seconds": 0.6228456497192383,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 199,
+      "category": 4,
+      "question": "What general conversational act is shown by PP1439-A's cited turn in the Japanese JMSC conversation?",
+      "prediction": "Discussing food ideas",
+      "reference": "greeting or opening the conversation",
+      "latency_seconds": 44.361852169036865,
+      "retrieval_latency_seconds": 43.78733277320862,
+      "answer_latency_seconds": 0.5745193958282471,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    }
+  ],
+  "summary": {
+    "method": "SimpleMem",
+    "source_result": "/home/stu0032/paper/runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/jlongchat/simplemem/result.json",
+    "num_records": 200,
+    "latency": {
+      "num_samples": 10,
+      "num_questions": 200,
+      "avg_retrieval_time": 54.46644302248955,
+      "avg_answer_time": 1.0067103457450868,
+      "avg_total_time": 55.473153368234634,
+      "llm_usage": {
+        "count": 1643,
+        "success_count": 1643,
+        "error_count": 0,
+        "prompt_tokens": 2017115,
+        "completion_tokens": 393315,
+        "total_tokens": 2410430,
+        "avg_prompt_tokens_per_call": 1227.7023737066343,
+        "avg_completion_tokens_per_call": 239.388314059647,
+        "avg_total_tokens_per_call": 1467.0906877662812,
+        "avg_latency_seconds_per_call": 7.581467165717684
+      }
+    },
+    "llm_usage": {
+      "count": 1643,
+      "success_count": 1643,
+      "error_count": 0,
+      "prompt_tokens": 2017115,
+      "completion_tokens": 393315,
+      "total_tokens": 2410430,
+      "avg_prompt_tokens_per_call": 1227.7023737066343,
+      "avg_completion_tokens_per_call": 239.388314059647,
+      "avg_total_tokens_per_call": 1467.0906877662812,
+      "avg_latency_seconds_per_call": 7.581467165717684
+    }
+  }
+}

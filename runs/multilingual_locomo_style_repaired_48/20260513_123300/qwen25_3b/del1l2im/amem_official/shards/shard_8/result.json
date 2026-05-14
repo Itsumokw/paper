@@ -1,0 +1,1188 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "dataset": "/home/stu0032/paper/runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/del1l2im/amem_official/shards/shard_8/locomo_sample_8.json",
+  "memory_layer": "robust",
+  "ratio": 1.0,
+  "retrieve_k": 10,
+  "total_questions": 20,
+  "category_distribution": {
+    "1": 10,
+    "2": 6,
+    "3": 2,
+    "4": 2
+  },
+  "aggregate_metrics": {
+    "overall": {
+      "exact_match": {
+        "mean": 0.2,
+        "std": 0.41039134083406165,
+        "median": 0.0,
+        "min": 0,
+        "max": 1,
+        "count": 20
+      },
+      "f1": {
+        "mean": 0.3711507936507936,
+        "std": 0.40961505422403766,
+        "median": 0.23333333333333334,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 20
+      },
+      "rouge1_f": {
+        "mean": 0.3899444125168105,
+        "std": 0.3918286443746656,
+        "median": 0.2930298719772404,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 20
+      },
+      "rouge2_f": {
+        "mean": 0.32037235749000453,
+        "std": 0.40731423573205067,
+        "median": 0.13121693121693123,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 20
+      },
+      "rougeL_f": {
+        "mean": 0.38253700510940314,
+        "std": 0.3906686907826725,
+        "median": 0.2930298719772404,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 20
+      },
+      "bleu1": {
+        "mean": 0.36661712489738074,
+        "std": 0.3958127316522793,
+        "median": 0.19013409961685823,
+        "min": 0,
+        "max": 1.0,
+        "count": 20
+      },
+      "bleu2": {
+        "mean": 0.33370940663977394,
+        "std": 0.4070054479441115,
+        "median": 0.10078812865905296,
+        "min": 0,
+        "max": 1.0,
+        "count": 20
+      },
+      "bleu3": {
+        "mean": 0.31266625520086005,
+        "std": 0.41081410708316835,
+        "median": 0.054162016436905526,
+        "min": 0,
+        "max": 1.0,
+        "count": 20
+      },
+      "bleu4": {
+        "mean": 0.24660811195460394,
+        "std": 0.3551493787603899,
+        "median": 0.04146423606776852,
+        "min": 0,
+        "max": 1.0,
+        "count": 20
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 20
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 20
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 20
+      },
+      "meteor": {
+        "mean": 0.34618182617420573,
+        "std": 0.3994972975146491,
+        "median": 0.11627906976744187,
+        "min": 0.0,
+        "max": 0.9985422740524781,
+        "count": 20
+      },
+      "sbert_similarity": {
+        "mean": 0.5583390824496746,
+        "std": 0.3060402388619868,
+        "median": 0.5772990882396698,
+        "min": 0.132324680685997,
+        "max": 1.0000001192092896,
+        "count": 20
+      }
+    },
+    "category_1": {
+      "exact_match": {
+        "mean": 0.4,
+        "std": 0.5163977794943223,
+        "median": 0.0,
+        "min": 0,
+        "max": 1,
+        "count": 10
+      },
+      "f1": {
+        "mean": 0.6345238095238095,
+        "std": 0.4117070663600562,
+        "median": 0.7916666666666666,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 10
+      },
+      "rouge1_f": {
+        "mean": 0.6239598997493734,
+        "std": 0.4144074415801078,
+        "median": 0.7619047619047619,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 10
+      },
+      "rouge2_f": {
+        "mean": 0.5793902176255118,
+        "std": 0.44008544306008557,
+        "median": 0.7023809523809524,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 10
+      },
+      "rougeL_f": {
+        "mean": 0.6239598997493734,
+        "std": 0.4144074415801078,
+        "median": 0.7619047619047619,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 10
+      },
+      "bleu1": {
+        "mean": 0.5874486369917999,
+        "std": 0.44091757323317643,
+        "median": 0.6736832763705074,
+        "min": 0,
+        "max": 1.0,
+        "count": 10
+      },
+      "bleu2": {
+        "mean": 0.5777936253921835,
+        "std": 0.4442192788481144,
+        "median": 0.6691959782627266,
+        "min": 0,
+        "max": 1.0,
+        "count": 10
+      },
+      "bleu3": {
+        "mean": 0.5646669888440062,
+        "std": 0.4515899113239702,
+        "median": 0.6643475337027087,
+        "min": 0,
+        "max": 1.0,
+        "count": 10
+      },
+      "bleu4": {
+        "mean": 0.4615924121727666,
+        "std": 0.4013116585295783,
+        "median": 0.5173539389656818,
+        "min": 0,
+        "max": 1.0,
+        "count": 10
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 10
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 10
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 10
+      },
+      "meteor": {
+        "mean": 0.589150556599429,
+        "std": 0.41093047190419507,
+        "median": 0.7035879629629631,
+        "min": 0.0,
+        "max": 0.9985422740524781,
+        "count": 10
+      },
+      "sbert_similarity": {
+        "mean": 0.6987372100353241,
+        "std": 0.31872095387663046,
+        "median": 0.7317901253700256,
+        "min": 0.16032367944717407,
+        "max": 1.0000001192092896,
+        "count": 10
+      }
+    },
+    "category_2": {
+      "exact_match": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 6
+      },
+      "f1": {
+        "mean": 0.1611111111111111,
+        "std": 0.2112572593536838,
+        "median": 0.06666666666666667,
+        "min": 0.0,
+        "max": 0.5,
+        "count": 6
+      },
+      "rouge1_f": {
+        "mean": 0.21067519293406348,
+        "std": 0.20197084521398595,
+        "median": 0.17861339600470033,
+        "min": 0.0,
+        "max": 0.5185185185185185,
+        "count": 6
+      },
+      "rouge2_f": {
+        "mean": 0.08373897707231041,
+        "std": 0.10053437283120636,
+        "median": 0.05714285714285714,
+        "min": 0.0,
+        "max": 0.24000000000000005,
+        "count": 6
+      },
+      "rougeL_f": {
+        "mean": 0.18598383490937212,
+        "std": 0.16188771985864475,
+        "median": 0.17861339600470033,
+        "min": 0.0,
+        "max": 0.37037037037037035,
+        "count": 6
+      },
+      "bleu1": {
+        "mean": 0.2380244494573136,
+        "std": 0.15709788511076617,
+        "median": 0.19013409961685823,
+        "min": 0.116689775872393,
+        "max": 0.5238095238095238,
+        "count": 6
+      },
+      "bleu2": {
+        "mean": 0.14546075186014132,
+        "std": 0.16292227403954918,
+        "median": 0.07921137004352727,
+        "min": 0.0199204768222399,
+        "max": 0.42817441928883765,
+        "count": 6
+      },
+      "bleu3": {
+        "mean": 0.09922454229494714,
+        "std": 0.12546719098543843,
+        "median": 0.029485922441530456,
+        "min": 0.011019192725078814,
+        "max": 0.3106926642137935,
+        "count": 6
+      },
+      "bleu4": {
+        "mean": 0.051299834927669395,
+        "std": 0.05797504455809618,
+        "median": 0.018009231229681417,
+        "min": 0.007711727065811939,
+        "max": 0.13777776425520546,
+        "count": 6
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 6
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 6
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 6
+      },
+      "meteor": {
+        "mean": 0.1656115698380476,
+        "std": 0.23340949371430403,
+        "median": 0.06633192389006343,
+        "min": 0.0,
+        "max": 0.5987678090103965,
+        "count": 6
+      },
+      "sbert_similarity": {
+        "mean": 0.5395402883489927,
+        "std": 0.21380054593961098,
+        "median": 0.5850265026092529,
+        "min": 0.132324680685997,
+        "max": 0.7302809953689575,
+        "count": 6
+      }
+    },
+    "category_3": {
+      "exact_match": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "f1": {
+        "mean": 0.05555555555555556,
+        "std": 0.07856742013183862,
+        "median": 0.05555555555555556,
+        "min": 0.0,
+        "max": 0.11111111111111112,
+        "count": 2
+      },
+      "rouge1_f": {
+        "mean": 0.14761904761904762,
+        "std": 0.07407785326716214,
+        "median": 0.14761904761904762,
+        "min": 0.09523809523809523,
+        "max": 0.2,
+        "count": 2
+      },
+      "rouge2_f": {
+        "mean": 0.05555555555555556,
+        "std": 0.07856742013183862,
+        "median": 0.05555555555555556,
+        "min": 0.0,
+        "max": 0.11111111111111112,
+        "count": 2
+      },
+      "rougeL_f": {
+        "mean": 0.14761904761904762,
+        "std": 0.07407785326716214,
+        "median": 0.14761904761904762,
+        "min": 0.09523809523809523,
+        "max": 0.2,
+        "count": 2
+      },
+      "bleu1": {
+        "mean": 0.014854715642866776,
+        "std": 0.021007740327337966,
+        "median": 0.014854715642866776,
+        "min": 0,
+        "max": 0.029709431285733553,
+        "count": 2
+      },
+      "bleu2": {
+        "mean": 0.011743683856397845,
+        "std": 0.016608076981939803,
+        "median": 0.011743683856397845,
+        "min": 0,
+        "max": 0.02348736771279569,
+        "count": 2
+      },
+      "bleu3": {
+        "mean": 0.0056539809037277995,
+        "std": 0.007995936475450343,
+        "median": 0.0056539809037277995,
+        "min": 0,
+        "max": 0.011307961807455599,
+        "count": 2
+      },
+      "bleu4": {
+        "mean": 0.004219553899198236,
+        "std": 0.0059673503514104205,
+        "median": 0.004219553899198236,
+        "min": 0,
+        "max": 0.008439107798396472,
+        "count": 2
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "meteor": {
+        "mean": 0.01923076923076923,
+        "std": 0.027196414661021056,
+        "median": 0.01923076923076923,
+        "min": 0.0,
+        "max": 0.03846153846153846,
+        "count": 2
+      },
+      "sbert_similarity": {
+        "mean": 0.22730954736471176,
+        "std": 0.0937595525592589,
+        "median": 0.22730954736471176,
+        "min": 0.16101153194904327,
+        "max": 0.29360756278038025,
+        "count": 2
+      }
+    },
+    "category_4": {
+      "exact_match": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "rouge1_f": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "rouge2_f": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "rougeL_f": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bleu1": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "bleu2": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "bleu3": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "bleu4": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "meteor": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "sbert_similarity": {
+        "mean": 0.24377436190843582,
+        "std": 0.10798400856456436,
+        "median": 0.24377436190843582,
+        "min": 0.16741813719272614,
+        "max": 0.3201305866241455,
+        "count": 2
+      }
+    }
+  },
+  "individual_results": [
+    {
+      "sample_id": 0,
+      "question": "In session 1 of the German deL1L2IM conversation, what did L09 say in the turn about \"Hallo NATIVE04_FN!Gehts mit chat heut...\"?",
+      "prediction": "Hallo NATIVE04_FN!Gehts mit chat heute abend?nach 20,00?",
+      "reference": "Hallo NATIVE04_FN!Gehts mit chat heute abend?nach 20,00?",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 1.0,
+        "rouge2_f": 1.0,
+        "rougeL_f": 1.0,
+        "bleu1": 1.0,
+        "bleu2": 1.0,
+        "bleu3": 1.0,
+        "bleu4": 1.0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.9985422740524781,
+        "sbert_similarity": 1.0
+      },
+      "latency_seconds": 1.2836766242980957,
+      "token_usage": {
+        "prompt_tokens": 1737,
+        "completion_tokens": 14,
+        "total_tokens": 1751,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 2 of the German deL1L2IM conversation, what did L09 say in the turn about \"Hallo NATIVE04_FN! Keine Sorgen. Ich...\"?",
+      "prediction": "Keine Sorgen. Ich...",
+      "reference": "Hallo NATIVE04_FN! Keine Sorgen. Ich werde hier heute und ab Dienstag abends sein.Geht es?",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.33333333333333337,
+        "rouge1_f": 0.3157894736842105,
+        "rouge2_f": 0.23529411764705882,
+        "rougeL_f": 0.3157894736842105,
+        "bleu1": 0.07257436263153001,
+        "bleu2": 0.07026982445838341,
+        "bleu3": 0.06704602591247509,
+        "bleu4": 0.06066675174959853,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.14534883720930233,
+        "sbert_similarity": 0.6248649954795837
+      },
+      "latency_seconds": 0.8742384910583496,
+      "token_usage": {
+        "prompt_tokens": 1771,
+        "completion_tokens": 5,
+        "total_tokens": 1776,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 3 of the German deL1L2IM conversation, what did N04 say in the turn about \"hallo LEARNER09_FN, bist Du da?\"?",
+      "prediction": "bist Du da?",
+      "reference": "hallo LEARNER09_FN, bist Du da?",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.7499999999999999,
+        "rouge1_f": 0.6666666666666666,
+        "rouge2_f": 0.5714285714285715,
+        "rougeL_f": 0.6666666666666666,
+        "bleu1": 0.4723665527410147,
+        "bleu2": 0.4723665527410147,
+        "bleu3": 0.4723665527410147,
+        "bleu4": 0.4723665527410147,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.6134259259259259,
+        "sbert_similarity": 0.6088563799858093
+      },
+      "latency_seconds": 0.965939998626709,
+      "token_usage": {
+        "prompt_tokens": 1822,
+        "completion_tokens": 2,
+        "total_tokens": 1824,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 4 of the German deL1L2IM conversation, what did N04 say in the turn about \"Sch\u00f6nen guten Tag LEARNER09_FN, bist...\"?",
+      "prediction": "sry",
+      "reference": "Sch\u00f6nen guten Tag LEARNER09_FN, bist Du da?",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.16032367944717407
+      },
+      "latency_seconds": 0.6200089454650879,
+      "token_usage": {
+        "prompt_tokens": 1424,
+        "completion_tokens": 1,
+        "total_tokens": 1425,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 5 of the German deL1L2IM conversation, what did L09 say in the turn about \"Privet NATIVE04_FN!gehts mit chat heute?\"?",
+      "prediction": "Hallo NATIVE04_FN!Gehts mit chat heute?",
+      "reference": "Privet NATIVE04_FN!gehts mit chat heute?",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.8333333333333334,
+        "rouge1_f": 0.8571428571428571,
+        "rouge2_f": 0.8333333333333334,
+        "rougeL_f": 0.8571428571428571,
+        "bleu1": 0.875,
+        "bleu2": 0.8660254037844386,
+        "bleu3": 0.8563285146644029,
+        "bleu4": 0.8408964152537145,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.7937500000000002,
+        "sbert_similarity": 0.8387152552604675
+      },
+      "latency_seconds": 1.3316667079925537,
+      "token_usage": {
+        "prompt_tokens": 1450,
+        "completion_tokens": 9,
+        "total_tokens": 1459,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 6 of the German deL1L2IM conversation, what did N04 say in the turn about \"hi, bist Du da?\"?",
+      "prediction": "Hi, bist Du da?",
+      "reference": "hi, bist Du da?",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 1.0,
+        "rouge2_f": 1.0,
+        "rougeL_f": 1.0,
+        "bleu1": 1.0,
+        "bleu2": 1.0,
+        "bleu3": 1.0,
+        "bleu4": 1.0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.9921875,
+        "sbert_similarity": 1.0000001192092896
+      },
+      "latency_seconds": 0.7141172885894775,
+      "token_usage": {
+        "prompt_tokens": 1642,
+        "completion_tokens": 3,
+        "total_tokens": 1645,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 7 of the German deL1L2IM conversation, what did N04 say in the turn about \"Hallo LEARNER09_FN, bist Du da?\"?",
+      "prediction": "ich komme gerade nach Hause, bist Du auch da?",
+      "reference": "Hallo LEARNER09_FN, bist Du da?",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.42857142857142855,
+        "rouge1_f": 0.4,
+        "rouge2_f": 0.15384615384615385,
+        "rougeL_f": 0.4,
+        "bleu1": 0.45454545454545453,
+        "bleu2": 0.3692744729379982,
+        "bleu3": 0.2509287951221701,
+        "bleu4": 0.11731175160264001,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.4732510288065844,
+        "sbert_similarity": 0.48112061619758606
+      },
+      "latency_seconds": 1.1704950332641602,
+      "token_usage": {
+        "prompt_tokens": 1822,
+        "completion_tokens": 11,
+        "total_tokens": 1833,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 1 of the German deL1L2IM conversation, what did L09 say in the turn about \"gute nacht!\"?",
+      "prediction": "gute nacht!",
+      "reference": "gute nacht!",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 1.0,
+        "rouge2_f": 1.0,
+        "rougeL_f": 1.0,
+        "bleu1": 1.0,
+        "bleu2": 1.0,
+        "bleu3": 1.0,
+        "bleu4": 0.5623413251903491,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.9375,
+        "sbert_similarity": 1.0000001192092896
+      },
+      "latency_seconds": 0.7553844451904297,
+      "token_usage": {
+        "prompt_tokens": 778,
+        "completion_tokens": 2,
+        "total_tokens": 780,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 2 of the German deL1L2IM conversation, what did L09 say in the turn about \"sch\u00f6nen sonntag f\u00fcr dich\"?",
+      "prediction": "bis dann :)",
+      "reference": "sch\u00f6nen sonntag f\u00fcr dich",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.2734908163547516
+      },
+      "latency_seconds": 0.7809100151062012,
+      "token_usage": {
+        "prompt_tokens": 1619,
+        "completion_tokens": 2,
+        "total_tokens": 1621,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 3 of the German deL1L2IM conversation, what did L09 say in the turn about \"gute nacht!\"?",
+      "prediction": "gute nacht!",
+      "reference": "gute nacht!",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 1.0,
+        "rouge2_f": 1.0,
+        "rougeL_f": 1.0,
+        "bleu1": 1.0,
+        "bleu2": 1.0,
+        "bleu3": 1.0,
+        "bleu4": 0.5623413251903491,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.9375,
+        "sbert_similarity": 1.0000001192092896
+      },
+      "latency_seconds": 0.7834973335266113,
+      "token_usage": {
+        "prompt_tokens": 778,
+        "completion_tokens": 2,
+        "total_tokens": 780,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the German deL1L2IM conversation, what did L09 say in session 1 and what did L09 say in session 2?",
+      "prediction": "Session 1: wann n\u00e4chstes Chat?\nSession 2: :)",
+      "reference": "Session 1: Hallo NATIVE04_FN!Gehts mit chat heute abend?nach 20,00? Session 2: sch\u00f6nen sonntag f\u00fcr dich",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.3333333333333333,
+        "rouge1_f": 0.3448275862068965,
+        "rouge2_f": 0.14814814814814817,
+        "rougeL_f": 0.3448275862068965,
+        "bleu1": 0.28973213900471884,
+        "bleu2": 0.239238439977562,
+        "bleu3": 0.19698281779616206,
+        "bleu4": 0.13777776425520546,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.2622377622377622,
+        "sbert_similarity": 0.677280843257904
+      },
+      "latency_seconds": 0.8433022499084473,
+      "token_usage": {
+        "prompt_tokens": 1853,
+        "completion_tokens": 11,
+        "total_tokens": 1864,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the German deL1L2IM conversation, what did L09 say in session 2 and what did L09 say in session 3?",
+      "prediction": "In session 2, L09 said \"wenn ich mich nicht irre, noch 3 chats\". In session 3, L09 said \":-o\".",
+      "reference": "Session 2: Hallo NATIVE04_FN! Keine Sorgen. Ich werde hier heute und ab Dienstag... Session 3: gute nacht!",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.13333333333333333,
+        "rouge1_f": 0.27027027027027023,
+        "rouge2_f": 0.11428571428571428,
+        "rougeL_f": 0.27027027027027023,
+        "bleu1": 0.2413793103448276,
+        "bleu2": 0.13130643285972252,
+        "bleu3": 0.04127800696133596,
+        "bleu4": 0.022261720385938513,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0872093023255814,
+        "sbert_similarity": 0.5273022055625916
+      },
+      "latency_seconds": 1.4367964267730713,
+      "token_usage": {
+        "prompt_tokens": 1497,
+        "completion_tokens": 23,
+        "total_tokens": 1520,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the German deL1L2IM conversation, what did N04 say in session 3 and what did N04 say in session 4?",
+      "prediction": "in 16 May, N04 says gena, in 16 May, N04 says :-)",
+      "reference": "Session 3: hallo LEARNER09_FN, bist Du da? Session 4: gute Nacht!",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0.11764705882352941,
+        "bleu2": 0.027116307227332027,
+        "bleu3": 0.017693837921724947,
+        "bleu4": 0.013679192123121896,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.132324680685997
+      },
+      "latency_seconds": 1.0969569683074951,
+      "token_usage": {
+        "prompt_tokens": 1448,
+        "completion_tokens": 12,
+        "total_tokens": 1460,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the German deL1L2IM conversation, what did N04 say in session 4 and what did L09 say in session 5?",
+      "prediction": "N04: ok, dann sehen wir uns also irgendwann die n\u00e4chsten paar Tage mal Abends, so ab 19 Uhr?\nL09: Hallo NATIVE04_FN! Gehts mit chat heute abend? nach 20,00?",
+      "reference": "Session 4: Sch\u00f6nen guten Tag LEARNER09_FN, bist Du da? Session 5: gute nacht!",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.043478260869565216,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.043478260869565216,
+        "bleu1": 0.1388888888888889,
+        "bleu2": 0.0199204768222399,
+        "bleu3": 0.011019192725078814,
+        "bleu4": 0.007711727065811939,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.5457417964935303
+      },
+      "latency_seconds": 1.7340574264526367,
+      "token_usage": {
+        "prompt_tokens": 1174,
+        "completion_tokens": 39,
+        "total_tokens": 1213,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the German deL1L2IM conversation, what did L09 say in session 5 and what did L09 say in session 6?",
+      "prediction": "L09: :)\nL09: wenn ich mich nicht irre, noch 3 chats",
+      "reference": "Session 5: Privet NATIVE04_FN!gehts mit chat heute? Session 6: alles gute!",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.08695652173913043,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.08695652173913043,
+        "bleu1": 0.116689775872393,
+        "bleu2": 0.02700843498515389,
+        "bleu3": 0.01768073415158756,
+        "bleu4": 0.013756742073424323,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.045454545454545456,
+        "sbert_similarity": 0.6243112087249756
+      },
+      "latency_seconds": 1.0311734676361084,
+      "token_usage": {
+        "prompt_tokens": 1420,
+        "completion_tokens": 12,
+        "total_tokens": 1432,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the German deL1L2IM conversation, what did N04 say in session 6 and what did N04 say in session 7?",
+      "prediction": "session 6: sry\nsession 7: Hallo LEARNER09_FN, ich komme gerade nach Hause, bist Du auch da?",
+      "reference": "Session 6: hi, bist Du da? Session 7: gute Nacht",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.5,
+        "rouge1_f": 0.5185185185185185,
+        "rouge2_f": 0.24000000000000005,
+        "rougeL_f": 0.37037037037037035,
+        "bleu1": 0.5238095238095238,
+        "bleu2": 0.42817441928883765,
+        "bleu3": 0.3106926642137935,
+        "bleu4": 0.11261186366251424,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.5987678090103965,
+        "sbert_similarity": 0.7302809953689575
+      },
+      "latency_seconds": 1.2737996578216553,
+      "token_usage": {
+        "prompt_tokens": 1428,
+        "completion_tokens": 22,
+        "total_tokens": 1450,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L09's session 1 statement or L09's session 2 statement?",
+      "prediction": "2:00 AM on 9 May, 2023",
+      "reference": "Earlier session 1: Hallo NATIVE04_FN!Gehts mit chat heute abend?nach 20,00?",
+      "category": 3,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.09523809523809523,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.09523809523809523,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.16101153194904327
+      },
+      "latency_seconds": 0.813917875289917,
+      "token_usage": {
+        "prompt_tokens": 1674,
+        "completion_tokens": 5,
+        "total_tokens": 1679,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L09's session 2 statement or N04's session 3 statement?",
+      "prediction": "L09's session 2 statement",
+      "reference": "Earlier session 2: Hallo NATIVE04_FN! Keine Sorgen. Ich werde hier heute und ab Dienstag...",
+      "category": 3,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.11111111111111112,
+        "rouge1_f": 0.2,
+        "rouge2_f": 0.11111111111111112,
+        "rougeL_f": 0.2,
+        "bleu1": 0.029709431285733553,
+        "bleu2": 0.02348736771279569,
+        "bleu3": 0.011307961807455599,
+        "bleu4": 0.008439107798396472,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.03846153846153846,
+        "sbert_similarity": 0.29360756278038025
+      },
+      "latency_seconds": 0.7130208015441895,
+      "token_usage": {
+        "prompt_tokens": 1117,
+        "completion_tokens": 6,
+        "total_tokens": 1123,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "What general conversational act is shown by L09's cited turn in the German deL1L2IM conversation?",
+      "prediction": "communication",
+      "reference": "asking a question",
+      "category": 4,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.3201305866241455
+      },
+      "latency_seconds": 0.5235617160797119,
+      "token_usage": {
+        "prompt_tokens": 1058,
+        "completion_tokens": 3,
+        "total_tokens": 1061,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "What general conversational act is shown by L09's cited turn in the German deL1L2IM conversation?",
+      "prediction": "german communication",
+      "reference": "asking a question",
+      "category": 4,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.16741813719272614
+      },
+      "latency_seconds": 0.5380859375,
+      "token_usage": {
+        "prompt_tokens": 1058,
+        "completion_tokens": 5,
+        "total_tokens": 1063,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    }
+  ]
+}

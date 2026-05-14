@@ -1,0 +1,1720 @@
+{
+  "input": "/home/stu0032/paper/runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen3_8b/jlongchat/mem0_fixed/mem0/mem0_predictions_flat.json",
+  "count": 200,
+  "bertscore": {
+    "enabled": true,
+    "model": "/home/stu0032/.cache/huggingface/hub/models--roberta-large/snapshots/722cf37b1afa9454edce342e7895e588b6ff1d59",
+    "error": null
+  },
+  "overall": {
+    "f1": {
+      "mean": 0.4435245486309874,
+      "count": 200
+    },
+    "bleu1": {
+      "mean": 0.3205584928446162,
+      "count": 200
+    },
+    "rouge_l": {
+      "mean": 0.39707850068790523,
+      "count": 200
+    },
+    "bertscore_f1": {
+      "mean": 0.8721539163589478,
+      "count": 200
+    }
+  },
+  "runtime": {
+    "latency": {
+      "mean_seconds": 2.4967923271656036,
+      "total_seconds": 499.3584654331207,
+      "max_seconds": 3.258204221725464,
+      "count": 200
+    },
+    "tokens": {
+      "avg_prompt_tokens": 1622.79,
+      "avg_completion_tokens": 6.1,
+      "avg_total_tokens": 1628.89,
+      "total_prompt_tokens": 324558,
+      "total_completion_tokens": 1220,
+      "total_tokens": 325778,
+      "count": 200
+    }
+  },
+  "categories": {
+    "1": {
+      "f1": {
+        "mean": 0.7278255049928215,
+        "count": 100
+      },
+      "bleu1": {
+        "mean": 0.5874943581896266,
+        "count": 100
+      },
+      "rouge_l": {
+        "mean": 0.688103327939416,
+        "count": 100
+      },
+      "bertscore_f1": {
+        "mean": 0.9377163058519363,
+        "count": 100
+      }
+    },
+    "2": {
+      "f1": {
+        "mean": 0.2565899537197458,
+        "count": 48
+      },
+      "bleu1": {
+        "mean": 0.10147595715882506,
+        "count": 48
+      },
+      "rouge_l": {
+        "mean": 0.15709415692667297,
+        "count": 48
+      },
+      "bertscore_f1": {
+        "mean": 0.844853779921929,
+        "count": 48
+      }
+    },
+    "3": {
+      "f1": {
+        "mean": 0.11268879526148533,
+        "count": 32
+      },
+      "bleu1": {
+        "mean": 0.015356775198030467,
+        "count": 32
+      },
+      "rouge_l": {
+        "mean": 0.09577649409872341,
+        "count": 32
+      },
+      "bertscore_f1": {
+        "mean": 0.7580200787633657,
+        "count": 32
+      }
+    },
+    "4": {
+      "f1": {
+        "mean": 0.0,
+        "count": 20
+      },
+      "bleu1": {
+        "mean": 0,
+        "count": 20
+      },
+      "rouge_l": {
+        "mean": 0.0,
+        "count": 20
+      },
+      "bertscore_f1": {
+        "mean": 0.7924764364957809,
+        "count": 20
+      }
+    }
+  },
+  "per_item": [
+    {
+      "category": "1",
+      "question": "In session 1 of the Japanese LAC conversation, what did TEXTCHAT10 say in the turn about \"\u521d\u3081\u307e\u3057\u3066\uff01[SPK--TEXTCHAT10]\u3068\u7533\u3057\u307e\u3059\u3002\u3053\u308c\u304b\u3089\u3088\u308d\u3057\u304f...\"?",
+      "f1": 0.8947368421052632,
+      "bleu1": 0.6703200460356393,
+      "rouge_l": 0.8333333333333333,
+      "bertscore_f1": 0.9745340347290039
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Japanese LAC conversation, what did TEXTCHAT09 say in the turn about \"\u7d50\u69cb\u9577\u304b\u3063\u305f\u3068\u601d\u3044\u307e\u3059\uff01 \u4e00\u6c17\u898b\u3057\u305f\u3093\u3067\u3042\u3093\u307e\u308a\u9577\u304f\u306f\u611f\u3058\u306a\u304b\u3063\u305f\u3093\u3067\u3059\u3051\u3069\u306d\"?",
+      "f1": 0.5789473684210525,
+      "bleu1": 0.09407750044007386,
+      "rouge_l": 0.4583333333333333,
+      "bertscore_f1": 0.9247927069664001
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Japanese LAC conversation, what did TEXTCHAT09 say in the turn about \"\u3067\u3059\u3088\u306d\u3002\u308f\u308a\u3068\u898b\u3066\u307e\u3059\uff01 \u3042\u3068\u306f\u3059\u304d\u713c\u304d\u5927\u597d\u304dTV\u3063\u3066\u3044\u3046\u30c1\u30e3\u30f3\u30cd\u30eb\u3082\u597d...\"?",
+      "f1": 0.375,
+      "bleu1": 0.026649097336355485,
+      "rouge_l": 0.35555555555555557,
+      "bertscore_f1": 0.8489455580711365
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Japanese LAC conversation, what did TEXTCHAT09 say in the turn about \"\u306a\u308b\u307b\u3069\uff01\u305d\u308c\u306a\u3089\u898b\u305f\u3053\u3068\u3042\u308b\u304b\u3082\u3057\u308c\u306a\u3044\u3067\u3059\uff01[SPK--TEXTCHA...\"?",
+      "f1": 0.4081632653061224,
+      "bleu1": 0.2127075628999757,
+      "rouge_l": 0.3389830508474576,
+      "bertscore_f1": 0.8628344535827637
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Japanese LAC conversation, what did TEXTCHAT09 say in the turn about \"\u4eca\u306f\u591c\u306e\uff11\u6642\u304b\u3089\u59cb\u3081\u3066\u308b\u306e\u3067\u305d\u308c\u306f\u53b3\u3057\u305d\u3046\u3067\u3059\u3088\u306d\u7b11\"?",
+      "f1": 0.34285714285714286,
+      "bleu1": 0.1953402935691502,
+      "rouge_l": 0.25641025641025644,
+      "bertscore_f1": 0.859108567237854
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the Japanese LAC conversation, what did TEXTCHAT10 say in the turn about \"\u672c\u5f53\u305d\u3046\u3067\u3059\u3088\u306d\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the Japanese LAC conversation, what did TEXTCHAT10 say in the turn about \"\u3069\u3046\u306a\u3093\u3067\u3057\u3087\u3046\u3002\"?",
+      "f1": 0.09090909090909091,
+      "bleu1": 0.0588235294117647,
+      "rouge_l": 0.07999999999999999,
+      "bertscore_f1": 0.8104683756828308
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the Japanese LAC conversation, what did TEXTCHAT10 say in the turn about \"\u3069\u3093\u306a\u30a2\u30eb\u30d0\u30a4\u30c8\u3055\u308c\u3066\u305f\u3093\u3067\u3059\u304b\uff1f\"?",
+      "f1": 0.15384615384615383,
+      "bleu1": 0.12214194735660788,
+      "rouge_l": 0.13793103448275862,
+      "bertscore_f1": 0.8196163177490234
+    },
+    {
+      "category": "1",
+      "question": "In session 9 of the Japanese LAC conversation, what did TEXTCHAT10 say in the turn about \"\u305d\u3046\u3067\u3059\u306d\u30fc(\u7b11)\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9703775644302368
+    },
+    {
+      "category": "1",
+      "question": "In session 10 of the Japanese LAC conversation, what did TEXTCHAT09 say in the turn about \"\u3042\u308b\u3093\u3067\u3059\u306d\uff01\u6700\u8fd1\u773c\u7cbe\u75b2\u52b4\u304c\u3072\u3069\u3044\u306e\u3067\u691c\u8a0e\u3057\u3066\u307f\u307e\u3059\"?",
+      "f1": 0.2352941176470588,
+      "bleu1": 0.1222445271377573,
+      "rouge_l": 0.10526315789473685,
+      "bertscore_f1": 0.8239071369171143
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT10 say in session 1 and what did TEXTCHAT10 say in session 2?",
+      "f1": 0.32,
+      "bleu1": 0.3302423258701907,
+      "rouge_l": 0.24657534246575344,
+      "bertscore_f1": 0.853664219379425
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT09 say in session 2 and what did TEXTCHAT10 say in session 3?",
+      "f1": 0.21428571428571427,
+      "bleu1": 0.16086876345271453,
+      "rouge_l": 0.14814814814814814,
+      "bertscore_f1": 0.8535834550857544
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT09 say in session 3 and what did TEXTCHAT10 say in session 4?",
+      "f1": 0.21875,
+      "bleu1": 0.08458286932762085,
+      "rouge_l": 0.1616161616161616,
+      "bertscore_f1": 0.8425226211547852
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT09 say in session 4 and what did TEXTCHAT09 say in session 5?",
+      "f1": 0.3243243243243243,
+      "bleu1": 0.12580291889367626,
+      "rouge_l": 0.18181818181818182,
+      "bertscore_f1": 0.8587499260902405
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT09 say in session 5 and what did TEXTCHAT09 say in session 6?",
+      "f1": 0.26666666666666666,
+      "bleu1": 0.14291755616411023,
+      "rouge_l": 0.16,
+      "bertscore_f1": 0.8481122851371765
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT10 say in session 6 and what did TEXTCHAT09 say in session 7?",
+      "f1": 0.3103448275862069,
+      "bleu1": 0.21237926910156105,
+      "rouge_l": 0.14492753623188406,
+      "bertscore_f1": 0.8360680937767029
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese LAC conversation: TEXTCHAT10's session 1 statement or TEXTCHAT09's session 2 statement?",
+      "f1": 0.20689655172413793,
+      "bleu1": 0.0033099386524564627,
+      "rouge_l": 0.1111111111111111,
+      "bertscore_f1": 0.7711410522460938
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese LAC conversation: TEXTCHAT09's session 2 statement or TEXTCHAT09's session 3 statement?",
+      "f1": 0.1142857142857143,
+      "bleu1": 0.0003647527862218065,
+      "rouge_l": 0.0888888888888889,
+      "bertscore_f1": 0.7496504187583923
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by TEXTCHAT10's cited turn in the Japanese LAC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8267726898193359
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by TEXTCHAT09's cited turn in the Japanese LAC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8306245803833008
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Japanese LAC conversation, what did TEXTCHAT01 say in the turn about \"\u3053\u3093\u3070\u3093\u306f\u3001\u3088\u308d\u3057\u304f\u304a\u9858\u3044\u3057\u307e\u3059\uff01\"?",
+      "f1": 0.8181818181818181,
+      "bleu1": 0.6065306597126334,
+      "rouge_l": 0.8,
+      "bertscore_f1": 0.9403223395347595
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Japanese LAC conversation, what did TEXTCHAT02 say in the turn about \"\u304a\u306f\u3088\u3046\u3054\u3056\u3044\u307e\u3059\uff01 \u6563\u6b69\u3068\u30e8\u30eb\u30b7\u30ab\u306f\u6700\u9ad8\u306b\u30a8\u30e2\u3044\u3067\u3059\u306d...\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Japanese LAC conversation, what did TEXTCHAT01 say in the turn about \"\u5c06\u6765\u306f\u6e56\u3068\u304b\u6d77\u306e\u898b\u3048\u308b\u5834\u6240\u3067\u3086\u3063\u305f\u308a\u3068\u904e\u3054\u3057\u305f\u3044\u3067\u3059\u306d\uff01 \u308f\u304b\u308a\u307e\u3059\u2026 \u79c1...\"?",
+      "f1": 0.8852459016393442,
+      "bleu1": 0.7165313105737893,
+      "rouge_l": 0.8571428571428571,
+      "bertscore_f1": 0.9763381481170654
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Japanese LAC conversation, what did TEXTCHAT01 say in the turn about \"\u30ab\u30e9\u30aa\u30b1\u3068\u6b4c\u304c\u4e0a\u624b\u3044\u306f\u6bd4\u4f8b\u3057\u306a\u3044\u306e\u3067\u5927\u4e08\u592b\u3067\u3059\u3088\uff01\"?",
+      "f1": 0.41025641025641024,
+      "bleu1": 0.41504578012830107,
+      "rouge_l": 0.30434782608695654,
+      "bertscore_f1": 0.887668251991272
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Japanese LAC conversation, what did TEXTCHAT02 say in the turn about \"\u4e0a\u624b\u304f\u306a\u308b\u306b\u306a\u306b\u3092\u9811\u5f35\u308c\u3070\u3044\u3044\u3093\u3067\u3059\u304b\uff1f\"?",
+      "f1": 0.48484848484848486,
+      "bleu1": 0.45454545454545453,
+      "rouge_l": 0.3902439024390244,
+      "bertscore_f1": 0.8825083374977112
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the Japanese LAC conversation, what did TEXTCHAT01 say in the turn about \"\u30ab\u30e9\u30aa\u30b1\u306f\u97f3\u7a0b\u3068\u30ea\u30ba\u30e0\u304c\u6b63\u78ba\u3060\u3068\u3042\u308b\u7a0b\u5ea6\u306f\u53d6\u308c\u308b\u306e\u3067\"?",
+      "f1": 0.30769230769230765,
+      "bleu1": 0.2273871594750492,
+      "rouge_l": 0.20833333333333331,
+      "bertscore_f1": 0.8378288745880127
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the Japanese LAC conversation, what did TEXTCHAT02 say in the turn about \"\u9332\u97f3\u3057\u3066\u8074\u3044\u3066\u307f\u307e\u3059\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the Japanese LAC conversation, what did TEXTCHAT01 say in the turn about \"ASMR\u3068\u304b\u81ea\u7136\u306e\u97f3\u3082\u305d\u3046\u3089\u3057\u3044\u3067\u3059\u306d\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999998807907104
+    },
+    {
+      "category": "1",
+      "question": "In session 9 of the Japanese LAC conversation, what did TEXTCHAT02 say in the turn about \"\u4eba\u304c\u3067\u304d\u308b\u306e\u306f\u5929\u6027\u3068\u3057\u3066\u3001\u6a5f\u68b0\u306a\u3069\u3067\u3086\u3089\u304e\u3092\u51fa\u3059\u306e\u306f\u3067\u304d\u308b\u3093\u3067\u3059\u304b\u306d\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9946432709693909
+    },
+    {
+      "category": "1",
+      "question": "In session 10 of the Japanese LAC conversation, what did TEXTCHAT01 say in the turn about \"\u4e0d\u7d14\u306a\u52d5\u6a5f\u3067\u3059\u3088\u306d\u7b11\u7b11\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT01 say in session 1 and what did TEXTCHAT02 say in session 2?",
+      "f1": 0.25,
+      "bleu1": 0.10604358061710577,
+      "rouge_l": 0.17777777777777778,
+      "bertscore_f1": 0.8387496471405029
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT02 say in session 2 and what did TEXTCHAT02 say in session 3?",
+      "f1": 0.46428571428571436,
+      "bleu1": 0.1432766986142002,
+      "rouge_l": 0.3939393939393939,
+      "bertscore_f1": 0.8790903687477112
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT01 say in session 3 and what did TEXTCHAT01 say in session 4?",
+      "f1": 0.03571428571428572,
+      "bleu1": 1.7985332575813458e-09,
+      "rouge_l": 0.024096385542168672,
+      "bertscore_f1": 0.7936369180679321
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT01 say in session 4 and what did TEXTCHAT02 say in session 5?",
+      "f1": 0.21739130434782608,
+      "bleu1": 0.06908093021442592,
+      "rouge_l": 0.19607843137254902,
+      "bertscore_f1": 0.8449957966804504
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT02 say in session 5 and what did TEXTCHAT01 say in session 6?",
+      "f1": 0.1111111111111111,
+      "bleu1": 0.001440079824698022,
+      "rouge_l": 0.05970149253731343,
+      "bertscore_f1": 0.8389955759048462
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT01 say in session 6 and what did TEXTCHAT02 say in session 7?",
+      "f1": 0.18867924528301885,
+      "bleu1": 0.006941235168133356,
+      "rouge_l": 0.11764705882352941,
+      "bertscore_f1": 0.8433452844619751
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese LAC conversation: TEXTCHAT01's session 1 statement or TEXTCHAT02's session 2 statement?",
+      "f1": 0.09523809523809523,
+      "bleu1": 0.014854715642866776,
+      "rouge_l": 0.08695652173913045,
+      "bertscore_f1": 0.7660699486732483
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese LAC conversation: TEXTCHAT02's session 2 statement or TEXTCHAT01's session 3 statement?",
+      "f1": 0.12903225806451613,
+      "bleu1": 0.0032918988196080122,
+      "rouge_l": 0.1176470588235294,
+      "bertscore_f1": 0.7665454745292664
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by TEXTCHAT01's cited turn in the Japanese LAC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8487775325775146
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by TEXTCHAT02's cited turn in the Japanese LAC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7442443370819092
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Japanese LAC conversation, what did TEXTCHAT27 say in the turn about \"\u3053\u3093\u306b\u3061\u306f\uff01[SPK--TEXTCHAT27]\u3068\u7533\u3057\u307e\u3059\u3002 \u3053\u308c\u304b\u3089\u9577\u671f\u9593...\"?",
+      "f1": 0.7346938775510204,
+      "bleu1": 0.3490180709313199,
+      "rouge_l": 0.6551724137931034,
+      "bertscore_f1": 0.9495373964309692
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Japanese LAC conversation, what did TEXTCHAT27 say in the turn about \"1\u4e07\u304f\u3089\u3044\u3060\u3063\u305f\u3088\u3046\u306a\u3001\u3001\u6b63\u76f4\u52b9\u679c\u306f\u3088\u304f\u308f\u304b\u3089\u306a\u3044\u3067\u3059\u304c\uff08\u82e6\u7b11\uff09\u30c6\u30ec\u30ef\u30fc\u30af...\"?",
+      "f1": 0.6976744186046512,
+      "bleu1": 0.2465969639416065,
+      "rouge_l": 0.5882352941176471,
+      "bertscore_f1": 0.9302986860275269
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Japanese LAC conversation, what did TEXTCHAT27 say in the turn about \"<URL LINK> \u3053\u306e\u30e1\u30c7\u30a3\u30ea\u30d5\u30c8\u30d7\u30e9\u30b9\u3067\u3059\uff01\u9ad8\u304f\u3066\u3059\u3093\u3054\u3044\u8ff7\u3063\u305f\u3093\u3067...\"?",
+      "f1": 0.40909090909090906,
+      "bleu1": 0.013123728736940968,
+      "rouge_l": 0.3157894736842105,
+      "bertscore_f1": 0.8383874297142029
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Japanese LAC conversation, what did TEXTCHAT28 say in the turn about \"\u30a4\u30f3\u30c9\u30a2\u6d3e\u306a\u306e\u3067\u5bb6\u3067\u52d5\u753b\u898b\u305f\u308a\u3001\u30de\u30f3\u30ac\u8aad\u3093\u3060\u308a\u3001\u597d\u304d\u306a\u3082\u306e\u98df\u3079\u3066\u7518\u3084\u304b\u3057\u3066...\"?",
+      "f1": 0.8923076923076924,
+      "bleu1": 0.6703200460356393,
+      "rouge_l": 0.8333333333333333,
+      "bertscore_f1": 0.966326117515564
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Japanese LAC conversation, what did TEXTCHAT27 say in the turn about \"\u304a\u8fd4\u4e8b\u9045\u304f\u306a\u3063\u3066\u3057\u307e\u3044\u3001\u3059\u307f\u307e\u305b\u3093\uff01\"?",
+      "f1": 0.1818181818181818,
+      "bleu1": 0.13636363636363635,
+      "rouge_l": 0.15789473684210525,
+      "bertscore_f1": 0.8277782201766968
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the Japanese LAC conversation, what did TEXTCHAT27 say in the turn about \"\u305d\u3053\u3082\u9577\u3044\u3067\u3059\u3088\u306d\uff01\uff01\uff08\u7b11\uff09\u308f\u305f\u3057\u306f\u30ed\u30fc\u597d\u304d\u306a\u306e\u3067\u3001\u30c9\u30ec\u30b9\u30ed\u30fc\u30b6\u597d\u304d\u3067\u3057\u305f\uff08\u7b11\uff09\"?",
+      "f1": 0.5882352941176471,
+      "bleu1": 0.10025884372280375,
+      "rouge_l": 0.4651162790697675,
+      "bertscore_f1": 0.9293615818023682
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the Japanese LAC conversation, what did TEXTCHAT28 say in the turn about \"\u3053\u3093\u306b\u3061\u306f\uff01\u30c0\u30f3\u30b9\u30c0\u30f3\u30b9\u30c0\u30f3\u30b9\u30fc\u30eb\u306e\uff13\u5dfb\u307e\u3067\u8aad\u307f\u307e\u3057\u305f\uff01\u4e3b\u4eba\u516c\u3068\u6d41\u9daf\u304f\u3093\u306e...\"?",
+      "f1": 0.6923076923076924,
+      "bleu1": 0.4317105234290797,
+      "rouge_l": 0.704225352112676,
+      "bertscore_f1": 0.9538010358810425
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the Japanese LAC conversation, what did TEXTCHAT27 say in the turn about \"\u3042\u3068\u30b3\u30e1\u30c7\u30a3\u6620\u753b\u306e\u7d9a\u7de8\u3084\u308a\u307e\u3059\u3088\u306d\uff01\u306a\u3093\u3060\u3063\u3051\u304b\u306a\u3001\u30bf\u30a4\u30c8\u30eb\u2026\u2026\"?",
+      "f1": 0.058823529411764705,
+      "bleu1": 0.007112438338266277,
+      "rouge_l": 0.05714285714285715,
+      "bertscore_f1": 0.8372787833213806
+    },
+    {
+      "category": "1",
+      "question": "In session 9 of the Japanese LAC conversation, what did TEXTCHAT28 say in the turn about \"\u306e\u3073\u306e\u3073\u3068\uff01\u6620\u753b\u306e\u5185\u5bb9\u306b\u3082\u96c6\u4e2d\u3067\u304d\u305d\u3046\u3067\u3059\uff01\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 10 of the Japanese LAC conversation, what did TEXTCHAT27 say in the turn about \"\u96fb\u5b50\u66f8\u7c4d\u3067\u3059\uff01\u6771\u4eac\u30b0\u30fc\u30eb\u306e\u30a2\u30cb\u30e1\u3063\u3066\u539f\u4f5c\u3068\u3061\u3087\u3063\u3068\u9055\u3046\u3089\u3057\u304f\u3001\u3069\u3053\u304b\u3089\u898b\u3066...\"?",
+      "f1": 0.8732394366197184,
+      "bleu1": 0.6152575700805322,
+      "rouge_l": 0.8045977011494253,
+      "bertscore_f1": 0.9702925682067871
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT27 say in session 1 and what did TEXTCHAT28 say in session 2?",
+      "f1": 0.22222222222222224,
+      "bleu1": 0.019745671094900226,
+      "rouge_l": 0.1415929203539823,
+      "bertscore_f1": 0.840714693069458
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT27 say in session 2 and what did TEXTCHAT27 say in session 3?",
+      "f1": 0.2191780821917808,
+      "bleu1": 0.0776450519616941,
+      "rouge_l": 0.11538461538461539,
+      "bertscore_f1": 0.8490978479385376
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT27 say in session 3 and what did TEXTCHAT28 say in session 4?",
+      "f1": 0.17073170731707318,
+      "bleu1": 0.006969956005399668,
+      "rouge_l": 0.0916030534351145,
+      "bertscore_f1": 0.8288536071777344
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT28 say in session 4 and what did TEXTCHAT28 say in session 5?",
+      "f1": 0.3333333333333333,
+      "bleu1": 0.10931246637617371,
+      "rouge_l": 0.2112676056338028,
+      "bertscore_f1": 0.8616625666618347
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT27 say in session 5 and what did TEXTCHAT28 say in session 6?",
+      "f1": 0.2033898305084746,
+      "bleu1": 0.05919308886092502,
+      "rouge_l": 0.14814814814814817,
+      "bertscore_f1": 0.8336315155029297
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT27 say in session 6 and what did TEXTCHAT28 say in session 7?",
+      "f1": 0.31999999999999995,
+      "bleu1": 0.07518626846478484,
+      "rouge_l": 0.16666666666666666,
+      "bertscore_f1": 0.8626217246055603
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese LAC conversation: TEXTCHAT27's session 1 statement or TEXTCHAT27's session 2 statement?",
+      "f1": 0.15384615384615385,
+      "bleu1": 0.0003667516566777434,
+      "rouge_l": 0.0851063829787234,
+      "bertscore_f1": 0.7629879117012024
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese LAC conversation: TEXTCHAT27's session 2 statement or TEXTCHAT27's session 3 statement?",
+      "f1": 0.1111111111111111,
+      "bleu1": 0.0004455100591379213,
+      "rouge_l": 0.09090909090909091,
+      "bertscore_f1": 0.7375743389129639
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by TEXTCHAT27's cited turn in the Japanese LAC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7458441257476807
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by TEXTCHAT27's cited turn in the Japanese LAC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7458441257476807
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"\u306f\u3058\u3081\u307e\u3057\u3066\u3002\u3053\u308c\u304b\u3089\u3088\u308d\u3057\u304f\u304a\u9858\u3044\u81f4\u3057\u307e\u3059\uff01\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9818572402000427
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Japanese LAC conversation, what did TEXTCHAT34 say in the turn about \"\u306a\u3093\u3066\u304a\u547c\u3073\u3059\u308c\u3070\u3044\u3044\u3067\u3059\u304b\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"\u30df\u30e5\u30fc\u30b8\u30ab\u30eb\u3001\u30b9\u30c8\u30ec\u30fc\u30c8\u306a\u3069\u3044\u308d\u3044\u308d\u3067\u3059\u304c\u3001\u30df\u30e5\u30fc\u30b8\u30ab\u30eb\u304c\u591a\u3044\u3067\u3059\u306d! \u306a...\"?",
+      "f1": 0.7499999999999999,
+      "bleu1": 0.5795782787848095,
+      "rouge_l": 0.7857142857142858,
+      "bertscore_f1": 0.9391476511955261
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"\u305d\u3046\u3067\u3059\u306d\u3002\u3002\u3002\u304b\u306a\u308a\u306e\u4f5c\u54c1\u306f\u5ef6\u671f\u306b\u306a\u3063\u3066\u3001\u30aa\u30f3\u30e9\u30a4\u30f3\u3067\u7a3d\u53e4\u3092\u3057\u3066\u3044\u3066\u3001\u5bfe...\"?",
+      "f1": 0.39344262295081966,
+      "bleu1": 0.007236834234988326,
+      "rouge_l": 0.288659793814433,
+      "bertscore_f1": 0.8766614198684692
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"\u307b\u3093\u3068\u305d\u3046\u3067\u3059\u306d\uff01\u5909\u7570\u578b\u306e\u30a6\u30a4\u30eb\u30b9\u3068\u304b\u8a00\u3063\u3066\u308b\u306e\u3082\u3042\u308b\u3057\u307b\u3093\u3068\u306b\u3069\u3046\u306a\u308b\u304b...\"?",
+      "f1": 0.6923076923076924,
+      "bleu1": 0.24935220877729622,
+      "rouge_l": 0.5901639344262295,
+      "bertscore_f1": 0.9300400614738464
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"\u307b\u3093\u3068\u305d\u308c\u3067\u3059\u3002\u3002\u3002\u51ac\u3092\u8d85\u3048\u3066\u307f\u306a\u3044\u3068\u306a\u3093\u3068\u3082\u3067\u3059\u306d\u3002\u3002 \u30de\u30b9\u30af\u304c\u4f53\u306e1\u90e8...\"?",
+      "f1": 0.7352941176470588,
+      "bleu1": 0.18092414583249508,
+      "rouge_l": 0.5391304347826087,
+      "bertscore_f1": 0.9352741241455078
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the Japanese LAC conversation, what did TEXTCHAT34 say in the turn about \"\u304a\u304a\u30fc\uff01\u3059\u3054\u3044\u3067\u3059\u306d\u30fc\uff01\uff01 \u6f14\u6280\u3060\u3051\u3067\u3082\u30bb\u30ea\u30d5\u899a\u3048\u305f\u308a\u3068\u304b\u3067\u5927\u5909\u306a\u306e\u306b\u3001\u82f1...\"?",
+      "f1": 0.65625,
+      "bleu1": 0.15510757606985043,
+      "rouge_l": 0.5176470588235293,
+      "bertscore_f1": 0.907280683517456
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the Japanese LAC conversation, what did TEXTCHAT34 say in the turn about \"\u82f1\u8a9e\u306f\u96e3\u3057\u3044\u3067\u3059\u306d\u2026\u3082\u3046\u6570\u5e74\u52c9\u5f37\u3057\u3066\u306a\u3044\u306e\u3067\u3060\u3044\u3076\u5fd8\u308c\u3066\u304d\u307e\u3057\u305f\u7b11 \u8a71\u305b\u308b...\"?",
+      "f1": 0.7560975609756097,
+      "bleu1": 0.3177973182448562,
+      "rouge_l": 0.6356589147286822,
+      "bertscore_f1": 0.9507166147232056
+    },
+    {
+      "category": "1",
+      "question": "In session 9 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"\u3044\u308d\u3093\u306a\u65b9\u6cd5\u3067\u3088\u304f\u7720\u308c\u308b\u3053\u3068\u3092\u7948\u3063\u3066\u3044\u307e\u3059\u3002\u3002\u3002\uff01\"?",
+      "f1": 0.33333333333333326,
+      "bleu1": 0.27435586085499064,
+      "rouge_l": 0.27027027027027023,
+      "bertscore_f1": 0.875438392162323
+    },
+    {
+      "category": "1",
+      "question": "In session 10 of the Japanese LAC conversation, what did TEXTCHAT35 say in the turn about \"\u305d\u3046\u305d\u3046\u7b11 \u3069\u3046\u305b\u30de\u30b9\u30af\u306b\u7740\u3044\u3061\u3083\u3046\u3057\u3001\u4ed8\u3044\u305f\u3089\u5916\u304b\u3089\u3046\u3063\u3059\u3089\u8272\u304c\u3064\u3044\u3066\u308b...\"?",
+      "f1": 0.8524590163934427,
+      "bleu1": 0.5810856336678201,
+      "rouge_l": 0.7865168539325843,
+      "bertscore_f1": 0.9582148194313049
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT35 say in session 1 and what did TEXTCHAT34 say in session 2?",
+      "f1": 0.3055555555555556,
+      "bleu1": 0.07157885646768167,
+      "rouge_l": 0.1981981981981982,
+      "bertscore_f1": 0.8547223210334778
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT34 say in session 2 and what did TEXTCHAT34 say in session 3?",
+      "f1": 0.28571428571428575,
+      "bleu1": 0.03124319291986355,
+      "rouge_l": 0.20689655172413793,
+      "bertscore_f1": 0.870710551738739
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT35 say in session 3 and what did TEXTCHAT34 say in session 4?",
+      "f1": 0.3,
+      "bleu1": 0.02123469035137102,
+      "rouge_l": 0.18055555555555555,
+      "bertscore_f1": 0.8500626683235168
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT35 say in session 4 and what did TEXTCHAT34 say in session 5?",
+      "f1": 0.3076923076923077,
+      "bleu1": 0.014793400640900683,
+      "rouge_l": 0.15384615384615385,
+      "bertscore_f1": 0.8338216543197632
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT35 say in session 5 and what did TEXTCHAT35 say in session 6?",
+      "f1": 0.24691358024691357,
+      "bleu1": 0.004957419261493085,
+      "rouge_l": 0.14173228346456695,
+      "bertscore_f1": 0.8671247363090515
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT35 say in session 6 and what did TEXTCHAT35 say in session 7?",
+      "f1": 0.23188405797101444,
+      "bleu1": 0.007405997692161537,
+      "rouge_l": 0.15384615384615385,
+      "bertscore_f1": 0.8639940619468689
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese LAC conversation: TEXTCHAT35's session 1 statement or TEXTCHAT34's session 2 statement?",
+      "f1": 0.15384615384615385,
+      "bleu1": 0.008948308742466242,
+      "rouge_l": 0.13793103448275862,
+      "bertscore_f1": 0.7507392764091492
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese LAC conversation: TEXTCHAT34's session 2 statement or TEXTCHAT35's session 3 statement?",
+      "f1": 0.2,
+      "bleu1": 0.036287181315765006,
+      "rouge_l": 0.1818181818181818,
+      "bertscore_f1": 0.768242359161377
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by TEXTCHAT35's cited turn in the Japanese LAC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7440840005874634
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by TEXTCHAT34's cited turn in the Japanese LAC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.747296154499054
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1015-A say in the turn about \"\u3053\u3093\u3070\u3093\u306f\u3002\u51fa\u8eab\u306f\u3069\u3061\u3089\u3067\u3059\u304b\uff1f\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7315794229507446
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1015-A say in the turn about \"\u305d\u3046\u8a00\u3048\u3070\u306a\u3093\u3067\u3059\u3051\u3069\uff01\"?",
+      "f1": 0.25,
+      "bleu1": 0.15999999999999998,
+      "rouge_l": 0.2222222222222222,
+      "bertscore_f1": 0.8348749279975891
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1015-A say in the turn about \"\u3055\u3063\u305d\u304f\u3001\u767e\u5747\u3067DIY\u30b0\u30c3\u30ba\u3092\u8cb7\u3063\u3066\u304d\u305f\u3088\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1015-A say in the turn about \"\u4eca\u3001\u8caf\u91d1\u7bb1\u3092\u4f5c\u308d\u3046\u3068\u9811\u5f35\u3063\u3066\u307e\u3059\u3088\u3002\"?",
+      "f1": 0.8148148148148148,
+      "bleu1": 0.6347364189402819,
+      "rouge_l": 0.8148148148148148,
+      "bertscore_f1": 0.9469661116600037
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1015-A say in the turn about \"\u3061\u3087\u3063\u3068\u3002\u7d0d\u8c46\u30de\u30ab\u30ed\u30f3\u306e\u8a66\u4f5c\u3092\u3064\u304f\u3063\u3066\u307f\u305f\u3093\u3060\u3051\u3069\u3002\"?",
+      "f1": 0.9302325581395349,
+      "bleu1": 0.8187307530779819,
+      "rouge_l": 0.9090909090909091,
+      "bertscore_f1": 0.9678606390953064
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1015-B say in the turn about \"\u4eca\u304b\u3089\u3067\u3082\u3044\u308d\u3044\u308d\u8da3\u5473\u898b\u3064\u3051\u3089\u308c\u307e\u3059\u3088\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9947386384010315
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1015-B say in the turn about \"\u305d\u3046\u3067\u3059\u306d\uff01\u305d\u308c\u3067\u304a\u5f97\u306b\u306a\u308b\u306a\u3089\u3001\u8caf\u91d1\u3082\u8caf\u307e\u308a\u307e\u3059\u3057\u3001\u304a\u3059\u3059\u3081\u3067\u3059\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0000001192092896
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1015-B say in the turn about \"\u7d20\u6575\u3067\u3059\u306d\uff01\u5922\u3092\u53f6\u3048\u3089\u308c\u308b\u3088\u3046\u5fdc\u63f4\u3057\u3066\u307e\u3059\u3088\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0000001192092896
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1015-B say in the turn about \"\u305d\u3046\u3044\u3046\u306e\u3060\u3063\u305f\u3089\u4efb\u305b\u3066\u3002\u3082\u3057\u4eba\u304c\u5fc5\u8981\u306b\u306a\u3063\u305f\u3089\u624b\u4f1d\u3044\u306b\u884c\u304f\u304b\u3089\u306d\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9885069727897644
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1015-B say in the turn about \"50\u500b\u3082\u304f\u308c\u308b\u3093\u3067\u3059\u304b\uff01\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3002\u4eca\u306e\u4f1a\u793e\u306f\u5165\u3063\u3066\u307e\u3060\u9593\u3082\u306a\u3044...\"?",
+      "f1": 0.9879518072289156,
+      "bleu1": 0.9827586206896551,
+      "rouge_l": 0.9827586206896551,
+      "bertscore_f1": 0.9941688776016235
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1015-A say in session 1 and what did PP1015-B say in session 2?",
+      "f1": 0.34615384615384615,
+      "bleu1": 0.17534837807718626,
+      "rouge_l": 0.1917808219178082,
+      "bertscore_f1": 0.8514598608016968
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1015-A say in session 2 and what did PP1015-B say in session 3?",
+      "f1": 0.28,
+      "bleu1": 0.2318531115899309,
+      "rouge_l": 0.19672131147540983,
+      "bertscore_f1": 0.8538621068000793
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1015-A say in session 3 and what did PP1015-B say in session 4?",
+      "f1": 0.22950819672131145,
+      "bleu1": 0.10031557788243368,
+      "rouge_l": 0.12658227848101264,
+      "bertscore_f1": 0.8412958383560181
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1015-A say in session 4 and what did PP1015-B say in session 5?",
+      "f1": 0.410958904109589,
+      "bleu1": 0.08642277252824884,
+      "rouge_l": 0.27184466019417475,
+      "bertscore_f1": 0.8696163296699524
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1015-A's session 1 statement or PP1015-A's session 2 statement?",
+      "f1": 0.2,
+      "bleu1": 0.036287181315765006,
+      "rouge_l": 0.1818181818181818,
+      "bertscore_f1": 0.7539300918579102
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1015-A's session 2 statement or PP1015-A's session 3 statement?",
+      "f1": 0.13333333333333333,
+      "bleu1": 0.12500000000000003,
+      "rouge_l": 0.06666666666666667,
+      "bertscore_f1": 0.8468183279037476
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1015-A's session 3 statement or PP1015-A's session 4 statement?",
+      "f1": 0.0975609756097561,
+      "bleu1": 0.07999999999999999,
+      "rouge_l": 0.08695652173913043,
+      "bertscore_f1": 0.8422618508338928
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1015-A's session 4 statement or PP1015-A's session 5 statement?",
+      "f1": 0.16666666666666666,
+      "bleu1": 0.02432402505008719,
+      "rouge_l": 0.16666666666666666,
+      "bertscore_f1": 0.7468361854553223
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by PP1015-A's cited turn in the Japanese JMSC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7291107773780823
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by PP1015-A's cited turn in the Japanese JMSC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7567633986473083
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1074-A say in the turn about \"\u3053\u3093\u306b\u3061\u306f\u3001\u7a7a\u6e2f\u4f1a\u793e\u306b\u52e4\u52d9\u3057\u3066\u3044\u308b\u306e\u3067\u3059\u304c\u3001\u6700\u8fd1\u306f\u65c5\u884c\u5ba2\u304c\u3044\u306a\u3044\u306e\u3067\u4ed5\u4e8b\u304c...\"?",
+      "f1": 0.6341463414634146,
+      "bleu1": 0.18887560283756186,
+      "rouge_l": 0.5454545454545454,
+      "bertscore_f1": 0.9144189357757568
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1074-A say in the turn about \"\u3055\u3063\u304d\u3001\u713c\u304d\u305d\u3070\u306e\u8a71\u3092\u3057\u305f\u306e\u3067\u3001\u3064\u3044\u30ab\u30c3\u30d7\u713c\u304d\u305d\u3070\u3092\u4f5c\u3063\u3066\u98df\u3079\u3066\u3057\u307e\u3044\u307e\u3057\u305f\u3002\"?",
+      "f1": 0.8717948717948718,
+      "bleu1": 0.44932896411722156,
+      "rouge_l": 0.7142857142857143,
+      "bertscore_f1": 0.9329627752304077
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1074-A say in the turn about \"\u805e\u3044\u3066\u304f\u3060\u3055\u3044\u3002\u5e74\u306e\u96e2\u308c\u305f\u79c1\u306e\u59c9\u306e\u8a71\u306a\u306e\u3067\u3059\u304c\u3001\u59c9\u306b\u604b\u4eba\u304c\u3067\u304d\u305f\u3093\u3067\u3059\u3088\u3002\"?",
+      "f1": 0.6285714285714286,
+      "bleu1": 0.15987974607969388,
+      "rouge_l": 0.5217391304347826,
+      "bertscore_f1": 0.9154917597770691
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1074-A say in the turn about \"\u6559\u3048\u3066\u3082\u3089\u3063\u305f\u30ec\u30b7\u30d4\u3067\u3084\u304d\u305d\u3070\u4f5c\u3063\u3066\u307f\u307e\u3057\u305f\u3088\u3002\"?",
+      "f1": 0.7499999999999999,
+      "bleu1": 0.3998496543448473,
+      "rouge_l": 0.6857142857142856,
+      "bertscore_f1": 0.9382435083389282
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1074-A say in the turn about \"\u3084\u3063\u3071\u308a\u3001\u8c5a\u306e\u3057\u3087\u3046\u304c\u713c\u304d\u306f\u6700\u9ad8\u3067\u3059\u306d\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1074-B say in the turn about \"\u305d\u3046\u306a\u3093\u3067\u3059\u3088\u306d\u3002\u3088\u3051\u308c\u3070\u4eca\u5ea6\u304a\u59c9\u3055\u3093\u306b\u4f5c\u3063\u3066\u3082\u3089\u3063\u3066\u304f\u3060\u3055\u3044\u3002\"?",
+      "f1": 0.125,
+      "bleu1": 0.010689671819210454,
+      "rouge_l": 0.10810810810810811,
+      "bertscore_f1": 0.8055029511451721
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1074-B say in the turn about \"\u79c1\u306e\u5834\u5408\u306f\u59ff\u52e2\u3092\u4fdd\u3064\u3053\u3068\u81ea\u4f53\u304c\u75b2\u308c\u3066\u3057\u307e\u3044\u305d\u3046\u3067\u3059\u304c\u3001\u3069\u3061\u3089\u3067\u3057\u3087\u3046\u304b\u306d\u30fc\u3002\"?",
+      "f1": 0.7692307692307693,
+      "bleu1": 0.48954165955695317,
+      "rouge_l": 0.7368421052631579,
+      "bertscore_f1": 0.9463022947311401
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1074-B say in the turn about \"\u3082\u3061\u308d\u3093\uff01\u3067\u306f\u3001\u4eca\u5ea6\u30ec\u30b7\u30d4\u3068\u30b3\u30c4\u3092\u304a\u6559\u3048\u3057\u307e\u3059\u3088\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0000001192092896
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1074-B say in the turn about \"\u59ff\u52e2\u304c\u3044\u3044\u3068\u7d20\u6575\u306b\u898b\u3048\u3066\u3046\u3089\u3084\u307e\u3057\u3044\u3067\u3059\u3002\u304d\u3063\u3068\u7d20\u6575\u306a\u604b\u4eba\u898b\u3064\u304b\u308a\u307e\u3059\u3088\u3002\"?",
+      "f1": 0.8750000000000001,
+      "bleu1": 0.5934874977560278,
+      "rouge_l": 0.7931034482758621,
+      "bertscore_f1": 0.9519967436790466
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1074-B say in the turn about \"\u3042\u306a\u305f\u304c\u5c0a\u656c\u3059\u308b\u5148\u8f29\u306a\u3093\u3067\u3059\u304b\u3089\u3001\u304d\u3063\u3068\u826f\u3044\u65b9\u306b\u9055\u3044\u306a\u3044\u3067\u3059\u3057\u3001\u3046\u307e\u304f\u3044\u304d...\"?",
+      "f1": 0.7142857142857143,
+      "bleu1": 0.36787944117144233,
+      "rouge_l": 0.6666666666666666,
+      "bertscore_f1": 0.9223517775535583
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1074-A say in session 1 and what did PP1074-B say in session 2?",
+      "f1": 0.375,
+      "bleu1": 0.12616138142402708,
+      "rouge_l": 0.2162162162162162,
+      "bertscore_f1": 0.8827228546142578
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1074-A say in session 2 and what did PP1074-B say in session 3?",
+      "f1": 0.2777777777777778,
+      "bleu1": 0.14199056552079714,
+      "rouge_l": 0.08333333333333333,
+      "bertscore_f1": 0.8517871499061584
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1074-A say in session 3 and what did PP1074-B say in session 4?",
+      "f1": 0.4722222222222222,
+      "bleu1": 0.18680554404396713,
+      "rouge_l": 0.14953271028037382,
+      "bertscore_f1": 0.8549506068229675
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1074-A say in session 4 and what did PP1074-B say in session 5?",
+      "f1": 0.34782608695652173,
+      "bleu1": 0.1615870621696875,
+      "rouge_l": 0.18750000000000003,
+      "bertscore_f1": 0.8611193895339966
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1074-A's session 1 statement or PP1074-A's session 2 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.6722607016563416
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1074-A's session 2 statement or PP1074-A's session 3 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.6698781251907349
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1074-A's session 3 statement or PP1074-A's session 4 statement?",
+      "f1": 0.125,
+      "bleu1": 0.0006646229092695736,
+      "rouge_l": 0.09523809523809523,
+      "bertscore_f1": 0.7434933185577393
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1074-A's session 4 statement or PP1074-A's session 5 statement?",
+      "f1": 0.14285714285714285,
+      "bleu1": 0.0059982307281910814,
+      "rouge_l": 0.12903225806451613,
+      "bertscore_f1": 0.7497122287750244
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by PP1074-A's cited turn in the Japanese JMSC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8233570456504822
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by PP1074-A's cited turn in the Japanese JMSC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8473606705665588
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1154-A say in the turn about \"\u308f\u305f\u3057\u306e\u624b\u4f5c\u308a\u9903\u5b50\u3001\u8a66\u98df\u3057\u3066\u3082\u3089\u3048\u307e\u305b\u3093\u304b\u306d\u3048\u3002\"?",
+      "f1": 0.25,
+      "bleu1": 0.15397536011094462,
+      "rouge_l": 0.1714285714285714,
+      "bertscore_f1": 0.8732583522796631
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1154-A say in the turn about \"\u3053\u3093\u306b\u3061\u306f\u3002\u4ed5\u4e8b\u306e\u307b\u3046\u306f\u3069\u3046\u3067\u3059\u304b\uff1f\"?",
+      "f1": 0.41666666666666663,
+      "bleu1": 0.2744058180470132,
+      "rouge_l": 0.38461538461538464,
+      "bertscore_f1": 0.8794142603874207
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1154-A say in the turn about \"\u3053\u3093\u306b\u3061\u306f\u3001\u304a\u4e45\u3057\u3076\u308a\u3067\u3059\u3002\u3042\u308c\u304b\u3089\u8fd1\u6240\u306e\u304a\u5b50\u3055\u3093\u306f\u9759\u304b\u3067\u3059\u304b\uff1f\"?",
+      "f1": 0.3333333333333333,
+      "bleu1": 0.04527484814640716,
+      "rouge_l": 0.1081081081081081,
+      "bertscore_f1": 0.858432412147522
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1154-A say in the turn about \"\u56f3\u66f8\u9928\u306b\u672c\u3092\u8fd4\u3057\u306b\u884c\u3063\u3066\u304d\u305f\u3093\u3067\u3059\u304c\u3001\u8170\u304c\u75db\u304f\u3066\u3002\"?",
+      "f1": 0.4,
+      "bleu1": 0.02732372244729257,
+      "rouge_l": 0.3571428571428571,
+      "bertscore_f1": 0.8945649266242981
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1154-A say in the turn about \"\u3053\u3093\u306b\u3061\u306f\u3002\u4eca\u65e5\u306f\u304a\u4ed5\u4e8b\u306e\u65e5\u3067\u3059\u304b\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1154-B say in the turn about \"\u305d\u3046\u3067\u3059\u306d\u3002\u3042\u306a\u305f\u3082\u7814\u7a76\u9811\u5f35\u3063\u3066\u304f\u3060\u3055\u3044\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1154-B say in the turn about \"\u96a3\u4eba\u3065\u304d\u3042\u3044\u306f\u826f\u3044\u6240\u3082\u60aa\u3044\u6240\u3082\u3042\u308a\u307e\u3059\u3051\u3069\u306d\u3002\u8a66\u3057\u306b\u4e00\u5ea6\u4f4f\u3093\u3067\u307f\u308b\u306e\u3082\u304a\u3059...\"?",
+      "f1": 0.9666666666666666,
+      "bleu1": 0.8703247258333906,
+      "rouge_l": 0.9350649350649352,
+      "bertscore_f1": 0.9838252067565918
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1154-B say in the turn about \"\u7d20\u6674\u3089\u3057\u3044\u3001\u79c1\u3082\u305d\u3046\u3059\u308c\u3070\u8caf\u91d1\u3067\u304d\u305d\u3046\u3067\u3059\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1154-B say in the turn about \"\u9244\u9053\u30de\u30f3\u306b\u8a87\u308a\u3092\u6301\u3063\u3066\u307e\u3059\u304b\u3089\u306d\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1154-B say in the turn about \"\u5bd2\u3044\u6642\u306f\u602a\u6211\u3082\u3057\u3084\u3059\u3044\u3067\u3059\u304b\u3089\u306d\u3002\u304a\u4e92\u3044\u8eab\u4f53\u3092\u5927\u4e8b\u306b\u3057\u307e\u3057\u3087\u3046\u306d\u3002\"?",
+      "f1": 0.6111111111111112,
+      "bleu1": 0.20528965757990925,
+      "rouge_l": 0.5581395348837209,
+      "bertscore_f1": 0.9247854948043823
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1154-A say in session 1 and what did PP1154-B say in session 2?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.752163827419281
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1154-A say in session 2 and what did PP1154-B say in session 3?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7610017657279968
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1154-A say in session 3 and what did PP1154-B say in session 4?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7594041228294373
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1154-A say in session 4 and what did PP1154-B say in session 5?",
+      "f1": 0.2153846153846154,
+      "bleu1": 0.09094540298836827,
+      "rouge_l": 0.14634146341463414,
+      "bertscore_f1": 0.854566752910614
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1154-A's session 1 statement or PP1154-A's session 2 statement?",
+      "f1": 0.08,
+      "bleu1": 5.065046799315355e-06,
+      "rouge_l": 0.07407407407407407,
+      "bertscore_f1": 0.8046904802322388
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1154-A's session 2 statement or PP1154-A's session 3 statement?",
+      "f1": 0.1818181818181818,
+      "bleu1": 0.02432402505008719,
+      "rouge_l": 0.16666666666666666,
+      "bertscore_f1": 0.7669388055801392
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1154-A's session 3 statement or PP1154-A's session 4 statement?",
+      "f1": 0.13333333333333333,
+      "bleu1": 0.0018066323770450665,
+      "rouge_l": 0.10810810810810811,
+      "bertscore_f1": 0.7523528933525085
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1154-A's session 4 statement or PP1154-A's session 5 statement?",
+      "f1": 0.14285714285714285,
+      "bleu1": 0.0059982307281910814,
+      "rouge_l": 0.12903225806451613,
+      "bertscore_f1": 0.7547521591186523
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by PP1154-A's cited turn in the Japanese JMSC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8056818246841431
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by PP1154-A's cited turn in the Japanese JMSC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8056818246841431
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1394-A say in the turn about \"\u3053\u3093\u306b\u3061\u306f\uff01\u9ce5\u3092\u98fc\u3044\u59cb\u3081\u305f\u306e\u3067\u3059\u304c\u540d\u524d\u3069\u3046\u3057\u3088\u30fc\u3002\"?",
+      "f1": 0.4864864864864865,
+      "bleu1": 0.37197451199805637,
+      "rouge_l": 0.35,
+      "bertscore_f1": 0.8922356963157654
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1394-A say in the turn about \"\u3053\u3093\u306b\u3061\u306f\uff011\u9031\u9593\u3076\u308a\u304f\u3089\u3044\u3067\u3059\u304b\u306d\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9775185585021973
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1394-A say in the turn about \"\u3074\u3088\u3061\u3083\u3093\u306b\u990c\u3092\u3042\u3052\u3066\u304d\u307e\u3057\u305f\u3002\u7d50\u69cb\u98df\u6b32\u65fa\u76db\u306a\u3093\u3067\u3059\u3088\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1394-A say in the turn about \"\u3042\u308c\u304b\u3089\u30cb\u30f3\u30b8\u30f3\u306f\u98df\u3079\u308c\u3066\u307e\u3059\u304b\uff1f\u3069\u3046\u3084\u3089\u30d4\u30e8\u3061\u3083\u3093\u3082\u4eba\u53c2\u306f\u82e6\u624b\u3060\u3063\u305f\u307f\u305f...\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.749130129814148
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1394-A say in the turn about \"\u3053\u3093\u306b\u3061\u306f\u3002\u307e\u305f\u3061\u3087\u3063\u3068\u4e45\u3057\u3076\u308a\u3060\u306d\u3002\u4eba\u53c2\u306b\u30a2\u30bf\u30c3\u30af\u306f\u7d9a\u3051\u3066\u3044\u308b\u306e\uff1f\"?",
+      "f1": 0.3111111111111111,
+      "bleu1": 0.19590845846915764,
+      "rouge_l": 0.07999999999999999,
+      "bertscore_f1": 0.8640539050102234
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1394-B say in the turn about \"\u304a\uff01\u3067\u306f\u4eca\u5ea6\u7d50\u679c\u3092\u304a\u4f1d\u3048\u3057\u307e\uff5e\u3059\uff01\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9820921421051025
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1394-B say in the turn about \"\u305d\u3046\u3060\u3074\u3088\u3061\u3083\u3093\u3001\u5927\u304d\u304f\u306a\u308a\u307e\u3057\u305f\uff1f\u4eca\u5ea6\u5199\u771f\u898b\u305b\u3066\u304f\u3060\u3055\u3044\u3002\"?",
+      "f1": 0.8372093023255813,
+      "bleu1": 0.6563555554708402,
+      "rouge_l": 0.8260869565217391,
+      "bertscore_f1": 0.9460198283195496
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1394-B say in the turn about \"\u7f8e\u5473\u3057\u3044\u3067\u3059\u3088\u306d\u30fc\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1394-B say in the turn about \"\u3084\u3063\u305f\uff01\u304a\u6bcd\u3055\u3093\u306b\u3082\u4eca\u304b\u3089\u3053\u306e\u8a71\u3057\u3066\u304d\u307e\u3059\uff01\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1394-B say in the turn about \"\u3048\u3048\uff01\uff1f\u305d\u3057\u305f\u3089\u30d3\u30c3\u30af\u30ea\u3057\u3061\u3083\u3046\uff01\u3067\u3082\u3001\u305d\u306e\u65e5\u3092\u697d\u3057\u307f\u306b\u3057\u3066\u3044\u307e\u3059\u306d\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.991248369216919
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1394-A say in session 1 and what did PP1394-B say in session 2?",
+      "f1": 0.27586206896551724,
+      "bleu1": 0.05232065018099821,
+      "rouge_l": 0.14285714285714285,
+      "bertscore_f1": 0.8648843169212341
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1394-A say in session 2 and what did PP1394-B say in session 3?",
+      "f1": 0.4489795918367347,
+      "bleu1": 0.39299076147743134,
+      "rouge_l": 0.2545454545454545,
+      "bertscore_f1": 0.8726832270622253
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1394-A say in session 3 and what did PP1394-B say in session 4?",
+      "f1": 0.5714285714285714,
+      "bleu1": 0.2648731976434385,
+      "rouge_l": 0.4266666666666667,
+      "bertscore_f1": 0.8914875984191895
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1394-A say in session 4 and what did PP1394-B say in session 5?",
+      "f1": 0.5,
+      "bleu1": 0.11142129121906612,
+      "rouge_l": 0.2040816326530612,
+      "bertscore_f1": 0.8749722242355347
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1394-A's session 1 statement or PP1394-A's session 2 statement?",
+      "f1": 0.12903225806451613,
+      "bleu1": 0.0059982307281910814,
+      "rouge_l": 0.12903225806451613,
+      "bertscore_f1": 0.7520878911018372
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1394-A's session 2 statement or PP1394-A's session 3 statement?",
+      "f1": 0.16000000000000003,
+      "bleu1": 0.01991482734714558,
+      "rouge_l": 0.16000000000000003,
+      "bertscore_f1": 0.7599704265594482
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1394-A's session 3 statement or PP1394-A's session 4 statement?",
+      "f1": 0.125,
+      "bleu1": 0.0032918988196080122,
+      "rouge_l": 0.1176470588235294,
+      "bertscore_f1": 0.7458057403564453
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1394-A's session 4 statement or PP1394-A's session 5 statement?",
+      "f1": 0.09999999999999999,
+      "bleu1": 0.0002445011044518289,
+      "rouge_l": 0.0851063829787234,
+      "bertscore_f1": 0.7398697137832642
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by PP1394-A's cited turn in the Japanese JMSC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7642945051193237
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by PP1394-A's cited turn in the Japanese JMSC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7581573128700256
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1417-A say in the turn about \"\u3053\u3093\u306b\u3061\u306f\u3001\u304a\u4e45\u3057\u3076\u308a\u3067\u3059\u3002\u6700\u8fd1\u3069\u3046\u3067\u3059\u304b\uff1f\"?",
+      "f1": 0.2580645161290323,
+      "bleu1": 0.20424755689723964,
+      "rouge_l": 0.11764705882352941,
+      "bertscore_f1": 0.8684133291244507
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1417-A say in the turn about \"1\u9031\u9593\u306e\u3054\u7121\u6c99\u6c70\u3067\u3057\u305f\uff01\u304a\u5143\u6c17\u3067\u3059\u304b\u30fc\uff1f\"?",
+      "f1": 0.5833333333333334,
+      "bleu1": 0.2077481871436008,
+      "rouge_l": 0.56,
+      "bertscore_f1": 0.9104740023612976
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1417-A say in the turn about \"\u805e\u3044\u3066\u3001\u805e\u3044\u3066\uff01\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1417-A say in the turn about \"\u5927\u962a\u306e\u3053\u3068\u8003\u3048\u305f\u3089\u30ef\u30af\u30ef\u30af\u3057\u3066\u304d\u3061\u3083\u3063\u305f\uff01\"?",
+      "f1": 0.6923076923076924,
+      "bleu1": 0.441233167759984,
+      "rouge_l": 0.7096774193548387,
+      "bertscore_f1": 0.927425742149353
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1417-A say in the turn about \"\u3044\u3088\u3044\u3088\u660e\u65e5\u3001\u5927\u962a\u5165\u308a\uff01\u697d\u3057\u307f\u3059\u304e\u3066\u3001\u5bdd\u308c\u306a\u3044\uff01\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1417-B say in the turn about \"\u98df\u3044\u5012\u308c\u308b\u899a\u609f\u3057\u3066\u6765\u3066\uff01\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1417-B say in the turn about \"\u3042\u306f\u306f\uff01\u697d\u3057\u307f\u306b\u3057\u3066\u308b\uff01\u305f\u3053\u713c\u304d\u3082\u305f\u304f\u3055\u3093\u6e96\u5099\u3057\u3066\u304a\u304f\u306d\uff01\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1417-B say in the turn about \"\u30d5\u30ea\u30fc\u30e9\u30f3\u30b9\u3060\u304b\u3089\u3055\u3001\u4e88\u5b9a\u306f\u81ea\u5206\u3067\u8abf\u6574\u3067\u304d\u308b\u306e\u3002\u554f\u984c\u306a\u3044\u3088\uff01\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.988416850566864
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1417-B say in the turn about \"\u305d\u308c\u3067\u306f\u3001\u3042\u306a\u305f\u304c\u6765\u308b\u65e5\u3092\u697d\u3057\u307f\u306b\u3057\u3066\u3044\u307e\u3059\u306d\u3002\"?",
+      "f1": 0.6,
+      "bleu1": 0.301194211912202,
+      "rouge_l": 0.625,
+      "bertscore_f1": 0.9146283864974976
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1417-B say in the turn about \"\u3042\u3001\u3058\u3083\u3042\u305d\u3053\u306f\u304a\u4efb\u305b\u3057\u3088\u3046\u304b\u306a\u30fc\u3002\u3044\u3064\u3082\u884c\u304b\u306a\u3044\u5834\u6240\u3060\u304b\u3089\u7dca\u5f35\u3057\u3061\u3083\u3046\uff01\"?",
+      "f1": 0.8936170212765957,
+      "bleu1": 0.7716229467154109,
+      "rouge_l": 0.8852459016393442,
+      "bertscore_f1": 0.9646328687667847
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1417-A say in session 1 and what did PP1417-B say in session 2?",
+      "f1": 0.17777777777777776,
+      "bleu1": 0.011491514721946528,
+      "rouge_l": 0.13333333333333333,
+      "bertscore_f1": 0.8476061820983887
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1417-A say in session 2 and what did PP1417-B say in session 3?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7721721529960632
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1417-A say in session 3 and what did PP1417-B say in session 4?",
+      "f1": 0.37209302325581395,
+      "bleu1": 0.2939888402311946,
+      "rouge_l": 0.2545454545454546,
+      "bertscore_f1": 0.8701304197311401
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1417-A say in session 4 and what did PP1417-B say in session 5?",
+      "f1": 0.23728813559322035,
+      "bleu1": 0.09492689087683702,
+      "rouge_l": 0.14814814814814814,
+      "bertscore_f1": 0.8509548306465149
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1417-A's session 1 statement or PP1417-A's session 2 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7894937992095947
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1417-A's session 2 statement or PP1417-A's session 3 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7580600380897522
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1417-A's session 3 statement or PP1417-A's session 4 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7984232902526855
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1417-A's session 4 statement or PP1417-A's session 5 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7727429270744324
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by PP1417-A's cited turn in the Japanese JMSC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8275046944618225
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by PP1417-A's cited turn in the Japanese JMSC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8275046944618225
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1439-A say in the turn about \"\u306f\u3058\u3081\u307e\u3057\u3066\u3002\u79c1\u306f\u30bb\u30e9\u30d4\u30b9\u30c8\u3092\u3057\u3066\u3044\u307e\u3059\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1439-A say in the turn about \"\u3053\u3093\u306b\u3061\u306f\u3002\u6628\u65e5\u3001\u7f8e\u5473\u3057\u3044\u4e2d\u83ef\u306e\u304a\u5e97\u3092\u898b\u3064\u3051\u307e\u3057\u305f\u3088\u3002\"?",
+      "f1": 0.878048780487805,
+      "bleu1": 0.7686205265937358,
+      "rouge_l": 0.8837209302325582,
+      "bertscore_f1": 0.9653322696685791
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1439-A say in the turn about \"\u6700\u8fd1\u3001\u98df\u3079\u6b69\u304d\u3092\u3057\u3066\u3044\u305f\u3089\u3001\u820c\u3092\u3084\u3051\u3069\u3057\u3066\u3057\u307e\u3044\u307e\u3057\u305f\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1439-A say in the turn about \"\u4f55\u304b\u98df\u3079\u3066\u304d\u307e\u3057\u305f\u304b\uff1f\"?",
+      "f1": 0.5263157894736842,
+      "bleu1": 0.45454545454545453,
+      "rouge_l": 0.47619047619047616,
+      "bertscore_f1": 0.8655667901039124
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1439-A say in the turn about \"\u3069\u3046\u3082\uff01\u51b7\u3048\u3066\u3082\u7f8e\u5473\u3057\u3044\u9903\u5b50\u306e\u30ec\u30b7\u30d4\u3001\u958b\u767a\u306f\u3059\u3059\u3093\u3067\u307e\u3059\u304b\uff1f\u732b\u820c\u3067\u3082\u98df\u3079\u308c...\"?",
+      "f1": 0.8181818181818181,
+      "bleu1": 0.49180281794594555,
+      "rouge_l": 0.738095238095238,
+      "bertscore_f1": 0.9406053423881531
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Japanese JMSC conversation, what did PP1439-B say in the turn about \"\u71b1\u3044\u3082\u306e\u306f\u6691\u3044\u3046\u3061\u306b\uff01\u3067\u3059\u3002\u4e00\u5ea6\u308f\u305f\u3057\u306e\u9903\u5b50\u3092\u98df\u3079\u3066\u307f\u3066\u4e0b\u3055\u3044\u3088\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Japanese JMSC conversation, what did PP1439-B say in the turn about \"\u79c1\u3082\u898b\u7fd2\u308f\u306a\u3044\u3068\u3044\u3051\u306a\u3044\u306a\u3002\"?",
+      "f1": 0.28571428571428575,
+      "bleu1": 0.21428571428571425,
+      "rouge_l": 0.22222222222222224,
+      "bertscore_f1": 0.8520030379295349
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Japanese JMSC conversation, what did PP1439-B say in the turn about \"\u5b09\u3057\u3044\uff01\u592a\u3063\u3061\u3083\u3046\u3051\u3069\u3001\u307e\u3042\u3044\u3063\u304b\uff01\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999998807907104
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Japanese JMSC conversation, what did PP1439-B say in the turn about \"\u30c7\u30b6\u30fc\u30c8\u7cfb\u3068\u304b\u3082\u8003\u3048\u3066\u307f\u307e\u3059\u306e\u3067\u3001\u4f55\u304b\u82e6\u624b\u306a\u98df\u3079\u7269\u3068\u304b\u3042\u308c\u3070\u6559\u3048\u3066\u304f\u3060\u3055\u3044\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Japanese JMSC conversation, what did PP1439-B say in the turn about \"\uff15\u65e5\u3067\u3082\u5341\u5206\u3067\u3059\u3088\uff01\u3058\u3083\u3041\u3001\u672c\u6c17\u3067\u9903\u5b50\u5c4b\u3055\u3093\u306e\u3053\u3068\u8003\u3048\u3066\u307f\u307e\u3059\u306d\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1439-A say in session 1 and what did PP1439-B say in session 2?",
+      "f1": 0.2545454545454545,
+      "bleu1": 0.28888888888888886,
+      "rouge_l": 0.19753086419753085,
+      "bertscore_f1": 0.8561456203460693
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1439-A say in session 2 and what did PP1439-B say in session 3?",
+      "f1": 0.07843137254901962,
+      "bleu1": 0.02770580097525513,
+      "rouge_l": 0.032786885245901634,
+      "bertscore_f1": 0.8248553276062012
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1439-A say in session 3 and what did PP1439-B say in session 4?",
+      "f1": 0.15873015873015875,
+      "bleu1": 0.020403578913699465,
+      "rouge_l": 0.07228915662650603,
+      "bertscore_f1": 0.8389571309089661
+    },
+    {
+      "category": "2",
+      "question": "In the Japanese JMSC conversation, what did PP1439-A say in session 4 and what did PP1439-B say in session 5?",
+      "f1": 0.2181818181818182,
+      "bleu1": 0.1275624431258808,
+      "rouge_l": 0.18181818181818182,
+      "bertscore_f1": 0.8456496596336365
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1439-A's session 1 statement or PP1439-A's session 2 statement?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.6860758066177368
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1439-A's session 2 statement or PP1439-A's session 3 statement?",
+      "f1": 0.12903225806451613,
+      "bleu1": 0.0049109359612273746,
+      "rouge_l": 0.125,
+      "bertscore_f1": 0.753352165222168
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1439-A's session 3 statement or PP1439-A's session 4 statement?",
+      "f1": 0.16000000000000003,
+      "bleu1": 0.004020734297853434,
+      "rouge_l": 0.12121212121212122,
+      "bertscore_f1": 0.7540159821510315
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1439-A's session 4 statement or PP1439-A's session 5 statement?",
+      "f1": 0.23529411764705882,
+      "bleu1": 0.08075860719786215,
+      "rouge_l": 0.2222222222222222,
+      "bertscore_f1": 0.769868791103363
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by PP1439-A's cited turn in the Japanese JMSC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.836858332157135
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by PP1439-A's cited turn in the Japanese JMSC conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8337661027908325
+    }
+  ]
+}

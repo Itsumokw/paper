@@ -110,15 +110,21 @@ Preferred framing:
 - conversion of different long-memory resources into a unified LoCoMo-style QA/F1 setting,
 - analysis of when existing methods stop generalizing.
 
-## Baselines currently in focus
+## Fixed baseline set
 
-The recurring baseline set discussed in the project:
+The baseline set for the main LoCoMo-style evaluation is now fixed as:
 
+- `Full Context`
 - `A-Mem`
 - `Mem0`
 - `SimpleMem`
 - `HiGMem`
-- `AriadneMem`
+- `MemGAS`
+
+Treat this as the default comparison set before adding any extra method. The
+purpose is to cover a long-context control, two widely used memory baselines,
+one lightweight compression baseline, one hierarchical memory system, and one
+recent accepted multi-granularity memory method.
 
 Related methods also repeatedly discussed:
 
@@ -127,6 +133,7 @@ Related methods also repeatedly discussed:
 - `MemoryOS`
 - `ReadAgent`
 - `LightMem`
+- `AriadneMem`
 
 ## Paper survey status
 

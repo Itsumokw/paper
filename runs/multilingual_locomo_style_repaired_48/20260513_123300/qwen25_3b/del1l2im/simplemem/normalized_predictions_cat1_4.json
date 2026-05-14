@@ -1,0 +1,3100 @@
+{
+  "records": [
+    {
+      "source": "simplemem",
+      "qa_idx": 0,
+      "category": 1,
+      "question": "In session 1 of the German deL1L2IM conversation, what did N01 say in the turn about \"So, hallo, erstmal. Ich bin NATIVE01_...\"?",
+      "prediction": "So, hallo, erstmal. Ich bin NATIVE01_...",
+      "reference": "So, hallo, erstmal. Ich bin NATIVE01_FN. Wie gehts?",
+      "latency_seconds": 66.54734826087952,
+      "retrieval_latency_seconds": 65.8047091960907,
+      "answer_latency_seconds": 0.7426390647888184,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 10,
+        "total_tokens": 42,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 1,
+      "category": 1,
+      "question": "In session 2 of the German deL1L2IM conversation, what did N01 say in the turn about \"Hey LEARNER01_FN, guten Abend!\"?",
+      "prediction": "mit links - left",
+      "reference": "Hey LEARNER01_FN, guten Abend!",
+      "latency_seconds": 64.42524456977844,
+      "retrieval_latency_seconds": 63.90897822380066,
+      "answer_latency_seconds": 0.5162663459777832,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 4,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 2,
+      "category": 1,
+      "question": "In session 3 of the German deL1L2IM conversation, what did L01 say in the turn about \"Hallo!))\"?",
+      "prediction": "mit links",
+      "reference": "Hallo!))",
+      "latency_seconds": 61.78323006629944,
+      "retrieval_latency_seconds": 61.1805853843689,
+      "answer_latency_seconds": 0.602644681930542,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 2,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 3,
+      "category": 1,
+      "question": "In session 4 of the German deL1L2IM conversation, what did N01 say in the turn about \"Guten Abend! Geht es dir heute wieder...\"?",
+      "prediction": "Geht es dir heute wieder...",
+      "reference": "Guten Abend! Geht es dir heute wieder besser? :-)",
+      "latency_seconds": 63.02995777130127,
+      "retrieval_latency_seconds": 62.363678216934204,
+      "answer_latency_seconds": 0.6662795543670654,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 6,
+        "total_tokens": 38,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 4,
+      "category": 1,
+      "question": "In session 5 of the German deL1L2IM conversation, what did L01 say in the turn about \"Hallo!!!\"?",
+      "prediction": "Concise answer in a short phrase",
+      "reference": "Hallo!!!",
+      "latency_seconds": 59.7713406085968,
+      "retrieval_latency_seconds": 59.12813925743103,
+      "answer_latency_seconds": 0.6432013511657715,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 8,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 5,
+      "category": 1,
+      "question": "In session 6 of the German deL1L2IM conversation, what did N01 say in the turn about \"Einen schönen guten Abend! Und: Nacht...\"?",
+      "prediction": "Gute Nacht, bis Montag)",
+      "reference": "Einen schönen guten Abend! Und: Nachträglich alles Gute zu Deinem Geburtstag! :-)",
+      "latency_seconds": 64.39521288871765,
+      "retrieval_latency_seconds": 63.47924733161926,
+      "answer_latency_seconds": 0.9159655570983887,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 5,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 6,
+      "category": 1,
+      "question": "In session 7 of the German deL1L2IM conversation, what did L01 say in the turn about \"Hallo!!!!!!!!!!!\"?",
+      "prediction": "without problems",
+      "reference": "Hallo!!!!!!!!!!!",
+      "latency_seconds": 57.23574209213257,
+      "retrieval_latency_seconds": 56.75918650627136,
+      "answer_latency_seconds": 0.47655558586120605,
+      "token_usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 4,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 7,
+      "category": 1,
+      "question": "In session 8 of the German deL1L2IM conversation, what did N01 say in the turn about \"Einen schönen guten Abend! Wie geht e...\"?",
+      "prediction": "Gute Nacht, bis Montag)",
+      "reference": "Einen schönen guten Abend! Wie geht es dir?",
+      "latency_seconds": 64.41161394119263,
+      "retrieval_latency_seconds": 63.17669630050659,
+      "answer_latency_seconds": 1.2349176406860352,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 5,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 8,
+      "category": 1,
+      "question": "In session 1 of the German deL1L2IM conversation, what did L01 say in the turn about \"Tschüss.\"?",
+      "prediction": "Tschüss",
+      "reference": "Tschüss.",
+      "latency_seconds": 62.994629859924316,
+      "retrieval_latency_seconds": 62.412471771240234,
+      "answer_latency_seconds": 0.582158088684082,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 1,
+        "total_tokens": 25,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 9,
+      "category": 1,
+      "question": "In session 2 of the German deL1L2IM conversation, what did L01 say in the turn about \"Danke, guteNacht\"?",
+      "prediction": "Gute Nacht, bis Montag)",
+      "reference": "Danke, guteNacht",
+      "latency_seconds": 64.40270614624023,
+      "retrieval_latency_seconds": 63.47199106216431,
+      "answer_latency_seconds": 0.9307150840759277,
+      "token_usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 5,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 10,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did N01 say in session 1 and what did L01 say in session 2?",
+      "prediction": "N01: Explain Lieder-Methode, L01: Goodbye wishes",
+      "reference": "Session 1: So, hallo, erstmal. Ich bin NATIVE01_FN. Wie gehts? Session 2: Danke, guteNacht",
+      "latency_seconds": 57.3376624584198,
+      "retrieval_latency_seconds": 56.355056047439575,
+      "answer_latency_seconds": 0.9826064109802246,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 12,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 11,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did N01 say in session 2 and what did L01 say in session 3?",
+      "prediction": "without problems",
+      "reference": "Session 2: Hey LEARNER01_FN, guten Abend! Session 3: Tschüss.",
+      "latency_seconds": 56.67254877090454,
+      "retrieval_latency_seconds": 56.059858083724976,
+      "answer_latency_seconds": 0.6126906871795654,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 4,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 12,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L01 say in session 3 and what did N01 say in session 4?",
+      "prediction": "mit links means without problems",
+      "reference": "Session 3: Hallo!)) Session 4: Danke ;-)",
+      "latency_seconds": 56.2923948764801,
+      "retrieval_latency_seconds": 55.49915170669556,
+      "answer_latency_seconds": 0.7932431697845459,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 8,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 13,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did N01 say in session 4 and what did L01 say in session 5?",
+      "prediction": "mit links means without problems",
+      "reference": "Session 4: Guten Abend! Geht es dir heute wieder besser? :-) Session 5: Danke, bis Montag",
+      "latency_seconds": 46.99079442024231,
+      "retrieval_latency_seconds": 46.426875829696655,
+      "answer_latency_seconds": 0.5639185905456543,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 8,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 14,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L01 say in session 5 and what did N01 say in session 6?",
+      "prediction": "L01: 'I'm doing well, preparing for a German exam.'",
+      "reference": "Session 5: Hallo!!! Session 6: okay, vielen Dank! Gute Nacht!",
+      "latency_seconds": 48.96100664138794,
+      "retrieval_latency_seconds": 48.1196346282959,
+      "answer_latency_seconds": 0.841372013092041,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 12,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 15,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did N01 say in session 6 and what did N01 say in session 7?",
+      "prediction": "without problems",
+      "reference": "Session 6: Einen schönen guten Abend! Und: Nachträglich alles Gute zu Deinem Geb... Session 7: Super :-) Dann bis dahin. Und wie gesagt: Alles Gute für morgen. Gute...",
+      "latency_seconds": 45.459176540374756,
+      "retrieval_latency_seconds": 44.98539710044861,
+      "answer_latency_seconds": 0.47377943992614746,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 4,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 16,
+      "category": 3,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: N01's session 1 statement or N01's session 2 statement?",
+      "prediction": "12 June 2023",
+      "reference": "Earlier session 1: So, hallo, erstmal. Ich bin NATIVE01_FN. Wie gehts?",
+      "latency_seconds": 56.727867126464844,
+      "retrieval_latency_seconds": 55.86263918876648,
+      "answer_latency_seconds": 0.8652279376983643,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 3,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 17,
+      "category": 3,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: N01's session 2 statement or L01's session 3 statement?",
+      "prediction": "12 June 2023",
+      "reference": "Earlier session 2: Hey LEARNER01_FN, guten Abend!",
+      "latency_seconds": 64.3842556476593,
+      "retrieval_latency_seconds": 63.31402611732483,
+      "answer_latency_seconds": 1.0702295303344727,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 3,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 18,
+      "category": 4,
+      "question": "What general conversational act is shown by N01's cited turn in the German deL1L2IM conversation?",
+      "prediction": "Ask about weekend activities",
+      "reference": "asking a question",
+      "latency_seconds": 44.05590867996216,
+      "retrieval_latency_seconds": 43.44213628768921,
+      "answer_latency_seconds": 0.6137723922729492,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 7,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 19,
+      "category": 4,
+      "question": "What general conversational act is shown by N01's cited turn in the German deL1L2IM conversation?",
+      "prediction": "Inquire about weekend activities",
+      "reference": "greeting or opening the conversation",
+      "latency_seconds": 44.14425086975098,
+      "retrieval_latency_seconds": 43.58924889564514,
+      "answer_latency_seconds": 0.555001974105835,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 8,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 20,
+      "category": 1,
+      "question": "In session 1 of the German deL1L2IM conversation, what did L02 say in the turn about \"Hallo! Ich heiße LEARNER02_FN. Wie ge...\"?",
+      "prediction": "Hallo! Ich heiße LEARNER02_FN. Wie geht es?",
+      "reference": "Hallo! Ich heiße LEARNER02_FN. Wie geht's?",
+      "latency_seconds": 60.405420780181885,
+      "retrieval_latency_seconds": 58.93730401992798,
+      "answer_latency_seconds": 1.4681167602539062,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 10,
+        "total_tokens": 42,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 21,
+      "category": 1,
+      "question": "In session 2 of the German deL1L2IM conversation, what did L02 say in the turn about \"Guten Abend, NATIVE01_FN!\"?",
+      "prediction": "Happy graduation",
+      "reference": "Guten Abend, NATIVE01_FN!",
+      "latency_seconds": 60.115880489349365,
+      "retrieval_latency_seconds": 58.907740354537964,
+      "answer_latency_seconds": 1.2081401348114014,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 4,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 22,
+      "category": 1,
+      "question": "In session 3 of the German deL1L2IM conversation, what did L02 say in the turn about \"Guten Abend, NATIVE01_FN! Wie geht's?...\"?",
+      "prediction": "Guten Abend, NATIVE01_FN! Wie geht's...",
+      "reference": "Guten Abend, NATIVE01_FN! Wie geht's? Ich habe gerade mein Diplom fertiggemacht und bin sehr...",
+      "latency_seconds": 60.42460083961487,
+      "retrieval_latency_seconds": 59.234886169433594,
+      "answer_latency_seconds": 1.1897146701812744,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 9,
+        "total_tokens": 41,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 23,
+      "category": 1,
+      "question": "In session 4 of the German deL1L2IM conversation, what did N01 say in the turn about \"Einen schönen guten Abend! Alles klar...\"?",
+      "prediction": "Dann bist du ein Glückspilz",
+      "reference": "Einen schönen guten Abend! Alles klar bei dir?",
+      "latency_seconds": 60.269278049468994,
+      "retrieval_latency_seconds": 58.99715971946716,
+      "answer_latency_seconds": 1.272118330001831,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 6,
+        "total_tokens": 38,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 24,
+      "category": 1,
+      "question": "In session 5 of the German deL1L2IM conversation, what did L02 say in the turn about \"Guten Abend!\"?",
+      "prediction": "Guten Abend!",
+      "reference": "Guten Abend!",
+      "latency_seconds": 58.894301652908325,
+      "retrieval_latency_seconds": 58.01362133026123,
+      "answer_latency_seconds": 0.8806803226470947,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 3,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 25,
+      "category": 1,
+      "question": "In session 6 of the German deL1L2IM conversation, what did L02 say in the turn about \"Guten Abend!\"?",
+      "prediction": "Guten Abend!",
+      "reference": "Guten Abend!",
+      "latency_seconds": 46.879801988601685,
+      "retrieval_latency_seconds": 46.39984059333801,
+      "answer_latency_seconds": 0.4799613952636719,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 3,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 26,
+      "category": 1,
+      "question": "In session 7 of the German deL1L2IM conversation, what did N01 say in the turn about \"Hey LEARNER02_FN!\"?",
+      "prediction": "Good luck",
+      "reference": "Hey LEARNER02_FN!",
+      "latency_seconds": 60.01930904388428,
+      "retrieval_latency_seconds": 58.676700592041016,
+      "answer_latency_seconds": 1.3426084518432617,
+      "token_usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 2,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 27,
+      "category": 1,
+      "question": "In session 8 of the German deL1L2IM conversation, what did N01 say in the turn about \"Hey LEARNER02_FN!\"?",
+      "prediction": "Sehr gut :-)",
+      "reference": "Hey LEARNER02_FN!",
+      "latency_seconds": 59.95296049118042,
+      "retrieval_latency_seconds": 58.33754253387451,
+      "answer_latency_seconds": 1.6154179573059082,
+      "token_usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 3,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 28,
+      "category": 1,
+      "question": "In session 1 of the German deL1L2IM conversation, what did N01 say in the turn about \"Bestens! Bis dahin! Tschüss.\"?",
+      "prediction": "Bestens! Bis dahin! Tschüss.",
+      "reference": "Bestens! Bis dahin! Tschüss.",
+      "latency_seconds": 60.28467082977295,
+      "retrieval_latency_seconds": 58.917521715164185,
+      "answer_latency_seconds": 1.3671491146087646,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 7,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 29,
+      "category": 1,
+      "question": "In session 2 of the German deL1L2IM conversation, what did N01 say in the turn about \"Tschüss und gute Nacht!\"?",
+      "prediction": "Tschüss und gute Nacht!",
+      "reference": "Tschüss und gute Nacht!",
+      "latency_seconds": 60.1461124420166,
+      "retrieval_latency_seconds": 58.79981756210327,
+      "answer_latency_seconds": 1.34629487991333,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 5,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 30,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L02 say in session 1 and what did N01 say in session 2?",
+      "prediction": "L02: 'Sofies Welt', N01: success in exams",
+      "reference": "Session 1: Hallo! Ich heiße LEARNER02_FN. Wie geht's? Session 2: Tschüss und gute Nacht!",
+      "latency_seconds": 45.94606375694275,
+      "retrieval_latency_seconds": 45.11831521987915,
+      "answer_latency_seconds": 0.8277485370635986,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 10,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 31,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L02 say in session 2 and what did N01 say in session 3?",
+      "prediction": "N/A",
+      "reference": "Session 2: Guten Abend, NATIVE01_FN! Session 3: Ganz meinerseits :-) Bis Montag!",
+      "latency_seconds": 51.136391162872314,
+      "retrieval_latency_seconds": 50.59127974510193,
+      "answer_latency_seconds": 0.5451114177703857,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 1,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 32,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L02 say in session 3 and what did N01 say in session 4?",
+      "prediction": "L02: 'I hope our chat has been useful.'",
+      "reference": "Session 3: Guten Abend, NATIVE01_FN! Wie geht's? Ich habe gerade mein Diplom fer... Session 4: Kein Problem! Gute Nacht & bis Donnerstag :-)",
+      "latency_seconds": 57.76398682594299,
+      "retrieval_latency_seconds": 56.94863486289978,
+      "answer_latency_seconds": 0.8153519630432129,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 9,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 33,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did N01 say in session 4 and what did N01 say in session 5?",
+      "prediction": "Sehr gut :-)",
+      "reference": "Session 4: Einen schönen guten Abend! Alles klar bei dir? Session 5: :-) ciao",
+      "latency_seconds": 44.89423847198486,
+      "retrieval_latency_seconds": 44.340373277664185,
+      "answer_latency_seconds": 0.5538651943206787,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 3,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 34,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L02 say in session 5 and what did L02 say in session 6?",
+      "prediction": "Not specified in context",
+      "reference": "Session 5: Guten Abend! Session 6: Gute Nacht!",
+      "latency_seconds": 50.32205295562744,
+      "retrieval_latency_seconds": 49.7808632850647,
+      "answer_latency_seconds": 0.5411896705627441,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 6,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 35,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L02 say in session 6 and what did N01 say in session 7?",
+      "prediction": "L02 said nothing in session 6, N01 said nothing in session 7",
+      "reference": "Session 6: Guten Abend! Session 7: Danke, tschüss1",
+      "latency_seconds": 56.50047183036804,
+      "retrieval_latency_seconds": 55.477703332901,
+      "answer_latency_seconds": 1.022768497467041,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 15,
+        "total_tokens": 40,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 36,
+      "category": 3,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L02's session 1 statement or L02's session 2 statement?",
+      "prediction": "20 June 2023",
+      "reference": "Earlier session 1: Hallo! Ich heiße LEARNER02_FN. Wie geht's?",
+      "latency_seconds": 44.96616268157959,
+      "retrieval_latency_seconds": 44.15032124519348,
+      "answer_latency_seconds": 0.8158414363861084,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 3,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 37,
+      "category": 3,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L02's session 2 statement or L02's session 3 statement?",
+      "prediction": "16 May 2023",
+      "reference": "Earlier session 2: Guten Abend, NATIVE01_FN!",
+      "latency_seconds": 60.07071304321289,
+      "retrieval_latency_seconds": 58.37970590591431,
+      "answer_latency_seconds": 1.691007137298584,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 2,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 38,
+      "category": 4,
+      "question": "What general conversational act is shown by L02's cited turn in the German deL1L2IM conversation?",
+      "prediction": "Compliment",
+      "reference": "asking a question",
+      "latency_seconds": 40.66659355163574,
+      "retrieval_latency_seconds": 40.07355070114136,
+      "answer_latency_seconds": 0.5930428504943848,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 2,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 39,
+      "category": 4,
+      "question": "What general conversational act is shown by L02's cited turn in the German deL1L2IM conversation?",
+      "prediction": "Compliment",
+      "reference": "greeting or opening the conversation",
+      "latency_seconds": 60.15348529815674,
+      "retrieval_latency_seconds": 59.10623049736023,
+      "answer_latency_seconds": 1.0472548007965088,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 2,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 40,
+      "category": 1,
+      "question": "In session 1 of the German deL1L2IM conversation, what did L03 say in the turn about \"Hallo! Entschuldigung, Ich weiß nicht...\"?",
+      "prediction": "Hallo! Entschuldigung, Ich weiß nicht...",
+      "reference": "Hallo! Entschuldigung, Ich weiß nicht, wie heißen Sie. Ich bitte um Verzeihung, ich habe tota...",
+      "latency_seconds": 58.69022727012634,
+      "retrieval_latency_seconds": 56.44550561904907,
+      "answer_latency_seconds": 2.2447216510772705,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 10,
+        "total_tokens": 42,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 41,
+      "category": 1,
+      "question": "In session 2 of the German deL1L2IM conversation, what did L03 say in the turn about \"Hallo, NATIVE02_FN! Wie geht`s? Wie h...\"?",
+      "prediction": "Wie geht`s?",
+      "reference": "Hallo, NATIVE02_FN! Wie geht`s? Wie hat gestern die deutsche Mannschaft gespielt?",
+      "latency_seconds": 58.86740517616272,
+      "retrieval_latency_seconds": 58.009883403778076,
+      "answer_latency_seconds": 0.8575217723846436,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 42,
+      "category": 1,
+      "question": "In session 3 of the German deL1L2IM conversation, what did L03 say in the turn about \"Hallo, NATIVE02_FN! Wie geht´s? wie w...\"?",
+      "prediction": "2:00 AM on 3 May 2023",
+      "reference": "Hallo, NATIVE02_FN! Wie geht´s? wie war das Wochenende?",
+      "latency_seconds": 59.18445563316345,
+      "retrieval_latency_seconds": 58.308615922927856,
+      "answer_latency_seconds": 0.8758397102355957,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 5,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 43,
+      "category": 1,
+      "question": "In session 4 of the German deL1L2IM conversation, what did L03 say in the turn about \"Hallo, NATIVE02_FN, ich sehe, dass du...\"?",
+      "prediction": "Hallo, NATIVE02_FN, ich sehe, dass du...",
+      "reference": "Hallo, NATIVE02_FN, ich sehe, dass du schon online ist!",
+      "latency_seconds": 59.13743996620178,
+      "retrieval_latency_seconds": 58.16688656806946,
+      "answer_latency_seconds": 0.9705533981323242,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 10,
+        "total_tokens": 42,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 44,
+      "category": 1,
+      "question": "In session 5 of the German deL1L2IM conversation, what did L03 say in the turn about \"Tag, NATIVE02_FN! wie geht´s? wie war...\"?",
+      "prediction": "wie war...",
+      "reference": "Tag, NATIVE02_FN! wie geht´s? wie war deine Dienstfahrt?",
+      "latency_seconds": 58.66629481315613,
+      "retrieval_latency_seconds": 57.33535671234131,
+      "answer_latency_seconds": 1.3309381008148193,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 2,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 45,
+      "category": 1,
+      "question": "In session 6 of the German deL1L2IM conversation, what did L03 say in the turn about \"Hi, NATIVE02_FN! wie geht`s?\"?",
+      "prediction": "nice evening",
+      "reference": "Hi, NATIVE02_FN! wie geht`s?",
+      "latency_seconds": 58.706419944763184,
+      "retrieval_latency_seconds": 57.54290437698364,
+      "answer_latency_seconds": 1.163515567779541,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 3,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 46,
+      "category": 1,
+      "question": "In session 7 of the German deL1L2IM conversation, what did L03 say in the turn about \"Hi, NATIVE02_FN!!!! bist du online? a...\"?",
+      "prediction": "Hi, bist du online?",
+      "reference": "Hi, NATIVE02_FN!!!! bist du online? antworte mir bitte etwas :)",
+      "latency_seconds": 58.83728528022766,
+      "retrieval_latency_seconds": 57.79616904258728,
+      "answer_latency_seconds": 1.0411162376403809,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 4,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 47,
+      "category": 1,
+      "question": "In session 8 of the German deL1L2IM conversation, what did L03 say in the turn about \"Hi, wie geht´s?\"?",
+      "prediction": "Hi, wie geht´s?",
+      "reference": "Hi, wie geht´s?",
+      "latency_seconds": 50.92011475563049,
+      "retrieval_latency_seconds": 50.26335287094116,
+      "answer_latency_seconds": 0.656761884689331,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 3,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 48,
+      "category": 1,
+      "question": "In session 1 of the German deL1L2IM conversation, what did L03 say in the turn about \"bis Mittwoch!\"?",
+      "prediction": "bis Mittwoch!",
+      "reference": "bis Mittwoch!",
+      "latency_seconds": 58.074440240859985,
+      "retrieval_latency_seconds": 56.374850034713745,
+      "answer_latency_seconds": 1.6995902061462402,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 3,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 49,
+      "category": 1,
+      "question": "In session 2 of the German deL1L2IM conversation, what did N02 say in the turn about \"Danke, dir auch!!\"?",
+      "prediction": "great evening",
+      "reference": "Danke, dir auch!!",
+      "latency_seconds": 57.85290813446045,
+      "retrieval_latency_seconds": 56.26213788986206,
+      "answer_latency_seconds": 1.5907702445983887,
+      "token_usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 3,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 50,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L03 say in session 1 and what did N02 say in session 2?",
+      "prediction": "N02 wished L03 a great evening",
+      "reference": "Session 1: Hallo! Entschuldigung, Ich weiß nicht, wie heißen Sie. Ich bitte um V... Session 2: Danke, dir auch!!",
+      "latency_seconds": 48.148834466934204,
+      "retrieval_latency_seconds": 47.44698691368103,
+      "answer_latency_seconds": 0.7018475532531738,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 7,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 51,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L03 say in session 2 and what did L03 say in session 3?",
+      "prediction": "L03 expressed doubt about the phraseologism",
+      "reference": "Session 2: Hallo, NATIVE02_FN! Wie geht`s? Wie hat gestern die deutsche Mannscha... Session 3: Danke, NATIVE02_FN!",
+      "latency_seconds": 45.013200521469116,
+      "retrieval_latency_seconds": 44.16150665283203,
+      "answer_latency_seconds": 0.851693868637085,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 10,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 52,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L03 say in session 3 and what did N02 say in session 4?",
+      "prediction": "21 June 2023 at 9:00 AM",
+      "reference": "Session 3: Hallo, NATIVE02_FN! Wie geht´s? wie war das Wochenende? Session 4: danke! Ciao :)",
+      "latency_seconds": 54.79866051673889,
+      "retrieval_latency_seconds": 53.79103207588196,
+      "answer_latency_seconds": 1.0076284408569336,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 53,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L03 say in session 4 and what did L03 say in session 5?",
+      "prediction": "I don't have the information",
+      "reference": "Session 4: Hallo, NATIVE02_FN, ich sehe, dass du schon online ist! Session 5: Tschüss!",
+      "latency_seconds": 44.84678936004639,
+      "retrieval_latency_seconds": 43.99418592453003,
+      "answer_latency_seconds": 0.8526034355163574,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 7,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 54,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L03 say in session 5 and what did N02 say in session 6?",
+      "prediction": "No information provided",
+      "reference": "Session 5: Tag, NATIVE02_FN! wie geht´s? wie war deine Dienstfahrt? Session 6: danke. bis dann!",
+      "latency_seconds": 58.06141138076782,
+      "retrieval_latency_seconds": 56.54292416572571,
+      "answer_latency_seconds": 1.5184872150421143,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 55,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L03 say in session 6 and what did N02 say in session 7?",
+      "prediction": "L03 in session 6, N02 in session 7",
+      "reference": "Session 6: Hi, NATIVE02_FN! wie geht`s? Session 7: ok super! dann wünsch ich dir noch einen schönen Tag! Bis bald!",
+      "latency_seconds": 55.287750244140625,
+      "retrieval_latency_seconds": 54.41109085083008,
+      "answer_latency_seconds": 0.8766593933105469,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 8,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 56,
+      "category": 3,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L03's session 1 statement or L03's session 2 statement?",
+      "prediction": "3 May 2023",
+      "reference": "Earlier session 1: Hallo! Entschuldigung, Ich weiß nicht, wie heißen Sie. Ich bitte um V...",
+      "latency_seconds": 44.90443134307861,
+      "retrieval_latency_seconds": 44.07139229774475,
+      "answer_latency_seconds": 0.8330390453338623,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 2,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 57,
+      "category": 3,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L03's session 2 statement or L03's session 3 statement?",
+      "prediction": "1 May 2023",
+      "reference": "Earlier session 2: Hallo, NATIVE02_FN! Wie geht`s? Wie hat gestern die deutsche Mannscha...",
+      "latency_seconds": 58.23996353149414,
+      "retrieval_latency_seconds": 56.25300312042236,
+      "answer_latency_seconds": 1.9869604110717773,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 2,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 58,
+      "category": 4,
+      "question": "What general conversational act is shown by L03's cited turn in the German deL1L2IM conversation?",
+      "prediction": "Agree on idiomatic expressions",
+      "reference": "greeting or opening the conversation",
+      "latency_seconds": 37.34484577178955,
+      "retrieval_latency_seconds": 36.70127487182617,
+      "answer_latency_seconds": 0.6435708999633789,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 7,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 59,
+      "category": 4,
+      "question": "What general conversational act is shown by L03's cited turn in the German deL1L2IM conversation?",
+      "prediction": "Wish and goodbye",
+      "reference": "asking a question",
+      "latency_seconds": 42.01598238945007,
+      "retrieval_latency_seconds": 41.351070165634155,
+      "answer_latency_seconds": 0.664912223815918,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 4,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 60,
+      "category": 1,
+      "question": "In session 1 of the German deL1L2IM conversation, what did N02 say in the turn about \"Hallo LEARNER04_FN :)\"?",
+      "prediction": "goodbye",
+      "reference": "Hallo LEARNER04_FN :)",
+      "latency_seconds": 56.81368970870972,
+      "retrieval_latency_seconds": 56.304370164871216,
+      "answer_latency_seconds": 0.509319543838501,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 1,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 61,
+      "category": 1,
+      "question": "In session 2 of the German deL1L2IM conversation, what did L04 say in the turn about \"Hallo, NATIVE02_FN)\"?",
+      "prediction": "goodbye",
+      "reference": "Hallo, NATIVE02_FN)",
+      "latency_seconds": 59.0249662399292,
+      "retrieval_latency_seconds": 57.98200702667236,
+      "answer_latency_seconds": 1.042959213256836,
+      "token_usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 1,
+        "total_tokens": 27,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 62,
+      "category": 1,
+      "question": "In session 3 of the German deL1L2IM conversation, what did L04 say in the turn about \"hi, NATIVE02_FN. wie gehts dir?\"?",
+      "prediction": "hi, how are you?",
+      "reference": "hi, NATIVE02_FN. wie gehts dir?",
+      "latency_seconds": 59.17498731613159,
+      "retrieval_latency_seconds": 58.32879185676575,
+      "answer_latency_seconds": 0.8461954593658447,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 4,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 63,
+      "category": 1,
+      "question": "In session 4 of the German deL1L2IM conversation, what did L04 say in the turn about \"Hallo, NATIVE02_FN)\"?",
+      "prediction": "goodbye",
+      "reference": "Hallo, NATIVE02_FN)",
+      "latency_seconds": 59.06671762466431,
+      "retrieval_latency_seconds": 58.10621166229248,
+      "answer_latency_seconds": 0.9605059623718262,
+      "token_usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 1,
+        "total_tokens": 27,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 64,
+      "category": 1,
+      "question": "In session 5 of the German deL1L2IM conversation, what did L04 say in the turn about \"hallo, NATIVE02_FN\"?",
+      "prediction": "goodbye",
+      "reference": "hallo, NATIVE02_FN",
+      "latency_seconds": 54.932809352874756,
+      "retrieval_latency_seconds": 54.36386561393738,
+      "answer_latency_seconds": 0.5689437389373779,
+      "token_usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 1,
+        "total_tokens": 27,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 65,
+      "category": 1,
+      "question": "In session 6 of the German deL1L2IM conversation, what did L04 say in the turn about \"hallo, NATIVE02_FN))\"?",
+      "prediction": "tschuss",
+      "reference": "hallo, NATIVE02_FN))",
+      "latency_seconds": 59.12872076034546,
+      "retrieval_latency_seconds": 58.23836970329285,
+      "answer_latency_seconds": 0.8903510570526123,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 1,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 66,
+      "category": 1,
+      "question": "In session 7 of the German deL1L2IM conversation, what did L04 say in the turn about \"Hallo, NATIVE02_FN!! Wie gehts dir?\"?",
+      "prediction": "tschuss",
+      "reference": "Hallo, NATIVE02_FN!! Wie gehts dir?",
+      "latency_seconds": 59.124515771865845,
+      "retrieval_latency_seconds": 58.30554795265198,
+      "answer_latency_seconds": 0.8189678192138672,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 1,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 67,
+      "category": 1,
+      "question": "In session 8 of the German deL1L2IM conversation, what did L04 say in the turn about \"hallo, NATIVE02_FN! wie gehts dir?\"?",
+      "prediction": "goodbye",
+      "reference": "hallo, NATIVE02_FN! wie gehts dir?",
+      "latency_seconds": 59.14783978462219,
+      "retrieval_latency_seconds": 58.55260610580444,
+      "answer_latency_seconds": 0.595233678817749,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 1,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 68,
+      "category": 1,
+      "question": "In session 1 of the German deL1L2IM conversation, what did N02 say in the turn about \"Danke auch, schönen Abend noch\"?",
+      "prediction": "nice to have friends in Germany",
+      "reference": "Danke auch, schönen Abend noch",
+      "latency_seconds": 58.375815868377686,
+      "retrieval_latency_seconds": 57.19629716873169,
+      "answer_latency_seconds": 1.179518699645996,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 7,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 69,
+      "category": 1,
+      "question": "In session 2 of the German deL1L2IM conversation, what did N02 say in the turn about \"gerne, nichts zu danken :)\"?",
+      "prediction": "nicht zu danken :)",
+      "reference": "gerne, nichts zu danken :)",
+      "latency_seconds": 54.977898359298706,
+      "retrieval_latency_seconds": 54.28314709663391,
+      "answer_latency_seconds": 0.6947512626647949,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 4,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 70,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did N02 say in session 1 and what did N02 say in session 2?",
+      "prediction": "N02 asked about exam process and expressed concern",
+      "reference": "Session 1: Hallo LEARNER04_FN :) Session 2: gerne, nichts zu danken :)",
+      "latency_seconds": 48.67833614349365,
+      "retrieval_latency_seconds": 47.88110828399658,
+      "answer_latency_seconds": 0.7972278594970703,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 12,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 71,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L04 say in session 2 and what did L04 say in session 3?",
+      "prediction": "unknown",
+      "reference": "Session 2: Hallo, NATIVE02_FN) Session 3: tschüss))",
+      "latency_seconds": 44.717066526412964,
+      "retrieval_latency_seconds": 44.247891664505005,
+      "answer_latency_seconds": 0.469174861907959,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 1,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 72,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L04 say in session 3 and what did N02 say in session 4?",
+      "prediction": "L04: I'm eager to move to Germany.",
+      "reference": "Session 3: hi, NATIVE02_FN. wie gehts dir? Session 4: und viel Erfolg! Vielleicht bekommst du diesmal eine 9 :)",
+      "latency_seconds": 53.44183158874512,
+      "retrieval_latency_seconds": 52.60926079750061,
+      "answer_latency_seconds": 0.8325707912445068,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 8,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 73,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L04 say in session 4 and what did L04 say in session 5?",
+      "prediction": "L04 said he had taken both German and English tests.",
+      "reference": "Session 4: Hallo, NATIVE02_FN) Session 5: bye bye))",
+      "latency_seconds": 52.05068850517273,
+      "retrieval_latency_seconds": 51.253119707107544,
+      "answer_latency_seconds": 0.7975687980651855,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 13,
+        "total_tokens": 38,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 74,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L04 say in session 5 and what did L04 say in session 6?",
+      "prediction": "tschuss",
+      "reference": "Session 5: hallo, NATIVE02_FN Session 6: bist du noch da?",
+      "latency_seconds": 49.829875469207764,
+      "retrieval_latency_seconds": 49.299311876297,
+      "answer_latency_seconds": 0.5305635929107666,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 1,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 75,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L04 say in session 6 and what did N02 say in session 7?",
+      "prediction": "Goodbye",
+      "reference": "Session 6: hallo, NATIVE02_FN)) Session 7: ah ok :) dann poka :) und gute nacht :)",
+      "latency_seconds": 54.19133186340332,
+      "retrieval_latency_seconds": 53.59356617927551,
+      "answer_latency_seconds": 0.5977656841278076,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 1,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 76,
+      "category": 3,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: N02's session 1 statement or L04's session 2 statement?",
+      "prediction": "15 June 2023 at 8:00 AM",
+      "reference": "Earlier session 1: Hallo LEARNER04_FN :)",
+      "latency_seconds": 59.13182091712952,
+      "retrieval_latency_seconds": 57.60944223403931,
+      "answer_latency_seconds": 1.52237868309021,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 5,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 77,
+      "category": 3,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L04's session 2 statement or L04's session 3 statement?",
+      "prediction": "15 June 2023 at 9:00 AM",
+      "reference": "Earlier session 2: Hallo, NATIVE02_FN)",
+      "latency_seconds": 58.93237257003784,
+      "retrieval_latency_seconds": 57.07878804206848,
+      "answer_latency_seconds": 1.8535845279693604,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 5,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 78,
+      "category": 4,
+      "question": "What general conversational act is shown by N02's cited turn in the German deL1L2IM conversation?",
+      "prediction": "Greeting",
+      "reference": "greeting or opening the conversation",
+      "latency_seconds": 39.21900153160095,
+      "retrieval_latency_seconds": 38.67439651489258,
+      "answer_latency_seconds": 0.544605016708374,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 2,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 79,
+      "category": 4,
+      "question": "What general conversational act is shown by L04's cited turn in the German deL1L2IM conversation?",
+      "prediction": "Inquiry about work status",
+      "reference": "greeting or opening the conversation",
+      "latency_seconds": 43.24681091308594,
+      "retrieval_latency_seconds": 42.67828869819641,
+      "answer_latency_seconds": 0.5685222148895264,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 6,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 80,
+      "category": 1,
+      "question": "In session 1 of the German deL1L2IM conversation, what did L05 say in the turn about \"Guten Abend, ich heiße LEARNER05_FN,...\"?",
+      "prediction": "Guten Abend, ich heiße LEARNER05_FN,...",
+      "reference": "Guten Abend, ich heiße LEARNER05_FN, und ich bin aus Weißrußland, und ich will mit Ihnen im R...",
+      "latency_seconds": 57.842530727386475,
+      "retrieval_latency_seconds": 56.93851685523987,
+      "answer_latency_seconds": 0.9040138721466064,
+      "token_usage": {
+        "prompt_tokens": 31,
+        "completion_tokens": 9,
+        "total_tokens": 40,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 81,
+      "category": 1,
+      "question": "In session 2 of the German deL1L2IM conversation, what did L05 say in the turn about \"Hallo, NATIVE02_FN! Wie geht es?\"?",
+      "prediction": "Wie geht es?",
+      "reference": "Hallo, NATIVE02_FN! Wie geht es?",
+      "latency_seconds": 58.87168788909912,
+      "retrieval_latency_seconds": 58.04214334487915,
+      "answer_latency_seconds": 0.8295445442199707,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 3,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 82,
+      "category": 1,
+      "question": "In session 3 of the German deL1L2IM conversation, what did L05 say in the turn about \"Hallo!!!! Wie war dein Tag? Ich hoffe...\"?",
+      "prediction": "Concise answer in a short phrase",
+      "reference": "Hallo!!!! Wie war dein Tag? Ich hoffe, alles war wunderbar!!;))))",
+      "latency_seconds": 58.96605062484741,
+      "retrieval_latency_seconds": 57.872039556503296,
+      "answer_latency_seconds": 1.0940110683441162,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 8,
+        "total_tokens": 40,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 83,
+      "category": 1,
+      "question": "In session 4 of the German deL1L2IM conversation, what did L05 say in the turn about \"Hallo! Wie geht es? Wie waren deine A...\"?",
+      "prediction": "Concise answer in a short phrase",
+      "reference": "Hallo! Wie geht es? Wie waren deine Ausgehtage?",
+      "latency_seconds": 58.91978931427002,
+      "retrieval_latency_seconds": 57.76039791107178,
+      "answer_latency_seconds": 1.1593914031982422,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 8,
+        "total_tokens": 40,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 84,
+      "category": 1,
+      "question": "In session 5 of the German deL1L2IM conversation, what did L05 say in the turn about \"Hallo! Entschuldig mich für meine Ver...\"?",
+      "prediction": "9 June 2023 at 8:00 AM",
+      "reference": "Hallo! Entschuldig mich für meine Verspätung, ich arbeitete im Gemüsegarten und bemerkte nich...",
+      "latency_seconds": 58.94467258453369,
+      "retrieval_latency_seconds": 57.501198291778564,
+      "answer_latency_seconds": 1.443474292755127,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 5,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 85,
+      "category": 1,
+      "question": "In session 6 of the German deL1L2IM conversation, what did L05 say in the turn about \"Hallo, meine liebe NATIVE02_FN! Bitte...\"?",
+      "prediction": "Hallo, meine liebe NATIVE02_FN! Bitte...",
+      "reference": "Hallo, meine liebe NATIVE02_FN! Bitte vergib mir für die Tatsache, dass gestern nicht im Stan...",
+      "latency_seconds": 55.86769390106201,
+      "retrieval_latency_seconds": 55.103511810302734,
+      "answer_latency_seconds": 0.7641820907592773,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 10,
+        "total_tokens": 42,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 86,
+      "category": 1,
+      "question": "In session 7 of the German deL1L2IM conversation, what did L05 say in the turn about \"Hallo, wie geht es dir?\"?",
+      "prediction": "Good night",
+      "reference": "Hallo, wie geht es dir?",
+      "latency_seconds": 58.68532466888428,
+      "retrieval_latency_seconds": 57.55590295791626,
+      "answer_latency_seconds": 1.1294217109680176,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 2,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 87,
+      "category": 1,
+      "question": "In session 8 of the German deL1L2IM conversation, what did L05 say in the turn about \"Hallo, NATIVE02_FN! Wie geht es? Wie...\"?",
+      "prediction": "Converse about weekend activities",
+      "reference": "Hallo, NATIVE02_FN! Wie geht es? Wie sind deine Wochenende?",
+      "latency_seconds": 58.88694643974304,
+      "retrieval_latency_seconds": 57.91288161277771,
+      "answer_latency_seconds": 0.974064826965332,
+      "token_usage": {
+        "prompt_tokens": 31,
+        "completion_tokens": 8,
+        "total_tokens": 39,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 88,
+      "category": 1,
+      "question": "In session 1 of the German deL1L2IM conversation, what did N02 say in the turn about \"hat mich auch gefreut\"?",
+      "prediction": "sunburnt",
+      "reference": "hat mich auch gefreut",
+      "latency_seconds": 55.079450607299805,
+      "retrieval_latency_seconds": 54.41928219795227,
+      "answer_latency_seconds": 0.6601684093475342,
+      "token_usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 2,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 89,
+      "category": 1,
+      "question": "In session 2 of the German deL1L2IM conversation, what did N02 say in the turn about \"super :)\"?",
+      "prediction": "super :)",
+      "reference": "super :)",
+      "latency_seconds": 43.552807092666626,
+      "retrieval_latency_seconds": 42.93248152732849,
+      "answer_latency_seconds": 0.6203255653381348,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 2,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 90,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L05 say in session 1 and what did N02 say in session 2?",
+      "prediction": "N02 said 'excited about the new class'",
+      "reference": "Session 1: Guten Abend, ich heiße LEARNER05_FN, und ich bin aus Weißrußland, und... Session 2: super :)",
+      "latency_seconds": 54.22679591178894,
+      "retrieval_latency_seconds": 53.500693798065186,
+      "answer_latency_seconds": 0.7261021137237549,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 9,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 91,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L05 say in session 2 and what did L05 say in session 3?",
+      "prediction": "Session 2: Session 3:",
+      "reference": "Session 2: Hallo, NATIVE02_FN! Wie geht es? Session 3: Danke, tschüss)))",
+      "latency_seconds": 55.048187255859375,
+      "retrieval_latency_seconds": 54.20977973937988,
+      "answer_latency_seconds": 0.8384075164794922,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 92,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L05 say in session 3 and what did L05 say in session 4?",
+      "prediction": "Session 3: Session 4:",
+      "reference": "Session 3: Hallo!!!! Wie war dein Tag? Ich hoffe, alles war wunderbar!!;)))) Session 4: ja, bis Mittwoch!!!!!",
+      "latency_seconds": 46.59819769859314,
+      "retrieval_latency_seconds": 46.021963596343994,
+      "answer_latency_seconds": 0.5762341022491455,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 93,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L05 say in session 4 and what did N02 say in session 5?",
+      "prediction": "N02 said 'Good night'.",
+      "reference": "Session 4: Hallo! Wie geht es? Wie waren deine Ausgehtage? Session 5: Dir auch alles Gute!",
+      "latency_seconds": 50.68673753738403,
+      "retrieval_latency_seconds": 50.09843921661377,
+      "answer_latency_seconds": 0.5882983207702637,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 94,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L05 say in session 5 and what did N02 say in session 6?",
+      "prediction": "Good night",
+      "reference": "Session 5: Hallo! Entschuldig mich für meine Verspätung, ich arbeitete im Gemüse... Session 6: bis morgen :)",
+      "latency_seconds": 55.11637592315674,
+      "retrieval_latency_seconds": 54.61376667022705,
+      "answer_latency_seconds": 0.5026092529296875,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 2,
+        "total_tokens": 27,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 95,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L05 say in session 6 and what did L05 say in session 7?",
+      "prediction": "Meeting suggestion",
+      "reference": "Session 6: Hallo, meine liebe NATIVE02_FN! Bitte vergib mir für die Tatsache, da... Session 7: OK, tschüss))))))",
+      "latency_seconds": 47.21319770812988,
+      "retrieval_latency_seconds": 46.73499321937561,
+      "answer_latency_seconds": 0.47820448875427246,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 4,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 96,
+      "category": 3,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L05's session 1 statement or L05's session 2 statement?",
+      "prediction": "9 June 2023",
+      "reference": "Earlier session 1: Guten Abend, ich heiße LEARNER05_FN, und ich bin aus Weißrußland, und...",
+      "latency_seconds": 59.16273736953735,
+      "retrieval_latency_seconds": 57.82300353050232,
+      "answer_latency_seconds": 1.3397338390350342,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 2,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 97,
+      "category": 3,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L05's session 2 statement or L05's session 3 statement?",
+      "prediction": "23 June 2023 at 9:00 AM",
+      "reference": "Earlier session 2: Hallo, NATIVE02_FN! Wie geht es?",
+      "latency_seconds": 48.19035816192627,
+      "retrieval_latency_seconds": 47.36251759529114,
+      "answer_latency_seconds": 0.8278405666351318,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 5,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 98,
+      "category": 4,
+      "question": "What general conversational act is shown by L05's cited turn in the German deL1L2IM conversation?",
+      "prediction": "Good night",
+      "reference": "greeting or opening the conversation",
+      "latency_seconds": 42.36718273162842,
+      "retrieval_latency_seconds": 41.7958779335022,
+      "answer_latency_seconds": 0.5713047981262207,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 2,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 99,
+      "category": 4,
+      "question": "What general conversational act is shown by L05's cited turn in the German deL1L2IM conversation?",
+      "prediction": "Good night",
+      "reference": "asking a question",
+      "latency_seconds": 42.38674259185791,
+      "retrieval_latency_seconds": 41.80292987823486,
+      "answer_latency_seconds": 0.5838127136230469,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 2,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 100,
+      "category": 1,
+      "question": "In session 1 of the German deL1L2IM conversation, what did N03 say in the turn about \"hallo, ich bin NATIVE03_FN\"?",
+      "prediction": "16 June 2023",
+      "reference": "hallo, ich bin NATIVE03_FN",
+      "latency_seconds": 58.71543550491333,
+      "retrieval_latency_seconds": 57.407752990722656,
+      "answer_latency_seconds": 1.3076825141906738,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 3,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 101,
+      "category": 1,
+      "question": "In session 2 of the German deL1L2IM conversation, what did N03 say in the turn about \"hi LEARNER06_FN\"?",
+      "prediction": "Hi",
+      "reference": "hi LEARNER06_FN",
+      "latency_seconds": 56.10582780838013,
+      "retrieval_latency_seconds": 55.277426958084106,
+      "answer_latency_seconds": 0.8284008502960205,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 1,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 102,
+      "category": 1,
+      "question": "In session 3 of the German deL1L2IM conversation, what did N03 say in the turn about \"Hi LEARNER06_FN\"?",
+      "prediction": "Hi",
+      "reference": "Hi LEARNER06_FN",
+      "latency_seconds": 58.77571392059326,
+      "retrieval_latency_seconds": 57.83485269546509,
+      "answer_latency_seconds": 0.9408612251281738,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 1,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 103,
+      "category": 1,
+      "question": "In session 4 of the German deL1L2IM conversation, what did L06 say in the turn about \"hallo! ich bin schon frei und kann ei...\"?",
+      "prediction": "frei und kann ei...",
+      "reference": "hallo! ich bin schon frei und kann ein bißchen früher beginnen. bist du da?",
+      "latency_seconds": 58.86231231689453,
+      "retrieval_latency_seconds": 57.83870530128479,
+      "answer_latency_seconds": 1.0236070156097412,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 4,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 104,
+      "category": 1,
+      "question": "In session 5 of the German deL1L2IM conversation, what did L06 say in the turn about \"Hallo, NATIVE03_FN. Bist du da?\"?",
+      "prediction": "Hallo, NATIVE03_FN. Bist du da?",
+      "reference": "Hallo, NATIVE03_FN. Bist du da?",
+      "latency_seconds": 59.053699254989624,
+      "retrieval_latency_seconds": 57.98217582702637,
+      "answer_latency_seconds": 1.0715234279632568,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 7,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 105,
+      "category": 1,
+      "question": "In session 6 of the German deL1L2IM conversation, what did L06 say in the turn about \"Hallo, NATIVE03_FN! Bist du da?\"?",
+      "prediction": "Hallo, NATIVE03_FN! Bist du da?",
+      "reference": "Hallo, NATIVE03_FN! Bist du da?",
+      "latency_seconds": 59.05240058898926,
+      "retrieval_latency_seconds": 57.97420644760132,
+      "answer_latency_seconds": 1.0781941413879395,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 7,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 106,
+      "category": 1,
+      "question": "In session 7 of the German deL1L2IM conversation, what did L06 say in the turn about \"Hallo,NATIVE03_FN! Bist du da? Wie ge...\"?",
+      "prediction": "Bist du da? Wie ge...",
+      "reference": "Hallo,NATIVE03_FN! Bist du da? Wie geht es dir?",
+      "latency_seconds": 58.94136095046997,
+      "retrieval_latency_seconds": 58.10986566543579,
+      "answer_latency_seconds": 0.8314952850341797,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 5,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 107,
+      "category": 1,
+      "question": "In session 1 of the German deL1L2IM conversation, what did N03 say in the turn about \"danke, dir auch.bis montag\"?",
+      "prediction": "bis montag",
+      "reference": "danke, dir auch.bis montag",
+      "latency_seconds": 49.44076323509216,
+      "retrieval_latency_seconds": 48.9490761756897,
+      "answer_latency_seconds": 0.4916870594024658,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 108,
+      "category": 1,
+      "question": "In session 2 of the German deL1L2IM conversation, what did N03 say in the turn about \"mache ich\"?",
+      "prediction": "concerning relaxation",
+      "reference": "mache ich",
+      "latency_seconds": 42.970940828323364,
+      "retrieval_latency_seconds": 42.48384976387024,
+      "answer_latency_seconds": 0.487091064453125,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 5,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 109,
+      "category": 1,
+      "question": "In session 3 of the German deL1L2IM conversation, what did N03 say in the turn about \"Bis morgen\"?",
+      "prediction": "Bis morgen",
+      "reference": "Bis morgen",
+      "latency_seconds": 57.74716281890869,
+      "retrieval_latency_seconds": 57.04872393608093,
+      "answer_latency_seconds": 0.6984388828277588,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 2,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 110,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did N03 say in session 1 and what did N03 say in session 2?",
+      "prediction": "N03 complimented L06",
+      "reference": "Session 1: hallo, ich bin NATIVE03_FN Session 2: mache ich",
+      "latency_seconds": 46.846919536590576,
+      "retrieval_latency_seconds": 46.212416648864746,
+      "answer_latency_seconds": 0.6345028877258301,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 111,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did N03 say in session 2 and what did N03 say in session 3?",
+      "prediction": "N03 learned Russian through a book and CD, with help from a friend.",
+      "reference": "Session 2: hi LEARNER06_FN Session 3: Bis morgen",
+      "latency_seconds": 53.27858304977417,
+      "retrieval_latency_seconds": 52.39931106567383,
+      "answer_latency_seconds": 0.8792719841003418,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 16,
+        "total_tokens": 41,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 112,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did N03 say in session 3 and what did L06 say in session 4?",
+      "prediction": "N03: 'I learned German from my father who studied it in school.'",
+      "reference": "Session 3: Hi LEARNER06_FN Session 4: abgemacht! bis Montag! alles Gute!",
+      "latency_seconds": 49.20547962188721,
+      "retrieval_latency_seconds": 48.21064639091492,
+      "answer_latency_seconds": 0.99483323097229,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 16,
+        "total_tokens": 41,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 113,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L06 say in session 4 and what did N03 say in session 5?",
+      "prediction": "N03: 'I learned German instead of French or Spanish.'",
+      "reference": "Session 4: hallo! ich bin schon frei und kann ein bißchen früher beginnen. bist... Session 5: ok.dann bis morgen...",
+      "latency_seconds": 56.3492648601532,
+      "retrieval_latency_seconds": 55.16792845726013,
+      "answer_latency_seconds": 1.1813364028930664,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 13,
+        "total_tokens": 38,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 114,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L06 say in session 5 and what did L06 say in session 6?",
+      "prediction": "Not mentioned in the context",
+      "reference": "Session 5: Hallo, NATIVE03_FN. Bist du da? Session 6: aber um Deutsch ausgezeichnet zu beherrschen muss, man auf deutsch de...",
+      "latency_seconds": 54.920759439468384,
+      "retrieval_latency_seconds": 54.31316781044006,
+      "answer_latency_seconds": 0.6075916290283203,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 7,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 115,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L06 say in session 6 and what did N03 say in session 7?",
+      "prediction": "N03 complimented L06",
+      "reference": "Session 6: Hallo, NATIVE03_FN! Bist du da? Session 7: danke. hab einen schoenen tag!!!",
+      "latency_seconds": 56.297459840774536,
+      "retrieval_latency_seconds": 55.48182702064514,
+      "answer_latency_seconds": 0.8156328201293945,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 116,
+      "category": 3,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: N03's session 1 statement or N03's session 2 statement?",
+      "prediction": "3 June 2023",
+      "reference": "Earlier session 1: hallo, ich bin NATIVE03_FN",
+      "latency_seconds": 58.9439115524292,
+      "retrieval_latency_seconds": 57.40872573852539,
+      "answer_latency_seconds": 1.5351858139038086,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 2,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 117,
+      "category": 3,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: N03's session 2 statement or N03's session 3 statement?",
+      "prediction": "6 May 2023",
+      "reference": "Earlier session 2: hi LEARNER06_FN",
+      "latency_seconds": 56.503987073898315,
+      "retrieval_latency_seconds": 55.294435024261475,
+      "answer_latency_seconds": 1.2095520496368408,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 2,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 118,
+      "category": 4,
+      "question": "What general conversational act is shown by N03's cited turn in the German deL1L2IM conversation?",
+      "prediction": "Inquiring about L06's work",
+      "reference": "greeting or opening the conversation",
+      "latency_seconds": 40.057668924331665,
+      "retrieval_latency_seconds": 39.29572916030884,
+      "answer_latency_seconds": 0.7619397640228271,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 6,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 119,
+      "category": 4,
+      "question": "What general conversational act is shown by N03's cited turn in the German deL1L2IM conversation?",
+      "prediction": "Farewell",
+      "reference": "greeting or opening the conversation",
+      "latency_seconds": 40.27350664138794,
+      "retrieval_latency_seconds": 39.763487815856934,
+      "answer_latency_seconds": 0.5100188255310059,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 2,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 120,
+      "category": 1,
+      "question": "In session 1 of the German deL1L2IM conversation, what did N03 say in the turn about \"hallo, ich bin NATIVE03_FN\"?",
+      "prediction": "hallo, ich bin NATIVE03_FN",
+      "reference": "hallo, ich bin NATIVE03_FN",
+      "latency_seconds": 59.033493518829346,
+      "retrieval_latency_seconds": 57.78192663192749,
+      "answer_latency_seconds": 1.2515668869018555,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 6,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 121,
+      "category": 1,
+      "question": "In session 2 of the German deL1L2IM conversation, what did N03 say in the turn about \"hallo LEARNER07_FN\"?",
+      "prediction": "already speaks German very well",
+      "reference": "hallo LEARNER07_FN",
+      "latency_seconds": 58.89618802070618,
+      "retrieval_latency_seconds": 57.65423774719238,
+      "answer_latency_seconds": 1.241950273513794,
+      "token_usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 7,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 122,
+      "category": 1,
+      "question": "In session 3 of the German deL1L2IM conversation, what did L07 say in the turn about \"Hallo!!!!\"?",
+      "prediction": "18 June 2023",
+      "reference": "Hallo!!!!",
+      "latency_seconds": 53.64467811584473,
+      "retrieval_latency_seconds": 53.00747632980347,
+      "answer_latency_seconds": 0.6372017860412598,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 3,
+        "total_tokens": 27,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 123,
+      "category": 1,
+      "question": "In session 4 of the German deL1L2IM conversation, what did L07 say in the turn about \"ich bin da..!!! und du ?\"?",
+      "prediction": "Da!!! und du ?",
+      "reference": "ich bin da..!!! und du ?",
+      "latency_seconds": 58.80305242538452,
+      "retrieval_latency_seconds": 57.19854521751404,
+      "answer_latency_seconds": 1.6045072078704834,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 3,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 124,
+      "category": 1,
+      "question": "In session 5 of the German deL1L2IM conversation, what did L07 say in the turn about \"Hallo, NATIVE03_FN!! ´´)\"?",
+      "prediction": "28 May 2023",
+      "reference": "Hallo, NATIVE03_FN!! ´´)",
+      "latency_seconds": 37.81644821166992,
+      "retrieval_latency_seconds": 37.03209400177002,
+      "answer_latency_seconds": 0.7843542098999023,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 2,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 125,
+      "category": 1,
+      "question": "In session 6 of the German deL1L2IM conversation, what did L07 say in the turn about \"Guten morgen, NATIVE03_FN. bist du da...\"?",
+      "prediction": "Guten Morgen, bist du da...",
+      "reference": "Guten morgen, NATIVE03_FN. bist du da?? =))",
+      "latency_seconds": 59.007036209106445,
+      "retrieval_latency_seconds": 57.9948616027832,
+      "answer_latency_seconds": 1.0121746063232422,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 6,
+        "total_tokens": 38,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 126,
+      "category": 1,
+      "question": "In session 7 of the German deL1L2IM conversation, what did N03 say in the turn about \"hi LEARNER07_FN\"?",
+      "prediction": "14 May 2023",
+      "reference": "hi LEARNER07_FN",
+      "latency_seconds": 58.96060085296631,
+      "retrieval_latency_seconds": 57.61159610748291,
+      "answer_latency_seconds": 1.3490047454833984,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 2,
+        "total_tokens": 27,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 127,
+      "category": 1,
+      "question": "In session 8 of the German deL1L2IM conversation, what did L07 say in the turn about \"Guten abend..**)\"?",
+      "prediction": "Guten Abend",
+      "reference": "Guten abend..**)",
+      "latency_seconds": 56.181817054748535,
+      "retrieval_latency_seconds": 55.64966130256653,
+      "answer_latency_seconds": 0.5321557521820068,
+      "token_usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 2,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 128,
+      "category": 1,
+      "question": "In session 9 of the German deL1L2IM conversation, what did L07 say in the turn about \"Guten morgen!\"?",
+      "prediction": "Guten Morgen",
+      "reference": "Guten morgen!",
+      "latency_seconds": 58.77336764335632,
+      "retrieval_latency_seconds": 57.15699076652527,
+      "answer_latency_seconds": 1.6163768768310547,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 3,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 129,
+      "category": 1,
+      "question": "In session 1 of the German deL1L2IM conversation, what did N03 say in the turn about \"dir auch,ciao\"?",
+      "prediction": "ciao",
+      "reference": "dir auch,ciao",
+      "latency_seconds": 45.30860948562622,
+      "retrieval_latency_seconds": 44.71029567718506,
+      "answer_latency_seconds": 0.5983138084411621,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 1,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 130,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did N03 say in session 1 and what did N03 say in session 2?",
+      "prediction": "N/A",
+      "reference": "Session 1: hallo, ich bin NATIVE03_FN Session 2: und einen schoenen abend noch",
+      "latency_seconds": 50.4830048084259,
+      "retrieval_latency_seconds": 49.97266101837158,
+      "answer_latency_seconds": 0.5103437900543213,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 1,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 131,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did N03 say in session 2 and what did L07 say in session 3?",
+      "prediction": "N03: 'What's next? L07: 'I'm learning German.'",
+      "reference": "Session 2: hallo LEARNER07_FN Session 3: wann werden wir dann unser nächstes Mal veranstalten",
+      "latency_seconds": 59.19352579116821,
+      "retrieval_latency_seconds": 57.515414237976074,
+      "answer_latency_seconds": 1.6781115531921387,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 11,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 132,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L07 say in session 3 and what did N03 say in session 4?",
+      "prediction": "N03 asked L07 about the purpose of L07's mother learning German in session 15",
+      "reference": "Session 3: Hallo!!!! Session 4: wenn du schon weg bist (denn ich sehe dich auch immer gruen) dann tsc...",
+      "latency_seconds": 46.140501260757446,
+      "retrieval_latency_seconds": 45.24332046508789,
+      "answer_latency_seconds": 0.8971807956695557,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 19,
+        "total_tokens": 44,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 133,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L07 say in session 4 and what did L07 say in session 5?",
+      "prediction": "No information provided",
+      "reference": "Session 4: ich bin da..!!! und du ? Session 5: mir auch...ok.... bis morgen dann))",
+      "latency_seconds": 45.56238508224487,
+      "retrieval_latency_seconds": 44.97994303703308,
+      "answer_latency_seconds": 0.582442045211792,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 134,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L07 say in session 5 and what did N03 say in session 6?",
+      "prediction": "N03 asked L07 about the purpose of L07's mother learning German in session 18",
+      "reference": "Session 5: Hallo, NATIVE03_FN!! ´´) Session 6: bis donnerstag",
+      "latency_seconds": 58.85678720474243,
+      "retrieval_latency_seconds": 56.543580293655396,
+      "answer_latency_seconds": 2.313206911087036,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 19,
+        "total_tokens": 44,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 135,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L07 say in session 6 and what did N03 say in session 7?",
+      "prediction": "18 June 2023 at 8:00 AM",
+      "reference": "Session 6: Guten morgen, NATIVE03_FN. bist du da?? =)) Session 7: bis montag",
+      "latency_seconds": 57.255356550216675,
+      "retrieval_latency_seconds": 56.140743017196655,
+      "answer_latency_seconds": 1.1146135330200195,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 136,
+      "category": 3,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: N03's session 1 statement or N03's session 2 statement?",
+      "prediction": "14 May 2023",
+      "reference": "Earlier session 1: hallo, ich bin NATIVE03_FN",
+      "latency_seconds": 58.80315184593201,
+      "retrieval_latency_seconds": 56.94273924827576,
+      "answer_latency_seconds": 1.86041259765625,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 2,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 137,
+      "category": 3,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: N03's session 2 statement or L07's session 3 statement?",
+      "prediction": "14 May 2023",
+      "reference": "Earlier session 2: hallo LEARNER07_FN",
+      "latency_seconds": 58.94334101676941,
+      "retrieval_latency_seconds": 57.60751938819885,
+      "answer_latency_seconds": 1.3358216285705566,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 2,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 138,
+      "category": 4,
+      "question": "What general conversational act is shown by N03's cited turn in the German deL1L2IM conversation?",
+      "prediction": "Suggested ending conversation",
+      "reference": "greeting or opening the conversation",
+      "latency_seconds": 43.793230295181274,
+      "retrieval_latency_seconds": 43.17747640609741,
+      "answer_latency_seconds": 0.6157538890838623,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 7,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 139,
+      "category": 4,
+      "question": "What general conversational act is shown by N03's cited turn in the German deL1L2IM conversation?",
+      "prediction": "Inquire about purpose",
+      "reference": "greeting or opening the conversation",
+      "latency_seconds": 40.47278356552124,
+      "retrieval_latency_seconds": 39.80224251747131,
+      "answer_latency_seconds": 0.6705410480499268,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 5,
+        "total_tokens": 29,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 140,
+      "category": 1,
+      "question": "In session 1 of the German deL1L2IM conversation, what did L08 say in the turn about \"лан, буду ждать))а то подумает:ненасы...\"?",
+      "prediction": "lan, буду ждать)",
+      "reference": "лан, буду ждать))а то подумает:ненасытная какя)))",
+      "latency_seconds": 60.00520992279053,
+      "retrieval_latency_seconds": 58.90158152580261,
+      "answer_latency_seconds": 1.103628396987915,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 4,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 141,
+      "category": 1,
+      "question": "In session 2 of the German deL1L2IM conversation, what did N04 say in the turn about \"Hallo LEARNER08_FN, soweit ich mich e...\"?",
+      "prediction": "Concise answer in a short phrase",
+      "reference": "Hallo LEARNER08_FN, soweit ich mich erinnere, hast Du 20:00 Uhr deutscher Zeit vorgeschlagen....",
+      "latency_seconds": 60.0910108089447,
+      "retrieval_latency_seconds": 58.925928354263306,
+      "answer_latency_seconds": 1.1650824546813965,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 8,
+        "total_tokens": 40,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 142,
+      "category": 1,
+      "question": "In session 3 of the German deL1L2IM conversation, what did L08 say in the turn about \"NATIVE04_FN, wo bist du verschwunden?))\"?",
+      "prediction": "hmm...sehr sehr groß, umfangreich",
+      "reference": "NATIVE04_FN, wo bist du verschwunden?))",
+      "latency_seconds": 60.19278645515442,
+      "retrieval_latency_seconds": 59.02538990974426,
+      "answer_latency_seconds": 1.1673965454101562,
+      "token_usage": {
+        "prompt_tokens": 31,
+        "completion_tokens": 8,
+        "total_tokens": 39,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 143,
+      "category": 1,
+      "question": "In session 4 of the German deL1L2IM conversation, what did N04 say in the turn about \"Hallo, sorry, bin erst heute wieder d...\"?",
+      "prediction": "Entschuldigen Sie mich bitte",
+      "reference": "Hallo, sorry, bin erst heute wieder da. Du auch?",
+      "latency_seconds": 56.770246505737305,
+      "retrieval_latency_seconds": 56.06883406639099,
+      "answer_latency_seconds": 0.7014124393463135,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 7,
+        "total_tokens": 39,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 144,
+      "category": 1,
+      "question": "In session 5 of the German deL1L2IM conversation, what did L08 say in the turn about \"hi!)NATIVE04_FN, bist du hier?\"?",
+      "prediction": "hmm...sehr sehr groß, umfangreich",
+      "reference": "hi!)NATIVE04_FN, bist du hier?",
+      "latency_seconds": 59.871652126312256,
+      "retrieval_latency_seconds": 58.04467415809631,
+      "answer_latency_seconds": 1.8269779682159424,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 8,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 145,
+      "category": 1,
+      "question": "In session 6 of the German deL1L2IM conversation, what did L08 say in the turn about \"hi, NATIVE04_FN)\"?",
+      "prediction": "hi, NATIVE04_FN)",
+      "reference": "hi, NATIVE04_FN)",
+      "latency_seconds": 59.99636769294739,
+      "retrieval_latency_seconds": 58.42391347885132,
+      "answer_latency_seconds": 1.5724542140960693,
+      "token_usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 4,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 146,
+      "category": 1,
+      "question": "In session 7 of the German deL1L2IM conversation, what did L08 say in the turn about \"hi, NATIVE04_FN)\"?",
+      "prediction": "hmm...sehr sehr groß, umfangreich",
+      "reference": "hi, NATIVE04_FN)",
+      "latency_seconds": 60.082310914993286,
+      "retrieval_latency_seconds": 58.445382595062256,
+      "answer_latency_seconds": 1.6369283199310303,
+      "token_usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 8,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 147,
+      "category": 1,
+      "question": "In session 8 of the German deL1L2IM conversation, what did L08 say in the turn about \"hallo, NATIVE04_FN)\"?",
+      "prediction": "hmm...sehr sehr groß, umfangreich",
+      "reference": "hallo, NATIVE04_FN)",
+      "latency_seconds": 60.138479471206665,
+      "retrieval_latency_seconds": 58.83229994773865,
+      "answer_latency_seconds": 1.3061795234680176,
+      "token_usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 8,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 148,
+      "category": 1,
+      "question": "In session 1 of the German deL1L2IM conversation, what did L08 say in the turn about \"ok)see you))\"?",
+      "prediction": "auf Sie",
+      "reference": "ok)see you))",
+      "latency_seconds": 43.09357523918152,
+      "retrieval_latency_seconds": 42.48645329475403,
+      "answer_latency_seconds": 0.6071219444274902,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 1,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 149,
+      "category": 1,
+      "question": "In session 2 of the German deL1L2IM conversation, what did N04 say in the turn about \"Verzeihung, musste grad was erledigen...\"?",
+      "prediction": "grad was erledigen...",
+      "reference": "Verzeihung, musste grad was erledigen. Ja, Montag 20 Uhr ist gut. Viel Erfolg bei den Tests!...",
+      "latency_seconds": 57.81588959693909,
+      "retrieval_latency_seconds": 57.19062519073486,
+      "answer_latency_seconds": 0.6252644062042236,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 5,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 150,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L08 say in session 1 and what did N04 say in session 2?",
+      "prediction": "N04 said 'auf Sie', L08 said 'auf Du'",
+      "reference": "Session 1: лан, буду ждать))а то подумает:ненасытная какя))) Session 2: Verzeihung, musste grad was erledigen. Ja, Montag 20 Uhr ist gut. Vie...",
+      "latency_seconds": 51.92481589317322,
+      "retrieval_latency_seconds": 50.9763879776001,
+      "answer_latency_seconds": 0.9484279155731201,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 9,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 151,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did N04 say in session 2 and what did N04 say in session 3?",
+      "prediction": "Entschuldigen Sie mich bitte",
+      "reference": "Session 2: Hallo LEARNER08_FN, soweit ich mich erinnere, hast Du 20:00 Uhr deuts... Session 3: ok, gerne! und falls wir uns vor Mittwoch nicht mehr treffen, dann de...",
+      "latency_seconds": 49.905625343322754,
+      "retrieval_latency_seconds": 49.27167868614197,
+      "answer_latency_seconds": 0.6339466571807861,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 7,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 152,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L08 say in session 3 and what did N04 say in session 4?",
+      "prediction": "N04 said 'Entschuldigen Sie mich bitte'",
+      "reference": "Session 3: NATIVE04_FN, wo bist du verschwunden?)) Session 4: Danke, und \"erhol Dich gut\" ;-)",
+      "latency_seconds": 46.22771191596985,
+      "retrieval_latency_seconds": 45.05509424209595,
+      "answer_latency_seconds": 1.1726176738739014,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 9,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 153,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did N04 say in session 4 and what did L08 say in session 5?",
+      "prediction": "N04: 'Entschuldigen Sie mich bitte'. L08: 'hmm...sehr sehr groß, umfangreich'",
+      "reference": "Session 4: Hallo, sorry, bin erst heute wieder da. Du auch? Session 5: mir gefällt ihn auch",
+      "latency_seconds": 50.00017023086548,
+      "retrieval_latency_seconds": 48.68216609954834,
+      "answer_latency_seconds": 1.3180041313171387,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 19,
+        "total_tokens": 44,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 154,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L08 say in session 5 and what did L08 say in session 6?",
+      "prediction": "hmm...sehr sehr groß, umfangreich",
+      "reference": "Session 5: hi!)NATIVE04_FN, bist du hier? Session 6: danke)sweet dreams)",
+      "latency_seconds": 52.349186420440674,
+      "retrieval_latency_seconds": 51.61758232116699,
+      "answer_latency_seconds": 0.7316040992736816,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 8,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 155,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L08 say in session 6 and what did L08 say in session 7?",
+      "prediction": "hmm...sehr sehr groß, umfangreich",
+      "reference": "Session 6: hi, NATIVE04_FN) Session 7: aach sooo))",
+      "latency_seconds": 46.14909052848816,
+      "retrieval_latency_seconds": 44.87397813796997,
+      "answer_latency_seconds": 1.2751123905181885,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 8,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 156,
+      "category": 3,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L08's session 1 statement or N04's session 2 statement?",
+      "prediction": "29 May 2023",
+      "reference": "Earlier session 1: лан, буду ждать))а то подумает:ненасытная какя)))",
+      "latency_seconds": 55.7810161113739,
+      "retrieval_latency_seconds": 54.837547063827515,
+      "answer_latency_seconds": 0.9434690475463867,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 2,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 157,
+      "category": 3,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: N04's session 2 statement or L08's session 3 statement?",
+      "prediction": "29 May 2023 at 5:00 AM",
+      "reference": "Earlier session 2: Hallo LEARNER08_FN, soweit ich mich erinnere, hast Du 20:00 Uhr deuts...",
+      "latency_seconds": 46.55817794799805,
+      "retrieval_latency_seconds": 45.61186099052429,
+      "answer_latency_seconds": 0.9463169574737549,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 5,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 158,
+      "category": 4,
+      "question": "What general conversational act is shown by L08's cited turn in the German deL1L2IM conversation?",
+      "prediction": "Ask about game time",
+      "reference": "sharing information in the conversation",
+      "latency_seconds": 37.71840190887451,
+      "retrieval_latency_seconds": 37.00173044204712,
+      "answer_latency_seconds": 0.7166714668273926,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 4,
+        "total_tokens": 28,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 159,
+      "category": 4,
+      "question": "What general conversational act is shown by N04's cited turn in the German deL1L2IM conversation?",
+      "prediction": "Example of using 'Entschuldigen Sie mich bitte'",
+      "reference": "greeting or opening the conversation",
+      "latency_seconds": 45.48848533630371,
+      "retrieval_latency_seconds": 44.11975407600403,
+      "answer_latency_seconds": 1.3687312602996826,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 11,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 160,
+      "category": 1,
+      "question": "In session 1 of the German deL1L2IM conversation, what did L09 say in the turn about \"Hallo NATIVE04_FN!Gehts mit chat heut...\"?",
+      "prediction": "Gehts mit chat heut... :)",
+      "reference": "Hallo NATIVE04_FN!Gehts mit chat heute abend?nach 20,00?",
+      "latency_seconds": 59.57059717178345,
+      "retrieval_latency_seconds": 58.23038387298584,
+      "answer_latency_seconds": 1.3402132987976074,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 6,
+        "total_tokens": 38,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 161,
+      "category": 1,
+      "question": "In session 2 of the German deL1L2IM conversation, what did L09 say in the turn about \"Hallo NATIVE04_FN! Keine Sorgen. Ich...\"?",
+      "prediction": "Keine Sorgen. Ich...",
+      "reference": "Hallo NATIVE04_FN! Keine Sorgen. Ich werde hier heute und ab Dienstag abends sein.Geht es?",
+      "latency_seconds": 59.592406034469604,
+      "retrieval_latency_seconds": 58.684133529663086,
+      "answer_latency_seconds": 0.9082725048065186,
+      "token_usage": {
+        "prompt_tokens": 31,
+        "completion_tokens": 5,
+        "total_tokens": 36,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 162,
+      "category": 1,
+      "question": "In session 3 of the German deL1L2IM conversation, what did N04 say in the turn about \"hallo LEARNER09_FN, bist Du da?\"?",
+      "prediction": "hallo NATIVE04_FN! :)",
+      "reference": "hallo LEARNER09_FN, bist Du da?",
+      "latency_seconds": 59.61048340797424,
+      "retrieval_latency_seconds": 58.30113077163696,
+      "answer_latency_seconds": 1.3093526363372803,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 5,
+        "total_tokens": 34,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 163,
+      "category": 1,
+      "question": "In session 4 of the German deL1L2IM conversation, what did N04 say in the turn about \"Schönen guten Tag LEARNER09_FN, bist...\"?",
+      "prediction": "Schönen guten Tag",
+      "reference": "Schönen guten Tag LEARNER09_FN, bist Du da?",
+      "latency_seconds": 59.481858253479004,
+      "retrieval_latency_seconds": 58.22068428993225,
+      "answer_latency_seconds": 1.261173963546753,
+      "token_usage": {
+        "prompt_tokens": 31,
+        "completion_tokens": 4,
+        "total_tokens": 35,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 164,
+      "category": 1,
+      "question": "In session 5 of the German deL1L2IM conversation, what did L09 say in the turn about \"Privet NATIVE04_FN!gehts mit chat heute?\"?",
+      "prediction": "gehts mit chat heute?",
+      "reference": "Privet NATIVE04_FN!gehts mit chat heute?",
+      "latency_seconds": 59.584428787231445,
+      "retrieval_latency_seconds": 58.645439863204956,
+      "answer_latency_seconds": 0.9389889240264893,
+      "token_usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 5,
+        "total_tokens": 37,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 165,
+      "category": 1,
+      "question": "In session 6 of the German deL1L2IM conversation, what did N04 say in the turn about \"hi, bist Du da?\"?",
+      "prediction": "Privet! :)",
+      "reference": "hi, bist Du da?",
+      "latency_seconds": 59.267425537109375,
+      "retrieval_latency_seconds": 57.67338418960571,
+      "answer_latency_seconds": 1.594041347503662,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 2,
+        "total_tokens": 27,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 166,
+      "category": 1,
+      "question": "In session 7 of the German deL1L2IM conversation, what did N04 say in the turn about \"Hallo LEARNER09_FN, bist Du da?\"?",
+      "prediction": "Privet! :)",
+      "reference": "Hallo LEARNER09_FN, bist Du da?",
+      "latency_seconds": 58.19561696052551,
+      "retrieval_latency_seconds": 56.71750545501709,
+      "answer_latency_seconds": 1.4781115055084229,
+      "token_usage": {
+        "prompt_tokens": 29,
+        "completion_tokens": 2,
+        "total_tokens": 31,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 167,
+      "category": 1,
+      "question": "In session 1 of the German deL1L2IM conversation, what did L09 say in the turn about \"gute nacht!\"?",
+      "prediction": "gute nacht!",
+      "reference": "gute nacht!",
+      "latency_seconds": 58.192058801651,
+      "retrieval_latency_seconds": 56.778894662857056,
+      "answer_latency_seconds": 1.4131641387939453,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 2,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 168,
+      "category": 1,
+      "question": "In session 2 of the German deL1L2IM conversation, what did L09 say in the turn about \"schönen sonntag für dich\"?",
+      "prediction": "Convenience für dich",
+      "reference": "schönen sonntag für dich",
+      "latency_seconds": 58.138240337371826,
+      "retrieval_latency_seconds": 56.681517601013184,
+      "answer_latency_seconds": 1.4567227363586426,
+      "token_usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 5,
+        "total_tokens": 33,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 169,
+      "category": 1,
+      "question": "In session 3 of the German deL1L2IM conversation, what did L09 say in the turn about \"gute nacht!\"?",
+      "prediction": "gute nacht!",
+      "reference": "gute nacht!",
+      "latency_seconds": 58.890562534332275,
+      "retrieval_latency_seconds": 57.48111271858215,
+      "answer_latency_seconds": 1.409449815750122,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 2,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 170,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L09 say in session 1 and what did L09 say in session 2?",
+      "prediction": "L09 expressed interest in teaching German, English, and literature.",
+      "reference": "Session 1: Hallo NATIVE04_FN!Gehts mit chat heute abend?nach 20,00? Session 2: schönen sonntag für dich",
+      "latency_seconds": 45.587403297424316,
+      "retrieval_latency_seconds": 44.79722714424133,
+      "answer_latency_seconds": 0.7901761531829834,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 16,
+        "total_tokens": 41,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 171,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L09 say in session 2 and what did L09 say in session 3?",
+      "prediction": "Session 2: Session 3:",
+      "reference": "Session 2: Hallo NATIVE04_FN! Keine Sorgen. Ich werde hier heute und ab Dienstag... Session 3: gute nacht!",
+      "latency_seconds": 53.51130938529968,
+      "retrieval_latency_seconds": 52.96255540847778,
+      "answer_latency_seconds": 0.5487539768218994,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 5,
+        "total_tokens": 30,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 172,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did N04 say in session 3 and what did N04 say in session 4?",
+      "prediction": "N/A",
+      "reference": "Session 3: hallo LEARNER09_FN, bist Du da? Session 4: gute Nacht!",
+      "latency_seconds": 47.73034477233887,
+      "retrieval_latency_seconds": 46.9966242313385,
+      "answer_latency_seconds": 0.7337205410003662,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 1,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 173,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did N04 say in session 4 and what did L09 say in session 5?",
+      "prediction": "N/A",
+      "reference": "Session 4: Schönen guten Tag LEARNER09_FN, bist Du da? Session 5: gute nacht!",
+      "latency_seconds": 50.97044587135315,
+      "retrieval_latency_seconds": 50.44647717475891,
+      "answer_latency_seconds": 0.5239686965942383,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 1,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 174,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did L09 say in session 5 and what did L09 say in session 6?",
+      "prediction": "No relevant conversation found",
+      "reference": "Session 5: Privet NATIVE04_FN!gehts mit chat heute? Session 6: alles gute!",
+      "latency_seconds": 55.88473176956177,
+      "retrieval_latency_seconds": 55.3215913772583,
+      "answer_latency_seconds": 0.5631403923034668,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 7,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 175,
+      "category": 2,
+      "question": "In the German deL1L2IM conversation, what did N04 say in session 6 and what did N04 say in session 7?",
+      "prediction": "N/A",
+      "reference": "Session 6: hi, bist Du da? Session 7: gute Nacht",
+      "latency_seconds": 45.272289514541626,
+      "retrieval_latency_seconds": 44.605528116226196,
+      "answer_latency_seconds": 0.6667613983154297,
+      "token_usage": {
+        "prompt_tokens": 25,
+        "completion_tokens": 1,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 176,
+      "category": 3,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L09's session 1 statement or L09's session 2 statement?",
+      "prediction": "30 May 2023",
+      "reference": "Earlier session 1: Hallo NATIVE04_FN!Gehts mit chat heute abend?nach 20,00?",
+      "latency_seconds": 51.956987619400024,
+      "retrieval_latency_seconds": 51.06552195549011,
+      "answer_latency_seconds": 0.8914656639099121,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 2,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 177,
+      "category": 3,
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L09's session 2 statement or N04's session 3 statement?",
+      "prediction": "30 May 2023",
+      "reference": "Earlier session 2: Hallo NATIVE04_FN! Keine Sorgen. Ich werde hier heute und ab Dienstag...",
+      "latency_seconds": 48.24319624900818,
+      "retrieval_latency_seconds": 47.23011898994446,
+      "answer_latency_seconds": 1.0130772590637207,
+      "token_usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 2,
+        "total_tokens": 32,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 178,
+      "category": 4,
+      "question": "What general conversational act is shown by L09's cited turn in the German deL1L2IM conversation?",
+      "prediction": "Compliment",
+      "reference": "asking a question",
+      "latency_seconds": 41.09581804275513,
+      "retrieval_latency_seconds": 40.58841562271118,
+      "answer_latency_seconds": 0.5074024200439453,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 2,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    },
+    {
+      "source": "simplemem",
+      "qa_idx": 179,
+      "category": 4,
+      "question": "What general conversational act is shown by L09's cited turn in the German deL1L2IM conversation?",
+      "prediction": "Compliment",
+      "reference": "asking a question",
+      "latency_seconds": 40.82965898513794,
+      "retrieval_latency_seconds": 40.26102662086487,
+      "answer_latency_seconds": 0.5686323642730713,
+      "token_usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 2,
+        "total_tokens": 26,
+        "note": "SimpleMem per-question prompt context is not saved by the upstream evaluator; prompt_tokens here count the visible question only. Full LLM-call aggregate is in result.summary.llm_usage."
+      }
+    }
+  ],
+  "summary": {
+    "method": "SimpleMem",
+    "source_result": "/home/stu0032/paper/runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/del1l2im/simplemem/result.json",
+    "num_records": 180,
+    "latency": {
+      "num_samples": 9,
+      "num_questions": 180,
+      "avg_retrieval_time": 53.136707949638364,
+      "avg_answer_time": 0.9593665122985839,
+      "avg_total_time": 54.09607446193695,
+      "llm_usage": {
+        "count": 1577,
+        "success_count": 1577,
+        "error_count": 0,
+        "prompt_tokens": 1878202,
+        "completion_tokens": 660546,
+        "total_tokens": 2538748,
+        "avg_prompt_tokens_per_call": 1190.996829422955,
+        "avg_completion_tokens_per_call": 418.862396956246,
+        "avg_total_tokens_per_call": 1609.8592263792011,
+        "avg_latency_seconds_per_call": 15.194633432181485
+      }
+    },
+    "llm_usage": {
+      "count": 1577,
+      "success_count": 1577,
+      "error_count": 0,
+      "prompt_tokens": 1878202,
+      "completion_tokens": 660546,
+      "total_tokens": 2538748,
+      "avg_prompt_tokens_per_call": 1190.996829422955,
+      "avg_completion_tokens_per_call": 418.862396956246,
+      "avg_total_tokens_per_call": 1609.8592263792011,
+      "avg_latency_seconds_per_call": 15.194633432181485
+    }
+  }
+}

@@ -258,7 +258,7 @@ class ExpansionManager:
                         }
                     ]
                 }],
-                max_tokens=500,
+                max_tokens=int(os.environ.get("OMNI_EXPANSION_MAX_TOKENS", "8192")),
             )
             caption = response.choices[0].message.content.strip()
             self._caption_cache[cache_key] = caption

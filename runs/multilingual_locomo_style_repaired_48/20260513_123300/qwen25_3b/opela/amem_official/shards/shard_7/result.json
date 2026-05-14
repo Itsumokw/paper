@@ -1,0 +1,1188 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "dataset": "/home/stu0032/paper/runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/opela/amem_official/shards/shard_7/locomo_sample_7.json",
+  "memory_layer": "robust",
+  "ratio": 1.0,
+  "retrieve_k": 10,
+  "total_questions": 20,
+  "category_distribution": {
+    "1": 12,
+    "2": 3,
+    "3": 3,
+    "4": 2
+  },
+  "aggregate_metrics": {
+    "overall": {
+      "exact_match": {
+        "mean": 0.3,
+        "std": 0.47016234598162726,
+        "median": 0.0,
+        "min": 0,
+        "max": 1,
+        "count": 20
+      },
+      "f1": {
+        "mean": 0.43564879564879566,
+        "std": 0.4444380224880557,
+        "median": 0.19090909090909092,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 20
+      },
+      "rouge1_f": {
+        "mean": 0.12777777777777777,
+        "std": 0.2728212766498473,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 20
+      },
+      "rouge2_f": {
+        "mean": 0.0642857142857143,
+        "std": 0.2292986551521072,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 20
+      },
+      "rougeL_f": {
+        "mean": 0.12777777777777777,
+        "std": 0.2728212766498473,
+        "median": 0.0,
+        "min": 0,
+        "max": 1.0,
+        "count": 20
+      },
+      "bleu1": {
+        "mean": 0.4220212865322642,
+        "std": 0.438112003064332,
+        "median": 0.2287546817123332,
+        "min": 0,
+        "max": 1.0,
+        "count": 20
+      },
+      "bleu2": {
+        "mean": 0.3991671707357559,
+        "std": 0.450218550947304,
+        "median": 0.164108486986146,
+        "min": 0,
+        "max": 1.0,
+        "count": 20
+      },
+      "bleu3": {
+        "mean": 0.3824998406447539,
+        "std": 0.45704637265374626,
+        "median": 0.06567846723502202,
+        "min": 0,
+        "max": 1.0,
+        "count": 20
+      },
+      "bleu4": {
+        "mean": 0.3467242588945181,
+        "std": 0.4385006296681632,
+        "median": 0.0435865584737904,
+        "min": 0,
+        "max": 1.0,
+        "count": 20
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 20
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 20
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 20
+      },
+      "meteor": {
+        "mean": 0.4228975369778343,
+        "std": 0.4669673838403477,
+        "median": 0.0773134328358209,
+        "min": 0.0,
+        "max": 0.996,
+        "count": 20
+      },
+      "sbert_similarity": {
+        "mean": 0.6726988337934017,
+        "std": 0.3009684562160207,
+        "median": 0.7063671946525574,
+        "min": 0.22076845169067383,
+        "max": 1.0000001192092896,
+        "count": 20
+      }
+    },
+    "category_1": {
+      "exact_match": {
+        "mean": 0.5,
+        "std": 0.5222329678670935,
+        "median": 0.5,
+        "min": 0,
+        "max": 1,
+        "count": 12
+      },
+      "f1": {
+        "mean": 0.663960113960114,
+        "std": 0.4389538674202937,
+        "median": 0.9615384615384615,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 12
+      },
+      "rouge1_f": {
+        "mean": 0.08333333333333333,
+        "std": 0.28867513459481287,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 12
+      },
+      "rouge2_f": {
+        "mean": 0.08333333333333333,
+        "std": 0.28867513459481287,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 12
+      },
+      "rougeL_f": {
+        "mean": 0.08333333333333333,
+        "std": 0.28867513459481287,
+        "median": 0.0,
+        "min": 0,
+        "max": 1.0,
+        "count": 12
+      },
+      "bleu1": {
+        "mean": 0.6362433862433863,
+        "std": 0.4476389182971605,
+        "median": 0.9285714285714286,
+        "min": 0,
+        "max": 1.0,
+        "count": 12
+      },
+      "bleu2": {
+        "mean": 0.6290019038759109,
+        "std": 0.4504466924828013,
+        "median": 0.9225771273642582,
+        "min": 0,
+        "max": 1.0,
+        "count": 12
+      },
+      "bleu3": {
+        "mean": 0.6197863863713204,
+        "std": 0.4547486896644684,
+        "median": 0.9156879623939318,
+        "min": 0,
+        "max": 1.0,
+        "count": 12
+      },
+      "bleu4": {
+        "mean": 0.5645461101474027,
+        "std": 0.4500081963044636,
+        "median": 0.6857240183802851,
+        "min": 0,
+        "max": 1.0,
+        "count": 12
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 12
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 12
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 12
+      },
+      "meteor": {
+        "mean": 0.6857247506844502,
+        "std": 0.4327290992701475,
+        "median": 0.9814055859137827,
+        "min": 0.0,
+        "max": 0.996,
+        "count": 12
+      },
+      "sbert_similarity": {
+        "mean": 0.8793818404277166,
+        "std": 0.16222923097608744,
+        "median": 0.9798549115657806,
+        "min": 0.5510101318359375,
+        "max": 1.0000001192092896,
+        "count": 12
+      }
+    },
+    "category_2": {
+      "exact_match": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "count": 3
+      },
+      "f1": {
+        "mean": 0.06666666666666667,
+        "std": 0.11547005383792516,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.2,
+        "count": 3
+      },
+      "rouge1_f": {
+        "mean": 0.2222222222222222,
+        "std": 0.38490017945975047,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.6666666666666666,
+        "count": 3
+      },
+      "rouge2_f": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 3
+      },
+      "rougeL_f": {
+        "mean": 0.2222222222222222,
+        "std": 0.38490017945975047,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.6666666666666666,
+        "count": 3
+      },
+      "bleu1": {
+        "mean": 0.13830757985783876,
+        "std": 0.13252985897647385,
+        "median": 0.10987343836674063,
+        "min": 0.02230257790228158,
+        "max": 0.2827467233044941,
+        "count": 3
+      },
+      "bleu2": {
+        "mean": 0.07313512225381202,
+        "std": 0.09826854836214699,
+        "median": 0.025660906727971132,
+        "min": 0.007617780590621929,
+        "max": 0.18612667944284303,
+        "count": 3
+      },
+      "bleu3": {
+        "mean": 0.028574947645020034,
+        "std": 0.030278672139525436,
+        "median": 0.016927564104648202,
+        "min": 0.0058495268365200675,
+        "max": 0.06294775199389183,
+        "count": 3
+      },
+      "bleu4": {
+        "mean": 0.01820996480460518,
+        "std": 0.01604244137640574,
+        "median": 0.01335356899385369,
+        "min": 0.005156835566857781,
+        "max": 0.03611948985310407,
+        "count": 3
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 3
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 3
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 3
+      },
+      "meteor": {
+        "mean": 0.02666666666666667,
+        "std": 0.046188021535170064,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.08,
+        "count": 3
+      },
+      "sbert_similarity": {
+        "mean": 0.4304779569307963,
+        "std": 0.1983201825694788,
+        "median": 0.37870070338249207,
+        "min": 0.263182133436203,
+        "max": 0.6495510339736938,
+        "count": 3
+      }
+    },
+    "category_3": {
+      "exact_match": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "count": 3
+      },
+      "f1": {
+        "mean": 0.18181818181818182,
+        "std": 0.0,
+        "median": 0.18181818181818182,
+        "min": 0.18181818181818182,
+        "max": 0.18181818181818182,
+        "count": 3
+      },
+      "rouge1_f": {
+        "mean": 0.2962962962962963,
+        "std": 0.12830005981991682,
+        "median": 0.2222222222222222,
+        "min": 0.2222222222222222,
+        "max": 0.4444444444444444,
+        "count": 3
+      },
+      "rouge2_f": {
+        "mean": 0.09523809523809525,
+        "std": 0.16495721976846453,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.28571428571428575,
+        "count": 3
+      },
+      "rougeL_f": {
+        "mean": 0.2962962962962963,
+        "std": 0.12830005981991682,
+        "median": 0.2222222222222222,
+        "min": 0.2222222222222222,
+        "max": 0.4444444444444444,
+        "count": 3
+      },
+      "bleu1": {
+        "mean": 0.13019411871704428,
+        "std": 0.04311936384029158,
+        "median": 0.10976232721880529,
+        "min": 0.10108844328543891,
+        "max": 0.17973158564688863,
+        "count": 3
+      },
+      "bleu2": {
+        "mean": 0.07197173381425032,
+        "std": 0.06075399681602626,
+        "median": 0.03880684294761699,
+        "min": 0.03501806396568503,
+        "max": 0.14209029452944894,
+        "count": 3
+      },
+      "bleu3": {
+        "mean": 0.04227844450139049,
+        "std": 0.022707660671621995,
+        "median": 0.03109090746822916,
+        "min": 0.027335243559790102,
+        "max": 0.0684091824761522,
+        "count": 3
+      },
+      "bleu4": {
+        "mean": 0.035100653902571034,
+        "std": 0.014016246375535092,
+        "median": 0.029486824119076216,
+        "min": 0.024761510494160165,
+        "max": 0.05105362709447673,
+        "count": 3
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 3
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 3
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 3
+      },
+      "meteor": {
+        "mean": 0.04975124378109452,
+        "std": 0.043085840984300426,
+        "median": 0.07462686567164178,
+        "min": 0.0,
+        "max": 0.07462686567164178,
+        "count": 3
+      },
+      "sbert_similarity": {
+        "mean": 0.3686535656452179,
+        "std": 0.128072444557429,
+        "median": 0.44238197803497314,
+        "min": 0.22076845169067383,
+        "max": 0.4428102672100067,
+        "count": 3
+      }
+    },
+    "category_4": {
+      "exact_match": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "rouge1_f": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "rouge2_f": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "rougeL_f": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bleu1": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "bleu2": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "bleu3": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "bleu4": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "meteor": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "sbert_similarity": {
+        "mean": 0.25200001150369644,
+        "std": 0.012528224476848145,
+        "median": 0.25200001150369644,
+        "min": 0.24314121901988983,
+        "max": 0.26085880398750305,
+        "count": 2
+      }
+    }
+  },
+  "individual_results": [
+    {
+      "sample_id": 0,
+      "question": "In session 1 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\ub0b4\uac00 \uc870\uae08 \ub2a6\uac8c \ubd24\ub124!\"?",
+      "prediction": "\ub0b4\uac00 \uc870\uae08 \ub2a6\uac8c \ubd24\ub124!",
+      "reference": "\ub0b4\uac00 \uc870\uae08 \ub2a6\uac8c \ubd24\ub124!",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 1.0,
+        "bleu2": 1.0,
+        "bleu3": 1.0,
+        "bleu4": 1.0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.9921875,
+        "sbert_similarity": 1.0000001192092896
+      },
+      "latency_seconds": 1.073786973953247,
+      "token_usage": {
+        "prompt_tokens": 1155,
+        "completion_tokens": 3,
+        "total_tokens": 1158,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 2 of the Korean OPELA conversation, what did user_61b7f527175f6c0e7be4 say in the turn about \"\u314b\u314b\u314b\u314b\u314b\uc5b4\ub978\ub4e4\uc774 \ub9d0\ud558\ub294 \ud3c9\uc591\ub0c9\uba74 \uac19\uc740\uac74\uac00?\"?",
+      "prediction": "\u314b\u314b\u314b\u314b\u314b\uc5b4\ub978\ub4e4\uc774 \ub9d0\ud558\ub294 \ud3c9\uc591\ub0c9\uba74 \uac19\uc740\uac74\uac00? \uc5b4\ub978\ub4e4\uc774 \ud3c9\uc591\ub0c9\uba74\uc744 \uc5b8\uae09\ud588\uc744 \ub54c \uc5b4\ub978\ub4e4\uc774 \ub9d0\ud558\ub294 \ud3fc\uc5d0 \ub9de\ucdb0\uc11c \uadf8\ub7f0 \uac74\uac00 \ub77c\uace0 \ubb3c\uc5c8\uc2b5\ub2c8\ub2e4.",
+      "reference": "\u314b\u314b\u314b\u314b\u314b\uc5b4\ub978\ub4e4\uc774 \ub9d0\ud558\ub294 \ud3c9\uc591\ub0c9\uba74 \uac19\uc740\uac74\uac00?",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.4444444444444445,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0.2777777777777778,
+        "bleu2": 0.25565499628245686,
+        "bleu3": 0.23396034203975458,
+        "bleu4": 0.20105373454060027,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.606971153846154,
+        "sbert_similarity": 0.8170764446258545
+      },
+      "latency_seconds": 2.4565279483795166,
+      "token_usage": {
+        "prompt_tokens": 1201,
+        "completion_tokens": 18,
+        "total_tokens": 1219,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 3 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\ub610 \uc5b4\ub290\uc815\ub3c4 \uc9c0\ub098\uba74 \uba39\uace0\uc2f6\uc5b4\uc9c0\uace0\"?",
+      "prediction": "\ub610 \uc5b4\ub290\uc815\ub3c4 \uc9c0\ub098\uba74 \uba39\uace0 \uc2f6\uc5b4\uc9c0\uace0 \ub9db\uc788\uc5c8\uaca0\ub2e4",
+      "reference": "\ub610 \uc5b4\ub290\uc815\ub3c4 \uc9c0\ub098\uba74 \uba39\uace0\uc2f6\uc5b4\uc9c0\uace0",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.6,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0.5,
+        "bleu2": 0.447213595499958,
+        "bleu3": 0.3721003696282278,
+        "bleu4": 0.20205155046766235,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.701058201058201,
+        "sbert_similarity": 0.9597098231315613
+      },
+      "latency_seconds": 1.027707815170288,
+      "token_usage": {
+        "prompt_tokens": 834,
+        "completion_tokens": 6,
+        "total_tokens": 840,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 4 of the Korean OPELA conversation, what did user_61b7f527175f6c0e7be4 say in the turn about \"\ud639\uc2dc mbti\uc5d0\uc11c s\uc57c?\u314b\u314b\u314b\u314b\"?",
+      "prediction": "\ud639\uc2dc mbti\uc5d0\uc11c s\uc57c?\u314b\u314b\u314b\u314b",
+      "reference": "\ud639\uc2dc mbti\uc5d0\uc11c s\uc57c?\u314b\u314b\u314b\u314b",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 1.0,
+        "rouge2_f": 1.0,
+        "rougeL_f": 1.0,
+        "bleu1": 1.0,
+        "bleu2": 1.0,
+        "bleu3": 1.0,
+        "bleu4": 1.0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.9814814814814815,
+        "sbert_similarity": 1.0
+      },
+      "latency_seconds": 1.1149442195892334,
+      "token_usage": {
+        "prompt_tokens": 837,
+        "completion_tokens": 4,
+        "total_tokens": 841,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 1 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\ubb54\uac00 \ud2b8\ub80c\ub4dc\uac00 \ubcc0\ud55c \ub290\ub08c\uc774\uc57c!\"?",
+      "prediction": "\ubb54\uac00 \ud2b8\ub80c\ub4dc\uac00 \ubcc0\ud55c \ub290\ub08c\uc774\uc57c!",
+      "reference": "\ubb54\uac00 \ud2b8\ub80c\ub4dc\uac00 \ubcc0\ud55c \ub290\ub08c\uc774\uc57c!",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 1.0,
+        "bleu2": 1.0,
+        "bleu3": 1.0,
+        "bleu4": 1.0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.9921875,
+        "sbert_similarity": 1.0000001192092896
+      },
+      "latency_seconds": 0.8166441917419434,
+      "token_usage": {
+        "prompt_tokens": 1160,
+        "completion_tokens": 4,
+        "total_tokens": 1164,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 2 of the Korean OPELA conversation, what did user_61b7f527175f6c0e7be4 say in the turn about \"\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\uac78\ub808 \ube64 \ubb3c\ub9db\uc774\ub77c\ub294\uac70\ubcf4\uba74 \ud655\uc2e4\ud788 \uc2f1\uac70\uc6b4 \uc218\uc900\uc5d0 \uadf8\uce58...\"?",
+      "prediction": "n\uc740 \uadf8\ub7f0 \uc81c\uc57d\ub530\uc704\ub294 \ub450\uc9c0\uc54a\uc9c0",
+      "reference": "\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\uac78\ub808 \ube64 \ubb3c\ub9db\uc774\ub77c\ub294\uac70\ubcf4\uba74 \ud655\uc2e4\ud788 \uc2f1\uac70\uc6b4 \uc218\uc900\uc5d0 \uadf8\uce58\ub294 \ub9db\uc740 \uc544\ub2cc\uac70\uac19\uc544\u314b\u314b\u314b\u314b\u314b",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.5510101318359375
+      },
+      "latency_seconds": 1.455310344696045,
+      "token_usage": {
+        "prompt_tokens": 1199,
+        "completion_tokens": 4,
+        "total_tokens": 1203,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 3 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\uadf8\uac74 \uadf8\ub798\ub3c4 \ub04c\ub9ac\ub294 \ub9db\uc774 \uc788\ub098\ubcf4\ub2e4 \u314e.\u314e\"?",
+      "prediction": "\ud504\ub85c\uad00\uc2ec\ub7ec \uadf8\uac74 \uadf8\ub798\ub3c4 \ub04c\ub9ac\ub294 \ub9db\uc774 \uc788\ub098\ubcf4\ub2e4 \u314e.\u314e",
+      "reference": "\uadf8\uac74 \uadf8\ub798\ub3c4 \ub04c\ub9ac\ub294 \ub9db\uc774 \uc788\ub098\ubcf4\ub2e4 \u314e.\u314e",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.923076923076923,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0.8571428571428571,
+        "bleu2": 0.8451542547285166,
+        "bleu3": 0.8313759247878635,
+        "bleu4": 0.8091067115702212,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.981329690346084,
+        "sbert_similarity": 0.8456741571426392
+      },
+      "latency_seconds": 0.9189245700836182,
+      "token_usage": {
+        "prompt_tokens": 1527,
+        "completion_tokens": 7,
+        "total_tokens": 1534,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 4 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\ub0b4\uac00 \ud6c4\uac01\uc774 \ub454\uac10\ud574\uc11c \uadf8\ub7f0\uac00?? \u314b\u314b\u314b\u314b\u314b\u314b\"?",
+      "prediction": "\ub0b4\uac00 \ud6c4\uac01\uc774 \ub454\uac10\ud574\uc11c \uadf8\ub7f0\uac00?? \u314b\u314b\u314b\u314b\u314b\u314b",
+      "reference": "\ub0b4\uac00 \ud6c4\uac01\uc774 \ub454\uac10\ud574\uc11c \uadf8\ub7f0\uac00?? \u314b\u314b\u314b\u314b\u314b\u314b",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 1.0,
+        "bleu2": 1.0,
+        "bleu3": 1.0,
+        "bleu4": 1.0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.996,
+        "sbert_similarity": 1.0000001192092896
+      },
+      "latency_seconds": 1.0233147144317627,
+      "token_usage": {
+        "prompt_tokens": 1199,
+        "completion_tokens": 6,
+        "total_tokens": 1205,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 1 of the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in the turn about \"\uc751\uc751 \ub098\ub450 \uba39\uc5c8\uc5b4\"?",
+      "prediction": "\uc751\uc751 \ub098\ub450 \uba39\uc5c8\uc5b4",
+      "reference": "\uc751\uc751 \ub098\ub450 \uba39\uc5c8\uc5b4",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 1.0,
+        "bleu2": 1.0,
+        "bleu3": 1.0,
+        "bleu4": 0.5623413251903491,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.9814814814814815,
+        "sbert_similarity": 1.0000001192092896
+      },
+      "latency_seconds": 0.7207632064819336,
+      "token_usage": {
+        "prompt_tokens": 792,
+        "completion_tokens": 2,
+        "total_tokens": 794,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 1 of the Korean OPELA conversation, what did user_61b7f527175f6c0e7be4 say in the turn about \"\uc61b\ub0a0\uc5d0 \uba39\uc5c8\ub358 \ubb50\ub784\uae4c \uc800\ub834\ud55c \ub9db?\u314b\u314b\u314b\u314b\u314b\"?",
+      "prediction": "\uc61b\ub0a0\uc5d0 \uba39\uc5c8\ub358 \ubb50\ub784\uae4c \uc800\ub834\ud55c \ub9db?\u314b\u314b\u314b\u314b\u314b",
+      "reference": "\uc61b\ub0a0\uc5d0 \uba39\uc5c8\ub358 \ubb50\ub784\uae4c \uc800\ub834\ud55c \ub9db?\u314b\u314b\u314b\u314b\u314b",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 1.0,
+        "bleu2": 1.0,
+        "bleu3": 1.0,
+        "bleu4": 1.0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.996,
+        "sbert_similarity": 1.0000001192092896
+      },
+      "latency_seconds": 2.026768922805786,
+      "token_usage": {
+        "prompt_tokens": 1223,
+        "completion_tokens": 5,
+        "total_tokens": 1228,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 1 and what did user_61b7f527175f6c0e7be4 say in session 2?",
+      "prediction": "\ud504\ub85c\uad00\uc2ec\ub7ec \ud1f4\uadfc\ud588\ub2e4!! user_61b7f527175f6c0e7be4 \ud568\ubc15\uc2a4\ud14c\uc774\ud06c \uba39\uc5c8\uc5b4~",
+      "reference": "Session 1: \ub0b4\uac00 \uc870\uae08 \ub2a6\uac8c \ubd24\ub124! Session 2: \u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\uac78\ub808 \ube64 \ubb3c\ub9db\uc774\ub77c\ub294\uac70\ubcf4\uba74 \ud655\uc2e4\ud788 \uc2f1\uac70\uc6b4 \uc218\uc900\uc5d0 \uadf8\uce58\ub294 \ub9db\uc740 \uc544\ub2cc\uac70\uac19\uc544\u314b\u314b\u314b\u314b\u314b",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0.02230257790228158,
+        "bleu2": 0.007617780590621929,
+        "bleu3": 0.0058495268365200675,
+        "bleu4": 0.005156835566857781,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.37870070338249207
+      },
+      "latency_seconds": 1.9154372215270996,
+      "token_usage": {
+        "prompt_tokens": 1561,
+        "completion_tokens": 12,
+        "total_tokens": 1573,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Korean OPELA conversation, what did user_61b7f527175f6c0e7be4 say in session 2 and what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 3?",
+      "prediction": "user_61b7f527175f6c0e7be4: \uc6c5\uc6c5!!\uc548\ub155!!\n\ud504\ub85c\uad00\uc2ec\ub7ec: \uadf8\uce58\uadf8\uce58 \u314e\u314e",
+      "reference": "Session 2: \u314b\u314b\u314b\u314b\u314b\uc5b4\ub978\ub4e4\uc774 \ub9d0\ud558\ub294 \ud3c9\uc591\ub0c9\uba74 \uac19\uc740\uac74\uac00? Session 3: \uadf8\uac74 \uadf8\ub798\ub3c4 \ub04c\ub9ac\ub294 \ub9db\uc774 \uc788\ub098\ubcf4\ub2e4 \u314e.\u314e",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0.10987343836674063,
+        "bleu2": 0.025660906727971132,
+        "bleu3": 0.016927564104648202,
+        "bleu4": 0.01335356899385369,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.263182133436203
+      },
+      "latency_seconds": 1.910080909729004,
+      "token_usage": {
+        "prompt_tokens": 1552,
+        "completion_tokens": 12,
+        "total_tokens": 1564,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Korean OPELA conversation, what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 3 and what did \ud504\ub85c\uad00\uc2ec\ub7ec say in session 4?",
+      "prediction": "3: \ud1f4\uadfc\ud588\ub2e4!!\n4: \uadf8 \uc815\ub3c4\uba74 \uc758\uc2ec\ud574\ubcfc \ubc95 \ud55c\ub370?",
+      "reference": "Session 3: \ub610 \uc5b4\ub290\uc815\ub3c4 \uc9c0\ub098\uba74 \uba39\uace0\uc2f6\uc5b4\uc9c0\uace0 Session 4: \ub0b4\uac00 \ud6c4\uac01\uc774 \ub454\uac10\ud574\uc11c \uadf8\ub7f0\uac00?? \u314b\u314b\u314b\u314b\u314b\u314b",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.2,
+        "rouge1_f": 0.6666666666666666,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.6666666666666666,
+        "bleu1": 0.2827467233044941,
+        "bleu2": 0.18612667944284303,
+        "bleu3": 0.06294775199389183,
+        "bleu4": 0.03611948985310407,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.08,
+        "sbert_similarity": 0.6495510339736938
+      },
+      "latency_seconds": 1.0031723976135254,
+      "token_usage": {
+        "prompt_tokens": 1543,
+        "completion_tokens": 7,
+        "total_tokens": 1550,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "Which statement came earlier in the Korean OPELA conversation: \ud504\ub85c\uad00\uc2ec\ub7ec's session 1 statement or user_61b7f527175f6c0e7be4's session 2 statement?",
+      "prediction": "user_61b7f527175f6c0e7be4's statement came earlier.",
+      "reference": "Earlier session 1: \ub0b4\uac00 \uc870\uae08 \ub2a6\uac8c \ubd24\ub124!",
+      "category": 3,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.18181818181818182,
+        "rouge1_f": 0.2222222222222222,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.2222222222222222,
+        "bleu1": 0.10108844328543891,
+        "bleu2": 0.03501806396568503,
+        "bleu3": 0.027335243559790102,
+        "bleu4": 0.024761510494160165,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.22076845169067383
+      },
+      "latency_seconds": 1.673407793045044,
+      "token_usage": {
+        "prompt_tokens": 1559,
+        "completion_tokens": 12,
+        "total_tokens": 1571,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "Which statement came earlier in the Korean OPELA conversation: user_61b7f527175f6c0e7be4's session 2 statement or \ud504\ub85c\uad00\uc2ec\ub7ec's session 3 statement?",
+      "prediction": "user_61b7f527175f6c0e7be4's session 2 statement",
+      "reference": "Earlier session 2: \u314b\u314b\u314b\u314b\u314b\uc5b4\ub978\ub4e4\uc774 \ub9d0\ud558\ub294 \ud3c9\uc591\ub0c9\uba74 \uac19\uc740\uac74\uac00?",
+      "category": 3,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.18181818181818182,
+        "rouge1_f": 0.4444444444444444,
+        "rouge2_f": 0.28571428571428575,
+        "rougeL_f": 0.4444444444444444,
+        "bleu1": 0.17973158564688863,
+        "bleu2": 0.14209029452944894,
+        "bleu3": 0.0684091824761522,
+        "bleu4": 0.05105362709447673,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.07462686567164178,
+        "sbert_similarity": 0.4428102672100067
+      },
+      "latency_seconds": 1.6068668365478516,
+      "token_usage": {
+        "prompt_tokens": 1536,
+        "completion_tokens": 11,
+        "total_tokens": 1547,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "Which statement came earlier in the Korean OPELA conversation: \ud504\ub85c\uad00\uc2ec\ub7ec's session 3 statement or user_61b7f527175f6c0e7be4's session 4 statement?",
+      "prediction": "user_61b7f527175f6c0e7be4's session 4 statement",
+      "reference": "Earlier session 3: \ub610 \uc5b4\ub290\uc815\ub3c4 \uc9c0\ub098\uba74 \uba39\uace0\uc2f6\uc5b4\uc9c0\uace0",
+      "category": 3,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.18181818181818182,
+        "rouge1_f": 0.2222222222222222,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.2222222222222222,
+        "bleu1": 0.10976232721880529,
+        "bleu2": 0.03880684294761699,
+        "bleu3": 0.03109090746822916,
+        "bleu4": 0.029486824119076216,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.07462686567164178,
+        "sbert_similarity": 0.44238197803497314
+      },
+      "latency_seconds": 1.4221162796020508,
+      "token_usage": {
+        "prompt_tokens": 866,
+        "completion_tokens": 11,
+        "total_tokens": 877,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "What general conversational act is shown by \ud504\ub85c\uad00\uc2ec\ub7ec's cited turn in the Korean OPELA conversation?",
+      "prediction": "referring to past experiences",
+      "reference": "sharing information in the conversation",
+      "category": 4,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.24314121901988983
+      },
+      "latency_seconds": 0.8962035179138184,
+      "token_usage": {
+        "prompt_tokens": 1615,
+        "completion_tokens": 7,
+        "total_tokens": 1622,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "What general conversational act is shown by user_61b7f527175f6c0e7be4's cited turn in the Korean OPELA conversation?",
+      "prediction": "laugh",
+      "reference": "asking a question",
+      "category": 4,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.26085880398750305
+      },
+      "latency_seconds": 1.0077192783355713,
+      "token_usage": {
+        "prompt_tokens": 1209,
+        "completion_tokens": 1,
+        "total_tokens": 1210,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "What was stated by \ud504\ub85c\uad00\uc2ec\ub7ec at evidence turn D1:1 in the Korean OPELA conversation?",
+      "prediction": "\ub09c \ubaa8\ub974\uaca0\ub294_\u314b\u314b\u314b\u314b\u314b",
+      "reference": "\ub0b4\uac00 \uc870\uae08 \ub2a6\uac8c \ubd24\ub124!",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.7631833553314209
+      },
+      "latency_seconds": 0.9363608360290527,
+      "token_usage": {
+        "prompt_tokens": 1182,
+        "completion_tokens": 3,
+        "total_tokens": 1185,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "What was stated by user_61b7f527175f6c0e7be4 at evidence turn D1:2 in the Korean OPELA conversation?",
+      "prediction": "\ub098\ub294 \uc624\ub298 \uc810\uc2ec\uc73c\ub85c \ud568\ubc15\uc2a4\ud14c\uc774\ud06c\ub97c \uba39\uc5c8\uc5b4~",
+      "reference": "\uc548\ub155~~!!\ub9cc\ub098\uc11c \ubc18\uac00\uc6cc!",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.6159275770187378
+      },
+      "latency_seconds": 1.457418441772461,
+      "token_usage": {
+        "prompt_tokens": 1597,
+        "completion_tokens": 5,
+        "total_tokens": 1602,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    }
+  ]
+}

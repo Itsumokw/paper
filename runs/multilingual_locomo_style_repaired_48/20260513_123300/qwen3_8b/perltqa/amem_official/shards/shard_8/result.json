@@ -1,0 +1,1548 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "dataset": "/home/stu0032/paper/runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen3_8b/perltqa/amem_official/shards/shard_8/locomo_sample_8.json",
+  "memory_layer": "robust",
+  "ratio": 1.0,
+  "retrieve_k": 10,
+  "total_questions": 32,
+  "category_distribution": {
+    "1": 10,
+    "2": 18,
+    "3": 2,
+    "4": 2
+  },
+  "aggregate_metrics": {
+    "overall": {
+      "exact_match": {
+        "mean": 0.09375,
+        "std": 0.296144581080299,
+        "median": 0.0,
+        "min": 0,
+        "max": 1,
+        "count": 32
+      },
+      "f1": {
+        "mean": 0.23389423076923077,
+        "std": 0.3470355980833771,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 32
+      },
+      "rouge1_f": {
+        "mean": 0.5154806998556999,
+        "std": 0.40365645510302217,
+        "median": 0.6666666666666666,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 32
+      },
+      "rouge2_f": {
+        "mean": 0.3907986111111111,
+        "std": 0.378224512834271,
+        "median": 0.4,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 32
+      },
+      "rougeL_f": {
+        "mean": 0.5154806998556999,
+        "std": 0.40365645510302217,
+        "median": 0.6666666666666666,
+        "min": 0,
+        "max": 1.0,
+        "count": 32
+      },
+      "bleu1": {
+        "mean": 0.28537644479244123,
+        "std": 0.31025730994414225,
+        "median": 0.16346153846153846,
+        "min": 0,
+        "max": 1.0,
+        "count": 32
+      },
+      "bleu2": {
+        "mean": 0.16595487508027093,
+        "std": 0.1923099273989541,
+        "median": 0.05830278854730968,
+        "min": 0,
+        "max": 0.5777298366654254,
+        "count": 32
+      },
+      "bleu3": {
+        "mean": 0.12239244576038527,
+        "std": 0.14974032543542723,
+        "median": 0.04769314237931646,
+        "min": 0,
+        "max": 0.5451838345989588,
+        "count": 32
+      },
+      "bleu4": {
+        "mean": 0.081580026044239,
+        "std": 0.10444616419912549,
+        "median": 0.047939983793612764,
+        "min": 0,
+        "max": 0.5156626918239822,
+        "count": 32
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 32
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 32
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 32
+      },
+      "meteor": {
+        "mean": 0.1709777211334746,
+        "std": 0.2593135020748458,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.8300000000000002,
+        "count": 32
+      },
+      "sbert_similarity": {
+        "mean": 0.726972765289247,
+        "std": 0.23907774750670285,
+        "median": 0.7755460143089294,
+        "min": 0.10480301082134247,
+        "max": 1.000000238418579,
+        "count": 32
+      }
+    },
+    "category_1": {
+      "exact_match": {
+        "mean": 0.3,
+        "std": 0.48304589153964794,
+        "median": 0.0,
+        "min": 0,
+        "max": 1,
+        "count": 10
+      },
+      "f1": {
+        "mean": 0.3,
+        "std": 0.48304589153964794,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 10
+      },
+      "rouge1_f": {
+        "mean": 0.6,
+        "std": 0.5163977794943223,
+        "median": 1.0,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 10
+      },
+      "rouge2_f": {
+        "mean": 0.5,
+        "std": 0.5270462766947299,
+        "median": 0.5,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 10
+      },
+      "rougeL_f": {
+        "mean": 0.6,
+        "std": 0.5163977794943223,
+        "median": 1.0,
+        "min": 0,
+        "max": 1.0,
+        "count": 10
+      },
+      "bleu1": {
+        "mean": 0.4,
+        "std": 0.42817441928883765,
+        "median": 0.25,
+        "min": 0,
+        "max": 1.0,
+        "count": 10
+      },
+      "bleu2": {
+        "mean": 0.13138316697206248,
+        "std": 0.13363215169397127,
+        "median": 0.09128709291752769,
+        "min": 0,
+        "max": 0.316227766016838,
+        "count": 10
+      },
+      "bleu3": {
+        "mean": 0.096294128747269,
+        "std": 0.09090060977055021,
+        "median": 0.07665320007195604,
+        "min": 0,
+        "max": 0.2187761623949553,
+        "count": 10
+      },
+      "bleu4": {
+        "mean": 0.08548551905895375,
+        "std": 0.07273275213026266,
+        "median": 0.08034284189446518,
+        "min": 0,
+        "max": 0.1778279410038923,
+        "count": 10
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 10
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 10
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 10
+      },
+      "meteor": {
+        "mean": 0.15,
+        "std": 0.24152294576982397,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.5,
+        "count": 10
+      },
+      "sbert_similarity": {
+        "mean": 0.9391318976879119,
+        "std": 0.05815738730294685,
+        "median": 0.937099039554596,
+        "min": 0.8116520047187805,
+        "max": 1.000000238418579,
+        "count": 10
+      }
+    },
+    "category_2": {
+      "exact_match": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 18
+      },
+      "f1": {
+        "mean": 0.22136752136752136,
+        "std": 0.29475701090725653,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.8000000000000002,
+        "count": 18
+      },
+      "rouge1_f": {
+        "mean": 0.5235529902196568,
+        "std": 0.3467221290574052,
+        "median": 0.6969696969696969,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 18
+      },
+      "rouge2_f": {
+        "mean": 0.37623456790123455,
+        "std": 0.2973179893089605,
+        "median": 0.4222222222222223,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 18
+      },
+      "rougeL_f": {
+        "mean": 0.5235529902196568,
+        "std": 0.3467221290574052,
+        "median": 0.6969696969696969,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 18
+      },
+      "bleu1": {
+        "mean": 0.24066923518656225,
+        "std": 0.23979503301138858,
+        "median": 0.07692307692307693,
+        "min": 0,
+        "max": 0.6618726769384466,
+        "count": 18
+      },
+      "bleu2": {
+        "mean": 0.1869038222674649,
+        "std": 0.22565733784999142,
+        "median": 0.025318484177091663,
+        "min": 0,
+        "max": 0.5777298366654254,
+        "count": 18
+      },
+      "bleu3": {
+        "mean": 0.1471734503271592,
+        "std": 0.1832891283856281,
+        "median": 0.018733084686676876,
+        "min": 0,
+        "max": 0.5451838345989588,
+        "count": 18
+      },
+      "bleu4": {
+        "mean": 0.08491454275181168,
+        "std": 0.12715250649732293,
+        "median": 0.01553712569276035,
+        "min": 0,
+        "max": 0.5156626918239822,
+        "count": 18
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 18
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 18
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 18
+      },
+      "meteor": {
+        "mean": 0.2067381709039548,
+        "std": 0.29400223843875756,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.8300000000000002,
+        "count": 18
+      },
+      "sbert_similarity": {
+        "mean": 0.6799324916468726,
+        "std": 0.16581599177135206,
+        "median": 0.7230317890644073,
+        "min": 0.2617871165275574,
+        "max": 0.8917291164398193,
+        "count": 18
+      }
+    },
+    "category_3": {
+      "exact_match": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "f1": {
+        "mean": 0.25,
+        "std": 0.0,
+        "median": 0.25,
+        "min": 0.25,
+        "max": 0.25,
+        "count": 2
+      },
+      "rouge1_f": {
+        "mean": 0.5357142857142858,
+        "std": 0.050507627227610596,
+        "median": 0.5357142857142858,
+        "min": 0.5,
+        "max": 0.5714285714285715,
+        "count": 2
+      },
+      "rouge2_f": {
+        "mean": 0.3666666666666667,
+        "std": 0.047140452079103196,
+        "median": 0.3666666666666667,
+        "min": 0.3333333333333333,
+        "max": 0.4,
+        "count": 2
+      },
+      "rougeL_f": {
+        "mean": 0.5357142857142858,
+        "std": 0.050507627227610596,
+        "median": 0.5357142857142858,
+        "min": 0.5,
+        "max": 0.5714285714285715,
+        "count": 2
+      },
+      "bleu1": {
+        "mean": 0.4,
+        "std": 0.0,
+        "median": 0.4,
+        "min": 0.4,
+        "max": 0.4,
+        "count": 2
+      },
+      "bleu2": {
+        "mean": 0.316227766016838,
+        "std": 0.0,
+        "median": 0.316227766016838,
+        "min": 0.316227766016838,
+        "max": 0.316227766016838,
+        "count": 2
+      },
+      "bleu3": {
+        "mean": 0.1522474354853864,
+        "std": 0.0,
+        "median": 0.1522474354853864,
+        "min": 0.1522474354853864,
+        "max": 0.1522474354853864,
+        "count": 2
+      },
+      "bleu4": {
+        "mean": 0.11362193664674995,
+        "std": 0.0,
+        "median": 0.11362193664674995,
+        "min": 0.11362193664674995,
+        "max": 0.11362193664674995,
+        "count": 2
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "meteor": {
+        "mean": 0.125,
+        "std": 0.0,
+        "median": 0.125,
+        "min": 0.125,
+        "max": 0.125,
+        "count": 2
+      },
+      "sbert_similarity": {
+        "mean": 0.7117093205451965,
+        "std": 0.09719661751861018,
+        "median": 0.7117093205451965,
+        "min": 0.6429809331893921,
+        "max": 0.780437707901001,
+        "count": 2
+      }
+    },
+    "category_4": {
+      "exact_match": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "rouge1_f": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "rouge2_f": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "rougeL_f": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "bleu1": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "bleu2": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "bleu3": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "bleu4": {
+        "mean": 0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "count": 2
+      },
+      "bert_precision": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bert_recall": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "bert_f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "meteor": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "count": 2
+      },
+      "sbert_similarity": {
+        "mean": 0.10480301082134247,
+        "std": 0.0,
+        "median": 0.10480301082134247,
+        "min": 0.10480301082134247,
+        "max": 0.10480301082134247,
+        "count": 2
+      }
+    }
+  },
+  "individual_results": [
+    {
+      "sample_id": 0,
+      "question": "In session 1 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\u66fe\u5a1f\uff0c\u8bf7\u95ee\u6700\u8fd1\u600e\u4e48\u6837\u554a\uff1f\"?",
+      "prediction": "\u5176\u4ed6\u53c2\u4e0e\u8005\u8bf4\uff1a\u201c\u4f60\u597d\u66fe\u5a1f\uff0c\u8bf7\u95ee\u6700\u8fd1\u600e\u4e48\u6837\u554a\uff1f\u201d",
+      "reference": "\u4f60\u597d\u66fe\u5a1f\uff0c\u8bf7\u95ee\u6700\u8fd1\u600e\u4e48\u6837\u554a\uff1f",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0.25,
+        "bleu2": 0.09128709291752769,
+        "bleu3": 0.07665320007195604,
+        "bleu4": 0.08034284189446518,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.9197303056716919
+      },
+      "latency_seconds": 1.9988186359405518,
+      "token_usage": {
+        "prompt_tokens": 3116,
+        "completion_tokens": 5,
+        "total_tokens": 3121,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 2 of the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in the turn about \"\u4f60\u597d\u554a\uff0cAI\u52a9\u624b\uff01\u6700\u8fd1\u600e\u4e48\u6837\uff1f\"?",
+      "prediction": "\u4f60\u597d\u554a\uff0cAI\u52a9\u624b\uff01\u6700\u8fd1\u600e\u4e48\u6837\uff1f",
+      "reference": "\u4f60\u597d\u554a\uff0cAI\u52a9\u624b\uff01\u6700\u8fd1\u600e\u4e48\u6837\uff1f",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 1.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 1.0,
+        "bleu1": 1.0,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.2187761623949553,
+        "bleu4": 0.1778279410038923,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.5,
+        "sbert_similarity": 1.000000238418579
+      },
+      "latency_seconds": 1.3449814319610596,
+      "token_usage": {
+        "prompt_tokens": 3202,
+        "completion_tokens": 3,
+        "total_tokens": 3205,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 3 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u66fe\u5a1f\u3002\u8bb0\u5f97\u60a8\u66fe\u7ecf\u57282022\u5e743\u670815\u65e5\u7684\u5bb6\u5ead\u805a\u4f1a\u4e0a\u4e0e\u60a8\u7684\u5144\u5f1f\u66fe\u660e\u8ba8\u8bba...\"?",
+      "prediction": "\u60a8\u597d\uff0c\u66fe\u5a1f\u3002\u8bb0\u5f97\u60a8\u66fe\u7ecf\u57282022\u5e743\u670815\u65e5\u7684\u5bb6\u5ead\u805a\u4f1a\u4e0a\u4e0e\u60a8\u7684\u5144\u5f1f\u66fe\u660e\u8ba8\u8bba\u4e86\u9e1f\u5de2\u7684\u9632\u707e\u51cf\u707e\u5de5\u7a0b\u3002",
+      "reference": "\u60a8\u597d\uff0c\u66fe\u5a1f\u3002\u8bb0\u5f97\u60a8\u66fe\u7ecf\u57282022\u5e743\u670815\u65e5\u7684\u5bb6\u5ead\u805a\u4f1a\u4e0a\u4e0e\u60a8\u7684\u5144\u5f1f\u66fe\u660e\u8ba8\u8bba\u4e86\u9e1f\u5de2\u7684\u9632\u707e\u51cf\u707e\u5de5\u7a0b\u3002\u8bf7\u95ee\u9e1f\u5de2\u7684\u5efa\u7b51\u8bbe\u8ba1\u4e2d\u91c7\u7528\u4e86\u54ea\u4e9b\u9632\u707e\u51cf\u707e\u63aa\u65bd\u5462\uff1f",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 1.0,
+        "rouge2_f": 1.0,
+        "rougeL_f": 1.0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.9629998207092285
+      },
+      "latency_seconds": 2.3380520343780518,
+      "token_usage": {
+        "prompt_tokens": 3232,
+        "completion_tokens": 12,
+        "total_tokens": 3244,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 4 of the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in the turn about \"\u4f60\u597d\uff0c\u52a9\u624b\uff0c\u6211\u5728\u548c\u5927\u5b66\u540c\u5b66\u674e\u6167\u805a\u4f1a\u65f6\u542c\u8bf4\u4e86\u793e\u4ea4\u5a92\u4f53\u6570\u636e\u6316\u6398\u8fd9\u4e2a\u8bdd\u9898\uff0c\u60f3\u4e86\u89e3...\"?",
+      "prediction": "\u66fe\u5a1f\u8bf4\uff1a\u201c\u4f60\u597d\uff0c\u52a9\u624b\uff0c\u6211\u5728\u548c\u5927\u5b66\u540c\u5b66\u674e\u6167\u805a\u4f1a\u65f6\u542c\u8bf4\u4e86\u793e\u4ea4\u5a92\u4f53\u6570\u636e\u6316\u6398\u8fd9\u4e2a\u8bdd\u9898\uff0c\u60f3\u4e86\u89e3\u66f4\u591a\u76f8\u5173\u77e5\u8bc6\u3002\u201d",
+      "reference": "\u4f60\u597d\uff0c\u52a9\u624b\uff0c\u6211\u5728\u548c\u5927\u5b66\u540c\u5b66\u674e\u6167\u805a\u4f1a\u65f6\u542c\u8bf4\u4e86\u793e\u4ea4\u5a92\u4f53\u6570\u636e\u6316\u6398\u8fd9\u4e2a\u8bdd\u9898\uff0c\u60f3\u4e86\u89e3\u66f4\u591a\u76f8\u5173\u77e5\u8bc6\u3002",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0.25,
+        "bleu2": 0.09128709291752769,
+        "bleu3": 0.07665320007195604,
+        "bleu4": 0.08034284189446518,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.8946194052696228
+      },
+      "latency_seconds": 1.7511911392211914,
+      "token_usage": {
+        "prompt_tokens": 3193,
+        "completion_tokens": 12,
+        "total_tokens": 3205,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 5 of the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in the turn about \"\u4f60\u597d\uff0c\u6700\u8fd1\u6709\u5f88\u591a\u79fb\u6c11\u6848\u5b50\u5417\uff1f\"?",
+      "prediction": "\u66fe\u5a1f\u8bf4\uff1a\u201c\u4f60\u597d\uff0c\u6700\u8fd1\u6709\u5f88\u591a\u79fb\u6c11\u6848\u5b50\u5417\uff1f\u201d",
+      "reference": "\u4f60\u597d\uff0c\u6700\u8fd1\u6709\u5f88\u591a\u79fb\u6c11\u6848\u5b50\u5417\uff1f",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0.25,
+        "bleu2": 0.09128709291752769,
+        "bleu3": 0.07665320007195604,
+        "bleu4": 0.08034284189446518,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.9341334700584412
+      },
+      "latency_seconds": 1.3918118476867676,
+      "token_usage": {
+        "prompt_tokens": 3197,
+        "completion_tokens": 5,
+        "total_tokens": 3202,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 6 of the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in the turn about \"\u542c\u8bf4\u4f60\u7684\u5927\u5b66\u540c\u5b66\u674e\u6167\u53c2\u4e0e\u4e86\u300a\u673a\u5668\u732b\u300b\u6539\u7f16\u7535\u5f71\u7684\u53d1\u5e03\u6d3b\u52a8\uff1f\"?",
+      "prediction": "\u66fe\u5a1f\u8bf4\uff1a\u201c\u542c\u8bf4\u4f60\u7684\u5927\u5b66\u540c\u5b66\u674e\u6167\u53c2\u4e0e\u4e86\u300a\u673a\u5668\u732b\u300b\u6539\u7f16\u7535\u5f71\u7684\u53d1\u5e03\u6d3b\u52a8\uff1f\u201d",
+      "reference": "\u542c\u8bf4\u4f60\u7684\u5927\u5b66\u540c\u5b66\u674e\u6167\u53c2\u4e0e\u4e86\u300a\u673a\u5668\u732b\u300b\u6539\u7f16\u7535\u5f71\u7684\u53d1\u5e03\u6d3b\u52a8\uff1f",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0.25,
+        "bleu2": 0.09128709291752769,
+        "bleu3": 0.07665320007195604,
+        "bleu4": 0.08034284189446518,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.9281190633773804
+      },
+      "latency_seconds": 1.8439741134643555,
+      "token_usage": {
+        "prompt_tokens": 3173,
+        "completion_tokens": 8,
+        "total_tokens": 3181,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 7 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u66fe\u5a1f\uff0c\u4f60\u8bb0\u5f972022\u5e743\u670815\u65e5\u6211\u4eec\u5728\u5546\u4e1a\u9886\u57df\u5408\u4f5c\u4e86\u5417\uff1f\"?",
+      "prediction": "\u66fe\u5a1f\uff0c\u4f60\u8bb0\u5f972022\u5e743\u670815\u65e5\u6211\u4eec\u5728\u5546\u4e1a\u9886\u57df\u5408\u4f5c\u4e86\u5417\uff1f",
+      "reference": "\u66fe\u5a1f\uff0c\u4f60\u8bb0\u5f972022\u5e743\u670815\u65e5\u6211\u4eec\u5728\u5546\u4e1a\u9886\u57df\u5408\u4f5c\u4e86\u5417\uff1f",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 1.0,
+        "rouge2_f": 1.0,
+        "rougeL_f": 1.0,
+        "bleu1": 1.0,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.2187761623949553,
+        "bleu4": 0.1778279410038923,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.5,
+        "sbert_similarity": 1.0000001192092896
+      },
+      "latency_seconds": 1.7911524772644043,
+      "token_usage": {
+        "prompt_tokens": 3214,
+        "completion_tokens": 7,
+        "total_tokens": 3221,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 8 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\u66fe\u5a1f\uff0c\u4eca\u5929\u662f2022\u5e74\uff0c\u56de\u5fc6\u4e00\u4e0b\uff0c2013\u5e74\u6211\u4eec\u4e00\u8d77\u53bb\u770b\u4e86\u300a\u970d\u6bd4\u7279\u4eba\u300b...\"?",
+      "prediction": "\u4f60\u597d\u66fe\u5a1f\uff0c\u4eca\u5929\u662f2022\u5e74\uff0c\u56de\u5fc6\u4e00\u4e0b\uff0c2013\u5e74\u6211\u4eec\u4e00\u8d77\u53bb\u770b\u4e86\u300a\u970d\u6bd4\u7279\u4eba\u300b\u7535\u5f71\u7cfb\u5217\uff0c\u5bf9\u4e8e\u4f60\u6700\u96be\u5fd8\u7684\u5267\u60c5\u70b9\u662f\u4ec0\u4e48\uff1f",
+      "reference": "\u4f60\u597d\u66fe\u5a1f\uff0c\u4eca\u5929\u662f2022\u5e74\uff0c\u56de\u5fc6\u4e00\u4e0b\uff0c2013\u5e74\u6211\u4eec\u4e00\u8d77\u53bb\u770b\u4e86\u300a\u970d\u6bd4\u7279\u4eba\u300b\u7535\u5f71\u7cfb\u5217\uff0c\u5bf9\u4e8e\u4f60\u6700\u96be\u5fd8\u7684\u5267\u60c5\u70b9\u662f\u4ec0\u4e48\uff1f",
+      "category": 1,
+      "metrics": {
+        "exact_match": 1,
+        "f1": 1.0,
+        "rouge1_f": 1.0,
+        "rouge2_f": 1.0,
+        "rougeL_f": 1.0,
+        "bleu1": 1.0,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.2187761623949553,
+        "bleu4": 0.1778279410038923,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.5,
+        "sbert_similarity": 0.9999999403953552
+      },
+      "latency_seconds": 2.413731098175049,
+      "token_usage": {
+        "prompt_tokens": 3134,
+        "completion_tokens": 14,
+        "total_tokens": 3148,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 9 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\u66fe\u5a1f\uff0c\u60a8\u662f\u5426\u8bb0\u5f97\u57282018\u5e745\u670812\u65e5\u66fe\u4e3a\u60a8\u7684\u7537\u53cb\u738b\u6d69\u6210\u529f\u5904\u7406\u4e00\u8d77\u533b\u7597...\"?",
+      "prediction": "\u5728\u8be5\u5bf9\u8bdd\u4e2d\uff0c\u5176\u4ed6\u53c2\u4e0e\u8005\u63d0\u5230\uff1a\u201c\u60a8\u597d\u66fe\u5a1f\uff0c\u60a8\u662f\u5426\u8bb0\u5f97\u57282018\u5e745\u670812\u65e5\u66fe\u4e3a\u60a8\u7684\u7537\u53cb\u738b\u6d69\u6210\u529f\u5904\u7406\u4e00\u8d77\u533b\u7597...\u201d",
+      "reference": "\u60a8\u597d\u66fe\u5a1f\uff0c\u60a8\u662f\u5426\u8bb0\u5f97\u57282018\u5e745\u670812\u65e5\u66fe\u4e3a\u60a8\u7684\u7537\u53cb\u738b\u6d69\u6210\u529f\u5904\u7406\u4e00\u8d77\u533b\u7597\u7ea0\u7eb7\u6848\u4ef6\u7684\u4e8b\u60c5\uff1f",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 1.0,
+        "rouge2_f": 1.0,
+        "rougeL_f": 1.0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.8116520047187805
+      },
+      "latency_seconds": 2.6867988109588623,
+      "token_usage": {
+        "prompt_tokens": 3166,
+        "completion_tokens": 14,
+        "total_tokens": 3180,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In session 10 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\uff0c\u66fe\u5a1f\u3002\u6211\u4eec\u4e0a\u6b21\u89c1\u9762\u662f\u57282022\u5e746\u6708\u7684\u6cd5\u5b66\u4f1a\u8bae\u4e0a\uff0c\u90a3\u65f6\u5019\u4f60\u7ed3\u8bc6\u4e86\u77e5\u540d...\"?",
+      "prediction": "\u4f60\u597d\uff0c\u66fe\u5a1f\u3002\u6211\u4eec\u4e0a\u6b21\u89c1\u9762\u662f\u57282022\u5e746\u6708\u7684\u6cd5\u5b66\u4f1a\u8bae\u4e0a\uff0c\u90a3\u65f6\u5019\u4f60\u7ed3\u8bc6\u4e86\u77e5\u540d\u5f8b\u5e08\u5f20\u8273\u3002",
+      "reference": "\u4f60\u597d\uff0c\u66fe\u5a1f\u3002\u6211\u4eec\u4e0a\u6b21\u89c1\u9762\u662f\u57282022\u5e746\u6708\u7684\u6cd5\u5b66\u4f1a\u8bae\u4e0a\uff0c\u90a3\u65f6\u5019\u4f60\u7ed3\u8bc6\u4e86\u77e5\u540d\u5f8b\u5e08\u5f20\u8273\u3002\u6211\u60f3\u77e5\u9053\u4f60\u548c\u5f20\u8273\u4e4b\u540e\u6709\u4ec0\u4e48\u8054\u7cfb\u5417\uff1f",
+      "category": 1,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 1.0,
+        "rouge2_f": 1.0,
+        "rougeL_f": 1.0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.9400646090507507
+      },
+      "latency_seconds": 2.135186195373535,
+      "token_usage": {
+        "prompt_tokens": 3305,
+        "completion_tokens": 10,
+        "total_tokens": 3315,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 1 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 2?",
+      "prediction": "Session 1: \u4f60\u597d\u66fe\u5a1f\uff0c\u8bf7\u95ee\u6700\u8fd1\u600e\u4e48\u6837\u554a\uff1f  \nSession 2: \u54e6\uff0c\u662f\u66fe\u660e\u8bbe\u8ba1\u7684\u90a3\u4e2a\u4f4d\u4e8e\u5317\u4eac\u5e02\u4e2d\u5fc3\u5546\u4e1a\u533a\u7684\u521b\u65b0\u578b\u529e\u516c\u697c\u5427\uff0c\u4ed6\u6210\u529f\u83b7\u5f97\u4e86\u201c\u6700\u4f73\u5546\u4e1a\u5efa\u7b51\u8bbe\u8ba1\u5956\u201d\uff0c\u542c\u8d77\u6765\u771f\u4e0d\u9519\u554a\uff01",
+      "reference": "Session 1: \u4f60\u597d\u66fe\u5a1f\uff0c\u8bf7\u95ee\u6700\u8fd1\u600e\u4e48\u6837\u554a\uff1f Session 2: \u770b\u5f97\u51fa\u66fe\u660e\u5148\u751f\u5f88\u91cd\u89c6\u5bb6\u5ead\u548c\u4eb2\u60c5\u5462\u3002",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.8000000000000002,
+        "rouge1_f": 1.0,
+        "rouge2_f": 1.0,
+        "rougeL_f": 1.0,
+        "bleu1": 0.5833333333333334,
+        "bleu2": 0.5640760748177662,
+        "bleu3": 0.5451838345989588,
+        "bleu4": 0.5156626918239822,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.8300000000000002,
+        "sbert_similarity": 0.8364607095718384
+      },
+      "latency_seconds": 2.4653735160827637,
+      "token_usage": {
+        "prompt_tokens": 3189,
+        "completion_tokens": 23,
+        "total_tokens": 3212,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in session 2 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 3?",
+      "prediction": "Short answer: \u66fe\u5a1f said \"\u662f\u554a\uff0c\u66fe\u660e\u662f\u6211\u54e5\u54e5\u3002\u4ed6\u662f\u4e00\u540d\u5efa\u7b51\u5e08\uff0c\u5728\u6587\u5316\u5927\u9769\u547d\u65f6\u671f\u7ed9\u6211\u4eec\u5168\u5bb6\u63d0\u4f9b\u4e86\u5f88\u5927\u7684\u5e2e\u52a9\u548c\u652f\u6301\u3002\" and \u5176\u4ed6\u53c2\u4e0e\u8005 said \"\u8c22\u8c22\u60a8\u7684\u4ecb\u7ecd\uff0c\u66fe\u5a1f\u3002\u66fe\u660e\u4f5c\u4e3a\u4e00\u540d\u5efa\u7b51\u5e08\uff0c\u5bf9\u9e1f\u5de2\u7684\u5efa\u7b51\u8bbe\u8ba1\u4e00\u5b9a\u6709\u66f4\u6df1\u5165\u7684\u4e86\u89e3\u3002\"",
+      "reference": "Session 2: \u4f60\u597d\u554a\uff0cAI\u52a9\u624b\uff01\u6700\u8fd1\u600e\u4e48\u6837\uff1f Session 3: \u5144\u59b9\u4e4b\u95f4\u4e92\u76f8\u652f\u6301\u548c\u5173\u5fc3\uff0c\u771f\u662f\u592a\u597d\u4e86\u3002\u611f\u8c22\u60a8\u548c\u66fe\u660e\u7684\u8ba8\u8bba\uff0c\u8ba9\u6211\u5bf9\u9e1f\u5de2\u7684\u9632\u707e\u51cf\u707e\u5de5\u7a0b\u6709\u4e86\u66f4\u6df1\u5165\u7684\u4e86\u89e3\u3002",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0.07142857142857141,
+        "bleu2": 0.023440361546924773,
+        "bleu3": 0.017300021018422027,
+        "bleu4": 0.01428363257865929,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.510628342628479
+      },
+      "latency_seconds": 2.9976179599761963,
+      "token_usage": {
+        "prompt_tokens": 3291,
+        "completion_tokens": 30,
+        "total_tokens": 3321,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 3 and what did \u66fe\u5a1f say in session 4?",
+      "prediction": "2023-05-09, \u4f60\u597d\u66fe\u5a1f\uff0c\u8bf7\u95ee\u6700\u8fd1\u600e\u4e48\u6837\u554a\uff1f, \u4f60\u597d\u554a\uff0cAI\u52a9\u624b\uff01\u6700\u8fd1\u600e\u4e48\u6837\uff1f",
+      "reference": "Session 3: \u60a8\u597d\uff0c\u66fe\u5a1f\u3002\u8bb0\u5f97\u60a8\u66fe\u7ecf\u57282022\u5e743\u670815\u65e5\u7684\u5bb6\u5ead\u805a\u4f1a\u4e0a\u4e0e\u60a8\u7684\u5144\u5f1f\u66fe\u660e\u8ba8\u8bba\u4e86\u9e1f\u5de2\u7684\u9632\u707e\u51cf\u707e\u5de5\u7a0b\u3002\u8bf7\u95ee\u9e1f\u5de2\u7684\u5efa\u7b51\u8bbe\u8ba1\u4e2d\u91c7\u7528\u4e86\u54ea\u4e9b\u9632\u707e\u51cf\u707e\u63aa\u65bd\u5462\uff1f Session 4: \u8fd9\u4e9b\u5e94\u7528\u90fd\u975e\u5e38\u6709\u610f\u4e49\u554a\uff01\u542c\u4e86\u4f60\u7684\u4ecb\u7ecd\uff0c\u6211\u66f4\u60f3\u6df1\u5165\u4e86\u89e3\u8fd9\u65b9\u9762\u7684\u77e5\u8bc6\u4e86\u3002",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.5261505842208862
+      },
+      "latency_seconds": 1.8802123069763184,
+      "token_usage": {
+        "prompt_tokens": 2965,
+        "completion_tokens": 10,
+        "total_tokens": 2975,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in session 4 and what did \u66fe\u5a1f say in session 5?",
+      "prediction": "Short answer: \u5728session 4\uff0c\u66fe\u5a1f\u8bf4\u201c\u5f53\u7136\uff0c\u8bf7\u8bf4\u5427\u3002\u201d\u5728session 5\uff0c\u66fe\u5a1f\u8bf4\u201c\u4f60\u597d\u554a\uff0cAI\u52a9\u624b\uff01\u6700\u8fd1\u600e\u4e48\u6837\uff1f\u201d",
+      "reference": "Session 4: \u4f60\u597d\uff0c\u52a9\u624b\uff0c\u6211\u5728\u548c\u5927\u5b66\u540c\u5b66\u674e\u6167\u805a\u4f1a\u65f6\u542c\u8bf4\u4e86\u793e\u4ea4\u5a92\u4f53\u6570\u636e\u6316\u6398\u8fd9\u4e2a\u8bdd\u9898\uff0c\u60f3\u4e86\u89e3\u66f4\u591a\u76f8\u5173\u77e5\u8bc6\u3002 Session 5: \u5f88\u68d2\uff01\u542c\u8d77\u6765\u5f8b\u5e08\u4e8b\u52a1\u6240\u975e\u5e38\u64c5\u957f\u9488\u5bf9\u4e2a\u4f53\u5316\u9700\u6c42\u8fdb\u884c\u89e3\u51b3\u65b9\u6848\u5b9a\u5236\uff01",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.7272727272727273,
+        "rouge2_f": 0.6666666666666666,
+        "rougeL_f": 0.7272727272727273,
+        "bleu1": 0.07692307692307693,
+        "bleu2": 0.025318484177091663,
+        "bleu3": 0.018733084686676876,
+        "bleu4": 0.01553712569276035,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.8030210137367249
+      },
+      "latency_seconds": 2.0604875087738037,
+      "token_usage": {
+        "prompt_tokens": 3214,
+        "completion_tokens": 17,
+        "total_tokens": 3231,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in session 5 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 6?",
+      "prediction": "Short answer: \u66fe\u5a1f said \"\u90a3\u4e2a\u65f6\u5019\u6211\u4eec\u662f\u5728\u5e02\u533a\u7684\u7535\u5f71\u9662\u770b\u7684\" and \u5176\u4ed6\u53c2\u4e0e\u8005 said \"\u662f\u554a\uff0c\u66fe\u660e\u662f\u6211\u54e5\u54e5\u3002\"",
+      "reference": "Session 5: \u4f60\u597d\uff0c\u6700\u8fd1\u6709\u5f88\u591a\u79fb\u6c11\u6848\u5b50\u5417\uff1f Session 6: \u786e\u5b9e\u5982\u6b64\uff0c\u90a3\u7bc7\u65b0\u95fb\u62a5\u9053\u53d7\u5230\u4e86\u5e7f\u5927\u89c2\u4f17\u7684\u5173\u6ce8\u548c\u597d\u8bc4\uff0c\u4e5f\u4e3a\u300a\u673a\u5668\u732b\u300b\u7535\u5f71\u7684\u6210\u529f\u4e0a\u6620\u63d0\u4f9b\u4e86\u5b9d\u8d35\u7684\u5ba3\u4f20\u63a8\u52a8\u529b\u3002",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0.07142857142857141,
+        "bleu2": 0.023440361546924773,
+        "bleu3": 0.017300021018422027,
+        "bleu4": 0.01428363257865929,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.444858193397522
+      },
+      "latency_seconds": 2.0958962440490723,
+      "token_usage": {
+        "prompt_tokens": 3305,
+        "completion_tokens": 17,
+        "total_tokens": 3322,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in session 6 and what did \u66fe\u5a1f say in session 7?",
+      "prediction": "Short answer: \u5728session 6\uff0c\u66fe\u5a1f\u8bf4\u201c\u54e6\uff1f\u662f\u54ea\u4e2a\u79fb\u6c11\u6848\u5b50\u5462\uff1f\u201d\u3002\u5728session 7\uff0c\u66fe\u5a1f\u8bf4\u201c\u8fd9\u4e2a\u6848\u5b50\u6d89\u53ca\u5230\u4e00\u4f4d\u53eb\u505a\u674e\u660e\u7684\u4e2d\u56fd\u7c4d\u79fb\u6c11\u7533\u8bf7\u4eba\uff0c\u4ed6\u5e0c\u671b\u80fd\u591f\u79fb\u6c11\u5230\u7f8e\u56fd\u53d1\u5c55\u4ed6\u7684\u4e1a\u52a1\u3002\u201d",
+      "reference": "Session 6: \u542c\u8bf4\u4f60\u7684\u5927\u5b66\u540c\u5b66\u674e\u6167\u53c2\u4e0e\u4e86\u300a\u673a\u5668\u732b\u300b\u6539\u7f16\u7535\u5f71\u7684\u53d1\u5e03\u6d3b\u52a8\uff1f Session 7: \u8c22\u8c22\uff0c\u6211\u4e5f\u5e0c\u671b\u6211\u4eec\u4e4b\u95f4\u80fd\u591f\u6709\u66f4\u591a\u7684\u4ea4\u6d41\uff0c\u53d6\u957f\u8865\u77ed\u3002",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.8,
+        "rouge2_f": 0.7499999999999999,
+        "rougeL_f": 0.8,
+        "bleu1": 0.07692307692307693,
+        "bleu2": 0.025318484177091663,
+        "bleu3": 0.018733084686676876,
+        "bleu4": 0.01553712569276035,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.7267334461212158
+      },
+      "latency_seconds": 2.5087738037109375,
+      "token_usage": {
+        "prompt_tokens": 3025,
+        "completion_tokens": 24,
+        "total_tokens": 3049,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 7 and what did \u66fe\u5a1f say in session 8?",
+      "prediction": "Session 7: \u4f60\u597d\u66fe\u5a1f\uff0c\u8bf7\u95ee\u6700\u8fd1\u600e\u4e48\u6837\u554a\uff1f Session 8: \u5f53\u7136\uff0c\u8bf7\u8bf4\u5427\u3002",
+      "reference": "Session 7: \u66fe\u5a1f\uff0c\u4f60\u8bb0\u5f972022\u5e743\u670815\u65e5\u6211\u4eec\u5728\u5546\u4e1a\u9886\u57df\u5408\u4f5c\u4e86\u5417\uff1f Session 8: \u90a3\u4e2a\u65f6\u5019\u6211\u4eec\u662f\u5728\u5e02\u533a\u7684\u7535\u5f71\u9662\u770b\u7684\uff0c\u5bf9\u4e8e\u8fd9\u6837\u4e00\u4e2a\u5145\u6ee1\u521b\u610f\u4e0e\u60f3\u8c61\u7684\u6545\u4e8b\uff0c\u7535\u5f71\u5b8c\u5168\u6293\u4f4f\u4e86\u6211\u4eec\uff0c\u4ece\u7b2c\u4e00\u90e8\u4e00\u76f4\u770b\u5230\u4e86\u7b2c\u4e09\u90e8\u3002\u6bcf\u4e00\u4e2a\u89d2\u8272\uff0c\u6bcf\u4e00\u79cd\u60c5\u8282\u90fd...",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.6,
+        "rouge1_f": 0.7272727272727273,
+        "rouge2_f": 0.4444444444444444,
+        "rougeL_f": 0.7272727272727273,
+        "bleu1": 0.6618726769384466,
+        "bleu2": 0.5777298366654254,
+        "bleu3": 0.46433437561526564,
+        "bleu4": 0.20403100964609877,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.625,
+        "sbert_similarity": 0.7984246611595154
+      },
+      "latency_seconds": 1.71616792678833,
+      "token_usage": {
+        "prompt_tokens": 2867,
+        "completion_tokens": 11,
+        "total_tokens": 2878,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 8 and what did \u66fe\u5a1f say in session 9?",
+      "prediction": "Session 8: \u5176\u4ed6\u53c2\u4e0e\u8005 said \"\u66fe\u5a1f\uff0c\u4f60\u8bb0\u5f972022\u5e743\u670815\u65e5\u6211\u4eec\u5728\u5546\u4e1a\u9886\u57df\u5408\u4f5c\u4e86\u5417\uff1f\"  \nSession 9: \u66fe\u5a1f said \"\u60a8\u597d\uff01\u662f\u7684\uff0c\u90a3\u6b21\u6d3b\u52a8\u662f\u57282022\u5e743\u670815\u65e5\u4e3e\u884c\u7684\uff0c\u662f\u6211\u5728\u793e\u533a\u53c2\u52a0\u7684\u7b2c\u4e00\u6b21\u5fd7\u613f\u8005\u6d3b\u52a8\u3002\"",
+      "reference": "Session 8: \u4f60\u597d\u66fe\u5a1f\uff0c\u4eca\u5929\u662f2022\u5e74\uff0c\u56de\u5fc6\u4e00\u4e0b\uff0c2013\u5e74\u6211\u4eec\u4e00\u8d77\u53bb\u770b\u4e86\u300a\u970d\u6bd4\u7279\u4eba\u300b\u7535\u5f71\u7cfb\u5217\uff0c\u5bf9\u4e8e\u4f60\u6700\u96be\u5fd8\u7684\u5267\u60c5\u70b9\u662f\u4ec0\u4e48\uff1f Session 9: \u90a3\u4e2a\u65f6\u5019\uff0c\u611f\u89c9\u5c31\u50cf\u7ad9\u5728\u98ce\u96e8\u98d8\u6447\u7684\u8fb9\u7f18\u4e00\u6837\uff0c\u975e\u5e38\u6fc0\u70c8\u53c8\u5bcc\u6709\u6311\u6218\u6027\u3002\u6211\u4ed8\u51fa\u4e86\u6781\u5927\u52aa\u529b\u53bb\u5206\u6790\u548c\u7814\u7a76\u6cd5\u5f8b\u76f8\u5173\u77e5\u8bc6\uff0c\u4f46\u6211\u7684\u575a\u5b9a\u51b3\u5fc3\u3001\u7ec6\u81f4\u601d\u8003\u4ee5\u53ca\u6562\u4e8e...",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.4615384615384615,
+        "rouge1_f": 0.5555555555555556,
+        "rouge2_f": 0.25000000000000006,
+        "rougeL_f": 0.5555555555555556,
+        "bleu1": 0.375,
+        "bleu2": 0.3162277660168379,
+        "bleu3": 0.2461034187732914,
+        "bleu4": 0.1023857820560022,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.5859375,
+        "sbert_similarity": 0.7706543207168579
+      },
+      "latency_seconds": 2.7519757747650146,
+      "token_usage": {
+        "prompt_tokens": 3228,
+        "completion_tokens": 29,
+        "total_tokens": 3257,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 9 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 10?",
+      "prediction": "Session 9: \u4f60\u5f53\u65f6\u548c\u6768\u5e73\u4e00\u8d77\u5e26\u9886\u4e00\u5c0f\u7ec4\u5fd7\u613f\u8005\uff0c\u4e00\u8d77\u5b8c\u6210\u4efb\u52a1\u3002Session 10: \u80fd\u4e0d\u80fd\u8ddf\u6211\u8c08\u4e00\u4e0b\u5177\u4f53\u8fc7\u7a0b\uff1f",
+      "reference": "Session 9: \u60a8\u597d\u66fe\u5a1f\uff0c\u60a8\u662f\u5426\u8bb0\u5f97\u57282018\u5e745\u670812\u65e5\u66fe\u4e3a\u60a8\u7684\u7537\u53cb\u738b\u6d69\u6210\u529f\u5904\u7406\u4e00\u8d77\u533b\u7597\u7ea0\u7eb7\u6848\u4ef6\u7684\u4e8b\u60c5\uff1f Session 10: \u770b\u6765\u4f60\u548c\u5f20\u8273\u4e4b\u95f4\u5efa\u7acb\u4e86\u975e\u5e38\u597d\u7684\u5de5\u4f5c\u548c\u4ea4\u6d41\u5173\u7cfb\u3002\u5e0c\u671b\u4f60\u4eec\u80fd\u591f\u5728\u6c11\u4e8b\u6cd5\u9886\u57df\u5408\u4f5c\u53d6\u5f97\u66f4\u591a\u7684\u6210\u529f\u3002",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.6,
+        "rouge1_f": 0.7272727272727273,
+        "rouge2_f": 0.4444444444444444,
+        "rougeL_f": 0.7272727272727273,
+        "bleu1": 0.6191984998215584,
+        "bleu2": 0.5180586332905649,
+        "bleu3": 0.3628571451775018,
+        "bleu4": 0.17820132316770917,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.25423728813559315,
+        "sbert_similarity": 0.7470065355300903
+      },
+      "latency_seconds": 1.7726221084594727,
+      "token_usage": {
+        "prompt_tokens": 3113,
+        "completion_tokens": 15,
+        "total_tokens": 3128,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 10 and what did \u66fe\u5a1f say in session 11?",
+      "prediction": "Session 10: \u5176\u4ed6\u53c2\u4e0e\u8005 said \"\u80fd\u8ddf\u4f60\u8c08\u4e00\u4e0b\u5177\u4f53\u8fc7\u7a0b\u5417\uff1f\" Session 11: \u66fe\u5a1f said \"\u975e\u5e38\u611f\u5174\u8da3\uff01\u53ef\u4ee5\u548c\u6211\u5206\u4eab\u4e00\u4e0b\u5177\u4f53\u7684\u7ec6\u8282\u5417\uff1f\"",
+      "reference": "Session 10: \u4f60\u597d\uff0c\u66fe\u5a1f\u3002\u6211\u4eec\u4e0a\u6b21\u89c1\u9762\u662f\u57282022\u5e746\u6708\u7684\u6cd5\u5b66\u4f1a\u8bae\u4e0a\uff0c\u90a3\u65f6\u5019\u4f60\u7ed3\u8bc6\u4e86\u77e5\u540d\u5f8b\u5e08\u5f20\u8273\u3002\u6211\u60f3\u77e5\u9053\u4f60\u548c\u5f20\u8273\u4e4b\u540e\u6709\u4ec0\u4e48\u8054\u7cfb\u5417\uff1f Session 11: \u90a3\u592a\u597d\u4e86\u3002\u603b\u4e4b\uff0c\u90a3\u573a\u6bd4\u8d5b\u771f\u662f\u592a\u96be\u5fd8\u4e86\uff0c\u6211\u4eec\u8fd8\u7559\u4e0b\u4e86\u4e0d\u5c11\u7f8e\u597d\u56de\u5fc6\u5462\u3002",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.4615384615384615,
+        "rouge1_f": 0.6666666666666666,
+        "rouge2_f": 0.4000000000000001,
+        "rougeL_f": 0.6666666666666666,
+        "bleu1": 0.375,
+        "bleu2": 0.3162277660168379,
+        "bleu3": 0.2461034187732914,
+        "bleu4": 0.1023857820560022,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.5859375,
+        "sbert_similarity": 0.7015442848205566
+      },
+      "latency_seconds": 2.0911827087402344,
+      "token_usage": {
+        "prompt_tokens": 3243,
+        "completion_tokens": 20,
+        "total_tokens": 3263,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 11 and what did \u66fe\u5a1f say in session 12?",
+      "prediction": "Short answer: \u5176\u4ed6\u53c2\u4e0e\u8005 mentioned the collaboration between WeChat and JD.com, \u66fe\u5a1f asked about the benefits of cross-industry collaboration.",
+      "reference": "Session 11: \u4f60\u597d\uff0c\u66fe\u5a1f\uff0c\u8fd8\u8bb0\u5f97\u6211\u4eec\u5728\u53bb\u5e74\u4e00\u8d77\u89c2\u770b\u6e29\u7f51\u7537\u5355\u51b3\u8d5b\u7684\u65f6\u5019\u5417\uff1f Session 12: \u662f\u7684\uff0c\u8de8\u6587\u5316\u6c9f\u901a\u80fd\u529b\u662f\u975e\u5e38\u91cd\u8981\u7684\uff0c\u6211\u548c\u5f20\u8273\u5f8b\u5e08\u90fd\u8ba4\u4e3a\u8ba9\u5b66\u751f\u80fd\u591f\u9886\u7565\u4e0d\u540c\u7684\u6587\u5316\uff0c\u5c24\u5176\u662f\u5728\u7559\u5b66\u6216\u8005\u5de5\u4f5c\u4e2d\uff0c\u90fd\u80fd\u591f\u53d7\u76ca\u5f88\u591a\u3002\u800c\u4e14\u6211\u4eec\u4e5f\u53c2\u52a0\u4e86\u5f88\u591a...",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0.047619047619047616,
+        "bleu2": 0.01543033499620919,
+        "bleu3": 0.011280777824436245,
+        "bleu4": 0.00913442366656447,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.2617871165275574
+      },
+      "latency_seconds": 1.855208158493042,
+      "token_usage": {
+        "prompt_tokens": 3311,
+        "completion_tokens": 33,
+        "total_tokens": 3344,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 12 and what did \u66fe\u5a1f say in session 13?",
+      "prediction": "Session 12: \u5176\u4ed6\u53c2\u4e0e\u8005 said \"\u4f60\u597d\u66fe\u5a1f\uff0c\u662f\u7684\u3002\u6700\u8fd1\u6211\u6240\u5728\u7684\u67d0\u67d0\u5f8b\u5e08\u4e8b\u52a1\u6240\u5904\u7406\u4e86\u4e00\u8d77\u79fb\u6c11\u6848\u5b50\u3002\" Session 13: \u66fe\u5a1f said \"\u54e6\uff1f\u662f\u54ea\u4e2a\u79fb\u6c11\u6848\u5b50\u5462\uff1f\"",
+      "reference": "Session 12: \u4f60\u597d\uff0c\u66fe\u8001\u5e08\uff0c\u611f\u8c22\u4f60\u66fe\u7ecf\u548c\u5f20\u8273\u5f8b\u5e08\u4e00\u8d77\u7ec4\u7ec7\u7684\u90a3\u6b21\u6559\u80b2\u4f53\u5236\u7684\u7814\u7a76\u9879\u76ee\uff0c\u542c\u8bf4\u5bf9\u5b66\u751f\u4eec\u7684\u5e2e\u52a9\u5f88\u5927\u3002 Session 13: \u6211\u8ba4\u4e3a\u5218\u5f3a\u5728\u6bd4\u8d5b\u4e2d\u771f\u7684\u5f88\u68d2\u3002\u4f5c\u4e3a\u4e00\u540d\u8d44\u6df1\u5f8b\u5e08\uff0c\u4ed6\u5bf9\u51fb\u5251\u7684\u70ed\u7231\u548c\u52aa\u529b\u4e5f\u8ba9\u6211\u6df1\u53d7\u611f\u52a8\u3002\u867d\u7136\u4ed6\u6700\u7ec8\u6ca1\u80fd\u6218\u80dcBorel\uff0c\u4f46\u4ed6\u6240\u8868\u73b0\u51fa\u6765\u7684\u4e13\u6ce8\u7cbe\u795e\u548c...",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.4615384615384615,
+        "rouge1_f": 0.7272727272727272,
+        "rouge2_f": 0.4444444444444445,
+        "rougeL_f": 0.7272727272727272,
+        "bleu1": 0.375,
+        "bleu2": 0.3162277660168379,
+        "bleu3": 0.2461034187732914,
+        "bleu4": 0.1023857820560022,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.5859375,
+        "sbert_similarity": 0.7193301320075989
+      },
+      "latency_seconds": 2.1053717136383057,
+      "token_usage": {
+        "prompt_tokens": 3243,
+        "completion_tokens": 22,
+        "total_tokens": 3265,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 13 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 14?",
+      "prediction": "Short answer: \u5728session 13\uff0c\u5176\u4ed6\u53c2\u4e0e\u8005\u8bf4\u201c\u4f60\u597d\u66fe\u5a1f\uff0c\u8bf7\u95ee\u6700\u8fd1\u600e\u4e48\u6837\u554a\uff1f\u201d\u5728session 14\uff0c\u5176\u4ed6\u53c2\u4e0e\u8005\u8bf4\u201c\u4f60\u597d\u66fe\u5a1f\uff0c\u8bf7\u95ee\u6700\u8fd1\u600e\u4e48\u6837\u554a\uff1f\u201d",
+      "reference": "Session 13: \u4f60\u597d\uff0c\u66fe\u5a1f\u3002\u6211\u77e5\u9053\u4f60\u662f\u4e2d\u56fd\u51fb\u5251\u961f\u7684\u4e00\u540d\u6210\u5458\uff0c\u6211\u6700\u8fd1\u4e86\u89e3\u5230\uff0c2016\u5e74\u91cc\u7ea6\u5965\u8fd0\u4f1a\u7684\u51fb\u5251\u6bd4\u8d5b\u4e2d\u4f60\u7684\u540c\u4e8b\u5218\u5f3a\u8868\u73b0\u51fa\u8272\uff0c\u53c2\u4e0e\u4e86\u7537\u5b50\u82b1\u5251\u9879\u76ee\u7684\u6bd4\u8d5b\u3002... Session 14: \u8c22\u8c22\u4f60\u548c\u6211\u4eec\u5206\u4eab\u4f60\u5728\u91d1\u878d\u5371\u673a\u4e2d\u7684\u7ecf\u9a8c\u548c\u89c2\u5bdf\u3002",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.7272727272727272,
+        "rouge2_f": 0.4444444444444445,
+        "rougeL_f": 0.7272727272727272,
+        "bleu1": 0.07692307692307693,
+        "bleu2": 0.025318484177091663,
+        "bleu3": 0.018733084686676876,
+        "bleu4": 0.01553712569276035,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.7072542905807495
+      },
+      "latency_seconds": 2.146458387374878,
+      "token_usage": {
+        "prompt_tokens": 3153,
+        "completion_tokens": 20,
+        "total_tokens": 3173,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 14 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 15?",
+      "prediction": "Short answer: \u5728session 14\uff0c\u5176\u4ed6\u53c2\u4e0e\u8005\u8bf4\uff1a\u201c\u8c22\u8c22\u60a8\u7684\u4ecb\u7ecd\uff0c\u66fe\u5a1f\u3002\u66fe\u660e\u4f5c\u4e3a\u4e00\u540d\u5efa\u7b51\u5e08\uff0c\u5bf9\u9e1f\u5de2\u7684\u5efa\u7b51\u8bbe\u8ba1\u4e00\u5b9a\u6709\u66f4\u6df1\u5165\u7684\u4e86\u89e3\u3002\u201d \u5728session 15\uff0c\u5176\u4ed6\u53c2\u4e0e\u8005\u8bf4\uff1a\u201c\u60a8\u597d\uff0c\u66fe\u5a1f\u3002\u8bb0\u5f97\u60a8\u66fe\u7ecf\u57282022\u5e743\u670815\u65e5\u7684\u5bb6\u5ead\u805a\u4f1a\u4e0a\u4e0e\u60a8\u7684\u5144\u5f1f\u66fe\u660e\u8ba8\u8bba\u4e86\u9e1f\u5de2\u7684\u9632\u707e\u51cf\u707e\u5de5\u7a0b\u3002\u201d",
+      "reference": "Session 14: \u66fe\u5a1f\uff0c\u4f60\u8fd8\u8bb0\u5f972008\u5e74\u91d1\u878d\u5371\u673a\u5417\uff1f Session 15: \u542c\u8bf4\u82cf\u5dde\u56ed\u6797\u6587\u5316\u8282\u5df2\u7ecf\u7ed3\u675f\u4e86\uff0c\u4f60\u4eec\u771f\u7684\u8d76\u4e0a\u4e86\u4e00\u4e2a\u597d\u7684\u65f6\u673a\u3002\u6211\u5e0c\u671b\u4f60\u4eec\u5ea6\u8fc7\u4e86\u4e00\u6b21\u96be\u5fd8\u7684\u6587\u5316\u4e4b\u65c5\u3002",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.5714285714285714,
+        "rouge2_f": 0.3333333333333333,
+        "rougeL_f": 0.5714285714285714,
+        "bleu1": 0.07692307692307693,
+        "bleu2": 0.025318484177091663,
+        "bleu3": 0.018733084686676876,
+        "bleu4": 0.01553712569276035,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.6814496517181396
+      },
+      "latency_seconds": 3.322218179702759,
+      "token_usage": {
+        "prompt_tokens": 3139,
+        "completion_tokens": 35,
+        "total_tokens": 3174,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in session 15 and what did \u66fe\u5a1f say in session 16?",
+      "prediction": "Short answer: \u5728session 15\uff0c\u66fe\u5a1f\u8bf4\u201c\u662f\u554a\uff0c\u66fe\u660e\u662f\u6211\u54e5\u54e5\u3002\u4ed6\u662f\u4e00\u540d\u5efa\u7b51\u5e08\uff0c\u5728\u6587\u5316\u5927\u9769\u547d\u65f6\u671f\u7ed9\u6211\u4eec\u5168\u5bb6\u63d0\u4f9b\u4e86\u5f88\u5927\u7684\u5e2e\u52a9\u548c\u652f\u6301\u3002\u201d\u5728session 16\uff0c\u66fe\u5a1f\u8bf4\u201c\u4ed6\u4e00\u76f4\u5bf9\u6211\u7684\u5de5\u4f5c\u7ed9\u4e88\u5f88\u5927\u7684\u5173\u6ce8\u548c\u652f\u6301\uff0c\u66fe\u7ecf\u591a\u6b21\u5728\u6211\u9700\u8981\u7684\u65f6\u5019\u7ed9\u4e88\u6211\u9f13\u52b1\u548c\u6307\u5f15\u3002\u201d",
+      "reference": "Session 15: \u4f60\u597d\uff0c\u6211\u60f3\u95ee\u4e00\u4e0b\u82cf\u5dde\u56ed\u6797\u6587\u5316\u8282\u4ec0\u4e48\u65f6\u5019\u5f00\u59cb\u3002 Session 16: \u6211\u770b\u5230\u4e86\u4f60\u5728\u97f3\u4e50\u548c\u821e\u8e48\u9886\u57df\u7684\u6f5c\u529b\u548c\u5929\u8d4b\uff0c\u5e76\u51b3\u5b9a\u7ee7\u7eed\u6307\u5bfc\u548c\u652f\u6301\u4f60\u7684\u53d1\u5c55\u3002",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.8,
+        "rouge2_f": 0.7499999999999999,
+        "rougeL_f": 0.8,
+        "bleu1": 0.07692307692307693,
+        "bleu2": 0.025318484177091663,
+        "bleu3": 0.018733084686676876,
+        "bleu4": 0.01553712569276035,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.8917291164398193
+      },
+      "latency_seconds": 2.9967832565307617,
+      "token_usage": {
+        "prompt_tokens": 3018,
+        "completion_tokens": 32,
+        "total_tokens": 3050,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in session 16 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 17?",
+      "prediction": "Short answer: \u66fe\u5a1f said \"\u662f\u554a\uff0c\u66fe\u660e\u662f\u6211\u54e5\u54e5\u3002\u4ed6\u662f\u4e00\u540d\u5efa\u7b51\u5e08\uff0c\u5728\u6587\u5316\u5927\u9769\u547d\u65f6\u671f\u7ed9\u6211\u4eec\u5168\u5bb6\u63d0\u4f9b\u4e86\u5f88\u5927\u7684\u5e2e\u52a9\u548c\u652f\u6301\u3002\u4ed6\u548c\u6211\u4e00\u76f4\u6709\u7740\u5f88\u4eb2\u5bc6\u7684\u5173\u7cfb\u3002\" and \u5176\u4ed6\u53c2\u4e0e\u8005 said \"\u662f\u7684\uff0c\u6700\u8fd1\u6211\u6240\u5728\u7684\u67d0\u67d0\u5f8b\u5e08\u4e8b\u52a1\u6240\u5904\u7406\u4e86\u4e00\u8d77\u79fb\u6c11\u6848\u5b50\u3002\"",
+      "reference": "Session 16: \u9648\u660e\uff0c\u4f60\u5bf9\u97f3\u4e50\u548c\u821e\u8e48\u4ea7\u751f\u4e86\u6d53\u539a\u7684\u5174\u8da3\u5417\uff1f Session 17: \u592a\u68d2\u4e86\uff0c\u66fe\u5a1f\uff01\u770b\u6765\u6211\u7684\u8f85\u5bfc\u771f\u7684\u8d77\u5230\u4e86\u6548\u679c\u3002\u4f60\u4ed8\u51fa\u4e86\u8270\u82e6\u7684\u52aa\u529b\u548c\u52e4\u594b\u7684\u7cbe\u795e\uff0c\u4eca\u540e\u8bf7\u7ee7\u7eed\u4fdd\u6301\u8fd9\u79cd\u72b6\u6001\uff0c\u671f\u5f85\u4f60\u672a\u6765\u66f4\u597d\u7684\u8868\u73b0\u3002",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0.0,
+        "bleu1": 0.07142857142857141,
+        "bleu2": 0.023440361546924773,
+        "bleu3": 0.017300021018422027,
+        "bleu4": 0.01428363257865929,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.5010011196136475
+      },
+      "latency_seconds": 2.8421764373779297,
+      "token_usage": {
+        "prompt_tokens": 3380,
+        "completion_tokens": 31,
+        "total_tokens": 3411,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in session 17 and what did \u66fe\u5a1f say in session 18?",
+      "prediction": "Short answer: \u5728session 17\uff0c\u66fe\u5a1f\u8bf4\u201c\u597d\u7684\uff0c\u6211\u5df2\u7ecf\u6574\u7406\u597d\u4e86\u53cd\u9988\u610f\u89c1\u3002\u201d\u5728session 18\uff0c\u66fe\u5a1f\u8bf4\u201c\u8c22\u8c22\uff0c\u6211\u4e5f\u5e0c\u671b\u6211\u4eec\u4e4b\u95f4\u80fd\u591f\u6709\u66f4\u591a\u7684\u4ea4\u6d41\uff0c\u53d6\u957f\u8865\u77ed\u3002\u201d",
+      "reference": "Session 17: \u6211\u5bf9Suzuki\u5076\u8054\u53cd\u5e94\u4e00\u65e0\u6240\u77e5\u3002\u4f60\u80fd\u591f\u5411\u6211\u89e3\u91ca\u4e00\u4e0b\u5417\uff1f Session 18: \u901a\u8fc7\u8fd9\u6b21\u7814\u7a76\uff0c\u6211\u8fdb\u4e00\u6b65\u52a0\u6df1\u4e86\u5bf9\u5b97\u6559\u7814\u7a76\u5728\u6cd5\u5f8b\u9886\u57df\u4e2d\u7684\u91cd\u8981\u6027\u548c\u6311\u6218\u7684\u7406\u89e3\u3002",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.7272727272727272,
+        "rouge2_f": 0.4444444444444445,
+        "rougeL_f": 0.7272727272727272,
+        "bleu1": 0.07692307692307693,
+        "bleu2": 0.025318484177091663,
+        "bleu3": 0.018733084686676876,
+        "bleu4": 0.01553712569276035,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.7540455460548401
+      },
+      "latency_seconds": 2.4544248580932617,
+      "token_usage": {
+        "prompt_tokens": 2935,
+        "completion_tokens": 22,
+        "total_tokens": 2957,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 18 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 19?",
+      "prediction": "Session 18: \u8bb0\u5f97\u60a8\u66fe\u7ecf\u57282022\u5e743\u670815\u65e5\u7684\u5bb6\u5ead\u805a\u4f1a\u4e0a\u4e0e\u60a8\u7684\u5144\u5f1f\u66fe\u660e\u8ba8\u8bba\u4e86\u9e1f\u5de2\u7684\u9632\u707e\u51cf\u707e\u5de5\u7a0b\u3002Session 19: \u66fe\u660e\u4f5c\u4e3a\u4e00\u540d\u5efa\u7b51\u5e08\uff0c\u5bf9\u9e1f\u5de2\u7684\u5efa\u7b51\u8bbe\u8ba1\u4e00\u5b9a\u6709\u66f4\u6df1\u5165\u7684\u4e86\u89e3\u3002",
+      "reference": "Session 18: \u4f60\u597d\u66fe\u5a1f\uff0c\u8bf7\u95ee\u4f60\u57281996\u5e74\u65f6\u7814\u7a76\u4e86\u4ec0\u4e48\u4e66\u7c4d\uff1f Session 19: \u6211\u8fd8\u5f88\u4e0d\u9519\u3002\u76ee\u524d\u8fd8\u6ca1\u6709\u9047\u5230\u4ec0\u4e48\u9700\u8981\u60a8\u7684\u5e2e\u52a9\u7684\u4e8b\u60c5\u3002\u8c22\u8c22\u4f60\u95ee\u5019\u3002",
+      "category": 2,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.6,
+        "rouge1_f": 0.6666666666666666,
+        "rouge2_f": 0.4,
+        "rougeL_f": 0.6666666666666666,
+        "bleu1": 0.6191984998215584,
+        "bleu2": 0.5180586332905649,
+        "bleu3": 0.3628571451775018,
+        "bleu4": 0.17820132316770917,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.25423728813559315,
+        "sbert_similarity": 0.8567057847976685
+      },
+      "latency_seconds": 2.6989080905914307,
+      "token_usage": {
+        "prompt_tokens": 3161,
+        "completion_tokens": 23,
+        "total_tokens": 3184,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u5176\u4ed6\u53c2\u4e0e\u8005's session 1 statement or \u66fe\u5a1f's session 2 statement?",
+      "prediction": "\u5176\u4ed6\u53c2\u4e0e\u8005's session 1 statement",
+      "reference": "Earlier session 1: \u4f60\u597d\u66fe\u5a1f\uff0c\u8bf7\u95ee\u6700\u8fd1\u600e\u4e48\u6837\u554a\uff1f",
+      "category": 3,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.25,
+        "rouge1_f": 0.5714285714285715,
+        "rouge2_f": 0.4,
+        "rougeL_f": 0.5714285714285715,
+        "bleu1": 0.4,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.1522474354853864,
+        "bleu4": 0.11362193664674995,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.125,
+        "sbert_similarity": 0.780437707901001
+      },
+      "latency_seconds": 1.4413840770721436,
+      "token_usage": {
+        "prompt_tokens": 2939,
+        "completion_tokens": 6,
+        "total_tokens": 2945,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u66fe\u5a1f's session 2 statement or \u5176\u4ed6\u53c2\u4e0e\u8005's session 3 statement?",
+      "prediction": "\u66fe\u5a1f's session 2 statement",
+      "reference": "Earlier session 2: \u4f60\u597d\u554a\uff0cAI\u52a9\u624b\uff01\u6700\u8fd1\u600e\u4e48\u6837\uff1f",
+      "category": 3,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.25,
+        "rouge1_f": 0.5,
+        "rouge2_f": 0.3333333333333333,
+        "rougeL_f": 0.5,
+        "bleu1": 0.4,
+        "bleu2": 0.316227766016838,
+        "bleu3": 0.1522474354853864,
+        "bleu4": 0.11362193664674995,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.125,
+        "sbert_similarity": 0.6429809331893921
+      },
+      "latency_seconds": 1.3477911949157715,
+      "token_usage": {
+        "prompt_tokens": 2837,
+        "completion_tokens": 6,
+        "total_tokens": 2843,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "What general conversational act is shown by \u5176\u4ed6\u53c2\u4e0e\u8005's cited turn in the Chinese PerLTQA conversation?",
+      "prediction": "\u95ee\u5019",
+      "reference": "asking a question",
+      "category": 4,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.10480301082134247
+      },
+      "latency_seconds": 1.1420071125030518,
+      "token_usage": {
+        "prompt_tokens": 3180,
+        "completion_tokens": 1,
+        "total_tokens": 3181,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    },
+    {
+      "sample_id": 0,
+      "question": "What general conversational act is shown by \u66fe\u5a1f's cited turn in the Chinese PerLTQA conversation?",
+      "prediction": "\u95ee\u5019",
+      "reference": "asking a question",
+      "category": 4,
+      "metrics": {
+        "exact_match": 0,
+        "f1": 0.0,
+        "rouge1_f": 0.0,
+        "rouge2_f": 0.0,
+        "rougeL_f": 0,
+        "bleu1": 0,
+        "bleu2": 0,
+        "bleu3": 0,
+        "bleu4": 0,
+        "bert_precision": 0.0,
+        "bert_recall": 0.0,
+        "bert_f1": 0.0,
+        "meteor": 0.0,
+        "sbert_similarity": 0.10480301082134247
+      },
+      "latency_seconds": 0.8533957004547119,
+      "token_usage": {
+        "prompt_tokens": 2985,
+        "completion_tokens": 1,
+        "total_tokens": 2986,
+        "note": "Estimated from prompt/answer text because the OpenAI-compatible streaming path does not expose usage."
+      }
+    }
+  ]
+}

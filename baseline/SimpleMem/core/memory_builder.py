@@ -232,6 +232,7 @@ class MemoryBuilder:
         """
         Build LLM extraction prompt
         """
+        output_limit = getattr(config, "MAX_OUTPUT_TOKENS", 15000)
         return f"""
 Your task is to extract all valuable information from the following dialogues and convert them into structured memory entries.
 
@@ -259,7 +260,7 @@ Your task is to extract all valuable information from the following dialogues an
 - Do NOT output markdown code fences, explanations, comments, headings, or any text outside the JSON object.
 - Every item in "entries" MUST contain the key "lossless_restatement".
 - Do not repeat the same fact. Do not pad the output with empty strings, whitespace, or filler entries.
-- The API hard limit is 15000 output tokens. If the response may approach this limit, merge repeated or low-value facts into fewer self-contained entries, but always complete and close the JSON object.
+- The API hard limit is {output_limit} output tokens. If the response may approach this limit, merge repeated or low-value facts into fewer self-contained entries, but always complete and close the JSON object.
 
 [Output Format]
 Return one JSON object whose "entries" value is an array of memory entries:
@@ -393,8 +394,16 @@ Now process the above dialogues. Return ONLY the JSON object, no other explanati
         """
         Parse LLM response to MemoryEntry list
         """
-        # Extract JSON
-        data = self.llm_client.extract_json(response)
+        # Extract JSON. Long memory extraction responses can occasionally hit
+        # the generation limit after many complete entries but before the final
+        # array/object close; salvage the complete entries instead of spending
+        # many retries reproducing the same long partial response.
+        try:
+            data = self.llm_client.extract_json(response)
+        except ValueError as exc:
+            data = self._salvage_partial_memory_json(response)
+            if data is None:
+                raise exc
 
         data = self._normalize_memory_json(data)
 
@@ -444,6 +453,68 @@ Now process the above dialogues. Return ONLY the JSON object, no other explanati
                     return value
 
         raise ValueError(f"Expected JSON array but got: {type(data)}")
+
+    def _salvage_partial_memory_json(self, text: str):
+        """
+        Recover complete memory entry objects from a truncated entries array.
+        The last incomplete object is intentionally discarded.
+        """
+        if not text:
+            return None
+
+        entries_key = text.find('"entries"')
+        array_start = text.find("[", entries_key if entries_key != -1 else 0)
+        if array_start == -1:
+            return None
+
+        entries = []
+        pos = array_start + 1
+        while pos < len(text):
+            obj_start = text.find("{", pos)
+            if obj_start == -1:
+                break
+            obj_end = self._find_balanced_json_end(text, obj_start, "{", "}")
+            if obj_end is None:
+                break
+            try:
+                item = json.loads(text[obj_start:obj_end + 1])
+            except json.JSONDecodeError:
+                pos = obj_end + 1
+                continue
+            if isinstance(item, dict):
+                entries.append(item)
+            pos = obj_end + 1
+
+        if entries:
+            print(f"Salvaged {len(entries)} complete memory entries from truncated JSON response")
+            return {"entries": entries}
+        return None
+
+    def _find_balanced_json_end(self, text: str, start_idx: int, start_char: str, end_char: str):
+        depth = 0
+        in_string = False
+        escape_next = False
+
+        for idx in range(start_idx, len(text)):
+            char = text[idx]
+            if escape_next:
+                escape_next = False
+                continue
+            if char == "\\":
+                escape_next = True
+                continue
+            if char == '"':
+                in_string = not in_string
+                continue
+            if in_string:
+                continue
+            if char == start_char:
+                depth += 1
+            elif char == end_char:
+                depth -= 1
+                if depth == 0:
+                    return idx
+        return None
 
     def _as_string_list(self, value):
         """

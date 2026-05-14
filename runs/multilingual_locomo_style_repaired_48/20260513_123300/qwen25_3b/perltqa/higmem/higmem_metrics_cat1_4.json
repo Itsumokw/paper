@@ -1,0 +1,2680 @@
+{
+  "input": "/home/stu0032/paper/runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/perltqa/higmem/normalized_predictions_cat1_4.json",
+  "count": 320,
+  "bertscore": {
+    "enabled": true,
+    "model": "/home/stu0032/.cache/huggingface/hub/models--roberta-large/snapshots/722cf37b1afa9454edce342e7895e588b6ff1d59",
+    "error": null
+  },
+  "overall": {
+    "f1": {
+      "mean": 0.2661573895859309,
+      "count": 320
+    },
+    "bleu1": {
+      "mean": 0.2157382392496872,
+      "count": 320
+    },
+    "rouge_l": {
+      "mean": 0.23805504317780596,
+      "count": 320
+    },
+    "bertscore_f1": {
+      "mean": 0.839189837500453,
+      "count": 320
+    }
+  },
+  "runtime": {
+    "latency": {
+      "mean_seconds": 5.59471343755722,
+      "total_seconds": 1790.3083000183105,
+      "max_seconds": 33.59459829330444,
+      "count": 320
+    },
+    "tokens": {
+      "avg_prompt_tokens": 0.0,
+      "avg_completion_tokens": 0.0,
+      "avg_total_tokens": 0.0,
+      "total_prompt_tokens": 0,
+      "total_completion_tokens": 0,
+      "total_tokens": 0,
+      "count": 320
+    }
+  },
+  "categories": {
+    "1": {
+      "f1": {
+        "mean": 0.6582866035950029,
+        "count": 100
+      },
+      "bleu1": {
+        "mean": 0.6060436613860637,
+        "count": 100
+      },
+      "rouge_l": {
+        "mean": 0.6331204831912925,
+        "count": 100
+      },
+      "bertscore_f1": {
+        "mean": 0.9388261330127716,
+        "count": 100
+      }
+    },
+    "2": {
+      "f1": {
+        "mean": 0.09040839608016714,
+        "count": 180
+      },
+      "bleu1": {
+        "mean": 0.042528569675409945,
+        "count": 180
+      },
+      "rouge_l": {
+        "mean": 0.057849980491753085,
+        "count": 180
+      },
+      "bertscore_f1": {
+        "mean": 0.7962694429688983,
+        "count": 180
+      }
+    },
+    "3": {
+      "f1": {
+        "mean": 0.15340965067837523,
+        "count": 20
+      },
+      "bleu1": {
+        "mean": 0.03883639398598755,
+        "count": 20
+      },
+      "rouge_l": {
+        "mean": 0.1226284504626544,
+        "count": 20
+      },
+      "bertscore_f1": {
+        "mean": 0.8113421946763992,
+        "count": 20
+      }
+    },
+    "4": {
+      "f1": {
+        "mean": 0.0,
+        "count": 20
+      },
+      "bleu1": {
+        "mean": 0,
+        "count": 20
+      },
+      "rouge_l": {
+        "mean": 0.0,
+        "count": 20
+      },
+      "bertscore_f1": {
+        "mean": 0.7551395535469055,
+        "count": 20
+      }
+    }
+  },
+  "per_item": [
+    {
+      "category": "1",
+      "question": "In session 1 of the Chinese PerLTQA conversation, what did \u9093\u7389 say in the turn about \"\u771f\u7684\u975e\u5e38\u611f\u8c22\u60a8\u7ed9\u6211\u5e26\u6765\u8fd9\u6b21\u89c2\u5f71\u7684\u673a\u4f1a\uff0c\u8fd9\u573a\u7535\u5f71\u771f\u7684\u592a\u9707\u64bc\u4e86\uff0c\u597d\u60f3\u628a\u5f71\u7247\u4e2d\u7684...\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Chinese PerLTQA conversation, what did \u9093\u7389 say in the turn about \"\u7238\u7238\uff0c\u60a8\u5bf9\u8fd9\u9879\u7814\u7a76\u5174\u8da3\u8fd9\u4e48\u5927\uff0c\u80fd\u544a\u8bc9\u6211\u66f4\u591a\u7684\u7ec6\u8282\u5417\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9931831955909729
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Chinese PerLTQA conversation, what did \u9093\u7389 say in the turn about \"\u6700\u8fd1\u770b\u5230\u4e86\u738b\u5fd7\u521a\u6559\u6388\u7684\u7814\u7a76\uff0c\u8ba9\u6211\u89c9\u5f97\u5206\u5b50\u8ba1\u7b97\u672a\u6765\u771f\u7684\u6709\u5f88\u5927\u7684\u6f5c\u529b\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Chinese PerLTQA conversation, what did \u9093\u7389 say in the turn about \"\u7236\u4eb2\u5728\u5357\u4eac\u5927\u5c60\u6740\u4e2d\u76ee\u7779\u4e86\u90a3\u4e48\u591a\u7684\u66b4\u884c\u548c\u7f6a\u6076\uff0c\u6bcf\u6b21\u8c08\u8d77\u90fd\u662f\u6ee1\u773c\u6cea\u6c34\u3002\u90a3\u65f6\u5019\u7684...\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u9093\u5148\u751f\u3002\u6211\u4e86\u89e3\u5230\u60a8\u66fe\u7ecf\u5386\u5357\u4eac\u5927\u5c60\u6740\uff0c\u662f\u5426\u613f\u610f\u4e0e\u6211\u5206\u4eab\u60a8\u7684\u7ecf\u5386\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\u9093\u7389\uff0c\u6700\u8fd1\u8fc7\u5f97\u600e\u4e48\u6837\uff1f\"?",
+      "f1": 0.18749999999999997,
+      "bleu1": 0.13636363636363635,
+      "rouge_l": 0.1818181818181818,
+      "bertscore_f1": 0.8825917840003967
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u9093\u7389\uff01\u60a8\u5bf9\u300a\u97f3\u4e50\u5929\u5730\u300b\u4e13\u8f91\u7684\u8bc4\u4ef7\u5f88\u9ad8\uff0c\u674e\u660e\u4e5f\u5206\u4eab\u4e86\u81ea\u5df1\u7684\u770b\u6cd5\u3002\u8bf7\u95ee\u60a8...\"?",
+      "f1": 0.375,
+      "bleu1": 0.32857142857142857,
+      "rouge_l": 0.1896551724137931,
+      "bertscore_f1": 0.8888407945632935
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the Chinese PerLTQA conversation, what did \u9093\u7389 say in the turn about \"\u4f60\u597d\u554a\uff01\u6700\u8fd1\u5728\u5fd9\u4ec0\u4e48\uff1f\"?",
+      "f1": 0.13333333333333333,
+      "bleu1": 0.0909090909090909,
+      "rouge_l": 0.1290322580645161,
+      "bertscore_f1": 0.862445592880249
+    },
+    {
+      "category": "1",
+      "question": "In session 9 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\uff0c\u9093\u7389\u3002\u6211\u4eec\u4e0a\u6b21\u804a\u5230\u7684\u300a\u90fd\u633a\u597d\u300b\u6211\u5df2\u7ecf\u770b\u4e86\u3002\u771f\u7684\u5f88\u68d2\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999998807907104
+    },
+    {
+      "category": "1",
+      "question": "In session 10 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\uff0c\u9093\u7389\uff0c\u6211\u4eec\u6709\u4ec0\u4e48\u65b0\u9879\u76ee\u5417\uff1f\"?",
+      "f1": 0.8181818181818181,
+      "bleu1": 0.6411803884299546,
+      "rouge_l": 0.8181818181818181,
+      "bertscore_f1": 0.9346916079521179
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u9093\u7389 say in session 1 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 2?",
+      "f1": 0.06837606837606838,
+      "bleu1": 0.004550211954269522,
+      "rouge_l": 0.028776978417266185,
+      "bertscore_f1": 0.8399847745895386
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u9093\u7389 say in session 2 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 3?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7223600149154663
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u9093\u7389 say in session 3 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 4?",
+      "f1": 0.11864406779661016,
+      "bleu1": 0.09060220121658735,
+      "rouge_l": 0.06756756756756757,
+      "bertscore_f1": 0.8600428700447083
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u9093\u7389 say in session 4 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 5?",
+      "f1": 0.01639344262295082,
+      "bleu1": 1.8006610538864376e-05,
+      "rouge_l": 0.01388888888888889,
+      "bertscore_f1": 0.8168021440505981
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 5 and what did \u9093\u7389 say in session 6?",
+      "f1": 0.03703703703703704,
+      "bleu1": 0.0038297744898356883,
+      "rouge_l": 0.03076923076923077,
+      "bertscore_f1": 0.8426958322525024
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 6 and what did \u9093\u7389 say in session 7?",
+      "f1": 0.02857142857142857,
+      "bleu1": 0.0005166008752147496,
+      "rouge_l": 0.023529411764705882,
+      "bertscore_f1": 0.7024974822998047
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 7 and what did \u9093\u7389 say in session 8?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7968981862068176
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u9093\u7389 say in session 8 and what did \u9093\u7389 say in session 9?",
+      "f1": 0.06060606060606061,
+      "bleu1": 0.0030183256973118984,
+      "rouge_l": 0.04878048780487805,
+      "bertscore_f1": 0.7206562757492065
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 9 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 10?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8235052227973938
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 10 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 11?",
+      "f1": 0.07692307692307691,
+      "bleu1": 0.00042909662183390014,
+      "rouge_l": 0.043010752688172046,
+      "bertscore_f1": 0.830303430557251
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u9093\u7389 say in session 11 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 12?",
+      "f1": 0.25000000000000006,
+      "bleu1": 0.21511521533912173,
+      "rouge_l": 0.08510638297872342,
+      "bertscore_f1": 0.8717313408851624
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u9093\u7389 say in session 12 and what did \u9093\u7389 say in session 13?",
+      "f1": 0.05825242718446603,
+      "bleu1": 0.00790124388070401,
+      "rouge_l": 0.031007751937984492,
+      "bertscore_f1": 0.8410088419914246
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u9093\u7389 say in session 13 and what did \u9093\u7389 say in session 14?",
+      "f1": 0.08988764044943819,
+      "bleu1": 0.011362062035342999,
+      "rouge_l": 0.07619047619047621,
+      "bertscore_f1": 0.8491799235343933
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 14 and what did \u9093\u7389 say in session 15?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7335450053215027
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u9093\u7389 say in session 15 and what did \u9093\u7389 say in session 16?",
+      "f1": 0.25974025974025977,
+      "bleu1": 0.12984003392149784,
+      "rouge_l": 0.22988505747126434,
+      "bertscore_f1": 0.8709517121315002
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 16 and what did \u9093\u7389 say in session 17?",
+      "f1": 0.029411764705882353,
+      "bleu1": 0.004846775978965252,
+      "rouge_l": 0.047619047619047616,
+      "bertscore_f1": 0.8393401503562927
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 17 and what did \u9093\u7389 say in session 18?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7191126942634583
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u9093\u7389 say in session 18 and what did \u9093\u7389 say in session 19?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.6990215182304382
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u9093\u7389's session 1 statement or \u9093\u7389's session 2 statement?",
+      "f1": 0.08888888888888889,
+      "bleu1": 0.0003039606551848387,
+      "rouge_l": 0.07407407407407407,
+      "bertscore_f1": 0.7782759666442871
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u9093\u7389's session 2 statement or \u9093\u7389's session 3 statement?",
+      "f1": 0.13333333333333333,
+      "bleu1": 0.011891331115750803,
+      "rouge_l": 0.125,
+      "bertscore_f1": 0.8089472651481628
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u9093\u7389's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7807232737541199
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u9093\u7389's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7550716996192932
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Chinese PerLTQA conversation, what did \u6881\u6b23 say in the turn about \"\u6881\u660e\u4eca\u5929\u6bd5\u4e1a\u5178\u793c\u7684\u65f6\u5019\u771f\u662f\u5e05\u5446\u4e86\uff01\"?",
+      "f1": 0.8,
+      "bleu1": 0.6666666666666666,
+      "rouge_l": 0.8,
+      "bertscore_f1": 0.9557099938392639
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u6881\u6b23\uff0c\u6211\u8bb0\u5f97\u4f60\u4e4b\u524d\u8ddf\u6881\u660e\u4ecb\u7ecd\u4e86Google\u7ffb\u8bd1\u7684\u529f\u80fd\uff0c\u6211\u4eec\u80fd\u5426\u5728\u65c5\u884c\u4e2d\u4f7f\u7528...\"?",
+      "f1": 0.11764705882352941,
+      "bleu1": 0.10416666666666666,
+      "rouge_l": 0.09411764705882353,
+      "bertscore_f1": 0.8464795351028442
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u6881\u6b23\u5973\u58eb\uff0c\u60a8\u8bb0\u5f97\u60a8\u4eb2\u621a\u6881\u660e\u57282021\u5e745\u670815\u65e5\u5728\u667a\u80fd\u5efa\u7b51\u7cfb\u7edf\u9879\u76ee\u4e2d...\"?",
+      "f1": 0.870967741935484,
+      "bleu1": 0.7725453888611077,
+      "rouge_l": 0.8857142857142858,
+      "bertscore_f1": 0.9761618971824646
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Chinese PerLTQA conversation, what did \u6881\u6b23 say in the turn about \"\u563f\uff0c\u4f60\u6700\u8fd1\u600e\u4e48\u6837\u554a\uff1f\u542c\u8bf4\u4f60\u53bb\u770b\u4e86\u90a3\u90e8\u7535\u5f71\u300a\u6069\u5fb7\u91cc\u7d22\u683c\u66fc\u6ed1\u96ea\u961f\uff1a\u8f89\u714c\u4e4b\u8def\u300b\uff0c...\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Chinese PerLTQA conversation, what did \u6881\u6b23 say in the turn about \"\u4f60\u89c9\u5f97\u6211\u521b\u4e1a\u6709\u5e0c\u671b\u5417\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\uff0c\u6881\u6b23\uff01\u8fd9\u4e48\u957f\u65f6\u95f4\u4ee5\u540e\u6211\u4eec\u53c8\u89c1\u9762\u4e86\uff0c\u4f60\u8fd8\u8bb0\u5f97\u53bb\u5e74\u548c\u5f20\u7433\u4e00\u8d77\u652f\u6301\u674e\u660e\u7684\u4e8b\u60c5\u5417\uff1f\"?",
+      "f1": 0.7037037037037037,
+      "bleu1": 0.40871514110598406,
+      "rouge_l": 0.6909090909090909,
+      "bertscore_f1": 0.931544840335846
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u6b22\u8fce\u4f7f\u7528\u52a9\u624b\u3002\u9700\u8981\u6211\u4e3a\u60a8\u751f\u6210\u54ea\u65b9\u9762\u7684\u5bf9\u8bdd\uff1f\"?",
+      "f1": 0.380952380952381,
+      "bleu1": 0.3478260869565218,
+      "rouge_l": 0.31818181818181823,
+      "bertscore_f1": 0.88079434633255
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the Chinese PerLTQA conversation, what did \u6881\u6b23 say in the turn about \"\u674e\u9633\uff0c\u4f60\u8fd8\u5728\u7814\u7a76\u90a3\u4e2a\u7535\u78c1\u6ce2\u8f90\u5c04\u63a2\u6d4b\u5417\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 9 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\uff0c\u6881\u6b23\uff0c\u4e0a\u6b21\u4f60\u548c\u674e\u9633\u53bb\u81ea\u7136\u4fdd\u62a4\u533a\u73a9\u7684\u600e\u4e48\u6837\u554a\uff1f\"?",
+      "f1": 0.23255813953488372,
+      "bleu1": 0.21739130434782608,
+      "rouge_l": 0.1333333333333333,
+      "bertscore_f1": 0.8930004835128784
+    },
+    {
+      "category": "1",
+      "question": "In session 10 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u6b22\u8fce\u53c2\u52a0\u4eca\u5929\u7684\u5ddd\u83dc\u767e\u79d1\u5168\u4e66\u53d1\u5e03\u4f1a\uff01\"?",
+      "f1": 0.15,
+      "bleu1": 0.12500000000000003,
+      "rouge_l": 0.14285714285714288,
+      "bertscore_f1": 0.8633471131324768
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u6881\u6b23 say in session 1 and what did \u6881\u6b23 say in session 2?",
+      "f1": 0.14432989690721648,
+      "bleu1": 0.050356852793027616,
+      "rouge_l": 0.07547169811320754,
+      "bertscore_f1": 0.8548383116722107
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 2 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 3?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7227973341941833
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 3 and what did \u6881\u6b23 say in session 4?",
+      "f1": 0.047619047619047616,
+      "bleu1": 0.0323453746830403,
+      "rouge_l": 0.043010752688172046,
+      "bertscore_f1": 0.8444961905479431
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u6881\u6b23 say in session 4 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 5?",
+      "f1": 0.06666666666666667,
+      "bleu1": 0.005344835909605227,
+      "rouge_l": 0.05405405405405406,
+      "bertscore_f1": 0.715823233127594
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u6881\u6b23 say in session 5 and what did \u6881\u6b23 say in session 6?",
+      "f1": 0.04,
+      "bleu1": 0.0018235207257019659,
+      "rouge_l": 0.030769230769230767,
+      "bertscore_f1": 0.7863453030586243
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 6 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 7?",
+      "f1": 0.024999999999999998,
+      "bleu1": 0.0002065626813888632,
+      "rouge_l": 0.020833333333333332,
+      "bertscore_f1": 0.6927201747894287
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 7 and what did \u6881\u6b23 say in session 8?",
+      "f1": 0.15294117647058822,
+      "bleu1": 0.06829268292682926,
+      "rouge_l": 0.06477732793522267,
+      "bertscore_f1": 0.8395077586174011
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u6881\u6b23 say in session 8 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 9?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7340238690376282
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 9 and what did \u6881\u6b23 say in session 10?",
+      "f1": 0.12962962962962965,
+      "bleu1": 0.04813328844240519,
+      "rouge_l": 0.047244094488188976,
+      "bertscore_f1": 0.8668860793113708
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 10 and what did \u6881\u6b23 say in session 11?",
+      "f1": 0.030769230769230767,
+      "bleu1": 0.0004991593906910217,
+      "rouge_l": 0.0273972602739726,
+      "bertscore_f1": 0.835224986076355
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 11 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 12?",
+      "f1": 0.07547169811320754,
+      "bleu1": 0.005865102639296188,
+      "rouge_l": 0.01015228426395939,
+      "bertscore_f1": 0.6724023222923279
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 12 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 13?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7223818898200989
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u6881\u6b23 say in session 13 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 14?",
+      "f1": 0.17142857142857143,
+      "bleu1": 0.006002162521368301,
+      "rouge_l": 0.09917355371900827,
+      "bertscore_f1": 0.8505377173423767
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u6881\u6b23 say in session 14 and what did \u6881\u6b23 say in session 15?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7405491471290588
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u6881\u6b23 say in session 15 and what did \u6881\u6b23 say in session 16?",
+      "f1": 0.09009009009009009,
+      "bleu1": 0.015729509736303215,
+      "rouge_l": 0.04166666666666667,
+      "bertscore_f1": 0.8418756723403931
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 16 and what did \u6881\u6b23 say in session 17?",
+      "f1": 0.17886178861788615,
+      "bleu1": 0.144332665560297,
+      "rouge_l": 0.0821917808219178,
+      "bertscore_f1": 0.8605716228485107
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 17 and what did \u6881\u6b23 say in session 18?",
+      "f1": 0.11570247933884298,
+      "bleu1": 0.07485297359960655,
+      "rouge_l": 0.051612903225806445,
+      "bertscore_f1": 0.8578314185142517
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 18 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 19?",
+      "f1": 0.13043478260869565,
+      "bleu1": 0.03443644564439893,
+      "rouge_l": 0.07272727272727272,
+      "bertscore_f1": 0.8631482720375061
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u6881\u6b23's session 1 statement or \u5176\u4ed6\u53c2\u4e0e\u8005's session 2 statement?",
+      "f1": 0.23999999999999996,
+      "bleu1": 0.057279421996343866,
+      "rouge_l": 0.16,
+      "bertscore_f1": 0.8199095129966736
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u5176\u4ed6\u53c2\u4e0e\u8005's session 2 statement or \u5176\u4ed6\u53c2\u4e0e\u8005's session 3 statement?",
+      "f1": 0.0909090909090909,
+      "bleu1": 0.007093887074421266,
+      "rouge_l": 0.0816326530612245,
+      "bertscore_f1": 0.8100301623344421
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u6881\u6b23's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.759367823600769
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u5176\u4ed6\u53c2\u4e0e\u8005's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7310526967048645
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u590f\u7389\uff0c\u606d\u559c\u4f60\u83b7\u5f97\u4e86\u6700\u4f73\u6559\u80b2\u5de5\u4f5c\u8005\u5956\u3002\u4f60\u771f\u662f\u6211\u4eec\u6559\u80b2\u754c\u7684\u6770\u51fa\u4eba\u7269\uff01\"?",
+      "f1": 0.9600000000000001,
+      "bleu1": 0.9286029058931802,
+      "rouge_l": 0.9642857142857143,
+      "bertscore_f1": 0.975978672504425
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\u590f\u7389\uff0c\u542c\u8bf4\u667a\u542f\u6587\u5316\u53d1\u5c55\u5341\u5e74\u4e86\uff0c\u4f60\u6709\u4ec0\u4e48\u611f\u60f3\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Chinese PerLTQA conversation, what did \u590f\u7389 say in the turn about \"\u6211\u4eec\u76f8\u8bc6\u4e8e\u5927\u4e00\u7684\u5f00\u5b66\u5178\u793c\uff0c\u7531\u4e8e\u5fd7\u8da3\u76f8\u6295\uff0c\u5f88\u5feb\u6210\u4e3a\u4e86\u597d\u670b\u53cb\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u590f\u7389\uff0c\u6211\u4eec\u5df2\u7ecf\u6709\u5f88\u957f\u65f6\u95f4\u6ca1\u53bb\u770b\u5c55\u89c8\u4e86\uff0c\u4e0d\u5982\u8fd9\u4e2a\u5468\u672b\u4e00\u8d77\u53bb\u6b23\u8d4f\u4e00\u4e0b\u827a\u672f\uff0c\u600e\u4e48\u6837\uff1f\"?",
+      "f1": 0.17857142857142858,
+      "bleu1": 0.1290190212513104,
+      "rouge_l": 0.06896551724137931,
+      "bertscore_f1": 0.8616811633110046
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Chinese PerLTQA conversation, what did \u590f\u7389 say in the turn about \"\u4f60\u77e5\u9053\u585e\u5c1a\u5417\uff1f\u6211\u8fd8\u53bb\u770b\u8fc7\u4ed6\u7684\u753b\u5c55\u5462\u3002\"?",
+      "f1": 0.7692307692307693,
+      "bleu1": 0.5488116360940264,
+      "rouge_l": 0.7692307692307693,
+      "bertscore_f1": 0.9259012937545776
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the Chinese PerLTQA conversation, what did \u590f\u7389 say in the turn about \"\u55e8\uff0cAI\u52a9\u624b\uff0c\u597d\u4e45\u4e0d\u89c1\u554a\uff01\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\u590f\u7389\uff0c\u4eca\u5929\u662f2022\u5e743\u670815\u65e5\uff0c\u6211\u60f3\u8be2\u95ee\u60a8\u5173\u4e8e\u667a\u8da3\u5c45\u7684\u54c1\u724c\u5efa\u8bbe\u7684\u8fdb\u5c55...\"?",
+      "f1": 0.8529411764705882,
+      "bleu1": 0.7012865448202651,
+      "rouge_l": 0.8493150684931507,
+      "bertscore_f1": 0.9718015193939209
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u590f\u7389\uff0c\u4f60\u6709\u4ec0\u4e48\u5468\u672b\u8ba1\u5212\u5417\uff1f\"?",
+      "f1": 0.41379310344827586,
+      "bleu1": 0.3157894736842105,
+      "rouge_l": 0.39999999999999997,
+      "bertscore_f1": 0.8717799186706543
+    },
+    {
+      "category": "1",
+      "question": "In session 9 of the Chinese PerLTQA conversation, what did \u590f\u7389 say in the turn about \"\u4f60\u597d\uff0c\u673a\u5668\u4eba\u52a9\u624b\u3002\u6211\u57285\u67081\u65e5\u53bb\u4f26\u6566\u54c8\u7279\u83f2\u5c14\u5fb7\u8d5b\u8247\u4ff1\u4e50\u90e8\u89c2\u770b\u4e86\u6bd4\u8d5b\uff0c\u975e\u5e38\u523a\u6fc0\uff01\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 10 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\uff0c\u590f\u7389\u3002\u4eca\u5929\u662f\u9664\u5915\u591c\uff0c\u4f60\u6253\u7b97\u5982\u4f55\u5e86\u795d\u65b0\u5e74\u5462\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 1 and what did \u590f\u7389 say in session 2?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7123623490333557
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 2 and what did \u590f\u7389 say in session 3?",
+      "f1": 0.08988764044943821,
+      "bleu1": 0.011417803129021766,
+      "rouge_l": 0.05172413793103449,
+      "bertscore_f1": 0.8505680561065674
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u590f\u7389 say in session 3 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 4?",
+      "f1": 0.13793103448275865,
+      "bleu1": 0.09700079424117279,
+      "rouge_l": 0.0980392156862745,
+      "bertscore_f1": 0.8597626686096191
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 4 and what did \u590f\u7389 say in session 5?",
+      "f1": 0.028571428571428574,
+      "bleu1": 0.0009831276237893141,
+      "rouge_l": 0.022727272727272728,
+      "bertscore_f1": 0.8317413926124573
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u590f\u7389 say in session 5 and what did \u590f\u7389 say in session 6?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7118356227874756
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u590f\u7389 say in session 6 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 7?",
+      "f1": 0.24390243902439024,
+      "bleu1": 0.21951219512195122,
+      "rouge_l": 0.1456953642384106,
+      "bertscore_f1": 0.882940948009491
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 7 and what did \u590f\u7389 say in session 8?",
+      "f1": 0.034482758620689655,
+      "bleu1": 2.056830068111326e-05,
+      "rouge_l": 0.0303030303030303,
+      "bertscore_f1": 0.7093465328216553
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 8 and what did \u590f\u7389 say in session 9?",
+      "f1": 0.25,
+      "bleu1": 0.2222222222222222,
+      "rouge_l": 0.17647058823529413,
+      "bertscore_f1": 0.874926745891571
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u590f\u7389 say in session 9 and what did \u590f\u7389 say in session 10?",
+      "f1": 0.1801801801801802,
+      "bleu1": 0.16216216216216217,
+      "rouge_l": 0.11510791366906475,
+      "bertscore_f1": 0.8588055372238159
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 10 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 11?",
+      "f1": 0.20454545454545453,
+      "bleu1": 0.1381020846424787,
+      "rouge_l": 0.1188118811881188,
+      "bertscore_f1": 0.8765198588371277
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u590f\u7389 say in session 11 and what did \u590f\u7389 say in session 12?",
+      "f1": 0.12844036697247707,
+      "bleu1": 0.10157613587018938,
+      "rouge_l": 0.047619047619047616,
+      "bertscore_f1": 0.8629892468452454
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u590f\u7389 say in session 12 and what did \u590f\u7389 say in session 13?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7268806099891663
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 13 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 14?",
+      "f1": 0.03333333333333333,
+      "bleu1": 1.8332175472495235e-06,
+      "rouge_l": 0.029411764705882353,
+      "bertscore_f1": 0.816585898399353
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u590f\u7389 say in session 14 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 15?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7316372990608215
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 15 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 16?",
+      "f1": 0.13636363636363638,
+      "bleu1": 0.007931682980717858,
+      "rouge_l": 0.07407407407407407,
+      "bertscore_f1": 0.833859920501709
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u590f\u7389 say in session 16 and what did \u590f\u7389 say in session 17?",
+      "f1": 0.03278688524590164,
+      "bleu1": 7.566654960414143e-06,
+      "rouge_l": 0.027777777777777776,
+      "bertscore_f1": 0.7229113578796387
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u590f\u7389 say in session 17 and what did \u590f\u7389 say in session 18?",
+      "f1": 0.18348623853211007,
+      "bleu1": 0.02777939351753134,
+      "rouge_l": 0.06756756756756757,
+      "bertscore_f1": 0.8491687178611755
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u590f\u7389 say in session 18 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 19?",
+      "f1": 0.054545454545454536,
+      "bleu1": 0.009282507034108715,
+      "rouge_l": 0.028985507246376812,
+      "bertscore_f1": 0.836058497428894
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u5176\u4ed6\u53c2\u4e0e\u8005's session 1 statement or \u5176\u4ed6\u53c2\u4e0e\u8005's session 2 statement?",
+      "f1": 0.15789473684210528,
+      "bleu1": 0.025883027234491963,
+      "rouge_l": 0.0975609756097561,
+      "bertscore_f1": 0.8214124441146851
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u5176\u4ed6\u53c2\u4e0e\u8005's session 2 statement or \u590f\u7389's session 3 statement?",
+      "f1": 0.125,
+      "bleu1": 0.041972356186124854,
+      "rouge_l": 0.12121212121212122,
+      "bertscore_f1": 0.8228984475135803
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u5176\u4ed6\u53c2\u4e0e\u8005's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7568789124488831
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u5176\u4ed6\u53c2\u4e0e\u8005's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7270585298538208
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Chinese PerLTQA conversation, what did \u53f2\u8389 say in the turn about \"\u6211\u771f\u7684\u5f88\u611f\u6fc0\u4f60\u5bf9\u6211\u7684\u652f\u6301\u548c\u9f13\u52b1\uff0c\u5982\u679c\u6ca1\u6709\u4f60\u7684\u5e2e\u52a9\u548c\u4fe1\u4efb\uff0c\u6211\u4e5f\u65e0\u6cd5\u5728\u56fd\u9645\u519b\u4e8b...\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u53f2\u8389\uff0c\u4f60\u6700\u8fd1\u5de5\u4f5c\u548c\u7814\u7a76\u65b9\u9762\u6709\u4ec0\u4e48\u65b0\u8fdb\u5c55\u5417\uff1f\"?",
+      "f1": 0.46153846153846156,
+      "bleu1": 0.32432432432432434,
+      "rouge_l": 0.3214285714285714,
+      "bertscore_f1": 0.8923110365867615
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Chinese PerLTQA conversation, what did \u53f2\u8389 say in the turn about \"\u745e\u76c8\u79d1\u6280\u662f\u4e00\u5bb6\u975e\u5e38\u6709\u6f5c\u529b\u7684\u521b\u65b0\u578b\u79d1\u6280\u516c\u53f8\uff0c\u4ed6\u4eec\u7684\u667a\u6167\u8d2d\u7269\u52a9\u624b\u5f15\u8d77\u4e86\u6211\u7684\u5173\u6ce8\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999998807907104
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Chinese PerLTQA conversation, what did \u53f2\u8389 say in the turn about \"\u563f\uff0c\u4f60\u542c\u8bf4\u8fc7\u90a3\u5bb6\u65b0\u5174\u7684\u519b\u4e8b\u7814\u7a76\u673a\u6784\u5417\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u53f2\u8389\uff01\u6700\u8fd1\u8d2d\u7269\u6109\u5feb\u5417\uff1f\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8626395463943481
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u53f2\u8389\u3002\u8bb0\u5f97\u53bb\u5e7410\u6708\u4efd\u60a8\u548c\u5f20\u5cf0\u4e00\u8d77\u53c2\u52a0\u4e86iHouse\u4ea7\u54c1\u53d1\u5e03\u4f1a\u5417\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the Chinese PerLTQA conversation, what did \u53f2\u8389 say in the turn about \"\u6700\u8fd1\u5fd9\u4ec0\u4e48\u5462\uff0cAI\u52a9\u624b\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the Chinese PerLTQA conversation, what did \u53f2\u8389 say in the turn about \"\u4f60\u597d\uff0cAI\u52a9\u624b\u3002\u6700\u8fd1\u6709\u6ca1\u6709\u505a\u4e00\u4e9b\u65b0\u7684\u6280\u672f\u8fdb\u5c55\uff1f\"?",
+      "f1": 0.33962264150943394,
+      "bleu1": 0.23076923076923078,
+      "rouge_l": 0.3103448275862069,
+      "bertscore_f1": 0.8915265202522278
+    },
+    {
+      "category": "1",
+      "question": "In session 9 of the Chinese PerLTQA conversation, what did \u53f2\u8389 say in the turn about \"\u60a8\u597d\uff0cAI\u52a9\u624b\uff0c\u6211\u8bb0\u5f97\u60a8\u662f\u57282019\u5e747\u670810\u65e5\u7684\u56fd\u9645\u5b66\u672f\u4f1a\u8bae\u4e0a\u4e0e\u6211\u76f8\u9047\u7684...\"?",
+      "f1": 0.8666666666666666,
+      "bleu1": 0.6853827910309876,
+      "rouge_l": 0.8411214953271028,
+      "bertscore_f1": 0.947541356086731
+    },
+    {
+      "category": "1",
+      "question": "In session 10 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u53f2\u8389\uff0c\u56de\u60f3\u8d77\u6211\u4eec\u53bb\u5e74\u5728\u6625\u8282\u665a\u4f1a\u4e0a\u7684\u90a3\u6b21\u4ea4\u6d41\u771f\u662f\u4ee4\u4eba\u96be\u5fd8\uff0c\u4e0d\u77e5\u9053\u4eca\u5e74\u662f...\"?",
+      "f1": 0.8484848484848484,
+      "bleu1": 0.6703200460356393,
+      "rouge_l": 0.8333333333333333,
+      "bertscore_f1": 0.9384906888008118
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u53f2\u8389 say in session 1 and what did \u53f2\u8389 say in session 2?",
+      "f1": 0.031746031746031744,
+      "bleu1": 1.2583781814263659e-11,
+      "rouge_l": 0.025641025641025644,
+      "bertscore_f1": 0.7921625375747681
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 2 and what did \u53f2\u8389 say in session 3?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7272286415100098
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u53f2\u8389 say in session 3 and what did \u53f2\u8389 say in session 4?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7238885760307312
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u53f2\u8389 say in session 4 and what did \u53f2\u8389 say in session 5?",
+      "f1": 0.06976744186046512,
+      "bleu1": 0.024337349410458647,
+      "rouge_l": 0.06315789473684211,
+      "bertscore_f1": 0.8589970469474792
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 5 and what did \u53f2\u8389 say in session 6?",
+      "f1": 0.15789473684210528,
+      "bleu1": 0.17567567567567569,
+      "rouge_l": 0.14388489208633093,
+      "bertscore_f1": 0.8716338276863098
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 6 and what did \u53f2\u8389 say in session 7?",
+      "f1": 0.12048192771084339,
+      "bleu1": 0.05302179030855288,
+      "rouge_l": 0.08888888888888889,
+      "bertscore_f1": 0.854597806930542
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u53f2\u8389 say in session 7 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 8?",
+      "f1": 0.12987012987012989,
+      "bleu1": 0.09477041558009897,
+      "rouge_l": 0.1,
+      "bertscore_f1": 0.8568484783172607
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u53f2\u8389 say in session 8 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 9?",
+      "f1": 0.18,
+      "bleu1": 0.16877219655454515,
+      "rouge_l": 0.11842105263157895,
+      "bertscore_f1": 0.8409644961357117
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u53f2\u8389 say in session 9 and what did \u53f2\u8389 say in session 10?",
+      "f1": 0.038834951456310676,
+      "bleu1": 0.007674345377428445,
+      "rouge_l": 0.015625,
+      "bertscore_f1": 0.8433011174201965
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 10 and what did \u53f2\u8389 say in session 11?",
+      "f1": 0.07142857142857144,
+      "bleu1": 0.0034280025787834277,
+      "rouge_l": 0.0396039603960396,
+      "bertscore_f1": 0.8468281626701355
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u53f2\u8389 say in session 11 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 12?",
+      "f1": 0.08,
+      "bleu1": 0.040656965974059926,
+      "rouge_l": 0.022988505747126436,
+      "bertscore_f1": 0.848278820514679
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 12 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 13?",
+      "f1": 0.26506024096385544,
+      "bleu1": 0.07327821695319303,
+      "rouge_l": 0.1739130434782609,
+      "bertscore_f1": 0.8736947178840637
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 13 and what did \u53f2\u8389 say in session 14?",
+      "f1": 0.29629629629629634,
+      "bleu1": 0.293985304150494,
+      "rouge_l": 0.17910447761194032,
+      "bertscore_f1": 0.8739857077598572
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 14 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 15?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7051737308502197
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 15 and what did \u53f2\u8389 say in session 16?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7127429246902466
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 16 and what did \u53f2\u8389 say in session 17?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.742073118686676
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u53f2\u8389 say in session 17 and what did \u53f2\u8389 say in session 18?",
+      "f1": 0.12389380530973451,
+      "bleu1": 0.06664160905747456,
+      "rouge_l": 0.0857142857142857,
+      "bertscore_f1": 0.8618119359016418
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 18 and what did \u53f2\u8389 say in session 19?",
+      "f1": 0.16666666666666669,
+      "bleu1": 0.046295507758095336,
+      "rouge_l": 0.125,
+      "bertscore_f1": 0.8485379219055176
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u53f2\u8389's session 1 statement or \u5176\u4ed6\u53c2\u4e0e\u8005's session 2 statement?",
+      "f1": 0.08333333333333333,
+      "bleu1": 0.0003039606551848387,
+      "rouge_l": 0.07407407407407407,
+      "bertscore_f1": 0.791290819644928
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u5176\u4ed6\u53c2\u4e0e\u8005's session 2 statement or \u53f2\u8389's session 3 statement?",
+      "f1": 0.21428571428571427,
+      "bleu1": 0.03474172561140077,
+      "rouge_l": 0.14285714285714288,
+      "bertscore_f1": 0.8341168761253357
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u53f2\u8389's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.778683602809906
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u5176\u4ed6\u53c2\u4e0e\u8005's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.732484757900238
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u8d75\u4e3d\uff0c\u4eca\u5929\u662f2022\u5e743\u670816\u65e5\uff0c\u6211\u6765\u4e86\u89e3\u4e00\u4e0b\u60a8\u5728\u6cd5\u5ead\u4e0a\u7684\u7ecf\u5386\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u8d75\u4e3d\u3002\u5f88\u9ad8\u5174\u5728\u8fd9\u4e2a\u91cd\u5927\u73af\u4fdd\u6848\u4ef6\u4e2d\u542c\u8bf4\u60a8\u505a\u4e86\u51fa\u8272\u7684\u5de5\u4f5c\u3002\u8bf7\u95ee\u8fd9\u4e2a\u6848\u4ef6\u73b0...\"?",
+      "f1": 0.08,
+      "bleu1": 0.016759880870607254,
+      "rouge_l": 0.06896551724137931,
+      "bertscore_f1": 0.8463205099105835
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Chinese PerLTQA conversation, what did \u8d75\u4e3d say in the turn about \"\u4f60\u597d\uff0c\u4eca\u5929\u5f88\u5f00\u5fc3\u80fd\u53c2\u52a0\u6587\u5316\u4ea4\u6d41\u8282\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Chinese PerLTQA conversation, what did \u8d75\u4e3d say in the turn about \"\u4f60\u597d\uff0c\u53ef\u4ee5\u544a\u8bc9\u6211\u963f\u53f8\u5339\u6797\u7684\u836f\u7406\u4f5c\u7528\u5417\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0000001192092896
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u8d75\u4e3d\uff0c\u542c\u8bf4\u4f60\u548c\u738b\u5a1f\u8ba1\u5212\u4e00\u8d77\u53bb\u6cd5\u56fd\u65c5\u884c\uff0c\u5177\u4f53\u6253\u7b97\u600e\u6837\uff1f\"?",
+      "f1": 0.9130434782608696,
+      "bleu1": 0.8265654376242381,
+      "rouge_l": 0.9130434782608696,
+      "bertscore_f1": 0.9560461640357971
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\uff0c\u8d75\u4e3d\uff0c\u6709\u4ec0\u4e48\u6211\u80fd\u5e2e\u5fd9\u7684\u5417\uff1f\"?",
+      "f1": 0.6875,
+      "bleu1": 0.5238095238095238,
+      "rouge_l": 0.6470588235294118,
+      "bertscore_f1": 0.9344840049743652
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\uff0c\u8d75\u4e3d\u3002\u542c\u8bf4\u4f60\u8ba1\u5212\u548c\u738b\u5a1f\u4e00\u8d77\u53bb\u6b27\u6d32\u65c5\u884c\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\u8d75\u4e3d\uff0c\u60a8\u8bb0\u5f972022\u5e745\u670815\u65e5\u5468\u672b\u60a8\u548c\u738b\u5a1f\u4e00\u8d77\u53c2\u89c2\u4e86\u4e0a\u6d77\u4e2d\u5fc3\u5927\u53a6\u5417\uff1f...\"?",
+      "f1": 0.33333333333333337,
+      "bleu1": 0.20528613393708903,
+      "rouge_l": 0.2526315789473684,
+      "bertscore_f1": 0.8745251893997192
+    },
+    {
+      "category": "1",
+      "question": "In session 9 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\uff0c\u8d75\u4e3d\uff0c\u4eca\u5929\u662f2022\u5e745\u670813\u65e5\u3002\u4f60\u548c\u674e\u660e\u8ba4\u8bc6\u5df2\u7ecf\u4e24\u5e74\u4e86\uff0c\u8fd8\u8bb0\u5f97\u662f\u5728...\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 10 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\uff0c\u8d75\u4e3d\u3002\u6700\u8fd1\u98df\u54c1\u836f\u54c1\u6cd5\u9886\u57df\u51fa\u4e86\u4e00\u4ef6\u5927\u4e8b\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 1 and what did \u8d75\u4e3d say in session 2?",
+      "f1": 0.026315789473684213,
+      "bleu1": 0.0005551899854002525,
+      "rouge_l": 0.020833333333333336,
+      "bertscore_f1": 0.7329608201980591
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 2 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 3?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.721230685710907
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u8d75\u4e3d say in session 3 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 4?",
+      "f1": 0.05263157894736842,
+      "bleu1": 0.04444444444444445,
+      "rouge_l": 0.0449438202247191,
+      "bertscore_f1": 0.8453539609909058
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u8d75\u4e3d say in session 4 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 5?",
+      "f1": 0.2434782608695652,
+      "bleu1": 0.22368421052631582,
+      "rouge_l": 0.14285714285714285,
+      "bertscore_f1": 0.8714540004730225
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 5 and what did \u8d75\u4e3d say in session 6?",
+      "f1": 0.06451612903225806,
+      "bleu1": 3.8242466280971355e-16,
+      "rouge_l": 0.05333333333333332,
+      "bertscore_f1": 0.7317493557929993
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 6 and what did \u8d75\u4e3d say in session 7?",
+      "f1": 0.047619047619047616,
+      "bleu1": 0.017117931174412557,
+      "rouge_l": 0.041666666666666664,
+      "bertscore_f1": 0.7391582131385803
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 7 and what did \u8d75\u4e3d say in session 8?",
+      "f1": 0.07317073170731708,
+      "bleu1": 0.0034113459523917467,
+      "rouge_l": 0.03773584905660377,
+      "bertscore_f1": 0.8381131887435913
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 8 and what did \u8d75\u4e3d say in session 9?",
+      "f1": 0.02531645569620253,
+      "bleu1": 1.3858811985059467e-07,
+      "rouge_l": 0.020833333333333336,
+      "bertscore_f1": 0.739795982837677
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 9 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 10?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8325071334838867
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 10 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 11?",
+      "f1": 0.13333333333333333,
+      "bleu1": 0.05635385781899167,
+      "rouge_l": 0.0816326530612245,
+      "bertscore_f1": 0.820536732673645
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 11 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 12?",
+      "f1": 0.09302325581395347,
+      "bleu1": 0.004578909722183545,
+      "rouge_l": 0.08333333333333334,
+      "bertscore_f1": 0.8246693015098572
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 12 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 13?",
+      "f1": 0.1746031746031746,
+      "bleu1": 0.13817308640665024,
+      "rouge_l": 0.09937888198757763,
+      "bertscore_f1": 0.8759134411811829
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 13 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 14?",
+      "f1": 0.11764705882352941,
+      "bleu1": 0.016216016700058126,
+      "rouge_l": 0.08333333333333333,
+      "bertscore_f1": 0.8512394428253174
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 14 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 15?",
+      "f1": 0.07058823529411765,
+      "bleu1": 0.002624745747388194,
+      "rouge_l": 0.04210526315789474,
+      "bertscore_f1": 0.8461789488792419
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u8d75\u4e3d say in session 15 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 16?",
+      "f1": 0.02777777777777778,
+      "bleu1": 0.013769646120217513,
+      "rouge_l": 0.018691588785046728,
+      "bertscore_f1": 0.7086664438247681
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 16 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 17?",
+      "f1": 0.43010752688172044,
+      "bleu1": 0.08942514367857235,
+      "rouge_l": 0.39622641509433965,
+      "bertscore_f1": 0.8888762593269348
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u8d75\u4e3d say in session 17 and what did \u8d75\u4e3d say in session 18?",
+      "f1": 0.06399999999999999,
+      "bleu1": 0.018129686704752138,
+      "rouge_l": 0.039735099337748346,
+      "bertscore_f1": 0.852749764919281
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 18 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 19?",
+      "f1": 0.07407407407407408,
+      "bleu1": 0.0007626929774358025,
+      "rouge_l": 0.07692307692307693,
+      "bertscore_f1": 0.83331698179245
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u5176\u4ed6\u53c2\u4e0e\u8005's session 1 statement or \u5176\u4ed6\u53c2\u4e0e\u8005's session 2 statement?",
+      "f1": 0.10526315789473684,
+      "bleu1": 0.02154932619209001,
+      "rouge_l": 0.10256410256410256,
+      "bertscore_f1": 0.8112917542457581
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u5176\u4ed6\u53c2\u4e0e\u8005's session 2 statement or \u8d75\u4e3d's session 3 statement?",
+      "f1": 0.13333333333333336,
+      "bleu1": 0.0005386306276561101,
+      "rouge_l": 0.07547169811320754,
+      "bertscore_f1": 0.7831145524978638
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u5176\u4ed6\u53c2\u4e0e\u8005's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.773496687412262
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u5176\u4ed6\u53c2\u4e0e\u8005's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7489231824874878
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u5f20\u71d5\uff0c\u4f60\u8bb0\u5f97\u53bb\u5e74\u8fd9\u4e2a\u65f6\u95f4\u674e\u654f\u966a\u4f60\u89c2\u770b\u7684\u90a3\u90e8\u7535\u5f71\u5417\uff1f\"?",
+      "f1": 0.25641025641025644,
+      "bleu1": 0.21040698011026845,
+      "rouge_l": 0.14634146341463414,
+      "bertscore_f1": 0.8594048619270325
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\u5f20\u71d5\uff0c\u6700\u8fd1\u8fc7\u5f97\u600e\u4e48\u6837\u554a\uff1f\"?",
+      "f1": 0.12698412698412698,
+      "bleu1": 0.06896551724137931,
+      "rouge_l": 0.1142857142857143,
+      "bertscore_f1": 0.867834210395813
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\uff0c\u5f20\u71d5\u3002\u6211\u662f\u667a\u4f5c\u6587\u7cfb\u7edf\u7684\u52a9\u624b\u3002\u542c\u8bf4\u4f60\u6700\u8fd1\u5f00\u59cb\u4f7f\u7528\u6211\u4eec\u7684\u7cfb\u7edf\u4e86\u3002\u6709\u4ec0\u4e48\u4f53...\"?",
+      "f1": 0.2909090909090909,
+      "bleu1": 0.21402739726926998,
+      "rouge_l": 0.2857142857142857,
+      "bertscore_f1": 0.8800499439239502
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Chinese PerLTQA conversation, what did \u5f20\u71d5 say in the turn about \"AI\u52a9\u624b\uff0c\u6211\u4eec\u8ba1\u5212\u57282022\u5e746\u670812\u65e5\u51fa\u53d1\u53bb\u53c2\u89c2\u585e\u4f26\u76d6\u8482\u56fd\u5bb6\u516c\u56ed\uff0c\u4f60\u6709\u4ec0...\"?",
+      "f1": 0.9538461538461539,
+      "bleu1": 0.9077609612738833,
+      "rouge_l": 0.9538461538461539,
+      "bertscore_f1": 0.9721276760101318
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u5f20\u71d5\uff0c\u4f60\u597d\u554a\u3002\u8bb0\u5f97\u4e0a\u6b21\u665a\u9910\u805a\u4f1a\u4e0a\u4f60\u8ddf\u738b\u6653\u8bb2\u4e86\u5173\u4e8e\u53e4\u5170\u7ecf\u7684\u5185\u5bb9\uff0c\u73b0\u5728\u662f\u5426\u53ef\u4ee5...\"?",
+      "f1": 0.32967032967032966,
+      "bleu1": 0.26666666666666666,
+      "rouge_l": 0.2376237623762376,
+      "bertscore_f1": 0.8735154271125793
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u5f20\u71d5\uff0c\u8bb0\u5f97\u53bb\u5e74\u76845\u670810\u65e5\uff0c\u4f60\u548c\u738b\u6653\u4e00\u8d77\u53bb\u6566\u714c\u5e02\u53c2\u89c2\u4e86\u83ab\u9ad8\u7a9f\u5417\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u5f20\u71d5\uff0c\u6211\u4eec\u53ef\u4ee5\u4e00\u8d77\u73a9\u738b\u8005\u8363\u8000\u5417\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the Chinese PerLTQA conversation, what did \u5f20\u71d5 say in the turn about \"\u6211\u4eec\u5468\u672b\u53ef\u4ee5\u53bb\u8bd5\u4e00\u4e0b\u54c1\u724cA\u7684\u95ea\u8000\u5149\u73af\u7c89\u997c\uff0c\u6211\u542c\u8bf4\u975e\u5e38\u8d5e\u3002\"?",
+      "f1": 0.2631578947368421,
+      "bleu1": 0.15156173059891073,
+      "rouge_l": 0.25,
+      "bertscore_f1": 0.8577010035514832
+    },
+    {
+      "category": "1",
+      "question": "In session 9 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u5f20\u71d5\uff0c\u4f60\u597d\uff01\u51c6\u5907\u597d\u4f60\u4eec\u7684\u65c5\u884c\u4e86\u5417\uff1f\"?",
+      "f1": 0.21428571428571427,
+      "bleu1": 0.17647058823529413,
+      "rouge_l": 0.1935483870967742,
+      "bertscore_f1": 0.8851851224899292
+    },
+    {
+      "category": "1",
+      "question": "In session 10 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\u5f20\u71d5\uff0c\u6211\u542c\u8bf4\u60a8\u8ba1\u5212\u4e86\u4e00\u573a\u4ee5\u4f20\u7edf\u6587\u5316\u4e3a\u4e3b\u9898\u7684\u5c55\u89c8\u6d3b\u52a8\uff0c\u6211\u5f88\u60f3\u4e86\u89e3\u4e00\u4e0b\u5177\u4f53\u5185\u5bb9\u3002\"?",
+      "f1": 0.25,
+      "bleu1": 0.2405658733052126,
+      "rouge_l": 0.20289855072463767,
+      "bertscore_f1": 0.9001445174217224
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 1 and what did \u5f20\u71d5 say in session 2?",
+      "f1": 0.0547945205479452,
+      "bleu1": 0.0007403214043223818,
+      "rouge_l": 0.0449438202247191,
+      "bertscore_f1": 0.8211156129837036
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 2 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 3?",
+      "f1": 0.02564102564102564,
+      "bleu1": 0.0002882814447053965,
+      "rouge_l": 0.02173913043478261,
+      "bertscore_f1": 0.7170443534851074
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 3 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 4?",
+      "f1": 0.2033898305084746,
+      "bleu1": 0.13581194015846196,
+      "rouge_l": 0.1323529411764706,
+      "bertscore_f1": 0.8694460391998291
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5f20\u71d5 say in session 4 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 5?",
+      "f1": 0.03773584905660377,
+      "bleu1": 0.00010889866331123003,
+      "rouge_l": 0.03571428571428571,
+      "bertscore_f1": 0.7424259185791016
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 5 and what did \u5f20\u71d5 say in session 6?",
+      "f1": 0.3551401869158879,
+      "bleu1": 0.018129046684163437,
+      "rouge_l": 0.2945736434108527,
+      "bertscore_f1": 0.8656967282295227
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 6 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 7?",
+      "f1": 0.13636363636363635,
+      "bleu1": 0.0041658737018408646,
+      "rouge_l": 0.11538461538461538,
+      "bertscore_f1": 0.8171303868293762
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 7 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 8?",
+      "f1": 0.0909090909090909,
+      "bleu1": 0.020765100176263807,
+      "rouge_l": 0.07272727272727274,
+      "bertscore_f1": 0.7361925840377808
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5f20\u71d5 say in session 8 and what did \u5f20\u71d5 say in session 9?",
+      "f1": 0.08333333333333333,
+      "bleu1": 0.013527197288363248,
+      "rouge_l": 0.06557377049180327,
+      "bertscore_f1": 0.7298341393470764
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 9 and what did \u5f20\u71d5 say in session 10?",
+      "f1": 0.03278688524590164,
+      "bleu1": 0.0003027554745375816,
+      "rouge_l": 0.02564102564102564,
+      "bertscore_f1": 0.7151904702186584
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 10 and what did \u5f20\u71d5 say in session 11?",
+      "f1": 0.02531645569620253,
+      "bleu1": 9.629580865698557e-09,
+      "rouge_l": 0.017857142857142856,
+      "bertscore_f1": 0.7065693140029907
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 11 and what did \u5f20\u71d5 say in session 12?",
+      "f1": 0.2,
+      "bleu1": 0.005522648262652194,
+      "rouge_l": 0.13445378151260506,
+      "bertscore_f1": 0.8367602825164795
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 12 and what did \u5f20\u71d5 say in session 13?",
+      "f1": 0.14678899082568808,
+      "bleu1": 0.011703284318676269,
+      "rouge_l": 0.072992700729927,
+      "bertscore_f1": 0.8457621932029724
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 13 and what did \u5f20\u71d5 say in session 14?",
+      "f1": 0.05309734513274336,
+      "bleu1": 0.0005367182813692357,
+      "rouge_l": 0.0410958904109589,
+      "bertscore_f1": 0.8109713196754456
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 14 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 15?",
+      "f1": 0.0425531914893617,
+      "bleu1": 1.98948126791862e-12,
+      "rouge_l": 0.017699115044247787,
+      "bertscore_f1": 0.7214680314064026
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 15 and what did \u5f20\u71d5 say in session 16?",
+      "f1": 0.14583333333333334,
+      "bleu1": 0.057634858303817246,
+      "rouge_l": 0.11009174311926608,
+      "bertscore_f1": 0.8499457240104675
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 16 and what did \u5f20\u71d5 say in session 17?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7123891711235046
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5f20\u71d5 say in session 17 and what did \u5f20\u71d5 say in session 18?",
+      "f1": 0.5238095238095238,
+      "bleu1": 0.37748834535647735,
+      "rouge_l": 0.35294117647058826,
+      "bertscore_f1": 0.9009484648704529
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 18 and what did \u5f20\u71d5 say in session 19?",
+      "f1": 0.12371134020618557,
+      "bleu1": 0.03930213509083084,
+      "rouge_l": 0.07017543859649124,
+      "bertscore_f1": 0.8472995758056641
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u5176\u4ed6\u53c2\u4e0e\u8005's session 1 statement or \u5176\u4ed6\u53c2\u4e0e\u8005's session 2 statement?",
+      "f1": 0.11764705882352941,
+      "bleu1": 0.03360883548677684,
+      "rouge_l": 0.1142857142857143,
+      "bertscore_f1": 0.8181778788566589
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u5176\u4ed6\u53c2\u4e0e\u8005's session 2 statement or \u5176\u4ed6\u53c2\u4e0e\u8005's session 3 statement?",
+      "f1": 0.16666666666666669,
+      "bleu1": 0.11409269311835378,
+      "rouge_l": 0.16666666666666669,
+      "bertscore_f1": 0.8267666101455688
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u5176\u4ed6\u53c2\u4e0e\u8005's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7372272610664368
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u5176\u4ed6\u53c2\u4e0e\u8005's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7372272610664368
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Chinese PerLTQA conversation, what did \u962e\u6587\u5a77 say in the turn about \"\u5988\u5988\uff0c\u4eca\u5929\u665a\u9910\u5403\u7684\u771f\u597d\u5403\u3002\"?",
+      "f1": 0.13333333333333333,
+      "bleu1": 0.16134803485935978,
+      "rouge_l": 0.2222222222222222,
+      "bertscore_f1": 0.8917089700698853
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Chinese PerLTQA conversation, what did \u962e\u6587\u5a77 say in the turn about \"\u4f60\u597d\uff0c\u8bf7\u95ee\u6709\u4ec0\u4e48\u9700\u8981\u6211\u5e2e\u5fd9\u7684\u5417\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\uff0c\u962e\u6587\u5a77\u3002\u56de\u5fc6\u4e00\u4e0b\u53bb\u5e74\u6211\u4eec\u5728\u7ea2\u697c\u7684\u63a2\u7d22\u4e4b\u65c5\uff0c\u90a3\u65f6\u4f60\u662f\u5982\u4f55\u53d1\u73b0\u8fd9\u4e2a\u7edd\u7f8e\u7684...\"?",
+      "f1": 0.3013698630136986,
+      "bleu1": 0.31111111111111106,
+      "rouge_l": 0.19277108433734938,
+      "bertscore_f1": 0.8859245181083679
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Chinese PerLTQA conversation, what did \u962e\u6587\u5a77 say in the turn about \"\u6211\u592a\u559c\u6b22\u5927\u718a\u732b\u4e86\uff0c\u5e0c\u671b\u80fd\u53c2\u89c2\u4fdd\u62a4\u4e2d\u5fc3\uff01\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999999403953552
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\uff0c\u962e\u6587\u5a77\uff0c\u8fd9\u91cc\u662f\u52a9\u624b\u3002\u6709\u4ec0\u4e48\u6211\u53ef\u4ee5\u5e2e\u5230\u4f60\u7684\u5417\uff1f\"?",
+      "f1": 0.23809523809523808,
+      "bleu1": 0.21739130434782608,
+      "rouge_l": 0.1818181818181818,
+      "bertscore_f1": 0.8868321776390076
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the Chinese PerLTQA conversation, what did \u962e\u6587\u5a77 say in the turn about \"\u53bb\u5e74\u51ac\u5965\u4f1a\u7684\u51b0\u7403\u6bd4\u8d5b\u771f\u7684\u592a\u597d\u770b\u4e86\uff01\u7279\u522b\u662f\u770b\u5230\u90a3\u4e9b\u961f\u5458\u7a7f\u7740\u5b9a\u5236\u7684\u961f\u670d\u5728\u51b0\u4e0a\u6fc0...\"?",
+      "f1": 0.43478260869565216,
+      "bleu1": 0.33703948043582005,
+      "rouge_l": 0.30769230769230765,
+      "bertscore_f1": 0.8963298797607422
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u5468\u672b\u60f3\u5403\u4ec0\u4e48\u7f8e\u98df\u5462\uff1f\"?",
+      "f1": 0.375,
+      "bleu1": 0.3309363384692233,
+      "rouge_l": 0.35294117647058826,
+      "bertscore_f1": 0.8847811818122864
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the Chinese PerLTQA conversation, what did \u962e\u6587\u5a77 say in the turn about \"\u674e\u5b87\uff0c\u8c22\u8c22\u4f60\u5728\u6211\u5fc3\u810f\u624b\u672f\u671f\u95f4\u4e00\u76f4\u966a\u4f34\u7740\u6211\u3002\"?",
+      "f1": 0.05405405405405405,
+      "bleu1": 0.08695652173913045,
+      "rouge_l": 0.09523809523809525,
+      "bertscore_f1": 0.8493800759315491
+    },
+    {
+      "category": "1",
+      "question": "In session 9 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u962e\u6587\u5a77\uff0c\u4f60\u4e0a\u6b21\u8ddf\u6211\u63d0\u8d77\u7684\u90a3\u5bb6\u9762\u5305\u5e97\u540d\u5b57\u53eb\u4ec0\u4e48\u6765\u7740\uff1f\"?",
+      "f1": 0.12,
+      "bleu1": 0.11111111111111109,
+      "rouge_l": 0.12,
+      "bertscore_f1": 0.8711812496185303
+    },
+    {
+      "category": "1",
+      "question": "In session 10 of the Chinese PerLTQA conversation, what did \u962e\u6587\u5a77 say in the turn about \"\u4f60\u597d\uff0c\u8bf7\u95ee\u60a8\u6709\u53c2\u52a0\u8fc7\u4ec0\u4e48\u6bd4\u8f83\u6709\u8da3\u7684\u5065\u8eab\u6d3b\u52a8\u5417\uff1f\"?",
+      "f1": 0.07317073170731707,
+      "bleu1": 0.03488372093023255,
+      "rouge_l": 0.056074766355140186,
+      "bertscore_f1": 0.8375216126441956
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u962e\u6587\u5a77 say in session 1 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 2?",
+      "f1": 0.10169491525423728,
+      "bleu1": 0.09370225907844294,
+      "rouge_l": 0.06349206349206349,
+      "bertscore_f1": 0.8576332330703735
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u962e\u6587\u5a77 say in session 2 and what did \u962e\u6587\u5a77 say in session 3?",
+      "f1": 0.05333333333333334,
+      "bleu1": 2.7227192463766613e-05,
+      "rouge_l": 0.02247191011235955,
+      "bertscore_f1": 0.8266429901123047
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 3 and what did \u962e\u6587\u5a77 say in session 4?",
+      "f1": 0.09411764705882353,
+      "bleu1": 0.001792414760704827,
+      "rouge_l": 0.0606060606060606,
+      "bertscore_f1": 0.8467414379119873
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u962e\u6587\u5a77 say in session 4 and what did \u962e\u6587\u5a77 say in session 5?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7072726488113403
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 5 and what did \u962e\u6587\u5a77 say in session 6?",
+      "f1": 0.22413793103448276,
+      "bleu1": 0.18185347269134733,
+      "rouge_l": 0.12244897959183672,
+      "bertscore_f1": 0.8670951724052429
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u962e\u6587\u5a77 say in session 6 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 7?",
+      "f1": 0.03636363636363636,
+      "bleu1": 2.056830068111326e-05,
+      "rouge_l": 0.0303030303030303,
+      "bertscore_f1": 0.7217203974723816
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 7 and what did \u962e\u6587\u5a77 say in session 8?",
+      "f1": 0.12903225806451613,
+      "bleu1": 0.10000000000000002,
+      "rouge_l": 0.0625,
+      "bertscore_f1": 0.8574457168579102
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u962e\u6587\u5a77 say in session 8 and what did \u962e\u6587\u5a77 say in session 9?",
+      "f1": 0.052631578947368425,
+      "bleu1": 0.014839156224542911,
+      "rouge_l": 0.04,
+      "bertscore_f1": 0.7350355386734009
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 9 and what did \u962e\u6587\u5a77 say in session 10?",
+      "f1": 0.25196850393700787,
+      "bleu1": 0.18737719534352343,
+      "rouge_l": 0.15686274509803919,
+      "bertscore_f1": 0.8851668834686279
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u962e\u6587\u5a77 say in session 10 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 11?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.6951470971107483
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 11 and what did \u962e\u6587\u5a77 say in session 12?",
+      "f1": 0.06666666666666667,
+      "bleu1": 0.0001566816746121144,
+      "rouge_l": 0.05333333333333334,
+      "bertscore_f1": 0.7166697978973389
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 12 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 13?",
+      "f1": 0.16666666666666666,
+      "bleu1": 0.023443086343583386,
+      "rouge_l": 0.09836065573770492,
+      "bertscore_f1": 0.8679006695747375
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u962e\u6587\u5a77 say in session 13 and what did \u962e\u6587\u5a77 say in session 14?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7215648889541626
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 14 and what did \u962e\u6587\u5a77 say in session 15?",
+      "f1": 0.29850746268656714,
+      "bleu1": 0.24911853430577185,
+      "rouge_l": 0.10650887573964497,
+      "bertscore_f1": 0.8762561678886414
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u962e\u6587\u5a77 say in session 15 and what did \u962e\u6587\u5a77 say in session 16?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7199389338493347
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u962e\u6587\u5a77 say in session 16 and what did \u962e\u6587\u5a77 say in session 17?",
+      "f1": 0.028169014084507043,
+      "bleu1": 2.699327987187683e-07,
+      "rouge_l": 0.02173913043478261,
+      "bertscore_f1": 0.7237895131111145
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 17 and what did \u962e\u6587\u5a77 say in session 18?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7117202281951904
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 18 and what did \u962e\u6587\u5a77 say in session 19?",
+      "f1": 0.1639344262295082,
+      "bleu1": 0.11578947368421055,
+      "rouge_l": 0.07643312101910828,
+      "bertscore_f1": 0.8563323020935059
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u962e\u6587\u5a77's session 1 statement or \u962e\u6587\u5a77's session 2 statement?",
+      "f1": 0.2105263157894737,
+      "bleu1": 0.10510841176326924,
+      "rouge_l": 0.19047619047619047,
+      "bertscore_f1": 0.8126039505004883
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u962e\u6587\u5a77's session 2 statement or \u5176\u4ed6\u53c2\u4e0e\u8005's session 3 statement?",
+      "f1": 0.16666666666666666,
+      "bleu1": 0.06847172469765024,
+      "rouge_l": 0.16666666666666666,
+      "bertscore_f1": 0.8176282644271851
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u962e\u6587\u5a77's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.778683602809906
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u962e\u6587\u5a77's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7393667697906494
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Chinese PerLTQA conversation, what did \u8d56\u6d69 say in the turn about \"\u6700\u8fd1\u54b1\u4eec\u519c\u7530\u7684\u4ea7\u91cf\u8fd8\u4e0d\u9519\uff0c\u591a\u4e8f\u4e86\u54b1\u4eec\u7528\u4e86\u4e00\u4e9b\u65b0\u7684\u6280\u672f\uff0c\u611f\u89c9\u5f88\u4e0d\u9519\u3002\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Chinese PerLTQA conversation, what did \u8d56\u6d69 say in the turn about \"\u4f60\u597d\uff0c\u6211\u662f\u8d56\u6d69\uff0c\u4f60\u5bf9\u519c\u4e1a\u673a\u68b0\u5316\u8bbe\u5907\u611f\u5174\u8da3\u5417\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u8d56\u6d69\u5148\u751f\uff0c\u60a8\u597d\uff01\u60a8\u662f\u5426\u8bb0\u5f97 2023 \u5e74 3 \u6708 15 \u65e5\uff0c\u5f53\u60a8\u5916\u51fa\u51fa\u5dee\u65f6...\"?",
+      "f1": 0.10126582278481013,
+      "bleu1": 0.07999999999999999,
+      "rouge_l": 0.045977011494252866,
+      "bertscore_f1": 0.8637482523918152
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u8d56\u6d69\u5148\u751f\uff0c\u6211\u60f3\u4e86\u89e3\u4e00\u4e0b\u60a8\u5728\u5927\u5b66\u65f6\u4ee3\u5b66\u4e60\u519c\u4e1a\u673a\u68b0\u5316\u4e13\u4e1a\u7684\u7ecf\u5386\u3002\u8bf7\u95ee\u60a8\u5bf9...\"?",
+      "f1": 0.5517241379310345,
+      "bleu1": 0.37914351186761813,
+      "rouge_l": 0.5079365079365079,
+      "bertscore_f1": 0.9007143378257751
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\uff0c\u8d56\u6d69\uff0c\u597d\u4e45\u4e0d\u89c1\uff0c\u8fd8\u8bb0\u5f97\u6211\u4eec\u5728\u5927\u5b66\u5b66\u4e60\u519c\u4e1a\u673a\u68b0\u5316\u65f6\u4e00\u8d77\u5b8c\u6210\u7684\u90a3\u4e2a\u9879\u76ee\u5417\uff1f\"?",
+      "f1": 0.41935483870967744,
+      "bleu1": 0.36111111111111116,
+      "rouge_l": 0.2571428571428572,
+      "bertscore_f1": 0.8868727087974548
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the Chinese PerLTQA conversation, what did \u8d56\u6d69 say in the turn about \"\u563f\uff0c\u4f60\u8fd8\u8bb0\u5f97\u6211\u4eec\u5927\u5b66\u65f6\u4e00\u8d77\u5b66\u4e60\u519c\u4e1a\u673a\u68b0\u7684\u90a3\u6bb5\u65f6\u95f4\u5417\uff1f\"?",
+      "f1": 0.28888888888888886,
+      "bleu1": 0.16853932584269662,
+      "rouge_l": 0.21238938053097345,
+      "bertscore_f1": 0.8596071600914001
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u65e9\u4e0a\u597d\uff0c\u8d56\u5148\u751f\uff0c\u4eca\u5929\u662f2022\u5e746\u670812\u65e5\uff0c\u4f60\u548c\u4f60\u7684\u5973\u53cb\u4e00\u8d77\u53c2\u52a0\u4e86\u6570\u5b66\u7814\u8ba8...\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the Chinese PerLTQA conversation, what did \u8d56\u6d69 say in the turn about \"\u4f60\u597d\uff0c\u80fd\u7ed9\u6211\u63a8\u8350\u4e00\u4e0b\u53bb\u4e3d\u6c5f\u65c5\u884c\u7684\u884c\u7a0b\u5417\uff1f\"?",
+      "f1": 0.9375,
+      "bleu1": 0.8824969025845955,
+      "rouge_l": 0.9411764705882353,
+      "bertscore_f1": 0.9624080657958984
+    },
+    {
+      "category": "1",
+      "question": "In session 9 of the Chinese PerLTQA conversation, what did \u8d56\u6d69 say in the turn about \"\u4f60\u597d\uff0c\u6211\u662f\u8d56\u6d69\uff0c\u6211\u4eec\u662f\u4e0d\u662f\u7ea6\u5b9a\u4e86\u4eca\u5929\u53c2\u89c2\u519c\u4e1a\u79d1\u6280\u5c55\u89c8\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 10 of the Chinese PerLTQA conversation, what did \u8d56\u6d69 say in the turn about \"\u4f60\u597d\uff0c\u80fd\u5426\u4ecb\u7ecd\u4e00\u4e0b\u60a8\u5728\u519c\u4e1a\u673a\u68b0\u5316\u9886\u57df\u7684\u7ecf\u9a8c\u548c\u6210\u5c31\uff1f\"?",
+      "f1": 0.53125,
+      "bleu1": 0.3469387755102041,
+      "rouge_l": 0.4444444444444445,
+      "bertscore_f1": 0.9051782488822937
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u8d56\u6d69 say in session 1 and what did \u8d56\u6d69 say in session 2?",
+      "f1": 0.09090909090909091,
+      "bleu1": 0.04103869063961748,
+      "rouge_l": 0.061538461538461535,
+      "bertscore_f1": 0.7267778515815735
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u8d56\u6d69 say in session 2 and what did \u8d56\u6d69 say in session 3?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7173388004302979
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 3 and what did \u8d56\u6d69 say in session 4?",
+      "f1": 0.04819277108433735,
+      "bleu1": 3.412801688167435e-08,
+      "rouge_l": 0.05405405405405405,
+      "bertscore_f1": 0.7250480651855469
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 4 and what did \u8d56\u6d69 say in session 5?",
+      "f1": 0.05555555555555555,
+      "bleu1": 0.0011103799708005052,
+      "rouge_l": 0.04166666666666667,
+      "bertscore_f1": 0.7199299335479736
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 5 and what did \u8d56\u6d69 say in session 6?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7115260362625122
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u8d56\u6d69 say in session 6 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 7?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.72789067029953
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 7 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 8?",
+      "f1": 0.030769230769230767,
+      "bleu1": 0.0009257497115201922,
+      "rouge_l": 0.02564102564102564,
+      "bertscore_f1": 0.7149463295936584
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u8d56\u6d69 say in session 8 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 9?",
+      "f1": 0.051948051948051945,
+      "bleu1": 0.011757781725111788,
+      "rouge_l": 0.042105263157894736,
+      "bertscore_f1": 0.8438580632209778
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u8d56\u6d69 say in session 9 and what did \u8d56\u6d69 say in session 10?",
+      "f1": 0.02469135802469136,
+      "bleu1": 0.0003135258459127456,
+      "rouge_l": 0.019230769230769232,
+      "bertscore_f1": 0.7230824828147888
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u8d56\u6d69 say in session 10 and what did \u8d56\u6d69 say in session 11?",
+      "f1": 0.0625,
+      "bleu1": 0.00243614423654285,
+      "rouge_l": 0.047058823529411764,
+      "bertscore_f1": 0.7254442572593689
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u8d56\u6d69 say in session 11 and what did \u8d56\u6d69 say in session 12?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7287871241569519
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u8d56\u6d69 say in session 12 and what did \u8d56\u6d69 say in session 13?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7140330076217651
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u8d56\u6d69 say in session 13 and what did \u8d56\u6d69 say in session 14?",
+      "f1": 0.1694915254237288,
+      "bleu1": 0.1714285714285714,
+      "rouge_l": 0.14705882352941174,
+      "bertscore_f1": 0.8790032863616943
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u8d56\u6d69 say in session 14 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 15?",
+      "f1": 0.028571428571428574,
+      "bleu1": 3.7672156783017574e-07,
+      "rouge_l": 0.022222222222222223,
+      "bertscore_f1": 0.7088667154312134
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u8d56\u6d69 say in session 15 and what did \u8d56\u6d69 say in session 16?",
+      "f1": 0.26785714285714285,
+      "bleu1": 0.22021085951666886,
+      "rouge_l": 0.12857142857142856,
+      "bertscore_f1": 0.8728609085083008
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u8d56\u6d69 say in session 16 and what did \u8d56\u6d69 say in session 17?",
+      "f1": 0.20202020202020202,
+      "bleu1": 0.08403406789419608,
+      "rouge_l": 0.13008130081300812,
+      "bertscore_f1": 0.8696637749671936
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 17 and what did \u8d56\u6d69 say in session 18?",
+      "f1": 0.24,
+      "bleu1": 0.034202082759957834,
+      "rouge_l": 0.09876543209876543,
+      "bertscore_f1": 0.8647429943084717
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 18 and what did \u8d56\u6d69 say in session 19?",
+      "f1": 0.20224719101123595,
+      "bleu1": 0.13587116123719697,
+      "rouge_l": 0.17699115044247787,
+      "bertscore_f1": 0.8739360570907593
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u8d56\u6d69's session 1 statement or \u8d56\u6d69's session 2 statement?",
+      "f1": 0.12121212121212122,
+      "bleu1": 0.0037029988460807687,
+      "rouge_l": 0.10256410256410256,
+      "bertscore_f1": 0.785891056060791
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u8d56\u6d69's session 2 statement or \u5176\u4ed6\u53c2\u4e0e\u8005's session 3 statement?",
+      "f1": 0.2962962962962963,
+      "bleu1": 0.04632230081520103,
+      "rouge_l": 0.14285714285714288,
+      "bertscore_f1": 0.8287913203239441
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u8d56\u6d69's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7569973468780518
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u8d56\u6d69's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7284120917320251
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\u66fe\u5a1f\uff0c\u8bf7\u95ee\u6700\u8fd1\u600e\u4e48\u6837\u554a\uff1f\"?",
+      "f1": 0.1276595744680851,
+      "bleu1": 0.07692307692307693,
+      "rouge_l": 0.11764705882352941,
+      "bertscore_f1": 0.8665798306465149
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in the turn about \"\u4f60\u597d\u554a\uff0cAI\u52a9\u624b\uff01\u6700\u8fd1\u600e\u4e48\u6837\uff1f\"?",
+      "f1": 0.2692307692307692,
+      "bleu1": 0.15217391304347827,
+      "rouge_l": 0.21052631578947367,
+      "bertscore_f1": 0.8758545517921448
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u66fe\u5a1f\u3002\u8bb0\u5f97\u60a8\u66fe\u7ecf\u57282022\u5e743\u670815\u65e5\u7684\u5bb6\u5ead\u805a\u4f1a\u4e0a\u4e0e\u60a8\u7684\u5144\u5f1f\u66fe\u660e\u8ba8\u8bba...\"?",
+      "f1": 0.8292682926829268,
+      "bleu1": 0.5847415256680417,
+      "rouge_l": 0.7884615384615385,
+      "bertscore_f1": 0.9646191000938416
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in the turn about \"\u4f60\u597d\uff0c\u52a9\u624b\uff0c\u6211\u5728\u548c\u5927\u5b66\u540c\u5b66\u674e\u6167\u805a\u4f1a\u65f6\u542c\u8bf4\u4e86\u793e\u4ea4\u5a92\u4f53\u6570\u636e\u6316\u6398\u8fd9\u4e2a\u8bdd\u9898\uff0c\u60f3\u4e86\u89e3...\"?",
+      "f1": 0.9444444444444444,
+      "bleu1": 0.8948393168143697,
+      "rouge_l": 0.9473684210526316,
+      "bertscore_f1": 0.9591876268386841
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in the turn about \"\u4f60\u597d\uff0c\u6700\u8fd1\u6709\u5f88\u591a\u79fb\u6c11\u6848\u5b50\u5417\uff1f\"?",
+      "f1": 0.380952380952381,
+      "bleu1": 0.31845836025501745,
+      "rouge_l": 0.380952380952381,
+      "bertscore_f1": 0.9053280353546143
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in the turn about \"\u542c\u8bf4\u4f60\u7684\u5927\u5b66\u540c\u5b66\u674e\u6167\u53c2\u4e0e\u4e86\u300a\u673a\u5668\u732b\u300b\u6539\u7f16\u7535\u5f71\u7684\u53d1\u5e03\u6d3b\u52a8\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999998807907104
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u66fe\u5a1f\uff0c\u4f60\u8bb0\u5f972022\u5e743\u670815\u65e5\u6211\u4eec\u5728\u5546\u4e1a\u9886\u57df\u5408\u4f5c\u4e86\u5417\uff1f\"?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8184125423431396
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\u66fe\u5a1f\uff0c\u4eca\u5929\u662f2022\u5e74\uff0c\u56de\u5fc6\u4e00\u4e0b\uff0c2013\u5e74\u6211\u4eec\u4e00\u8d77\u53bb\u770b\u4e86\u300a\u970d\u6bd4\u7279\u4eba\u300b...\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 9 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\u66fe\u5a1f\uff0c\u60a8\u662f\u5426\u8bb0\u5f97\u57282018\u5e745\u670812\u65e5\u66fe\u4e3a\u60a8\u7684\u7537\u53cb\u738b\u6d69\u6210\u529f\u5904\u7406\u4e00\u8d77\u533b\u7597...\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 10 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\uff0c\u66fe\u5a1f\u3002\u6211\u4eec\u4e0a\u6b21\u89c1\u9762\u662f\u57282022\u5e746\u6708\u7684\u6cd5\u5b66\u4f1a\u8bae\u4e0a\uff0c\u90a3\u65f6\u5019\u4f60\u7ed3\u8bc6\u4e86\u77e5\u540d...\"?",
+      "f1": 0.7945205479452054,
+      "bleu1": 0.5245779259399983,
+      "rouge_l": 0.7560975609756097,
+      "bertscore_f1": 0.9594336748123169
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 1 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 2?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7403714656829834
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in session 2 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 3?",
+      "f1": 0.186046511627907,
+      "bleu1": 0.1381020846424787,
+      "rouge_l": 0.0792079207920792,
+      "bertscore_f1": 0.8665058612823486
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 3 and what did \u66fe\u5a1f say in session 4?",
+      "f1": 0.27480916030534347,
+      "bleu1": 0.22283973413511596,
+      "rouge_l": 0.15135135135135136,
+      "bertscore_f1": 0.8634181618690491
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in session 4 and what did \u66fe\u5a1f say in session 5?",
+      "f1": 0.1487603305785124,
+      "bleu1": 0.12317763141339393,
+      "rouge_l": 0.06993006993006994,
+      "bertscore_f1": 0.8620412349700928
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in session 5 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 6?",
+      "f1": 0.043010752688172046,
+      "bleu1": 0.02698176584709512,
+      "rouge_l": 0.04081632653061224,
+      "bertscore_f1": 0.8638537526130676
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in session 6 and what did \u66fe\u5a1f say in session 7?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8388126492500305
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 7 and what did \u66fe\u5a1f say in session 8?",
+      "f1": 0.08988764044943819,
+      "bleu1": 0.0071264478794736364,
+      "rouge_l": 0.07207207207207207,
+      "bertscore_f1": 0.8405387997627258
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 8 and what did \u66fe\u5a1f say in session 9?",
+      "f1": 0.039215686274509796,
+      "bleu1": 8.369997185813272e-09,
+      "rouge_l": 0.03418803418803419,
+      "bertscore_f1": 0.7158094644546509
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 9 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 10?",
+      "f1": 0.05405405405405405,
+      "bleu1": 5.398655974375365e-07,
+      "rouge_l": 0.02173913043478261,
+      "bertscore_f1": 0.7074337005615234
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 10 and what did \u66fe\u5a1f say in session 11?",
+      "f1": 0.028985507246376812,
+      "bleu1": 3.7672156783017574e-07,
+      "rouge_l": 0.022222222222222223,
+      "bertscore_f1": 0.7349099516868591
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 11 and what did \u66fe\u5a1f say in session 12?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7195806503295898
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 12 and what did \u66fe\u5a1f say in session 13?",
+      "f1": 0.02150537634408602,
+      "bleu1": 9.309272928646466e-05,
+      "rouge_l": 0.016528925619834708,
+      "bertscore_f1": 0.7135375738143921
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 13 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 14?",
+      "f1": 0.05970149253731343,
+      "bleu1": 8.026140275928058e-10,
+      "rouge_l": 0.0449438202247191,
+      "bertscore_f1": 0.7134815454483032
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 14 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 15?",
+      "f1": 0.282051282051282,
+      "bleu1": 0.1816024938352868,
+      "rouge_l": 0.23404255319148934,
+      "bertscore_f1": 0.8873670101165771
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in session 15 and what did \u66fe\u5a1f say in session 16?",
+      "f1": 0.03773584905660377,
+      "bleu1": 3.3911394835107366e-05,
+      "rouge_l": 0.031746031746031744,
+      "bertscore_f1": 0.7254170179367065
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in session 16 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 17?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7217254042625427
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u66fe\u5a1f say in session 17 and what did \u66fe\u5a1f say in session 18?",
+      "f1": 0.05970149253731343,
+      "bleu1": 0.011390195299273405,
+      "rouge_l": 0.05194805194805195,
+      "bertscore_f1": 0.8490200638771057
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 18 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 19?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7205893397331238
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u5176\u4ed6\u53c2\u4e0e\u8005's session 1 statement or \u66fe\u5a1f's session 2 statement?",
+      "f1": 0.1739130434782609,
+      "bleu1": 0.1042155049196271,
+      "rouge_l": 0.1739130434782609,
+      "bertscore_f1": 0.8226247429847717
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u66fe\u5a1f's session 2 statement or \u5176\u4ed6\u53c2\u4e0e\u8005's session 3 statement?",
+      "f1": 0.2,
+      "bleu1": 0.08786571270524224,
+      "rouge_l": 0.2,
+      "bertscore_f1": 0.8097150921821594
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u5176\u4ed6\u53c2\u4e0e\u8005's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8260108828544617
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u66fe\u5a1f's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7455551624298096
+    },
+    {
+      "category": "1",
+      "question": "In session 1 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u845b\u660e\u8fbe\u60f3\u5411\u60a8\u54a8\u8be2\u957f\u671f\u6295\u8d44\u7684\u6848\u4f8b\u548c\u5efa\u8bae\uff0c\u4ed6\u5bf9\u5df4\u83f2\u7279\u548cBerkshire Ha...\"?",
+      "f1": 0.59375,
+      "bleu1": 0.5588235294117647,
+      "rouge_l": 0.20588235294117646,
+      "bertscore_f1": 0.9198695421218872
+    },
+    {
+      "category": "1",
+      "question": "In session 2 of the Chinese PerLTQA conversation, what did \u845b\u6653\u71d5 say in the turn about \"\u6700\u8fd1\u6211\u542c\u8bf4\u6211\u7684\u5144\u5f1f\u845b\u660e\u8fbe\u6210\u4e3a\u4e86\u9876\u7ea7\u8db3\u7403\u4ff1\u4e50\u90e8\u7684\u8425\u517b\u5e08\uff0c\u611f\u5230\u975e\u5e38\u81ea\u8c6a\u3002\"?",
+      "f1": 0.1,
+      "bleu1": 0.06349206349206349,
+      "rouge_l": 0.06315789473684211,
+      "bertscore_f1": 0.8496642112731934
+    },
+    {
+      "category": "1",
+      "question": "In session 3 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u845b\u5148\u751f\u3002\u6211\u662f\u8d35\u516c\u53f8\u7684\u4eba\u5de5\u667a\u80fd\u52a9\u624b\uff0c\u6211\u60f3\u8bf7\u95ee\u4e00\u4e0b\uff0c\u5728\u7814\u53d1\u4e2d\u533b\u836f\u667a\u80fd\u8f85\u52a9...\"?",
+      "f1": 0.8055555555555556,
+      "bleu1": 0.513417119032592,
+      "rouge_l": 0.7499999999999999,
+      "bertscore_f1": 0.9585499167442322
+    },
+    {
+      "category": "1",
+      "question": "In session 4 of the Chinese PerLTQA conversation, what did \u845b\u6653\u71d5 say in the turn about \"\u4f60\u597d\u554a\uff0cAI\u52a9\u624b\u3002\u6211\u4eec\u8fd9\u5468\u53c8\u8981\u89c1\u9762\u4e86\uff0c\u4f60\u8bb0\u5f97\u51c6\u5907\u597d\u8fd9\u4e00\u9636\u6bb5\u5173\u4e8e\u5730\u8863\u7d20\u7684\u6587\u732e...\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 0.9999998807907104
+    },
+    {
+      "category": "1",
+      "question": "In session 5 of the Chinese PerLTQA conversation, what did \u845b\u6653\u71d5 say in the turn about \"\u4eca\u5929\u597d\u50cf\u662f\u4e2a\u4e0d\u9519\u7684\u5468\u672b\uff0c\u60f3\u4e00\u8d77\u6765\u89c2\u770b\u82f9\u679c\u516c\u53f8\u7684\u7535\u89c6\u5e7f\u544a\u5417\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 6 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u845b\u6653\u71d5\u3002\u4eca\u5929\u662f2022\u5e745\u670815\u65e5\uff0c\u6211\u60f3\u4e86\u89e3\u60a8\u63a8\u52a8\u51b0\u5ddd\u4fdd\u62a4\u6cd5\u6848\u7684\u8fdb\u5c55\u60c5\u51b5\u3002\"?",
+      "f1": 0.7346938775510204,
+      "bleu1": 0.45942582403592663,
+      "rouge_l": 0.72,
+      "bertscore_f1": 0.9242956638336182
+    },
+    {
+      "category": "1",
+      "question": "In session 7 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u60a8\u597d\uff0c\u845b\u6653\u71d5\uff0c\u8bb0\u5f97\u53bb\u5e74\u6625\u8282\u60a8\u548c\u4f34\u4fa3\u738b\u5efa\u56fd\u53c2\u52a0\u5bb6\u5ead\u805a\u4f1a\u4e00\u8d77\u73a9\u4e86\u9ebb\u5c06\u5427\uff0c\u8fd9\u4e2a\u6625...\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "1",
+      "question": "In session 8 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\uff0c\u845b\u6653\u71d5\uff0c\u6211\u4eec\u73b0\u5728\u53ef\u4ee5\u8c08\u4e00\u8c08\u53bb\u5e74\u4f60\u5728\u5361\u897f\u795e\u5e99\u7684\u65c5\u884c\u7ecf\u5386\u5417\uff1f\"?",
+      "f1": 0.26229508196721313,
+      "bleu1": 0.20512820512820512,
+      "rouge_l": 0.208955223880597,
+      "bertscore_f1": 0.8885742425918579
+    },
+    {
+      "category": "1",
+      "question": "In session 9 of the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in the turn about \"\u4f60\u597d\uff0c\u845b\u6653\u71d5\uff0c\u8bb0\u5f97\u4f60\u548c\u738b\u5efa\u56fd\u89c4\u5212\u4e86\u4e00\u6b21\u6d6a\u6f2b\u7684\u65c5\u884c\u5417\uff1f\"?",
+      "f1": 0.2666666666666666,
+      "bleu1": 0.2608695652173913,
+      "rouge_l": 0.21739130434782608,
+      "bertscore_f1": 0.854275107383728
+    },
+    {
+      "category": "1",
+      "question": "In session 10 of the Chinese PerLTQA conversation, what did \u845b\u6653\u71d5 say in the turn about \"\u4f60\u597d\uff0c\u6211\u5728\u7814\u7a76\u6700\u8fd1\u51fa\u53f0\u7684\u6559\u80b2\u6cd5\u5f8b\u653f\u7b56\u3002\u542c\u8bf4\u4f60\u4e5f\u662f\u6559\u80b2\u6cd5\u5f8b\u4e13\u5bb6\uff0c\u5bf9\u6b64\u6709\u4f55\u5efa\u8bae\uff1f\"?",
+      "f1": 1.0,
+      "bleu1": 1.0,
+      "rouge_l": 1.0,
+      "bertscore_f1": 1.0
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 1 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 2?",
+      "f1": 0.023529411764705882,
+      "bleu1": 0.00033673974811066246,
+      "rouge_l": 0.019417475728155338,
+      "bertscore_f1": 0.7095527052879333
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u845b\u6653\u71d5 say in session 2 and what did \u845b\u6653\u71d5 say in session 3?",
+      "f1": 0.02298850574712644,
+      "bleu1": 5.7243371141138825e-12,
+      "rouge_l": 0.018867924528301886,
+      "bertscore_f1": 0.717110812664032
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 3 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 4?",
+      "f1": 0.15789473684210525,
+      "bleu1": 0.00969358713827645,
+      "rouge_l": 0.1118881118881119,
+      "bertscore_f1": 0.8395649194717407
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u845b\u6653\u71d5 say in session 4 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 5?",
+      "f1": 0.2222222222222222,
+      "bleu1": 0.1515719403833604,
+      "rouge_l": 0.11299435028248586,
+      "bertscore_f1": 0.8679719567298889
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u845b\u6653\u71d5 say in session 5 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 6?",
+      "f1": 0.038834951456310676,
+      "bleu1": 0.01491992033367776,
+      "rouge_l": 0.03418803418803419,
+      "bertscore_f1": 0.8478284478187561
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 6 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 7?",
+      "f1": 0.02666666666666666,
+      "bleu1": 2.434050078252391e-10,
+      "rouge_l": 0.02197802197802198,
+      "bertscore_f1": 0.7162958979606628
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 7 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 8?",
+      "f1": 0.1702127659574468,
+      "bleu1": 0.12121212121212123,
+      "rouge_l": 0.09375000000000001,
+      "bertscore_f1": 0.8482344746589661
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 8 and what did \u845b\u6653\u71d5 say in session 9?",
+      "f1": 0.1627906976744186,
+      "bleu1": 0.022964394036168043,
+      "rouge_l": 0.09174311926605505,
+      "bertscore_f1": 0.8524355888366699
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 9 and what did \u845b\u6653\u71d5 say in session 10?",
+      "f1": 0.1935483870967742,
+      "bleu1": 0.12389380530973451,
+      "rouge_l": 0.07361963190184048,
+      "bertscore_f1": 0.8622778654098511
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u845b\u6653\u71d5 say in session 10 and what did \u845b\u6653\u71d5 say in session 11?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.8157814741134644
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 11 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 12?",
+      "f1": 0.2696629213483146,
+      "bleu1": 0.23728813559322035,
+      "rouge_l": 0.12068965517241378,
+      "bertscore_f1": 0.8621540665626526
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 12 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 13?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7021569609642029
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u845b\u6653\u71d5 say in session 13 and what did \u845b\u6653\u71d5 say in session 14?",
+      "f1": 0.1797752808988764,
+      "bleu1": 0.09443070019829218,
+      "rouge_l": 0.09900990099009901,
+      "bertscore_f1": 0.8649569749832153
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 14 and what did \u845b\u6653\u71d5 say in session 15?",
+      "f1": 0.1846153846153846,
+      "bleu1": 0.12513352502405792,
+      "rouge_l": 0.10062893081761005,
+      "bertscore_f1": 0.8579332232475281
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 15 and what did \u845b\u6653\u71d5 say in session 16?",
+      "f1": 0.038834951456310676,
+      "bleu1": 0.0006644594189479612,
+      "rouge_l": 0.03278688524590164,
+      "bertscore_f1": 0.8304133415222168
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 16 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 17?",
+      "f1": 0.1518987341772152,
+      "bleu1": 0.04817256187045416,
+      "rouge_l": 0.1276595744680851,
+      "bertscore_f1": 0.856187105178833
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u845b\u6653\u71d5 say in session 17 and what did \u5176\u4ed6\u53c2\u4e0e\u8005 say in session 18?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7137736082077026
+    },
+    {
+      "category": "2",
+      "question": "In the Chinese PerLTQA conversation, what did \u845b\u6653\u71d5 say in session 18 and what did \u845b\u6653\u71d5 say in session 19?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7237361669540405
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u5176\u4ed6\u53c2\u4e0e\u8005's session 1 statement or \u845b\u6653\u71d5's session 2 statement?",
+      "f1": 0.09302325581395349,
+      "bleu1": 0.003932510495157257,
+      "rouge_l": 0.045454545454545456,
+      "bertscore_f1": 0.8122121095657349
+    },
+    {
+      "category": "3",
+      "question": "Which statement came earlier in the Chinese PerLTQA conversation: \u845b\u6653\u71d5's session 2 statement or \u5176\u4ed6\u53c2\u4e0e\u8005's session 3 statement?",
+      "f1": 0.15000000000000002,
+      "bleu1": 0.00784955952374322,
+      "rouge_l": 0.09523809523809522,
+      "bertscore_f1": 0.8111450672149658
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u5176\u4ed6\u53c2\u4e0e\u8005's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7469522953033447
+    },
+    {
+      "category": "4",
+      "question": "What general conversational act is shown by \u845b\u6653\u71d5's cited turn in the Chinese PerLTQA conversation?",
+      "f1": 0.0,
+      "bleu1": 0,
+      "rouge_l": 0.0,
+      "bertscore_f1": 0.7626172304153442
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "generated_at": "2026-05-13T12:12:45",
+  "status": "bootstrap_harness_artifact_not_final_audited_release",
+  "construction_mode": "no_model_deterministic_conversion_seed_qa",
+  "model_calls": 0,
+  "local_model_required_for_construction": false,
+  "service_preflight_policy": "optional_tiny_chat_for_baseline_readiness_only_not_dataset_generation",
+  "benchmark_claim": "LoCoMo-loader-compatible source-faithful eval; not claimed to be LoCoMo-equivalent in data generation process or naturalness",
+  "primary_files": [
+    "datasets/locomo_style_eval_repaired_20260513/primary/PerLTQA-LoCoMo-style-eval.json",
+    "datasets/locomo_style_eval_repaired_20260513/primary/OPELA-LoCoMo-style-eval.json",
+    "datasets/locomo_style_eval_repaired_20260513/primary/JLongChat-LoCoMo-style-eval.json",
+    "datasets/locomo_style_eval_repaired_20260513/primary/deL1L2IM-LoCoMo-style-eval.json"
+  ],
+  "combined_file": "datasets/locomo_style_eval_repaired_20260513/primary/multilingual_locomo_style_eval.json",
+  "summaries": {
+    "PerLTQA-LoCoMo-style-eval": {
+      "samples": 10,
+      "sessions": {
+        "count": 10,
+        "min": 25,
+        "max": 31,
+        "mean": 26.3,
+        "total": 263
+      },
+      "turns": {
+        "count": 10,
+        "min": 202,
+        "max": 262,
+        "mean": 225.7,
+        "total": 2257
+      },
+      "qa": {
+        "count": 10,
+        "min": 34,
+        "max": 34,
+        "mean": 34.0,
+        "total": 340
+      },
+      "categories": {
+        "1": 100,
+        "2": 180,
+        "3": 20,
+        "4": 20,
+        "5": 20
+      }
+    },
+    "OPELA-LoCoMo-style-eval": {
+      "samples": 10,
+      "sessions": {
+        "count": 10,
+        "min": 4,
+        "max": 8,
+        "mean": 5.4,
+        "total": 54
+      },
+      "turns": {
+        "count": 10,
+        "min": 65,
+        "max": 335,
+        "mean": 115.1,
+        "total": 1151
+      },
+      "qa": {
+        "count": 10,
+        "min": 22,
+        "max": 22,
+        "mean": 22.0,
+        "total": 220
+      },
+      "categories": {
+        "1": 106,
+        "2": 42,
+        "3": 32,
+        "4": 20,
+        "5": 20
+      }
+    },
+    "JLongChat-LoCoMo-style-eval": {
+      "samples": 10,
+      "sessions": {
+        "count": 10,
+        "min": 5,
+        "max": 21,
+        "mean": 11.4,
+        "total": 114
+      },
+      "turns": {
+        "count": 10,
+        "min": 60,
+        "max": 249,
+        "mean": 117.5,
+        "total": 1175
+      },
+      "qa": {
+        "count": 10,
+        "min": 22,
+        "max": 22,
+        "mean": 22.0,
+        "total": 220
+      },
+      "categories": {
+        "1": 100,
+        "2": 48,
+        "3": 32,
+        "4": 20,
+        "5": 20
+      }
+    },
+    "deL1L2IM-LoCoMo-style-eval": {
+      "samples": 9,
+      "sessions": {
+        "count": 9,
+        "min": 7,
+        "max": 9,
+        "mean": 7.89,
+        "total": 71
+      },
+      "turns": {
+        "count": 9,
+        "min": 218,
+        "max": 730,
+        "mean": 505.33,
+        "total": 4548
+      },
+      "qa": {
+        "count": 9,
+        "min": 22,
+        "max": 22,
+        "mean": 22.0,
+        "total": 198
+      },
+      "categories": {
+        "1": 90,
+        "2": 54,
+        "3": 18,
+        "4": 18,
+        "5": 18
+      }
+    }
+  }
+}

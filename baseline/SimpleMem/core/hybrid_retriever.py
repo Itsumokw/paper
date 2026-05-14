@@ -55,6 +55,49 @@ class HybridRetriever:
         self.enable_parallel_retrieval = enable_parallel_retrieval if enable_parallel_retrieval is not None else getattr(config, 'ENABLE_PARALLEL_RETRIEVAL', True)
         self.max_retrieval_workers = max_retrieval_workers if max_retrieval_workers is not None else getattr(config, 'MAX_RETRIEVAL_WORKERS', 3)
 
+    def _json_object(self, result: Any, list_key: Optional[str] = None) -> Dict[str, Any]:
+        """Normalize loosely valid LLM JSON into an object-shaped response."""
+        if isinstance(result, dict):
+            return result
+        if isinstance(result, list) and list_key:
+            return {list_key: self._string_list(result)}
+        return {}
+
+    def _string_list(self, value: Any) -> List[str]:
+        if value is None:
+            return []
+
+        raw_items = value if isinstance(value, list) else [value]
+        items = []
+        for item in raw_items:
+            if isinstance(item, str):
+                text = item.strip()
+            elif isinstance(item, dict):
+                text = str(
+                    item.get("query")
+                    or item.get("text")
+                    or item.get("content")
+                    or item.get("description")
+                    or item.get("question")
+                    or ""
+                ).strip()
+            else:
+                text = str(item).strip()
+
+            if text:
+                items.append(text)
+
+        return items
+
+    def _fallback_information_plan(self, query: str) -> Dict[str, Any]:
+        return {
+            "question_type": "general",
+            "key_entities": [query],
+            "required_info": [{"info_type": "general", "description": "relevant information", "priority": "high"}],
+            "relationships": [],
+            "minimal_queries_needed": 1
+        }
+
     def retrieve(self, query: str, enable_reflection: Optional[bool] = None) -> List[MemoryEntry]:
         """
         Execute retrieval with planning and optional reflection
@@ -84,7 +127,8 @@ class HybridRetriever:
         
         # Step 1: Intelligent analysis of what information is needed
         information_plan = self._analyze_information_requirements(query)
-        print(f"[Planning] Identified {len(information_plan['required_info'])} information requirements")
+        required_info = information_plan.get("required_info", [])
+        print(f"[Planning] Identified {len(required_info)} information requirements")
         
         # Step 2: Generate minimal necessary queries based on the plan
         search_queries = self._generate_targeted_queries(query, information_plan)
@@ -220,9 +264,15 @@ Return ONLY JSON, no other content.
                 response = self.llm_client.chat_completion(
                     messages,
                     temperature=0.1,
-                    response_format=response_format
+                    response_format=response_format,
+                    max_tokens=getattr(config, "RETRIEVAL_OUTPUT_TOKENS", 512)
                 )
-                analysis = self.llm_client.extract_json(response)
+                analysis = self._json_object(self.llm_client.extract_json(response), list_key="keywords")
+                if not analysis:
+                    raise ValueError("Query analysis JSON was not an object")
+                analysis["keywords"] = self._string_list(analysis.get("keywords", [query])) or [query]
+                analysis["persons"] = self._string_list(analysis.get("persons", []))
+                analysis["entities"] = self._string_list(analysis.get("entities", []))
                 return analysis
             except Exception as e:
                 if attempt < max_retries - 1:
@@ -389,11 +439,12 @@ Return ONLY the JSON, no other text.
             response = self.llm_client.chat_completion(
                 messages,
                 temperature=0.3,
-                response_format=response_format
+                response_format=response_format,
+                max_tokens=getattr(config, "RETRIEVAL_OUTPUT_TOKENS", 512)
             )
             
-            result = self.llm_client.extract_json(response)
-            queries = result.get("queries", [query])
+            result = self._json_object(self.llm_client.extract_json(response), list_key="queries")
+            queries = self._string_list(result.get("queries", [query])) or [query]
             
             # Ensure original query is included
             if query not in queries:
@@ -472,10 +523,11 @@ Return ONLY the JSON, no other text.
             response = self.llm_client.chat_completion(
                 messages,
                 temperature=0.1,
-                response_format=response_format
+                response_format=response_format,
+                max_tokens=getattr(config, "RETRIEVAL_OUTPUT_TOKENS", 512)
             )
             
-            result = self.llm_client.extract_json(response)
+            result = self._json_object(self.llm_client.extract_json(response))
             return result.get("assessment", "insufficient")
             
         except Exception as e:
@@ -533,11 +585,12 @@ Return ONLY the JSON, no other text.
             response = self.llm_client.chat_completion(
                 messages,
                 temperature=0.3,
-                response_format=response_format
+                response_format=response_format,
+                max_tokens=getattr(config, "RETRIEVAL_OUTPUT_TOKENS", 512)
             )
             
-            result = self.llm_client.extract_json(response)
-            return result.get("additional_queries", [])
+            result = self._json_object(self.llm_client.extract_json(response), list_key="additional_queries")
+            return self._string_list(result.get("additional_queries", []))
             
         except Exception as e:
             print(f"Failed to generate additional queries: {e}")
@@ -699,22 +752,23 @@ Return ONLY the JSON, no other text.
             response = self.llm_client.chat_completion(
                 messages,
                 temperature=0.2,
-                response_format=response_format
+                response_format=response_format,
+                max_tokens=getattr(config, "RETRIEVAL_OUTPUT_TOKENS", 512)
             )
             
-            result = self.llm_client.extract_json(response)
+            result = self._json_object(self.llm_client.extract_json(response))
+            if not result:
+                raise ValueError("Information requirements JSON was not an object")
+            result["key_entities"] = self._string_list(result.get("key_entities", []))
+            result["relationships"] = self._string_list(result.get("relationships", []))
+            if not isinstance(result.get("required_info"), list):
+                result["required_info"] = self._fallback_information_plan(query)["required_info"]
             return result
             
         except Exception as e:
             print(f"Failed to analyze information requirements: {e}")
             # Fallback to simple analysis
-            return {
-                "question_type": "general",
-                "key_entities": [query],
-                "required_info": [{"info_type": "general", "description": "relevant information", "priority": "high"}],
-                "relationships": [],
-                "minimal_queries_needed": 1
-            }
+            return self._fallback_information_plan(query)
     
     def _generate_targeted_queries(self, original_query: str, information_plan: Dict[str, Any]) -> List[str]:
         """
@@ -770,11 +824,12 @@ Return ONLY the JSON, no other text.
             response = self.llm_client.chat_completion(
                 messages,
                 temperature=0.3,
-                response_format=response_format
+                response_format=response_format,
+                max_tokens=getattr(config, "RETRIEVAL_OUTPUT_TOKENS", 512)
             )
             
-            result = self.llm_client.extract_json(response)
-            queries = result.get("queries", [original_query])
+            result = self._json_object(self.llm_client.extract_json(response), list_key="queries")
+            queries = self._string_list(result.get("queries", [original_query])) or [original_query]
             
             # Ensure original query is included and limit to reasonable number
             if original_query not in queries:
@@ -890,10 +945,11 @@ Return ONLY the JSON, no other text.
             response = self.llm_client.chat_completion(
                 messages,
                 temperature=0.1,
-                response_format=response_format
+                response_format=response_format,
+                max_tokens=getattr(config, "RETRIEVAL_OUTPUT_TOKENS", 512)
             )
             
-            result = self.llm_client.extract_json(response)
+            result = self._json_object(self.llm_client.extract_json(response))
             assessment = result.get("assessment", "incomplete")
             coverage = result.get("coverage_percentage", 0)
             
@@ -955,11 +1011,12 @@ Return ONLY the JSON, no other text.
             response = self.llm_client.chat_completion(
                 messages,
                 temperature=0.3,
-                response_format=response_format
+                response_format=response_format,
+                max_tokens=getattr(config, "RETRIEVAL_OUTPUT_TOKENS", 512)
             )
             
-            result = self.llm_client.extract_json(response)
-            queries = result.get("targeted_queries", [])
+            result = self._json_object(self.llm_client.extract_json(response), list_key="targeted_queries")
+            queries = self._string_list(result.get("targeted_queries", []))
             
             print(f"[Intelligent Reflection] Missing info: {result.get('missing_analysis', 'Unknown')}")
             return queries

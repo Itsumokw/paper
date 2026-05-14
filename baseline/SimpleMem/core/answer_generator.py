@@ -8,6 +8,8 @@ from typing import List
 from models.memory_entry import MemoryEntry
 from utils.llm_client import LLMClient
 import config
+import re
+from datetime import datetime
 
 
 class AnswerGenerator:
@@ -69,7 +71,7 @@ class AnswerGenerator:
                 # Parse JSON response
                 result = self.llm_client.extract_json(response)
                 # Return the answer from JSON
-                return result.get("answer", response.strip())
+                return self._normalize_answer(result.get("answer", response.strip()))
 
             except Exception as e:
                 if attempt < max_retries - 1:
@@ -78,7 +80,7 @@ class AnswerGenerator:
                     print(f"Warning: Failed to parse JSON response after {max_retries} attempts: {e}")
                     # Fallback to raw response
                     if 'response' in locals():
-                        return response.strip()
+                        return self._normalize_answer(response.strip())
                     else:
                         return "Failed to generate answer"
 
@@ -115,7 +117,8 @@ class AnswerGenerator:
         Build answer generation prompt
         """
         return f"""
-Answer the user's question based on the provided context.
+You are an intelligent memory assistant tasked with answering LoCoMo questions
+from retrieved conversation memories.
 
 User Question: {query}
 
@@ -123,16 +126,17 @@ Relevant Context:
 {context_str}
 
 Requirements:
-1. First, think through the reasoning process
-2. Then provide a very CONCISE answer (short phrase about core information)
-3. Answer must be based ONLY on the provided context
-4. All dates in the response must be formatted as 'DD Month YYYY' but you can output more or less details if needed
-5. Return your response in JSON format
+1. Answer based ONLY on the provided context.
+2. Output one precise, concise answer; usually less than 5-6 words.
+3. Do not include reasoning, explanations, citations, or copied context.
+4. If the answer is a date, convert ISO dates such as 2023-05-01 to natural text such as "1 May 2023".
+5. If a memory contains relative time such as "last year" or "two months ago", resolve it using that memory's timestamp.
+6. If multiple memories conflict, prefer the most recent relevant memory.
+7. Return only valid JSON with a single key: "answer".
 
 Output Format:
 ```json
 {{
-  "reasoning": "Brief explanation of your thought process",
   "answer": "Concise answer in a short phrase"
 }}
 ```
@@ -144,10 +148,39 @@ Context: "Alice suggested meeting Bob at 2025-11-16T14:00:00..."
 Output:
 ```json
 {{
-  "reasoning": "The context explicitly states the meeting time as 2025-11-16T14:00:00",
   "answer": "16 November 2025 at 2:00 PM"
 }}
 ```
 
 Now answer the question. Return ONLY the JSON, no other text.
 """
+
+    def _normalize_answer(self, answer: str) -> str:
+        """
+        Keep metric-facing answers concise and normalize common date formats.
+        """
+        if answer is None:
+            return ""
+        text = str(answer).strip()
+        text = re.sub(r"^```(?:json)?|```$", "", text).strip()
+        text = re.sub(r"^(answer|final answer)\s*:\s*", "", text, flags=re.I).strip()
+        if text.startswith("{"):
+            try:
+                import json
+
+                parsed = json.loads(text)
+                if isinstance(parsed, dict) and "answer" in parsed:
+                    text = str(parsed["answer"]).strip()
+            except json.JSONDecodeError:
+                pass
+
+        def repl(match: re.Match) -> str:
+            raw = match.group(0)
+            try:
+                dt = datetime.strptime(raw[:10], "%Y-%m-%d")
+            except ValueError:
+                return raw
+            return f"{dt.day} {dt.strftime('%B')} {dt.year}"
+
+        text = re.sub(r"\b\d{4}-\d{2}-\d{2}(?:[T ][0-9:]{5,8})?\b", repl, text)
+        return text.strip()
