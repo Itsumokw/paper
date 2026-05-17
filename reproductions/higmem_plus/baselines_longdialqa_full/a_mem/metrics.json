@@ -1,0 +1,340 @@
+{
+  "artifact_paths": {
+    "command_env": "reproductions/higmem_plus/baselines_longdialqa_full/a_mem/command.env",
+    "failures": "reproductions/higmem_plus/baselines_longdialqa_full/a_mem/failure_retry_logs.jsonl",
+    "metrics": "reproductions/higmem_plus/baselines_longdialqa_full/a_mem/metrics.json",
+    "raw_predictions": "reproductions/higmem_plus/baselines_longdialqa_full/a_mem/raw_predictions.jsonl",
+    "retrieved_context": "reproductions/higmem_plus/baselines_longdialqa_full/a_mem/retrieved_context.jsonl",
+    "run_log": "reproductions/higmem_plus/baselines_longdialqa_full/a_mem/run.log",
+    "stats": "reproductions/higmem_plus/baselines_longdialqa_full/a_mem/stats.json",
+    "subset": "/home/stu0032/paper/datasets/subsets/longdialqa_full_seed20260517.json",
+    "summary_md": "reproductions/higmem_plus/baselines_longdialqa_full/a_mem/summary.md"
+  },
+  "by_answerability": {
+    "answerable": {
+      "accuracy": 0.0311284046692607,
+      "count": 2570,
+      "evidence_recall_any": 0.5335241210139002,
+      "mean_context_chars": 3330.395719844358,
+      "mean_context_tokens_approx": 832.2385214007782,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 0.038115486840294394,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 0.0311284046692607
+    },
+    "unanswerable": {
+      "accuracy": 0.9985855728429985,
+      "count": 707,
+      "evidence_recall_any": 0.37735849056603776,
+      "mean_context_chars": 3396.6732673267325,
+      "mean_context_tokens_approx": 848.7751060820368,
+      "mean_retrieved_k": 9.98019801980198,
+      "mean_token_f1": 0.9985855728429985,
+      "option_parse_rate": 0.9985855728429985,
+      "strict_accuracy": 0.9985855728429985
+    }
+  },
+  "by_hop": {
+    "single_hop": {
+      "accuracy": 0.2954876273653566,
+      "count": 687,
+      "evidence_recall_any": 0.6011673151750972,
+      "mean_context_chars": 3591.260553129549,
+      "mean_context_tokens_approx": 897.4323144104803,
+      "mean_retrieved_k": 9.989810771470161,
+      "mean_token_f1": 0.3112822519267285,
+      "option_parse_rate": 0.9985443959243085,
+      "strict_accuracy": 0.2954876273653566
+    },
+    "single_hop_temporal": {
+      "accuracy": 0.1450320512820513,
+      "count": 1248,
+      "evidence_recall_any": 0.4594348222424795,
+      "mean_context_chars": 3293.832532051282,
+      "mean_context_tokens_approx": 823.0857371794872,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 0.14998623171700096,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 0.1450320512820513
+    },
+    "two_hop_temporal": {
+      "accuracy": 0.2995529061102832,
+      "count": 1342,
+      "evidence_recall_any": 0.565356004250797,
+      "mean_context_chars": 3265.7719821162445,
+      "mean_context_tokens_approx": 816.0879284649776,
+      "mean_retrieved_k": 9.99478390461997,
+      "mean_token_f1": 0.3002407428636937,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 0.2995529061102832
+    }
+  },
+  "by_question_source": {
+    "easy_q": {
+      "accuracy": 0.2954876273653566,
+      "count": 687,
+      "evidence_recall_any": 0.6011673151750972,
+      "mean_context_chars": 3591.260553129549,
+      "mean_context_tokens_approx": 897.4323144104803,
+      "mean_retrieved_k": 9.989810771470161,
+      "mean_token_f1": 0.3112822519267285,
+      "option_parse_rate": 0.9985443959243085,
+      "strict_accuracy": 0.2954876273653566
+    },
+    "hard_q": {
+      "accuracy": 0.22509652509652509,
+      "count": 2590,
+      "evidence_recall_any": 0.5083415112855741,
+      "mean_context_chars": 3279.29305019305,
+      "mean_context_tokens_approx": 819.4598455598456,
+      "mean_retrieved_k": 9.997297297297298,
+      "mean_token_f1": 0.22784011355439926,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 0.22509652509652509
+    }
+  },
+  "by_question_type": {
+    "ans_w_time": {
+      "accuracy": 0.07352941176470588,
+      "count": 408,
+      "evidence_recall_any": 0.6593137254901961,
+      "mean_context_chars": 3633.279411764706,
+      "mean_context_tokens_approx": 907.9460784313726,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 0.09409161336178273,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 0.07352941176470588
+    },
+    "ans_wo_time": {
+      "accuracy": 0.1532258064516129,
+      "count": 124,
+      "evidence_recall_any": null,
+      "mean_context_chars": 3671.6290322580644,
+      "mean_context_tokens_approx": 917.5403225806451,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 0.17307684533915432,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 0.1532258064516129
+    },
+    "before_event_unans": {
+      "accuracy": 1.0,
+      "count": 20,
+      "evidence_recall_any": null,
+      "mean_context_chars": 3674.7,
+      "mean_context_tokens_approx": 918.3,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 1.0,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 1.0
+    },
+    "cur": {
+      "accuracy": 0.03076923076923077,
+      "count": 260,
+      "evidence_recall_any": 0.41923076923076924,
+      "mean_context_chars": 3413.403846153846,
+      "mean_context_tokens_approx": 853.0115384615384,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 0.03449947488409027,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 0.03076923076923077
+    },
+    "cur_cur": {
+      "accuracy": 0.0,
+      "count": 9,
+      "evidence_recall_any": 0.1111111111111111,
+      "mean_context_chars": 3612.777777777778,
+      "mean_context_tokens_approx": 902.8888888888889,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 0.0,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 0.0
+    },
+    "cur_fu": {
+      "accuracy": 1.0,
+      "count": 8,
+      "evidence_recall_any": null,
+      "mean_context_chars": 3419.0,
+      "mean_context_tokens_approx": 854.375,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 1.0,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 1.0
+    },
+    "cur_past": {
+      "accuracy": 0.0,
+      "count": 43,
+      "evidence_recall_any": 0.5116279069767442,
+      "mean_context_chars": 3259.3255813953488,
+      "mean_context_tokens_approx": 814.3720930232558,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 0.0,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 0.0
+    },
+    "dont_know_unans": {
+      "accuracy": 0.9655172413793104,
+      "count": 29,
+      "evidence_recall_any": null,
+      "mean_context_chars": 3545.2413793103447,
+      "mean_context_tokens_approx": 885.8965517241379,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 0.9655172413793104,
+      "option_parse_rate": 0.9655172413793104,
+      "strict_accuracy": 0.9655172413793104
+    },
+    "dont_know_unans_time": {
+      "accuracy": 1.0,
+      "count": 106,
+      "evidence_recall_any": 0.37735849056603776,
+      "mean_context_chars": 3332.3584905660377,
+      "mean_context_tokens_approx": 832.6603773584906,
+      "mean_retrieved_k": 9.933962264150944,
+      "mean_token_f1": 1.0,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 1.0
+    },
+    "fu": {
+      "accuracy": 1.0,
+      "count": 151,
+      "evidence_recall_any": null,
+      "mean_context_chars": 3393.1059602649007,
+      "mean_context_tokens_approx": 847.8609271523179,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 1.0,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 1.0
+    },
+    "fu_cur": {
+      "accuracy": 1.0,
+      "count": 9,
+      "evidence_recall_any": null,
+      "mean_context_chars": 3772.1111111111113,
+      "mean_context_tokens_approx": 942.6666666666666,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 1.0,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 1.0
+    },
+    "fu_fu": {
+      "accuracy": 1.0,
+      "count": 135,
+      "evidence_recall_any": null,
+      "mean_context_chars": 3584.9851851851854,
+      "mean_context_tokens_approx": 895.8740740740741,
+      "mean_retrieved_k": 9.948148148148148,
+      "mean_token_f1": 1.0,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 1.0
+    },
+    "fu_past": {
+      "accuracy": 1.0,
+      "count": 132,
+      "evidence_recall_any": null,
+      "mean_context_chars": 3348.371212121212,
+      "mean_context_tokens_approx": 836.7121212121212,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 1.0,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 1.0
+    },
+    "past": {
+      "accuracy": 0.026284348864994027,
+      "count": 837,
+      "evidence_recall_any": 0.47192353643966545,
+      "mean_context_chars": 3238.780167264038,
+      "mean_context_tokens_approx": 809.3201911589008,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 0.03251248950173681,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 0.026284348864994027
+    },
+    "past_cur": {
+      "accuracy": 0.0,
+      "count": 60,
+      "evidence_recall_any": 0.4166666666666667,
+      "mean_context_chars": 3291.5333333333333,
+      "mean_context_tokens_approx": 822.5333333333333,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 0.0,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 0.0
+    },
+    "past_fu": {
+      "accuracy": 1.0,
+      "count": 117,
+      "evidence_recall_any": null,
+      "mean_context_chars": 3182.0,
+      "mean_context_tokens_approx": 795.1282051282051,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 1.0,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 1.0
+    },
+    "past_past": {
+      "accuracy": 0.0012062726176115801,
+      "count": 829,
+      "evidence_recall_any": 0.5838359469240049,
+      "mean_context_chars": 3200.18697225573,
+      "mean_context_tokens_approx": 799.7056694813027,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 0.0023197550338684234,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 0.0012062726176115801
+    }
+  },
+  "by_show": {
+    "Friends": {
+      "accuracy": 0.23754789272030652,
+      "count": 783,
+      "evidence_recall_any": 0.47833333333333333,
+      "mean_context_chars": 3218.2835249042146,
+      "mean_context_tokens_approx": 804.1902937420178,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 0.23918392978568773,
+      "option_parse_rate": 0.9987228607918263,
+      "strict_accuracy": 0.23754789272030652
+    },
+    "The Big Bang Theory": {
+      "accuracy": 0.22842639593908629,
+      "count": 788,
+      "evidence_recall_any": 0.5162337662337663,
+      "mean_context_chars": 3295.1624365482235,
+      "mean_context_tokens_approx": 823.4225888324873,
+      "mean_retrieved_k": 9.991116751269036,
+      "mean_token_f1": 0.2353699036440153,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 0.22842639593908629
+    },
+    "The Office": {
+      "accuracy": 0.246189917936694,
+      "count": 1706,
+      "evidence_recall_any": 0.5538922155688623,
+      "mean_context_chars": 3425.5926143024617,
+      "mean_context_tokens_approx": 856.0369284876905,
+      "mean_retrieved_k": 9.995896834701055,
+      "mean_token_f1": 0.2527575029811718,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 0.246189917936694
+    }
+  },
+  "dataset": {
+    "normalized_manifest": "datasets/DialSim/longdialqa_normalized_v1.1_seed0/manifest.json",
+    "normalized_manifest_sha256": "1bc1856acebd1a8653fa35641eb3856db093965f868b73d70b16932129c38ffa",
+    "subset_label": "full benchmark reproduction",
+    "subset_manifest": "datasets/subsets/longdialqa_full_seed20260517_manifest.json",
+    "subset_manifest_sha256": "b39b863d088436fbb0aded524afbbaf25484be6e7196515f600da916b567ec88",
+    "subset_rows": 3277,
+    "subset_sha256": "98aa8e3989a647231776d44b52bc40d647361506006a45571b0dbc806b9b37e2"
+  },
+  "overall": {
+    "accuracy": 0.23985352456515105,
+    "count": 3277,
+    "evidence_recall_any": 0.5270376175548589,
+    "mean_context_chars": 3344.6948428440646,
+    "mean_context_tokens_approx": 835.806225205981,
+    "mean_retrieved_k": 9.995727799816907,
+    "mean_token_f1": 0.2453331709428003,
+    "option_parse_rate": 0.9996948428440647,
+    "strict_accuracy": 0.23985352456515105
+  }
+}

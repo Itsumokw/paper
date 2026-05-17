@@ -1,0 +1,68 @@
+{
+  "overall": {
+    "accuracy": 0.23985352456515105,
+    "count": 3277,
+    "evidence_recall_any": 0.5270376175548589,
+    "mean_context_chars": 3344.6948428440646,
+    "mean_context_tokens_approx": 835.806225205981,
+    "mean_retrieved_k": 9.995727799816907,
+    "mean_token_f1": 0.2453331709428003,
+    "option_parse_rate": 0.9996948428440647,
+    "strict_accuracy": 0.23985352456515105
+  },
+  "by_show": {
+    "Friends": {
+      "accuracy": 0.23754789272030652,
+      "count": 783,
+      "evidence_recall_any": 0.47833333333333333,
+      "mean_context_chars": 3218.2835249042146,
+      "mean_context_tokens_approx": 804.1902937420178,
+      "mean_retrieved_k": 10.0,
+      "mean_token_f1": 0.23918392978568773,
+      "option_parse_rate": 0.9987228607918263,
+      "strict_accuracy": 0.23754789272030652
+    },
+    "The Big Bang Theory": {
+      "accuracy": 0.22842639593908629,
+      "count": 788,
+      "evidence_recall_any": 0.5162337662337663,
+      "mean_context_chars": 3295.1624365482235,
+      "mean_context_tokens_approx": 823.4225888324873,
+      "mean_retrieved_k": 9.991116751269036,
+      "mean_token_f1": 0.2353699036440153,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 0.22842639593908629
+    },
+    "The Office": {
+      "accuracy": 0.246189917936694,
+      "count": 1706,
+      "evidence_recall_any": 0.5538922155688623,
+      "mean_context_chars": 3425.5926143024617,
+      "mean_context_tokens_approx": 856.0369284876905,
+      "mean_retrieved_k": 9.995896834701055,
+      "mean_token_f1": 0.2527575029811718,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 0.246189917936694
+    }
+  },
+  "dataset": {
+    "normalized_manifest": "datasets/DialSim/longdialqa_normalized_v1.1_seed0/manifest.json",
+    "normalized_manifest_sha256": "1bc1856acebd1a8653fa35641eb3856db093965f868b73d70b16932129c38ffa",
+    "subset_label": "full benchmark reproduction",
+    "subset_manifest": "datasets/subsets/longdialqa_full_seed20260517_manifest.json",
+    "subset_manifest_sha256": "b39b863d088436fbb0aded524afbbaf25484be6e7196515f600da916b567ec88",
+    "subset_rows": 3277,
+    "subset_sha256": "98aa8e3989a647231776d44b52bc40d647361506006a45571b0dbc806b9b37e2"
+  },
+  "artifact_paths": {
+    "command_env": "reproductions/higmem_plus/baselines_longdialqa_full/a_mem/command.env",
+    "failures": "reproductions/higmem_plus/baselines_longdialqa_full/a_mem/failure_retry_logs.jsonl",
+    "metrics": "reproductions/higmem_plus/baselines_longdialqa_full/a_mem/metrics.json",
+    "raw_predictions": "reproductions/higmem_plus/baselines_longdialqa_full/a_mem/raw_predictions.jsonl",
+    "retrieved_context": "reproductions/higmem_plus/baselines_longdialqa_full/a_mem/retrieved_context.jsonl",
+    "run_log": "reproductions/higmem_plus/baselines_longdialqa_full/a_mem/run.log",
+    "stats": "reproductions/higmem_plus/baselines_longdialqa_full/a_mem/stats.json",
+    "subset": "/home/stu0032/paper/datasets/subsets/longdialqa_full_seed20260517.json",
+    "summary_md": "reproductions/higmem_plus/baselines_longdialqa_full/a_mem/summary.md"
+  }
+}

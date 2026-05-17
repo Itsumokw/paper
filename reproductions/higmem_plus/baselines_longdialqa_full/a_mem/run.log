@@ -1,0 +1,16 @@
+started_at=2026-05-17T15:29:16+0800
+baseline=a_mem
+subset_manifest=datasets/subsets/longdialqa_full_seed20260517_manifest.json
+subset_path=/home/stu0032/paper/datasets/subsets/longdialqa_full_seed20260517.json
+model=Qwen/Qwen2.5-3B-Instruct
+resume=True
+completed_before_start=0
+show_start=bigbang qa_rows=788
+show_done=bigbang seconds=4242.286 stats={"stored_turns": 19134}
+show_start=friends qa_rows=783
+show_done=friends seconds=10683.811 stats={"stored_turns": 18662}
+show_start=theoffice qa_rows=1706
+show_done=theoffice seconds=31939.070 stats={"stored_turns": 19159}
+finished_at=2026-05-18T04:30:22+0800
+runtime_seconds=46865.171
+overall={"accuracy": 0.23985352456515105, "count": 3277, "evidence_recall_any": 0.5270376175548589, "mean_context_chars": 3344.6948428440646, "mean_context_tokens_approx": 835.806225205981, "mean_retrieved_k": 9.995727799816907, "mean_token_f1": 0.2453331709428003, "option_parse_rate": 0.9996948428440647, "strict_accuracy": 0.23985352456515105}

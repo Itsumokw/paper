@@ -1,0 +1,32 @@
+{
+  "baseline": "a_mem",
+  "finished_at": "2026-05-18T04:30:22+0800",
+  "runtime_seconds": 46865.17057776451,
+  "shows": {
+    "bigbang": {
+      "qa_rows": 788,
+      "seconds": 4242.285851955414,
+      "stored_turns": 19134
+    },
+    "friends": {
+      "qa_rows": 783,
+      "seconds": 10683.811401367188,
+      "stored_turns": 18662
+    },
+    "theoffice": {
+      "qa_rows": 1706,
+      "seconds": 31939.07018828392,
+      "stored_turns": 19159
+    }
+  },
+  "started_at": "2026-05-17T15:29:16+0800",
+  "subset_manifest": "datasets/subsets/longdialqa_full_seed20260517_manifest.json",
+  "subset_manifest_sha256": "b39b863d088436fbb0aded524afbbaf25484be6e7196515f600da916b567ec88",
+  "subset_rows": 3277,
+  "subset_sha256": "98aa8e3989a647231776d44b52bc40d647361506006a45571b0dbc806b9b37e2",
+  "token_usage": {
+    "completion_tokens": 9942,
+    "prompt_tokens": 4455143,
+    "total_tokens": 4465085
+  }
+}
