@@ -1,0 +1,68 @@
+{
+  "overall": {
+    "accuracy": 0.22764723832773878,
+    "count": 3277,
+    "evidence_recall_any": 1.0,
+    "mean_context_chars": 59571.31766859933,
+    "mean_context_tokens_approx": 14892.824839792493,
+    "mean_retrieved_k": 9445.765334147085,
+    "mean_token_f1": 0.23325223275245524,
+    "option_parse_rate": 0.9996948428440647,
+    "strict_accuracy": 0.22764723832773878
+  },
+  "by_show": {
+    "Friends": {
+      "accuracy": 0.227330779054917,
+      "count": 783,
+      "evidence_recall_any": 1.0,
+      "mean_context_chars": 59574.43422733078,
+      "mean_context_tokens_approx": 14893.60153256705,
+      "mean_retrieved_k": 9350.871008939974,
+      "mean_token_f1": 0.22896681612029818,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 0.227330779054917
+    },
+    "The Big Bang Theory": {
+      "accuracy": 0.22081218274111675,
+      "count": 788,
+      "evidence_recall_any": 1.0,
+      "mean_context_chars": 59679.511421319796,
+      "mean_context_tokens_approx": 14919.875634517766,
+      "mean_retrieved_k": 10109.389593908629,
+      "mean_token_f1": 0.22826330465924374,
+      "option_parse_rate": 0.998730964467005,
+      "strict_accuracy": 0.22081218274111675
+    },
+    "The Office": {
+      "accuracy": 0.2309495896834701,
+      "count": 1706,
+      "evidence_recall_any": 1.0,
+      "mean_context_chars": 59519.912661195776,
+      "mean_context_tokens_approx": 14879.973622508793,
+      "mean_retrieved_k": 9182.791324736225,
+      "mean_token_f1": 0.23752348513254293,
+      "option_parse_rate": 1.0,
+      "strict_accuracy": 0.2309495896834701
+    }
+  },
+  "dataset": {
+    "normalized_manifest": "datasets/DialSim/longdialqa_normalized_v1.1_seed0/manifest.json",
+    "normalized_manifest_sha256": "1bc1856acebd1a8653fa35641eb3856db093965f868b73d70b16932129c38ffa",
+    "subset_label": "full benchmark reproduction",
+    "subset_manifest": "datasets/subsets/longdialqa_full_seed20260517_manifest.json",
+    "subset_manifest_sha256": "b39b863d088436fbb0aded524afbbaf25484be6e7196515f600da916b567ec88",
+    "subset_rows": 3277,
+    "subset_sha256": "98aa8e3989a647231776d44b52bc40d647361506006a45571b0dbc806b9b37e2"
+  },
+  "artifact_paths": {
+    "command_env": "reproductions/higmem_plus/baselines_longdialqa_full/full_context/command.env",
+    "failures": "reproductions/higmem_plus/baselines_longdialqa_full/full_context/failure_retry_logs.jsonl",
+    "metrics": "reproductions/higmem_plus/baselines_longdialqa_full/full_context/metrics.json",
+    "raw_predictions": "reproductions/higmem_plus/baselines_longdialqa_full/full_context/raw_predictions.jsonl",
+    "retrieved_context": "reproductions/higmem_plus/baselines_longdialqa_full/full_context/retrieved_context.jsonl",
+    "run_log": "reproductions/higmem_plus/baselines_longdialqa_full/full_context/run.log",
+    "stats": "reproductions/higmem_plus/baselines_longdialqa_full/full_context/stats.json",
+    "subset": "/home/stu0032/paper/datasets/subsets/longdialqa_full_seed20260517.json",
+    "summary_md": "reproductions/higmem_plus/baselines_longdialqa_full/full_context/summary.md"
+  }
+}
