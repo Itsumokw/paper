@@ -1,0 +1,299 @@
+{
+  "artifact_paths": {
+    "component_traces": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/evidence_frame_routing/component_traces.jsonl",
+    "episode_traces": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/evidence_frame_routing/episode_traces.jsonl",
+    "graph_traces": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/evidence_frame_routing/graph_traces.jsonl",
+    "metrics": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/evidence_frame_routing/metrics.json",
+    "raw_predictions": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/evidence_frame_routing/raw_predictions.jsonl",
+    "repair_traces": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/evidence_frame_routing/repair_traces.jsonl",
+    "retrieved_evidence": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/evidence_frame_routing/retrieved_evidence.jsonl",
+    "route_traces": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/evidence_frame_routing/route_traces.jsonl",
+    "stats": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/evidence_frame_routing/stats.json",
+    "summary": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/evidence_frame_routing/summary.md"
+  },
+  "bad_cases": [
+    {
+      "category_name": "temporal",
+      "error_type": "generation_miss",
+      "evidence_support": true,
+      "f1": 0.16666666666666666,
+      "prediction": "2 May 2023  \n2 May 2023",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT10 say in session 1 and what did TEXTCHAT10 say in session 2?",
+      "reference": "Session 1: 初めまして！[SPK--TEXTCHAT10]と申します。これからよろしくお願いいたします。 Session 2: とても上手ですよね。",
+      "row_id": "1:1",
+      "sufficiency_status": "INFERABLE"
+    },
+    {
+      "category_name": "temporal",
+      "error_type": "repair_failed",
+      "evidence_support": false,
+      "f1": 0.22222222222222224,
+      "prediction": "5:00 AM on 2 May, 2023\n6:00 AM on 2 May, 2023",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT09 say in session 5 and what did TEXTCHAT09 say in session 6?",
+      "reference": "Session 5: 今は夜の１時から始めてるのでそれは厳しそうですよね笑 Session 6: 車通勤とか自転車通勤が一番なんですかねえ",
+      "row_id": "1:2",
+      "sufficiency_status": "INFERABLE"
+    },
+    {
+      "category_name": "single-hop",
+      "error_type": "retrieval_miss",
+      "evidence_support": false,
+      "f1": 0.0,
+      "prediction": "询问能力",
+      "question": "What general conversational act is shown by TEXTCHAT09's cited turn in the Japanese LAC conversation?",
+      "reference": "asking a question",
+      "row_id": "1:3",
+      "sufficiency_status": "SUPPORTED"
+    },
+    {
+      "category_name": "single-hop",
+      "error_type": "retrieval_miss",
+      "evidence_support": false,
+      "f1": 0.0,
+      "prediction": "watching anime",
+      "question": "What general conversational act is shown by TEXTCHAT27's cited turn in the Japanese LAC conversation?",
+      "reference": "asking a question",
+      "row_id": "2:1",
+      "sufficiency_status": "SUPPORTED"
+    },
+    {
+      "category_name": "temporal",
+      "error_type": "generation_miss",
+      "evidence_support": true,
+      "f1": 0.22222222222222224,
+      "prediction": "3:00 AM on 11 May, 2023\n4:00 AM on 18 May, 2023",
+      "question": "In the Japanese LAC conversation, what did TEXTCHAT35 say in session 3 and what did TEXTCHAT34 say in session 4?",
+      "reference": "Session 3: ミュージカル、ストレートなどいろいろですが、ミュージカルが多いですね! なるほど！好きな舞台俳優さん！どなたですか？ Session 4: そうですね！ワクチン接種も春あたりからできるようになりそうですねー。長引くのは辛いので早く終わってほしいです…！ そうですねー、マスクする...",
+      "row_id": "3:0",
+      "sufficiency_status": "INFERABLE"
+    },
+    {
+      "category_name": "open-domain",
+      "error_type": "generation_miss",
+      "evidence_support": true,
+      "f1": 0.4444444444444445,
+      "prediction": "PP1394-A's session 2 statement",
+      "question": "Which statement came earlier in the Japanese JMSC conversation: PP1394-A's session 2 statement or PP1394-A's session 3 statement?",
+      "reference": "Earlier session 2: こんにちは！1週間ぶりくらいですかね？",
+      "row_id": "7:2",
+      "sufficiency_status": "INFERABLE"
+    },
+    {
+      "category_name": "temporal",
+      "error_type": "generation_miss",
+      "evidence_support": true,
+      "f1": 0.0,
+      "prediction": "PP1439-A: はじめまして。セラピストです。\nPP1439-B: はじめまして、努力大好きな真面目なタイプです。",
+      "question": "In the Japanese JMSC conversation, what did PP1439-A say in session 2 and what did PP1439-B say in session 3?",
+      "reference": "Session 2: こんにちは。昨日、美味しい中華のお店を見つけましたよ。 Session 3: 嬉しい！太っちゃうけど、まあいっか！",
+      "row_id": "9:1",
+      "sufficiency_status": "INFERABLE"
+    }
+  ],
+  "by_category": {
+    "multi-hop": {
+      "avg_answer_seconds": 0.4911248445510864,
+      "avg_context_tokens": 1735,
+      "avg_latency_seconds": 3.7116064548492433,
+      "avg_retrieval_seconds": 3.2202632665634154,
+      "avg_total_tokens": 3143.1,
+      "bleu1": 0.0,
+      "count": 10,
+      "drill_down_rate": 1.0,
+      "evidence_support_rate": 1.0,
+      "f1": 1.0,
+      "judge_accuracy_proxy": 1.0
+    },
+    "open-domain": {
+      "avg_answer_seconds": 0.43125104904174805,
+      "avg_context_tokens": 1816.6666666666667,
+      "avg_latency_seconds": 3.5415333906809487,
+      "avg_retrieval_seconds": 3.110079367955526,
+      "avg_total_tokens": 3418.3333333333335,
+      "bleu1": 0.4095238095238095,
+      "count": 3,
+      "drill_down_rate": 1.0,
+      "evidence_support_rate": 0.6666666666666666,
+      "f1": 0.5148148148148148,
+      "judge_accuracy_proxy": 0.6666666666666666
+    },
+    "single-hop": {
+      "avg_answer_seconds": 0.1535435914993286,
+      "avg_context_tokens": 1240.5,
+      "avg_latency_seconds": 6.027135968208313,
+      "avg_retrieval_seconds": 5.8734095096588135,
+      "avg_total_tokens": 1865,
+      "bleu1": 0.0,
+      "count": 2,
+      "drill_down_rate": 0.0,
+      "evidence_support_rate": 0.0,
+      "f1": 0.0,
+      "judge_accuracy_proxy": 0.0
+    },
+    "temporal": {
+      "avg_answer_seconds": 0.9800398349761963,
+      "avg_context_tokens": 2513.4,
+      "avg_latency_seconds": 7.929090213775635,
+      "avg_retrieval_seconds": 6.9487974643707275,
+      "avg_total_tokens": 4433.4,
+      "bleu1": 0.29047619047619044,
+      "count": 5,
+      "drill_down_rate": 1.0,
+      "evidence_support_rate": 0.8,
+      "f1": 0.32222222222222224,
+      "judge_accuracy_proxy": 0.2
+    }
+  },
+  "by_error_type": {
+    "correct": {
+      "avg_answer_seconds": 0.5335772633552551,
+      "avg_context_tokens": 1776.4166666666667,
+      "avg_latency_seconds": 3.766237795352936,
+      "avg_retrieval_seconds": 3.232446074485779,
+      "avg_total_tokens": 3242.8333333333335,
+      "bleu1": 0.11904761904761904,
+      "count": 12,
+      "drill_down_rate": 1.0,
+      "evidence_support_rate": 1.0,
+      "f1": 0.9666666666666667,
+      "judge_accuracy_proxy": 1.0
+    },
+    "generation_miss": {
+      "avg_answer_seconds": 0.8121774196624756,
+      "avg_context_tokens": 2388.5,
+      "avg_latency_seconds": 7.850210070610046,
+      "avg_retrieval_seconds": 7.037802994251251,
+      "avg_total_tokens": 4247,
+      "bleu1": 0.1773809523809524,
+      "count": 4,
+      "drill_down_rate": 1.0,
+      "evidence_support_rate": 1.0,
+      "f1": 0.20833333333333334,
+      "judge_accuracy_proxy": 0.0
+    },
+    "repair_failed": {
+      "avg_answer_seconds": 0.726781964302063,
+      "avg_context_tokens": 2248,
+      "avg_latency_seconds": 5.3952109813690186,
+      "avg_retrieval_seconds": 4.66814661026001,
+      "avg_total_tokens": 3975.5,
+      "bleu1": 0.27142857142857146,
+      "count": 2,
+      "drill_down_rate": 1.0,
+      "evidence_support_rate": 0.0,
+      "f1": 0.3611111111111111,
+      "judge_accuracy_proxy": 0.5
+    },
+    "retrieval_miss": {
+      "avg_answer_seconds": 0.1535435914993286,
+      "avg_context_tokens": 1240.5,
+      "avg_latency_seconds": 6.027135968208313,
+      "avg_retrieval_seconds": 5.8734095096588135,
+      "avg_total_tokens": 1865,
+      "bleu1": 0.0,
+      "count": 2,
+      "drill_down_rate": 0.0,
+      "evidence_support_rate": 0.0,
+      "f1": 0.0,
+      "judge_accuracy_proxy": 0.0
+    }
+  },
+  "dataset": {
+    "checkpoint_root": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/jlongchat/higmem",
+    "dataset": "LoCoMo10",
+    "dataset_path": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/manifests/jlongchat_cat1234_10pct.json",
+    "dataset_sha256": "070c34dde15cdda58f30ca182c152d098cd33d8645cd71a37bae9c2b377901a5",
+    "merged_from_shards": [
+      "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/shard_0/evidence_frame_routing",
+      "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/shard_1/evidence_frame_routing",
+      "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/shard_2/evidence_frame_routing",
+      "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/shard_3/evidence_frame_routing"
+    ],
+    "method": "evidence_frame_routing",
+    "source_manifest": {
+      "checkpoint_root": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/jlongchat/higmem",
+      "dataset": "Multilingual LoCoMo-style/jlongchat",
+      "fraction": 0.1,
+      "loader_sample_ids_included": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "9"
+      ],
+      "per_category_subset_counts": {
+        "1": 10,
+        "2": 5,
+        "3": 3,
+        "4": 2
+      },
+      "per_loader_sample_qa_counts": {
+        "0": 0,
+        "1": 4,
+        "2": 2,
+        "3": 1,
+        "4": 2,
+        "5": 2,
+        "6": 3,
+        "7": 3,
+        "8": 0,
+        "9": 3
+      },
+      "seed": 20260517,
+      "selected_original_qa_ids": [
+        "1:5",
+        "1:10",
+        "1:14",
+        "1:19",
+        "2:11",
+        "2:18",
+        "3:12",
+        "4:6",
+        "4:8",
+        "5:4",
+        "5:17",
+        "6:5",
+        "6:7",
+        "6:9",
+        "7:2",
+        "7:3",
+        "7:15",
+        "9:6",
+        "9:11",
+        "9:15"
+      ],
+      "source_category_counts": {
+        "1": 100,
+        "2": 48,
+        "3": 32,
+        "4": 20
+      },
+      "source_path": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/jlongchat/higmem/locomo10_cat1234.json",
+      "source_qa_count": 200,
+      "source_sha256": "9a173638c1ffcf7796a707db6eac76794810658f014b88ce2c55e6ccd2a00d48",
+      "strategy": "deterministic_10pct_global_category_stratified_preserve_loader_indices",
+      "subset_path": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/manifests/jlongchat_cat1234_10pct.json",
+      "subset_qa_count": 20,
+      "subset_sample_count": 10,
+      "subset_sha256": "070c34dde15cdda58f30ca182c152d098cd33d8645cd71a37bae9c2b377901a5"
+    },
+    "subset_manifest": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/manifests/jlongchat_cat1234_10pct_manifest.json",
+    "subset_manifest_sha256": "76077902f632830b14a148b080f74c202f2d2d28aba8b0f0335de6a1be6e796d"
+  },
+  "overall": {
+    "avg_answer_seconds": 0.5706143975257874,
+    "avg_context_tokens": 1892.4,
+    "avg_latency_seconds": 4.972019386291504,
+    "avg_retrieval_seconds": 4.4011838555336,
+    "avg_total_tokens": 3379.15,
+    "bleu1": 0.13404761904761905,
+    "count": 20,
+    "drill_down_rate": 0.9,
+    "evidence_support_rate": 0.8,
+    "f1": 0.6577777777777778,
+    "judge_accuracy_proxy": 0.65
+  }
+}

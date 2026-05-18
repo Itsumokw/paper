@@ -1,0 +1,70 @@
+{
+  "finished_at": "2026-05-19T03:04:55+0800",
+  "merged_from_shards": [
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/opela/shard_0/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/opela/shard_1/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/opela/shard_2/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/opela/shard_3/evidence_frame_routing"
+  ],
+  "method": "evidence_frame_routing",
+  "shards": {
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/opela/shard_0/evidence_frame_routing": {
+      "finished_at": "2026-05-19T03:04:17+0800",
+      "method": "evidence_frame_routing",
+      "processed_this_run": 8,
+      "runtime_seconds": 49.86225748062134,
+      "started_at": "2026-05-19T03:03:27+0800",
+      "token_usage": {
+        "completion_tokens": 144,
+        "prompt_tokens": 32872,
+        "total_tokens": 33016
+      },
+      "total_rows": 8
+    },
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/opela/shard_1/evidence_frame_routing": {
+      "finished_at": "2026-05-19T03:03:49+0800",
+      "method": "evidence_frame_routing",
+      "processed_this_run": 4,
+      "runtime_seconds": 21.644770622253418,
+      "started_at": "2026-05-19T03:03:28+0800",
+      "token_usage": {
+        "completion_tokens": 110,
+        "prompt_tokens": 12796,
+        "total_tokens": 12906
+      },
+      "total_rows": 4
+    },
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/opela/shard_2/evidence_frame_routing": {
+      "finished_at": "2026-05-19T03:03:40+0800",
+      "method": "evidence_frame_routing",
+      "processed_this_run": 3,
+      "runtime_seconds": 12.442278861999512,
+      "started_at": "2026-05-19T03:03:27+0800",
+      "token_usage": {
+        "completion_tokens": 81,
+        "prompt_tokens": 7463,
+        "total_tokens": 7544
+      },
+      "total_rows": 3
+    },
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/opela/shard_3/evidence_frame_routing": {
+      "finished_at": "2026-05-19T03:03:52+0800",
+      "method": "evidence_frame_routing",
+      "processed_this_run": 5,
+      "runtime_seconds": 24.19326615333557,
+      "started_at": "2026-05-19T03:03:28+0800",
+      "token_usage": {
+        "completion_tokens": 193,
+        "prompt_tokens": 17523,
+        "total_tokens": 17716
+      },
+      "total_rows": 5
+    }
+  },
+  "token_usage": {
+    "completion_tokens": 528,
+    "prompt_tokens": 70654,
+    "total_tokens": 71182
+  },
+  "total_rows": 20
+}

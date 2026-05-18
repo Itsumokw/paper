@@ -1,0 +1,84 @@
+{
+  "finished_at": "2026-05-19T03:03:19+0800",
+  "merged_from_shards": [
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/perltqa/shard_0/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/perltqa/shard_1/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/perltqa/shard_2/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/perltqa/shard_3/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/perltqa/shard_4/evidence_frame_routing"
+  ],
+  "method": "evidence_frame_routing",
+  "shards": {
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/perltqa/shard_0/evidence_frame_routing": {
+      "finished_at": "2026-05-19T03:01:52+0800",
+      "method": "evidence_frame_routing",
+      "processed_this_run": 6,
+      "runtime_seconds": 45.72286367416382,
+      "started_at": "2026-05-19T03:01:07+0800",
+      "token_usage": {
+        "completion_tokens": 188,
+        "prompt_tokens": 18667,
+        "total_tokens": 18855
+      },
+      "total_rows": 6
+    },
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/perltqa/shard_1/evidence_frame_routing": {
+      "finished_at": "2026-05-19T03:01:50+0800",
+      "method": "evidence_frame_routing",
+      "processed_this_run": 5,
+      "runtime_seconds": 42.9987370967865,
+      "started_at": "2026-05-19T03:01:07+0800",
+      "token_usage": {
+        "completion_tokens": 192,
+        "prompt_tokens": 11092,
+        "total_tokens": 11284
+      },
+      "total_rows": 5
+    },
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/perltqa/shard_2/evidence_frame_routing": {
+      "finished_at": "2026-05-19T03:02:00+0800",
+      "method": "evidence_frame_routing",
+      "processed_this_run": 10,
+      "runtime_seconds": 53.20122504234314,
+      "started_at": "2026-05-19T03:01:06+0800",
+      "token_usage": {
+        "completion_tokens": 335,
+        "prompt_tokens": 23738,
+        "total_tokens": 24073
+      },
+      "total_rows": 10
+    },
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/perltqa/shard_3/evidence_frame_routing": {
+      "finished_at": "2026-05-19T03:01:53+0800",
+      "method": "evidence_frame_routing",
+      "processed_this_run": 6,
+      "runtime_seconds": 46.11966633796692,
+      "started_at": "2026-05-19T03:01:06+0800",
+      "token_usage": {
+        "completion_tokens": 148,
+        "prompt_tokens": 14499,
+        "total_tokens": 14647
+      },
+      "total_rows": 6
+    },
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/perltqa/shard_4/evidence_frame_routing": {
+      "finished_at": "2026-05-19T03:01:35+0800",
+      "method": "evidence_frame_routing",
+      "processed_this_run": 5,
+      "runtime_seconds": 28.346500635147095,
+      "started_at": "2026-05-19T03:01:07+0800",
+      "token_usage": {
+        "completion_tokens": 173,
+        "prompt_tokens": 12184,
+        "total_tokens": 12357
+      },
+      "total_rows": 5
+    }
+  },
+  "token_usage": {
+    "completion_tokens": 1036,
+    "prompt_tokens": 80180,
+    "total_tokens": 81216
+  },
+  "total_rows": 32
+}

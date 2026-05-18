@@ -1,0 +1,70 @@
+{
+  "finished_at": "2026-05-19T03:06:14+0800",
+  "merged_from_shards": [
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/shard_0/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/shard_1/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/shard_2/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/shard_3/evidence_frame_routing"
+  ],
+  "method": "evidence_frame_routing",
+  "shards": {
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/shard_0/evidence_frame_routing": {
+      "finished_at": "2026-05-19T03:05:44+0800",
+      "method": "evidence_frame_routing",
+      "processed_this_run": 6,
+      "runtime_seconds": 35.85760688781738,
+      "started_at": "2026-05-19T03:05:08+0800",
+      "token_usage": {
+        "completion_tokens": 102,
+        "prompt_tokens": 19688,
+        "total_tokens": 19790
+      },
+      "total_rows": 6
+    },
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/shard_1/evidence_frame_routing": {
+      "finished_at": "2026-05-19T03:05:33+0800",
+      "method": "evidence_frame_routing",
+      "processed_this_run": 3,
+      "runtime_seconds": 24.394723176956177,
+      "started_at": "2026-05-19T03:05:08+0800",
+      "token_usage": {
+        "completion_tokens": 76,
+        "prompt_tokens": 10907,
+        "total_tokens": 10983
+      },
+      "total_rows": 3
+    },
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/shard_2/evidence_frame_routing": {
+      "finished_at": "2026-05-19T03:05:26+0800",
+      "method": "evidence_frame_routing",
+      "processed_this_run": 5,
+      "runtime_seconds": 18.54452919960022,
+      "started_at": "2026-05-19T03:05:08+0800",
+      "token_usage": {
+        "completion_tokens": 68,
+        "prompt_tokens": 17550,
+        "total_tokens": 17618
+      },
+      "total_rows": 5
+    },
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/jlongchat/shard_3/evidence_frame_routing": {
+      "finished_at": "2026-05-19T03:05:33+0800",
+      "method": "evidence_frame_routing",
+      "processed_this_run": 6,
+      "runtime_seconds": 24.484137773513794,
+      "started_at": "2026-05-19T03:05:08+0800",
+      "token_usage": {
+        "completion_tokens": 120,
+        "prompt_tokens": 19072,
+        "total_tokens": 19192
+      },
+      "total_rows": 6
+    }
+  },
+  "token_usage": {
+    "completion_tokens": 366,
+    "prompt_tokens": 67217,
+    "total_tokens": 67583
+  },
+  "total_rows": 20
+}

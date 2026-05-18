@@ -1,0 +1,85 @@
+{
+  "checkpoint_root": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/opela/higmem",
+  "dataset": "LoCoMo10",
+  "dataset_path": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/manifests/opela_cat1234_10pct.json",
+  "dataset_sha256": "f24f012f450d96ceebebe8b3f08253a18b3093c123bebd194252b59af10ddf90",
+  "merged_from_shards": [
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/opela/shard_0/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/opela/shard_1/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/opela/shard_2/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/opela/shard_3/evidence_frame_routing"
+  ],
+  "method": "evidence_frame_routing",
+  "source_manifest": {
+    "checkpoint_root": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/opela/higmem",
+    "dataset": "Multilingual LoCoMo-style/opela",
+    "fraction": 0.1,
+    "loader_sample_ids_included": [
+      "0",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "9"
+    ],
+    "per_category_subset_counts": {
+      "1": 11,
+      "2": 4,
+      "3": 3,
+      "4": 2
+    },
+    "per_loader_sample_qa_counts": {
+      "0": 7,
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 2,
+      "8": 0,
+      "9": 3
+    },
+    "seed": 20260517,
+    "selected_original_qa_ids": [
+      "0:0",
+      "0:2",
+      "0:6",
+      "0:7",
+      "0:15",
+      "0:17",
+      "0:19",
+      "2:3",
+      "3:16",
+      "4:10",
+      "4:11",
+      "4:19",
+      "5:4",
+      "5:6",
+      "6:0",
+      "7:1",
+      "7:11",
+      "9:7",
+      "9:9",
+      "9:10"
+    ],
+    "source_category_counts": {
+      "1": 106,
+      "2": 42,
+      "3": 32,
+      "4": 20
+    },
+    "source_path": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/opela/higmem/locomo10_cat1234.json",
+    "source_qa_count": 200,
+    "source_sha256": "9885d78a7391477d5244aa34a5066938ed3912fb9faa8656d78dfdf5b0554cef",
+    "strategy": "deterministic_10pct_global_category_stratified_preserve_loader_indices",
+    "subset_path": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/manifests/opela_cat1234_10pct.json",
+    "subset_qa_count": 20,
+    "subset_sample_count": 10,
+    "subset_sha256": "f24f012f450d96ceebebe8b3f08253a18b3093c123bebd194252b59af10ddf90"
+  },
+  "subset_manifest": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/manifests/opela_cat1234_10pct_manifest.json",
+  "subset_manifest_sha256": "b2d65ee421ff2f779417fb5681231967ff2d2f2f8698a56b26ac5ca1678d8974"
+}

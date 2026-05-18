@@ -1,0 +1,70 @@
+{
+  "checkpoint_root": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/jlongchat/higmem",
+  "dataset": "Multilingual LoCoMo-style/jlongchat",
+  "fraction": 0.1,
+  "loader_sample_ids_included": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "9"
+  ],
+  "per_category_subset_counts": {
+    "1": 10,
+    "2": 5,
+    "3": 3,
+    "4": 2
+  },
+  "per_loader_sample_qa_counts": {
+    "0": 0,
+    "1": 4,
+    "2": 2,
+    "3": 1,
+    "4": 2,
+    "5": 2,
+    "6": 3,
+    "7": 3,
+    "8": 0,
+    "9": 3
+  },
+  "seed": 20260517,
+  "selected_original_qa_ids": [
+    "1:5",
+    "1:10",
+    "1:14",
+    "1:19",
+    "2:11",
+    "2:18",
+    "3:12",
+    "4:6",
+    "4:8",
+    "5:4",
+    "5:17",
+    "6:5",
+    "6:7",
+    "6:9",
+    "7:2",
+    "7:3",
+    "7:15",
+    "9:6",
+    "9:11",
+    "9:15"
+  ],
+  "source_category_counts": {
+    "1": 100,
+    "2": 48,
+    "3": 32,
+    "4": 20
+  },
+  "source_path": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/jlongchat/higmem/locomo10_cat1234.json",
+  "source_qa_count": 200,
+  "source_sha256": "9a173638c1ffcf7796a707db6eac76794810658f014b88ce2c55e6ccd2a00d48",
+  "strategy": "deterministic_10pct_global_category_stratified_preserve_loader_indices",
+  "subset_path": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/manifests/jlongchat_cat1234_10pct.json",
+  "subset_qa_count": 20,
+  "subset_sample_count": 10,
+  "subset_sha256": "070c34dde15cdda58f30ca182c152d098cd33d8645cd71a37bae9c2b377901a5"
+}

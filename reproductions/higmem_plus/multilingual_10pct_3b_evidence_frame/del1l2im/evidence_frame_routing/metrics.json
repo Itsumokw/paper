@@ -1,0 +1,329 @@
+{
+  "artifact_paths": {
+    "component_traces": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/del1l2im/evidence_frame_routing/component_traces.jsonl",
+    "episode_traces": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/del1l2im/evidence_frame_routing/episode_traces.jsonl",
+    "graph_traces": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/del1l2im/evidence_frame_routing/graph_traces.jsonl",
+    "metrics": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/del1l2im/evidence_frame_routing/metrics.json",
+    "raw_predictions": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/del1l2im/evidence_frame_routing/raw_predictions.jsonl",
+    "repair_traces": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/del1l2im/evidence_frame_routing/repair_traces.jsonl",
+    "retrieved_evidence": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/del1l2im/evidence_frame_routing/retrieved_evidence.jsonl",
+    "route_traces": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/del1l2im/evidence_frame_routing/route_traces.jsonl",
+    "stats": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/del1l2im/evidence_frame_routing/stats.json",
+    "summary": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/del1l2im/evidence_frame_routing/summary.md"
+  },
+  "bad_cases": [
+    {
+      "category_name": "open-domain",
+      "error_type": "repair_failed",
+      "evidence_support": false,
+      "f1": 0.36363636363636365,
+      "prediction": "L02's session 2 statement",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L02's session 2 statement or L02's session 3 statement?",
+      "reference": "Earlier session 2: Guten Abend, NATIVE01_FN!",
+      "row_id": "1:0",
+      "sufficiency_status": "INFERABLE"
+    },
+    {
+      "category_name": "single-hop",
+      "error_type": "retrieval_miss",
+      "evidence_support": false,
+      "f1": 0.0,
+      "prediction": "greeting",
+      "question": "What general conversational act is shown by L02's cited turn in the German deL1L2IM conversation?",
+      "reference": "asking a question",
+      "row_id": "1:1",
+      "sufficiency_status": "SUPPORTED"
+    },
+    {
+      "category_name": "multi-hop",
+      "error_type": "generation_miss",
+      "evidence_support": true,
+      "f1": 0.3,
+      "prediction": "Hallo, NATIVE02_FN, ich sehe, dass du schon online ist!",
+      "question": "In session 3 of the German deL1L2IM conversation, what did L03 say in the turn about \"Hallo, NATIVE02_FN! Wie geht´s? wie w...\"?",
+      "reference": "Hallo, NATIVE02_FN! Wie geht´s? wie war das Wochenende?",
+      "row_id": "2:0",
+      "sufficiency_status": "SUPPORTED"
+    },
+    {
+      "category_name": "open-domain",
+      "error_type": "repair_failed",
+      "evidence_support": false,
+      "f1": 0.2105263157894737,
+      "prediction": "L03's session 2 statement",
+      "question": "Which statement came earlier in the German deL1L2IM conversation: L03's session 2 statement or L03's session 3 statement?",
+      "reference": "Earlier session 2: Hallo, NATIVE02_FN! Wie geht`s? Wie hat gestern die deutsche Mannscha...",
+      "row_id": "2:1",
+      "sufficiency_status": "INFERABLE"
+    },
+    {
+      "category_name": "temporal",
+      "error_type": "repair_failed",
+      "evidence_support": false,
+      "f1": 0.3636363636363637,
+      "prediction": "in session 2: ja, bei mir auch))\nin session 3: wie gehts dir?",
+      "question": "In the German deL1L2IM conversation, what did L04 say in session 2 and what did L04 say in session 3?",
+      "reference": "Session 2: Hallo, NATIVE02_FN) Session 3: tschüss))",
+      "row_id": "3:2",
+      "sufficiency_status": "INFERABLE"
+    },
+    {
+      "category_name": "temporal",
+      "error_type": "generation_miss",
+      "evidence_support": true,
+      "f1": 0.0,
+      "prediction": "in 5 May, 2023\nin 12 May, 2023",
+      "question": "In the German deL1L2IM conversation, what did L05 say in session 2 and what did L05 say in session 3?",
+      "reference": "Session 2: Hallo, NATIVE02_FN! Wie geht es? Session 3: Danke, tschüss)))",
+      "row_id": "4:0",
+      "sufficiency_status": "INFERABLE"
+    },
+    {
+      "category_name": "single-hop",
+      "error_type": "retrieval_miss",
+      "evidence_support": false,
+      "f1": 0.0,
+      "prediction": "expressing surprise",
+      "question": "What general conversational act is shown by N03's cited turn in the German deL1L2IM conversation?",
+      "reference": "greeting or opening the conversation",
+      "row_id": "5:2",
+      "sufficiency_status": "SUPPORTED"
+    },
+    {
+      "category_name": "temporal",
+      "error_type": "repair_failed",
+      "evidence_support": false,
+      "f1": 0.0,
+      "prediction": "L07 said endlich habe ich auda dich gewartet =)))\nN03 said und, wie gehts dir?",
+      "question": "In the German deL1L2IM conversation, what did L07 say in session 6 and what did N03 say in session 7?",
+      "reference": "Session 6: Guten morgen, NATIVE03_FN. bist du da?? =)) Session 7: bis montag",
+      "row_id": "6:1",
+      "sufficiency_status": "INFERABLE"
+    },
+    {
+      "category_name": "temporal",
+      "error_type": "generation_miss",
+      "evidence_support": true,
+      "f1": 0.0,
+      "prediction": "L08 said лан, буду ждать))а то подумает:ненасытная какя)))\nN04 said oh",
+      "question": "In the German deL1L2IM conversation, what did L08 say in session 1 and what did N04 say in session 2?",
+      "reference": "Session 1: лан, буду ждать))а то подумает:ненасытная какя))) Session 2: Verzeihung, musste grad was erledigen. Ja, Montag 20 Uhr ist gut. Vie...",
+      "row_id": "7:1",
+      "sufficiency_status": "INFERABLE"
+    },
+    {
+      "category_name": "temporal",
+      "error_type": "generation_miss",
+      "evidence_support": true,
+      "f1": 0.2962962962962963,
+      "prediction": "L08 said sorry in session 3. N04 said hallo :) in session 4.",
+      "question": "In the German deL1L2IM conversation, what did L08 say in session 3 and what did N04 say in session 4?",
+      "reference": "Session 3: NATIVE04_FN, wo bist du verschwunden?)) Session 4: Danke, und \"erhol Dich gut\" ;-)",
+      "row_id": "7:2",
+      "sufficiency_status": "INFERABLE"
+    }
+  ],
+  "by_category": {
+    "multi-hop": {
+      "avg_answer_seconds": 0.4269976086086697,
+      "avg_context_tokens": 1742.7777777777778,
+      "avg_latency_seconds": 5.143673923280504,
+      "avg_retrieval_seconds": 4.716466718249851,
+      "avg_total_tokens": 2625.5555555555557,
+      "bleu1": 0.864579104075932,
+      "count": 9,
+      "drill_down_rate": 1.0,
+      "evidence_support_rate": 1.0,
+      "f1": 0.8931841096995362,
+      "judge_accuracy_proxy": 0.8888888888888888
+    },
+    "open-domain": {
+      "avg_answer_seconds": 0.30591046810150146,
+      "avg_context_tokens": 1200.5,
+      "avg_latency_seconds": 2.7598519325256348,
+      "avg_retrieval_seconds": 2.453671455383301,
+      "avg_total_tokens": 1755,
+      "bleu1": 0.13407360350930952,
+      "count": 2,
+      "drill_down_rate": 1.0,
+      "evidence_support_rate": 0.0,
+      "f1": 0.28708133971291866,
+      "judge_accuracy_proxy": 0.0
+    },
+    "single-hop": {
+      "avg_answer_seconds": 0.12330102920532227,
+      "avg_context_tokens": 666.5,
+      "avg_latency_seconds": 3.1843314170837402,
+      "avg_retrieval_seconds": 3.060856819152832,
+      "avg_total_tokens": 888,
+      "bleu1": 0.0,
+      "count": 2,
+      "drill_down_rate": 0.0,
+      "evidence_support_rate": 0.0,
+      "f1": 0.0,
+      "judge_accuracy_proxy": 0.0
+    },
+    "temporal": {
+      "avg_answer_seconds": 0.6620110988616943,
+      "avg_context_tokens": 2117.6,
+      "avg_latency_seconds": 5.754870176315308,
+      "avg_retrieval_seconds": 5.092585611343384,
+      "avg_total_tokens": 3200.2,
+      "bleu1": 0.11345851374541385,
+      "count": 5,
+      "drill_down_rate": 1.0,
+      "evidence_support_rate": 0.6,
+      "f1": 0.13198653198653199,
+      "judge_accuracy_proxy": 0.0
+    }
+  },
+  "by_error_type": {
+    "correct": {
+      "avg_answer_seconds": 0.39976033568382263,
+      "avg_context_tokens": 1677.25,
+      "avg_latency_seconds": 5.272269189357758,
+      "avg_retrieval_seconds": 4.872295081615448,
+      "avg_total_tokens": 2559.5,
+      "bleu1": 0.9351514920854235,
+      "count": 8,
+      "drill_down_rate": 1.0,
+      "evidence_support_rate": 1.0,
+      "f1": 0.9673321234119783,
+      "judge_accuracy_proxy": 1.0
+    },
+    "generation_miss": {
+      "avg_answer_seconds": 0.6507090330123901,
+      "avg_context_tokens": 2120,
+      "avg_latency_seconds": 3.5791274309158325,
+      "avg_retrieval_seconds": 2.9281855821609497,
+      "avg_total_tokens": 3156.75,
+      "bleu1": 0.13990006525869036,
+      "count": 4,
+      "drill_down_rate": 1.0,
+      "evidence_support_rate": 1.0,
+      "f1": 0.14907407407407408,
+      "judge_accuracy_proxy": 0.0
+    },
+    "repair_failed": {
+      "avg_answer_seconds": 0.4909840226173401,
+      "avg_context_tokens": 1694,
+      "avg_latency_seconds": 6.023114204406738,
+      "avg_retrieval_seconds": 5.531842112541199,
+      "avg_total_tokens": 2509.5,
+      "bleu1": 0.1439598786777317,
+      "count": 4,
+      "drill_down_rate": 1.0,
+      "evidence_support_rate": 0.0,
+      "f1": 0.23444976076555027,
+      "judge_accuracy_proxy": 0.0
+    },
+    "retrieval_miss": {
+      "avg_answer_seconds": 0.12330102920532227,
+      "avg_context_tokens": 666.5,
+      "avg_latency_seconds": 3.1843314170837402,
+      "avg_retrieval_seconds": 3.060856819152832,
+      "avg_total_tokens": 888,
+      "bleu1": 0.0,
+      "count": 2,
+      "drill_down_rate": 0.0,
+      "evidence_support_rate": 0.0,
+      "f1": 0.0,
+      "judge_accuracy_proxy": 0.0
+    }
+  },
+  "dataset": {
+    "checkpoint_root": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/del1l2im/higmem",
+    "dataset": "LoCoMo10",
+    "dataset_path": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/manifests/del1l2im_cat1234_10pct.json",
+    "dataset_sha256": "1e43bc86983797e78d9566c18d0e1f3182a7b008eecd81c6b98cace900472f40",
+    "merged_from_shards": [
+      "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/del1l2im/shard_0/evidence_frame_routing",
+      "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/del1l2im/shard_1/evidence_frame_routing",
+      "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/del1l2im/shard_2/evidence_frame_routing",
+      "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/del1l2im/shard_3/evidence_frame_routing"
+    ],
+    "method": "evidence_frame_routing",
+    "source_manifest": {
+      "checkpoint_root": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/del1l2im/higmem",
+      "dataset": "Multilingual LoCoMo-style/del1l2im",
+      "fraction": 0.1,
+      "loader_sample_ids_included": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "per_category_subset_counts": {
+        "1": 9,
+        "2": 5,
+        "3": 2,
+        "4": 2
+      },
+      "per_loader_sample_qa_counts": {
+        "0": 0,
+        "1": 2,
+        "2": 2,
+        "3": 3,
+        "4": 1,
+        "5": 3,
+        "6": 2,
+        "7": 3,
+        "8": 2
+      },
+      "seed": 20260517,
+      "selected_original_qa_ids": [
+        "1:17",
+        "1:18",
+        "2:2",
+        "2:17",
+        "3:3",
+        "3:8",
+        "3:11",
+        "4:11",
+        "5:1",
+        "5:3",
+        "5:19",
+        "6:5",
+        "6:15",
+        "7:5",
+        "7:10",
+        "7:12",
+        "8:0",
+        "8:6"
+      ],
+      "source_category_counts": {
+        "1": 90,
+        "2": 54,
+        "3": 18,
+        "4": 18
+      },
+      "source_path": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/del1l2im/higmem/locomo10_cat1234.json",
+      "source_qa_count": 180,
+      "source_sha256": "53f9154a99fe852e301ae5293d62b5c297717010f22211e1d6258c1f8b3330ae",
+      "strategy": "deterministic_10pct_global_category_stratified_preserve_loader_indices",
+      "subset_path": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/manifests/del1l2im_cat1234_10pct.json",
+      "subset_qa_count": 18,
+      "subset_sample_count": 9,
+      "subset_sha256": "1e43bc86983797e78d9566c18d0e1f3182a7b008eecd81c6b98cace900472f40"
+    },
+    "subset_manifest": "reproductions/higmem_plus/multilingual_10pct_3b_evidence_frame/manifests/del1l2im_cat1234_10pct_manifest.json",
+    "subset_manifest_sha256": "75506f397ee44b0f1ec7d1cbc2dc07b730f93396b3c4786c9b73f82268becdd9"
+  },
+  "overall": {
+    "avg_answer_seconds": 0.4450809425777859,
+    "avg_context_tokens": 1667.0555555555557,
+    "avg_latency_seconds": 4.83087682723999,
+    "avg_retrieval_seconds": 4.385565837224324,
+    "avg_total_tokens": 2495.3888888888887,
+    "bleu1": 0.47870287291272645,
+    "count": 18,
+    "drill_down_rate": 0.8888888888888888,
+    "evidence_support_rate": 0.6666666666666666,
+    "f1": 0.5151529070363513,
+    "judge_accuracy_proxy": 0.4444444444444444
+  }
+}
