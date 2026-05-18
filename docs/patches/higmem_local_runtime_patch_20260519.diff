@@ -1,0 +1,584 @@
+diff --git a/fphm_core.py b/fphm_core.py
+index 4d7d471..f2d6654 100644
+--- a/fphm_core.py
++++ b/fphm_core.py
+@@ -1,6 +1,7 @@
+ # fphm_core.py
+
+ import json
++import os
+ import random
+ import uuid
+ import time
+@@ -93,10 +94,10 @@ class FPHMSystem:
+         self.profiles: Dict[str, CharacterProfile] = {}
+
+         if self.ablation_mpnet_retrieval:
+-            retriever_model_name = 'all-mpnet-base-v2'
++            retriever_model_name = os.getenv("HIGMEM_RETRIEVER_MODEL", "all-mpnet-base-v2")
+             self.logger.log("retriever_model_selected", {"model": retriever_model_name})
+         else:
+-            retriever_model_name = 'all-MiniLM-L6-v2'
++            retriever_model_name = os.getenv("HIGMEM_RETRIEVER_MODEL", "all-MiniLM-L6-v2")
+
+         self.turn_retriever = SimpleEmbeddingRetriever(model_name=retriever_model_name)
+         self.event_retriever = SimpleEmbeddingRetriever(model_name=retriever_model_name)
+@@ -149,49 +150,49 @@ class FPHMSystem:
+     def _get_llm_json_response(self, prompt: str, schema: dict, caller: str, temperature: float = 0.0) -> Any:
+         response_str = None
+         parsed_response = None
++        expected_schema = schema.get("schema", {}) if isinstance(schema, dict) else {}
++
++        def _wrap_if_single_required(value: Any) -> Optional[dict]:
++            if expected_schema.get("type") != "object":
++                return None
++            props = expected_schema.get("properties", {}) or {}
++            required = expected_schema.get("required", []) or []
++            if len(required) != 1:
++                return None
++            key = required[0]
++            prop_type = (props.get(key) or {}).get("type")
++            if prop_type == "string" and isinstance(value, str):
++                return {key: value}
++            if prop_type == "array" and isinstance(value, list):
++                return {key: value}
++            if prop_type == "object" and isinstance(value, dict):
++                return {key: value}
++            return None
++
+         try:
+             response_str = self.llm.llm.get_completion(prompt,
+                                                        response_format={"type": "json_schema", "json_schema": schema},
+                                                        temperature=temperature)
+             try:
+                 parsed_response = json.loads(response_str)
+-                # Some OpenAI-compatible servers (or degraded runs after retries) may return a valid JSON
+-                # primitive (e.g., a JSON string) instead of the requested object. In that case, attempt a
+-                # schema-aware wrap for the common single-field schemas (keeps runs from crashing).
+                 if isinstance(parsed_response, dict):
+                     return parsed_response
+-                expected = schema.get("schema", {}) if isinstance(schema, dict) else {}
+-                if expected.get("type") == "object":
+-                    props = expected.get("properties", {}) or {}
+-                    required = expected.get("required", []) or []
+-                    if len(required) == 1:
+-                        key = required[0]
+-                        prop_type = (props.get(key) or {}).get("type")
+-                        if prop_type == "string" and isinstance(parsed_response, str):
+-                            parsed_response = {key: parsed_response}
+-                            return parsed_response
+-                        if prop_type == "array" and isinstance(parsed_response, list):
+-                            parsed_response = {key: parsed_response}
+-                            return parsed_response
+-                # Fall through to the JSONDecodeError handler below to generate an empty response.
++                wrapped = _wrap_if_single_required(parsed_response)
++                if wrapped is not None:
++                    parsed_response = wrapped
++                    return parsed_response
+                 raise json.JSONDecodeError("JSON response is not an object", str(response_str), 0)
+             except json.JSONDecodeError:
+                 # Best-effort salvage for OpenAI-compatible servers / open models that may wrap JSON
+                 # in extra text. This does not affect normal runs where the response is already valid JSON.
+                 cleaned = str(response_str or "").strip()
+-                expected = schema.get("schema", {}) if isinstance(schema, dict) else {}
+-                if expected.get("type") == "object":
+-                    props = expected.get("properties", {}) or {}
+-                    required = expected.get("required", []) or []
+-                    if len(required) == 1:
+-                        key = required[0]
+-                        prop_type = (props.get(key) or {}).get("type")
+-                        if prop_type == "string" and cleaned:
+-                            # Open-source / OpenAI-compatible servers sometimes ignore json_schema
+-                            # and directly return the final option text. Preserve that answer instead
+-                            # of degrading to an empty string.
+-                            parsed_response = {key: cleaned}
+-                            return parsed_response
++                wrapped = _wrap_if_single_required(cleaned)
++                if wrapped is not None and cleaned:
++                    # Open-source / OpenAI-compatible servers sometimes ignore json_schema
++                    # and directly return the final option text. Preserve that answer instead
++                    # of degrading to an empty string.
++                    parsed_response = wrapped
++                    return parsed_response
+                 # Try object-shaped extraction.
+                 if "{" in cleaned and "}" in cleaned:
+                     start = cleaned.find("{")
+@@ -199,19 +200,28 @@ class FPHMSystem:
+                     if 0 <= start < end:
+                         try:
+                             parsed_response = json.loads(cleaned[start : end + 1])
+-                            return parsed_response
++                            if isinstance(parsed_response, dict):
++                                return parsed_response
++                            wrapped = _wrap_if_single_required(parsed_response)
++                            if wrapped is not None:
++                                parsed_response = wrapped
++                                return parsed_response
+                         except Exception:
+                             pass
+-                # Try array-shaped extraction (rare).
++                # Try array-shaped extraction only for single-array-field schemas.
+                 if "[" in cleaned and "]" in cleaned:
+                     start = cleaned.find("[")
+                     end = cleaned.rfind("]")
+                     if 0 <= start < end:
+                         try:
+                             parsed_response = json.loads(cleaned[start : end + 1])
+-                            return parsed_response
++                            wrapped = _wrap_if_single_required(parsed_response)
++                            if wrapped is not None:
++                                parsed_response = wrapped
++                                return parsed_response
+                         except Exception:
+                             pass
++                parsed_response = None
+                 raise
+         except (json.JSONDecodeError, TypeError, KeyError) as e:
+             self.logger.log("llm_json_error", {"prompt": prompt, "error": str(e),
+diff --git a/fphm_logger.py b/fphm_logger.py
+index 06a95be..f07fddc 100644
+--- a/fphm_logger.py
++++ b/fphm_logger.py
+@@ -3,6 +3,12 @@ import json
+ import os
+ from datetime import datetime
+
++
++def _safe_json_line(data: dict) -> str:
++    text = json.dumps(data, ensure_ascii=False, default=str)
++    return text.encode("utf-8", errors="backslashreplace").decode("utf-8")
++
++
+ class FPHMLogger:
+     def __init__(self, log_dir="fphm_logs", run_name=""):
+         os.makedirs(log_dir, exist_ok=True)
+@@ -19,7 +25,7 @@ class FPHMLogger:
+         }
+         try:
+             with open(self.log_file, "a", encoding="utf-8") as f:
+-                f.write(json.dumps(log_entry, ensure_ascii=False, default=str) + "\n")
++                f.write(_safe_json_line(log_entry) + "\n")
+         except Exception as e:
+             print(f"Error writing to log file: {e}")
+             print(f"Problematic data: {log_entry}")
+diff --git a/memory_layer.py b/memory_layer.py
+index 685b4dd..87ade09 100644
+--- a/memory_layer.py
++++ b/memory_layer.py
+@@ -33,11 +33,13 @@ _ST_MODEL_CACHE_LOCK = threading.Lock()
+
+
+ def _get_sentence_transformer(model_name: str, device: Optional[str] = None) -> SentenceTransformer:
++    if device is None:
++        device = os.getenv("HIGMEM_RETRIEVER_DEVICE") or os.getenv("SENTENCE_TRANSFORMERS_DEVICE") or "cpu"
+     key = (model_name, device)
+     with _ST_MODEL_CACHE_LOCK:
+         model = _ST_MODEL_CACHE.get(key)
+         if model is None:
+-            model = SentenceTransformer(model_name) if device is None else SentenceTransformer(model_name, device=device)
++            model = SentenceTransformer(model_name, device=device)
+             _ST_MODEL_CACHE[key] = model
+         return model
+
+@@ -77,7 +79,12 @@ class OpenAIController(BaseLLMController):
+                 api_key = os.getenv('OPENAI_API_KEY')
+             if api_key is None:
+                 raise ValueError("OpenAI API key not found. Set OPENAI_API_KEY environment variable.")
+-            self.client = OpenAI(api_key=api_key, base_url=api_base)
++            self.use_streaming = os.getenv("HIGMEM_USE_STREAMING", "1").lower() not in {"0", "false", "no", "off"}
++            self.client = OpenAI(
++                api_key=api_key,
++                base_url=api_base,
++                max_retries=0,
++            )
+         except ImportError:
+             raise ImportError("OpenAI package not found. Install it with: pip install openai")
+
+@@ -87,23 +94,30 @@ class OpenAIController(BaseLLMController):
+             {"role": "user", "content": prompt},
+         ]
+
++        request_kwargs = {
++            "model": self.model,
++            "messages": messages,
++            "response_format": response_format,
++            "temperature": temperature,
++            "max_tokens": int(os.getenv("HIGMEM_MAX_TOKENS", "8192")),
++            "timeout": float(os.getenv("HIGMEM_OPENAI_TIMEOUT", "300")),
++        }
++
+         # Some OpenAI-compatible servers do not support `response_format` (json_schema). We retry
+         # without it only when the error message suggests it's unsupported.
+         try:
+-            response = self.client.chat.completions.create(
+-                model=self.model,
+-                messages=messages,
+-                response_format=response_format,
+-                temperature=temperature,
+-            )
++            if self.use_streaming:
++                request_kwargs["stream"] = True
++                return self._handle_streaming_response(**request_kwargs)
++            response = self.client.chat.completions.create(**request_kwargs)
+         except Exception as e:
+             msg = str(e).lower()
+             if ("response_format" in msg) or ("json_schema" in msg) or ("unknown parameter" in msg) or ("unsupported" in msg):
+-                response = self.client.chat.completions.create(
+-                    model=self.model,
+-                    messages=messages,
+-                    temperature=temperature,
+-                )
++                request_kwargs.pop("response_format", None)
++                if self.use_streaming:
++                    request_kwargs["stream"] = True
++                    return self._handle_streaming_response(**request_kwargs)
++                response = self.client.chat.completions.create(**request_kwargs)
+             else:
+                 raise
+         if getattr(response, "usage", None):
+@@ -113,6 +127,111 @@ class OpenAIController(BaseLLMController):
+                 self.total_tokens += int(response.usage.total_tokens or 0)
+         return response.choices[0].message.content
+
++    def _handle_streaming_response(self, **kwargs) -> str:
++        """
++        Read the streamed response until the first complete top-level JSON value
++        closes, then stop reading. HiGMem's prompts request one JSON object, so
++        trailing text after that object is unusable for parsing.
++        """
++        stream = self.client.chat.completions.create(**kwargs)
++        chunks = []
++
++        for chunk in stream:
++            if not getattr(chunk, "choices", None):
++                continue
++            delta = chunk.choices[0].delta
++            content = getattr(delta, "content", None)
++            if content is None:
++                continue
++            chunks.append(content)
++            current_text = "".join(chunks)
++            json_end = self._find_first_complete_json_end(current_text)
++            if json_end is not None:
++                try:
++                    stream.close()
++                except Exception:
++                    pass
++                return current_text[:json_end + 1]
++
++        return "".join(chunks)
++
++    def _find_first_complete_json_end(self, text: str) -> Optional[int]:
++        """
++        Return the end index of the first balanced top-level JSON object/array,
++        or None while the top-level value is still incomplete.
++        """
++        starts = []
++        for i, char in enumerate(text):
++            if char in ["[", "{"]:
++                starts.append((i, char))
++
++        for start_idx, start_char in starts:
++            end_idx = self._find_balanced_json_end(text, start_idx, start_char)
++            if end_idx is None:
++                if self._looks_like_json_start(text, start_idx, start_char):
++                    return None
++                continue
++
++            candidate = text[start_idx:end_idx + 1]
++            try:
++                json.loads(candidate)
++                return end_idx
++            except json.JSONDecodeError:
++                continue
++
++        return None
++
++    def _looks_like_json_start(self, text: str, start_idx: int, start_char: str) -> bool:
++        """
++        Avoid treating a complete child object inside an incomplete top-level
++        object/array as the whole streamed response.
++        """
++        next_idx = start_idx + 1
++        while next_idx < len(text) and text[next_idx].isspace():
++            next_idx += 1
++
++        if next_idx >= len(text):
++            return True
++
++        next_char = text[next_idx]
++        if start_char == "[":
++            return next_char in '{["-0123456789tfn]'
++        return next_char in '"}'
++
++    def _find_balanced_json_end(self, text: str, start_idx: int, start_char: str) -> Optional[int]:
++        """Return the closing index for a JSON value that starts at start_idx."""
++        end_char = "}" if start_char == "{" else "]"
++        depth = 0
++        in_string = False
++        escape_next = False
++
++        for i in range(start_idx, len(text)):
++            char = text[i]
++
++            if escape_next:
++                escape_next = False
++                continue
++
++            if char == "\\":
++                escape_next = True
++                continue
++
++            if char == '"':
++                in_string = not in_string
++                continue
++
++            if in_string:
++                continue
++
++            if char == start_char:
++                depth += 1
++            elif char == end_char:
++                depth -= 1
++                if depth == 0:
++                    return i
++
++        return None
++
+ class OllamaController(BaseLLMController):
+     def __init__(self, model: str = "llama2"):
+         from ollama import chat
+diff --git a/run_fphm_evaluation.py b/run_fphm_evaluation.py
+index ccc8ad5..b884a00 100644
+--- a/run_fphm_evaluation.py
++++ b/run_fphm_evaluation.py
+@@ -18,6 +18,7 @@ import argparse
+ import json
+ import random
+ import time
++import traceback
+ from datetime import datetime
+ from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor, as_completed
+ from tqdm import tqdm
+@@ -97,6 +98,7 @@ def generate_keyword_query(llm_controller: LLMController, original_query: str) -
+
+
+ def process_single_sample(args, sample, base_run_name, output_dir, is_single_sample_run: bool):
++    sample_started = time.time()
+     if is_single_sample_run:
+         log_dir = "fphm_logs"
+         checkpoint_dir = "checkpoints"
+@@ -131,11 +133,13 @@ def process_single_sample(args, sample, base_run_name, output_dir, is_single_sam
+         ablation_mpnet_retrieval=args.ablation_mpnet_retrieval
+     )
+
++    checkpoint_loaded = False
+     if os.path.exists(final_checkpoint_path):
+         print(f"Sample {sample.sample_id}: Resuming from final checkpoint: {final_checkpoint_path}")
+         with open(final_checkpoint_path, "rb") as f:
+             saved_state = pickle.load(f)
+         memory_system.__dict__.update(saved_state)
++        checkpoint_loaded = True
+     else:
+         print(f"Sample {sample.sample_id}: No final checkpoint found. Building memory from scratch.")
+         all_turns = []
+@@ -173,12 +177,26 @@ def process_single_sample(args, sample, base_run_name, output_dir, is_single_sam
+         except Exception as e:
+             print(f"Sample {sample.sample_id}: Error saving final checkpoint: {e}")
+
++    build_token_usage = llm_controller.llm.get_and_reset_token_counts()
++    build_stats = {
++        "sample_id": sample.sample_id,
++        "checkpoint_loaded": checkpoint_loaded,
++        "memory_build_seconds": time.time() - sample_started,
++        "token_usage": build_token_usage,
++        "memory_counts": {
++            "events": len(getattr(memory_system, "events", {}) or {}),
++            "turn_notes": len(getattr(memory_system, "turn_notes", {}) or {}),
++            "character_profiles": len(getattr(memory_system, "character_profiles", {}) or {}),
++        },
++    }
++
+     print(f"Sample {sample.sample_id}: Performing QA evaluation...")
+-    sample_metrics, sample_categories = [], []
++    sample_metrics, sample_categories, sample_records = [], [], []
+     qa_items = list(sample.qa)
+     if args.max_questions is not None:
+         qa_items = qa_items[: max(0, int(args.max_questions))]
+-    for qa in tqdm(qa_items, desc=f"Sample {sample.sample_id} QA", leave=False):
++    for qa_index, qa in enumerate(tqdm(qa_items, desc=f"Sample {sample.sample_id} QA", leave=False)):
++        llm_controller.llm.get_and_reset_token_counts()
+         qa_start_time = time.time()
+         if args.disable_query_rewriting_llm:
+             keyword_query = qa.question
+@@ -215,20 +233,35 @@ def process_single_sample(args, sample, base_run_name, output_dir, is_single_sam
+                                      "Could not generate answer.") if answer_json else "Could not generate answer."
+         qa_end_time = time.time()
+         qa_duration = qa_end_time - qa_start_time
++        token_usage = llm_controller.llm.get_and_reset_token_counts()
+         metrics = calculate_metrics(prediction, qa.final_answer)
+         sample_metrics.append(metrics)
+         sample_categories.append(qa.category)
++        sample_records.append({
++            "source": "higmem",
++            "sample_id": sample.sample_id,
++            "qa_index": qa_index,
++            "question": qa.question,
++            "prediction": prediction,
++            "reference": qa.final_answer,
++            "category": qa.category,
++            "latency_seconds": qa_duration,
++            "retrieved_context_tokens": max(1, len(context) // 4) if context else 0,
++            "token_usage": token_usage,
++            "metrics": metrics,
++        })
+         memory_system.logger.log("qa_result", {
+             "question": qa.question, "final_prompt_to_llm": final_prompt, "prediction": prediction,
+             "reference": qa.final_answer, "category": qa.category, "metrics": metrics,
+-            "duration_seconds": qa_duration
++            "duration_seconds": qa_duration, "token_usage": token_usage
+         })
+
+     memory_system.executor.shutdown(wait=True)
+-    return sample_metrics, sample_categories
++    return sample_metrics, sample_categories, sample_records, build_stats
+
+
+ def run_evaluation(args):
++    run_started = time.time()
+     run_name_parts = [args.model.replace('/', '_')]
+     ablation_tags = []
+     if args.ablation_no_profile: ablation_tags.append('no_profile')
+@@ -268,9 +301,10 @@ def run_evaluation(args):
+         if args.sample_index < len(samples):
+             sample = samples[args.sample_index]
+             print(f"Running in single-sample mode for sample index: {args.sample_index}")
+-            all_metrics, all_categories = process_single_sample(
++            all_metrics, all_categories, all_records, build_stats = process_single_sample(
+                 args, sample, base_run_name, output_dir=None, is_single_sample_run=True
+             )
++            all_build_stats = [build_stats]
+         else:
+             print(f"Error: Sample index {args.sample_index} is out of bounds.")
+             return
+@@ -278,9 +312,10 @@ def run_evaluation(args):
+         print(f"Running in parallel mode for all samples with {args.num_workers} workers "
+               f"({args.parallel_backend}).")
+         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+-        main_run_dir = os.path.join("fphm_runs", f"{base_run_name}_{timestamp}")
++        main_run_dir = args.output_dir or os.path.join("fphm_runs", f"{base_run_name}_{timestamp}")
+         os.makedirs(main_run_dir, exist_ok=True)
+         print(f"All outputs for this run will be saved in: {main_run_dir}")
++        all_records, all_build_stats = [], []
+
+         executor_cls = ProcessPoolExecutor if args.parallel_backend == "process" else ThreadPoolExecutor
+         with executor_cls(max_workers=args.num_workers) as executor:
+@@ -294,13 +329,20 @@ def run_evaluation(args):
+                 futures.append(future)
+
+             progress_bar = tqdm(as_completed(futures), total=len(samples), desc="Processing Samples")
++            sample_errors = []
+             for future in progress_bar:
+                 try:
+-                    sample_metrics, sample_categories = future.result()
++                    sample_metrics, sample_categories, sample_records, build_stats = future.result()
+                     all_metrics.extend(sample_metrics)
+                     all_categories.extend(sample_categories)
++                    all_records.extend(sample_records)
++                    all_build_stats.append(build_stats)
+                 except Exception as e:
++                    sample_errors.append(e)
+                     print(f"A sample process failed: {e}")
++                    traceback.print_exception(type(e), e, e.__traceback__)
++            if sample_errors:
++                raise RuntimeError(f"{len(sample_errors)} sample process(es) failed")
+
+     if not all_metrics:
+         print("No metrics were generated. Evaluation might have failed.")
+@@ -313,7 +355,7 @@ def run_evaluation(args):
+     if args.sample_index is None:
+         result_file_path = os.path.join(main_run_dir, "aggregated_results.json")
+     else:
+-        results_dir = "results"
++        results_dir = args.output_dir or "results"
+         os.makedirs(results_dir, exist_ok=True)
+         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+         result_filename = f"results_{base_run_name}_{timestamp}.json"
+@@ -323,6 +365,28 @@ def run_evaluation(args):
+         json.dump(aggregate_results, f, indent=2, ensure_ascii=False)
+     print(f"Aggregated results saved to {result_file_path}")
+
++    predictions_path = os.path.join(os.path.dirname(result_file_path), "normalized_predictions.json")
++    normalized = {
++        "records": sorted(
++            all_records,
++            key=lambda row: (
++                int(row.get("sample_id", 0)),
++                int(row.get("qa_index", 0)),
++            ),
++        ),
++        "summary": {
++            "method": "HiGMem",
++            "model": args.model,
++            "num_records": len(all_records),
++            "runtime_seconds": time.time() - run_started,
++            "build_stats": sorted(all_build_stats, key=lambda row: str(row.get("sample_id"))),
++            "run_dir": os.path.dirname(result_file_path),
++        },
++    }
++    with open(predictions_path, "w", encoding="utf-8") as f:
++        json.dump(normalized, f, indent=2, ensure_ascii=False)
++    print(f"Normalized predictions saved to {predictions_path}")
++
+
+ if __name__ == "__main__":
+     parser = argparse.ArgumentParser(description="Run FPHM evaluation on LoCoMo dataset.")
+@@ -344,6 +408,8 @@ if __name__ == "__main__":
+                         help="(Debug/pilot) Limit the number of dialogue turns used to build memory.")
+     parser.add_argument("--max_questions", type=int, default=None,
+                         help="(Debug/pilot) Limit the number of QA items evaluated.")
++    parser.add_argument("--output-dir", type=str, default=None,
++                        help="Directory for full-run outputs. Defaults to fphm_runs/<run_name>_<timestamp>.")
+
+     parser.add_argument("--ablation-no-profile", action="store_true",
+                         help="Run ablation study without character profiles.")
+diff --git a/utils.py b/utils.py
+index 0f37bd6..8ad82ee 100644
+--- a/utils.py
++++ b/utils.py
+@@ -19,12 +19,29 @@ from openai import OpenAI
+ from load_dataset import load_locomo_dataset, QA, Turn, Session, Conversation
+ from sentence_transformers.util import pytorch_cos_sim
+
+-# Download required NLTK data
+-try:
+-    nltk.download('punkt', quiet=True)
+-    nltk.download('wordnet', quiet=True)
+-except Exception as e:
+-    print(f"Error downloading NLTK data: {e}")
++os.environ.setdefault("NLTK_DATA", "/home/stu0032/nltk_data")
++
++# Do not download NLTK resources during reproduction runs. Network calls from
++# import-time metric setup can hang under offline/no-proxy execution.
++for resource_paths, resource_name in [
++    (("tokenizers/punkt",), "punkt"),
++    (("tokenizers/punkt_tab",), "punkt_tab"),
++    (("corpora/wordnet", "corpora/wordnet.zip"), "wordnet"),
++]:
++    try:
++        for resource_path in resource_paths:
++            try:
++                nltk.data.find(resource_path)
++                break
++            except LookupError:
++                continue
++        else:
++            raise LookupError(resource_name)
++    except LookupError:
++        print(
++            f"Warning: NLTK resource '{resource_name}' not found locally; "
++            "related metrics may be zero. No download attempted."
++        )
+
+ # Initialize SentenceTransformer model (this will be reused)
+ try:
