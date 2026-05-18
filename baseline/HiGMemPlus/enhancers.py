@@ -338,6 +338,12 @@ class HiGMemPlusEnhancer:
         family: str,
         reason: str,
     ) -> RetrievalResult:
+        final_context = base_context or ""
+        original_chars = len(final_context)
+        truncated = False
+        if self.max_context_chars > 0 and len(final_context) > self.max_context_chars:
+            truncated = True
+            final_context = final_context[: self.max_context_chars]
         route = RouteDecision(
             question_type=family,
             evidence_risk="low",
@@ -347,7 +353,7 @@ class HiGMemPlusEnhancer:
             reasons=[reason],
         )
         return RetrievalResult(
-            context=base_context,
+            context=final_context,
             evidence_records=base_records,
             component_trace=[],
             graph_trace=[],
@@ -366,8 +372,8 @@ class HiGMemPlusEnhancer:
                 "repair_needed": False,
                 "sufficiency_status": "SUPPORTED",
                 "ec_context_used": False,
-                "context_original_chars": len(base_context or ""),
-                "context_truncated": False,
+                "context_original_chars": original_chars,
+                "context_truncated": truncated,
                 **self.store.to_manifest(),
             },
         )

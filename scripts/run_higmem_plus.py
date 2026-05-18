@@ -238,7 +238,11 @@ def evaluate(args: argparse.Namespace) -> dict[str, Any]:
     ]
     client = OpenAI(api_key=args.api_key, base_url=args.api_base, max_retries=0)
     predictions: list[dict[str, Any]] = read_jsonl(paths["raw_predictions"]) if args.resume else []
-    completed_ids = {str(row.get("qa_id")) for row in predictions if row.get("qa_id")}
+    completed_ids = {
+        str(row.get("qa_id"))
+        for row in predictions
+        if row.get("qa_id") and not row.get("answer_error") and str(row.get("prediction") or "").strip()
+    }
     failures: list[dict[str, Any]] = []
     stats: dict[str, Any] = {
         "method": args.method,
@@ -380,6 +384,7 @@ def evaluate(args: argparse.Namespace) -> dict[str, Any]:
                     "gold_option": row["gold_option"],
                     "gold_answer": row["answer"],
                     "prediction": answer,
+                    "answer_error": error,
                     "predicted_option": predicted_option,
                     "predicted_answer_text": pred_text,
                     "ambiguous": ambiguous,

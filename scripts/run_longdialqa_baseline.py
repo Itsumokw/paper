@@ -978,7 +978,11 @@ def evaluate(args: argparse.Namespace) -> dict[str, Any]:
         predictions = read_jsonl(pred_path) if pred_path.exists() else []
         retrieval_rows = read_jsonl(retrieval_path) if retrieval_path.exists() else []
         failures = read_jsonl(failures_path) if failures_path.exists() else []
-        completed_ids = {str(row.get("qa_id")) for row in predictions if row.get("qa_id")}
+        completed_ids = {
+            str(row.get("qa_id"))
+            for row in predictions
+            if row.get("qa_id") and not row.get("answer_error") and str(row.get("prediction") or "").strip()
+        }
     else:
         for path in (pred_path, retrieval_path, failures_path):
             if path.exists():
@@ -1101,6 +1105,7 @@ def evaluate(args: argparse.Namespace) -> dict[str, Any]:
                     "gold_option": row["gold_option"],
                     "gold_answer": row["answer"],
                     "prediction": answer,
+                    "answer_error": error,
                     "predicted_option": predicted_option,
                     "predicted_answer_text": pred_text,
                     "ambiguous": ambiguous,
