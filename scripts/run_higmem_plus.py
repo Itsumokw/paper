@@ -4,12 +4,14 @@
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 import os
 import sys
 import time
 import traceback
 from collections import Counter, defaultdict
+from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
 from pathlib import Path
 from typing import Any
 
@@ -75,6 +77,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max-context-chars", type=int, default=int(os.environ.get("HIGMEM_PLUS_MAX_CONTEXT_CHARS", "60000")))
     parser.add_argument("--max-saved-context-chars", type=int, default=int(os.environ.get("LONGDIALQA_MAX_SAVED_CONTEXT_CHARS", "20000")))
     parser.add_argument("--max-saved-records", type=int, default=int(os.environ.get("LONGDIALQA_MAX_SAVED_RECORDS", "200")))
+    parser.add_argument("--qa-workers", type=int, default=int(os.environ.get("HIGMEM_PLUS_QA_WORKERS", "1")))
+    parser.add_argument("--qa-view-executor-workers", type=int, default=int(os.environ.get("HIGMEM_PLUS_QA_VIEW_EXECUTOR_WORKERS", "4")))
     parser.add_argument("--resume", action="store_true", help="Reuse existing JSONL artifacts and skip completed QA ids.")
     parser.add_argument("--disable-higmem-query-rewrite", action="store_true", default=os.environ.get("LONGDIALQA_HIGMEM_DISABLE_QUERY_REWRITE", "1") == "1")
     parser.add_argument("--higmem-scene-unit", action="store_true", default=os.environ.get("LONGDIALQA_HIGMEM_SCENE_UNIT", "1") == "1")
@@ -186,6 +190,8 @@ def save_command_env(path: Path, args: argparse.Namespace, subset_path: Path, no
         f"ANSWER_MAX_TOKENS={args.answer_max_tokens}",
         f"ANSWER_TIMEOUT={args.answer_timeout}",
         f"MAX_CONTEXT_CHARS={args.max_context_chars}",
+        f"QA_WORKERS={args.qa_workers}",
+        f"QA_VIEW_EXECUTOR_WORKERS={args.qa_view_executor_workers}",
         f"HIGMEM_SCENE_UNIT={args.higmem_scene_unit}",
         f"HIGMEM_SCENE_MAX_CHARS={args.higmem_scene_max_chars}",
         f"HIGMEM_LINK_WINDOW={args.higmem_link_window}",
@@ -194,6 +200,158 @@ def save_command_env(path: Path, args: argparse.Namespace, subset_path: Path, no
         "COMMAND=" + " ".join(sys.argv),
     ]
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def clone_embedding_retriever(retriever: Any) -> Any:
+    clone = object.__new__(retriever.__class__)
+    clone.model = retriever.model
+    clone.corpus = list(getattr(retriever, "corpus", []) or [])
+    clone.document_ids = list(getattr(retriever, "document_ids", []) or [])
+    clone.id_to_index = dict(getattr(retriever, "id_to_index", {}) or {})
+    embeddings = getattr(retriever, "embeddings", None)
+    clone.embeddings = embeddings.copy() if embeddings is not None else None
+    return clone
+
+
+def clone_adapter_for_qa(adapter: HiGMemAdapter, args: argparse.Namespace) -> HiGMemAdapter:
+    """Freeze the current HiGMem state for one QA without changing visible history."""
+    if adapter.scene_unit:
+        adapter._flush_scene()
+    from memory_layer import LLMController
+
+    llm = LLMController("openai", model=args.model, api_key=args.api_key, api_base=args.api_base)
+    qa_system = adapter.system.spawn_qa_view(llm_controller=llm, executor_workers=args.qa_view_executor_workers)
+    qa_system.turn_notes = copy.deepcopy(adapter.system.turn_notes)
+    qa_system.events = copy.deepcopy(adapter.system.events)
+    qa_system.profiles = copy.deepcopy(adapter.system.profiles)
+    qa_system.recent_turns_window = copy.deepcopy(adapter.system.recent_turns_window)
+    qa_system.turn_retriever = clone_embedding_retriever(adapter.system.turn_retriever)
+    qa_system.event_retriever = clone_embedding_retriever(adapter.system.event_retriever)
+    if getattr(adapter.system, "use_character_profile", False) and hasattr(adapter.system, "profile_retriever"):
+        qa_system.profile_retriever = clone_embedding_retriever(adapter.system.profile_retriever)
+
+    qa_adapter = copy.copy(adapter)
+    qa_adapter.system = qa_system
+    qa_adapter.scene_key = None
+    qa_adapter.scene_turns = []
+    return qa_adapter
+
+
+def evaluate_one_row(
+    *,
+    row: dict[str, Any],
+    adapter: HiGMemAdapter,
+    enhancer: HiGMemPlusEnhancer,
+    args: argparse.Namespace,
+) -> dict[str, Any]:
+    failures: list[dict[str, Any]] = []
+    client = OpenAI(api_key=args.api_key, base_url=args.api_base, max_retries=0)
+    qa_started = time.time()
+    retrieval_started = time.time()
+    base_context, base_records, base_stats = adapter.retrieve(row, args.top_k)
+    if args.method == "baseline_higmem":
+        plus_result = enhancer.retrieve(
+            question=row["question"],
+            base_context=base_context,
+            base_records=base_records,
+            metadata={**row, "dataset": "longdialqa"},
+        )
+        context = base_context[: args.max_context_chars] if args.max_context_chars > 0 else base_context
+        retrieved_records = base_records
+        method_stats = {"base_stats": base_stats, "plus_stats": plus_result.stats}
+    else:
+        plus_result = enhancer.retrieve(
+            question=row["question"],
+            base_context=base_context,
+            base_records=base_records,
+            metadata={**row, "dataset": "longdialqa"},
+        )
+        context = plus_result.context
+        retrieved_records = plus_result.evidence_records
+        method_stats = {"base_stats": base_stats, "plus_stats": plus_result.stats}
+    retrieval_seconds = time.time() - retrieval_started
+
+    prompt = build_prompt(row, context)
+    answer_started = time.time()
+    answer, usage, error = answer_with_openai(client, args, prompt)
+    answer_seconds = time.time() - answer_started
+    if error:
+        failures.append({"qa_id": row["id"], "stage": "answer", "error": error})
+
+    predicted_option, ambiguous = distill_option(answer)
+    strict_correct = bool(predicted_option and predicted_option == row["gold_option"] and not ambiguous)
+    correct = strict_correct
+    if not predicted_option and row["gold_option"] == "(E)":
+        lowered = answer.lower()
+        if "don't know" in lowered or "cannot answer" in lowered or "insufficient" in lowered or "not enough" in lowered:
+            predicted_option = "(E)"
+            correct = True
+    pred_text = predicted_option_text(predicted_option, row["options"], answer)
+    retrieved_scene_ids = flatten_retrieved_scene_ids(retrieved_records)
+    evidence_scene_ids = [str(item) for item in row.get("evidence_scene_ids") or []]
+    has_evidence = bool(evidence_scene_ids)
+    evidence_recall_any = bool(has_evidence and set(evidence_scene_ids).intersection(retrieved_scene_ids))
+    evidence_recall_all = bool(has_evidence and set(evidence_scene_ids).issubset(set(retrieved_scene_ids)))
+
+    common = {
+        "method": args.method,
+        "baseline": "higmem",
+        "qa_id": row["id"],
+        "show": row["show"],
+        "show_name": row["show_name"],
+        "episode_id": row["episode_id"],
+        "scene_id": row["scene_id"],
+        "session_ordinal": row["session_ordinal"],
+        "question": row["question"],
+        "question_prompt": row["question_prompt"],
+        "question_source": row["question_source"],
+        "question_type": row["question_type"],
+        "answerability_label": "answerable" if row["answerable"] else "unanswerable",
+        "hop_type": row["hop_type"],
+        "gold_option": row["gold_option"],
+        "gold_answer": row["answer"],
+        "prediction": answer,
+        "answer_error": error,
+        "predicted_option": predicted_option,
+        "predicted_answer_text": pred_text,
+        "ambiguous": ambiguous,
+        "strict_correct": strict_correct,
+        "correct": correct,
+        "token_f1": token_f1(pred_text, row["answer"]),
+        "retrieved_k": len(retrieved_records),
+        "retrieved_context_chars": len(context or ""),
+        "retrieved_context_tokens_approx": approx_tokens(context or ""),
+        "retrieved_scene_ids": retrieved_scene_ids,
+        "evidence_scene_ids": evidence_scene_ids,
+        "has_evidence_scene": has_evidence,
+        "evidence_recall_any": evidence_recall_any,
+        "evidence_recall_all": evidence_recall_all,
+        "latency_seconds": time.time() - qa_started,
+        "retrieval_seconds": retrieval_seconds,
+        "answer_seconds": answer_seconds,
+        "answer_token_usage": usage,
+        "method_stats": method_stats,
+    }
+    retrieved_row = {
+        **{key: common[key] for key in ["method", "qa_id", "show", "show_name", "question", "question_type"]},
+        **context_artifact(context, args.max_saved_context_chars),
+        **retrieved_records_artifact(retrieved_records, args.max_saved_records),
+        "retrieved_scene_ids": retrieved_scene_ids,
+        "evidence_scene_ids": evidence_scene_ids,
+        "evidence_recall_any": evidence_recall_any,
+        "evidence_recall_all": evidence_recall_all,
+    }
+    return {
+        "prediction": common,
+        "retrieved_evidence": retrieved_row,
+        "component_trace": plus_result.component_trace,
+        "graph_trace": plus_result.graph_trace,
+        "repair_trace": plus_result.repair_trace,
+        "episode_trace": plus_result.episode_trace,
+        "route_trace": plus_result.route_trace,
+        "failures": failures,
+        "usage": usage,
+    }
 
 
 def evaluate(args: argparse.Namespace) -> dict[str, Any]:
@@ -312,163 +470,122 @@ def evaluate(args: argparse.Namespace) -> dict[str, Any]:
                     return
                 return
 
-        for row in qa_rows:
-            qa_started = time.time()
-            try:
-                feed_until(int(row["session_ordinal"]), int(row["ask_turn_index"]))
-                if str(row["id"]) in completed_ids:
-                    continue
-                retrieval_started = time.time()
-                base_context, base_records, base_stats = adapter.retrieve(row, args.top_k)
-                if args.method == "baseline_higmem":
-                    plus_result = enhancer.retrieve(
-                        question=row["question"],
-                        base_context=base_context,
-                        base_records=base_records,
-                        metadata={**row, "dataset": "longdialqa"},
-                    )
-                    context = base_context[: args.max_context_chars] if args.max_context_chars > 0 else base_context
-                    retrieved_records = base_records
-                    method_stats = {"base_stats": base_stats, "plus_stats": plus_result.stats}
-                else:
-                    plus_result = enhancer.retrieve(
-                        question=row["question"],
-                        base_context=base_context,
-                        base_records=base_records,
-                        metadata={**row, "dataset": "longdialqa"},
-                    )
-                    context = plus_result.context
-                    retrieved_records = plus_result.evidence_records
-                    method_stats = {"base_stats": base_stats, "plus_stats": plus_result.stats}
-                retrieval_seconds = time.time() - retrieval_started
-                prompt = build_prompt(row, context)
-                answer_started = time.time()
-                answer, usage, error = answer_with_openai(client, args, prompt)
-                answer_seconds = time.time() - answer_started
-                stats["token_usage"].update(usage)
-                if error:
-                    failure = {"qa_id": row["id"], "stage": "answer", "error": error}
-                    failures.append(failure)
-                    append_jsonl(paths["run_log"], {"failure": failure})
-
-                predicted_option, ambiguous = distill_option(answer)
-                strict_correct = bool(predicted_option and predicted_option == row["gold_option"] and not ambiguous)
-                correct = strict_correct
-                if not predicted_option and row["gold_option"] == "(E)":
-                    lowered = answer.lower()
-                    if "don't know" in lowered or "cannot answer" in lowered or "insufficient" in lowered or "not enough" in lowered:
-                        predicted_option = "(E)"
-                        correct = True
-                pred_text = predicted_option_text(predicted_option, row["options"], answer)
-                retrieved_scene_ids = flatten_retrieved_scene_ids(retrieved_records)
-                evidence_scene_ids = [str(item) for item in row.get("evidence_scene_ids") or []]
-                has_evidence = bool(evidence_scene_ids)
-                evidence_recall_any = bool(has_evidence and set(evidence_scene_ids).intersection(retrieved_scene_ids))
-                evidence_recall_all = bool(has_evidence and set(evidence_scene_ids).issubset(set(retrieved_scene_ids)))
-
-                common = {
-                    "method": args.method,
-                    "baseline": "higmem",
-                    "qa_id": row["id"],
-                    "show": row["show"],
-                    "show_name": row["show_name"],
-                    "episode_id": row["episode_id"],
-                    "scene_id": row["scene_id"],
-                    "session_ordinal": row["session_ordinal"],
-                    "question": row["question"],
-                    "question_prompt": row["question_prompt"],
-                    "question_source": row["question_source"],
-                    "question_type": row["question_type"],
-                    "answerability_label": "answerable" if row["answerable"] else "unanswerable",
-                    "hop_type": row["hop_type"],
-                    "gold_option": row["gold_option"],
-                    "gold_answer": row["answer"],
-                    "prediction": answer,
-                    "answer_error": error,
-                    "predicted_option": predicted_option,
-                    "predicted_answer_text": pred_text,
-                    "ambiguous": ambiguous,
-                    "strict_correct": strict_correct,
-                    "correct": correct,
-                    "token_f1": token_f1(pred_text, row["answer"]),
-                    "retrieved_k": len(retrieved_records),
-                    "retrieved_context_chars": len(context or ""),
-                    "retrieved_context_tokens_approx": approx_tokens(context or ""),
-                    "retrieved_scene_ids": retrieved_scene_ids,
-                    "evidence_scene_ids": evidence_scene_ids,
-                    "has_evidence_scene": has_evidence,
-                    "evidence_recall_any": evidence_recall_any,
-                    "evidence_recall_all": evidence_recall_all,
-                    "latency_seconds": time.time() - qa_started,
-                    "retrieval_seconds": retrieval_seconds,
-                    "answer_seconds": answer_seconds,
-                    "answer_token_usage": usage,
-                    "method_stats": method_stats,
-                }
-                predictions.append(common)
-                append_jsonl(paths["raw_predictions"], common)
-                append_jsonl(
-                    paths["retrieved_evidence"],
-                    {
-                        **{key: common[key] for key in ["method", "qa_id", "show", "show_name", "question", "question_type"]},
-                        **context_artifact(context, args.max_saved_context_chars),
-                        **retrieved_records_artifact(retrieved_records, args.max_saved_records),
-                        "retrieved_scene_ids": retrieved_scene_ids,
-                        "evidence_scene_ids": evidence_scene_ids,
-                        "evidence_recall_any": evidence_recall_any,
-                        "evidence_recall_all": evidence_recall_all,
-                    },
-                )
-                for trace_path, trace_rows in [
-                    (paths["component_traces"], plus_result.component_trace),
-                    (paths["graph_traces"], plus_result.graph_trace),
-                    (paths["repair_traces"], plus_result.repair_trace),
-                    (paths["episode_traces"], plus_result.episode_trace),
-                    (paths["route_traces"], plus_result.route_trace),
-                ]:
-                    append_jsonl(trace_path, {"qa_id": row["id"], "method": args.method, "trace": trace_rows})
-            except Exception as exc:  # noqa: BLE001
-                failure = {
-                    "qa_id": row.get("id"),
-                    "stage": "qa",
-                    "error": f"{type(exc).__name__}: {exc}",
-                    "traceback": traceback.format_exc(),
-                }
+        def emit_result(result: dict[str, Any]) -> None:
+            common = result["prediction"]
+            predictions.append(common)
+            append_jsonl(paths["raw_predictions"], common)
+            append_jsonl(paths["retrieved_evidence"], result["retrieved_evidence"])
+            stats["token_usage"].update(result.get("usage") or {})
+            for failure in result.get("failures") or []:
                 failures.append(failure)
                 append_jsonl(paths["run_log"], {"failure": failure})
-                failed_prediction = {
-                    "method": args.method,
-                    "baseline": "higmem",
-                    "qa_id": row.get("id"),
-                    "show": row.get("show"),
-                    "show_name": row.get("show_name"),
-                    "question": row.get("question"),
-                    "question_source": row.get("question_source"),
-                    "question_type": row.get("question_type"),
-                    "answerability_label": "answerable" if row.get("answerable") else "unanswerable",
-                    "hop_type": row.get("hop_type"),
-                    "gold_option": row.get("gold_option"),
-                    "gold_answer": row.get("answer"),
-                    "prediction": "",
-                    "predicted_option": "",
-                    "predicted_answer_text": "",
-                    "ambiguous": False,
-                    "strict_correct": False,
-                    "correct": False,
-                    "token_f1": 0.0,
-                    "retrieved_k": 0,
-                    "retrieved_context_chars": 0,
-                    "retrieved_context_tokens_approx": 0,
-                    "retrieved_scene_ids": [],
-                    "evidence_scene_ids": row.get("evidence_scene_ids") or [],
-                    "has_evidence_scene": bool(row.get("evidence_scene_ids")),
-                    "evidence_recall_any": False,
-                    "evidence_recall_all": False,
-                    "latency_seconds": time.time() - qa_started,
-                    "error": f"{type(exc).__name__}: {exc}",
-                }
-                predictions.append(failed_prediction)
-                append_jsonl(paths["raw_predictions"], failed_prediction)
+            for trace_key, trace_path in [
+                ("component_trace", paths["component_traces"]),
+                ("graph_trace", paths["graph_traces"]),
+                ("repair_trace", paths["repair_traces"]),
+                ("episode_trace", paths["episode_traces"]),
+                ("route_trace", paths["route_traces"]),
+            ]:
+                append_jsonl(trace_path, {"qa_id": common["qa_id"], "method": args.method, "trace": result[trace_key]})
+
+        def emit_failure(row: dict[str, Any], exc: BaseException, qa_started: float) -> None:
+            failure = {
+                "qa_id": row.get("id"),
+                "stage": "qa",
+                "error": f"{type(exc).__name__}: {exc}",
+                "traceback": traceback.format_exc(),
+            }
+            failures.append(failure)
+            append_jsonl(paths["run_log"], {"failure": failure})
+            failed_prediction = {
+                "method": args.method,
+                "baseline": "higmem",
+                "qa_id": row.get("id"),
+                "show": row.get("show"),
+                "show_name": row.get("show_name"),
+                "question": row.get("question"),
+                "question_source": row.get("question_source"),
+                "question_type": row.get("question_type"),
+                "answerability_label": "answerable" if row.get("answerable") else "unanswerable",
+                "hop_type": row.get("hop_type"),
+                "gold_option": row.get("gold_option"),
+                "gold_answer": row.get("answer"),
+                "prediction": "",
+                "predicted_option": "",
+                "predicted_answer_text": "",
+                "ambiguous": False,
+                "strict_correct": False,
+                "correct": False,
+                "token_f1": 0.0,
+                "retrieved_k": 0,
+                "retrieved_context_chars": 0,
+                "retrieved_context_tokens_approx": 0,
+                "retrieved_scene_ids": [],
+                "evidence_scene_ids": row.get("evidence_scene_ids") or [],
+                "has_evidence_scene": bool(row.get("evidence_scene_ids")),
+                "evidence_recall_any": False,
+                "evidence_recall_all": False,
+                "latency_seconds": time.time() - qa_started,
+                "error": f"{type(exc).__name__}: {exc}",
+            }
+            predictions.append(failed_prediction)
+            append_jsonl(paths["raw_predictions"], failed_prediction)
+
+        if args.qa_workers > 1 and args.history_scene_limit == 0:
+            pending = {}
+            max_pending = max(1, args.qa_workers * 2)
+            with ThreadPoolExecutor(max_workers=args.qa_workers) as qa_pool:
+                def drain(block: bool = False) -> None:
+                    nonlocal pending
+                    if not pending:
+                        return
+                    done, _not_done = wait(
+                        pending,
+                        return_when=FIRST_COMPLETED if block else FIRST_COMPLETED,
+                        timeout=None if block else 0,
+                    )
+                    for future in done:
+                        row_for_future = pending.pop(future)
+                        try:
+                            emit_result(future.result())
+                        except Exception as exc:  # noqa: BLE001
+                            emit_failure(row_for_future, exc, time.time())
+
+                for row in qa_rows:
+                    qa_started = time.time()
+                    try:
+                        feed_until(int(row["session_ordinal"]), int(row["ask_turn_index"]))
+                        if str(row["id"]) in completed_ids:
+                            continue
+                        adapter_snapshot = clone_adapter_for_qa(adapter, args)
+                        enhancer_snapshot = copy.deepcopy(enhancer)
+                        future = qa_pool.submit(
+                            evaluate_one_row,
+                            row=row,
+                            adapter=adapter_snapshot,
+                            enhancer=enhancer_snapshot,
+                            args=args,
+                        )
+                        pending[future] = row
+                        if len(pending) >= max_pending:
+                            drain(block=True)
+                        else:
+                            drain(block=False)
+                    except Exception as exc:  # noqa: BLE001
+                        emit_failure(row, exc, qa_started)
+                while pending:
+                    drain(block=True)
+        else:
+            for row in qa_rows:
+                qa_started = time.time()
+                try:
+                    feed_until(int(row["session_ordinal"]), int(row["ask_turn_index"]))
+                    if str(row["id"]) in completed_ids:
+                        continue
+                    emit_result(evaluate_one_row(row=row, adapter=adapter, enhancer=enhancer, args=args))
+                except Exception as exc:  # noqa: BLE001
+                    emit_failure(row, exc, qa_started)
+                    continue
 
         show_stats = adapter.finalize()
         stats["shows"][show] = {**show_stats, "qa_rows": len(qa_rows), "seconds": time.time() - show_started}

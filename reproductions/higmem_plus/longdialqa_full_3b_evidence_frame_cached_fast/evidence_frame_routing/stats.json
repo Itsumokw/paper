@@ -1,0 +1,60 @@
+{
+  "answer_workers": 16,
+  "base_retrieved_context": "reproductions/higmem_plus/baselines_longdialqa_full_sharded/higmem/retrieved_context.jsonl",
+  "cache": {
+    "entries": 3277,
+    "selected_hits": 3277,
+    "selected_missing": 0
+  },
+  "failures": [],
+  "finished_at": "2026-05-19T04:22:57+0800",
+  "max_pending": 96,
+  "method": "evidence_frame_routing",
+  "runtime_seconds": 1227.1647868156433,
+  "selected_rows": 3277,
+  "shows": {
+    "bigbang": {
+      "qa_rows": 788,
+      "scheduled": 788,
+      "seconds_before_answer_drain": 295.99882793426514,
+      "turns_in_store": {
+        "component_count": 30429,
+        "dataset": "longdialqa",
+        "edge_count": 380529,
+        "episode_count": 805,
+        "turn_count": 19134
+      }
+    },
+    "friends": {
+      "qa_rows": 783,
+      "scheduled": 783,
+      "seconds_before_answer_drain": 280.3640236854553,
+      "turns_in_store": {
+        "component_count": 31299,
+        "dataset": "longdialqa",
+        "edge_count": 390530,
+        "episode_count": 788,
+        "turn_count": 18662
+      }
+    },
+    "theoffice": {
+      "qa_rows": 1706,
+      "scheduled": 1706,
+      "seconds_before_answer_drain": 650.5167150497437,
+      "turns_in_store": {
+        "component_count": 37905,
+        "dataset": "longdialqa",
+        "edge_count": 400497,
+        "episode_count": 2346,
+        "turn_count": 19159
+      }
+    }
+  },
+  "source_subset_rows": 3277,
+  "started_at": "2026-05-19T04:02:30+0800",
+  "token_usage": {
+    "completion_tokens": 9958,
+    "prompt_tokens": 15704131,
+    "total_tokens": 15714089
+  }
+}

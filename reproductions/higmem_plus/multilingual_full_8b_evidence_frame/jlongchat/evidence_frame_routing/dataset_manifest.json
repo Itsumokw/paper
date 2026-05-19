@@ -1,0 +1,59 @@
+{
+  "checkpoint_root": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen3_8b/jlongchat/higmem",
+  "dataset": "LoCoMo10",
+  "dataset_path": "/home/stu0032/paper/runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/jlongchat/higmem/locomo10_cat1234.json",
+  "dataset_sha256": "9a173638c1ffcf7796a707db6eac76794810658f014b88ce2c55e6ccd2a00d48",
+  "merged_from_shards": [
+    "reproductions/higmem_plus/multilingual_full_8b_evidence_frame/jlongchat/full_shards_indexed/shard_0/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_full_8b_evidence_frame/jlongchat/full_shards_indexed/shard_1/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_full_8b_evidence_frame/jlongchat/full_shards_indexed/shard_2/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_full_8b_evidence_frame/jlongchat/full_shards_indexed/shard_3/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_full_8b_evidence_frame/jlongchat/full_shards_indexed/shard_4/evidence_frame_routing"
+  ],
+  "method": "evidence_frame_routing",
+  "source_manifest": {
+    "checkpoint_root": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen3_8b/jlongchat/higmem",
+    "dataset": "Multilingual LoCoMo-style/jlongchat",
+    "fraction": 1.0,
+    "loader_sample_ids_included": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "model_family": "qwen3_8b",
+    "per_category_subset_counts": {
+      "1": 100,
+      "2": 48,
+      "3": 32,
+      "4": 20
+    },
+    "per_loader_sample_qa_counts": {
+      "0": 20,
+      "1": 20,
+      "2": 20,
+      "3": 20,
+      "4": 20,
+      "5": 20,
+      "6": 20,
+      "7": 20,
+      "8": 20,
+      "9": 20
+    },
+    "source_path": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/jlongchat/higmem/locomo10_cat1234.json",
+    "source_sha256": "9a173638c1ffcf7796a707db6eac76794810658f014b88ce2c55e6ccd2a00d48",
+    "strategy": "full_cat1_4_from_repaired_multilingual_run",
+    "subset_path": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/jlongchat/higmem/locomo10_cat1234.json",
+    "subset_qa_count": 200,
+    "subset_sample_count": 10,
+    "subset_sha256": "9a173638c1ffcf7796a707db6eac76794810658f014b88ce2c55e6ccd2a00d48"
+  },
+  "subset_manifest": "reproductions/higmem_plus/multilingual_full_8b_evidence_frame/manifests/jlongchat_cat1234_full_manifest.json",
+  "subset_manifest_sha256": "84fa325724bf1541edb9630e6901dfd8f1047e4191b77d6a74b9d9789dab6902"
+}

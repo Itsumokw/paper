@@ -1,0 +1,56 @@
+{
+  "checkpoint_root": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/del1l2im/higmem",
+  "dataset": "LoCoMo10",
+  "dataset_path": "/home/stu0032/paper/runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/del1l2im/higmem/locomo10_cat1234.json",
+  "dataset_sha256": "53f9154a99fe852e301ae5293d62b5c297717010f22211e1d6258c1f8b3330ae",
+  "merged_from_shards": [
+    "reproductions/higmem_plus/multilingual_full_3b_evidence_frame/del1l2im/full_shards_indexed/shard_0/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_full_3b_evidence_frame/del1l2im/full_shards_indexed/shard_1/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_full_3b_evidence_frame/del1l2im/full_shards_indexed/shard_2/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_full_3b_evidence_frame/del1l2im/full_shards_indexed/shard_3/evidence_frame_routing",
+    "reproductions/higmem_plus/multilingual_full_3b_evidence_frame/del1l2im/full_shards_indexed/shard_4/evidence_frame_routing"
+  ],
+  "method": "evidence_frame_routing",
+  "source_manifest": {
+    "checkpoint_root": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/del1l2im/higmem",
+    "dataset": "Multilingual LoCoMo-style/del1l2im",
+    "fraction": 1.0,
+    "loader_sample_ids_included": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "per_category_subset_counts": {
+      "1": 90,
+      "2": 54,
+      "3": 18,
+      "4": 18
+    },
+    "per_loader_sample_qa_counts": {
+      "0": 20,
+      "1": 20,
+      "2": 20,
+      "3": 20,
+      "4": 20,
+      "5": 20,
+      "6": 20,
+      "7": 20,
+      "8": 20
+    },
+    "source_path": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/del1l2im/higmem/locomo10_cat1234.json",
+    "source_sha256": "53f9154a99fe852e301ae5293d62b5c297717010f22211e1d6258c1f8b3330ae",
+    "strategy": "full_cat1_4_from_repaired_multilingual_run",
+    "subset_path": "runs/multilingual_locomo_style_repaired_48/20260513_123300/qwen25_3b/del1l2im/higmem/locomo10_cat1234.json",
+    "subset_qa_count": 180,
+    "subset_sample_count": 9,
+    "subset_sha256": "53f9154a99fe852e301ae5293d62b5c297717010f22211e1d6258c1f8b3330ae"
+  },
+  "subset_manifest": "reproductions/higmem_plus/multilingual_full_3b_evidence_frame/manifests/del1l2im_cat1234_full_manifest.json",
+  "subset_manifest_sha256": "a6a19be3702984c5c8eb3f77a4c9781937d753a2e44b026a7b885306539411ef"
+}

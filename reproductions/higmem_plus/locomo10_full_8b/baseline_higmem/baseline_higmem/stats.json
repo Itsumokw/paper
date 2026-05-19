@@ -1,0 +1,70 @@
+{
+  "finished_at": "2026-05-19T08:29:16+0800",
+  "merged_from_shards": [
+    "reproductions/higmem_plus/locomo10_full_8b/baseline/shard_0/baseline_higmem",
+    "reproductions/higmem_plus/locomo10_full_8b/baseline/shard_1/baseline_higmem",
+    "reproductions/higmem_plus/locomo10_full_8b/baseline/shard_2/baseline_higmem",
+    "reproductions/higmem_plus/locomo10_full_8b/baseline/shard_3/baseline_higmem"
+  ],
+  "method": "baseline_higmem",
+  "shards": {
+    "reproductions/higmem_plus/locomo10_full_8b/baseline/shard_0/baseline_higmem": {
+      "finished_at": "2026-05-19T08:15:26+0800",
+      "method": "baseline_higmem",
+      "processed_this_run": 450,
+      "runtime_seconds": 3128.4315931797028,
+      "started_at": "2026-05-19T07:23:17+0800",
+      "token_usage": {
+        "completion_tokens": 4102,
+        "prompt_tokens": 417420,
+        "total_tokens": 421522
+      },
+      "total_rows": 450
+    },
+    "reproductions/higmem_plus/locomo10_full_8b/baseline/shard_1/baseline_higmem": {
+      "finished_at": "2026-05-19T08:27:28+0800",
+      "method": "baseline_higmem",
+      "processed_this_run": 540,
+      "runtime_seconds": 3850.9485170841217,
+      "started_at": "2026-05-19T07:23:17+0800",
+      "token_usage": {
+        "completion_tokens": 4958,
+        "prompt_tokens": 628145,
+        "total_tokens": 633103
+      },
+      "total_rows": 540
+    },
+    "reproductions/higmem_plus/locomo10_full_8b/baseline/shard_2/baseline_higmem": {
+      "finished_at": "2026-05-19T08:14:10+0800",
+      "method": "baseline_higmem",
+      "processed_this_run": 435,
+      "runtime_seconds": 3052.731678009033,
+      "started_at": "2026-05-19T07:23:17+0800",
+      "token_usage": {
+        "completion_tokens": 4317,
+        "prompt_tokens": 436949,
+        "total_tokens": 441266
+      },
+      "total_rows": 435
+    },
+    "reproductions/higmem_plus/locomo10_full_8b/baseline/shard_3/baseline_higmem": {
+      "finished_at": "2026-05-19T08:29:08+0800",
+      "method": "baseline_higmem",
+      "processed_this_run": 561,
+      "runtime_seconds": 3950.462016105652,
+      "started_at": "2026-05-19T07:23:17+0800",
+      "token_usage": {
+        "completion_tokens": 5447,
+        "prompt_tokens": 783298,
+        "total_tokens": 788745
+      },
+      "total_rows": 561
+    }
+  },
+  "token_usage": {
+    "completion_tokens": 18824,
+    "prompt_tokens": 2265812,
+    "total_tokens": 2284636
+  },
+  "total_rows": 1986
+}

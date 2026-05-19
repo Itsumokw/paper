@@ -1,0 +1,115 @@
+{
+  "checkpoint_root": "runs/locomo_core_acceptance_qwen3_8b_32000_qa8192/20260510_201051/higmem",
+  "dataset": "LoCoMo10",
+  "dataset_path": "datasets/locomo/data/locomo10.json",
+  "dataset_sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+  "merged_from_shards": [
+    "reproductions/higmem_plus/locomo10_full_8b/baseline/shard_0/baseline_higmem",
+    "reproductions/higmem_plus/locomo10_full_8b/baseline/shard_1/baseline_higmem",
+    "reproductions/higmem_plus/locomo10_full_8b/baseline/shard_2/baseline_higmem",
+    "reproductions/higmem_plus/locomo10_full_8b/baseline/shard_3/baseline_higmem"
+  ],
+  "method": "baseline_higmem",
+  "source_manifest": {
+    "dataset": "LoCoMo10",
+    "fraction": 1.0,
+    "loader_sample_ids_included": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "original_qa_count": 1986,
+    "original_sample_count": 10,
+    "per_category_original_counts": {
+      "1": 282,
+      "2": 321,
+      "3": 96,
+      "4": 841,
+      "5": 446
+    },
+    "per_category_subset_counts": {
+      "1": 282,
+      "2": 321,
+      "3": 96,
+      "4": 841,
+      "5": 446
+    },
+    "per_loader_sample_qa_counts": {
+      "0": 199,
+      "1": 105,
+      "2": 193,
+      "3": 260,
+      "4": 242,
+      "5": 158,
+      "6": 190,
+      "7": 239,
+      "8": 196,
+      "9": 204
+    },
+    "recommended_four_shards": [
+      {
+        "qa_count": 450,
+        "sample_ids": [
+          "3",
+          "6"
+        ],
+        "shard": 0
+      },
+      {
+        "qa_count": 540,
+        "sample_ids": [
+          "4",
+          "2",
+          "1"
+        ],
+        "shard": 1
+      },
+      {
+        "qa_count": 435,
+        "sample_ids": [
+          "7",
+          "8"
+        ],
+        "shard": 2
+      },
+      {
+        "qa_count": 561,
+        "sample_ids": [
+          "9",
+          "0",
+          "5"
+        ],
+        "shard": 3
+      }
+    ],
+    "sample_ids_included": [
+      "conv-26",
+      "conv-30",
+      "conv-41",
+      "conv-42",
+      "conv-43",
+      "conv-44",
+      "conv-47",
+      "conv-48",
+      "conv-49",
+      "conv-50"
+    ],
+    "seed": 20260517,
+    "source_path": "datasets/locomo/data/locomo10.json",
+    "source_sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+    "strategy": "full_dataset",
+    "subset_path": "datasets/locomo/data/locomo10.json",
+    "subset_qa_count": 1986,
+    "subset_sample_count": 10,
+    "subset_sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4"
+  },
+  "subset_manifest": "datasets/subsets/locomo10_100pct_seed20260517_manifest.json",
+  "subset_manifest_sha256": "66acca67cead3edf6cef286451dbf14acb31a08f79ca23e9cb8e5a213a95af93"
+}

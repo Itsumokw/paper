@@ -1,0 +1,70 @@
+{
+  "finished_at": "2026-05-19T09:38:18+0800",
+  "merged_from_shards": [
+    "reproductions/higmem_plus/locomo10_full_8b/improved/shard_0/evidence_frame_routing",
+    "reproductions/higmem_plus/locomo10_full_8b/improved/shard_1/evidence_frame_routing",
+    "reproductions/higmem_plus/locomo10_full_8b/improved/shard_2/evidence_frame_routing",
+    "reproductions/higmem_plus/locomo10_full_8b/improved/shard_3/evidence_frame_routing"
+  ],
+  "method": "evidence_frame_routing",
+  "shards": {
+    "reproductions/higmem_plus/locomo10_full_8b/improved/shard_0/evidence_frame_routing": {
+      "finished_at": "2026-05-19T09:24:08+0800",
+      "method": "evidence_frame_routing",
+      "processed_this_run": 450,
+      "runtime_seconds": 3282.5562291145325,
+      "started_at": "2026-05-19T08:29:25+0800",
+      "token_usage": {
+        "completion_tokens": 4109,
+        "prompt_tokens": 766131,
+        "total_tokens": 770240
+      },
+      "total_rows": 450
+    },
+    "reproductions/higmem_plus/locomo10_full_8b/improved/shard_1/evidence_frame_routing": {
+      "finished_at": "2026-05-19T09:35:59+0800",
+      "method": "evidence_frame_routing",
+      "processed_this_run": 540,
+      "runtime_seconds": 3994.013827562332,
+      "started_at": "2026-05-19T08:29:25+0800",
+      "token_usage": {
+        "completion_tokens": 4910,
+        "prompt_tokens": 1028128,
+        "total_tokens": 1033038
+      },
+      "total_rows": 540
+    },
+    "reproductions/higmem_plus/locomo10_full_8b/improved/shard_2/evidence_frame_routing": {
+      "finished_at": "2026-05-19T09:23:45+0800",
+      "method": "evidence_frame_routing",
+      "processed_this_run": 435,
+      "runtime_seconds": 3260.20787525177,
+      "started_at": "2026-05-19T08:29:25+0800",
+      "token_usage": {
+        "completion_tokens": 4454,
+        "prompt_tokens": 798348,
+        "total_tokens": 802802
+      },
+      "total_rows": 435
+    },
+    "reproductions/higmem_plus/locomo10_full_8b/improved/shard_3/evidence_frame_routing": {
+      "finished_at": "2026-05-19T09:38:07+0800",
+      "method": "evidence_frame_routing",
+      "processed_this_run": 561,
+      "runtime_seconds": 4121.729563713074,
+      "started_at": "2026-05-19T08:29:25+0800",
+      "token_usage": {
+        "completion_tokens": 5197,
+        "prompt_tokens": 1205681,
+        "total_tokens": 1210878
+      },
+      "total_rows": 561
+    }
+  },
+  "token_usage": {
+    "completion_tokens": 18670,
+    "prompt_tokens": 3798288,
+    "total_tokens": 3816958
+  },
+  "total_rows": 1986
+}

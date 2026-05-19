@@ -29,6 +29,7 @@ class EvidenceStore:
         self.episodes: dict[str, Episode] = {}
         self.components: dict[str, EvidenceComponent] = {}
         self.edges: list[TypedEdge] = []
+        self._edge_keys: set[tuple[str, str, str]] = set()
         self.components_by_turn: dict[str, list[str]] = defaultdict(list)
         self.components_by_episode: dict[str, list[str]] = defaultdict(list)
         self.episode_by_turn: dict[str, str] = {}
@@ -115,7 +116,6 @@ class EvidenceStore:
         component_ids = self.components_by_episode.get(episode_id, [])
         if len(component_ids) < 2:
             return
-        existing = {(edge.source_component_id, edge.target_component_id, edge.edge_type) for edge in self.edges}
         recent_ids = component_ids[-8:]
         for left_id in recent_ids:
             left = self.components[left_id]
@@ -127,7 +127,7 @@ class EvidenceStore:
                 if not edge_type:
                     continue
                 key = (left_id, right_id, edge_type)
-                if key in existing:
+                if key in self._edge_keys:
                     continue
                 self.edges.append(
                     TypedEdge(
@@ -140,14 +140,14 @@ class EvidenceStore:
                         confidence=1.0,
                     )
                 )
-                existing.add(key)
+                self._edge_keys.add(key)
             for right_id in [
                 cid
                 for cid in recent_ids
                 if cid != left_id and set(self.components[cid].source_turn_ids) & set(left.source_turn_ids)
             ][:2]:
                 key = (left_id, right_id, "source_of")
-                if key in existing:
+                if key in self._edge_keys:
                     continue
                 right = self.components[right_id]
                 self.edges.append(
@@ -161,7 +161,7 @@ class EvidenceStore:
                         confidence=1.0,
                     )
                 )
-                existing.add(key)
+                self._edge_keys.add(key)
 
     def _edge_type(self, left: EvidenceComponent, right: EvidenceComponent) -> str:
         if left.source_session_or_episode_id != right.source_session_or_episode_id:
